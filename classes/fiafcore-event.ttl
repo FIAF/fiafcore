@@ -14,7 +14,45 @@
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr .
 
+# Parent relations
+
+<https://fiafcore.org/ontology/hasEvent> a owl:ObjectProperty ;
+    rdfs:label "Has Event"@en ;
+    rdfs:label "Tiene un Evento"@es ;
+    rdfs:label "A un Évènement"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
+    rdfs:domain [
+        owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item fiaf:Carrier)
+    ] ;
+    rdfs:range fiaf:Event .
+
 # Subclasses
+
+<https://fiafcore.org/ontology/ItemEvent> a owl:Class ;
+    dc:source "FIAF Cataloguing Manual 3.3.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Event, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasEvent ] ;
+        owl:allValuesFrom fiaf:Item
+    ] .
+
+<https://fiafcore.org/ontology/ManifestationEvent> a owl:Class ;
+    dc:source "FIAF Cataloguing Manual 2.4.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Event, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasEvent ] ;
+        owl:allValuesFrom fiaf:Manifestation
+    ] .
+
+<https://fiafcore.org/ontology/WorkVariantEvent> a owl:Class ;
+    dc:source "FIAF Cataloguing Manual 1.4.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Event, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasEvent ] ;
+        owl:allValuesFrom fiaf:WorkVariant
+    ] .
 
 <https://fiafcore.org/ontology/PublicationEvent> a owl:Class ;
     rdfs:label "Publication Event"@en ;
@@ -23,7 +61,9 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.1"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf [
+        owl:unionOf (fiaf:ManifestationEvent fiaf:WorkVariantEvent)
+    ] .
 
 <https://fiafcore.org/ontology/ReleaseEvent> a owl:Class ;
     rdfs:label "Release Event"@en ;
@@ -122,7 +162,9 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.2"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf [
+        owl:unionOf (fiaf:ManifestationEvent fiaf:WorkVariantEvent)
+    ] .
 
 <https://fiafcore.org/ontology/ProductionEvent> a owl:Class ;
     rdfs:label "Production Event"@en ;
@@ -131,7 +173,9 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.3"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.3"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.3"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf [
+        owl:unionOf (fiaf:ManifestationEvent fiaf:WorkVariantEvent)
+    ] .
 
 <https://fiafcore.org/ontology/CastingEvent> a owl:Class ;
     rdfs:label "Casting Event"@en ;
@@ -176,7 +220,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.4"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.4"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.4"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf fiaf:WorkVariantEvent .
 
 <https://fiafcore.org/ontology/PreservationEvent> a owl:Class ;
     rdfs:label "Preservation Event"@en ;
@@ -230,7 +274,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.6"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.6"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.6"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf fiaf:ManifestationEvent .
 
 <https://fiafcore.org/ontology/CensorshipEvent> a owl:Class ;
     rdfs:label "Censorship Event"@en ;
@@ -266,7 +310,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.7"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.7"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.7"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf fiaf:ManifestationEvent .
     
 <https://fiafcore.org/ontology/FilmPrintingEvent> a owl:Class ;
     rdfs:label "Film Printing Event"@en ;
@@ -329,7 +373,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.8"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.8"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.8"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf fiaf:ItemEvent .
 
 <https://fiafcore.org/ontology/AcquisitionEvent> a owl:Class ;
     rdfs:label "Acquisition Event"@en ;
@@ -338,7 +382,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.9"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.9"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.9"@fr ;
-    rdfs:subClassOf fiaf:Event .
+    rdfs:subClassOf fiaf:ItemEvent .
 
 <https://fiafcore.org/ontology/DonationEvent> a owl:Class ;
     rdfs:label "Donation Event"@en ;
