@@ -431,16 +431,6 @@
     
 # Object Properties
 
-<https://fiafcore.org/ontology/hasActivity> a owl:ObjectProperty ;
-    rdfs:label "Has Activity"@en ;
-    rdfs:label "Tiene Actividad"@es ;
-    rdfs:label "A une Activité"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1.1, 2.4.1.1, 3.3.1.1"@en ;
-    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1, 2.4.1.1, 3.3.1.1"@es ;
-    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1.1, 2.4.1.1, 3.3.1.1"@fr ;
-    rdfs:domain fiaf:Event ;
-    rdfs:range fiaf:Activity .
-
 <https://fiafcore.org/ontology/hasCondition> a owl:ObjectProperty ;
     rdfs:label "Has Condition"@en ;
     rdfs:label "Tiene Condición"@es ;

@@ -14,7 +14,48 @@
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr .
 
+# Parent relations
+
+<https://fiafcore.org/ontology/hasActivity> a owl:ObjectProperty ;
+    rdfs:label "Has Activity"@en ;
+    rdfs:label "Tiene Actividad"@es ;
+    rdfs:label "A une Activité"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1.1, 2.4.1.1, 3.3.1.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1, 2.4.1.1, 3.3.1.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1.1, 2.4.1.1, 3.3.1.1"@fr ;
+    rdfs:domain fiaf:Event ;
+    rdfs:range fiaf:Activity .
+
 # Subclasses
+
+<https://fiafcore.org/ontology/ItemActivity> a owl:Class ;
+    dc:source "FIAF Cataloguing Manual 3.3.1.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Activity, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasActivity ] ;
+        owl:allValuesFrom fiaf:ItemEvent
+    ] .
+
+<https://fiafcore.org/ontology/ManifestationActivity> a owl:Class ;
+    rdfs:label "Manifestation Activity"@en ;
+    rdfs:label "Manifestación Actividad"@es ;
+    rdfs:label "Activité de manifestation"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.4.1.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.4.1.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.4.1.1"@fr ;
+    rdfs:subClassOf fiaf:Activity, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasActivity ] ;
+        owl:allValuesFrom fiaf:ManifestationEvent
+    ] .
+
+<https://fiafcore.org/ontology/WorkVariantActivity> a owl:Class ;
+    dc:source "FIAF Cataloguing Manual 1.4.1.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Activity, [
+        a owl:Restriction ;
+        owl:onProperty [ owl:inverseOf fiaf:hasActivity ] ;
+        owl:allValuesFrom fiaf:WorkVariantEvent
+    ] .
 
 <https://fiafcore.org/ontology/Adaptation> a owl:Class ;
     rdfs:label "Adaptation"@en,
@@ -350,7 +391,8 @@
         "Distribuidor"@es,
         "Distributeur"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2.3"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/CopyrightandDistributionActivity> .
+    rdfs:subClassOf fiaf:CopyrightandDistributionActivity,
+        fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/DollyGrip> a owl:Class ;
     rdfs:label "Dolly Grip"@en,
@@ -658,7 +700,8 @@
         "Distribuidor nacional"@es,
         "Distributeur national"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2.6"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/CopyrightandDistributionActivity> .
+    rdfs:subClassOf fiaf:CopyrightandDistributionActivity,
+        fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/NegativeCutter> a owl:Class ;
     rdfs:label "Negative Cutter"@en,
@@ -672,14 +715,16 @@
         "Propietario original del derecho de autor"@es,
         "Ayant droit d'origine"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2.1"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/CopyrightandDistributionActivity> .
+    rdfs:subClassOf fiaf:CopyrightandDistributionActivity,
+        fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/OriginalDistributor> a owl:Class ;
     rdfs:label "Original Distributor"@en,
         "Distribuidor original"@es,
         "Distributeur initial"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2.4"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/CopyrightandDistributionActivity> .
+    rdfs:subClassOf fiaf:CopyrightandDistributionActivity,
+        fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/PostProductionSupervisor> a owl:Class ;
     rdfs:label "Post-Production Supervisor"@en,
@@ -693,7 +738,8 @@
         "Propietario actual del derecho de autor"@es,
         "Ayant droit actuel"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2.2"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/CopyrightandDistributionActivity> .
+    rdfs:subClassOf fiaf:CopyrightandDistributionActivity,
+        fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/Presenter> a owl:Class ;
     rdfs:label "Presenter"@en,
@@ -1078,114 +1124,107 @@
         "Actividad de censura y calificación"@es,
         "Activité de censure "@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.1"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/PuppetActivity> a owl:Class ;
     rdfs:label "Puppet Activity"@en,
         "Actividad de marionetas"@es,
         "Activité de marionnettes"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.14"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/EditingActivity> a owl:Class ;
     rdfs:label "Editing Activity"@en,
         "Actividad de montaje"@es,
         "Activité de montage"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.10"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/LaboratoryActivity> a owl:Class ;
     rdfs:label "Laboratory Activity"@en,
         "Actividad de laboratorio"@es,
         "Activité de laboratoire"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.12"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/CopyrightandDistributionActivity> a owl:Class ;
     rdfs:label "Copyright and Distribution Activity"@en,
         "Actividad de derecho de autor y distribución"@es,
         "Activité de copyright et distribution"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms C.2"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf [
+        owl:unionOf (fiaf:ManifestationActivity fiaf:WorkVariantActivity)
+    ] .
 
 <https://fiafcore.org/ontology/DirectingActivity> a owl:Class ;
     rdfs:label "Directing Activity"@en,
         "Actividad de dirección"@es,
         "Activité de réalisation"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.3"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/AnimationActivity> a owl:Class ;
     rdfs:label "Animation Activity"@en,
         "Actividad de Animación"@es,
         "Activité d'animation"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.13"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/WritingActivity> a owl:Class ;
     rdfs:label "Writing Activity"@en,
         "Actividad de texto"@es,
         "Activité d'écriture"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.4"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/MusicActivity> a owl:Class ;
     rdfs:label "Music Activity"@en,
         "Actividad de música"@es,
         "Activité de musique"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.11"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/SpecialEffectsActivity> a owl:Class ;
     rdfs:label "Special Effects Activity"@en,
         "Actividad de trucajes"@es,
         "Activité de trucages"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.8"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/CastActivity> a owl:Class ;
     rdfs:label "Cast Activity"@en,
         "Actividad de reparto"@es,
         "Activité d’interprétation"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.7"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/SoundActivity> a owl:Class ;
     rdfs:label "Sound Activity"@en,
         "Actividad de sonido"@es,
         "Activité de son"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.9"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/CinematographyActivity> a owl:Class ;
     rdfs:label "Cinematography Activity"@en,
         "Actividad de fotografía"@es,
         "Activité de photographie"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.5"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/ProducingActivity> a owl:Class ;
     rdfs:label "Producing Activity"@en,
         "Actividad de producción"@es,
         "Activité de production"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.2"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/ProductionDesignActivity> a owl:Class ;
     rdfs:label "Production Design Activity"@en,
         "Actividad de diseño de producción"@es,
         "Activité de supervision artistique"@fr ;
     dc:source "FIAF Glossary of Filmographic Terms B.6"^^xsd:string ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Activity> .
-
-<https://fiafcore.org/ontology/ManifestationActivity> a owl:Class ;
-    rdfs:label "Manifestation Activity"@en ;
-    rdfs:label "Manifestación Actividad"@es ;
-    rdfs:label "Activité de manifestation"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual 2.4.1.1"@en ;
-    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.4.1.1"@es ;
-    dc:source "Manuel de catalogage des images animées de la FIAF 2.4.1.1"@fr ;
-    rdfs:subClassOf fiaf:Activity .
+    rdfs:subClassOf fiaf:WorkVariantActivity .
 
 <https://fiafcore.org/ontology/DistributorTheatrical> a owl:Class ;
     rdfs:label "Distributor (theatrical)"@en ,
