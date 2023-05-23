@@ -9,6 +9,26 @@ jobs:
     steps:
     - name: checkout repo
       uses: actions/checkout@v3
-    - name: contents
-      run: |
-        ls -al
+    - name: install libs
+      run: pip3 install rdflib
+    - name: compile graph and validate
+      uses: jannekem/run-python-script-action@v1
+      with:
+        script: |
+          
+          # import libraries
+          
+          import pathlib
+          import rdflib
+          
+          # compile class files
+          
+          class_dir = pathlib.Path.cwd() / 'classes'
+          classes = [x for x in class_dir.iterdir() if x.suffix == '.ttl']
+          
+          # load into graph, should throw syntax errors
+          
+          graph = rdflib.Graph()        
+          for x in classes:
+            graph += rdflib.Graph().parse(x)
+            print(x, len(graph))
