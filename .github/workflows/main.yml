@@ -32,3 +32,42 @@ jobs:
           for x in sorted(classes):
             graph += rdflib.Graph().parse(x)
             print(x, len(graph))
+            
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v3
+    - name: install libs
+      run: pip3 install rdflib
+    - name: compile ontology
+      uses: jannekem/run-python-script-action@v1
+      with:
+        script: |
+          
+          # import libraries
+          
+          import pathlib
+          import rdflib
+          
+          # compile class files
+          
+          class_dir = pathlib.Path.cwd() / 'classes'
+          classes = [x for x in class_dir.iterdir() if x.suffix == '.ttl']
+          
+          # load into graph, should throw syntax errors
+          
+          graph = rdflib.Graph()        
+          for x in sorted(classes):
+            graph += rdflib.Graph().parse(x)
+
+          graph.serialize(destination=str(pathlib.Path.cwd() / 'FIAFcore.ttl'), format="turtle")
+
+    - name: push graph
+#       if: github.event_name == 'push' 
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add *
+        git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push
