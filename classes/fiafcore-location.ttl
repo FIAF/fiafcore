@@ -1,0 +1,13 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Location> a owl:Class ;
+    rdfs:label "Location"@en ;
+    rdfs:label "Ubicación"@es ;
+    rdfs:label "Location"@fr ;
+    dc:source "FIAF Cataloguing Manual D.4.1"^^xsd:string .

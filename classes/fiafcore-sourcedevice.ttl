@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/SourceDevice> a owl:Class ;
+    rdfs:label "Source Device"@en ;
+    rdfs:label "Dispositivo para reproducción"@es ;
+    rdfs:label "Périphérique de lecture"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.21"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/DVSI> a owl:Class ;
+    rdfs:label "DVSI"@en ;
+    rdfs:label "DVSI"@es ;
+    rdfs:label "DVSI"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    rdfs:subClassOf fiaf:SourceDevice .
+
+<https://fiafcore.org/ontology/HDCAMSRW55002> a owl:Class ;
+    rdfs:label "HDCAM SRW5500/2"@en ;
+    rdfs:label "HDCAM SRW5500/2"@es ;
+    rdfs:label "HDCAM SRW5500/2"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    rdfs:subClassOf fiaf:SourceDevice .
+
+<https://fiafcore.org/ontology/VT20> a owl:Class ;
+    rdfs:label "VT20"@en ;
+    rdfs:label "VT20"@es ;
+    rdfs:label "VT20"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    rdfs:subClassOf fiaf:SourceDevice .

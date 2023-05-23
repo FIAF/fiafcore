@@ -1,0 +1,43 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/BitDepth> a owl:Class ;
+    rdfs:label "Bit Depth"@en ;
+    rdfs:label "Cantidad de Bits"@es ;
+    rdfs:label "Profondeur de bit"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.20"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/10bit> a owl:Class ;
+    rdfs:label "10bit"@en ;
+    rdfs:label "10bit"@es ;
+    rdfs:label "10bit"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    rdfs:subClassOf fiaf:BitDepth .
+
+<https://fiafcore.org/ontology/16bit> a owl:Class ;
+    rdfs:label "16bit"@en ;
+    rdfs:label "16bit"@es ;
+    rdfs:label "16bit"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    rdfs:subClassOf fiaf:BitDepth .
+
+<https://fiafcore.org/ontology/24bit> a owl:Class ;
+    rdfs:label "24bit"@en ;
+    rdfs:label "24bit"@es ;
+    rdfs:label "24bit"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    rdfs:subClassOf fiaf:BitDepth .
+
+<https://fiafcore.org/ontology/32bit> a owl:Class ;
+    rdfs:label "32bit"@en ;
+    rdfs:label "32bit"@es ;
+    rdfs:label "32bit"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    rdfs:subClassOf fiaf:BitDepth .

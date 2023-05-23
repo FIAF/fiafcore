@@ -1,0 +1,131 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/WorkVariant> a owl:Class ;
+    rdfs:label "Work/Variant"@en ;
+    rdfs:label "Obra/Variante"@es ;
+    rdfs:label "l'Œuvre/la Variante"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.0"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/Analytic> a owl:Class ;
+    rdfs:label "Analytic"@en ;
+    rdfs:label "Analítica"@es ;
+    rdfs:label "Analytique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:WorkVariant .
+
+<https://fiafcore.org/ontology/Collection> a owl:Class ;
+    rdfs:label "Collection"@en ;
+    rdfs:label "Colección"@es ;
+    rdfs:label "Collection"@fr ;
+    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:WorkVariant .
+
+<https://fiafcore.org/ontology/Monographic> a owl:Class ;
+    rdfs:label "Monographic"@en ;
+    rdfs:label "Monográfico"@es ;
+    rdfs:label "Monographie"@fr ;
+    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:WorkVariant .
+
+<https://fiafcore.org/ontology/Serial> a owl:Class ;
+    rdfs:label "Serial"@en ;
+    rdfs:label "Serie"@es ;
+    rdfs:label "Série"@fr ;
+    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:WorkVariant .
+
+# Object Properties
+
+<https://fiafcore.org/ontology/hasCountry> a owl:ObjectProperty ;
+    rdfs:label "Has Country"@en ;
+    rdfs:label "Tiene un País"@es ;
+    rdfs:label "A un Pays"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.3"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:Country .
+
+<https://fiafcore.org/ontology/hasEvent> a owl:ObjectProperty ;
+    rdfs:label "Has Event"@en ;
+    rdfs:label "Tiene un Evento"@es ;
+    rdfs:label "A un Évènement"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"^^xsd:string ;
+    rdfs:domain [
+        owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item fiaf:Carrier)
+    ] ;
+    rdfs:range fiaf:Event .
+
+<https://fiafcore.org/ontology/hasGenre> a owl:ObjectProperty ;
+    rdfs:label "Has Genre"@en ;
+    rdfs:label "Tiene un Género"@es ;
+    rdfs:label "A un Genre"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:Genre .
+
+<https://fiafcore.org/ontology/hasForm> a owl:ObjectProperty ;
+    rdfs:label "Has Form"@en ;
+    rdfs:label "Tiene una Forma"@es ;
+    rdfs:label "A une Forme"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:Form .
+
+<https://fiafcore.org/ontology/hasIdentifier> a owl:ObjectProperty ;
+    rdfs:label "Has Identifier"@en ;     
+    rdfs:label "Tiene un Identificador"@es ;
+    rdfs:label "A un Identifiant"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"^^xsd:string ;
+    rdfs:domain [
+        owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item)
+    ] ;
+    rdfs:range fiaf:Identifier .
+
+<https://fiafcore.org/ontology/hasManifestation> a owl:ObjectProperty ;
+    rdfs:label "Has Manifestation"@en ;
+    rdfs:label "Tiene una Manifestación"@es ;
+    rdfs:label "A une Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.6"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/hasSubject> a owl:ObjectProperty ;
+    rdfs:label "Has Subject"@en ;
+    rdfs:label "Tiene una Materia"@es ;
+    rdfs:label "A un Sujet"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:Subject .
+
+<https://fiafcore.org/ontology/hasTitle> a owl:ObjectProperty ;
+    rdfs:label "Has Title"@en ;
+    rdfs:label "Tiene un Título"@es ;
+    rdfs:label "A un Titre"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"^^xsd:string ;
+    rdfs:domain [
+        owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item)
+    ] ;
+    rdfs:range fiaf:Title .
+
+<https://fiafcore.org/ontology/hasVariantType> a owl:ObjectProperty ;
+    rdfs:label "Has Variant Type"@en ;
+    rdfs:label "Tiene un Tipo de Variante"@es ;
+    rdfs:label "A un Type de Variante"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.2.2"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:VariantType .
+
+<https://fiafcore.org/ontology/hasWorkVariant> a owl:ObjectProperty ;
+    rdfs:label "Has Work/Variant"@en ;
+    rdfs:label "Tiene una Obra/Variante"@es ;
+    rdfs:label "A une Œuvre/Variante"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.5"^^xsd:string ;
+    rdfs:domain fiaf:WorkVariant ;
+    rdfs:range fiaf:WorkVariant .

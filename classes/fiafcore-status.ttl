@@ -1,0 +1,57 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Status> a owl:Class ;
+    rdfs:label "Status"@en ;
+    rdfs:label "Estado"@es ;
+    rdfs:label "Statut"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.2"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/Accessioned> a owl:Class ;
+    rdfs:label "Accessioned"@en ;
+    rdfs:label "Adjudicado"@es ;
+    rdfs:label "Intégré à la collection"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .
+
+<https://fiafcore.org/ontology/Master> a owl:Class ;
+    rdfs:label "Master"@en ;
+    rdfs:label "Máster"@es ;
+    rdfs:label "Master"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .
+
+<https://fiafcore.org/ontology/OnLoan> a owl:Class ;
+    rdfs:label "On Loan"@en ;
+    rdfs:label "En préstamo"@es ;
+    rdfs:label "En prêt"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .
+
+<https://fiafcore.org/ontology/Removed> a owl:Class ;
+    rdfs:label "Removed"@en ;
+    rdfs:label "Removido"@es ;
+    rdfs:label "Retiré de la collection"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .
+
+<https://fiafcore.org/ontology/StatusPending> a owl:Class ;
+    rdfs:label "Status pending"@en ;
+    rdfs:label "Estado pendiente"@es ;
+    rdfs:label "Statut en attente"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .
+
+<https://fiafcore.org/ontology/Viewing> a owl:Class ;
+    rdfs:label "Viewing"@en ;
+    rdfs:label "Ver"@es ;
+    rdfs:label "Visionnage"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Status .

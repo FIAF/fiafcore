@@ -1,0 +1,515 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Agent> a owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:label "Agente"@es ;
+    rdfs:label "Agent"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/CorporateBody> a owl:Class ;
+    rdfs:label "Corporate Body"@en ;
+    rdfs:label "Entidad Corporativa"@es ;
+    rdfs:label "Personne Morale"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Agent .
+
+<https://fiafcore.org/ontology/Family> a owl:Class ;
+    rdfs:label "Family"@en ;
+    rdfs:label "Familia"@es ;
+    rdfs:label "Famille"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Agent .
+
+<https://fiafcore.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:label "Persona"@es ;
+    rdfs:label "Personne"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Agent .
+
+<https://fiafcore.org/ontology/PersonGroup> a owl:Class ;
+    rdfs:label "Person Group"@en ;
+    rdfs:label "Grupo de personas"@es ;
+    rdfs:label "Groupe de Personnes"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Agent .
+
+# Individuals
+
+<https://fiafcore.org/ontology/AcademyFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Academy Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ArchivoDeImagenesEnMovimientoArchivoGeneralDePuertoRico> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Archivo de Imagenes en Movimiento - Archivo General de Puerto Rico"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ArchivoNacionalDeLaImagenYLaPalabraSodre> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Archivo Nacional de la Imagen y la Palabra - Sodre"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ArhivRepublikeSlovenijeSlovenskiFilmskiArhivSfa> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Arhiv Republike Slovenije - Slovenski Filmski Arhiv (SFA)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ArhivaNationalaDeFilmeCinematecaRomana> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Arhiva Nationala de Filme - Cinemateca Romana"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ArkiviQendrorShteterorIFilmitAqshf> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Arkivi Qendror Shteteror I Filmit (AQSHF)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/BangladeshFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Bangladesh Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/BfiNationalArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "BFI National Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/BulgarskaNacionalnaFilmoteka> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Bulgarska Nacionalna Filmoteka"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/Bundesarchiv> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Bundesarchiv"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CentreNationalDuCinémaEtDeLImageAniméeDirectionDuPatrimoineCinématographique> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Centre national du cinéma et de l’image animée - Direction du patrimoine cinématographique"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ChinaFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "China Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinematecaBrasileira> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinemateca Brasileira"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinematecaDeCuba> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinemateca de Cuba"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinematecaPortuguesa> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinemateca Portuguesa"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinematecaUruguaya> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinemateca Uruguaya"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinetecaNacional> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cineteca Nacional"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinetecaNacionalDeChile> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cineteca Nacional de Chile"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinémathèqueDeLaVilleDeLuxembourg> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinémathèque de la Ville de Luxembourg"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinémathèqueFrançaise> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinémathèque française"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinémathèqueMarocaineCentreCinématographiqueMarocainCcm> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinémathèque Marocaine - Centre cinématographique Marocain (CCM)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinémathèqueRoyaleDeBelgique> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinémathèque royale de Belgique"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/CinémathèqueSuisse> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Cinémathèque suisse"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/DeutscheKinemathek> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Deutsche Kinemathek"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/DffDeutschesFilminstitutFilmmuseum> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "DFF - Deutsches Filminstitut & Filmmuseum"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/EcpadÉtablissementDeCommunicationEtDeProductionAudiovisuelleDeLaDéfense> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "ECPAD - Établissement de communication et de production audiovisuelle de la Défense"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/EuskadikoFilmategiaFundazioa> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Euskadiko Filmategia Fundazioa"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/EyeFilmmuseum> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Eye Filmmuseum"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmArchiveOfTheNationalArchivesOfEstonia> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Film Archive of the National Archives of Estonia"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmArchivePublicOrganization> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Film Archive (Public Organization)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmarchivAustria> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmarchiv Austria"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmmuseumDüsseldorf> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmmuseum Düsseldorf"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmmuseumMünchen> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmmuseum München"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaDeCatalunyaIcec> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca de Catalunya - ICEC"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaDeLaPontificiaUniversidadCatolicaDelPeruPupc> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca de la Pontificia Universidad Catolica del Peru (PUPC)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaDeLaUnam> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca de la UNAM"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaEspañola> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca Española"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaValencianaInstitutValenciàDeCultura> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca Valenciana - Institut Valencià de Cultura"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotecaVaticana> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteca Vaticana"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FilmotekaNarodowaInstytutAudiowizualnyFina> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Filmoteka Narodowa - Instytut Audiowizualny (FINA)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FondazioneCentroSperimentaleDiCinematografiaCinetecaNazionale> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Fondazione Centro Sperimentale di Cinematografia - Cineteca Nazionale"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FondazioneCinetecaDiBologna> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Fondazione Cineteca di Bologna"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FondazioneCinetecaItaliana> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Fondazione Cineteca Italiana"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FundaciónCinematecaArgentina> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Fundación Cinemateca Argentina"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/FundaciónPatrimonioFílmicoColombiano> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Fundación Patrimonio Fílmico Colombiano"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/GeorgeEastmanMuseum> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "George Eastman Museum"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/GosfilmofondOfRussia> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Gosfilmofond of Russia"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/HarvardFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Harvard Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/HongKongFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Hong Kong Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/HrvatskiDržavniArhivHrvatskaKinoteka> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Hrvatski Državni Arhiv - Hrvatska Kinoteka"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/IfiIrishFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "IFI Irish Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ImperialWarMuseumsFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Imperial War Museums - Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/IndianaUniversityLibrariesMovingImageArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Indiana University Libraries Moving Image Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/IsraelFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Israel Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/JosonMinjujuiInmingonghwagukKuggaYonghwaMunhongo> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Joson Minjujui Inmingonghwaguk Kugga Yonghwa Munhongo"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/JugoslovenskaKinoteka> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Jugoslovenska Kinoteka"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/KansallinenAudiovisuaalinenInstituutti> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Kansallinen Audiovisuaalinen Instituutti"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/KinotekaNaRepublikaSevernaMakedonija> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Kinoteka na Republika Severna Makedonija"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/KoreanFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Korean Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/KvikmyndasafnIslands> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Kvikmyndasafn Islands"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/LaCinetecaDelFriuli> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "La Cineteca del Friuli"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/LaCinémathèqueDeToulouse> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "La Cinémathèque de Toulouse"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/LaCinémathèqueQuébécoise> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "La Cinémathèque québécoise"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/LibraryAndArchivesCanada> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Library and Archives Canada"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/LibraryOfCongressNationalAudioVisualConservationCenterMbrsDivision> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Library of Congress - National Audio-Visual Conservation Center (MBRS DIVISION)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/Lichtspiel> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Lichtspiel"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/MuseoNazionaleDelCinemaFondazioneMariaAdrianaProlo> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Museo Nazionale del Cinema - Fondazione Maria Adriana Prolo"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalFilmAndSoundArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Film and Sound Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalFilmArchiveOfIndia> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Film Archive of India"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalFilmArchiveOfIran> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Film Archive of Iran"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalFilmArchiveOfJapanNfaj> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Film Archive of Japan (NFAJ)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalFilmInstituteHungaryFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Film Institute Hungary – Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalLibraryOfScotlandMovingImageArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Library of Scotland - Moving Image Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NationalLibraryOfWalesScreenAndSoundArchives> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "National Library of Wales - Screen and Sound Archives"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NgaTaongaSoundVision> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "NGA Taonga Sound & Vision"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NorthWestFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "North West Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/NárodníFilmovýArchiv> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Národní filmový archiv"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/OleksandrDovzhenkoNationalCentre> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Oleksandr Dovzhenko National Centre"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/SinemaTvEnstitüsü> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Sinema-TV Enstitüsü"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/SlovakFilmInstitute> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Slovak Film Institute"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/SlovenianCinematheque> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Slovenian Cinematheque"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/SouthAfricanNationalFilmVideoAndSoundArchives> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "South African National Film, Video and Sound Archives"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/StevenSpielbergJewishFilmArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Steven Spielberg Jewish Film Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/SvenskaFilminstitutet> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Svenska Filminstitutet"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TainiothikiTisEllados> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Tainiothiki Tis Ellados"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TaiwanFilmAndAudiovisualInstitute> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Taiwan Film and Audiovisual Institute"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TheDanishFilmInstitute> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "The Danish Film Institute"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TheMuseumOfModernArtDepartmentOfFilm> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "The Museum of Modern Art - Department of Film"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TheNationalLibraryOfNorwayFilmAndBroadcasting> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "The National Library of Norway - Film and Broadcasting"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/TiffFilmReferenceLibrary> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "TIFF Film Reference Library"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/UcBerkeleyArtMuseumPacificFilmArchiveBampfa> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "UC Berkeley Art Museum & Pacific Film Archive (BAMPFA)"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/UclaFilmTelevisionArchive> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "UCLA Film & Television Archive"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/VietnamFilmInstitute> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Vietnam Film Institute"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+
+<https://fiafcore.org/ontology/ÖsterreichischesFilmmuseum> a owl:NamedIndividual,
+        <https://fiafcore.org/ontology/CorporateBody> ;
+    rdfs:label "Österreichisches Filmmuseum"@en ;
+    dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .

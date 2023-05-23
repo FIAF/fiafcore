@@ -1,0 +1,22 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/SourceSoftware> a owl:Class ;
+    rdfs:label "Source Software"@en ;
+    rdfs:label "Software Fuente"@es ;
+    rdfs:label "Logiciel"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.22"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/FFmpeg> a owl:Class ;
+    rdfs:label "FFmpeg"@en ;   
+    rdfs:label "FFmpeg"@es ;   
+    rdfs:label "FFmpeg"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.22"^^xsd:string ;
+    rdfs:subClassOf fiaf:SourceSoftware .

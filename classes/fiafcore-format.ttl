@@ -1,0 +1,323 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Format> a owl:Class ;
+    rdfs:label "Format"@en ;
+    rdfs:label "Formato"@es ;
+    rdfs:label "Format"@fr ;
+    dc:source "FIAF Cataloguing Manual 2.3.4.1, 3.1.5.1"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/Film> a owl:Class ;
+    rdfs:label "Film"@en ;
+    rdfs:label "Película"@es ;
+    rdfs:label "Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/35mmFilm> a owl:Class ;
+    rdfs:label "35mm Film"@en ;
+    rdfs:label "35mm Película"@es ;
+    rdfs:label "35mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/16mmFilm> a owl:Class ;
+    rdfs:label "16mm Film"@en ;
+    rdfs:label "16mm Película"@es ;
+    rdfs:label "16mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/Super16mmFilm> a owl:Class ;
+    rdfs:label "Super16mm Film"@en ;
+    rdfs:label "Súper16mm Film"@es ;
+    rdfs:label "Super16mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/8mmFilm> a owl:Class ;
+    rdfs:label "8mm Film"@en ;
+    rdfs:label "8mm Película"@es ;
+    rdfs:label "8mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/Super8mmFilm> a owl:Class ;
+    rdfs:label "Super8mm Film"@en ;
+    rdfs:label "Súper8mm Película"@es ;
+    rdfs:label "Super8mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/9.5mmFilm> a owl:Class ;
+    rdfs:label "9.5mm Film"@en ;
+    rdfs:label "9.5mm Película"@es ;
+    rdfs:label "9.5mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/17.5mmFilm> a owl:Class ;
+    rdfs:label "17.5mm Film"@en ;
+    rdfs:label "17.5mm Película"@es ;
+    rdfs:label "17.5mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/70mmFilm> a owl:Class ;
+    rdfs:label "70mm Film"@en ;
+    rdfs:label "70mm Película"@es ;
+    rdfs:label "70mm Pellicule"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Film .
+
+<https://fiafcore.org/ontology/Video> a owl:Class ;
+    rdfs:label "Video"@en ;
+    rdfs:label "Video"@es ;
+    rdfs:label "Vidéo"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/1InchCFormat> a owl:Class ;
+    rdfs:label "1-inch C Format"@en ;
+    rdfs:label "1-pulgada Tipo C"@es ;
+    rdfs:label "format 1 pouce C"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/DigitalBetacam> a owl:Class ;
+    rdfs:label "Digital Betacam"@en ;
+    rdfs:label "Betacam Digital"@es ;
+    rdfs:label "Betacam Numérique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/BetacamSP> a owl:Class ;
+    rdfs:label "Betacam SP"@en ;
+    rdfs:label "Betacam SP"@es ;
+    rdfs:label "Betacam SP"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/2InchQuadruplex> a owl:Class ;
+    rdfs:label "2-inch Quadruplex"@en ;
+    rdfs:label "2-pulgadas Quadruplex"@es ;
+    rdfs:label "2 pouces Quadruplex"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/HDCAMSR> a owl:Class ;
+    rdfs:label "HDCAM SR"@en ;
+    rdfs:label "HDCAM SR"@es ;
+    rdfs:label "HDCAM SR"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/D1> a owl:Class ;
+    rdfs:label "D1"@en ;
+    rdfs:label "D1"@es ;
+    rdfs:label "D1"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/D5> a owl:Class ;
+    rdfs:label "D5"@en ;
+    rdfs:label "D5"@es ;
+    rdfs:label "D5"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/DVCPROHD> a owl:Class ;
+    rdfs:label "DVCPRO HD"@en ;
+    rdfs:label "DVCPRO HD"@es ;
+    rdfs:label "DVCPRO HD"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Video .
+
+<https://fiafcore.org/ontology/Audio> a owl:Class ;
+    rdfs:label "Audio"@en ;
+    rdfs:label "Audio"@es ;
+    rdfs:label "Audio"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/TwoInchAudioReel> a owl:Class ;
+    rdfs:label "2-inch Audioreel"@en ;
+    rdfs:label "2” carrete de audio"@es ;
+    rdfs:label "bande magnétique 2 pouces"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/OneInchAudioReel> a owl:Class ;
+    rdfs:label "1-inch Audioreel"@en ;
+    rdfs:label "1” carrete de audio"@es ;
+    rdfs:label "bande magnétique 1 pouce"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/HalfInchAudioReel> a owl:Class ;
+    rdfs:label "1/2-inch Audioreel"@en ;
+    rdfs:label "½” carrete de audio"@es ;
+    rdfs:label "bande magnétique 1/2 pouce"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/QuarterInchAudioReel> a owl:Class ;
+    rdfs:label "1/4-inch Audioreel"@en ;
+    rdfs:label "¼” carrete de audio"@es ;
+    rdfs:label "bande magnétique 1/4 pouce"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/Audiocassette> a owl:Class ;
+    rdfs:label "Audiocassette"@en ;
+    rdfs:label "Casete de audio"@es ;
+    rdfs:label "cassette audio"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/35mmMagneticTrack> a owl:Class ;
+    rdfs:label "35mm magnetic track"@en ;
+    rdfs:label "35mm, pista magnética"@es ;
+    rdfs:label "bande magnétique 35mm"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/16mmMagneticTrack> a owl:Class ;
+    rdfs:label "16mm magnetic track"@en ;
+    rdfs:label "16mm, pista magnética"@es ;
+    rdfs:label "bande magnétique 16mm"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Audio .
+
+<https://fiafcore.org/ontology/Optical> a owl:Class ;
+    rdfs:label "Optical"@en ;
+    rdfs:label "Óptico"@es ;
+    rdfs:label "Optique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/CD> a owl:Class ;
+    rdfs:label "CD"@en ;
+    rdfs:label "CD"@es ;
+    rdfs:label "CD"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Optical .
+
+<https://fiafcore.org/ontology/DVD> a owl:Class ;
+    rdfs:label "DVD"@en ;
+    rdfs:label "DVD"@es ;
+    rdfs:label "DVD"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Optical .
+
+<https://fiafcore.org/ontology/BluRay> a owl:Class ;
+    rdfs:label "Blu-Ray"@en ;
+    rdfs:label "Blu-Ray"@es ;
+    rdfs:label "Blu-Ray"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Optical .
+
+<https://fiafcore.org/ontology/LaserDisc> a owl:Class ;
+    rdfs:label "Laser Disc"@en ;
+    rdfs:label "Disco Láser"@es ;
+    rdfs:label "Disque laser"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Optical .
+
+<https://fiafcore.org/ontology/DigitalFile> a owl:Class ;
+    rdfs:label "Digital File"@en ;
+    rdfs:label "Archivo Digital"@es ;
+    rdfs:label "Fichier numérique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/DPX> a owl:Class ;
+    rdfs:label "DPX"@en ;
+    rdfs:label "DPX"@es ;
+    rdfs:label "DPX"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFile .
+
+<https://fiafcore.org/ontology/MOV> a owl:Class ;
+    rdfs:label "MOV"@en ;
+    rdfs:label "MOV"@es ;
+    rdfs:label "MOV"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFile .
+
+<https://fiafcore.org/ontology/MP4> a owl:Class ;
+    rdfs:label "MP4"@en ;
+    rdfs:label "MP4"@es ;
+    rdfs:label "MP4"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFile .
+
+<https://fiafcore.org/ontology/MXF> a owl:Class ;
+    rdfs:label "MXF"@en ;
+    rdfs:label "MXF"@es ;
+    rdfs:label "MXF"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFile .
+
+<https://fiafcore.org/ontology/AVI> a owl:Class ;
+    rdfs:label "AVI"@en ;
+    rdfs:label "AVI"@es ;
+    rdfs:label "AVI"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFile .
+
+<https://fiafcore.org/ontology/DigitalFileEncoding> a owl:Class ;
+    rdfs:label "Digital File Encoding"@en ;
+    rdfs:label "Codificación Archivo Digital"@es ;
+    rdfs:label "Encodage du fichier numérique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Format .
+
+<https://fiafcore.org/ontology/MPEG4> a owl:Class ;
+    rdfs:label "MPEG-4"@en ;
+    rdfs:label "MPEG-4"@es ;
+    rdfs:label "MPEG-4"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .
+
+<https://fiafcore.org/ontology/Quicktime> a owl:Class ;
+    rdfs:label "Quicktime"@en ;
+    rdfs:label "Quicktime"@es ;
+    rdfs:label "Quicktime"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .
+
+<https://fiafcore.org/ontology/RealVideo> a owl:Class ;
+    rdfs:label "Real Video"@en ;
+    rdfs:label "Real Video"@es ;
+    rdfs:label "Real Video"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .
+
+<https://fiafcore.org/ontology/SVCD> a owl:Class ;
+    rdfs:label "SVCD"@en ;
+    rdfs:label "SVCD"@es ;
+    rdfs:label "SVCD"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .    
+
+<https://fiafcore.org/ontology/VCD> a owl:Class ;
+    rdfs:label "VCD"@en ;
+    rdfs:label "VCD"@es ;
+    rdfs:label "VCD"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .
+
+<https://fiafcore.org/ontology/WindowsMedia> a owl:Class ;
+    rdfs:label "Windows Media"@en ;
+    rdfs:label "Windows Media"@es ;
+    rdfs:label "Windows Media"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:DigitalFileEncoding .    

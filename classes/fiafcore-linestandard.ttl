@@ -1,0 +1,50 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/LineStandard> a owl:Class ;
+    rdfs:label "Line Standard"@en ;
+    rdfs:label "Norma de Líneas"@es ;
+    rdfs:label "Lignes de balayage"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.19"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/1080> a owl:Class ;
+    rdfs:label "1080"@en ;
+    rdfs:label "1080"@es ;
+    rdfs:label "1080"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    rdfs:subClassOf fiaf:LineStandard .
+
+<https://fiafcore.org/ontology/405> a owl:Class ;
+    rdfs:label "405"@en ;
+    rdfs:label "405"@es ;
+    rdfs:label "405"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    rdfs:subClassOf fiaf:LineStandard .
+
+<https://fiafcore.org/ontology/525> a owl:Class ;
+    rdfs:label "525"@en ;
+    rdfs:label "525"@es ;
+    rdfs:label "525"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    rdfs:subClassOf fiaf:LineStandard .
+
+<https://fiafcore.org/ontology/625> a owl:Class ;
+    rdfs:label "625"@en ;
+    rdfs:label "625"@es ;
+    rdfs:label "625"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    rdfs:subClassOf fiaf:LineStandard .
+
+<https://fiafcore.org/ontology/720> a owl:Class ;
+    rdfs:label "720"@en ;
+    rdfs:label "720"@es ;
+    rdfs:label "720"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    rdfs:subClassOf fiaf:LineStandard .

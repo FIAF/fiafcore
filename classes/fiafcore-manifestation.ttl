@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Manifestation> a owl:Class ;
+    rdfs:label "Manifestation"@en ;
+    rdfs:label "Manifestación"@es ;
+    rdfs:label "Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual 2.0"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/PreReleaseManifestation> a owl:Class ;
+    rdfs:label "Pre-Release Manifestation"@en ;
+    rdfs:label "Pre-estreno Manifestación"@es ;
+    rdfs:label "Pré-diffusion Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/TheatricalDistribution> a owl:Class ;
+    rdfs:label "Theatrical Distribution"@en ;
+    rdfs:label "Distribución en cines"@es ;
+    rdfs:label "Distribution en salles"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/NonTheatricalDistribution> a owl:Class ;
+    rdfs:label "Non-Theatrical Distribution"@en ;
+    rdfs:label "Distribución no comercial"@es ;
+    rdfs:label "Distribution non commerciale"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.3"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/NotForReleaseManifestation> a owl:Class ;
+    rdfs:label "Not For Release Manifestation"@en ;
+    rdfs:label "Uso privado"@es ;
+    rdfs:label "Pas pour la diffusion"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.4"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/UnreleasedManifestation> a owl:Class ;
+    rdfs:label "Unreleased Manifestation"@en ;
+    rdfs:label "No publicada"@es ;
+    rdfs:label "Inédit"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.5"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/HomeViewingPublicationManifestation> a owl:Class ;
+    rdfs:label "Home Viewing Publication Manifestation"@en ;
+    rdfs:label "Publicación para presentación fuera de salas comerciales"@es ;
+    rdfs:label "Distribution pour visionnage domestique"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.6"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/BroadcastManifestation> a owl:Class ;
+    rdfs:label "Broadcast Manifestation"@en ;
+    rdfs:label "Teletransmisión"@es ;
+    rdfs:label "Télédiffusion"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.7"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/InternetManifestation> a owl:Class ;
+    rdfs:label "Internet Manifestation"@en ;
+    rdfs:label "Internet Manifestación"@es ;
+    rdfs:label "Internet Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.8"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/PreservationRestorationManifestation> a owl:Class ;
+    rdfs:label "Preservation/Restoration Manifestation"@en ;
+    rdfs:label "Preservación/Restauración Manifestación"@es ;
+   rdfs:label "Conservation/Restauration Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.9"^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+<https://fiafcore.org/ontology/UnknownManifestation> a owl:Class ;
+    rdfs:label "Unknown Manifestation"@en ;
+    rdfs:label "Desconocido Manifestación"@es ;
+    rdfs:label "Inconnu Manifestation"@fr ;
+    dc:source "FIAF Cataloguing Manual D.5.10 "^^xsd:string ;
+    rdfs:subClassOf fiaf:Manifestation .
+
+# Object Properties
+
+<https://fiafcore.org/ontology/hasItem> a owl:ObjectProperty ;
+    rdfs:label "Has Item"@en ;
+    rdfs:label "Tiene un Item"@es ;
+    rdfs:label "A un Item"@fr ;
+    dc:source "FIAF Cataloguing Manual 2.4.4"^^xsd:string ;
+    rdfs:domain fiaf:Manifestation ;
+    rdfs:range fiaf:Item .
+
+<https://fiafcore.org/ontology/hasLanguageUsage> a owl:ObjectProperty ;
+    rdfs:label "Has Language Usage"@en ;
+    rdfs:label "Tiene uso de la lengua"@es ;
+    rdfs:label "A une Utilisation des Langues"@fr ;
+    dc:source "FIAF Cataloguing Manual 2.3.3.2"^^xsd:string ;
+    rdfs:domain fiaf:Manifestation ;
+    rdfs:range fiaf:LanguageUsage .

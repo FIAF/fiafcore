@@ -1,0 +1,186 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Stock> a owl:Class ;
+    rdfs:label "Stock"@en ;
+    rdfs:label "Stock"@es ;
+    rdfs:label "Marque du support"@fr ; 
+    dc:source "FIAF Cataloguing Manual 3.1.5.14"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/3M> a owl:Class ;
+    rdfs:label "3M"@en ;
+    rdfs:label "3M"@es ;
+    rdfs:label "3M"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Agfa> a owl:Class ;
+    rdfs:label "Agfa"@en ;
+    rdfs:label "Agfa"@es ;
+    rdfs:label "Agfa"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/AgfaGavaert> a owl:Class ;
+    rdfs:label "Agfa Gavaert"@en ;
+    rdfs:label "Agfa Gavaert"@es ;
+    rdfs:label "Agfa Gavaert"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Akai> a owl:Class ;
+    rdfs:label "Akai"@en ;
+    rdfs:label "Akai"@es ;
+    rdfs:label "Akai"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Ampex> a owl:Class ;
+    rdfs:label "Ampex"@en ;
+    rdfs:label "Ampex"@es ;
+    rdfs:label "Ampex"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Ansco> a owl:Class ;
+    rdfs:label "Ansco"@en ;
+    rdfs:label "Ansco"@es ;
+    rdfs:label "Ansco"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Basf> a owl:Class ;
+    rdfs:label "BASF"@en ;
+    rdfs:label "BASF"@es ;
+    rdfs:label "BASF"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Brifco> a owl:Class ;
+    rdfs:label "Brifco"@en ;
+    rdfs:label "Brifco"@es ;
+    rdfs:label "Brifco"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/EastmanKodak> a owl:Class ;
+    rdfs:label "Eastman Kodak"@en ;
+    rdfs:label "Eastman Kodak"@es ;
+    rdfs:label "Eastman Kodak"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Fuji> a owl:Class ;
+    rdfs:label "Fuji"@en ;
+    rdfs:label "Fuji"@es ;
+    rdfs:label "Fuji"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Hitachi> a owl:Class ;
+    rdfs:label "Hitachi"@en ;
+    rdfs:label "Hitachi"@es ;
+    rdfs:label "Hitachi"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Hp> a owl:Class ;
+    rdfs:label "HP"@en ;
+    rdfs:label "HP"@es ;
+    rdfs:label "HP"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Maxell> a owl:Class ;
+    rdfs:label "Maxell"@en ;
+    rdfs:label "Maxell"@es ;
+    rdfs:label "Maxell"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Memorex> a owl:Class ;
+    rdfs:label "Memorex"@en ;
+    rdfs:label "Memorex"@es ;
+    rdfs:label "Memorex"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Oracle> a owl:Class ;
+    rdfs:label "Oracle"@en ;
+    rdfs:label "Oracle"@es ;
+    rdfs:label "Oracle"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Philips> a owl:Class ;
+    rdfs:label "Philips"@en ;
+    rdfs:label "Philips"@es ;
+    rdfs:label "Philips"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Scotch> a owl:Class ;
+    rdfs:label "Scotch"@en ;
+    rdfs:label "Scotch"@es ;
+    rdfs:label "Scotch"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Seagate> a owl:Class ;
+    rdfs:label "Seagate"@en ;
+    rdfs:label "Seagate"@es ;
+    rdfs:label "Seagate"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Shamrock> a owl:Class ;
+    rdfs:label "Shamrock"@en ;
+    rdfs:label "Shamrock"@es ;
+    rdfs:label "Shamrock"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Sony> a owl:Class ;
+    rdfs:label "Sony"@en ;
+    rdfs:label "Sony"@es ;
+    rdfs:label "Sony"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Toshiba> a owl:Class ;
+    rdfs:label "Toshiba"@en ;
+    rdfs:label "Toshiba"@es ;
+    rdfs:label "Toshiba"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/Verbatim> a owl:Class ;
+    rdfs:label "Verbatim"@en ;
+    rdfs:label "Verbatim"@es ;
+    rdfs:label "Verbatim"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+<https://fiafcore.org/ontology/WesternDigital> a owl:Class ;
+    rdfs:label "Western Digital"@en ;
+    rdfs:label "Western Digital"@es ;
+    rdfs:label "Western Digital"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.16"^^xsd:string ;
+    rdfs:subClassOf fiaf:Stock .
+
+# Datatype Property 
+
+<https://fiafcore.org/ontology/hasStockValue> a owl:DatatypeProperty ;
+  rdfs:label "Has Stock Value"@en ;
+  rdfs:label "Tiene valor de stock"@es ;
+  rdfs:label "A une Valeur de Support"@fr ;
+  dc:source "FIAF Cataloguing Manual 3.1.5.15"^^xsd:string ;
+  rdfs:domain fiaf:Stock ;
+  rdfs:range xsd:string .

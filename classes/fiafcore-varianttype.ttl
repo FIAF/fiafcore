@@ -1,0 +1,85 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/VariantType> a owl:Class ;
+    rdfs:label "Variant Type"@en ;
+    rdfs:label "Tipo de Variante"@es ;
+    rdfs:label "Type de Variante"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.2.2"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/AbridgedCondensed> a owl:Class ;
+    rdfs:label "Abridged/Condensed"@en ;
+    rdfs:label "Abreviada/Condensada"@es ;
+    rdfs:label "Raccourci/condensé"@fr ; 
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Augmented> a owl:Class ;
+    rdfs:label "Augmented"@en ;
+    rdfs:label "Aumentada"@es ;
+    rdfs:label "Augmentée"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/BlackAndWhiteCopyOfWorkOriginallyIssuedInColour> a owl:Class ;
+    rdfs:label "Black and white copy of work originally issued in colour"@en ;
+    rdfs:label "Copia en blanco y negro de una obra originalmente producida a color"@es ;
+    rdfs:label "Copie noir et blanc d’une œuvre sortie à l’origine en couleurs"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Censored> a owl:Class ;
+    rdfs:label "Censored"@en ;
+    rdfs:label "Censurada"@es ;
+    rdfs:label "Censuré"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Colourized> a owl:Class ;
+    rdfs:label "Colourized"@en ;
+    rdfs:label "Coloreada"@es ;
+    rdfs:label "Colorisé"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/DifferentSoundTrack> a owl:Class ;
+    rdfs:label "Different sound track"@en ;
+    rdfs:label "Diferentes pistas de sonido"@es ;
+    rdfs:label "Bande sonore différente"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Dubbed> a owl:Class ;
+    rdfs:label "Dubbed"@en ;
+    rdfs:label "Doblada"@es ;
+    rdfs:label "Doublé"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/PreservationRestoration> a owl:Class ;
+    rdfs:label "Preservation/Restoration"@en ;
+    rdfs:label "Preservación/Restauración"@es ;
+    rdfs:label "Conservation/Restauration"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Sonorized> a owl:Class ;
+    rdfs:label "Sonorized"@en ;
+    rdfs:label "Sonorizada"@es ;
+    rdfs:label "Sonorisé"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .
+
+<https://fiafcore.org/ontology/Subtitled> a owl:Class ;
+    rdfs:label "Subtitled"@en ;
+    rdfs:label "Subtítulada"@es ;
+    rdfs:label "Sous-titré"@fr ;
+    dc:source "FIAF Cataloguing Manual D.2"^^xsd:string ;
+    rdfs:subClassOf fiaf:VariantType .

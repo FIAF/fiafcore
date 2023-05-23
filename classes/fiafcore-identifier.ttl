@@ -1,0 +1,53 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Identifier> a owl:Class ;
+    rdfs:label "Identifier"@en ;
+    rdfs:label "Identificador"@es ;
+    rdfs:label "Identifiant"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/EIDRIdentifier> a owl:Class ;
+    rdfs:label "EIDR Identifier"@en ;
+    rdfs:label "EIDR Identificador"@es ;
+    rdfs:label "EIDR Identifiant"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Identifier .
+
+<https://fiafcore.org/ontology/InternalIdentifier> a owl:Class ;
+    rdfs:label "Internal Identifier"@en ;
+    rdfs:label "Identificador interno"@es ;
+    rdfs:label "Identifiant interne"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Identifier .
+
+<https://fiafcore.org/ontology/VIAFIdentifier> a owl:Class ;
+    rdfs:label "VIAF Identifier"@en ;
+    rdfs:label "VIAF Identificador"@es ;
+    rdfs:label "VIAF Identifiant"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Identifier .
+
+<https://fiafcore.org/ontology/WikidataIdentifier> a owl:Class ;
+    rdfs:label "Wikidata Identifier"@en ;
+    rdfs:label "Wikidata Identificador"@es ;
+    rdfs:label "Wikidata Identifiant"@fr ;
+    dc:source "FIAF Cataloguing Manual 1.3.1"^^xsd:string ;
+    rdfs:subClassOf fiaf:Identifier .
+
+# Datatype Property 
+
+<https://fiafcore.org/ontology/hasIdentifierValue> a owl:DatatypeProperty ;
+  rdfs:label "Has Identifier Value"@en ;
+  rdfs:label "Tiene valor de identificador"@es ;
+  rdfs:label "A une Valeur de Identifiant"@fr ;
+  dc:source "FIAF Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"^^xsd:string ;
+  rdfs:domain fiaf:Identifier ;
+  rdfs:range xsd:string .

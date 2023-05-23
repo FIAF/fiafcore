@@ -1,0 +1,57 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/Resolution> a owl:Class ;
+    rdfs:label "Resolution"@en ;
+    rdfs:label "Resolución"@es ;
+    rdfs:label "Résolution"@fr ;
+    dc:source "FIAF Cataloguing Manual 3.1.5.18"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/2K> a owl:Class ;
+    rdfs:label "2K"@en ;
+    rdfs:label "2K"@es ;
+    rdfs:label "2K"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .
+
+<https://fiafcore.org/ontology/4K> a owl:Class ;
+    rdfs:label "4K"@en ;
+    rdfs:label "4K"@es ;
+    rdfs:label "4K"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .
+
+<https://fiafcore.org/ontology/6K> a owl:Class ;
+    rdfs:label "6K"@en ;
+    rdfs:label "6K"@es ;
+    rdfs:label "6K"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .
+
+<https://fiafcore.org/ontology/8K> a owl:Class ;
+    rdfs:label "8K"@en ;
+    rdfs:label "8K"@es ;
+    rdfs:label "8K"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .
+
+<https://fiafcore.org/ontology/HighDefinition> a owl:Class ;
+    rdfs:label "High Definition"@en ;
+    rdfs:label "Alta Definición"@es ;
+    rdfs:label "Haute définition"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .
+    
+<https://fiafcore.org/ontology/StandardDefinition> a owl:Class ;
+    rdfs:label "Standard Definition"@en ;
+    rdfs:label "Definición Estándar"@es ;
+    rdfs:label "Définition standard"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.19"^^xsd:string ;
+    rdfs:subClassOf fiaf:Resolution .

@@ -1,0 +1,50 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+<https://fiafcore.org/ontology/SoundSystem> a owl:Class ;
+    rdfs:label "Sound System"@en ;
+    rdfs:label "Sistemas de sonido"@es ;
+    rdfs:label "Procédé sonore"@fr ;
+    dc:source "FIAF Cataloguing Manual 2.3.4.3.1, 3.1.5.5"^^xsd:string .
+
+# Subclasses
+
+<https://fiafcore.org/ontology/DolbySR> a owl:Class ;
+    rdfs:label "Dolby SR"@en ;
+    rdfs:label "Dolby SR"@es ;
+    rdfs:label "Dolby SR"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.13"^^xsd:string ;
+    rdfs:subClassOf fiaf:SoundSystem .
+
+<https://fiafcore.org/ontology/DolbyDigital> a owl:Class ;
+    rdfs:label "Dolby Digital"@en ;
+    rdfs:label "Dolby Digital"@es ;
+    rdfs:label "Dolby Digital"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.13"^^xsd:string ;
+    rdfs:subClassOf fiaf:SoundSystem .
+
+<https://fiafcore.org/ontology/CombinedMagneticSound> a owl:Class ;
+    rdfs:label "Combined Magnetic Sound"@en ;
+    rdfs:label "Sonido magnético combinado"@es ;
+    rdfs:label "Son magnétique combiné"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.13"^^xsd:string ;
+    rdfs:subClassOf fiaf:SoundSystem .
+
+<https://fiafcore.org/ontology/CombinedOpticalSound> a owl:Class ;
+    rdfs:label "Combined Optical Sound"@en ;
+    rdfs:label "Sonido óptico combinado"@es ;
+    rdfs:label "Son optique combiné"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.13"^^xsd:string ;
+    rdfs:subClassOf fiaf:SoundSystem .
+
+<https://fiafcore.org/ontology/VARCADuplex> a owl:Class ;
+    rdfs:label "VA RCA Duplex"@en ;
+    rdfs:label "VA RCA Duplex"@es ;
+    rdfs:label "VA RCA Duplex"@fr ;
+    dc:source "FIAF Cataloguing Manual D.7.13"^^xsd:string ;
+    rdfs:subClassOf fiaf:SoundSystem .
