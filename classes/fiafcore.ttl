@@ -5,4 +5,5 @@
 
 <https://fiafcore.org/ontology/> a owl:Ontology ;
     dc:title "FIAFcore" ;
+    owl:versionInfo "0.9 ;
     dc:creator "FIAF Cataloguing & Documentation Commission" .
