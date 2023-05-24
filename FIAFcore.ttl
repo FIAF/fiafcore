@@ -6,7 +6,8 @@
 
 <https://fiafcore.org/ontology/> a owl:Ontology ;
     dc:creator "FIAF Cataloguing & Documentation Commission" ;
-    dc:title "FIAFcore" .
+    dc:title "FIAFcore" ;
+    owl:versionInfo "0.9" .
 
 <https://fiafcore.org/ontology/1-1.5> a owl:Class ;
     rdfs:label "1-1.5%"@en,
