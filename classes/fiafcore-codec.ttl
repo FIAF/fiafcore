@@ -10,7 +10,9 @@
     rdfs:label "Codec"@en ;
     rdfs:label "Códec"@es ;
     rdfs:label "Codec"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.16, 3.1.5.17"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.16, 3.1.5.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.16, 3.1.5.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.16, 3.1.5.17"@fr .
 
 # Subclasses
 
@@ -18,55 +20,72 @@
     rdfs:label "AVC"@en ;
     rdfs:label "AVC"@es ;
     rdfs:label "AVC"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/D10> a owl:Class ;
     rdfs:label "D10"@en ;
     rdfs:label "D10"@es ;
     rdfs:label "D10"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/ProRes422HQ> a owl:Class ;
     rdfs:label "ProRes 422 (HQ)"@en ;
     rdfs:label "ProRes 422 (HQ)"@es ;
     rdfs:label "ProRes 422 (HQ)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/S10> a owl:Class ;
     rdfs:label "S10"@en ;
     rdfs:label "S10"@es ;
     rdfs:label "S10"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/JPEG2000> a owl:Class ;
     rdfs:label "JPEG2000"@en ;
     rdfs:label "JPEG2000"@es ;
     rdfs:label "JPEG2000"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/MPEG4H264AVCMainProfile> a owl:Class ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@en ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@es ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/AIFF> a owl:Class ;
     rdfs:label "AIFF"@en ;
     rdfs:label "AIFF"@es ;
     rdfs:label "AIFF"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
 <https://fiafcore.org/ontology/WAV> a owl:Class ;
     rdfs:label "WAV"@en ;
     rdfs:label "WAV"@es ;
     rdfs:label "WAV"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
+
 

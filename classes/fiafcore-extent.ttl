@@ -11,7 +11,9 @@
     rdfs:label "Extent"@en ;
     rdfs:label "Extensión"@es ;
     rdfs:label "Étendue"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5, 3.1.5.8"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5, 3.1.5.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5, 3.1.5.8"@fr .
 
 # Subclasses
 
@@ -19,119 +21,153 @@
     rdfs:label "Cartridge"@en ;
     rdfs:label "Cartucho"@es ;
     rdfs:label "Cartouche"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Cassette> a owl:Class ;
     rdfs:label "Cassette"@en ;
     rdfs:label "Casete"@es ;
     rdfs:label "Cassette"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/DigitalTape> a owl:Class ;
     rdfs:label "Digital Tape"@en ;
     rdfs:label "Cinta digital"@es ;
     rdfs:label "Bande numérique"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Disc> a owl:Class ;
     rdfs:label "Disc"@en ;
     rdfs:label "Videodisco"@es ;
     rdfs:label "Disque"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/File> a owl:Class ;
     rdfs:label "File"@en ;
     rdfs:label "Archivo electrónico"@es ;
     rdfs:label "Fichier"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Loop> a owl:Class ;
     rdfs:label "Loop"@en ;
     rdfs:label "Bucle continuo"@es ;
     rdfs:label "Boucle"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Reel> a owl:Class ;
     rdfs:label "Reel"@en ;
     rdfs:label "Carrete"@es ;
     rdfs:label "Bobine"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Roll> a owl:Class ;
     rdfs:label "Roll"@en ;
     rdfs:label "Rollo"@es ;
     rdfs:label "Rouleau"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.6"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Feet> a owl:Class ;
     rdfs:label "Feet"@en ;
     rdfs:label "Pie"@es ;
     rdfs:label "Pied"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Metres> a owl:Class ;
     rdfs:label "Metres"@en ;
     rdfs:label "Metro"@es ;
     rdfs:label "Mètre"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Gigabyte> a owl:Class ;
     rdfs:label "Gigabyte"@en ;
     rdfs:label "Gigabyte"@es ;
     rdfs:label "Gigaoctet"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Kilobyte> a owl:Class ;
     rdfs:label "Kilobyte"@en ;
     rdfs:label "Kilobyte"@es ;
     rdfs:label "Kilooctet"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Megabyte> a owl:Class ;
     rdfs:label "Megabyte"@en ;
     rdfs:label "Megabyte"@es ;
     rdfs:label "Mégaoctet"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Terabyte> a owl:Class ;
     rdfs:label "Terabyte"@en ;
     rdfs:label "Terabyte"@es ;
     rdfs:label "Téraoctet"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.2"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Hours> a owl:Class ;
     rdfs:label "Hours"@en ;
     rdfs:label "Hora"@es ;
     rdfs:label "Heures"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.3"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Minutes> a owl:Class ;
     rdfs:label "Minutes"@en ;
     rdfs:label "Minuto"@es ;
     rdfs:label "Minutes"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.3"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 <https://fiafcore.org/ontology/Seconds> a owl:Class ;
     rdfs:label "Seconds"@en ;
     rdfs:label "Segundo"@es ;
     rdfs:label "Secondes"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.3"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
 # Datatype Property 
@@ -140,6 +176,9 @@
   rdfs:label "Has Extent Value"@en ;
   rdfs:label "Tiene valor de extensión"@es ;
   rdfs:label "A une Valeur de Étendue"@fr ;
-  dc:source "FIAF Cataloguing Manual 2.3.5, 3.1.5.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5, 3.1.5.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5, 3.1.5.8"@fr ;
   rdfs:domain fiaf:Extent ;
   rdfs:range xsd:float .
+

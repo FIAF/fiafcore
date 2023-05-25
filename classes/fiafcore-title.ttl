@@ -10,7 +10,9 @@
     rdfs:label "Title"@en ;
     rdfs:label "Título"@es ;
     rdfs:label "Titre"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2, 3.1.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2, 3.1.2"@fr .
 
 # Subclasses
 
@@ -18,105 +20,135 @@
     rdfs:label "Alternative Title"@en ;
     rdfs:label "Título Alternativo"@es ;
     rdfs:label "Titre Alternatif"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4"@fr ;
     rdfs:subClassOf fiaf:Title .
 
 <https://fiafcore.org/ontology/IdentifiyingTitle> a owl:Class ;
     rdfs:label "Identifiying Title"@en ;
     rdfs:label "Título Identificador"@es ;
     rdfs:label "Titre d’identification"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.1"@fr ;
     rdfs:subClassOf fiaf:Title .
 
 <https://fiafcore.org/ontology/PreferredTitle> a owl:Class ;
     rdfs:label "Preferred Title"@en ;
     rdfs:label "Título Preferido"@es ;
     rdfs:label "Titre privilégié"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.0"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.0"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.0"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.0"@fr ;
     rdfs:subClassOf fiaf:Title .
 
 <https://fiafcore.org/ontology/SuppliedDevisedTitle> a owl:Class ;
     rdfs:label "Supplied/Devised Title"@en ;
     rdfs:label "Títulos Asignados o Construidos"@es ;
     rdfs:label "Titres forgés"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.5"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.5"@fr ;
     rdfs:subClassOf fiaf:Title .
 
 <https://fiafcore.org/ontology/TitleProper> a owl:Class ;
     rdfs:label "Title Proper"@en ;
     rdfs:label "Título propiamente dicho"@es ;
     rdfs:label "Titre propre"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.2"@fr ;
     rdfs:subClassOf fiaf:Title .
 
 <https://fiafcore.org/ontology/WorkingTitle> a owl:Class ;
     rdfs:label "Working Title"@en ;
     rdfs:label "Título operativo"@es ;
     rdfs:label "Titre de travail"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/AcquisitionTitle> a owl:Class ;
     rdfs:label "Acquisition Title"@en ;
     rdfs:label "Título de adquisición"@es ;
     rdfs:label "Titre d'acquisition"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/PreReleaseTitle> a owl:Class ;
     rdfs:label "Pre-Release Title"@en ;
     rdfs:label "Título de pre-estreno:"@es ;
     rdfs:label "Titre de pré-diffusion"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/AbbreviatedTitle> a owl:Class ;
     rdfs:label "Abbreviated Title"@en ;
     rdfs:label "Título abreviado"@es ;
     rdfs:label "Titre abrégé"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/TranslatedTitle> a owl:Class ;
     rdfs:label "Translated Title"@en ;
     rdfs:label "Título traducido:"@es ;
     rdfs:label "Titre traduit"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/TransliteratedTitle> a owl:Class ;
     rdfs:label "Transliterated Title"@en ;
     rdfs:label "Título transliterado"@es ;
     rdfs:label "Titre translittéré"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/CorrectedTitle> a owl:Class ;
     rdfs:label "Corrected Title"@en ;
     rdfs:label "Título corregido"@es ;
     rdfs:label "Titre corrigé"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/SearchTitle> a owl:Class ;
     rdfs:label "Search Title"@en ;
     rdfs:label "Título Asistencia/Búsqueda"@es ;
     rdfs:label "Aide à la recherche"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/SeriesTitle> a owl:Class ;
     rdfs:label "Series Title"@en ;
     rdfs:label "Título de seriada"@es ;
     rdfs:label "Titre de la série"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 <https://fiafcore.org/ontology/ParallelTitle> a owl:Class ;
     rdfs:label "Parallel Title"@en ;
     rdfs:label "Título paralelo"@es ;
     rdfs:label "Titre parallèle"@fr ;
-    dc:source "FIAF Cataloguing Manual A.2.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual A.2.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
 # Datatype Property 
@@ -125,6 +157,9 @@
   rdfs:label "Has Title Value"@en ;
   rdfs:label "Tiene valor de título"@es ;
   rdfs:label "A une Valeur de Titre"@fr ;
-  dc:source "FIAF Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2, 3.1.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2, 3.1.2"@fr ;
   rdfs:domain fiaf:Title ;
   rdfs:range xsd:string .
+

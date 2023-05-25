@@ -10,7 +10,9 @@
     rdfs:label "Language"@en ;
     rdfs:label "Lengua"@es ;
     rdfs:label "Langue"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.3"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.3"@fr .
 
 # Subclasses
 
@@ -1301,3 +1303,4 @@
         "Zoulou"@fr ;
     dc:source "ISO 639-1"^^xsd:string ;
     rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+

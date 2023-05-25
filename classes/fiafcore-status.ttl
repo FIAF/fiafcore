@@ -10,7 +10,9 @@
     rdfs:label "Status"@en ;
     rdfs:label "Estado"@es ;
     rdfs:label "Statut"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.2"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.2"@fr .
 
 # Subclasses
 
@@ -18,40 +20,53 @@
     rdfs:label "Accessioned"@en ;
     rdfs:label "Adjudicado"@es ;
     rdfs:label "Intégré à la collection"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
 
 <https://fiafcore.org/ontology/Master> a owl:Class ;
     rdfs:label "Master"@en ;
     rdfs:label "Máster"@es ;
     rdfs:label "Master"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
 
 <https://fiafcore.org/ontology/OnLoan> a owl:Class ;
     rdfs:label "On Loan"@en ;
     rdfs:label "En préstamo"@es ;
     rdfs:label "En prêt"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
 
 <https://fiafcore.org/ontology/Removed> a owl:Class ;
     rdfs:label "Removed"@en ;
     rdfs:label "Removido"@es ;
     rdfs:label "Retiré de la collection"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
 
 <https://fiafcore.org/ontology/StatusPending> a owl:Class ;
     rdfs:label "Status pending"@en ;
     rdfs:label "Estado pendiente"@es ;
     rdfs:label "Statut en attente"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
 
 <https://fiafcore.org/ontology/Viewing> a owl:Class ;
     rdfs:label "Viewing"@en ;
     rdfs:label "Ver"@es ;
     rdfs:label "Visionnage"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.3"@fr ;
     rdfs:subClassOf fiaf:Status .
+

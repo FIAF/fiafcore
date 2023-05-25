@@ -10,7 +10,9 @@
     rdfs:label "Source Software"@en ;
     rdfs:label "Software Fuente"@es ;
     rdfs:label "Logiciel"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.22"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.22"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.22"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.22"@fr .
 
 # Subclasses
 
@@ -18,5 +20,8 @@
     rdfs:label "FFmpeg"@en ;   
     rdfs:label "FFmpeg"@es ;   
     rdfs:label "FFmpeg"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.22"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.22"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.22"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.22"@fr ;
     rdfs:subClassOf fiaf:SourceSoftware .
+

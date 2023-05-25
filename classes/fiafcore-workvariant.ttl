@@ -10,7 +10,9 @@
     rdfs:label "Work/Variant"@en ;
     rdfs:label "Obra/Variante"@es ;
     rdfs:label "l'Œuvre/la Variante"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.0"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 1.0"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.0"@fr .
 
 # Subclasses
 
@@ -18,28 +20,36 @@
     rdfs:label "Analytic"@en ;
     rdfs:label "Analítica"@es ;
     rdfs:label "Analytique"@fr ;
-    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
     rdfs:subClassOf fiaf:WorkVariant .
 
 <https://fiafcore.org/ontology/Collection> a owl:Class ;
     rdfs:label "Collection"@en ;
     rdfs:label "Colección"@es ;
     rdfs:label "Collection"@fr ;
-    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
     rdfs:subClassOf fiaf:WorkVariant .
 
 <https://fiafcore.org/ontology/Monographic> a owl:Class ;
     rdfs:label "Monographic"@en ;
     rdfs:label "Monográfico"@es ;
     rdfs:label "Monographie"@fr ;
-    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
     rdfs:subClassOf fiaf:WorkVariant .
 
 <https://fiafcore.org/ontology/Serial> a owl:Class ;
     rdfs:label "Serial"@en ;
     rdfs:label "Serie"@es ;
     rdfs:label "Série"@fr ;
-    dc:source "FIAF Cataloguing Manual D.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
     rdfs:subClassOf fiaf:WorkVariant .
 
 # Object Properties
@@ -48,7 +58,9 @@
     rdfs:label "Has Country"@en ;
     rdfs:label "Tiene un País"@es ;
     rdfs:label "A un Pays"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.3.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Country .
 
@@ -56,7 +68,9 @@
     rdfs:label "Has Event"@en ;
     rdfs:label "Tiene un Evento"@es ;
     rdfs:label "A un Évènement"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item fiaf:Carrier)
     ] ;
@@ -66,7 +80,9 @@
     rdfs:label "Has Genre"@en ;
     rdfs:label "Tiene un Género"@es ;
     rdfs:label "A un Genre"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Genre .
 
@@ -74,7 +90,9 @@
     rdfs:label "Has Form"@en ;
     rdfs:label "Tiene una Forma"@es ;
     rdfs:label "A une Forme"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Form .
 
@@ -82,7 +100,9 @@
     rdfs:label "Has Identifier"@en ;     
     rdfs:label "Tiene un Identificador"@es ;
     rdfs:label "A un Identifiant"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.1, 2.3.1, 3.1.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.1, 2.3.1, 3.1.1"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item)
     ] ;
@@ -92,7 +112,9 @@
     rdfs:label "Has Manifestation"@en ;
     rdfs:label "Tiene una Manifestación"@es ;
     rdfs:label "A une Manifestation"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.6"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Manifestation .
 
@@ -100,7 +122,9 @@
     rdfs:label "Has Subject"@en ;
     rdfs:label "Tiene una Materia"@es ;
     rdfs:label "A un Sujet"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Subject .
 
@@ -108,7 +132,9 @@
     rdfs:label "Has Title"@en ;
     rdfs:label "Tiene un Título"@es ;
     rdfs:label "A un Titre"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2.1, 3.1.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2.1, 3.1.2"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item)
     ] ;
@@ -118,7 +144,9 @@
     rdfs:label "Has Variant Type"@en ;
     rdfs:label "Tiene un Tipo de Variante"@es ;
     rdfs:label "A un Type de Variante"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.2.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.2.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.2.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.2.2"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:VariantType .
 
@@ -126,6 +154,9 @@
     rdfs:label "Has Work/Variant"@en ;
     rdfs:label "Tiene una Obra/Variante"@es ;
     rdfs:label "A une Œuvre/Variante"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.5"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.5"@fr ;
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:WorkVariant .
+

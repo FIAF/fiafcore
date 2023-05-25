@@ -10,7 +10,9 @@
     rdfs:label "Broadcast Standard"@en ;
     rdfs:label "Norma de transmisión de video"@es ;
     rdfs:label "Standard de télédiffusion"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.10"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr .
 
 # Subclasses
 
@@ -18,19 +20,26 @@
     rdfs:label "NTSC"@en ;
     rdfs:label "NTSC"@es ;
     rdfs:label "NTSC"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:subClassOf fiaf:BroadcastStandard .
 
 <https://fiafcore.org/ontology/PAL> a owl:Class ;
     rdfs:label "PAL"@en ;
     rdfs:label "PAL"@es ;
     rdfs:label "PAL"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:subClassOf fiaf:BroadcastStandard .
 
 <https://fiafcore.org/ontology/SECAM> a owl:Class ;
     rdfs:label "SECAM"@en ;
     rdfs:label "SECAM"@es ;
     rdfs:label "SECAM"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:subClassOf fiaf:BroadcastStandard .
+

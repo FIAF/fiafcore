@@ -10,7 +10,9 @@
     rdfs:label "Line Standard"@en ;
     rdfs:label "Norma de Líneas"@es ;
     rdfs:label "Lignes de balayage"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.19"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.19"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.19"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.19"@fr .
 
 # Subclasses
 
@@ -18,33 +20,44 @@
     rdfs:label "1080"@en ;
     rdfs:label "1080"@es ;
     rdfs:label "1080"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.21"@fr ;
     rdfs:subClassOf fiaf:LineStandard .
 
 <https://fiafcore.org/ontology/405> a owl:Class ;
     rdfs:label "405"@en ;
     rdfs:label "405"@es ;
     rdfs:label "405"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.21"@fr ;
     rdfs:subClassOf fiaf:LineStandard .
 
 <https://fiafcore.org/ontology/525> a owl:Class ;
     rdfs:label "525"@en ;
     rdfs:label "525"@es ;
     rdfs:label "525"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.21"@fr ;
     rdfs:subClassOf fiaf:LineStandard .
 
 <https://fiafcore.org/ontology/625> a owl:Class ;
     rdfs:label "625"@en ;
     rdfs:label "625"@es ;
     rdfs:label "625"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.21"@fr ;
     rdfs:subClassOf fiaf:LineStandard .
 
 <https://fiafcore.org/ontology/720> a owl:Class ;
     rdfs:label "720"@en ;
     rdfs:label "720"@es ;
     rdfs:label "720"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.21"@fr ;
     rdfs:subClassOf fiaf:LineStandard .
+

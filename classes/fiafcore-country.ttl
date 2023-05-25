@@ -10,7 +10,9 @@
     rdfs:label "Country"@en ;
     rdfs:label "País"@es ;
     rdfs:label "Pays"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.3.3"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr .
 
 # Subclasses
 
@@ -1756,3 +1758,4 @@
         "Åland, Îles"@fr ;
     dc:source "ISO 3166-1"^^xsd:string ;
     rdfs:subClassOf <https://fiafcore.org/ontology/Country> .
+
