@@ -10,4 +10,7 @@
     rdfs:label "Location"@en ;
     rdfs:label "Ubicación"@es ;
     rdfs:label "Location"@fr ;
-    dc:source "FIAF Cataloguing Manual D.4.1"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual D.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.4.1"@fr .
+

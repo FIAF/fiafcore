@@ -10,7 +10,9 @@
     rdfs:label "Source Device"@en ;
     rdfs:label "Dispositivo para reproducción"@es ;
     rdfs:label "Périphérique de lecture"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.21"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.21"@fr .
 
 # Subclasses
 
@@ -18,19 +20,26 @@
     rdfs:label "DVSI"@en ;
     rdfs:label "DVSI"@es ;
     rdfs:label "DVSI"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.20"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.20"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.20"@fr ;
     rdfs:subClassOf fiaf:SourceDevice .
 
 <https://fiafcore.org/ontology/HDCAMSRW55002> a owl:Class ;
     rdfs:label "HDCAM SRW5500/2"@en ;
     rdfs:label "HDCAM SRW5500/2"@es ;
     rdfs:label "HDCAM SRW5500/2"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.20"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.20"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.20"@fr ;
     rdfs:subClassOf fiaf:SourceDevice .
 
 <https://fiafcore.org/ontology/VT20> a owl:Class ;
     rdfs:label "VT20"@en ;
     rdfs:label "VT20"@es ;
     rdfs:label "VT20"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.20"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.20"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.20"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.20"@fr ;
     rdfs:subClassOf fiaf:SourceDevice .
+

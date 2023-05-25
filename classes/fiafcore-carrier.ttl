@@ -11,3 +11,4 @@
     rdfs:label "Portador"@es ;
     rdfs:label "Article"@fr .
     
+

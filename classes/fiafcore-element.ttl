@@ -10,7 +10,9 @@
     rdfs:label "Element"@en ;
     rdfs:label "Elemento"@es ;
     rdfs:label "Nature"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.4"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.4"@fr .
 
 # Subclasses
 
@@ -18,96 +20,125 @@
     rdfs:label "Colour Positive"@en ;
     rdfs:label "Positivo color"@es ;
     rdfs:label "Positif couleur"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/ColourNegative> a owl:Class ;
     rdfs:label "Colour Negative"@en ;
     rdfs:label "Negativo color"@es ;
     rdfs:label "Négatif couleur"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/CopperTonedPositive> a owl:Class ;
     rdfs:label "Copper Toned Positive"@en ;
     rdfs:label "Positivo Copper Toned"@es ;
     rdfs:label "Colour Positive"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/CyanMatrix> a owl:Class ;
     rdfs:label "Cyan Matrix"@en ;
     rdfs:label "Matriz Cian"@es ;
     rdfs:label "Séparation monochromatique"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/DirectBWPositive> a owl:Class ;
     rdfs:label "Direct BW Positive"@en ;
     rdfs:label "Positivo Directo en Blanco y Negro"@es ;
     rdfs:label "Positif inversible noir et blanc"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/OriginalNegative> a owl:Class ;
     rdfs:label "Original negative"@en ;
     rdfs:label "Negativo original"@es ;
     rdfs:label "Négatif original"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
 
 <https://fiafcore.org/ontology/DuplicateNegative> a owl:Class ;
     rdfs:label "Duplicate negative"@en ;
     rdfs:label "Negativo duplicado"@es ;
     rdfs:label "Internégatif"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/Positive> a owl:Class ;
     rdfs:label "Positive"@en ;
     rdfs:label "Positivo"@es ;
     rdfs:label "Positif"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
 
 <https://fiafcore.org/ontology/OriginalPositiveReversalFilm> a owl:Class ;
     rdfs:label "Original positive (reversal film)"@en ;
     rdfs:label "Positivo original (reversible)"@es ;
     rdfs:label "Positif original (film inversible)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/DuplicatePositive> a owl:Class ;
     rdfs:label "Duplicate positive"@en ;
     rdfs:label "Positivo duplicado"@es ;
     rdfs:label "Interpositif"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/Lavender> a owl:Class ;
     rdfs:label "Lavender"@en ;
     rdfs:label "Imagen Azul Lavanda"@es ;
     rdfs:label "Lavande"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/ImageNegative> a owl:Class ;
     rdfs:label "Image negative"@en ;
     rdfs:label "Negativo de imagen"@es ;
     rdfs:label "Négatif image"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/SoundNegative> a owl:Class ;
     rdfs:label "Sound negative"@en ;
     rdfs:label "Negativo de sonido"@es ;
     rdfs:label "Négatif son"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
     
 <https://fiafcore.org/ontology/DCP> a owl:Class ;
     rdfs:label "DCP"@en ;
     rdfs:label "DCP"@es ;
     rdfs:label "DCP"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.8"@fr ;
     rdfs:subClassOf fiaf:Element .
+

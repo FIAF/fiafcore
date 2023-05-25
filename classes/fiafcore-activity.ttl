@@ -10,7 +10,9 @@
     rdfs:label "Activity"@en ;
     rdfs:label "Actividad"@es ;
     rdfs:label "Activité"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1.1"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr .
 
 # Subclasses
 
@@ -1180,84 +1182,108 @@
     rdfs:label "Manifestation Activity"@en ;
     rdfs:label "Manifestación Actividad"@es ;
     rdfs:label "Activité de manifestation"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.4.1.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.4.1.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.4.1.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.4.1.1"@fr ;
     rdfs:subClassOf fiaf:Activity .
 
 <https://fiafcore.org/ontology/DistributorTheatrical> a owl:Class ;
     rdfs:label "Distributor (theatrical)"@en ,
         "Distribuidor (en cines)"@es ,
         "Distributeur (cinéma)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.1"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/DistributorNonTheatrical> a owl:Class ;
     rdfs:label "Distributor (non-theatrical)"@en ,
         "Distribuidor (no comercial)"@es ,
         "Distributeur (non commercial)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.2"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/Broadcaster> a owl:Class ;
     rdfs:label "Broadcaster"@en ,
         "Emisor"@es ,
         "Télédiffuseur"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.3"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/Publisher> a owl:Class ;
     rdfs:label "Publisher"@en ,
         "Editor"@es ,
         "Éditeur"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.4"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/Manufacturer> a owl:Class ;
     rdfs:label "Manufacturer"@en ,
         "Fabricante"@es ,
         "Fabricant"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.5"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.5"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/AgentResponsibleForPreservation> a owl:Class ;
     rdfs:label "Agent responsible for preservation"@en ,
         "Agente responsable de la preservación"@es ,
         "Agent responsable de la conservation"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.6"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/AgentResponsibleForReproductionOrTransfer> a owl:Class ;
     rdfs:label "Agent responsible for reproduction or transfer"@en ,
         "Agente responsable de la reproducción o transferencia"@es ,
         "Agent responsable de la reproduction ou du transfert"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.7"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.7"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.7"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.7"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
     
 <https://fiafcore.org/ontology/AgentResponsibleForTheArchivalAvailability> a owl:Class ;
     rdfs:label "Agent responsible for the archival availability"@en ,
         "Agente responsable de la disponibilidad (Archivo)"@es ,
         "Agent responsable de la mise à disposition publique"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.8"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/AgentResponsibleForTheMereAvailability> a owl:Class ;
     rdfs:label "Agent responsible for the mere availability"@en ,
         "Agente responsable de la disponibilidad simple"@es ,
         "Agent responsable de la mise à disposition privée"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.9"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.9"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.9"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.9"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/AgentUnclearOrUndetermined> a owl:Class ;
     rdfs:label "Agent unclear or undetermined"@en ,
         "Agente incierto o indeterminado"@es ,
         "Agent non défini avec certitude ou indéterminé"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.10"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
 
 <https://fiafcore.org/ontology/AgentNotIdentified> a owl:Class ;
     rdfs:label "Agent not identified"@en ,
         "Agente no identificado"@es ,
         "Agent non identifié"@fr ;
-    dc:source "FIAF Cataloguing Manual D.8.11"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.8.11"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.8.11"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.8.11"@fr ;
     rdfs:subClassOf fiaf:ManifestationActivity .
 
 # Object Properties
@@ -1266,6 +1292,9 @@
     rdfs:label "Has Agent"@en ;
     rdfs:label "Tiene un Agente"@es ;
     rdfs:label "A un Agent"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1, 2.4.1, 3.3.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1, 2.4.1, 3.3.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1, 2.4.1, 3.3.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1, 2.4.1, 3.3.1"@fr ;
     rdfs:domain fiaf:Activity ;
     rdfs:range fiaf:Agent .
+

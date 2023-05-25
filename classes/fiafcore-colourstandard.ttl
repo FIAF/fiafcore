@@ -10,7 +10,9 @@
     rdfs:label "Colour Standard"@en ;
     rdfs:label "Estándar de Color"@es ;
     rdfs:label "Procédé couleur"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.4"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.4"@fr .
 
 # Subclasses
 
@@ -18,68 +20,89 @@
     rdfs:label "Anscocolor"@en ;
     rdfs:label "Anscocolor"@es ;
     rdfs:label "Anscocolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Eastmancolor> a owl:Class ;
     rdfs:label "Eastmancolor"@en ;
     rdfs:label "Eastmancolor"@es ;
     rdfs:label "Eastmancolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Ferraniacolor> a owl:Class ;
     rdfs:label "Ferraniacolor"@en ;
     rdfs:label "Ferraniacolor"@es ;
     rdfs:label "Ferraniacolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Fujicolor> a owl:Class ;
     rdfs:label "Fujicolor"@en ;
     rdfs:label "Fujicolor"@es ;
     rdfs:label "Fujicolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Kinemacolor> a owl:Class ;
     rdfs:label "Kinemacolor"@en ;
     rdfs:label "Kinemacolor"@es ;
     rdfs:label "Kinemacolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Kodachrome> a owl:Class ;
     rdfs:label "Kodachrome"@en ;
     rdfs:label "Kodachrome"@es ;
     rdfs:label "Kodachrome"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Pathécolor> a owl:Class ;
     rdfs:label "Pathécolor"@en ;
     rdfs:label "Pathécolor"@es ;
     rdfs:label "Pathécolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/RGB> a owl:Class ;
     rdfs:label "RGB"@en ;
     rdfs:label "RGB"@es ;
     rdfs:label "RGB"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/Technicolor> a owl:Class ;
     rdfs:label "Technicolor"@en ;
     rdfs:label "Technicolor"@es ;
     rdfs:label "Technicolor"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
 <https://fiafcore.org/ontology/YUV> a owl:Class ;
     rdfs:label "YUV"@en ;
     rdfs:label "YUV"@es ;
     rdfs:label "YUV"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
+

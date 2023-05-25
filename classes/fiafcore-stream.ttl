@@ -38,7 +38,9 @@
     rdfs:label "Has Bit Depth"@en ;
     rdfs:label "Tiene profundidad de bits"@es ;
     rdfs:label "A une Profondeur de bit"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.20"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.20"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.20"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.20"@fr ;
     rdfs:domain fiaf:Stream ;
     rdfs:range fiaf:BitDepth .
 
@@ -46,6 +48,9 @@
     rdfs:label "Has Codec"@en ;
     rdfs:label "Tiene códec"@es ;
     rdfs:label "A un Codec"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.16, 3.1.5.17"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.16, 3.1.5.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.16, 3.1.5.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.16, 3.1.5.17"@fr ;
     rdfs:domain fiaf:Stream ;
     rdfs:range fiaf:Codec .
+

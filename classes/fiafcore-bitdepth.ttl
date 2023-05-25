@@ -10,7 +10,9 @@
     rdfs:label "Bit Depth"@en ;
     rdfs:label "Cantidad de Bits"@es ;
     rdfs:label "Profondeur de bit"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.20"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.20"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.20"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.20"@fr .
 
 # Subclasses
 
@@ -18,26 +20,35 @@
     rdfs:label "10bit"@en ;
     rdfs:label "10bit"@es ;
     rdfs:label "10bit"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
 <https://fiafcore.org/ontology/16bit> a owl:Class ;
     rdfs:label "16bit"@en ;
     rdfs:label "16bit"@es ;
     rdfs:label "16bit"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
 <https://fiafcore.org/ontology/24bit> a owl:Class ;
     rdfs:label "24bit"@en ;
     rdfs:label "24bit"@es ;
     rdfs:label "24bit"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
 <https://fiafcore.org/ontology/32bit> a owl:Class ;
     rdfs:label "32bit"@en ;
     rdfs:label "32bit"@es ;
     rdfs:label "32bit"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.17"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.17"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.17"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
+

@@ -10,7 +10,9 @@
     rdfs:label "Agent"@en ;
     rdfs:label "Agente"@es ;
     rdfs:label "Agent"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr .
 
 # Subclasses
 
@@ -18,28 +20,36 @@
     rdfs:label "Corporate Body"@en ;
     rdfs:label "Entidad Corporativa"@es ;
     rdfs:label "Personne Morale"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
     rdfs:subClassOf fiaf:Agent .
 
 <https://fiafcore.org/ontology/Family> a owl:Class ;
     rdfs:label "Family"@en ;
     rdfs:label "Familia"@es ;
     rdfs:label "Famille"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
     rdfs:subClassOf fiaf:Agent .
 
 <https://fiafcore.org/ontology/Person> a owl:Class ;
     rdfs:label "Person"@en ;
     rdfs:label "Persona"@es ;
     rdfs:label "Personne"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
     rdfs:subClassOf fiaf:Agent .
 
 <https://fiafcore.org/ontology/PersonGroup> a owl:Class ;
     rdfs:label "Person Group"@en ;
     rdfs:label "Grupo de personas"@es ;
     rdfs:label "Groupe de Personnes"@fr ;
-    dc:source "FIAF Cataloguing Manual 1.4.1"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
     rdfs:subClassOf fiaf:Agent .
 
 # Individuals
@@ -513,3 +523,4 @@
         <https://fiafcore.org/ontology/CorporateBody> ;
     rdfs:label "Österreichisches Filmmuseum"@en ;
     dc:source "https://www.fiafnet.org/pages/Community/Members.html"^^xsd:string .
+

@@ -10,7 +10,9 @@
     rdfs:label "Sound Characteristic"@en ;
     rdfs:label "Características de sonido"@es ;
     rdfs:label "Caractéristiques sonores"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.3, 3.1.5.5"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.3, 3.1.5.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3, 3.1.5.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.3, 3.1.5.5"@fr .
 
 # Subclasses
 
@@ -18,56 +20,72 @@
     rdfs:label "Sound"@en ;
     rdfs:label "Sonido"@es ;
     rdfs:label "Sonore"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/Silent> a owl:Class ;
     rdfs:label "Silent"@en ;
     rdfs:label "Silente"@es ;
     rdfs:label "Non pisté"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/Mute> a owl:Class ;
     rdfs:label "Mute"@en ;
     rdfs:label "Mudo"@es ;
     rdfs:label "Muet"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/Combined> a owl:Class ;
     rdfs:label "Combined"@en ;
     rdfs:label "Combinado"@es ;
     rdfs:label "Combiné"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/CombinedAsMute> a owl:Class ;
     rdfs:label "Combined as Mute"@en ;
     rdfs:label "Combinado con Mudo"@es ;
     rdfs:label "Muet Combiné"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/CombinedAsSound> a owl:Class ;
     rdfs:label "Combined as Sound"@en ;
     rdfs:label "Combinado con Sonido"@es ;
     rdfs:label "Son Combiné"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/MixedSound> a owl:Class ;
     rdfs:label "Mixed Sound"@en ;
     rdfs:label "Mixto"@es ;
     rdfs:label "Son Mixé"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 <https://fiafcore.org/ontology/Temporary> a owl:Class ;
     rdfs:label "Temporary"@en ;
     rdfs:label "Temporario"@es ;
     rdfs:label "Temporaire"@fr ;
-    dc:source "FIAF Cataloguing Manual D.7.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
 # Object Properties
@@ -76,7 +94,9 @@
     rdfs:label "Has Sound Fixation"@en ;
     rdfs:label "Tiene fijación de sonido"@es ;
     rdfs:label "A une Fixation du Son"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.3.2, 3.1.5.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.3.2, 3.1.5.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3.2, 3.1.5.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.3.2, 3.1.5.4"@fr ;
     rdfs:domain fiaf:SoundCharacteristic ;
     rdfs:range fiaf:SoundFixation .
 
@@ -84,6 +104,9 @@
     rdfs:label "Has Sound System"@en ;
     rdfs:label "Tiene sistema de sonido"@es ;
     rdfs:label "A un Procédé Sonore"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.3.1, 3.1.5.5"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.3.1, 3.1.5.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3.1, 3.1.5.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.3.1, 3.1.5.5"@fr ;
     rdfs:domain fiaf:SoundCharacteristic ;
     rdfs:range fiaf:SoundSystem .
+

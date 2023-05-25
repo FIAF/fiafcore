@@ -10,7 +10,9 @@
     rdfs:label "Item"@en ;
     rdfs:label "Ítem"@es ;
     rdfs:label "Item"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.0"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 3.0"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.0"@fr .
 
 # Object Properties
     
@@ -18,7 +20,9 @@
     rdfs:label "Has Base"@en ;
     rdfs:label "Tiene Base"@es ;
     rdfs:label "A une Base"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.13"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.13"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.13"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.13"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Base .
     
@@ -26,7 +30,9 @@
     rdfs:label "Has Broadcast Standard"@en ;
     rdfs:label "Tiene Norma de Emisión"@es ;
     rdfs:label "A un Standard de Télédiffusion"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.10"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:BroadcastStandard .
     
@@ -41,7 +47,9 @@
     rdfs:label "Has Colour Characteristic"@en ;
     rdfs:label "Tiene una característica de color"@es ;
     rdfs:label "A une Caractéristique de couleur"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.4, 3.1.5.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.4, 3.1.5.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.4, 3.1.5.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.4, 3.1.5.6"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:Manifestation fiaf:Item)
     ] ;
@@ -51,7 +59,9 @@
     rdfs:label "Is Element"@en ;
     rdfs:label "Es Elemento"@es ;
     rdfs:label "Est de Nature"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.4"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.4"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.4"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.4"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Element .
     
@@ -59,7 +69,9 @@
     rdfs:label "Has Extent"@en ;
     rdfs:label "Tiene una Extensión"@es ;
     rdfs:label "A une Étendue"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.5, 3.1.5.8"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5, 3.1.5.8"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5, 3.1.5.8"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:Manifestation fiaf:Item)
     ] ;
@@ -69,7 +81,9 @@
     rdfs:label "Has Format"@en ;
     rdfs:label "Tiene un Formato"@es ;
     rdfs:label "A un Format"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4, 3.1.5"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4, 3.1.5"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4, 3.1.5"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4, 3.1.5"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:Manifestation fiaf:Item)
     ] ;
@@ -79,7 +93,9 @@
     rdfs:label "Has Frame Rate"@en ;
     rdfs:label "Tiene Velocidad de Cuadros"@es ;
     rdfs:label "A le Nombre d’images par seconde"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.12"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.12"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.12"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.12"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:FrameRate .
 
@@ -87,7 +103,9 @@
     rdfs:label "Has Holding Institution"@en ;
     rdfs:label "A una institución de cartera"@es ;
     rdfs:label "A un Établissement détenteur"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.3"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Institution .
     
@@ -95,7 +113,9 @@
     rdfs:label "Has Image Characteristic"@en ;
     rdfs:label "Tiene una característica de imagen"@es ;
     rdfs:label "A une Caractéristique d'image"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.2, 3.1.5.9"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.2, 3.1.5.9"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.2, 3.1.5.9"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.2, 3.1.5.9"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:Manifestation fiaf:Item)
     ] ;
@@ -105,7 +125,9 @@
     rdfs:label "Has Line Standard"@en ;
     rdfs:label "Tiene Norma de Líneas"@es ;
     rdfs:label "A des Lignes de balayage"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.19"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.19"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.19"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.19"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:LineStandard .
     
@@ -113,7 +135,9 @@
     rdfs:label "Has Resolution"@en ;
     rdfs:label "Tiene Resolución"@es ;
     rdfs:label "A une Résolution"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.18"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.18"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.18"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.18"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Resolution .
     
@@ -121,7 +145,9 @@
     rdfs:label "Has Sound Characteristic"@en ;
     rdfs:label "Tiene características de sonido"@es ;
     rdfs:label "A une Caractéristique de son"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.4.3, 3.1.5.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.4.3, 3.1.5.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3, 3.1.5.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.4.3, 3.1.5.3"@fr ;
     rdfs:domain [
         owl:unionOf (fiaf:Manifestation fiaf:Item)
     ] ;
@@ -131,7 +157,9 @@
     rdfs:label "Has Source Device"@en ;
     rdfs:label "Tiene Dispositivo para reproducción"@es ;
     rdfs:label "A un Périphérique de lecture"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.21"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.21"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.21"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.21"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:SourceDevice .
     
@@ -139,7 +167,9 @@
     rdfs:label "Has Source Software"@en ;
     rdfs:label "Tiene Software Fuente"@es ;
     rdfs:label "A un Logiciel"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.22"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.22"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.22"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.22"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:SourceSoftware .
 
@@ -147,7 +177,9 @@
     rdfs:label "Has Status"@en ;
     rdfs:label "Tiene Estado"@es ;
     rdfs:label "A un Statut"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.2"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.2"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Status .
 
@@ -155,7 +187,9 @@
     rdfs:label "Has Stock"@en ;
     rdfs:label "Tiene Stock"@es ;
     rdfs:label "A une Marque du support"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.14"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.14"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.14"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.14"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Stock .
 
@@ -163,7 +197,9 @@
     rdfs:label "Has Stream"@en ;
     rdfs:label "Tiene Flujo"@es ;
     rdfs:label "A un Flux"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.16"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.16"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.16"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.16"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Stream .
 
@@ -171,7 +207,10 @@
     rdfs:label "Has Transfer Speed"@en ;
     rdfs:label "Tiene velocidad de transferencia"@es ;
     rdfs:label "A une Vitesse de transfert"@fr ;
-    dc:source "FIAF Cataloguing Manual 3.1.5.23"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.23"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.23"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.23"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:FrameRate .
  
+

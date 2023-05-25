@@ -10,7 +10,9 @@
     rdfs:label "Language Usage"@en ;
     rdfs:label "Uso de lenguas"@es ;
     rdfs:label "Utilisation des Langues"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.3.2"^^xsd:string .
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.3.2"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3.2"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.3.2"@fr .
 
 # Subclasses
 
@@ -18,77 +20,99 @@
     rdfs:label "Dialogue language(s)"@en ;
     rdfs:label "Idioma(s) de diálogo(s)"@es ;
     rdfs:label "Langue(s) des dialogues"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
 <https://fiafcore.org/ontology/NoDialogue> a owl:Class ;
     rdfs:label "No Dialogue"@en ;
     rdfs:label "Sin diálogo"@es ;
     rdfs:label "Sans dialogue"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
 <https://fiafcore.org/ontology/SignedLanguage> a owl:Class ;
     rdfs:label "Signed Language"@en ;
     rdfs:label "Idiomade señas"@es ;
     rdfs:label "Langue(s) des signes"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
 <https://fiafcore.org/ontology/SpokenLanguage> a owl:Class ;
     rdfs:label "Spoken Language"@en ;
     rdfs:label "Idioma hablado"@es ;
     rdfs:label "Langue(s) parlée(s)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
 <https://fiafcore.org/ontology/SungLanguage> a owl:Class ;
     rdfs:label "Sung Language"@en ;
     rdfs:label "Idioma cantado"@es ;
     rdfs:label "Langue(s) chantée(s)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
 <https://fiafcore.org/ontology/LanguagesOfAccompanyingMaterial> a owl:Class ;
     rdfs:label "Language(s) of accompanying material"@en ;
     rdfs:label "Idioma(s) del material(es) acompañante(s)"@es ;
     rdfs:label "Langue(s) du matériel d'accompagnement"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
 <https://fiafcore.org/ontology/LanguagesOfSummariesOnContainers> a owl:Class ;
     rdfs:label "Language(s) of summaries on containers"@en ;
     rdfs:label "Idioma(s) del resúmen(es) en el envase"@es ;
     rdfs:label "Langue(s) des résumés sur les contenants"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
 <https://fiafcore.org/ontology/WrittenLanguages> a owl:Class ;
     rdfs:label "Written Languages"@en ;
     rdfs:label "Idioma(s) escrito(s)"@es ;
     rdfs:label "Langue(s) écrite(s)"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
 <https://fiafcore.org/ontology/Captions> a owl:Class ;
     rdfs:label "Captions"@en ;
     rdfs:label "Subtítulos especiales"@es ;
     rdfs:label "Synthés"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:WrittenLanguages .
 
 <https://fiafcore.org/ontology/Intertitles> a owl:Class ;
     rdfs:label "Intertitles"@en ;
     rdfs:label "Intertítulos"@es ;
     rdfs:label "Intertitres"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:WrittenLanguages .
 
 <https://fiafcore.org/ontology/Subtitles> a owl:Class ;
     rdfs:label "Subtitles"@en ;
     rdfs:label "Subtítulos"@es ;
     rdfs:label "Sous-titres"@fr ;
-    dc:source "FIAF Cataloguing Manual D.6"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.6"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.6"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:WrittenLanguages .
 
 # Object Properties
@@ -97,6 +121,9 @@
     rdfs:label "Has Language"@en ;
     rdfs:label "Tiene lengua"@es ;
     rdfs:label "A une Langue"@fr ;
-    dc:source "FIAF Cataloguing Manual 2.3.3"^^xsd:string ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.3"@fr ;
     rdfs:domain fiaf:LanguageUsage ;
     rdfs:range fiaf:Language .
+
