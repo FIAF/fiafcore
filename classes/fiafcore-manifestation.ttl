@@ -12,7 +12,8 @@
     rdfs:label "Manifestation"@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 2.0"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.0"@es ;
-    dc:source "Manuel de catalogage des images animées de la FIAF 2.0"@fr .
+    dc:source "Manuel de catalogage des images animées de la FIAF 2.0"@fr ;
+    owl:disjointWith fiaf:WorkVariant .
 
 # Subclasses
 
