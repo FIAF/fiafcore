@@ -448,7 +448,7 @@
     dc:source "FIAF Moving Image Cataloguing Manual D.4.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.4.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.1"@fr ;
-    rdfs:domain fiaf:Event ;
+    rdfs:domain fiaf:PublicationEvent ;
     rdfs:range fiaf:Location .
 
 # Datatype Properties
