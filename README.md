@@ -4,13 +4,7 @@
 
 ### Primary classes
 
-[Work/Variant](https://fiafcore.org/ontology/WorkVariant)     
-[Manifestation](https://fiafcore.org/ontology/Manifestation)    
-[Item](https://fiafcore.org/ontology/Item)     
-[Carrier](https://fiafcore.org/ontology/Carrier)     
-[Event](https://fiafcore.org/ontology/Event)     
-[Activity](https://fiafcore.org/ontology/Activity)     
-[Agent](https://fiafcore.org/ontology/Agent)
+![''](https://raw.githubusercontent.com/FIAF/FIAFcore-docs/a9906da62aa77949984b50befeceae73f0b0a238/primary_class_diagram.png)
 
 ### Resources
 
