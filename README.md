@@ -8,6 +8,7 @@
 
 ### Resources
 
+[Turtle](https://raw.githubusercontent.com/FIAF/FIAFcore/main/FIAFcore.ttl)
 [Documentation](https://fiafcore.org/)      
 [WebVOWL](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/FIAF/FIAFcore/main/FIAFcore.ttl)
 
