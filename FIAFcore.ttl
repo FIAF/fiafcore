@@ -9,7 +9,7 @@
     dc:creator "FIAF Cataloguing & Documentation Commission" ;
     dc:title "FIAFcore" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    owl:versionInfo "0.9" .
+    owl:versionInfo "1.0" .
 
 <https://fiafcore.org/ontology/1-1.5> a owl:Class ;
     rdfs:label "1-1.5%"@en,
