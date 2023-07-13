@@ -6,7 +6,7 @@
 
 <https://fiafcore.org/ontology/> a owl:Ontology ;
     dc:title "FIAFcore" ;
-    owl:versionInfo "0.9" ;
+    owl:versionInfo "1.0" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
     dc:creator "FIAF Cataloguing & Documentation Commission" .
 
