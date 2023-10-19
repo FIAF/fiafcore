@@ -64,18 +64,6 @@
     rdfs:domain fiaf:WorkVariant ;
     rdfs:range fiaf:Country .
 
-<https://fiafcore.org/ontology/hasEvent> a owl:ObjectProperty ;
-    rdfs:label "Has Event"@en ;
-    rdfs:label "Tiene un Evento"@es ;
-    rdfs:label "A un Évènement"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ;
-    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
-    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
-    rdfs:domain [
-        owl:unionOf (fiaf:WorkVariant fiaf:Manifestation fiaf:Item fiaf:Carrier)
-    ] ;
-    rdfs:range fiaf:Event .
-
 <https://fiafcore.org/ontology/hasGenre> a owl:ObjectProperty ;
     rdfs:label "Has Genre"@en ;
     rdfs:label "Tiene un Género"@es ;
