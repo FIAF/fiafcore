@@ -19,8 +19,10 @@ fiaf:Afghanistan a owl:Class ;
     rdfs:label "Afghanistan"@en,
         "Afganistán"@es,
         "Afghanistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central and South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central and South Asia"@en,
         "país en Asia"@es,
         "pays d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -29,8 +31,10 @@ fiaf:Albania a owl:Class ;
     rdfs:label "Albania"@en,
         "Albania"@es,
         "Albanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southeastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -39,8 +43,10 @@ fiaf:Algeria a owl:Class ;
     rdfs:label "Algeria"@en,
         "Algeria"@es,
         "Algérie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in North Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in North Africa"@en,
         "país del norte de África"@es,
         "pays d'Afrique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -49,8 +55,10 @@ fiaf:AmericanSamoa a owl:Class ;
     rdfs:label "American Samoa"@en,
         "Samoa Estadounidense"@es,
         "Samoa américaines"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "United States territory in the Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "United States territory in the Pacific Ocean"@en,
         "territorio en el Océano Pacífico de los Estados Unidos de América"@es,
         "territoire non incorporé et non organisé des États-Unis d'Amérique situé en Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -59,8 +67,10 @@ fiaf:Andorra a owl:Class ;
     rdfs:label "Andorra"@en,
         "Andorra"@es,
         "Andorre"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign microstate between France and Spain, in Western Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign microstate between France and Spain, in Western Europe"@en,
         "microestado soberano sin salida al mar, ubicado entre Francia y España, en Europa occidental"@es,
         "principauté d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -69,8 +79,10 @@ fiaf:Angola a owl:Class ;
     rdfs:label "Angola"@en,
         "Angola"@es,
         "Angola"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country on the west coast of Southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country on the west coast of Southern Africa"@en,
         "Estado en África del Sudoeste"@es,
         "pays d'Afrique du Sud-Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -79,8 +91,10 @@ fiaf:Anguilla a owl:Class ;
     rdfs:label "Anguilla"@en,
         "Anguila"@es,
         "Anguilla"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British Overseas Territory in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British Overseas Territory in the Caribbean"@en,
         "dependencia británica de América Insular"@es,
         "territoire britannique d'outre-mer dans les Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -89,15 +103,19 @@ fiaf:Antarctica a owl:Class ;
     rdfs:label "Antarctica"@en,
         "Antártida"@es,
         "Antarctique"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:AntiguaandBarbuda a owl:Class ;
     rdfs:label "Antigua and Barbuda"@en,
         "Antigua y Barbuda"@es,
         "Antigua-et-Barbuda"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América insular"@es,
         "État insulaire de la mer des Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -106,8 +124,10 @@ fiaf:Argentina a owl:Class ;
     rdfs:label "Argentina"@en,
         "Argentina"@es,
         "Argentine"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país de América del Sur"@es,
         "pays d’Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -116,8 +136,10 @@ fiaf:Armenia a owl:Class ;
     rdfs:label "Armenia"@en,
         "Armenia"@es,
         "Arménie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in the South Caucasus region of Eurasia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in the South Caucasus region of Eurasia"@en,
         "país del Cáucaso sur"@es,
         "pays du Caucase du Sud en Eurasie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -126,8 +148,10 @@ fiaf:Aruba a owl:Class ;
     rdfs:label "Aruba"@en,
         "Aruba"@es,
         "Aruba"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Caribbean island constituent country of the Netherlands"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Caribbean island constituent country of the Netherlands"@en,
         "país en América insular del Caribe, parte del Reino de los Países Bajos"@es,
         "État insulaire des Caraïbes appartenant au royaume des Pays-Bas"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -136,8 +160,10 @@ fiaf:Australia a owl:Class ;
     rdfs:label "Australia"@en,
         "Australia"@es,
         "Australie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Oceania"@en,
         "país de Oceanía"@es,
         "pays d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -146,8 +172,10 @@ fiaf:Austria a owl:Class ;
     rdfs:label "Austria"@en,
         "Austria"@es,
         "Autriche"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -156,8 +184,10 @@ fiaf:Azerbaijan a owl:Class ;
     rdfs:label "Azerbaijan"@en,
         "Azerbaiyán"@es,
         "Azerbaïdjan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Caucasus in Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Caucasus in Eastern Europe"@en,
         "país del Cáucaso en Europa Oriental"@es,
         "pays du Caucase en Europe de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -166,15 +196,19 @@ fiaf:Bahamas a owl:Class ;
     rdfs:label "Bahamas"@en,
         "Bahamas"@es,
         "Bahamas"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Bahrain a owl:Class ;
     rdfs:label "Bahrain"@en,
         "Baréin"@es,
         "Bahreïn"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Persian Gulf"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Persian Gulf"@en,
         "país de Asia"@es,
         "pays du Moyen-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -183,8 +217,10 @@ fiaf:Bangladesh a owl:Class ;
     rdfs:label "Bangladesh"@en,
         "Bangladés"@es,
         "Bangladesh"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -193,8 +229,10 @@ fiaf:Barbados a owl:Class ;
     rdfs:label "Barbados"@en,
         "Barbados"@es,
         "Barbade"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island nation in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island nation in the Caribbean"@en,
         "país en América insular"@es,
         "pays insulaire des Petites Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -203,8 +241,10 @@ fiaf:Belarus a owl:Class ;
     rdfs:label "Belarus"@en,
         "Bielorrusia"@es,
         "Bélarus"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Eastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe orientale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -213,8 +253,10 @@ fiaf:Belgium a owl:Class ;
     rdfs:label "Belgium"@en,
         "Bélgica"@es,
         "Belgique"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in western Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in western Europe"@en,
         "país de Europa occidental"@es,
         "pays d'Europe occidentale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -223,8 +265,10 @@ fiaf:Belize a owl:Class ;
     rdfs:label "Belize"@en,
         "Belice"@es,
         "Belize"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país de América Central"@es,
         "pays d'Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -233,8 +277,10 @@ fiaf:Benin a owl:Class ;
     rdfs:label "Benin"@en,
         "Benín"@es,
         "Bénin"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África Occidental"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -243,8 +289,10 @@ fiaf:Bermuda a owl:Class ;
     rdfs:label "Bermuda"@en,
         "Islas Bermudas"@es,
         "Bermudes"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British Overseas Territory in the North Atlantic Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British Overseas Territory in the North Atlantic Ocean"@en,
         "dependencia británica de América Insular"@es,
         "groupe d'îles britanniques dans l'océan Atlantique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -253,8 +301,10 @@ fiaf:Bhutan a owl:Class ;
     rdfs:label "Bhutan"@en,
         "Bután"@es,
         "Bhoutan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South Asia"@en,
         "país de Asia"@es,
         "pays d'Asie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -263,8 +313,10 @@ fiaf:Bolivia a owl:Class ;
     rdfs:label "Bolivia"@en,
         "Bolivia"@es,
         "Bolivie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país en América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -273,15 +325,19 @@ fiaf:Bolivia a owl:Class ;
     rdfs:label "Bonaire, Sint Eustatius and Saba"@en,
         "Islas BES (Caribe Neerlandés)"@es,
         "Bonaire, Saint-Eustache et Saba"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:BosniaandHerzegovina a owl:Class ;
     rdfs:label "Bosnia and Herzegovina"@en,
         "Bosnia y Herzegovina"@es,
         "Bosnie-Herzégovine"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Europe"@en,
         "país de Europa"@es,
         "État d'Europe du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -290,8 +346,10 @@ fiaf:Botswana a owl:Class ;
     rdfs:label "Botswana"@en,
         "Botsuana"@es,
         "Botswana"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Southern Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe depuis 1966"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -300,8 +358,10 @@ fiaf:BouvetIsland a owl:Class ;
     rdfs:label "Bouvet Island"@en,
         "Isla Bouvet"@es,
         "île Bouvet"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Norwegian uninhabited subantarctic volcanic island"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Norwegian uninhabited subantarctic volcanic island"@en,
         "pequeño territorio insular deshabitado del océano Atlántico Sur, dependiente de Noruega"@es,
         "île volcanique inhabitée norvégienne de l'Atlantique sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -310,8 +370,10 @@ fiaf:Brazil a owl:Class ;
     rdfs:label "Brazil"@en,
         "Brasil"@es,
         "Brésil"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South America"@en,
         "país de América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -320,8 +382,10 @@ fiaf:BritishIndianOceanTerritory a owl:Class ;
     rdfs:label "British Indian Ocean Territory"@en,
         "Territorio Británico del Océano Índico"@es,
         "Territoire britannique de l'océan Indien"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "overseas territory in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "overseas territory in the Indian Ocean"@en,
         "territorio británico de ultramar"@es,
         "territoire britannique d'outre-mer en Asie du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -330,15 +394,19 @@ fiaf:BruneiDarussalam a owl:Class ;
     rdfs:label "Brunei Darussalam"@en,
         "Brunei Darussalam"@es,
         "Brunéi Darussalam"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Bulgaria a owl:Class ;
     rdfs:label "Bulgaria"@en,
         "Bulgaria"@es,
         "Bulgarie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Europe"@en,
         "país de Europa"@es,
         "pays d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -347,8 +415,10 @@ fiaf:BurkinaFaso a owl:Class ;
     rdfs:label "Burkina Faso"@en,
         "Burquina Faso"@es,
         "Burkina Faso"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -357,8 +427,10 @@ fiaf:Burundi a owl:Class ;
     rdfs:label "Burundi"@en,
         "Burundi"@es,
         "Burundi"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -367,15 +439,19 @@ fiaf:CaboVerde a owl:Class ;
     rdfs:label "Cabo Verde"@en,
         "Cabo Verde"@es,
         "Cap-Vert"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Cambodia a owl:Class ;
     rdfs:label "Cambodia"@en,
         "Camboya"@es,
         "Cambodge"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -384,8 +460,10 @@ fiaf:Cameroon a owl:Class ;
     rdfs:label "Cameroon"@en,
         "Camerún"@es,
         "Cameroun"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África"@es,
         "État d'Afrique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -394,8 +472,10 @@ fiaf:Canada a owl:Class ;
     rdfs:label "Canada"@en,
         "Canadá"@es,
         "Canada"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in North America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in North America"@en,
         "país de América del Norte"@es,
         "pays d'Amérique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -404,8 +484,10 @@ fiaf:CaymanIslands a owl:Class ;
     rdfs:label "Cayman Islands"@en,
         "Islas Caimán"@es,
         "Îles Caïmans"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British overseas territory in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British overseas territory in the Caribbean"@en,
         "dependencia británica de América Insular"@es,
         "territoire d'outre-mer du Royaume-Uni dans les Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -414,8 +496,10 @@ fiaf:CentralAfricanRepublic a owl:Class ;
     rdfs:label "Central African Republic"@en,
         "República Centroafricana"@es,
         "République centrafricaine"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Africa"@en,
         "país en África Central"@es,
         "État d'Afrique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -424,8 +508,10 @@ fiaf:Chad a owl:Class ;
     rdfs:label "Chad"@en,
         "Chad"@es,
         "Tchad"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in central Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in central Africa"@en,
         "país de África"@es,
         "pays d'Afrique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -434,8 +520,10 @@ fiaf:Chile a owl:Class ;
     rdfs:label "Chile"@en,
         "Chile"@es,
         "Chili"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South America"@en,
         "país de América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -444,15 +532,19 @@ fiaf:China a owl:Class ;
     rdfs:label "China"@en,
         "China"@es,
         "Chine"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:ChristmasIsland a owl:Class ;
     rdfs:label "Christmas Island"@en,
         "Isla de Navidad"@es,
         "Christmas, Île"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Australian external territory in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Australian external territory in the Indian Ocean"@en,
         "territorio sin autogobierno de Australia en el océano Índico"@es,
         "île et territoire situé au nord-ouest de l'Australie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -461,15 +553,19 @@ fiaf:Cocos\(Keeling\)Islands a owl:Class ;
     rdfs:label "Cocos (Keeling) Islands"@en,
         "Islas Cocos (Keeling)"@es,
         "Cocos (Keeling), Îles"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Colombia a owl:Class ;
     rdfs:label "Colombia"@en,
         "Colombia"@es,
         "Colombie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país de América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -478,8 +574,10 @@ fiaf:Comoros a owl:Class ;
     rdfs:label "Comoros"@en,
         "Comores, Islas"@es,
         "Comores"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state situated on an archipelago in the Indian Ocean off the eastern coast of Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state situated on an archipelago in the Indian Ocean off the eastern coast of Africa"@en,
         "país de África"@es,
         "pays situé au nord du canal du Mozambique dans l'océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -488,22 +586,28 @@ fiaf:Congo a owl:Class ;
     rdfs:label "Congo"@en,
         "Congo"@es,
         "République du Congo"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 <https://fiafcore.org/ontology/Congo,TheDemocraticRepublicofthe> a owl:Class ;
     rdfs:label "Congo, The Democratic Republic of the"@en,
         "Congo, República Democrática del"@es,
         "République démocratique du Congo"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:CookIslands a owl:Class ;
     rdfs:label "Cook Islands"@en,
         "Islas Cook"@es,
         "Îles Cook"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the South Pacific Ocean in free association with New Zealand"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the South Pacific Ocean in free association with New Zealand"@en,
         "archipiélago de Oceanía"@es,
         "État de l'océan Pacifique sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -512,8 +616,10 @@ fiaf:CostaRica a owl:Class ;
     rdfs:label "Costa Rica"@en,
         "Costa Rica"@es,
         "Costa Rica"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central America"@en,
         "país en América Central"@es,
         "pays d'Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -522,8 +628,10 @@ fiaf:Croatia a owl:Class ;
     rdfs:label "Croatia"@en,
         "Croacia"@es,
         "Croatie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central and Southern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central and Southern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du sud-est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -532,8 +640,10 @@ fiaf:Cuba a owl:Class ;
     rdfs:label "Cuba"@en,
         "Cuba"@es,
         "Cuba"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state situated on an island in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state situated on an island in the Caribbean Sea"@en,
         "país insular en América"@es,
         "pays de l'archipel caraïbe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -542,8 +652,10 @@ fiaf:Curaçao a owl:Class ;
     rdfs:label "Curaçao"@en,
         "Curazao"@es,
         "Curaçao"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in the Caribbean, part of the Kingdom of the Netherlands"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in the Caribbean, part of the Kingdom of the Netherlands"@en,
         "país en América insular del Caribe, parte del Reino de los Países Bajos"@es,
         "État insulaire des Caraïbes appartenant au royaume des Pays-Bas"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -552,8 +664,10 @@ fiaf:Cyprus a owl:Class ;
     rdfs:label "Cyprus"@en,
         "Chipre"@es,
         "Chypre"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Mediterranean island nation in Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Mediterranean island nation in Europe"@en,
         "país de Europa"@es,
         "État souverain situé sur une île de la Méditerranée orientale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -562,22 +676,28 @@ fiaf:Czechia a owl:Class ;
     rdfs:label "Czechia"@en,
         "Chequia"@es,
         "Tchéquie"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 <https://fiafcore.org/ontology/Côted'Ivoire> a owl:Class ;
     rdfs:label "Côte d'Ivoire"@en,
         "Costa de Marfíl"@es,
         "Côte d'Ivoire"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Denmark a owl:Class ;
     rdfs:label "Denmark"@en,
         "Dinamarca"@es,
         "Danemark"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -586,8 +706,10 @@ fiaf:Djibouti a owl:Class ;
     rdfs:label "Djibouti"@en,
         "Yibuti"@es,
         "Djibouti"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -596,8 +718,10 @@ fiaf:Dominica a owl:Class ;
     rdfs:label "Dominica"@en,
         "Dominica"@es,
         "Dominique"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América insular"@es,
         "pays de l'archipel des Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -606,8 +730,10 @@ fiaf:DominicanRepublic a owl:Class ;
     rdfs:label "Dominican Republic"@en,
         "República Dominicana"@es,
         "République dominicaine"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país de América Insular"@es,
         "État situé sur l'île d'Hispaniola dans l'archipel des Grandes Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -616,8 +742,10 @@ fiaf:Ecuador a owl:Class ;
     rdfs:label "Ecuador"@en,
         "Ecuador"@es,
         "Équateur"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país de América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -626,8 +754,10 @@ fiaf:Egypt a owl:Class ;
     rdfs:label "Egypt"@en,
         "Egipto"@es,
         "Égypte"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Country in Northeast Africa and Southwest Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Country in Northeast Africa and Southwest Asia"@en,
         "país de África y Asia"@es,
         "pays de l'Afrique du Nord-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -636,8 +766,10 @@ fiaf:ElSalvador a owl:Class ;
     rdfs:label "El Salvador"@en,
         "El Salvador"@es,
         "Salvador"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país de América Central"@es,
         "pays d'Amérique centrale depuis 1841"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -646,8 +778,10 @@ fiaf:EquatorialGuinea a owl:Class ;
     rdfs:label "Equatorial Guinea"@en,
         "Guinea Ecuatorial"@es,
         "Guinée Équatoriale"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -656,8 +790,10 @@ fiaf:Eritrea a owl:Class ;
     rdfs:label "Eritrea"@en,
         "Eritrea"@es,
         "Érythrée"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Horn of Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Horn of Africa"@en,
         "país de África"@es,
         "pays de l'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -666,8 +802,10 @@ fiaf:Estonia a owl:Class ;
     rdfs:label "Estonia"@en,
         "Estonia"@es,
         "Estonie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in northeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in northeastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -676,8 +814,10 @@ fiaf:Eswatini a owl:Class ;
     rdfs:label "Eswatini"@en,
         "Esuatini"@es,
         "Eswatini"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in southern Africa"@en,
         "país (Estado soberano) en el sur de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -686,8 +826,10 @@ fiaf:Ethiopia a owl:Class ;
     rdfs:label "Ethiopia"@en,
         "Etiopía"@es,
         "Éthiopie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Horn of Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Horn of Africa"@en,
         "país de África Oriental"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -696,15 +838,19 @@ fiaf:FalklandIslands\(Malvinas\) a owl:Class ;
     rdfs:label "Falkland Islands (Malvinas)"@en,
         "Islas Falkland (Malvinas)"@es,
         "Malouines, Îles (Falkland)"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:FaroeIslands a owl:Class ;
     rdfs:label "Faroe Islands"@en,
         "Islas Feroe"@es,
         "Îles Féroé"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "North Atlantic archipelago organized as an autonomous constituent country of the Kingdom of Denmark"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "North Atlantic archipelago organized as an autonomous constituent country of the Kingdom of Denmark"@en,
         "archipiélago europeo"@es,
         "pays constitutif du royaume de Danemark, avec le Danemark et le Groenland"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -713,8 +859,10 @@ fiaf:Fiji a owl:Class ;
     rdfs:label "Fiji"@en,
         "Fiyi"@es,
         "Fidji"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in Oceania"@en,
         "país de Oceanía"@es,
         "État insulaire d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -723,8 +871,10 @@ fiaf:Finland a owl:Class ;
     rdfs:label "Finland"@en,
         "Finlandia"@es,
         "Finlande"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northern Europe"@en,
         "país del norte de Europa"@es,
         "pays d'Europe du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -733,8 +883,10 @@ fiaf:France a owl:Class ;
     rdfs:label "France"@en,
         "Francia"@es,
         "France"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Western Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Western Europe"@en,
         "país de Europa Occidental"@es,
         "pays transcontinental au territoire métropolitain en Europe de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -743,8 +895,10 @@ fiaf:FrenchGuiana a owl:Class ;
     rdfs:label "French Guiana"@en,
         "Guayana Francesa"@es,
         "Guyane française"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "French overseas department and region in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "French overseas department and region in South America"@en,
         "dependencia francesa de América del Sur"@es,
         "région et département français d'outre-mer"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -753,8 +907,10 @@ fiaf:FrenchPolynesia a owl:Class ;
     rdfs:label "French Polynesia"@en,
         "Polinesia Francesa"@es,
         "Polynésie française"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "French overseas country in the southern Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "French overseas country in the southern Pacific Ocean"@en,
         "colectividad de ultramar de Francia"@es,
         "collectivité d'outre-mer française dans l'océan Pacifique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -763,15 +919,19 @@ fiaf:FrenchSouthernTerritories a owl:Class ;
     rdfs:label "French Southern Territories"@en,
         "Territorios Franceses del Sur"@es,
         "Terres australes françaises"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Gabon a owl:Class ;
     rdfs:label "Gabon"@en,
         "Gabón"@es,
         "Gabon"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "equatorial country in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "equatorial country in West Africa"@en,
         "país de África"@es,
         "pays équatorial d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -780,15 +940,19 @@ fiaf:Gambia a owl:Class ;
     rdfs:label "Gambia"@en,
         "Gambia"@es,
         "Gambie"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Georgia a owl:Class ;
     rdfs:label "Georgia"@en,
         "Georgia"@es,
         "Géorgie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Caucasus"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Caucasus"@en,
         "país del Cáucaso en Europa Oriental"@es,
         "pays du Caucase"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -797,8 +961,10 @@ fiaf:Germany a owl:Class ;
     rdfs:label "Germany"@en,
         "Alemania"@es,
         "Allemagne"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -807,8 +973,10 @@ fiaf:Ghana a owl:Class ;
     rdfs:label "Ghana"@en,
         "Ghana"@es,
         "Ghana"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -817,8 +985,10 @@ fiaf:Gibraltar a owl:Class ;
     rdfs:label "Gibraltar"@en,
         "Gibraltar"@es,
         "Gibraltar"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British Overseas Territory"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British Overseas Territory"@en,
         "territorio británico de ultramar"@es,
         "territoire britannique d'outre-mer situé au sud de l'Espagne"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -827,8 +997,10 @@ fiaf:Greece a owl:Class ;
     rdfs:label "Greece"@en,
         "Grecia"@es,
         "Grèce"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Europe"@en,
         "estado del Mediterráneo y miembro de la Unión Europea"@es,
         "pays d'Europe du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -837,8 +1009,10 @@ fiaf:Greenland a owl:Class ;
     rdfs:label "Greenland"@en,
         "Groenlandia"@es,
         "Groënland"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "autonomous country within the Kingdom of Denmark on world's largest island by the same name"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "autonomous country within the Kingdom of Denmark on world's largest island by the same name"@en,
         "país autónomo dentro del Reino de Dinamarca"@es,
         "pays constitutif et autonome du royaume de Danemark"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -847,8 +1021,10 @@ fiaf:Grenada a owl:Class ;
     rdfs:label "Grenada"@en,
         "Granada"@es,
         "Grenade"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État souverain insulaire de la mer des Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -857,8 +1033,10 @@ fiaf:Guadeloupe a owl:Class ;
     rdfs:label "Guadeloupe"@en,
         "Guadalupe"@es,
         "Guadeloupe"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "overseas region and department of France, and island in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "overseas region and department of France, and island in the Caribbean"@en,
         "dependencia francesa de América lnsular"@es,
         "région et département français d'outre-mer"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -867,8 +1045,10 @@ fiaf:Guam a owl:Class ;
     rdfs:label "Guam"@en,
         "Guam"@es,
         "Guam"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island territory of the United States of America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island territory of the United States of America"@en,
         "isla en el Pacífico, perteneciente a los Estados Unidos de América"@es,
         "territoire des États-Unis"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -877,8 +1057,10 @@ fiaf:Guatemala a owl:Class ;
     rdfs:label "Guatemala"@en,
         "Guatemala"@es,
         "Guatemala"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país en América Central"@es,
         "pays d'Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -887,15 +1069,19 @@ fiaf:Guernsey a owl:Class ;
     rdfs:label "Guernsey"@en,
         "Guernsey"@es,
         "Guernesey"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Guinea a owl:Class ;
     rdfs:label "Guinea"@en,
         "Guinea"@es,
         "Guinée"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África Occidental"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -904,8 +1090,10 @@ fiaf:Guinea-Bissau a owl:Class ;
     rdfs:label "Guinea-Bissau"@en,
         "Guinea-Bisáu"@es,
         "Guinée-Bissau"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Western Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Western Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -914,8 +1102,10 @@ fiaf:Guyana a owl:Class ;
     rdfs:label "Guyana"@en,
         "Guyana"@es,
         "Guyana"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South America"@en,
         "país en América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -924,8 +1114,10 @@ fiaf:Haiti a owl:Class ;
     rdfs:label "Haiti"@en,
         "Haití"@es,
         "Haïti"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État des Caraïbes sur l'île d'Hispaniola"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -934,8 +1126,10 @@ fiaf:HeardIslandandMcDonaldIslands a owl:Class ;
     rdfs:label "Heard Island and McDonald Islands"@en,
         "Islas Heard y McDonald"@es,
         "Îles Heard-et-MacDonald"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Australian external territory and volcanic group of barren Antarctic islands"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Australian external territory and volcanic group of barren Antarctic islands"@en,
         "territorio externo de Australia y grupo volcánico de islas antárticas estériles"@es,
         "territoire extérieur australien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -944,15 +1138,19 @@ fiaf:HolySee\(VaticanCityState\) a owl:Class ;
     rdfs:label "Holy See (Vatican City State)"@en,
         "Santa Sede (Ciudad Estado del Vaticano)"@es,
         "Saint-Siège (état de la cité du Vatican)"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Honduras a owl:Class ;
     rdfs:label "Honduras"@en,
         "Honduras"@es,
         "Honduras"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país en América Central"@es,
         "pays d'Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -961,8 +1159,10 @@ fiaf:HongKong a owl:Class ;
     rdfs:label "Hong Kong"@en,
         "Hong Kong"@es,
         "Hong Kong"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "city and special administrative region of China"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "city and special administrative region of China"@en,
         "región administrativa especial de la República Popular China"@es,
         "ville et région administrative spéciale de Chine"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -971,8 +1171,10 @@ fiaf:Hungary a owl:Class ;
     rdfs:label "Hungary"@en,
         "Hungría"@es,
         "Hongrie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -981,8 +1183,10 @@ fiaf:Iceland a owl:Class ;
     rdfs:label "Iceland"@en,
         "Islandia"@es,
         "Islande"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "Nordic island country in the North Atlantic Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "Nordic island country in the North Atlantic Ocean"@en,
         "país insular nórdico en el océano Atlántico Norte"@es,
         "pays insulaire d'Europe du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -991,8 +1195,10 @@ fiaf:India a owl:Class ;
     rdfs:label "India"@en,
         "India"@es,
         "Inde"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1001,8 +1207,10 @@ fiaf:Indonesia a owl:Class ;
     rdfs:label "Indonesia"@en,
         "Indonesia"@es,
         "Indonésie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia and Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia and Oceania"@en,
         "país de Asia y Oceanía"@es,
         "pays d'Asie du Sud-Est et d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1011,8 +1219,10 @@ fiaf:Iran a owl:Class ;
     rdfs:label "Iran"@en,
         "Irán, República islámica de"@es,
         "Iran, République islamique d'"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Western Asia"@en,
         "país de Asia"@es,
         "État d'Asie de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1021,8 +1231,10 @@ fiaf:Iraq a owl:Class ;
     rdfs:label "Iraq"@en,
         "Irak"@es,
         "Irak"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in western Asia"@en,
         "país de Asia"@es,
         "État du Moyen-Orient, situé au nord de la péninsule arabique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1031,15 +1243,19 @@ fiaf:Ireland a owl:Class ;
     rdfs:label "Ireland"@en,
         "Irlanda"@es,
         "Irlande"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:IsleofMan a owl:Class ;
     rdfs:label "Isle of Man"@en,
         "Isla de Man"@es,
         "Île de Man"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "historic nation and a self-governing British Crown dependency"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "historic nation and a self-governing British Crown dependency"@en,
         "dependencia de la Corona británica"@es,
         "territoire britannique formé d’une île principale et de quelques îlots situés en mer d’Irlande, au centre des îles Britanniques"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1048,8 +1264,10 @@ fiaf:Israel a owl:Class ;
     rdfs:label "Israel"@en,
         "Israel"@es,
         "Israël"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Middle East"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Middle East"@en,
         "país de Oriente Próximo"@es,
         "État du Proche-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1058,8 +1276,10 @@ fiaf:Italy a owl:Class ;
     rdfs:label "Italy"@en,
         "Italia"@es,
         "Italie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1068,8 +1288,10 @@ fiaf:Jamaica a owl:Class ;
     rdfs:label "Jamaica"@en,
         "Jamaica"@es,
         "Jamaïque"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État insulaire des Caraïbes indépendant depuis 1962"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1078,8 +1300,10 @@ fiaf:Japan a owl:Class ;
     rdfs:label "Japan"@en,
         "Japón"@es,
         "Japon"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in East Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in East Asia"@en,
         "país de Asia Oriental"@es,
         "pays d'Asie de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1088,8 +1312,10 @@ fiaf:Jersey a owl:Class ;
     rdfs:label "Jersey"@en,
         "Jersey"@es,
         "Jersey"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British Crown dependency in the Channel Islands"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British Crown dependency in the Channel Islands"@en,
         "dependencia de la Corona británica"@es,
         "île anglo-normande, dépendance de la Couronne britannique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1098,8 +1324,10 @@ fiaf:Jordan a owl:Class ;
     rdfs:label "Jordan"@en,
         "Jordania"@es,
         "Jordanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Western Asia"@en,
         "país de Asia occidental"@es,
         "État du Proche-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1108,8 +1336,10 @@ fiaf:Kazakhstan a owl:Class ;
     rdfs:label "Kazakhstan"@en,
         "Kazajistán"@es,
         "Kazakhstan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Eastern Europe and Central Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Eastern Europe and Central Asia"@en,
         "país de Asia Central y Europa Oriental"@es,
         "pays d'Asie centrale et en partie d'Europe de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1118,8 +1348,10 @@ fiaf:Kenya a owl:Class ;
     rdfs:label "Kenya"@en,
         "Kenia"@es,
         "Kenya"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Eastern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Eastern Africa"@en,
         "país de África oriental"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1128,8 +1360,10 @@ fiaf:Kiribati a owl:Class ;
     rdfs:label "Kiribati"@en,
         "Kiribati"@es,
         "Kiribati"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the central Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the central Pacific Ocean"@en,
         "País de Oceanía"@es,
         "État insulaire d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1138,8 +1372,10 @@ fiaf:Kuwait a owl:Class ;
     rdfs:label "Kuwait"@en,
         "Kuwait"@es,
         "Koweït"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Western Asia"@en,
         "país de Asia Occidental"@es,
         "État du golfe Persique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1148,8 +1384,10 @@ fiaf:Kyrgyzstan a owl:Class ;
     rdfs:label "Kyrgyzstan"@en,
         "Kirguistán"@es,
         "Kirghizistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central Asia"@en,
         "país de Asia"@es,
         "pays d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1158,15 +1396,19 @@ fiaf:Kyrgyzstan a owl:Class ;
     rdfs:label "Lao People's Democratic Republic"@en,
         "República Democrática Popular de Lao"@es,
         "Lao, République démocratique populaire"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Latvia a owl:Class ;
     rdfs:label "Latvia"@en,
         "Letonia"@es,
         "Lettonie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in northeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in northeastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du Nord-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1175,8 +1417,10 @@ fiaf:Lebanon a owl:Class ;
     rdfs:label "Lebanon"@en,
         "Líbano"@es,
         "Liban"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Western Asia"@en,
         "país árabe de Oriente Próximo"@es,
         "État souverain du Proche-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1185,8 +1429,10 @@ fiaf:Lesotho a owl:Class ;
     rdfs:label "Lesotho"@en,
         "Lesoto"@es,
         "Lesotho"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in southern Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1195,8 +1441,10 @@ fiaf:Liberia a owl:Class ;
     rdfs:label "Liberia"@en,
         "Liberia"@es,
         "Libéria"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1205,8 +1453,10 @@ fiaf:Libya a owl:Class ;
     rdfs:label "Libya"@en,
         "Libia"@es,
         "Libye"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in North Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in North Africa"@en,
         "país de África"@es,
         "pays d'Afrique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1215,8 +1465,10 @@ fiaf:Liechtenstein a owl:Class ;
     rdfs:label "Liechtenstein"@en,
         "Liechtenstein"@es,
         "Liechtenstein"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "principauté d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1225,8 +1477,10 @@ fiaf:Lithuania a owl:Class ;
     rdfs:label "Lithuania"@en,
         "Lituania"@es,
         "Lituanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Eastern Europe"@en,
         "país de Europa"@es,
         "pays nord-européen riverain de la Baltique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1235,8 +1489,10 @@ fiaf:Luxembourg a owl:Class ;
     rdfs:label "Luxembourg"@en,
         "Luxemburgo"@es,
         "Luxembourg"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northwestern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northwestern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1245,15 +1501,19 @@ fiaf:Macao a owl:Class ;
     rdfs:label "Macao"@en,
         "Macao"@es,
         "Macau"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Madagascar a owl:Class ;
     rdfs:label "Madagascar"@en,
         "Madagascar"@es,
         "Madagascar"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state off the coast of Southeast Africa, in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state off the coast of Southeast Africa, in the Indian Ocean"@en,
         "país de África"@es,
         "pays situé dans la partie occidentale de l'océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1262,8 +1522,10 @@ fiaf:Malawi a owl:Class ;
     rdfs:label "Malawi"@en,
         "Malaui"@es,
         "Malawi"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1272,8 +1534,10 @@ fiaf:Malaysia a owl:Class ;
     rdfs:label "Malaysia"@en,
         "Malasia"@es,
         "Malaisie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1282,8 +1546,10 @@ fiaf:Maldives a owl:Class ;
     rdfs:label "Maldives"@en,
         "Islas Maldivas"@es,
         "Maldives"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South Asia, situated on an archipelago in the Arabian Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South Asia, situated on an archipelago in the Arabian Sea"@en,
         "país de Asia"@es,
         "pays d'Asie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1292,8 +1558,10 @@ fiaf:Mali a owl:Class ;
     rdfs:label "Mali"@en,
         "Malí"@es,
         "Mali"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in West Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1302,8 +1570,10 @@ fiaf:Malta a owl:Class ;
     rdfs:label "Malta"@en,
         "Malta"@es,
         "Malte"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Southern Europe situated on an archipelago in the Mediterranean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Southern Europe situated on an archipelago in the Mediterranean Sea"@en,
         "país insular de Europa"@es,
         "État insulaire de Méditerranée"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1312,8 +1582,10 @@ fiaf:MarshallIslands a owl:Class ;
     rdfs:label "Marshall Islands"@en,
         "Islas Marshall"@es,
         "Îles Marshall"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country near the equator in the Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country near the equator in the Pacific Ocean"@en,
         "estado soberano de Oceanía"@es,
         "État de Micronésie situé en Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1322,8 +1594,10 @@ fiaf:Martinique a owl:Class ;
     rdfs:label "Martinique"@en,
         "Martinica"@es,
         "Martinique"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island in the Lesser Antilles, overseas region and department of France"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island in the Lesser Antilles, overseas region and department of France"@en,
         "dependencia francesa de América Insular"@es,
         "région administrative française d'outre-mer, correspondant géographiquement à l'île de la Martinique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1332,8 +1606,10 @@ fiaf:Mauritania a owl:Class ;
     rdfs:label "Mauritania"@en,
         "Mauritania"@es,
         "Mauritanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa and North Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa and North Africa"@en,
         "país de África"@es,
         "pays du nord-ouest africain"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1342,8 +1618,10 @@ fiaf:Mauritius a owl:Class ;
     rdfs:label "Mauritius"@en,
         "Mauricio"@es,
         "Maurice"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state off of East Africa in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state off of East Africa in the Indian Ocean"@en,
         "país de África Oriental"@es,
         "État insulaire de l'océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1352,8 +1630,10 @@ fiaf:Mayotte a owl:Class ;
     rdfs:label "Mayotte"@en,
         "Mayotte"@es,
         "Mayotte"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "French overseas region and department located in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "French overseas region and department located in the Indian Ocean"@en,
         "Región y departamento francés de ultramar ubicado en el Océano Índico"@es,
         "région et département d'outre-mer français situé dans l'océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1362,8 +1642,10 @@ fiaf:Mexico a owl:Class ;
     rdfs:label "Mexico"@en,
         "México"@es,
         "Mexique"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in North America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in North America"@en,
         "país de América del Norte"@es,
         "pays d'Amérique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1372,15 +1654,19 @@ fiaf:Mexico a owl:Class ;
     rdfs:label "Micronesia, Federated States of"@en,
         "Micronesia, Estados Federados de"@es,
         "Micronésie, États fédérés de"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Moldova a owl:Class ;
     rdfs:label "Moldova"@en,
         "Moldavia"@es,
         "Moldavie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Eastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1389,8 +1675,10 @@ fiaf:Monaco a owl:Class ;
     rdfs:label "Monaco"@en,
         "Mónaco"@es,
         "Monaco"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign city-state on the French Riviera"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign city-state on the French Riviera"@en,
         "ciudad-Estado en Europa"@es,
         "principauté européenne"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1399,8 +1687,10 @@ fiaf:Mongolia a owl:Class ;
     rdfs:label "Mongolia"@en,
         "Mongolia"@es,
         "Mongolie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East Asia"@en,
         "país de Asia Oriental"@es,
         "pays d'Asie, situé entre la Russie au nord et la Chine au sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1409,8 +1699,10 @@ fiaf:Montenegro a owl:Class ;
     rdfs:label "Montenegro"@en,
         "Montenegro"@es,
         "Monténégro"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southeastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1419,8 +1711,10 @@ fiaf:Montserrat a owl:Class ;
     rdfs:label "Montserrat"@en,
         "Montserrat"@es,
         "Montserrat"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British overseas territory in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British overseas territory in the Caribbean"@en,
         "dependencia británica de América Insular"@es,
         "île des Caraïbes et territoire britannique d'outre-mer"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1429,8 +1723,10 @@ fiaf:Morocco a owl:Class ;
     rdfs:label "Morocco"@en,
         "Marruecos"@es,
         "Maroc"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in North Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in North Africa"@en,
         "país del norte de África"@es,
         "pays d'Afrique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1439,8 +1735,10 @@ fiaf:Mozambique a owl:Class ;
     rdfs:label "Mozambique"@en,
         "Mozambique"@es,
         "Mozambique"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeastern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeastern Africa"@en,
         "país de África"@es,
         "pays d'Afrique du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1449,8 +1747,10 @@ fiaf:Myanmar a owl:Class ;
     rdfs:label "Myanmar"@en,
         "Birmania"@es,
         "Birmanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia"@en,
         "país del sudeste asiático"@es,
         "pays d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1459,8 +1759,10 @@ fiaf:Namibia a owl:Class ;
     rdfs:label "Namibia"@en,
         "Namibia"@es,
         "Namibie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southern Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1469,8 +1771,10 @@ fiaf:Nauru a owl:Class ;
     rdfs:label "Nauru"@en,
         "Nauru"@es,
         "Nauru"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Oceania"@en,
         "país de Oceanía"@es,
         "État insulaire de Micronésie, Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1479,8 +1783,10 @@ fiaf:Nepal a owl:Class ;
     rdfs:label "Nepal"@en,
         "Nepal"@es,
         "Népal"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South Asia"@en,
         "país de Asia del Sur"@es,
         "république fédérale d’Asie du Sud enclavée dans l’Himalaya"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1489,15 +1795,19 @@ fiaf:Netherlands a owl:Class ;
     rdfs:label "Netherlands"@en,
         "Países Bajos"@es,
         "Pays-Bas"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:NewCaledonia a owl:Class ;
     rdfs:label "New Caledonia"@en,
         "Nueva Caledonia"@es,
         "Nouvelle-Calédonie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "special collectivity of France in the southwest Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "special collectivity of France in the southwest Pacific Ocean"@en,
         "archipiélago de Oceanía situado en la Melanesia, al norte del Trópico de Capricornio"@es,
         "archipel français d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1506,8 +1816,10 @@ fiaf:NewZealand a owl:Class ;
     rdfs:label "New Zealand"@en,
         "Nueva Zelanda"@es,
         "Nouvelle-Zélande"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in the southwest Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in the southwest Pacific Ocean"@en,
         "país de Oceanía"@es,
         "pays d'Océanie, au sud-ouest de l'océan Pacifique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1516,8 +1828,10 @@ fiaf:Nicaragua a owl:Class ;
     rdfs:label "Nicaragua"@en,
         "Nicaragua"@es,
         "Nicaragua"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país en América Central"@es,
         "république d’Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1526,8 +1840,10 @@ fiaf:Niger a owl:Class ;
     rdfs:label "Niger"@en,
         "Niger"@es,
         "Niger"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in western Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in western Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1536,8 +1852,10 @@ fiaf:Nigeria a owl:Class ;
     rdfs:label "Nigeria"@en,
         "Nigeria"@es,
         "Nigeria"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África Occidental"@es,
         "république fédérale d’Afrique de l’Ouest depuis 1960"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1546,8 +1864,10 @@ fiaf:Niue a owl:Class ;
     rdfs:label "Niue"@en,
         "Niue"@es,
         "Nioue"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in the South Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in the South Pacific Ocean"@en,
         "territorio insular en el océano Pacífico sur, conocido como la Roca de Polinesia"@es,
         "pays insulaire de l'océan Pacifique sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1556,8 +1876,10 @@ fiaf:NorfolkIsland a owl:Class ;
     rdfs:label "Norfolk Island"@en,
         "Isla Norfolk"@es,
         "Île Norfolk"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "external territory of Australia in the South Pacific Ocean, consisting of the island of the same name plus neighbouring islands"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "external territory of Australia in the South Pacific Ocean, consisting of the island of the same name plus neighbouring islands"@en,
         "territorio australiano compuesto de tres islas en el océano Pacífico"@es,
         "île australienne"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1566,8 +1888,10 @@ fiaf:NorthKorea a owl:Class ;
     rdfs:label "North Korea"@en,
         "Corea, República Democrática Popular de"@es,
         "Corée du Nord"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in East Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in East Asia"@en,
         "país de Asia Oriental"@es,
         "pays d'Asie orientale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1576,8 +1900,10 @@ fiaf:NorthMacedonia a owl:Class ;
     rdfs:label "North Macedonia"@en,
         "Macedonia del Norte"@es,
         "Macédoine du Nord"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southeastern Europe"@en,
         "país de Europa"@es,
         "État d'Europe du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1586,8 +1912,10 @@ fiaf:NorthernMarianaIslands a owl:Class ;
     rdfs:label "Northern Mariana Islands"@en,
         "Islas Marianas del Norte"@es,
         "Îles Mariannes du Nord"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "islands in the United States"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "islands in the United States"@en,
         "territorio en el Pacífico Norte de los Estados Unidos de América"@es,
         "îles des États-Unis dans l'océan Pacifique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1596,8 +1924,10 @@ fiaf:Norway a owl:Class ;
     rdfs:label "Norway"@en,
         "Noruega"@es,
         "Norvège"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northern Europe"@en,
         "país del norte de Europa"@es,
         "pays d'Europe du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1606,8 +1936,10 @@ fiaf:Oman a owl:Class ;
     rdfs:label "Oman"@en,
         "Omán"@es,
         "Oman"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in western Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in western Asia"@en,
         "país de Asia"@es,
         "sultanat du Moyen-Orient, au sud-est de la péninsule d’Arabie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1616,8 +1948,10 @@ fiaf:Pakistan a owl:Class ;
     rdfs:label "Pakistan"@en,
         "Pakistán"@es,
         "Pakistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South Asia"@en,
         "país en el sur de Asia"@es,
         "pays d'Asie du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1626,8 +1960,10 @@ fiaf:Palau a owl:Class ;
     rdfs:label "Palau"@en,
         "Palaos"@es,
         "Palaos"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in Oceania"@en,
         "país de Oceanía"@es,
         "pays d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1636,15 +1972,19 @@ fiaf:Palau a owl:Class ;
     rdfs:label "Palestine, State of"@en,
         "Palestina, Estado de"@es,
         "Palestine, État de"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Panama a owl:Class ;
     rdfs:label "Panama"@en,
         "Panamá"@es,
         "Panama"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central America"@en,
         "país ubicado entre América del Sur y América Central"@es,
         "république d’Amérique centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1653,8 +1993,10 @@ fiaf:PapuaNewGuinea a owl:Class ;
     rdfs:label "Papua New Guinea"@en,
         "Papúa Nueva Guinea"@es,
         "Papouasie-Nouvelle-Guinée"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Oceania"@en,
         "país de Oceanía"@es,
         "pays d'Océanie occupant la moitié orientale de l'île de la Nouvelle-Guinée"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1663,8 +2005,10 @@ fiaf:Paraguay a owl:Class ;
     rdfs:label "Paraguay"@en,
         "Paraguay"@es,
         "Paraguay"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país en América del Sur"@es,
         "république d’Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1673,8 +2017,10 @@ fiaf:Peru a owl:Class ;
     rdfs:label "Peru"@en,
         "Perú"@es,
         "Pérou"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país en América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1683,8 +2029,10 @@ fiaf:Philippines a owl:Class ;
     rdfs:label "Philippines"@en,
         "Filipinas"@es,
         "Philippines"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "archipelagic country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "archipelagic country in Southeast Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1693,15 +2041,19 @@ fiaf:Pitcairn a owl:Class ;
     rdfs:label "Pitcairn"@en,
         "Pitcairn"@es,
         "Îles Pitcairn"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Poland a owl:Class ;
     rdfs:label "Poland"@en,
         "Polonia"@es,
         "Pologne"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1710,8 +2062,10 @@ fiaf:Portugal a owl:Class ;
     rdfs:label "Portugal"@en,
         "Portugal"@es,
         "Portugal"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southwestern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southwestern Europe"@en,
         "país del suroeste de Europa"@es,
         "pays du Sud-Ouest de l'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1720,8 +2074,10 @@ fiaf:PuertoRico a owl:Class ;
     rdfs:label "Puerto Rico"@en,
         "Puerto Rico"@es,
         "Porto Rico"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "unincorporated territory of the United States of America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "unincorporated territory of the United States of America"@en,
         "estado libre asociado a los Estados Unidos de América"@es,
         "État libre associé aux États-Unis"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1730,8 +2086,10 @@ fiaf:Qatar a owl:Class ;
     rdfs:label "Qatar"@en,
         "Catar"@es,
         "Qatar"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in West Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in West Asia"@en,
         "país de Asia"@es,
         "émirat du Moyen-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1740,8 +2098,10 @@ fiaf:Romania a owl:Class ;
     rdfs:label "Romania"@en,
         "Rumanía"@es,
         "Roumanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central and Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central and Eastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1750,15 +2110,19 @@ fiaf:RussianFederation a owl:Class ;
     rdfs:label "Russian Federation"@en,
         "Federación Rusa"@es,
         "Russie, Fédération de"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Rwanda a owl:Class ;
     rdfs:label "Rwanda"@en,
         "Ruanda"@es,
         "Rwanda"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1767,8 +2131,10 @@ fiaf:Réunion a owl:Class ;
     rdfs:label "Réunion"@en,
         "Reunión"@es,
         "Réunion, Île de la"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "overseas department of France in the Indian Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "overseas department of France in the Indian Ocean"@en,
         "departamento francés"@es,
         "île et département, région de la France d'outre-mer située dans l'océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1777,8 +2143,10 @@ fiaf:SaintBarthélemy a owl:Class ;
     rdfs:label "Saint Barthélemy"@en,
         "San Bartolomé"@es,
         "Saint-Barthélemy"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "overseas collectivity of France, island of the Little Antilles"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "overseas collectivity of France, island of the Little Antilles"@en,
         "colectividad francesa de ultramar, isla de las Antillas Menores"@es,
         "collectivité d'outre-mer française, île des Petites Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1787,8 +2155,10 @@ fiaf:SaintBarthélemy a owl:Class ;
     rdfs:label "Saint Helena, Ascension and Tristan da Cunha"@en,
         "Santa Elena, Ascensión y Tristán de Acuña"@es,
         "Sainte-Hélène, Ascension et Tristan da Cunha"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British overseas territory in the southern Atlantic Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British overseas territory in the southern Atlantic Ocean"@en,
         "territorio británico de ultramar en el océano Atlántico"@es,
         "territoire britannique d'outre-mer"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1797,8 +2167,10 @@ fiaf:SaintKittsandNevis a owl:Class ;
     rdfs:label "Saint Kitts and Nevis"@en,
         "San Cristóbal y Nieves"@es,
         "Saint-Christophe-et-Niévès"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État situé dans les petites Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1807,8 +2179,10 @@ fiaf:SaintLucia a owl:Class ;
     rdfs:label "Saint Lucia"@en,
         "Santa Lucía"@es,
         "Sainte-Lucie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État insulaire des Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1817,15 +2191,19 @@ fiaf:SaintMartin\(Frenchpart\) a owl:Class ;
     rdfs:label "Saint Martin (French part)"@en,
         "San Martín (zona francesa)"@es,
         "Saint-Martin (partie française)"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:SaintPierreandMiquelon a owl:Class ;
     rdfs:label "Saint Pierre and Miquelon"@en,
         "San Pedro y Miquelon"@es,
         "Saint-Pierre-et-Miquelon"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "self-governing territorial overseas collectivity of France"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "self-governing territorial overseas collectivity of France"@en,
         "dependencia francesa de América del Norte"@es,
         "collectivité d'outre-mer française"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1834,8 +2212,10 @@ fiaf:SaintVincentandtheGrenadines a owl:Class ;
     rdfs:label "Saint Vincent and the Grenadines"@en,
         "San Vicente y las Granadinas"@es,
         "Saint-Vincent-et-les-Grenadines"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean Sea"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean Sea"@en,
         "país en América Insular"@es,
         "État insulaire des Petites-Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1844,8 +2224,10 @@ fiaf:Samoa a owl:Class ;
     rdfs:label "Samoa"@en,
         "Samoa"@es,
         "Samoa"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state made up of six islands in the Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state made up of six islands in the Pacific Ocean"@en,
         "país de Oceanía"@es,
         "État polynésien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1854,8 +2236,10 @@ fiaf:SanMarino a owl:Class ;
     rdfs:label "San Marino"@en,
         "San Marino"@es,
         "Saint-Marin"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in southern Europe, enclaved within Italy"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in southern Europe, enclaved within Italy"@en,
         "país de Europa"@es,
         "État européen enclavé dans l'Italie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1864,15 +2248,19 @@ fiaf:SaoTomeandPrincipe a owl:Class ;
     rdfs:label "Sao Tome and Principe"@en,
         "Santo Tomé y Príncipe"@es,
         "Sao Tomé-et-Principe"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:SaudiArabia a owl:Class ;
     rdfs:label "Saudi Arabia"@en,
         "Arabia Saudí"@es,
         "Arabie saoudite"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in West Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in West Asia"@en,
         "país de Asia Occidental"@es,
         "pays du Moyen-Orient"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1881,8 +2269,10 @@ fiaf:Senegal a owl:Class ;
     rdfs:label "Senegal"@en,
         "Senegal"@es,
         "Sénégal"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country on the coast of West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country on the coast of West Africa"@en,
         "país de África Occidental"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1891,8 +2281,10 @@ fiaf:Serbia a owl:Class ;
     rdfs:label "Serbia"@en,
         "Serbia"@es,
         "Serbie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southeastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southeastern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1901,8 +2293,10 @@ fiaf:Seychelles a owl:Class ;
     rdfs:label "Seychelles"@en,
         "Seychelles"@es,
         "Seychelles"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state off the eastern coast of Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state off the eastern coast of Africa"@en,
         "país de África"@es,
         "pays insulaire à l’ouest de l’océan Indien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1911,8 +2305,10 @@ fiaf:SierraLeone a owl:Class ;
     rdfs:label "Sierra Leone"@en,
         "Sierra Leona"@es,
         "Sierra Leone"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in West Africa"@en,
         "país de África occidental"@es,
         "pays d'Afrique de l'Ouest"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1921,8 +2317,10 @@ fiaf:Singapore a owl:Class ;
     rdfs:label "Singapore"@en,
         "Singapur"@es,
         "Singapour"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign island country and city-state in maritime Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign island country and city-state in maritime Southeast Asia"@en,
         "país de Asia"@es,
         "cité-État d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1931,15 +2329,19 @@ fiaf:SintMaarten\(Dutchpart\) a owl:Class ;
     rdfs:label "Sint Maarten (Dutch part)"@en,
         "Isla de San Martín (zona holandsea)"@es,
         "Saint-Martin (partie néerlandaise)"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Slovakia a owl:Class ;
     rdfs:label "Slovakia"@en,
         "Eslovaquia"@es,
         "Slovaquie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1948,8 +2350,10 @@ fiaf:Slovenia a owl:Class ;
     rdfs:label "Slovenia"@en,
         "Eslovenia"@es,
         "Slovénie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1958,8 +2362,10 @@ fiaf:SolomonIslands a owl:Class ;
     rdfs:label "Solomon Islands"@en,
         "Islas Salomón"@es,
         "Salomon, Îles"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in Oceania"@en,
         "país de Oceanía"@es,
         "État d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1968,8 +2374,10 @@ fiaf:Somalia a owl:Class ;
     rdfs:label "Somalia"@en,
         "Somalia"@es,
         "Somalie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1978,8 +2386,10 @@ fiaf:SouthAfrica a owl:Class ;
     rdfs:label "South Africa"@en,
         "Sudáfrica"@es,
         "Afrique du Sud"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southern Africa"@en,
         "país de África Austral"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1988,8 +2398,10 @@ fiaf:SouthGeorgiaandtheSouthSandwichIslands a owl:Class ;
     rdfs:label "South Georgia and the South Sandwich Islands"@en,
         "Islas Georgias del Sur y Sándwich del Sur"@es,
         "Géorgie du Sud et les îles Sandwich du Sud"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British overseas territory in the Southern Atlantic Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British overseas territory in the Southern Atlantic Ocean"@en,
         "dependencia británica de América Insular"@es,
         "dépendance de la couronne britannique revendiquée par l'Argentine"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -1998,8 +2410,10 @@ fiaf:SouthKorea a owl:Class ;
     rdfs:label "South Korea"@en,
         "Corea, República de"@es,
         "Corée du Sud"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East Asia"@en,
         "país de Asia Oriental"@es,
         "pays d'Asie de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2008,8 +2422,10 @@ fiaf:SouthSudan a owl:Class ;
     rdfs:label "South Sudan"@en,
         "Sudán del Sur"@es,
         "Soudan du Sud"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2018,8 +2434,10 @@ fiaf:Spain a owl:Class ;
     rdfs:label "Spain"@en,
         "España"@es,
         "Espagne"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in southwestern Europe with territories in Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in southwestern Europe with territories in Africa"@en,
         "país del suroeste de Europa"@es,
         "pays du Sud-Ouest de l'Europe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2028,8 +2446,10 @@ fiaf:SriLanka a owl:Class ;
     rdfs:label "Sri Lanka"@en,
         "Sri Lanka"@es,
         "Sri Lanka"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in South Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in South Asia"@en,
         "país del sur de Asia"@es,
         "pays insulaire d'Asie du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2038,8 +2458,10 @@ fiaf:Sudan a owl:Class ;
     rdfs:label "Sudan"@en,
         "Sudán"@es,
         "Soudan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northeast Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northeast Africa"@en,
         "país de África"@es,
         "pays de l'Afrique du Nord-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2048,8 +2470,10 @@ fiaf:Suriname a owl:Class ;
     rdfs:label "Suriname"@en,
         "Surinám"@es,
         "Surinam"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in South America"@en,
         "país en América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2058,8 +2482,10 @@ fiaf:SvalbardandJanMayen a owl:Class ;
     rdfs:label "Svalbard and Jan Mayen"@en,
         "Svalbard y Jan Mayen"@es,
         "Svalbard et île Jan Mayen"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "two parts of Norway under separate jurisdictions"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "two parts of Norway under separate jurisdictions"@en,
         "Dos partes de Noruega bajo jurisdicciones separadas"@es,
         "territoires norvégiens de l’océan Arctique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2068,8 +2494,10 @@ fiaf:Sweden a owl:Class ;
     rdfs:label "Sweden"@en,
         "Suecia"@es,
         "Suède"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Northern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Northern Europe"@en,
         "país de Europa"@es,
         "pays d'Europe du Nord, en Scandinavie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2078,8 +2506,10 @@ fiaf:Switzerland a owl:Class ;
     rdfs:label "Switzerland"@en,
         "Suiza"@es,
         "Suisse"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Europe"@en,
         "país de Europa Central"@es,
         "pays d'Europe centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2088,15 +2518,19 @@ fiaf:SyrianArabRepublic a owl:Class ;
     rdfs:label "Syrian Arab Republic"@en,
         "República árabe de Siria"@es,
         "Syrienne, République arabe"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Taiwan a owl:Class ;
     rdfs:label "Taiwan"@en,
         "Taiwán"@es,
         "Taïwan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East Asia"@en,
         "país de Asia Oriental"@es,
         "pays insulaire d'Asie orientale dont la reconnaissance est limitée"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2105,8 +2539,10 @@ fiaf:Tajikistan a owl:Class ;
     rdfs:label "Tajikistan"@en,
         "Tayikistán"@es,
         "Tadjikistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central Asia"@en,
         "país de Asia Central"@es,
         "pays d'Asie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2115,8 +2551,10 @@ fiaf:Tanzania a owl:Class ;
     rdfs:label "Tanzania"@en,
         "Tanzania"@es,
         "Tanzanie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East Africa"@en,
         "país de África"@es,
         "pays d'Afrique de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2125,8 +2563,10 @@ fiaf:Thailand a owl:Class ;
     rdfs:label "Thailand"@en,
         "Tailandia"@es,
         "Thaïlande"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia"@en,
         "país de Asia"@es,
         "pays d'Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2135,15 +2575,19 @@ fiaf:Timor-Leste a owl:Class ;
     rdfs:label "Timor-Leste"@en,
         "Timor Oriental"@es,
         "Timor oriental"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Togo a owl:Class ;
     rdfs:label "Togo"@en,
         "Togo"@es,
         "Togo"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in West Africa"@en,
         "país de África"@es,
         "Pays situé en Afrique de l'ouest et indépendant depuis 1960"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2152,8 +2596,10 @@ fiaf:Tokelau a owl:Class ;
     rdfs:label "Tokelau"@en,
         "Tokelau"@es,
         "Tokelau"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "New Zealand territory in the Pacific Ocean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "New Zealand territory in the Pacific Ocean"@en,
         "archipiélago y territorio no autónomo"@es,
         "territoire de Nouvelle-Zélande dans l’océan Pacifique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2162,8 +2608,10 @@ fiaf:Tonga a owl:Class ;
     rdfs:label "Tonga"@en,
         "Tonga"@es,
         "Tonga"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Oceania, situated on an archipelago"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Oceania, situated on an archipelago"@en,
         "país de Oceanía"@es,
         "État de Polynésie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2172,8 +2620,10 @@ fiaf:TrinidadandTobago a owl:Class ;
     rdfs:label "Trinidad and Tobago"@en,
         "Trinidad y Tobago"@es,
         "Trinité-et-Tobago"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in the Caribbean"@en,
         "país en América Insular"@es,
         "État insulaire des Caraïbes"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2182,8 +2632,10 @@ fiaf:Tunisia a owl:Class ;
     rdfs:label "Tunisia"@en,
         "Tunez"@es,
         "Tunisie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in North Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in North Africa"@en,
         "país del norte de África"@es,
         "pays d'Afrique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2192,8 +2644,10 @@ fiaf:Turkmenistan a owl:Class ;
     rdfs:label "Turkmenistan"@en,
         "Turkmenistán"@es,
         "Turkménistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Central Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Central Asia"@en,
         "país de Asia Central"@es,
         "pays souverain d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2202,8 +2656,10 @@ fiaf:TurksandCaicosIslands a owl:Class ;
     rdfs:label "Turks and Caicos Islands"@en,
         "Islas Turcas y Caicos"@es,
         "Îles Turques-et-Caïques"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "British overseas territory in the Caribbean"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "British overseas territory in the Caribbean"@en,
         "dependencia británica de América Insular"@es,
         "territoire britannique d'outre-mer, Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2212,8 +2668,10 @@ fiaf:Tuvalu a owl:Class ;
     rdfs:label "Tuvalu"@en,
         "Tuvalu"@es,
         "Tuvalu"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island sovereign state in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island sovereign state in Oceania"@en,
         "país de Oceanía"@es,
         "État et archipel polynésien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2222,15 +2680,19 @@ fiaf:Türkiye a owl:Class ;
     rdfs:label "Türkiye"@en,
         "Turquía"@es,
         "Turquie"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:Uganda a owl:Class ;
     rdfs:label "Uganda"@en,
         "Uganda"@es,
         "Ouganda"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in East-central Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in East-central Africa"@en,
         "país de África"@es,
         "pays d'Afrique équatoriale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2239,8 +2701,10 @@ fiaf:Ukraine a owl:Class ;
     rdfs:label "Ukraine"@en,
         "Ucrania"@es,
         "Ukraine"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Eastern Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Eastern Europe"@en,
         "país en Europa del Este"@es,
         "pays d'Europe de l'Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2249,8 +2713,10 @@ fiaf:UnitedArabEmirates a owl:Class ;
     rdfs:label "United Arab Emirates"@en,
         "Emiratos Árabes Unidos"@es,
         "Émirats arabes unis"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Southwest Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Southwest Asia"@en,
         "país de Asia"@es,
         "État fédéral du golfe Persique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2259,8 +2725,10 @@ fiaf:UnitedKingdom a owl:Class ;
     rdfs:label "United Kingdom"@en,
         "Reino Unido"@es,
         "Royaume-Uni"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in north-west Europe"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in north-west Europe"@en,
         "país en el noroeste de Europa"@es,
         "pays d'Europe occidentale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2269,15 +2737,19 @@ fiaf:UnitedStates a owl:Class ;
     rdfs:label "United States"@en,
         "Estados Unidos"@es,
         "États-Unis"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:UnitedStatesMinorOutlyingIslands a owl:Class ;
     rdfs:label "United States Minor Outlying Islands"@en,
         "Islas Ultramarinas Menores de Estados Unidos"@es,
         "Îles mineures éloignées des États-Unis"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "statistical designation of small islands of the United States"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "statistical designation of small islands of the United States"@en,
         "islas sin habitantes permanentes de los Estados Unidos de América"@es,
         "groupe de territoires insulaires des États-Unis quasiment inhabités (défini à des fins statistiques)"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2286,8 +2758,10 @@ fiaf:Uruguay a owl:Class ;
     rdfs:label "Uruguay"@en,
         "Uruguay"@es,
         "Uruguay"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in South America"@en,
         "país en América del Sur"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2296,8 +2770,10 @@ fiaf:Uzbekistan a owl:Class ;
     rdfs:label "Uzbekistan"@en,
         "Uzbekistán"@es,
         "Ouzbékistan"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in Central Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in Central Asia"@en,
         "país de Asia Central"@es,
         "pays d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2306,8 +2782,10 @@ fiaf:Vanuatu a owl:Class ;
     rdfs:label "Vanuatu"@en,
         "Vanuatu"@es,
         "Vanuatu"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "island country in Oceania"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "island country in Oceania"@en,
         "país de Oceanía"@es,
         "État mélanésien"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2316,8 +2794,10 @@ fiaf:Venezuela a owl:Class ;
     rdfs:label "Venezuela"@en,
         "Venezuela"@es,
         "Vénézuela"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in northern South America"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in northern South America"@en,
         "país de América del Sur y el Caribe"@es,
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2326,8 +2806,10 @@ fiaf:Vietnam a owl:Class ;
     rdfs:label "Vietnam"@en,
         "Vietnam"@es,
         "Viêt Nam"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in Southeast Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in Southeast Asia"@en,
         "país de Asia"@es,
         "pays d’Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2336,22 +2818,28 @@ fiaf:Vietnam a owl:Class ;
     rdfs:label "Virgin Islands, British"@en,
         "Islas Vírgenes, Británicas"@es,
         "îles Vierges britanniques"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 <https://fiafcore.org/ontology/VirginIslands,U.S.> a owl:Class ;
     rdfs:label "Virgin Islands, U.S."@en,
         "Islas Vírgenes, de EEUU"@es,
         "Îles Vierges, États-Unis"@fr ;
-    dc:source "ISO 3166-1"@en ;
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
 fiaf:WallisandFutuna a owl:Class ;
     rdfs:label "Wallis and Futuna"@en,
         "Wallis y Futuna"@es,
         "Wallis et Futuna"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "overseas collectivity of France"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "overseas collectivity of France"@en,
         "grupo de tres islas tropicales de origen volcánico localizadas en el océano Pacífico Sur"@es,
         "collectivité d'outre-mer française"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2360,8 +2848,10 @@ fiaf:WesternSahara a owl:Class ;
     rdfs:label "Western Sahara"@en,
         "Sahara Occidental"@es,
         "Sahara occidental"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "territory in North and West Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "territory in North and West Africa"@en,
         "territorio disputado de África"@es,
         "territoire disputé du Nord-Ouest de l'Afrique"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2370,8 +2860,10 @@ fiaf:Yemen a owl:Class ;
     rdfs:label "Yemen"@en,
         "Yemen"@es,
         "Yémen"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country in West Asia"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country in West Asia"@en,
         "país de Asia occidental"@es,
         "pays arabe situé à la pointe sud-ouest de la péninsule d'Arabie"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2380,8 +2872,10 @@ fiaf:Zambia a owl:Class ;
     rdfs:label "Zambia"@en,
         "Zambia"@es,
         "Zambie"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "country at the crossroads of Central and Southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "country at the crossroads of Central and Southern Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2390,8 +2884,10 @@ fiaf:Zimbabwe a owl:Class ;
     rdfs:label "Zimbabwe"@en,
         "Zimbabue"@es,
         "Zimbabwe"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "sovereign state in southern Africa"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "sovereign state in southern Africa"@en,
         "país de África"@es,
         "pays d'Afrique australe"@fr ;
     rdfs:subClassOf fiaf:Country .
@@ -2400,8 +2896,10 @@ fiaf:ÅlandIslands a owl:Class ;
     rdfs:label "Åland Islands"@en,
         "Islas Äland"@es,
         "Åland, Îles"@fr ;
-    dc:source "ISO 3166-1"@en ;
-    rdfs:comment "islands of Finland"@en,
+    dc:source "ISO 3166-1"@en,
+        "ISO 3166-1"@es,
+        "ISO 3166-1"@fr ;
+    dc:description "islands of Finland"@en,
         "archipiélago y provincia autónoma de Finlandia"@es,
         "province et archipel finlandais, région autonome de Finlande"@fr ;
     rdfs:subClassOf fiaf:Country .

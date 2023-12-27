@@ -19,15 +19,19 @@ fiaf:Abkhazian a owl:Class ;
     rdfs:label "Abkhazian"@en,
         "Abjasiano"@es,
         "Abkhaze"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Afar a owl:Class ;
     rdfs:label "Afar"@en,
         "Afar"@es,
         "Afar"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Afro-Asiatic language spoken in Ethiopia, Djibouti and Eritrea"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Afro-Asiatic language spoken in Ethiopia, Djibouti and Eritrea"@en,
         "lengua cushita hablada en Etiopía, Eritrea y Yibuti"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -36,8 +40,10 @@ fiaf:Afrikaans a owl:Class ;
     rdfs:label "Afrikaans"@en,
         "Afrikáans"@es,
         "Afrikaans"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Germanic language, spoken in South Africa and Namibia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Germanic language, spoken in South Africa and Namibia"@en,
         "lengua germánica"@es,
         "langue germanique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -46,8 +52,10 @@ fiaf:Akan a owl:Class ;
     rdfs:label "Akan"@en,
         "Akano"@es,
         "Akan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of Akan lands in Ghana"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of Akan lands in Ghana"@en,
         "variedades dialectales relacionadas, pertenecientes al grupo potou-tano de las lenguas kwa"@es,
         "langue nigéro-congolaise parlée au Ghana"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -56,8 +64,10 @@ fiaf:Albanian a owl:Class ;
     rdfs:label "Albanian"@en,
         "Albano"@es,
         "Albanais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-European language, spoken in Albania, Kosovo, North Macedonia and Montenegro as well as Italy, Croatia, Romania and Sebia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-European language, spoken in Albania, Kosovo, North Macedonia and Montenegro as well as Italy, Croatia, Romania and Sebia"@en,
         "macrolengua indoeuropea"@es,
         "langue indo-européenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -66,8 +76,10 @@ fiaf:Amharic a owl:Class ;
     rdfs:label "Amharic"@en,
         "Amhárico"@es,
         "Amharique"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Semitic language of Ethiopia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Semitic language of Ethiopia"@en,
         "lengua semítica hablada en Etiopía"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -76,8 +88,10 @@ fiaf:Arabic a owl:Class ;
     rdfs:label "Arabic"@en,
         "Arabe"@es,
         "Arabe"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Semitic language and lingua franca of the Arab world"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Semitic language and lingua franca of the Arab world"@en,
         "lengua semítica"@es,
         "langue sémitique, lingua franca du monde arabe et langue liturgique de l'islam"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -86,8 +100,10 @@ fiaf:Aragonese a owl:Class ;
     rdfs:label "Aragonese"@en,
         "Aragonés"@es,
         "Aragonais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language"@en,
         "lengua romance"@es,
         "langue d'Espagne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -96,8 +112,10 @@ fiaf:Armenian a owl:Class ;
     rdfs:label "Armenian"@en,
         "Armenio"@es,
         "Arménien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-European language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-European language"@en,
         "lengua indoeuropea"@es,
         "langue indo-européenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -106,8 +124,10 @@ fiaf:Assamese a owl:Class ;
     rdfs:label "Assamese"@en,
         "Asamés"@es,
         "Assamais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language spoken in Assam, India"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language spoken in Assam, India"@en,
         "lengua indoeuropea"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -116,15 +136,19 @@ fiaf:Avaric a owl:Class ;
     rdfs:label "Avaric"@en,
         "Avar"@es,
         "Avar"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Avestan a owl:Class ;
     rdfs:label "Avestan"@en,
         "Avéstico"@es,
         "Avestique"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Eastern Iranian language used in Zoroastrian scripture"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Eastern Iranian language used in Zoroastrian scripture"@en,
         "lengua muerta indoeuropea de la rama indoirania"@es,
         "langue persane ancienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -133,8 +157,10 @@ fiaf:Aymara a owl:Class ;
     rdfs:label "Aymara"@en,
         "Aimara"@es,
         "Aymara"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "native language in South America"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "native language in South America"@en,
         "idioma de Bolivia, Perú y el norte de Chile"@es,
         "langue parlée par les Aymara"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -143,8 +169,10 @@ fiaf:Azerbaijani a owl:Class ;
     rdfs:label "Azerbaijani"@en,
         "Azerí"@es,
         "Azéri"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Oghuz Turkic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Oghuz Turkic language"@en,
         "lengua túrquica"@es,
         "langue turque"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -153,8 +181,10 @@ fiaf:Bambara a owl:Class ;
     rdfs:label "Bambara"@en,
         "Bambara"@es,
         "Bambara"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "western African language spoken in Mali, with SVO structure and two lexical tones"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "western African language spoken in Mali, with SVO structure and two lexical tones"@en,
         "lengua hablada en Malí, Burkina Faso, Costa de Marfil"@es,
         "langue mandingue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -163,8 +193,10 @@ fiaf:Bashkir a owl:Class ;
     rdfs:label "Bashkir"@en,
         "Baskir"@es,
         "Bachkir"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Turkic language in Russia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Turkic language in Russia"@en,
         "lengua túrquica (hablada en Rusia)"@es,
         "langue turque parlée en Russie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -173,8 +205,10 @@ fiaf:Basque a owl:Class ;
     rdfs:label "Basque"@en,
         "Euskera"@es,
         "Basque"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of the Basque people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of the Basque people"@en,
         "lengua aislada no indoeuropea hablada en territorios de España y Francia"@es,
         "isolat de langue non indo-européenne parlée par le peuple basque dans certaines parties de la France et de l'Espagne modernes"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -183,8 +217,10 @@ fiaf:Belarusian a owl:Class ;
     rdfs:label "Belarusian"@en,
         "Bielorruso"@es,
         "Biélorusse"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "East Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "East Slavic language"@en,
         "idioma eslavo oriental, oficial en Bielorrusia"@es,
         "langue slave orientale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -193,22 +229,28 @@ fiaf:Bengali a owl:Class ;
     rdfs:label "Bengali"@en,
         "Bengalí"@es,
         "Bengali"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Biharilanguages a owl:Class ;
     rdfs:label "Bihari languages"@en,
         "Bhoyapurí"@es,
         "maïthili"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Bislama a owl:Class ;
     rdfs:label "Bislama"@en,
         "Bislama"@es,
         "Bichelamar"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "English-based creole language of Vanuatu"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "English-based creole language of Vanuatu"@en,
         "lengua criolla melanesia hablado en Vanuatu"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -217,8 +259,10 @@ fiaf:Bokmål a owl:Class ;
     rdfs:label "Bokmål"@en,
         "Noruego bokmål"@es,
         "Bokmål"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "one of two official written standards for the Norwegian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "one of two official written standards for the Norwegian language"@en,
         "estándar más común del idioma noruego"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -227,8 +271,10 @@ fiaf:Bosnian a owl:Class ;
     rdfs:label "Bosnian"@en,
         "Bosnio"@es,
         "Bosnien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "South Slavic language; a standardized variety of the Serbo-Croatian pluricentric language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "South Slavic language; a standardized variety of the Serbo-Croatian pluricentric language"@en,
         "lengua eslava"@es,
         "langue slave méridionale principalement parlée en Bosnie-Herzégovine, en Serbie et au Monténégro"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -237,8 +283,10 @@ fiaf:Breton a owl:Class ;
     rdfs:label "Breton"@en,
         "Bretón"@es,
         "Breton"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Celtic language spoken in France"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Celtic language spoken in France"@en,
         "idioma celta"@es,
         "langue celtique parlée en Bretagne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -247,8 +295,10 @@ fiaf:Bulgarian a owl:Class ;
     rdfs:label "Bulgarian"@en,
         "Búlgaro"@es,
         "Bulgare"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "South Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "South Slavic language"@en,
         "lengua eslava"@es,
         "langue slave"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -257,8 +307,10 @@ fiaf:Burmese a owl:Class ;
     rdfs:label "Burmese"@en,
         "Birmano"@es,
         "Birman"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Sino-Tibetan language of Myanmar"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Sino-Tibetan language of Myanmar"@en,
         "lengua oficial de Birmania o Myanmar"@es,
         "langue parlée en Birmanie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -267,8 +319,10 @@ fiaf:Catalan a owl:Class ;
     rdfs:label "Catalan"@en,
         "Catalán"@es,
         "Catalan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Western Romance language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Western Romance language"@en,
         "lengua romance"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -277,15 +331,19 @@ fiaf:CentralKhmer a owl:Class ;
     rdfs:label "Central Khmer"@en,
         "Camboyano"@es,
         "Khmer"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Chamorro a owl:Class ;
     rdfs:label "Chamorro"@en,
         "Chamorro"@es,
         "Chamorro"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Malayo-Polynesian (Austronesian) language, spoken on the Mariana Islands"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Malayo-Polynesian (Austronesian) language, spoken on the Mariana Islands"@en,
         "lengua hablada en la isla de Guam y en las islas Marianas del Norte"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -294,8 +352,10 @@ fiaf:Chechen a owl:Class ;
     rdfs:label "Chechen"@en,
         "Checheno"@es,
         "Tchétchène"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Northeast Caucasian language spoken mostly in Chechnya and by Chechen people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Northeast Caucasian language spoken mostly in Chechnya and by Chechen people"@en,
         "lengua caucásica nororiental"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -304,8 +364,10 @@ fiaf:Chinese a owl:Class ;
     rdfs:label "Chinese"@en,
         "Chino"@es,
         "Chinois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language group of the Sinitic languages"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language group of the Sinitic languages"@en,
         "macrolengua sinotibetana"@es,
         "ensemble de langues"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -314,15 +376,19 @@ fiaf:ChurchSlavic a owl:Class ;
     rdfs:label "Church Slavic"@en,
         "Eslavo eclesiástico antiguo"@es,
         "Vieux-slave"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Chuvash a owl:Class ;
     rdfs:label "Chuvash"@en,
         "Chuvasio"@es,
         "Tchouvache"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Turkic language spoken in central Russia, primarily in the Chuvash Republic and adjacent areas"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Turkic language spoken in central Russia, primarily in the Chuvash Republic and adjacent areas"@en,
         "lengua túrquica hablada al este de las Urales"@es,
         "langue turque"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -331,8 +397,10 @@ fiaf:Cornish a owl:Class ;
     rdfs:label "Cornish"@en,
         "Córnico"@es,
         "Cornique"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Brythonic Celtic language in Southwestern Britain"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Brythonic Celtic language in Southwestern Britain"@en,
         "lengua celta britónica"@es,
         "langue celtique insulaire"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -341,8 +409,10 @@ fiaf:Corsican a owl:Class ;
     rdfs:label "Corsican"@en,
         "Corso"@es,
         "Corse"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Italo-Dalmatian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Italo-Dalmatian language"@en,
         "lengua romance hablada principalmente en la isla de Córcega (Francia) y en el norte de la isla de Cerdeña (Italia)"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -351,8 +421,10 @@ fiaf:Cree a owl:Class ;
     rdfs:label "Cree"@en,
         "Cree"@es,
         "Cri"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "aboriginal language continuum spoken in Canada"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "aboriginal language continuum spoken in Canada"@en,
         "continuo dialectal consistente en varios dialectos originarios americanos"@es,
         "langue algonquienne parlée au Canada"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -361,8 +433,10 @@ fiaf:Croatian a owl:Class ;
     rdfs:label "Croatian"@en,
         "Croata"@es,
         "Croate"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "standardized variety of Serbo-Croatian language, used by Croats"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "standardized variety of Serbo-Croatian language, used by Croats"@en,
         "lengua eslava de los Balcanes en Europa"@es,
         "langue slave du Sud"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -371,8 +445,10 @@ fiaf:Czech a owl:Class ;
     rdfs:label "Czech"@en,
         "Checo"@es,
         "Tchèque"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Slavic language"@en,
         "lengua eslava occidental hablada en la República Checa"@es,
         "langue slave occidentale parlée en Tchéquie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -381,8 +457,10 @@ fiaf:Danish a owl:Class ;
     rdfs:label "Danish"@en,
         "Danés"@es,
         "Danois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "North Germanic language spoken in Denmark"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "North Germanic language spoken in Denmark"@en,
         "lengua germánica nórdica"@es,
         "langue germanique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -391,8 +469,10 @@ fiaf:Dutch a owl:Class ;
     rdfs:label "Dutch"@en,
         "Holandés"@es,
         "Néerlandais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Germanic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Germanic language"@en,
         "lengua germánica occidental"@es,
         "langue germanique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -401,8 +481,10 @@ fiaf:Dzongkha a owl:Class ;
     rdfs:label "Dzongkha"@en,
         "Dzongkha"@es,
         "Dzongkha"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Sino-Tibetan language spoken in Bhutan"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Sino-Tibetan language spoken in Bhutan"@en,
         "lengua nacional de Bután"@es,
         "langue tibétique parlée au Bhoutan"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -411,8 +493,10 @@ fiaf:English a owl:Class ;
     rdfs:label "English"@en,
         "Inglés"@es,
         "Anglais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Germanic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Germanic language"@en,
         "lengua germánica occidental"@es,
         "langue germanique occidentale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -421,8 +505,10 @@ fiaf:Esperanto a owl:Class ;
     rdfs:label "Esperanto"@en,
         "Esperanto"@es,
         "Espéranto"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "international auxiliary language designed by L. L. Zamenhof"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "international auxiliary language designed by L. L. Zamenhof"@en,
         "lengua auxiliar planificada, creada por L. L. Zamenhof"@es,
         "langue construite internationale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -431,8 +517,10 @@ fiaf:Estonian a owl:Class ;
     rdfs:label "Estonian"@en,
         "Estonio"@es,
         "Estonien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Uralic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Uralic language"@en,
         "lengua fino-ugria hablada en Estonia"@es,
         "langue finno-ougrienne parlée en Estonie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -441,8 +529,10 @@ fiaf:Ewe a owl:Class ;
     rdfs:label "Ewe"@en,
         "Ewé"@es,
         "Ewe"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Niger–Congo language spoken in southeastern Ghana and southern Togo"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Niger–Congo language spoken in southeastern Ghana and southern Togo"@en,
         "idioma hablado en Ghana, Togo y Benín"@es,
         "langue nigéro-congolaise parlée au Togo et au Ghana"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -451,8 +541,10 @@ fiaf:Faroese a owl:Class ;
     rdfs:label "Faroese"@en,
         "Feroés"@es,
         "Féroïen"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "insular Nordic language spoken as a native language by the people of Faroe Islands"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "insular Nordic language spoken as a native language by the people of Faroe Islands"@en,
         "lengua escandinava occidental insular nativa de las Islas Feroe"@es,
         "langue indo-européenne des îles Féroé"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -461,8 +553,10 @@ fiaf:Fijian a owl:Class ;
     rdfs:label "Fijian"@en,
         "Fiyiano"@es,
         "Fidjien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language of the Malayo-Polynesian family spoken in Fiji"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language of the Malayo-Polynesian family spoken in Fiji"@en,
         "lengua austronesia"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -471,8 +565,10 @@ fiaf:Finnish a owl:Class ;
     rdfs:label "Finnish"@en,
         "Finés"@es,
         "Finnois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Finno-Ugric language mostly spoken in Finland"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Finno-Ugric language mostly spoken in Finland"@en,
         "lengua oficial, junto con el sueco, en Finlandia, hablado por algo más de 5 millones de personas"@es,
         "langue parlée dans l'ensemble de la Finlande, à l'exclusion des îles Åland"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -481,8 +577,10 @@ fiaf:French a owl:Class ;
     rdfs:label "French"@en,
         "Frances"@es,
         "Français"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language"@en,
         "lengua romance"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -491,22 +589,28 @@ fiaf:Fulah a owl:Class ;
     rdfs:label "Fulah"@en,
         "Fula"@es,
         "Peul"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Gaelic a owl:Class ;
     rdfs:label "Gaelic"@en,
         "Gaélico escocés"@es,
         "Écossais"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Galician a owl:Class ;
     rdfs:label "Galician"@en,
         "Gallego"@es,
         "Galicien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Western Ibero-Romance language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Western Ibero-Romance language"@en,
         "lengua romance"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -515,15 +619,19 @@ fiaf:Ganda a owl:Class ;
     rdfs:label "Ganda"@en,
         "Luganda"@es,
         "Luganda"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Georgian a owl:Class ;
     rdfs:label "Georgian"@en,
         "Georgiano"@es,
         "Géorgien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "official language of Georgia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "official language of Georgia"@en,
         "lengua caucásica"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -532,8 +640,10 @@ fiaf:German a owl:Class ;
     rdfs:label "German"@en,
         "Alemán"@es,
         "Allemand"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Germanic language spoken mainly in Central Europe"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Germanic language spoken mainly in Central Europe"@en,
         "lengua germánica occidental"@es,
         "langue germanique occidentale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -542,15 +652,19 @@ fiaf:Greek\(modern\) a owl:Class ;
     rdfs:label "Greek (modern)"@en,
         "Griego (moderno)"@es,
         "Grec moderne"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Greenlandic a owl:Class ;
     rdfs:label "Greenlandic"@en,
         "Groenlandés"@es,
         "Groenlandais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Eskimo-Aleut language spoken in Greenland"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Eskimo-Aleut language spoken in Greenland"@en,
         "lengua esquimo-aleutiana hablada en la isla danesa de Groenlandia"@es,
         "langue eskimo-aléoute"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -559,15 +673,19 @@ fiaf:Guaraní a owl:Class ;
     rdfs:label "Guaraní"@en,
         "Guaraní"@es,
         "Guarani"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Gujarati a owl:Class ;
     rdfs:label "Gujarati"@en,
         "Guyaratí"@es,
         "Gujarati"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language that is spoken on the state of Gujarat"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language that is spoken on the state of Gujarat"@en,
         "idioma de la India que procede del estado de Guyarat"@es,
         "langue indo-aryenne et officielle en Inde"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -576,8 +694,10 @@ fiaf:HaitianCreole a owl:Class ;
     rdfs:label "Haitian Creole"@en,
         "Haitiano"@es,
         "Créole haïtien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in Haiti"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in Haiti"@en,
         "lengua criolla hablada en Haití"@es,
         "langue créole parlée en Haïti"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -586,8 +706,10 @@ fiaf:Hausa a owl:Class ;
     rdfs:label "Hausa"@en,
         "Hausa"@es,
         "Haoussa"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Chadic language spoken by the Hausa people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Chadic language spoken by the Hausa people"@en,
         "lengua de la familia afroasiática"@es,
         "langue tchadique parlée en Afrique de l’Ouest"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -596,15 +718,19 @@ fiaf:Hebrew\(modern\) a owl:Class ;
     rdfs:label "Hebrew (modern)"@en,
         "Hebreo (moderno)"@es,
         "Hébreu"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Herero a owl:Class ;
     rdfs:label "Herero"@en,
         "Herero"@es,
         "Héréro"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language of Nambia and Botswana"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language of Nambia and Botswana"@en,
         "lengua bantú hablada por la etnia herero de Namibia y Botsuana"@es,
         "langue bantoue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -613,8 +739,10 @@ fiaf:Hindi a owl:Class ;
     rdfs:label "Hindi"@en,
         "Hindi"@es,
         "Hindi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language spoken in India"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language spoken in India"@en,
         "lengua indoaria, oficial de la India (junto al inglés)"@es,
         "langue indo-européenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -623,8 +751,10 @@ fiaf:HiriMotu a owl:Class ;
     rdfs:label "Hiri Motu"@en,
         "Hiri Motu"@es,
         "Hiri motu"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language of Papua New Guinea"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language of Papua New Guinea"@en,
         "idioma oficial de Papúa Nueva Guinea"@es,
         "pidgin basé essentiellement sur le motu"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -633,8 +763,10 @@ fiaf:Hungarian a owl:Class ;
     rdfs:label "Hungarian"@en,
         "Húngaro"@es,
         "Hongrois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Uralic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Uralic language"@en,
         "lengua de la familia de lenguas urálicas"@es,
         "langue ouralienne principalement parlée en Hongrie et dans les pays autour"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -643,8 +775,10 @@ fiaf:Icelandic a owl:Class ;
     rdfs:label "Icelandic"@en,
         "Islandés"@es,
         "Islandais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "North Germanic language mainly spoken in Iceland"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "North Germanic language mainly spoken in Iceland"@en,
         "lengua nórdica, oficial de Islandia"@es,
         "langue nordique parlée en Islande"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -653,8 +787,10 @@ fiaf:Ido a owl:Class ;
     rdfs:label "Ido"@en,
         "Ido"@es,
         "Ido"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "constructed international auxiliary language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "constructed international auxiliary language"@en,
         "lengua construida"@es,
         "langue construite dérivée de l'espéranto"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -663,8 +799,10 @@ fiaf:Igbo a owl:Class ;
     rdfs:label "Igbo"@en,
         "Igbo"@es,
         "Igbo"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Niger–Congo language of the Igbo people, mainly spoken in Nigeria"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Niger–Congo language of the Igbo people, mainly spoken in Nigeria"@en,
         "lengua hablada en Nigeria"@es,
         "langue parlée au Nigéria"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -673,8 +811,10 @@ fiaf:Indonesian a owl:Class ;
     rdfs:label "Indonesian"@en,
         "Indonesio"@es,
         "Indonésien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "official language of Indonesia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "official language of Indonesia"@en,
         "idioma oficial de la República de Indonesia"@es,
         "langue officielle de la République d'Indonésie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -683,8 +823,10 @@ fiaf:Interlingua a owl:Class ;
     rdfs:label "Interlingua"@en,
         "Interlingua"@es,
         "Interlingua"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "international auxiliary language created by IALA"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "international auxiliary language created by IALA"@en,
         "idioma auxiliar artificial internacional"@es,
         "langue construite"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -693,8 +835,10 @@ fiaf:Interlingue a owl:Class ;
     rdfs:label "Interlingue"@en,
         "Occidental"@es,
         "Occidental"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "international auxiliary language created 1922"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "international auxiliary language created 1922"@en,
         "lengua construida"@es,
         "langue construite"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -703,8 +847,10 @@ fiaf:Inuktitut a owl:Class ;
     rdfs:label "Inuktitut"@en,
         "Inuktitut"@es,
         "Inuktitut"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "name of several Inuit languages spoken in Canada"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "name of several Inuit languages spoken in Canada"@en,
         "lenguas nativas de los esquimales más orientales de Alaska, Canadá y Groenlandia"@es,
         "langue eskimo-aléoute"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -713,15 +859,19 @@ fiaf:Inupiaq a owl:Class ;
     rdfs:label "Inupiaq"@en,
         "Iñupiaq"@es,
         "Inupiak"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Irish a owl:Class ;
     rdfs:label "Irish"@en,
         "Irlandés"@es,
         "Irlandais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language native to Ireland"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language native to Ireland"@en,
         "idioma goidélico de la familia de lenguas indoeuropeas"@es,
         "langue celtique officielle en Irlande"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -730,8 +880,10 @@ fiaf:Italian a owl:Class ;
     rdfs:label "Italian"@en,
         "Italiano"@es,
         "Italien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language"@en,
         "lengua romance"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -740,8 +892,10 @@ fiaf:Japanese a owl:Class ;
     rdfs:label "Japanese"@en,
         "Japonés"@es,
         "Japonais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in East Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in East Asia"@en,
         "lengua de Asia Oriental"@es,
         "langue est-asiatique parlée au Japon"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -750,8 +904,10 @@ fiaf:Javanese a owl:Class ;
     rdfs:label "Javanese"@en,
         "Javanés"@es,
         "Javanais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language"@en,
         "lengua hablada en parte de la isla de Java"@es,
         "langue malayo-polynésienne parlée en Indonésie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -760,8 +916,10 @@ fiaf:Kannada a owl:Class ;
     rdfs:label "Kannada"@en,
         "Canarés"@es,
         "Kannada"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Dravidian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Dravidian language"@en,
         "lengua dravídica de India"@es,
         "langue dravidienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -770,8 +928,10 @@ fiaf:Kanuri a owl:Class ;
     rdfs:label "Kanuri"@en,
         "Kanuri"@es,
         "Kanouri"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Saharan language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Saharan language"@en,
         "idioma humano"@es,
         "langue saharienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -780,8 +940,10 @@ fiaf:Kashmiri a owl:Class ;
     rdfs:label "Kashmiri"@en,
         "Cachemiro"@es,
         "Cachemiri"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language from the Dardic subgroup of the Indo-Aryan languages"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language from the Dardic subgroup of the Indo-Aryan languages"@en,
         "lengua dárdica"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -790,8 +952,10 @@ fiaf:Kazakh a owl:Class ;
     rdfs:label "Kazakh"@en,
         "Kazajo"@es,
         "Kazakh"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "one of the Turkic languages in Central Asia, the state language of Karakalpakstan"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "one of the Turkic languages in Central Asia, the state language of Karakalpakstan"@en,
         "lengua túrquica"@es,
         "langue turque"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -800,15 +964,19 @@ fiaf:Kikuyu a owl:Class ;
     rdfs:label "Kikuyu"@en,
         "Kikuyu"@es,
         "Kikuyu"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Kinyarwanda a owl:Class ;
     rdfs:label "Kinyarwanda"@en,
         "Ruandés"@es,
         "Kinyarwanda"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language spoken in Central Africa, official in Rwanda"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language spoken in Central Africa, official in Rwanda"@en,
         "lengua bantú hablada en África Central, oficial en Ruanda"@es,
         "langue bantoue de l'Afrique centrale, désignée officielle en Rwanda"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -817,8 +985,10 @@ fiaf:Komi a owl:Class ;
     rdfs:label "Komi"@en,
         "Komi"@es,
         "Komi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Uralic language that is spoken on the Republic of Komi, Russia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Uralic language that is spoken on the Republic of Komi, Russia"@en,
         "idioma urálico hablado en la República de Komi, Rusia"@es,
         "macro-langue ouralienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -827,8 +997,10 @@ fiaf:Kongo a owl:Class ;
     rdfs:label "Kongo"@en,
         "Kongo"@es,
         "Kikongo"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language spoken in Angola, Congo Brazzaville and Congo Kinshasa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language spoken in Angola, Congo Brazzaville and Congo Kinshasa"@en,
         "lengua bantú hablada en Angola y Congo"@es,
         "langue parlée par les Kongos vivant en Angola et dans les deux Congo"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -837,8 +1009,10 @@ fiaf:Korean a owl:Class ;
     rdfs:label "Korean"@en,
         "Coreano"@es,
         "Coréen"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in Korean Peninsula and some part of North-eastern China"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in Korean Peninsula and some part of North-eastern China"@en,
         "lengua coreánica hablada, principalmente, en la península de Corea"@es,
         "langue parlée en Corée"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -847,8 +1021,10 @@ fiaf:Kurdish a owl:Class ;
     rdfs:label "Kurdish"@en,
         "Kurdo"@es,
         "Kurde"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Western Iranian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Western Iranian language"@en,
         "lengua indoirania hablada en el Kurdistán"@es,
         "langue parlée dans la région historique du Kurdistan"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -857,8 +1033,10 @@ fiaf:Kwanyama a owl:Class ;
     rdfs:label "Kwanyama"@en,
         "Kuanyama"@es,
         "Kuanyama"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of Angola and Namibia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of Angola and Namibia"@en,
         "lengua"@es,
         "langue bantoue parlée en Angola et en Namibie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -867,8 +1045,10 @@ fiaf:Kyrgyz a owl:Class ;
     rdfs:label "Kyrgyz"@en,
         "Kirguís"@es,
         "Kirghiz"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Kipchak Turkic language of Central Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Kipchak Turkic language of Central Asia"@en,
         "lengua túrquica"@es,
         "langue d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -877,8 +1057,10 @@ fiaf:Lao a owl:Class ;
     rdfs:label "Lao"@en,
         "Lao"@es,
         "Lao"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Kra–Dai language of Southeast Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Kra–Dai language of Southeast Asia"@en,
         "lengua tonal de la familia tai de lenguas, lengua oficial en Laos"@es,
         "langue parlée au Laos"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -887,8 +1069,10 @@ fiaf:Latin a owl:Class ;
     rdfs:label "Latin"@en,
         "Latín"@es,
         "Latin"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-European language of the Italic branch"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-European language of the Italic branch"@en,
         "lengua itálica de la Antigua Roma, que dio origen a las lenguas romances"@es,
         "langue italique, précurseur des langues romanes"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -897,8 +1081,10 @@ fiaf:Latvian a owl:Class ;
     rdfs:label "Latvian"@en,
         "Letón"@es,
         "Letton"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Baltic language, official in Latvia and the European Union"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Baltic language, official in Latvia and the European Union"@en,
         "idioma báltica, oficial en Letonia y la Unión Europea"@es,
         "langue balte orientale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -907,8 +1093,10 @@ fiaf:Limburgish a owl:Class ;
     rdfs:label "Limburgish"@en,
         "Limburgués"@es,
         "Limbourgeois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Low Franconian group of dialects"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Low Franconian group of dialects"@en,
         "grupo de lenguas francas"@es,
         "langue parlée dans les provinces de Limbourg aux Pays-Bas et en Belgique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -917,8 +1105,10 @@ fiaf:Lingala a owl:Class ;
     rdfs:label "Lingala"@en,
         "Lingala"@es,
         "Lingala"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language spoken in western Central Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language spoken in western Central Africa"@en,
         "lengua bantú hablada en el noroeste de la República Democrática del Congo"@es,
         "langue bantoue parlée en République démocratique du Congo et en République du Congo"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -927,8 +1117,10 @@ fiaf:Lithuanian a owl:Class ;
     rdfs:label "Lithuanian"@en,
         "Lituano"@es,
         "Lituanien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Baltic language spoken in Lithuania"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Baltic language spoken in Lithuania"@en,
         "lengua de la rama báltica de la familia de lenguas indoeuropeas"@es,
         "langue balte orientale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -937,8 +1129,10 @@ fiaf:Luba-Katanga a owl:Class ;
     rdfs:label "Luba-Katanga"@en,
         "Luba-Katanga"@es,
         "Luba-katanga"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "bantu language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "bantu language"@en,
         "lengua"@es,
         "langue bantoue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -947,8 +1141,10 @@ fiaf:Luxembourgish a owl:Class ;
     rdfs:label "Luxembourgish"@en,
         "Luxemburgués"@es,
         "Luxembourgeois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Germanic language or language variety spoken in Luxembourg"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Germanic language or language variety spoken in Luxembourg"@en,
         "idioma germano-occidental hablado en Luxemburgo"@es,
         "langue germanique ou variété de langue parlée au Luxembourg"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -957,8 +1153,10 @@ fiaf:Macedonian a owl:Class ;
     rdfs:label "Macedonian"@en,
         "Macedonio"@es,
         "Macédonien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "South Slavic language mostly spoken in North Macedonia and its neighbouring countries"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "South Slavic language mostly spoken in North Macedonia and its neighbouring countries"@en,
         "lengua eslava"@es,
         "langue slave"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -967,8 +1165,10 @@ fiaf:Malagasy a owl:Class ;
     rdfs:label "Malagasy"@en,
         "Malgache"@es,
         "Malgache"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in Madagascar"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in Madagascar"@en,
         "lengua malayopolinésica"@es,
         "langue nationale de l'île de Madagascar"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -977,8 +1177,10 @@ fiaf:Malay a owl:Class ;
     rdfs:label "Malay"@en,
         "Malayo"@es,
         "Malais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language; language which is the basis for Malaysian Malay and Indonesian and encompasses other dialects; macrolanguage with code ms & msa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language; language which is the basis for Malaysian Malay and Indonesian and encompasses other dialects; macrolanguage with code ms & msa"@en,
         "lengua oficial de Malasia, Indonesia, Singapur y Brunei"@es,
         "langue austronésienne (macro-langue)"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -987,8 +1189,10 @@ fiaf:Malayalam a owl:Class ;
     rdfs:label "Malayalam"@en,
         "Malayalam"@es,
         "Malayalam"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Dravidian language of India"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Dravidian language of India"@en,
         "idioma del estado de Kerala, India"@es,
         "langue d'Inde"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -997,8 +1201,10 @@ fiaf:Maldivian a owl:Class ;
     rdfs:label "Maldivian"@en,
         "Maldivo"@es,
         "Maldivien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan national language of the Maldives"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan national language of the Maldives"@en,
         "idioma humano"@es,
         "langue des Maldives"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1007,8 +1213,10 @@ fiaf:Maltese a owl:Class ;
     rdfs:label "Maltese"@en,
         "Maltés"@es,
         "Maltais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Semitic language spoken mostly in Malta"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Semitic language spoken mostly in Malta"@en,
         "lengua semítica derivada del Idioma árabe, oficial en Malta"@es,
         "langue chamito-sémitique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1017,8 +1225,10 @@ fiaf:Manx a owl:Class ;
     rdfs:label "Manx"@en,
         "Manés"@es,
         "Mannois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Celtic language spoken on the Isle of Man"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Celtic language spoken on the Isle of Man"@en,
         "idioma celta"@es,
         "langue celtique appartenant à la branche des langues gaéliques et parlée sur l’île de Man"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1027,15 +1237,19 @@ fiaf:Maori a owl:Class ;
     rdfs:label "Maori"@en,
         "Maorí"@es,
         "Maori de Nouvelle-Zélande"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Marathi a owl:Class ;
     rdfs:label "Marathi"@en,
         "Maratí"@es,
         "Marathi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language"@en,
         "lengua indoaria, la más hablada de la India con larga tradición literaria"@es,
         "langue parlée en Inde"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1044,8 +1258,10 @@ fiaf:Marshallese a owl:Class ;
     rdfs:label "Marshallese"@en,
         "Marshalés"@es,
         "Marshallais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Micronesian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Micronesian language"@en,
         "lengua malayo-polinesia"@es,
         "langue micronésienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1054,8 +1270,10 @@ fiaf:Mongolian a owl:Class ;
     rdfs:label "Mongolian"@en,
         "Mongol"@es,
         "Mongol"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "official language of Mongolia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "official language of Mongolia"@en,
         "lengua mongólica oriental"@es,
         "langue officielle de la Mongolie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1064,8 +1282,10 @@ fiaf:Nauruan a owl:Class ;
     rdfs:label "Nauruan"@en,
         "Nauruano"@es,
         "Nauruan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language spoken in Nauru"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language spoken in Nauru"@en,
         "lengua micronesia"@es,
         "langue micronésienne parlée à Nauru"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1074,8 +1294,10 @@ fiaf:Navajo a owl:Class ;
     rdfs:label "Navajo"@en,
         "Navajo"@es,
         "Navajo"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Athabaskan language of Na-Dené stock spoken in the southwestern United States"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Athabaskan language of Na-Dené stock spoken in the southwestern United States"@en,
         "lengua indígena americana"@es,
         "langue athapascane méridionale parlée dans le sud-ouest des États-Unis par les Navajos"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1084,8 +1306,10 @@ fiaf:Ndonga a owl:Class ;
     rdfs:label "Ndonga"@en,
         "Ndonga"@es,
         "Ndonga"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language spoken in Namibia and parts of Angola"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language spoken in Namibia and parts of Angola"@en,
         "idioma humano"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1094,8 +1318,10 @@ fiaf:Nepali a owl:Class ;
     rdfs:label "Nepali"@en,
         "Nepalí"@es,
         "Népalais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "official language of Nepal"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "official language of Nepal"@en,
         "idioma oficial de Nepal"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1104,15 +1330,19 @@ fiaf:NorthNdebele a owl:Class ;
     rdfs:label "North Ndebele"@en,
         "Ndebele del norte"@es,
         "Sindebele"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:NorthernSami a owl:Class ;
     rdfs:label "Northern Sami"@en,
         "Sami septentrional"@es,
         "Same du Nord"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "most widely spoken of all Sámi languages"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "most widely spoken of all Sámi languages"@en,
         "lengua sami"@es,
         "langue same"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1121,8 +1351,10 @@ fiaf:Norwegian a owl:Class ;
     rdfs:label "Norwegian"@en,
         "Noruego"@es,
         "Norvégien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "North Germanic language spoken in Norway"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "North Germanic language spoken in Norway"@en,
         "lengua nórdica oficial en Noruega"@es,
         "langue nordique, parlée en Norvège"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1131,15 +1363,19 @@ fiaf:NorwegianNynorsk a owl:Class ;
     rdfs:label "Norwegian Nynorsk"@en,
         "Nynorsk"@es,
         "Nynorsk"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Nuosu a owl:Class ;
     rdfs:label "Nuosu"@en,
         "Yi de Sichuán"@es,
         "Yi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "the prestige language of the Yi people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "the prestige language of the Yi people"@en,
         "lengua yi, siendo esta considerada como la lengua de prestigio hablada por los Yi"@es,
         "langue lolo"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1148,15 +1384,19 @@ fiaf:Nyanja a owl:Class ;
     rdfs:label "Nyanja"@en,
         "Chichewa"@es,
         "Chichewa"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Occitan a owl:Class ;
     rdfs:label "Occitan"@en,
         "Occitano"@es,
         "Occitan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language of Western Europe"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language of Western Europe"@en,
         "lengua romance"@es,
         "langue romane du Sud de la France"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1165,22 +1405,28 @@ fiaf:Ojibwa a owl:Class ;
     rdfs:label "Ojibwa"@en,
         "Ojibwa"@es,
         "Ojibwé"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Oriya a owl:Class ;
     rdfs:label "Oriya"@en,
         "Oriya"@es,
         "Oriya"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Oromo a owl:Class ;
     rdfs:label "Oromo"@en,
         "Oromo"@es,
         "Oromo"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Cushitic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Cushitic language"@en,
         "lengua afroasiática"@es,
         "langue couchitique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1189,8 +1435,10 @@ fiaf:Ossetian a owl:Class ;
     rdfs:label "Ossetian"@en,
         "Osético"@es,
         "Ossète"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Eastern Iranian language of Ossetia, in the Caucasus"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Eastern Iranian language of Ossetia, in the Caucasus"@en,
         "lengua irania que se habla en Osetia"@es,
         "langue iranienne parlée dans le Caucase"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1199,8 +1447,10 @@ fiaf:Pali a owl:Class ;
     rdfs:label "Pali"@en,
         "Pali"@es,
         "Pali"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language native to the Indian subcontinent"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language native to the Indian subcontinent"@en,
         "idioma índico o prácrito, de las lenguas indoarias"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1209,8 +1459,10 @@ fiaf:Pashto a owl:Class ;
     rdfs:label "Pashto"@en,
         "Pastú"@es,
         "Pachto"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Eastern Iranian language of Afghanistan and Pakistan"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Eastern Iranian language of Afghanistan and Pakistan"@en,
         "lengua indoirania"@es,
         "langue indo-iranienne parlée en Afghanistan (dont il est l'une des deux langues officielles), ainsi qu’au Pakistan"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1219,8 +1471,10 @@ fiaf:Persian a owl:Class ;
     rdfs:label "Persian"@en,
         "Persa"@es,
         "Persan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Southwestern Iranian dialect continuum spoken in the Caucasus, Central Asia, Iran, Kuwait, and Pakistan"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Southwestern Iranian dialect continuum spoken in the Caucasus, Central Asia, Iran, Kuwait, and Pakistan"@en,
         "lengua indoeuropea hablada en Irán"@es,
         "langue indo-européenne de la branche des langues iraniennes"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1229,8 +1483,10 @@ fiaf:Polish a owl:Class ;
     rdfs:label "Polish"@en,
         "Polaco"@es,
         "Polonais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Slavic language"@en,
         "lengua eslava occidental"@es,
         "langue slave occidentale parlée principalement en Pologne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1239,8 +1495,10 @@ fiaf:Portuguese a owl:Class ;
     rdfs:label "Portuguese"@en,
         "Portugués"@es,
         "Portugais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Western Romance language of the Indo-European language family"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Western Romance language of the Indo-European language family"@en,
         "lengua romance"@es,
         "langue ibéro-romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1249,15 +1507,19 @@ fiaf:Punjabi a owl:Class ;
     rdfs:label "Punjabi"@en,
         "Panyabí"@es,
         "Pendjabi"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Quechua a owl:Class ;
     rdfs:label "Quechua"@en,
         "Quechua"@es,
         "Quechua"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language family spoken primarily in the Andes region of South America"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language family spoken primarily in the Andes region of South America"@en,
         "familia de lenguas originaria de los Andes centrales"@es,
         "famille de langues"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1266,8 +1528,10 @@ fiaf:Romanian a owl:Class ;
     rdfs:label "Romanian"@en,
         "Rumano"@es,
         "Roumain"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Eastern Romance language, official of Romania"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Eastern Romance language, official of Romania"@en,
         "lengua romance oriental, oficial en Rumania"@es,
         "langue romane parlée principalement en Roumanie et en Moldavie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1276,8 +1540,10 @@ fiaf:Romansh a owl:Class ;
     rdfs:label "Romansh"@en,
         "Romanche"@es,
         "Romanche"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language spoken predominantly in the southeastern Swiss canton of Grisons (Graubünden)"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language spoken predominantly in the southeastern Swiss canton of Grisons (Graubünden)"@en,
         "lengua retorrománica que se habla en Suiza"@es,
         "langue romane parlée en Suisse"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1286,15 +1552,19 @@ fiaf:Rundi a owl:Class ;
     rdfs:label "Rundi"@en,
         "Kirundi"@es,
         "Kirundi"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Russian a owl:Class ;
     rdfs:label "Russian"@en,
         "Ruso"@es,
         "Russe"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "East Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "East Slavic language"@en,
         "lengua indoeuropea de la rama eslava oriental"@es,
         "langue slave originaire de Russie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1303,8 +1573,10 @@ fiaf:Samoan a owl:Class ;
     rdfs:label "Samoan"@en,
         "Samoano"@es,
         "Samoan"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of the Samoan Islands"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of the Samoan Islands"@en,
         "lengua austronesia"@es,
         "langue polynésienne parlée aux Îles Samoa"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1313,8 +1585,10 @@ fiaf:Sango a owl:Class ;
     rdfs:label "Sango"@en,
         "Sango"@es,
         "Sango"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Ngbandi-based creole of the Central African Republic"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Ngbandi-based creole of the Central African Republic"@en,
         "lengua africana del grupo ubanguiano"@es,
         "langue créole à base lexicale ngbandi"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1323,8 +1597,10 @@ fiaf:Sanskrit a owl:Class ;
     rdfs:label "Sanskrit"@en,
         "Sánscrito"@es,
         "Sanskrit"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "ancient Indo-Aryan language of South Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "ancient Indo-Aryan language of South Asia"@en,
         "lengua clásica de la India, de la familia indoeuropea"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1333,8 +1609,10 @@ fiaf:Sardinian a owl:Class ;
     rdfs:label "Sardinian"@en,
         "Sardo"@es,
         "Sarde"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language indigenous to the island of Sardinia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language indigenous to the island of Sardinia"@en,
         "lengua romance hablada en la isla de Cerdeña (Italia)"@es,
         "langue romane parlée dans la plupart de l'île de Sardaigne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1343,8 +1621,10 @@ fiaf:Serbian a owl:Class ;
     rdfs:label "Serbian"@en,
         "Serbio"@es,
         "Serbe"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "standardized variety of Serbo-Croatian language used by Serbs"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "standardized variety of Serbo-Croatian language used by Serbs"@en,
         "variante estándar del serbocroata usado en Serbia"@es,
         "langue slave"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1353,8 +1633,10 @@ fiaf:Shona a owl:Class ;
     rdfs:label "Shona"@en,
         "Shona"@es,
         "Shona"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language of Zimbabwe and Mozambique"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language of Zimbabwe and Mozambique"@en,
         "idioma"@es,
         "langue bantoue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1363,8 +1645,10 @@ fiaf:Sindhi a owl:Class ;
     rdfs:label "Sindhi"@en,
         "Sindhi"@es,
         "Sindhi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language spoken in Pakistan and India"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language spoken in Pakistan and India"@en,
         "idioma"@es,
         "langue indo-aryenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1373,15 +1657,19 @@ fiaf:Sinhalese a owl:Class ;
     rdfs:label "Sinhalese"@en,
         "Cingalés"@es,
         "Cingalais"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Slovak a owl:Class ;
     rdfs:label "Slovak"@en,
         "Eslovaco"@es,
         "Slovaque"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "West Slavic language spoken in Slovakia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "West Slavic language spoken in Slovakia"@en,
         "lengua eslava hablada en Eslovaquia"@es,
         "langue slave occidentale parlée en Slovaquie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1390,15 +1678,19 @@ fiaf:Slovenian a owl:Class ;
     rdfs:label "Slovenian"@en,
         "Esloveno"@es,
         "Slovène"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Somali a owl:Class ;
     rdfs:label "Somali"@en,
         "Somalí"@es,
         "Somali"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Afroasiatic language belonging to the Cushitic branch"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Afroasiatic language belonging to the Cushitic branch"@en,
         "lengua cusítica"@es,
         "langue couchitique"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1407,22 +1699,28 @@ fiaf:SouthNdebele a owl:Class ;
     rdfs:label "South Ndebele"@en,
         "Ndebele del sur"@es,
         "Nrebele"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:SouthernSotho a owl:Class ;
     rdfs:label "Southern Sotho"@en,
         "Sesotho"@es,
         "Sotho du Sud"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Spanish a owl:Class ;
     rdfs:label "Spanish"@en,
         "Español"@es,
         "Espagnol"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romanic language originating in the Iberian Peninsula"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romanic language originating in the Iberian Peninsula"@en,
         "lengua romance"@es,
         "langue romane"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1431,8 +1729,10 @@ fiaf:Sundanese a owl:Class ;
     rdfs:label "Sundanese"@en,
         "Sundanés"@es,
         "Soundanais"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in Indonesia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in Indonesia"@en,
         "lengua malayo-polinesia hablada en Indonesia"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1441,8 +1741,10 @@ fiaf:Swahili a owl:Class ;
     rdfs:label "Swahili"@en,
         "Suajili"@es,
         "Swahili"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language spoken mainly in East Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language spoken mainly in East Africa"@en,
         "lengua bantú"@es,
         "groupe de langues bantoues de l'Afrique de l'Est, fruit d'un métissage de langues africaines, d'arabe et de persan"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1451,15 +1753,19 @@ fiaf:Swati a owl:Class ;
     rdfs:label "Swati"@en,
         "Suazi"@es,
         "Swati"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Swedish a owl:Class ;
     rdfs:label "Swedish"@en,
         "Sueco"@es,
         "Suédois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "North Germanic language spoken in Sweden and Finland"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "North Germanic language spoken in Sweden and Finland"@en,
         "lengua germánica nórdica"@es,
         "langue nord-germanique parlée en Suède et en Finlande"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1468,8 +1774,10 @@ fiaf:Tagalog a owl:Class ;
     rdfs:label "Tagalog"@en,
         "Tagalo"@es,
         "Tagalog"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austronesian language and the national language of the Philippines"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austronesian language and the national language of the Philippines"@en,
         "lengua austronesia"@es,
         "langue philippine"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1478,8 +1786,10 @@ fiaf:Tahitian a owl:Class ;
     rdfs:label "Tahitian"@en,
         "Tahitiano"@es,
         "Tahitien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of French Polynesia without official language status"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of French Polynesia without official language status"@en,
         "lengua austronesia dentro del grupo malayo-polinesio oriental, hablada en la isla de Tahití"@es,
         "langue de la Polynésie française sans statut de langue officielle"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1488,8 +1798,10 @@ fiaf:Tajik a owl:Class ;
     rdfs:label "Tajik"@en,
         "Tayiko"@es,
         "Tadjik"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language spoken in Tajikistan"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language spoken in Tajikistan"@en,
         "lengua irania"@es,
         "langue indo-européenne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1498,8 +1810,10 @@ fiaf:Tamil a owl:Class ;
     rdfs:label "Tamil"@en,
         "Tamil"@es,
         "Tamoul"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Dravidian language native to South India and Sri Lanka"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Dravidian language native to South India and Sri Lanka"@en,
         "lengua dravídica"@es,
         "langue dravidienne méridionale parlée par les Tamouls"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1508,8 +1822,10 @@ fiaf:Tatar a owl:Class ;
     rdfs:label "Tatar"@en,
         "Tártaro"@es,
         "Tatar"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Turkic language spoken by Tatars"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Turkic language spoken by Tatars"@en,
         "lengua túrquica hablada por los tártaros"@es,
         "langue turque"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1518,8 +1834,10 @@ fiaf:Telugu a owl:Class ;
     rdfs:label "Telugu"@en,
         "Télugu"@es,
         "Télougou"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Dravidian language native to South India"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Dravidian language native to South India"@en,
         "lengua dravídica"@es,
         "langue dravidienne"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1528,8 +1846,10 @@ fiaf:Thai a owl:Class ;
     rdfs:label "Thai"@en,
         "Tailandés"@es,
         "Thaï"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Tai language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Tai language"@en,
         "lengua tai, oficial de Tailandia"@es,
         "langue parlée en Thaïlande"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1538,8 +1858,10 @@ fiaf:Tibetan a owl:Class ;
     rdfs:label "Tibetan"@en,
         "Tibetano"@es,
         "Tibétain"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Tibeto-Burman language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Tibeto-Burman language"@en,
         "lengua sino-tibetana"@es,
         "forme standardisée du tibétain central"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1548,8 +1870,10 @@ fiaf:Tigrinya a owl:Class ;
     rdfs:label "Tigrinya"@en,
         "Tigriña"@es,
         "Tigrigna"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Semitic language spoken in Ethiopia and Eritrea"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Semitic language spoken in Ethiopia and Eritrea"@en,
         "lengua etiópica"@es,
         "langue sémitique parlée en Érythrée et en Éthiopie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1558,8 +1882,10 @@ fiaf:Tongan a owl:Class ;
     rdfs:label "Tongan"@en,
         "Tongano"@es,
         "Tongien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Polynesian language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Polynesian language"@en,
         "lengua polinesia"@es,
         "langue polynésienne des Tonga"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1568,8 +1894,10 @@ fiaf:Tsonga a owl:Class ;
     rdfs:label "Tsonga"@en,
         "Tsonga"@es,
         "Tsonga"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language of the Tsonga people of southern Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language of the Tsonga people of southern Africa"@en,
         "lengua bantú"@es,
         "langue bantoue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1578,8 +1906,10 @@ fiaf:Tswana a owl:Class ;
     rdfs:label "Tswana"@en,
         "Setsuana"@es,
         "Tswana"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Bantu language of Botswana and South Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Bantu language of Botswana and South Africa"@en,
         "lengua bantú"@es,
         "langue bantoue de l'ethnie du même nom"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1588,8 +1918,10 @@ fiaf:Turkish a owl:Class ;
     rdfs:label "Turkish"@en,
         "Turco"@es,
         "Turc"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Oghuz Turkic language of the Turkish people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Oghuz Turkic language of the Turkish people"@en,
         "lengua de Eurasia"@es,
         "langue parlée principalement en Turquie et en Chypre du Nord"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1598,8 +1930,10 @@ fiaf:Turkmen a owl:Class ;
     rdfs:label "Turkmen"@en,
         "Turcomano"@es,
         "Turkmène"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Oghuz Turkic language of Central Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Oghuz Turkic language of Central Asia"@en,
         "lengua túrquica"@es,
         "langue turcique, langue officielle du Turkménistan"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1608,8 +1942,10 @@ fiaf:Twi a owl:Class ;
     rdfs:label "Twi"@en,
         "Twi"@es,
         "Twi"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "dialect of the Akan language in Ghana"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "dialect of the Akan language in Ghana"@en,
         "uno de los tres dialectos importantes del idioma acano"@es,
         "langue bantoue parlée au Ghana"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1618,8 +1954,10 @@ fiaf:Ukrainian a owl:Class ;
     rdfs:label "Ukrainian"@en,
         "Ucraniano"@es,
         "Ukrainien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "East Slavic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "East Slavic language"@en,
         "lengua eslava"@es,
         "langue appartenant à la branche orientale des langues slaves"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1628,8 +1966,10 @@ fiaf:Urdu a owl:Class ;
     rdfs:label "Urdu"@en,
         "Urdu"@es,
         "Ourdou"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Indo-Aryan language spoken in South Asia"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Indo-Aryan language spoken in South Asia"@en,
         "lengua indoeuropea de la rama indoirania, hablada en Pakistán como lengua nacional"@es,
         "langue parlée au Pakistan et en Inde"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1638,8 +1978,10 @@ fiaf:Uyghur a owl:Class ;
     rdfs:label "Uyghur"@en,
         "Uigur"@es,
         "Ouïghour"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Turkic language spoken by the Uyghur people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Turkic language spoken by the Uyghur people"@en,
         "lengua del grupo túrquico de las lenguas altaicas"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1648,8 +1990,10 @@ fiaf:Uzbek a owl:Class ;
     rdfs:label "Uzbek"@en,
         "Uzbeko"@es,
         "Ouzbek"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Turkic language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Turkic language"@en,
         "lengua túrquica"@es,
         "langue appartenant au groupe des langues turques"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1658,8 +2002,10 @@ fiaf:Venda a owl:Class ;
     rdfs:label "Venda"@en,
         "Venda"@es,
         "Venda"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of the Venda people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of the Venda people"@en,
         "lengua bantú"@es,
         "langue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1668,8 +2014,10 @@ fiaf:Vietnamese a owl:Class ;
     rdfs:label "Vietnamese"@en,
         "Vietnamita"@es,
         "Vietnamien"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Austroasiatic language originating in Vietnam"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Austroasiatic language originating in Vietnam"@en,
         "lengua tonal austroasiática, idioma oficial en Vietnam"@es,
         "langue nationale du Vietnam (groupe mon-khmer)"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1678,8 +2026,10 @@ fiaf:Volapük a owl:Class ;
     rdfs:label "Volapük"@en,
         "Volapük"@es,
         "Volapük"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "constructed international auxiliary language"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "constructed international auxiliary language"@en,
         "lengua artificial creada para facilitar la comprensión entre personas de distintas culturas"@es,
         "langue auxiliaire internationale construite"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1688,8 +2038,10 @@ fiaf:Walloon a owl:Class ;
     rdfs:label "Walloon"@en,
         "Valón"@es,
         "Wallon"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Romance language indigenous to Belgium and France"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Romance language indigenous to Belgium and France"@en,
         "lengua románica del norte, hablada en Bélgica"@es,
         "langue régionale de Belgique et langue minoritaire en France"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1698,8 +2050,10 @@ fiaf:Welsh a owl:Class ;
     rdfs:label "Welsh"@en,
         "Galés"@es,
         "Gallois"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Brythonic language spoken natively in Wales"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Brythonic language spoken natively in Wales"@en,
         "lengua celta"@es,
         "langue de la branche brittonique des langues celtiques proche du cornique et du breton parlée principalement au pays de Galles"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1708,15 +2062,19 @@ fiaf:WesternFrisian a owl:Class ;
     rdfs:label "Western Frisian"@en,
         "Frisón"@es,
         "Frison occidental"@fr ;
-    dc:source "ISO 639-1"@en ;
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
     rdfs:subClassOf fiaf:Language .
 
 fiaf:Wolof a owl:Class ;
     rdfs:label "Wolof"@en,
         "Wolof"@es,
         "Wolof"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "language of Senegal, the Gambia, and Mauritania"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "language of Senegal, the Gambia, and Mauritania"@en,
         "idioma de Senegal, Gambia y Mauritania"@es,
         "langue parlée au Sénégal, en Gambie et en Mauritanie"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1725,8 +2083,10 @@ fiaf:Xhosa a owl:Class ;
     rdfs:label "Xhosa"@en,
         "Xhosa"@es,
         "Xhosa"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Nguni language of southern South Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Nguni language of southern South Africa"@en,
         "lengua bantú"@es,
         "langue bantoue"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1735,8 +2095,10 @@ fiaf:Yiddish a owl:Class ;
     rdfs:label "Yiddish"@en,
         "Yídish"@es,
         "Yiddish"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "High German-derived language used by Ashkenazi Jews"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "High German-derived language used by Ashkenazi Jews"@en,
         "idioma germánico utilizado tradicionalmente por los judíos asquenazítas"@es,
         "langue des Juifs d'Europe centrale et orientale (Ashkénazes)"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1745,8 +2107,10 @@ fiaf:Yoruba a owl:Class ;
     rdfs:label "Yoruba"@en,
         "Yoruba"@es,
         "Yoruba"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Niger-Congo language spoken in West Africa"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Niger-Congo language spoken in West Africa"@en,
         "lengua hablada en Benín, Togo y Nigeria"@es,
         "langue d'Afrique occidentale"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1755,8 +2119,10 @@ fiaf:Zhuang a owl:Class ;
     rdfs:label "Zhuang"@en,
         "Chuan"@es,
         "Zhuang"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "any of various Tai languages used by the Zhuang people"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "any of various Tai languages used by the Zhuang people"@en,
         "idioma usado por el pueblo zhuang de la República Popular China"@es,
         "langue taï-kadaï parlée par les Zhuangs"@fr ;
     rdfs:subClassOf fiaf:Language .
@@ -1765,8 +2131,10 @@ fiaf:Zulu a owl:Class ;
     rdfs:label "Zulu"@en,
         "Zulú"@es,
         "Zoulou"@fr ;
-    dc:source "ISO 639-1"@en ;
-    rdfs:comment "Nguni language of eastern South Africa and neighbouring countries"@en,
+    dc:source "ISO 639-1"@en,
+        "ISO 639-1"@es,
+        "ISO 639-1"@fr ;
+    dc:description "Nguni language of eastern South Africa and neighbouring countries"@en,
         "idioma bantú"@es,
         "langue du peuple Zoulou"@fr ;
     rdfs:subClassOf fiaf:Language .
