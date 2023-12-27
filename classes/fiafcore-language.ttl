@@ -2,1305 +2,1771 @@
 @prefix fiaf: <https://fiafcore.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Language> a owl:Class ;
-    rdfs:label "Language"@en ;
-    rdfs:label "Lengua"@es ;
-    rdfs:label "Langue"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual 2.3.3"@en ;
-    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3"@es ;
-    dc:source "Manuel de catalogage des images animées de la FIAF 2.3.3"@fr .
+fiaf:Language a owl:Class ;
+    rdfs:label "Language"@en,
+        "Lengua"@es,
+        "Langue"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 2.3.3"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3"@es,
+        "Manuel de catalogage des images animées de la FIAF 2.3.3"@fr .
 
 # Subclasses
 
-<https://fiafcore.org/ontology/Abkhazian> a owl:Class ;
+fiaf:Abkhazian a owl:Class ;
     rdfs:label "Abkhazian"@en,
         "Abjasiano"@es,
         "Abkhaze"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Afar> a owl:Class ;
+fiaf:Afar a owl:Class ;
     rdfs:label "Afar"@en,
         "Afar"@es,
         "Afar"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Afro-Asiatic language spoken in Ethiopia, Djibouti and Eritrea"@en,
+        "lengua cushita hablada en Etiopía, Eritrea y Yibuti"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Afrikaans> a owl:Class ;
+fiaf:Afrikaans a owl:Class ;
     rdfs:label "Afrikaans"@en,
         "Afrikáans"@es,
         "Afrikaans"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Germanic language, spoken in South Africa and Namibia"@en,
+        "lengua germánica"@es,
+        "langue germanique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Akan> a owl:Class ;
+fiaf:Akan a owl:Class ;
     rdfs:label "Akan"@en,
         "Akano"@es,
         "Akan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of Akan lands in Ghana"@en,
+        "variedades dialectales relacionadas, pertenecientes al grupo potou-tano de las lenguas kwa"@es,
+        "langue nigéro-congolaise parlée au Ghana"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Albanian> a owl:Class ;
+fiaf:Albanian a owl:Class ;
     rdfs:label "Albanian"@en,
         "Albano"@es,
         "Albanais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-European language, spoken in Albania, Kosovo, North Macedonia and Montenegro as well as Italy, Croatia, Romania and Sebia"@en,
+        "macrolengua indoeuropea"@es,
+        "langue indo-européenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Amharic> a owl:Class ;
+fiaf:Amharic a owl:Class ;
     rdfs:label "Amharic"@en,
         "Amhárico"@es,
         "Amharique"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Semitic language of Ethiopia"@en,
+        "lengua semítica hablada en Etiopía"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Arabic> a owl:Class ;
+fiaf:Arabic a owl:Class ;
     rdfs:label "Arabic"@en,
         "Arabe"@es,
         "Arabe"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Semitic language and lingua franca of the Arab world"@en,
+        "lengua semítica"@es,
+        "langue sémitique, lingua franca du monde arabe et langue liturgique de l'islam"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Aragonese> a owl:Class ;
+fiaf:Aragonese a owl:Class ;
     rdfs:label "Aragonese"@en,
         "Aragonés"@es,
         "Aragonais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language"@en,
+        "lengua romance"@es,
+        "langue d'Espagne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Armenian> a owl:Class ;
+fiaf:Armenian a owl:Class ;
     rdfs:label "Armenian"@en,
         "Armenio"@es,
         "Arménien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-European language"@en,
+        "lengua indoeuropea"@es,
+        "langue indo-européenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Assamese> a owl:Class ;
+fiaf:Assamese a owl:Class ;
     rdfs:label "Assamese"@en,
         "Asamés"@es,
         "Assamais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language spoken in Assam, India"@en,
+        "lengua indoeuropea"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Avaric> a owl:Class ;
+fiaf:Avaric a owl:Class ;
     rdfs:label "Avaric"@en,
         "Avar"@es,
         "Avar"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Avestan> a owl:Class ;
+fiaf:Avestan a owl:Class ;
     rdfs:label "Avestan"@en,
         "Avéstico"@es,
         "Avestique"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Eastern Iranian language used in Zoroastrian scripture"@en,
+        "lengua muerta indoeuropea de la rama indoirania"@es,
+        "langue persane ancienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Aymara> a owl:Class ;
+fiaf:Aymara a owl:Class ;
     rdfs:label "Aymara"@en,
         "Aimara"@es,
         "Aymara"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "native language in South America"@en,
+        "idioma de Bolivia, Perú y el norte de Chile"@es,
+        "langue parlée par les Aymara"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Azerbaijani> a owl:Class ;
+fiaf:Azerbaijani a owl:Class ;
     rdfs:label "Azerbaijani"@en,
         "Azerí"@es,
         "Azéri"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Oghuz Turkic language"@en,
+        "lengua túrquica"@es,
+        "langue turque"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bambara> a owl:Class ;
+fiaf:Bambara a owl:Class ;
     rdfs:label "Bambara"@en,
         "Bambara"@es,
         "Bambara"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "western African language spoken in Mali, with SVO structure and two lexical tones"@en,
+        "lengua hablada en Malí, Burkina Faso, Costa de Marfil"@es,
+        "langue mandingue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bashkir> a owl:Class ;
+fiaf:Bashkir a owl:Class ;
     rdfs:label "Bashkir"@en,
         "Baskir"@es,
         "Bachkir"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Turkic language in Russia"@en,
+        "lengua túrquica (hablada en Rusia)"@es,
+        "langue turque parlée en Russie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Basque> a owl:Class ;
+fiaf:Basque a owl:Class ;
     rdfs:label "Basque"@en,
         "Euskera"@es,
         "Basque"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of the Basque people"@en,
+        "lengua aislada no indoeuropea hablada en territorios de España y Francia"@es,
+        "isolat de langue non indo-européenne parlée par le peuple basque dans certaines parties de la France et de l'Espagne modernes"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Belarusian> a owl:Class ;
+fiaf:Belarusian a owl:Class ;
     rdfs:label "Belarusian"@en,
         "Bielorruso"@es,
         "Biélorusse"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "East Slavic language"@en,
+        "idioma eslavo oriental, oficial en Bielorrusia"@es,
+        "langue slave orientale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bengali> a owl:Class ;
+fiaf:Bengali a owl:Class ;
     rdfs:label "Bengali"@en,
         "Bengalí"@es,
         "Bengali"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Biharilanguages> a owl:Class ;
+fiaf:Biharilanguages a owl:Class ;
     rdfs:label "Bihari languages"@en,
         "Bhoyapurí"@es,
         "maïthili"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bislama> a owl:Class ;
+fiaf:Bislama a owl:Class ;
     rdfs:label "Bislama"@en,
         "Bislama"@es,
         "Bichelamar"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "English-based creole language of Vanuatu"@en,
+        "lengua criolla melanesia hablado en Vanuatu"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bokmål> a owl:Class ;
+fiaf:Bokmål a owl:Class ;
     rdfs:label "Bokmål"@en,
         "Noruego bokmål"@es,
         "Bokmål"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "one of two official written standards for the Norwegian language"@en,
+        "estándar más común del idioma noruego"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bosnian> a owl:Class ;
+fiaf:Bosnian a owl:Class ;
     rdfs:label "Bosnian"@en,
         "Bosnio"@es,
         "Bosnien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "South Slavic language; a standardized variety of the Serbo-Croatian pluricentric language"@en,
+        "lengua eslava"@es,
+        "langue slave méridionale principalement parlée en Bosnie-Herzégovine, en Serbie et au Monténégro"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Breton> a owl:Class ;
+fiaf:Breton a owl:Class ;
     rdfs:label "Breton"@en,
         "Bretón"@es,
         "Breton"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Celtic language spoken in France"@en,
+        "idioma celta"@es,
+        "langue celtique parlée en Bretagne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Bulgarian> a owl:Class ;
+fiaf:Bulgarian a owl:Class ;
     rdfs:label "Bulgarian"@en,
         "Búlgaro"@es,
         "Bulgare"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "South Slavic language"@en,
+        "lengua eslava"@es,
+        "langue slave"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Burmese> a owl:Class ;
+fiaf:Burmese a owl:Class ;
     rdfs:label "Burmese"@en,
         "Birmano"@es,
         "Birman"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Sino-Tibetan language of Myanmar"@en,
+        "lengua oficial de Birmania o Myanmar"@es,
+        "langue parlée en Birmanie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Catalan> a owl:Class ;
+fiaf:Catalan a owl:Class ;
     rdfs:label "Catalan"@en,
         "Catalán"@es,
         "Catalan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Western Romance language"@en,
+        "lengua romance"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/CentralKhmer> a owl:Class ;
+fiaf:CentralKhmer a owl:Class ;
     rdfs:label "Central Khmer"@en,
         "Camboyano"@es,
         "Khmer"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Chamorro> a owl:Class ;
+fiaf:Chamorro a owl:Class ;
     rdfs:label "Chamorro"@en,
         "Chamorro"@es,
         "Chamorro"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Malayo-Polynesian (Austronesian) language, spoken on the Mariana Islands"@en,
+        "lengua hablada en la isla de Guam y en las islas Marianas del Norte"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Chechen> a owl:Class ;
+fiaf:Chechen a owl:Class ;
     rdfs:label "Chechen"@en,
         "Checheno"@es,
         "Tchétchène"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Northeast Caucasian language spoken mostly in Chechnya and by Chechen people"@en,
+        "lengua caucásica nororiental"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Chinese> a owl:Class ;
+fiaf:Chinese a owl:Class ;
     rdfs:label "Chinese"@en,
         "Chino"@es,
         "Chinois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language group of the Sinitic languages"@en,
+        "macrolengua sinotibetana"@es,
+        "ensemble de langues"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/ChurchSlavic> a owl:Class ;
+fiaf:ChurchSlavic a owl:Class ;
     rdfs:label "Church Slavic"@en,
         "Eslavo eclesiástico antiguo"@es,
         "Vieux-slave"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Chuvash> a owl:Class ;
+fiaf:Chuvash a owl:Class ;
     rdfs:label "Chuvash"@en,
         "Chuvasio"@es,
         "Tchouvache"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Turkic language spoken in central Russia, primarily in the Chuvash Republic and adjacent areas"@en,
+        "lengua túrquica hablada al este de las Urales"@es,
+        "langue turque"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Cornish> a owl:Class ;
+fiaf:Cornish a owl:Class ;
     rdfs:label "Cornish"@en,
         "Córnico"@es,
         "Cornique"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Brythonic Celtic language in Southwestern Britain"@en,
+        "lengua celta britónica"@es,
+        "langue celtique insulaire"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Corsican> a owl:Class ;
+fiaf:Corsican a owl:Class ;
     rdfs:label "Corsican"@en,
         "Corso"@es,
         "Corse"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Italo-Dalmatian language"@en,
+        "lengua romance hablada principalmente en la isla de Córcega (Francia) y en el norte de la isla de Cerdeña (Italia)"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Cree> a owl:Class ;
+fiaf:Cree a owl:Class ;
     rdfs:label "Cree"@en,
         "Cree"@es,
         "Cri"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "aboriginal language continuum spoken in Canada"@en,
+        "continuo dialectal consistente en varios dialectos originarios americanos"@es,
+        "langue algonquienne parlée au Canada"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Croatian> a owl:Class ;
+fiaf:Croatian a owl:Class ;
     rdfs:label "Croatian"@en,
         "Croata"@es,
         "Croate"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "standardized variety of Serbo-Croatian language, used by Croats"@en,
+        "lengua eslava de los Balcanes en Europa"@es,
+        "langue slave du Sud"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Czech> a owl:Class ;
+fiaf:Czech a owl:Class ;
     rdfs:label "Czech"@en,
         "Checo"@es,
         "Tchèque"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Slavic language"@en,
+        "lengua eslava occidental hablada en la República Checa"@es,
+        "langue slave occidentale parlée en Tchéquie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Danish> a owl:Class ;
+fiaf:Danish a owl:Class ;
     rdfs:label "Danish"@en,
         "Danés"@es,
         "Danois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "North Germanic language spoken in Denmark"@en,
+        "lengua germánica nórdica"@es,
+        "langue germanique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Dutch> a owl:Class ;
+fiaf:Dutch a owl:Class ;
     rdfs:label "Dutch"@en,
         "Holandés"@es,
         "Néerlandais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Germanic language"@en,
+        "lengua germánica occidental"@es,
+        "langue germanique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Dzongkha> a owl:Class ;
+fiaf:Dzongkha a owl:Class ;
     rdfs:label "Dzongkha"@en,
         "Dzongkha"@es,
         "Dzongkha"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Sino-Tibetan language spoken in Bhutan"@en,
+        "lengua nacional de Bután"@es,
+        "langue tibétique parlée au Bhoutan"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/English> a owl:Class ;
+fiaf:English a owl:Class ;
     rdfs:label "English"@en,
         "Inglés"@es,
         "Anglais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Germanic language"@en,
+        "lengua germánica occidental"@es,
+        "langue germanique occidentale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Esperanto> a owl:Class ;
+fiaf:Esperanto a owl:Class ;
     rdfs:label "Esperanto"@en,
         "Esperanto"@es,
         "Espéranto"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "international auxiliary language designed by L. L. Zamenhof"@en,
+        "lengua auxiliar planificada, creada por L. L. Zamenhof"@es,
+        "langue construite internationale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Estonian> a owl:Class ;
+fiaf:Estonian a owl:Class ;
     rdfs:label "Estonian"@en,
         "Estonio"@es,
         "Estonien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Uralic language"@en,
+        "lengua fino-ugria hablada en Estonia"@es,
+        "langue finno-ougrienne parlée en Estonie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ewe> a owl:Class ;
+fiaf:Ewe a owl:Class ;
     rdfs:label "Ewe"@en,
         "Ewé"@es,
         "Ewe"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Niger–Congo language spoken in southeastern Ghana and southern Togo"@en,
+        "idioma hablado en Ghana, Togo y Benín"@es,
+        "langue nigéro-congolaise parlée au Togo et au Ghana"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Faroese> a owl:Class ;
+fiaf:Faroese a owl:Class ;
     rdfs:label "Faroese"@en,
         "Feroés"@es,
         "Féroïen"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "insular Nordic language spoken as a native language by the people of Faroe Islands"@en,
+        "lengua escandinava occidental insular nativa de las Islas Feroe"@es,
+        "langue indo-européenne des îles Féroé"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Fijian> a owl:Class ;
+fiaf:Fijian a owl:Class ;
     rdfs:label "Fijian"@en,
         "Fiyiano"@es,
         "Fidjien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language of the Malayo-Polynesian family spoken in Fiji"@en,
+        "lengua austronesia"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Finnish> a owl:Class ;
+fiaf:Finnish a owl:Class ;
     rdfs:label "Finnish"@en,
         "Finés"@es,
         "Finnois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Finno-Ugric language mostly spoken in Finland"@en,
+        "lengua oficial, junto con el sueco, en Finlandia, hablado por algo más de 5 millones de personas"@es,
+        "langue parlée dans l'ensemble de la Finlande, à l'exclusion des îles Åland"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/French> a owl:Class ;
+fiaf:French a owl:Class ;
     rdfs:label "French"@en,
         "Frances"@es,
         "Français"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language"@en,
+        "lengua romance"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Fulah> a owl:Class ;
+fiaf:Fulah a owl:Class ;
     rdfs:label "Fulah"@en,
         "Fula"@es,
         "Peul"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Gaelic> a owl:Class ;
+fiaf:Gaelic a owl:Class ;
     rdfs:label "Gaelic"@en,
         "Gaélico escocés"@es,
         "Écossais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Galician> a owl:Class ;
+fiaf:Galician a owl:Class ;
     rdfs:label "Galician"@en,
         "Gallego"@es,
         "Galicien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Western Ibero-Romance language"@en,
+        "lengua romance"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ganda> a owl:Class ;
+fiaf:Ganda a owl:Class ;
     rdfs:label "Ganda"@en,
         "Luganda"@es,
         "Luganda"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Georgian> a owl:Class ;
+fiaf:Georgian a owl:Class ;
     rdfs:label "Georgian"@en,
         "Georgiano"@es,
         "Géorgien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "official language of Georgia"@en,
+        "lengua caucásica"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/German> a owl:Class ;
+fiaf:German a owl:Class ;
     rdfs:label "German"@en,
         "Alemán"@es,
         "Allemand"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Germanic language spoken mainly in Central Europe"@en,
+        "lengua germánica occidental"@es,
+        "langue germanique occidentale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Greek(modern)> a owl:Class ;
+fiaf:Greek\(modern\) a owl:Class ;
     rdfs:label "Greek (modern)"@en,
         "Griego (moderno)"@es,
         "Grec moderne"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Greenlandic> a owl:Class ;
+fiaf:Greenlandic a owl:Class ;
     rdfs:label "Greenlandic"@en,
         "Groenlandés"@es,
         "Groenlandais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Eskimo-Aleut language spoken in Greenland"@en,
+        "lengua esquimo-aleutiana hablada en la isla danesa de Groenlandia"@es,
+        "langue eskimo-aléoute"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Guaraní> a owl:Class ;
+fiaf:Guaraní a owl:Class ;
     rdfs:label "Guaraní"@en,
         "Guaraní"@es,
         "Guarani"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Gujarati> a owl:Class ;
+fiaf:Gujarati a owl:Class ;
     rdfs:label "Gujarati"@en,
         "Guyaratí"@es,
         "Gujarati"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language that is spoken on the state of Gujarat"@en,
+        "idioma de la India que procede del estado de Guyarat"@es,
+        "langue indo-aryenne et officielle en Inde"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/HaitianCreole> a owl:Class ;
+fiaf:HaitianCreole a owl:Class ;
     rdfs:label "Haitian Creole"@en,
         "Haitiano"@es,
         "Créole haïtien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in Haiti"@en,
+        "lengua criolla hablada en Haití"@es,
+        "langue créole parlée en Haïti"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Hausa> a owl:Class ;
+fiaf:Hausa a owl:Class ;
     rdfs:label "Hausa"@en,
         "Hausa"@es,
         "Haoussa"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Chadic language spoken by the Hausa people"@en,
+        "lengua de la familia afroasiática"@es,
+        "langue tchadique parlée en Afrique de l’Ouest"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Hebrew(modern)> a owl:Class ;
+fiaf:Hebrew\(modern\) a owl:Class ;
     rdfs:label "Hebrew (modern)"@en,
         "Hebreo (moderno)"@es,
         "Hébreu"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Herero> a owl:Class ;
+fiaf:Herero a owl:Class ;
     rdfs:label "Herero"@en,
         "Herero"@es,
         "Héréro"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language of Nambia and Botswana"@en,
+        "lengua bantú hablada por la etnia herero de Namibia y Botsuana"@es,
+        "langue bantoue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Hindi> a owl:Class ;
+fiaf:Hindi a owl:Class ;
     rdfs:label "Hindi"@en,
         "Hindi"@es,
         "Hindi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language spoken in India"@en,
+        "lengua indoaria, oficial de la India (junto al inglés)"@es,
+        "langue indo-européenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/HiriMotu> a owl:Class ;
+fiaf:HiriMotu a owl:Class ;
     rdfs:label "Hiri Motu"@en,
         "Hiri Motu"@es,
         "Hiri motu"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language of Papua New Guinea"@en,
+        "idioma oficial de Papúa Nueva Guinea"@es,
+        "pidgin basé essentiellement sur le motu"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Hungarian> a owl:Class ;
+fiaf:Hungarian a owl:Class ;
     rdfs:label "Hungarian"@en,
         "Húngaro"@es,
         "Hongrois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Uralic language"@en,
+        "lengua de la familia de lenguas urálicas"@es,
+        "langue ouralienne principalement parlée en Hongrie et dans les pays autour"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Icelandic> a owl:Class ;
+fiaf:Icelandic a owl:Class ;
     rdfs:label "Icelandic"@en,
         "Islandés"@es,
         "Islandais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "North Germanic language mainly spoken in Iceland"@en,
+        "lengua nórdica, oficial de Islandia"@es,
+        "langue nordique parlée en Islande"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ido> a owl:Class ;
+fiaf:Ido a owl:Class ;
     rdfs:label "Ido"@en,
         "Ido"@es,
         "Ido"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "constructed international auxiliary language"@en,
+        "lengua construida"@es,
+        "langue construite dérivée de l'espéranto"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Igbo> a owl:Class ;
+fiaf:Igbo a owl:Class ;
     rdfs:label "Igbo"@en,
         "Igbo"@es,
         "Igbo"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Niger–Congo language of the Igbo people, mainly spoken in Nigeria"@en,
+        "lengua hablada en Nigeria"@es,
+        "langue parlée au Nigéria"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Indonesian> a owl:Class ;
+fiaf:Indonesian a owl:Class ;
     rdfs:label "Indonesian"@en,
         "Indonesio"@es,
         "Indonésien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "official language of Indonesia"@en,
+        "idioma oficial de la República de Indonesia"@es,
+        "langue officielle de la République d'Indonésie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Interlingua> a owl:Class ;
+fiaf:Interlingua a owl:Class ;
     rdfs:label "Interlingua"@en,
         "Interlingua"@es,
         "Interlingua"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "international auxiliary language created by IALA"@en,
+        "idioma auxiliar artificial internacional"@es,
+        "langue construite"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Interlingue> a owl:Class ;
+fiaf:Interlingue a owl:Class ;
     rdfs:label "Interlingue"@en,
         "Occidental"@es,
         "Occidental"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "international auxiliary language created 1922"@en,
+        "lengua construida"@es,
+        "langue construite"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Inuktitut> a owl:Class ;
+fiaf:Inuktitut a owl:Class ;
     rdfs:label "Inuktitut"@en,
         "Inuktitut"@es,
         "Inuktitut"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "name of several Inuit languages spoken in Canada"@en,
+        "lenguas nativas de los esquimales más orientales de Alaska, Canadá y Groenlandia"@es,
+        "langue eskimo-aléoute"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Inupiaq> a owl:Class ;
+fiaf:Inupiaq a owl:Class ;
     rdfs:label "Inupiaq"@en,
         "Iñupiaq"@es,
         "Inupiak"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Irish> a owl:Class ;
+fiaf:Irish a owl:Class ;
     rdfs:label "Irish"@en,
         "Irlandés"@es,
         "Irlandais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language native to Ireland"@en,
+        "idioma goidélico de la familia de lenguas indoeuropeas"@es,
+        "langue celtique officielle en Irlande"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Italian> a owl:Class ;
+fiaf:Italian a owl:Class ;
     rdfs:label "Italian"@en,
         "Italiano"@es,
         "Italien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language"@en,
+        "lengua romance"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Japanese> a owl:Class ;
+fiaf:Japanese a owl:Class ;
     rdfs:label "Japanese"@en,
         "Japonés"@es,
         "Japonais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in East Asia"@en,
+        "lengua de Asia Oriental"@es,
+        "langue est-asiatique parlée au Japon"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Javanese> a owl:Class ;
+fiaf:Javanese a owl:Class ;
     rdfs:label "Javanese"@en,
         "Javanés"@es,
         "Javanais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language"@en,
+        "lengua hablada en parte de la isla de Java"@es,
+        "langue malayo-polynésienne parlée en Indonésie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kannada> a owl:Class ;
+fiaf:Kannada a owl:Class ;
     rdfs:label "Kannada"@en,
         "Canarés"@es,
         "Kannada"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Dravidian language"@en,
+        "lengua dravídica de India"@es,
+        "langue dravidienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kanuri> a owl:Class ;
+fiaf:Kanuri a owl:Class ;
     rdfs:label "Kanuri"@en,
         "Kanuri"@es,
         "Kanouri"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Saharan language"@en,
+        "idioma humano"@es,
+        "langue saharienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kashmiri> a owl:Class ;
+fiaf:Kashmiri a owl:Class ;
     rdfs:label "Kashmiri"@en,
         "Cachemiro"@es,
         "Cachemiri"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language from the Dardic subgroup of the Indo-Aryan languages"@en,
+        "lengua dárdica"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kazakh> a owl:Class ;
+fiaf:Kazakh a owl:Class ;
     rdfs:label "Kazakh"@en,
         "Kazajo"@es,
         "Kazakh"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "one of the Turkic languages in Central Asia, the state language of Karakalpakstan"@en,
+        "lengua túrquica"@es,
+        "langue turque"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kikuyu> a owl:Class ;
+fiaf:Kikuyu a owl:Class ;
     rdfs:label "Kikuyu"@en,
         "Kikuyu"@es,
         "Kikuyu"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kinyarwanda> a owl:Class ;
+fiaf:Kinyarwanda a owl:Class ;
     rdfs:label "Kinyarwanda"@en,
         "Ruandés"@es,
         "Kinyarwanda"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language spoken in Central Africa, official in Rwanda"@en,
+        "lengua bantú hablada en África Central, oficial en Ruanda"@es,
+        "langue bantoue de l'Afrique centrale, désignée officielle en Rwanda"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Komi> a owl:Class ;
+fiaf:Komi a owl:Class ;
     rdfs:label "Komi"@en,
         "Komi"@es,
         "Komi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Uralic language that is spoken on the Republic of Komi, Russia"@en,
+        "idioma urálico hablado en la República de Komi, Rusia"@es,
+        "macro-langue ouralienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kongo> a owl:Class ;
+fiaf:Kongo a owl:Class ;
     rdfs:label "Kongo"@en,
         "Kongo"@es,
         "Kikongo"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language spoken in Angola, Congo Brazzaville and Congo Kinshasa"@en,
+        "lengua bantú hablada en Angola y Congo"@es,
+        "langue parlée par les Kongos vivant en Angola et dans les deux Congo"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Korean> a owl:Class ;
+fiaf:Korean a owl:Class ;
     rdfs:label "Korean"@en,
         "Coreano"@es,
         "Coréen"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in Korean Peninsula and some part of North-eastern China"@en,
+        "lengua coreánica hablada, principalmente, en la península de Corea"@es,
+        "langue parlée en Corée"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kurdish> a owl:Class ;
+fiaf:Kurdish a owl:Class ;
     rdfs:label "Kurdish"@en,
         "Kurdo"@es,
         "Kurde"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Western Iranian language"@en,
+        "lengua indoirania hablada en el Kurdistán"@es,
+        "langue parlée dans la région historique du Kurdistan"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kwanyama> a owl:Class ;
+fiaf:Kwanyama a owl:Class ;
     rdfs:label "Kwanyama"@en,
         "Kuanyama"@es,
         "Kuanyama"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of Angola and Namibia"@en,
+        "lengua"@es,
+        "langue bantoue parlée en Angola et en Namibie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Kyrgyz> a owl:Class ;
+fiaf:Kyrgyz a owl:Class ;
     rdfs:label "Kyrgyz"@en,
         "Kirguís"@es,
         "Kirghiz"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Kipchak Turkic language of Central Asia"@en,
+        "lengua túrquica"@es,
+        "langue d'Asie centrale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Lao> a owl:Class ;
+fiaf:Lao a owl:Class ;
     rdfs:label "Lao"@en,
         "Lao"@es,
         "Lao"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Kra–Dai language of Southeast Asia"@en,
+        "lengua tonal de la familia tai de lenguas, lengua oficial en Laos"@es,
+        "langue parlée au Laos"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Latin> a owl:Class ;
+fiaf:Latin a owl:Class ;
     rdfs:label "Latin"@en,
         "Latín"@es,
         "Latin"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-European language of the Italic branch"@en,
+        "lengua itálica de la Antigua Roma, que dio origen a las lenguas romances"@es,
+        "langue italique, précurseur des langues romanes"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Latvian> a owl:Class ;
+fiaf:Latvian a owl:Class ;
     rdfs:label "Latvian"@en,
         "Letón"@es,
         "Letton"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Baltic language, official in Latvia and the European Union"@en,
+        "idioma báltica, oficial en Letonia y la Unión Europea"@es,
+        "langue balte orientale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Limburgish> a owl:Class ;
+fiaf:Limburgish a owl:Class ;
     rdfs:label "Limburgish"@en,
         "Limburgués"@es,
         "Limbourgeois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Low Franconian group of dialects"@en,
+        "grupo de lenguas francas"@es,
+        "langue parlée dans les provinces de Limbourg aux Pays-Bas et en Belgique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Lingala> a owl:Class ;
+fiaf:Lingala a owl:Class ;
     rdfs:label "Lingala"@en,
         "Lingala"@es,
         "Lingala"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language spoken in western Central Africa"@en,
+        "lengua bantú hablada en el noroeste de la República Democrática del Congo"@es,
+        "langue bantoue parlée en République démocratique du Congo et en République du Congo"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Lithuanian> a owl:Class ;
+fiaf:Lithuanian a owl:Class ;
     rdfs:label "Lithuanian"@en,
         "Lituano"@es,
         "Lituanien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Baltic language spoken in Lithuania"@en,
+        "lengua de la rama báltica de la familia de lenguas indoeuropeas"@es,
+        "langue balte orientale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Luba-Katanga> a owl:Class ;
+fiaf:Luba-Katanga a owl:Class ;
     rdfs:label "Luba-Katanga"@en,
         "Luba-Katanga"@es,
         "Luba-katanga"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "bantu language"@en,
+        "lengua"@es,
+        "langue bantoue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Luxembourgish> a owl:Class ;
+fiaf:Luxembourgish a owl:Class ;
     rdfs:label "Luxembourgish"@en,
         "Luxemburgués"@es,
         "Luxembourgeois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Germanic language or language variety spoken in Luxembourg"@en,
+        "idioma germano-occidental hablado en Luxemburgo"@es,
+        "langue germanique ou variété de langue parlée au Luxembourg"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Macedonian> a owl:Class ;
+fiaf:Macedonian a owl:Class ;
     rdfs:label "Macedonian"@en,
         "Macedonio"@es,
         "Macédonien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "South Slavic language mostly spoken in North Macedonia and its neighbouring countries"@en,
+        "lengua eslava"@es,
+        "langue slave"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Malagasy> a owl:Class ;
+fiaf:Malagasy a owl:Class ;
     rdfs:label "Malagasy"@en,
         "Malgache"@es,
         "Malgache"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in Madagascar"@en,
+        "lengua malayopolinésica"@es,
+        "langue nationale de l'île de Madagascar"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Malay> a owl:Class ;
+fiaf:Malay a owl:Class ;
     rdfs:label "Malay"@en,
         "Malayo"@es,
         "Malais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language; language which is the basis for Malaysian Malay and Indonesian and encompasses other dialects; macrolanguage with code ms & msa"@en,
+        "lengua oficial de Malasia, Indonesia, Singapur y Brunei"@es,
+        "langue austronésienne (macro-langue)"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Malayalam> a owl:Class ;
+fiaf:Malayalam a owl:Class ;
     rdfs:label "Malayalam"@en,
         "Malayalam"@es,
         "Malayalam"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Dravidian language of India"@en,
+        "idioma del estado de Kerala, India"@es,
+        "langue d'Inde"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Maldivian> a owl:Class ;
+fiaf:Maldivian a owl:Class ;
     rdfs:label "Maldivian"@en,
         "Maldivo"@es,
         "Maldivien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan national language of the Maldives"@en,
+        "idioma humano"@es,
+        "langue des Maldives"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Maltese> a owl:Class ;
+fiaf:Maltese a owl:Class ;
     rdfs:label "Maltese"@en,
         "Maltés"@es,
         "Maltais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Semitic language spoken mostly in Malta"@en,
+        "lengua semítica derivada del Idioma árabe, oficial en Malta"@es,
+        "langue chamito-sémitique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Manx> a owl:Class ;
+fiaf:Manx a owl:Class ;
     rdfs:label "Manx"@en,
         "Manés"@es,
         "Mannois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Celtic language spoken on the Isle of Man"@en,
+        "idioma celta"@es,
+        "langue celtique appartenant à la branche des langues gaéliques et parlée sur l’île de Man"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Maori> a owl:Class ;
+fiaf:Maori a owl:Class ;
     rdfs:label "Maori"@en,
         "Maorí"@es,
         "Maori de Nouvelle-Zélande"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Marathi> a owl:Class ;
+fiaf:Marathi a owl:Class ;
     rdfs:label "Marathi"@en,
         "Maratí"@es,
         "Marathi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language"@en,
+        "lengua indoaria, la más hablada de la India con larga tradición literaria"@es,
+        "langue parlée en Inde"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Marshallese> a owl:Class ;
+fiaf:Marshallese a owl:Class ;
     rdfs:label "Marshallese"@en,
         "Marshalés"@es,
         "Marshallais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Micronesian language"@en,
+        "lengua malayo-polinesia"@es,
+        "langue micronésienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Mongolian> a owl:Class ;
+fiaf:Mongolian a owl:Class ;
     rdfs:label "Mongolian"@en,
         "Mongol"@es,
         "Mongol"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "official language of Mongolia"@en,
+        "lengua mongólica oriental"@es,
+        "langue officielle de la Mongolie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Nauruan> a owl:Class ;
+fiaf:Nauruan a owl:Class ;
     rdfs:label "Nauruan"@en,
         "Nauruano"@es,
         "Nauruan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language spoken in Nauru"@en,
+        "lengua micronesia"@es,
+        "langue micronésienne parlée à Nauru"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Navajo> a owl:Class ;
+fiaf:Navajo a owl:Class ;
     rdfs:label "Navajo"@en,
         "Navajo"@es,
         "Navajo"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Athabaskan language of Na-Dené stock spoken in the southwestern United States"@en,
+        "lengua indígena americana"@es,
+        "langue athapascane méridionale parlée dans le sud-ouest des États-Unis par les Navajos"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ndonga> a owl:Class ;
+fiaf:Ndonga a owl:Class ;
     rdfs:label "Ndonga"@en,
         "Ndonga"@es,
         "Ndonga"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language spoken in Namibia and parts of Angola"@en,
+        "idioma humano"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Nepali> a owl:Class ;
+fiaf:Nepali a owl:Class ;
     rdfs:label "Nepali"@en,
         "Nepalí"@es,
         "Népalais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "official language of Nepal"@en,
+        "idioma oficial de Nepal"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/NorthNdebele> a owl:Class ;
+fiaf:NorthNdebele a owl:Class ;
     rdfs:label "North Ndebele"@en,
         "Ndebele del norte"@es,
         "Sindebele"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/NorthernSami> a owl:Class ;
+fiaf:NorthernSami a owl:Class ;
     rdfs:label "Northern Sami"@en,
         "Sami septentrional"@es,
         "Same du Nord"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "most widely spoken of all Sámi languages"@en,
+        "lengua sami"@es,
+        "langue same"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Norwegian> a owl:Class ;
+fiaf:Norwegian a owl:Class ;
     rdfs:label "Norwegian"@en,
         "Noruego"@es,
         "Norvégien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "North Germanic language spoken in Norway"@en,
+        "lengua nórdica oficial en Noruega"@es,
+        "langue nordique, parlée en Norvège"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/NorwegianNynorsk> a owl:Class ;
+fiaf:NorwegianNynorsk a owl:Class ;
     rdfs:label "Norwegian Nynorsk"@en,
         "Nynorsk"@es,
         "Nynorsk"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Nuosu> a owl:Class ;
+fiaf:Nuosu a owl:Class ;
     rdfs:label "Nuosu"@en,
         "Yi de Sichuán"@es,
         "Yi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "the prestige language of the Yi people"@en,
+        "lengua yi, siendo esta considerada como la lengua de prestigio hablada por los Yi"@es,
+        "langue lolo"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Nyanja> a owl:Class ;
+fiaf:Nyanja a owl:Class ;
     rdfs:label "Nyanja"@en,
         "Chichewa"@es,
         "Chichewa"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Occitan> a owl:Class ;
+fiaf:Occitan a owl:Class ;
     rdfs:label "Occitan"@en,
         "Occitano"@es,
         "Occitan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language of Western Europe"@en,
+        "lengua romance"@es,
+        "langue romane du Sud de la France"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ojibwa> a owl:Class ;
+fiaf:Ojibwa a owl:Class ;
     rdfs:label "Ojibwa"@en,
         "Ojibwa"@es,
         "Ojibwé"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Oriya> a owl:Class ;
+fiaf:Oriya a owl:Class ;
     rdfs:label "Oriya"@en,
         "Oriya"@es,
         "Oriya"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Oromo> a owl:Class ;
+fiaf:Oromo a owl:Class ;
     rdfs:label "Oromo"@en,
         "Oromo"@es,
         "Oromo"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Cushitic language"@en,
+        "lengua afroasiática"@es,
+        "langue couchitique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ossetian> a owl:Class ;
+fiaf:Ossetian a owl:Class ;
     rdfs:label "Ossetian"@en,
         "Osético"@es,
         "Ossète"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Eastern Iranian language of Ossetia, in the Caucasus"@en,
+        "lengua irania que se habla en Osetia"@es,
+        "langue iranienne parlée dans le Caucase"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Pali> a owl:Class ;
+fiaf:Pali a owl:Class ;
     rdfs:label "Pali"@en,
         "Pali"@es,
         "Pali"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language native to the Indian subcontinent"@en,
+        "idioma índico o prácrito, de las lenguas indoarias"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Pashto> a owl:Class ;
+fiaf:Pashto a owl:Class ;
     rdfs:label "Pashto"@en,
         "Pastú"@es,
         "Pachto"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Eastern Iranian language of Afghanistan and Pakistan"@en,
+        "lengua indoirania"@es,
+        "langue indo-iranienne parlée en Afghanistan (dont il est l'une des deux langues officielles), ainsi qu’au Pakistan"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Persian> a owl:Class ;
+fiaf:Persian a owl:Class ;
     rdfs:label "Persian"@en,
         "Persa"@es,
         "Persan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Southwestern Iranian dialect continuum spoken in the Caucasus, Central Asia, Iran, Kuwait, and Pakistan"@en,
+        "lengua indoeuropea hablada en Irán"@es,
+        "langue indo-européenne de la branche des langues iraniennes"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Polish> a owl:Class ;
+fiaf:Polish a owl:Class ;
     rdfs:label "Polish"@en,
         "Polaco"@es,
         "Polonais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Slavic language"@en,
+        "lengua eslava occidental"@es,
+        "langue slave occidentale parlée principalement en Pologne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Portuguese> a owl:Class ;
+fiaf:Portuguese a owl:Class ;
     rdfs:label "Portuguese"@en,
         "Portugués"@es,
         "Portugais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Western Romance language of the Indo-European language family"@en,
+        "lengua romance"@es,
+        "langue ibéro-romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Punjabi> a owl:Class ;
+fiaf:Punjabi a owl:Class ;
     rdfs:label "Punjabi"@en,
         "Panyabí"@es,
         "Pendjabi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Quechua> a owl:Class ;
+fiaf:Quechua a owl:Class ;
     rdfs:label "Quechua"@en,
         "Quechua"@es,
         "Quechua"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language family spoken primarily in the Andes region of South America"@en,
+        "familia de lenguas originaria de los Andes centrales"@es,
+        "famille de langues"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Romanian> a owl:Class ;
+fiaf:Romanian a owl:Class ;
     rdfs:label "Romanian"@en,
         "Rumano"@es,
         "Roumain"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Eastern Romance language, official of Romania"@en,
+        "lengua romance oriental, oficial en Rumania"@es,
+        "langue romane parlée principalement en Roumanie et en Moldavie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Romansh> a owl:Class ;
+fiaf:Romansh a owl:Class ;
     rdfs:label "Romansh"@en,
         "Romanche"@es,
         "Romanche"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language spoken predominantly in the southeastern Swiss canton of Grisons (Graubünden)"@en,
+        "lengua retorrománica que se habla en Suiza"@es,
+        "langue romane parlée en Suisse"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Rundi> a owl:Class ;
+fiaf:Rundi a owl:Class ;
     rdfs:label "Rundi"@en,
         "Kirundi"@es,
         "Kirundi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Russian> a owl:Class ;
+fiaf:Russian a owl:Class ;
     rdfs:label "Russian"@en,
         "Ruso"@es,
         "Russe"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "East Slavic language"@en,
+        "lengua indoeuropea de la rama eslava oriental"@es,
+        "langue slave originaire de Russie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Samoan> a owl:Class ;
+fiaf:Samoan a owl:Class ;
     rdfs:label "Samoan"@en,
         "Samoano"@es,
         "Samoan"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of the Samoan Islands"@en,
+        "lengua austronesia"@es,
+        "langue polynésienne parlée aux Îles Samoa"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sango> a owl:Class ;
+fiaf:Sango a owl:Class ;
     rdfs:label "Sango"@en,
         "Sango"@es,
         "Sango"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Ngbandi-based creole of the Central African Republic"@en,
+        "lengua africana del grupo ubanguiano"@es,
+        "langue créole à base lexicale ngbandi"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sanskrit> a owl:Class ;
+fiaf:Sanskrit a owl:Class ;
     rdfs:label "Sanskrit"@en,
         "Sánscrito"@es,
         "Sanskrit"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "ancient Indo-Aryan language of South Asia"@en,
+        "lengua clásica de la India, de la familia indoeuropea"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sardinian> a owl:Class ;
+fiaf:Sardinian a owl:Class ;
     rdfs:label "Sardinian"@en,
         "Sardo"@es,
         "Sarde"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language indigenous to the island of Sardinia"@en,
+        "lengua romance hablada en la isla de Cerdeña (Italia)"@es,
+        "langue romane parlée dans la plupart de l'île de Sardaigne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Serbian> a owl:Class ;
+fiaf:Serbian a owl:Class ;
     rdfs:label "Serbian"@en,
         "Serbio"@es,
         "Serbe"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "standardized variety of Serbo-Croatian language used by Serbs"@en,
+        "variante estándar del serbocroata usado en Serbia"@es,
+        "langue slave"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Shona> a owl:Class ;
+fiaf:Shona a owl:Class ;
     rdfs:label "Shona"@en,
         "Shona"@es,
         "Shona"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language of Zimbabwe and Mozambique"@en,
+        "idioma"@es,
+        "langue bantoue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sindhi> a owl:Class ;
+fiaf:Sindhi a owl:Class ;
     rdfs:label "Sindhi"@en,
         "Sindhi"@es,
         "Sindhi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language spoken in Pakistan and India"@en,
+        "idioma"@es,
+        "langue indo-aryenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sinhalese> a owl:Class ;
+fiaf:Sinhalese a owl:Class ;
     rdfs:label "Sinhalese"@en,
         "Cingalés"@es,
         "Cingalais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Slovak> a owl:Class ;
+fiaf:Slovak a owl:Class ;
     rdfs:label "Slovak"@en,
         "Eslovaco"@es,
         "Slovaque"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "West Slavic language spoken in Slovakia"@en,
+        "lengua eslava hablada en Eslovaquia"@es,
+        "langue slave occidentale parlée en Slovaquie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Slovenian> a owl:Class ;
+fiaf:Slovenian a owl:Class ;
     rdfs:label "Slovenian"@en,
         "Esloveno"@es,
         "Slovène"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Somali> a owl:Class ;
+fiaf:Somali a owl:Class ;
     rdfs:label "Somali"@en,
         "Somalí"@es,
         "Somali"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Afroasiatic language belonging to the Cushitic branch"@en,
+        "lengua cusítica"@es,
+        "langue couchitique"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/SouthNdebele> a owl:Class ;
+fiaf:SouthNdebele a owl:Class ;
     rdfs:label "South Ndebele"@en,
         "Ndebele del sur"@es,
         "Nrebele"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/SouthernSotho> a owl:Class ;
+fiaf:SouthernSotho a owl:Class ;
     rdfs:label "Southern Sotho"@en,
         "Sesotho"@es,
         "Sotho du Sud"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Spanish> a owl:Class ;
+fiaf:Spanish a owl:Class ;
     rdfs:label "Spanish"@en,
         "Español"@es,
         "Espagnol"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romanic language originating in the Iberian Peninsula"@en,
+        "lengua romance"@es,
+        "langue romane"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Sundanese> a owl:Class ;
+fiaf:Sundanese a owl:Class ;
     rdfs:label "Sundanese"@en,
         "Sundanés"@es,
         "Soundanais"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in Indonesia"@en,
+        "lengua malayo-polinesia hablada en Indonesia"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Swahili> a owl:Class ;
+fiaf:Swahili a owl:Class ;
     rdfs:label "Swahili"@en,
         "Suajili"@es,
         "Swahili"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language spoken mainly in East Africa"@en,
+        "lengua bantú"@es,
+        "groupe de langues bantoues de l'Afrique de l'Est, fruit d'un métissage de langues africaines, d'arabe et de persan"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Swati> a owl:Class ;
+fiaf:Swati a owl:Class ;
     rdfs:label "Swati"@en,
         "Suazi"@es,
         "Swati"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Swedish> a owl:Class ;
+fiaf:Swedish a owl:Class ;
     rdfs:label "Swedish"@en,
         "Sueco"@es,
         "Suédois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "North Germanic language spoken in Sweden and Finland"@en,
+        "lengua germánica nórdica"@es,
+        "langue nord-germanique parlée en Suède et en Finlande"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tagalog> a owl:Class ;
+fiaf:Tagalog a owl:Class ;
     rdfs:label "Tagalog"@en,
         "Tagalo"@es,
         "Tagalog"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austronesian language and the national language of the Philippines"@en,
+        "lengua austronesia"@es,
+        "langue philippine"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tahitian> a owl:Class ;
+fiaf:Tahitian a owl:Class ;
     rdfs:label "Tahitian"@en,
         "Tahitiano"@es,
         "Tahitien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of French Polynesia without official language status"@en,
+        "lengua austronesia dentro del grupo malayo-polinesio oriental, hablada en la isla de Tahití"@es,
+        "langue de la Polynésie française sans statut de langue officielle"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tajik> a owl:Class ;
+fiaf:Tajik a owl:Class ;
     rdfs:label "Tajik"@en,
         "Tayiko"@es,
         "Tadjik"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language spoken in Tajikistan"@en,
+        "lengua irania"@es,
+        "langue indo-européenne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tamil> a owl:Class ;
+fiaf:Tamil a owl:Class ;
     rdfs:label "Tamil"@en,
         "Tamil"@es,
         "Tamoul"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Dravidian language native to South India and Sri Lanka"@en,
+        "lengua dravídica"@es,
+        "langue dravidienne méridionale parlée par les Tamouls"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tatar> a owl:Class ;
+fiaf:Tatar a owl:Class ;
     rdfs:label "Tatar"@en,
         "Tártaro"@es,
         "Tatar"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Turkic language spoken by Tatars"@en,
+        "lengua túrquica hablada por los tártaros"@es,
+        "langue turque"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Telugu> a owl:Class ;
+fiaf:Telugu a owl:Class ;
     rdfs:label "Telugu"@en,
         "Télugu"@es,
         "Télougou"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Dravidian language native to South India"@en,
+        "lengua dravídica"@es,
+        "langue dravidienne"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Thai> a owl:Class ;
+fiaf:Thai a owl:Class ;
     rdfs:label "Thai"@en,
         "Tailandés"@es,
         "Thaï"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Tai language"@en,
+        "lengua tai, oficial de Tailandia"@es,
+        "langue parlée en Thaïlande"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tibetan> a owl:Class ;
+fiaf:Tibetan a owl:Class ;
     rdfs:label "Tibetan"@en,
         "Tibetano"@es,
         "Tibétain"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Tibeto-Burman language"@en,
+        "lengua sino-tibetana"@es,
+        "forme standardisée du tibétain central"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tigrinya> a owl:Class ;
+fiaf:Tigrinya a owl:Class ;
     rdfs:label "Tigrinya"@en,
         "Tigriña"@es,
         "Tigrigna"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Semitic language spoken in Ethiopia and Eritrea"@en,
+        "lengua etiópica"@es,
+        "langue sémitique parlée en Érythrée et en Éthiopie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tongan> a owl:Class ;
+fiaf:Tongan a owl:Class ;
     rdfs:label "Tongan"@en,
         "Tongano"@es,
         "Tongien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Polynesian language"@en,
+        "lengua polinesia"@es,
+        "langue polynésienne des Tonga"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tsonga> a owl:Class ;
+fiaf:Tsonga a owl:Class ;
     rdfs:label "Tsonga"@en,
         "Tsonga"@es,
         "Tsonga"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language of the Tsonga people of southern Africa"@en,
+        "lengua bantú"@es,
+        "langue bantoue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Tswana> a owl:Class ;
+fiaf:Tswana a owl:Class ;
     rdfs:label "Tswana"@en,
         "Setsuana"@es,
         "Tswana"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Bantu language of Botswana and South Africa"@en,
+        "lengua bantú"@es,
+        "langue bantoue de l'ethnie du même nom"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Turkish> a owl:Class ;
+fiaf:Turkish a owl:Class ;
     rdfs:label "Turkish"@en,
         "Turco"@es,
         "Turc"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Oghuz Turkic language of the Turkish people"@en,
+        "lengua de Eurasia"@es,
+        "langue parlée principalement en Turquie et en Chypre du Nord"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Turkmen> a owl:Class ;
+fiaf:Turkmen a owl:Class ;
     rdfs:label "Turkmen"@en,
         "Turcomano"@es,
         "Turkmène"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Oghuz Turkic language of Central Asia"@en,
+        "lengua túrquica"@es,
+        "langue turcique, langue officielle du Turkménistan"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Twi> a owl:Class ;
+fiaf:Twi a owl:Class ;
     rdfs:label "Twi"@en,
         "Twi"@es,
         "Twi"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "dialect of the Akan language in Ghana"@en,
+        "uno de los tres dialectos importantes del idioma acano"@es,
+        "langue bantoue parlée au Ghana"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Ukrainian> a owl:Class ;
+fiaf:Ukrainian a owl:Class ;
     rdfs:label "Ukrainian"@en,
         "Ucraniano"@es,
         "Ukrainien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "East Slavic language"@en,
+        "lengua eslava"@es,
+        "langue appartenant à la branche orientale des langues slaves"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Urdu> a owl:Class ;
+fiaf:Urdu a owl:Class ;
     rdfs:label "Urdu"@en,
         "Urdu"@es,
         "Ourdou"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Indo-Aryan language spoken in South Asia"@en,
+        "lengua indoeuropea de la rama indoirania, hablada en Pakistán como lengua nacional"@es,
+        "langue parlée au Pakistan et en Inde"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Uyghur> a owl:Class ;
+fiaf:Uyghur a owl:Class ;
     rdfs:label "Uyghur"@en,
         "Uigur"@es,
         "Ouïghour"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Turkic language spoken by the Uyghur people"@en,
+        "lengua del grupo túrquico de las lenguas altaicas"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Uzbek> a owl:Class ;
+fiaf:Uzbek a owl:Class ;
     rdfs:label "Uzbek"@en,
         "Uzbeko"@es,
         "Ouzbek"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Turkic language"@en,
+        "lengua túrquica"@es,
+        "langue appartenant au groupe des langues turques"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Venda> a owl:Class ;
+fiaf:Venda a owl:Class ;
     rdfs:label "Venda"@en,
         "Venda"@es,
         "Venda"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of the Venda people"@en,
+        "lengua bantú"@es,
+        "langue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Vietnamese> a owl:Class ;
+fiaf:Vietnamese a owl:Class ;
     rdfs:label "Vietnamese"@en,
         "Vietnamita"@es,
         "Vietnamien"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Austroasiatic language originating in Vietnam"@en,
+        "lengua tonal austroasiática, idioma oficial en Vietnam"@es,
+        "langue nationale du Vietnam (groupe mon-khmer)"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Volapük> a owl:Class ;
+fiaf:Volapük a owl:Class ;
     rdfs:label "Volapük"@en,
         "Volapük"@es,
         "Volapük"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "constructed international auxiliary language"@en,
+        "lengua artificial creada para facilitar la comprensión entre personas de distintas culturas"@es,
+        "langue auxiliaire internationale construite"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Walloon> a owl:Class ;
+fiaf:Walloon a owl:Class ;
     rdfs:label "Walloon"@en,
         "Valón"@es,
         "Wallon"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Romance language indigenous to Belgium and France"@en,
+        "lengua románica del norte, hablada en Bélgica"@es,
+        "langue régionale de Belgique et langue minoritaire en France"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Welsh> a owl:Class ;
+fiaf:Welsh a owl:Class ;
     rdfs:label "Welsh"@en,
         "Galés"@es,
         "Gallois"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Brythonic language spoken natively in Wales"@en,
+        "lengua celta"@es,
+        "langue de la branche brittonique des langues celtiques proche du cornique et du breton parlée principalement au pays de Galles"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/WesternFrisian> a owl:Class ;
+fiaf:WesternFrisian a owl:Class ;
     rdfs:label "Western Frisian"@en,
         "Frisón"@es,
         "Frison occidental"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Wolof> a owl:Class ;
+fiaf:Wolof a owl:Class ;
     rdfs:label "Wolof"@en,
         "Wolof"@es,
         "Wolof"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "language of Senegal, the Gambia, and Mauritania"@en,
+        "idioma de Senegal, Gambia y Mauritania"@es,
+        "langue parlée au Sénégal, en Gambie et en Mauritanie"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Xhosa> a owl:Class ;
+fiaf:Xhosa a owl:Class ;
     rdfs:label "Xhosa"@en,
         "Xhosa"@es,
         "Xhosa"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Nguni language of southern South Africa"@en,
+        "lengua bantú"@es,
+        "langue bantoue"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Yiddish> a owl:Class ;
+fiaf:Yiddish a owl:Class ;
     rdfs:label "Yiddish"@en,
         "Yídish"@es,
         "Yiddish"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "High German-derived language used by Ashkenazi Jews"@en,
+        "idioma germánico utilizado tradicionalmente por los judíos asquenazítas"@es,
+        "langue des Juifs d'Europe centrale et orientale (Ashkénazes)"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Yoruba> a owl:Class ;
+fiaf:Yoruba a owl:Class ;
     rdfs:label "Yoruba"@en,
         "Yoruba"@es,
         "Yoruba"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "Niger-Congo language spoken in West Africa"@en,
+        "lengua hablada en Benín, Togo y Nigeria"@es,
+        "langue d'Afrique occidentale"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Zhuang> a owl:Class ;
+fiaf:Zhuang a owl:Class ;
     rdfs:label "Zhuang"@en,
         "Chuan"@es,
         "Zhuang"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
+    rdfs:comment "any of various Tai languages used by the Zhuang people"@en,
+        "idioma usado por el pueblo zhuang de la República Popular China"@es,
+        "langue taï-kadaï parlée par les Zhuangs"@fr ;
+    rdfs:subClassOf fiaf:Language .
 
-<https://fiafcore.org/ontology/Zulu> a owl:Class ;
+fiaf:Zulu a owl:Class ;
     rdfs:label "Zulu"@en,
         "Zulú"@es,
         "Zoulou"@fr ;
     dc:source "ISO 639-1"@en ;
-    rdfs:subClassOf <https://fiafcore.org/ontology/Language> .
-
+    rdfs:comment "Nguni language of eastern South Africa and neighbouring countries"@en,
+        "idioma bantú"@es,
+        "langue du peuple Zoulou"@fr ;
+    rdfs:subClassOf fiaf:Language .
