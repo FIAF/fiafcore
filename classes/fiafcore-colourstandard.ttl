@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/ColourStandard> a owl:Class ;
+fiaf:ColourStandard a owl:Class ;
     rdfs:label "Colour Standard"@en ;
     rdfs:label "Estándar de Color"@es ;
     rdfs:label "Procédé couleur"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/Anscocolor> a owl:Class ;
+fiaf:Anscocolor a owl:Class ;
     rdfs:label "Anscocolor"@en ;
     rdfs:label "Anscocolor"@es ;
     rdfs:label "Anscocolor"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Eastmancolor> a owl:Class ;
+fiaf:Eastmancolor a owl:Class ;
     rdfs:label "Eastmancolor"@en ;
     rdfs:label "Eastmancolor"@es ;
     rdfs:label "Eastmancolor"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Ferraniacolor> a owl:Class ;
+fiaf:Ferraniacolor a owl:Class ;
     rdfs:label "Ferraniacolor"@en ;
     rdfs:label "Ferraniacolor"@es ;
     rdfs:label "Ferraniacolor"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Fujicolor> a owl:Class ;
+fiaf:Fujicolor a owl:Class ;
     rdfs:label "Fujicolor"@en ;
     rdfs:label "Fujicolor"@es ;
     rdfs:label "Fujicolor"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Kinemacolor> a owl:Class ;
+fiaf:Kinemacolor a owl:Class ;
     rdfs:label "Kinemacolor"@en ;
     rdfs:label "Kinemacolor"@es ;
     rdfs:label "Kinemacolor"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Kodachrome> a owl:Class ;
+fiaf:Kodachrome a owl:Class ;
     rdfs:label "Kodachrome"@en ;
     rdfs:label "Kodachrome"@es ;
     rdfs:label "Kodachrome"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Pathécolor> a owl:Class ;
+fiaf:Pathécolor a owl:Class ;
     rdfs:label "Pathécolor"@en ;
     rdfs:label "Pathécolor"@es ;
     rdfs:label "Pathécolor"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/RGB> a owl:Class ;
+fiaf:RGB a owl:Class ;
     rdfs:label "RGB"@en ;
     rdfs:label "RGB"@es ;
     rdfs:label "RGB"@fr ;
@@ -88,7 +88,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/Technicolor> a owl:Class ;
+fiaf:Technicolor a owl:Class ;
     rdfs:label "Technicolor"@en ;
     rdfs:label "Technicolor"@es ;
     rdfs:label "Technicolor"@fr ;
@@ -97,7 +97,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.12"@fr ;
     rdfs:subClassOf fiaf:ColourStandard .
 
-<https://fiafcore.org/ontology/YUV> a owl:Class ;
+fiaf:YUV a owl:Class ;
     rdfs:label "YUV"@en ;
     rdfs:label "YUV"@es ;
     rdfs:label "YUV"@fr ;

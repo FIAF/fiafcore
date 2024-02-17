@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/BroadcastStandard> a owl:Class ;
+fiaf:BroadcastStandard a owl:Class ;
     rdfs:label "Broadcast Standard"@en ;
     rdfs:label "Norma de transmisión de video"@es ;
     rdfs:label "Standard de télédiffusion"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/NTSC> a owl:Class ;
+fiaf:NTSC a owl:Class ;
     rdfs:label "NTSC"@en ;
     rdfs:label "NTSC"@es ;
     rdfs:label "NTSC"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:subClassOf fiaf:BroadcastStandard .
 
-<https://fiafcore.org/ontology/PAL> a owl:Class ;
+fiaf:PAL a owl:Class ;
     rdfs:label "PAL"@en ;
     rdfs:label "PAL"@es ;
     rdfs:label "PAL"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
     rdfs:subClassOf fiaf:BroadcastStandard .
 
-<https://fiafcore.org/ontology/SECAM> a owl:Class ;
+fiaf:SECAM a owl:Class ;
     rdfs:label "SECAM"@en ;
     rdfs:label "SECAM"@es ;
     rdfs:label "SECAM"@fr ;

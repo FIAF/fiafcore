@@ -1,5 +1,5 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -321,7 +321,7 @@ fiaf:Bolivia a owl:Class ;
         "pays d'Amérique du Sud"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/Bonaire,SintEustatiusandSaba> a owl:Class ;
+fiaf:BonaireSintEustatiusandSaba a owl:Class ;
     rdfs:label "Bonaire, Sint Eustatius and Saba"@en,
         "Islas BES (Caribe Neerlandés)"@es,
         "Bonaire, Saint-Eustache et Saba"@fr ;
@@ -591,7 +591,7 @@ fiaf:Congo a owl:Class ;
         "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/Congo,TheDemocraticRepublicofthe> a owl:Class ;
+fiaf:CongoTheDemocraticRepublicofthe a owl:Class ;
     rdfs:label "Congo, The Democratic Republic of the"@en,
         "Congo, República Democrática del"@es,
         "République démocratique du Congo"@fr ;
@@ -681,7 +681,7 @@ fiaf:Czechia a owl:Class ;
         "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/Côted'Ivoire> a owl:Class ;
+fiaf:CôtedIvoire a owl:Class ;
     rdfs:label "Côte d'Ivoire"@en,
         "Costa de Marfíl"@es,
         "Côte d'Ivoire"@fr ;
@@ -1392,7 +1392,7 @@ fiaf:Kyrgyzstan a owl:Class ;
         "pays d'Asie centrale"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/LaoPeople'sDemocraticRepublic> a owl:Class ;
+fiaf:LaoPeoplesDemocraticRepublic a owl:Class ;
     rdfs:label "Lao People's Democratic Republic"@en,
         "República Democrática Popular de Lao"@es,
         "Lao, République démocratique populaire"@fr ;
@@ -1650,7 +1650,7 @@ fiaf:Mexico a owl:Class ;
         "pays d'Amérique du Nord"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/Micronesia,FederatedStatesof> a owl:Class ;
+fiaf:MicronesiaFederatedStatesof a owl:Class ;
     rdfs:label "Micronesia, Federated States of"@en,
         "Micronesia, Estados Federados de"@es,
         "Micronésie, États fédérés de"@fr ;
@@ -1968,7 +1968,7 @@ fiaf:Palau a owl:Class ;
         "pays d'Océanie"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/Palestine,Stateof> a owl:Class ;
+fiaf:PalestineStateof a owl:Class ;
     rdfs:label "Palestine, State of"@en,
         "Palestina, Estado de"@es,
         "Palestine, État de"@fr ;
@@ -2151,7 +2151,7 @@ fiaf:SaintBarthélemy a owl:Class ;
         "collectivité d'outre-mer française, île des Petites Antilles"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/SaintHelena,AscensionandTristandaCunha> a owl:Class ;
+fiaf:SaintHelenaAscensionandTristandaCunha a owl:Class ;
     rdfs:label "Saint Helena, Ascension and Tristan da Cunha"@en,
         "Santa Elena, Ascensión y Tristán de Acuña"@es,
         "Sainte-Hélène, Ascension et Tristan da Cunha"@fr ;
@@ -2814,7 +2814,7 @@ fiaf:Vietnam a owl:Class ;
         "pays d’Asie du Sud-Est"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/VirginIslands,British> a owl:Class ;
+fiaf:VirginIslandsBritish a owl:Class ;
     rdfs:label "Virgin Islands, British"@en,
         "Islas Vírgenes, Británicas"@es,
         "îles Vierges britanniques"@fr ;
@@ -2823,7 +2823,7 @@ fiaf:Vietnam a owl:Class ;
         "ISO 3166-1"@fr ;
     rdfs:subClassOf fiaf:Country .
 
-<https://fiafcore.org/ontology/VirginIslands,U.S.> a owl:Class ;
+fiaf:VirginIslandsUS a owl:Class ;
     rdfs:label "Virgin Islands, U.S."@en,
         "Islas Vírgenes, de EEUU"@es,
         "Îles Vierges, États-Unis"@fr ;

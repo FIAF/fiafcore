@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/FrameRate> a owl:Class ;
+fiaf:FrameRate a owl:Class ;
     rdfs:label "Frame Rate"@en ;
     rdfs:label "Velocidad de Cuadros"@es ;
     rdfs:label "Nombre d’images par seconde"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/16fps> a owl:Class ;
+fiaf:16fps a owl:Class ;
     rdfs:label "16fps"@en ;
     rdfs:label "16fps"@es ;
     rdfs:label "16 images/seconde"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
     
-<https://fiafcore.org/ontology/23.98fps> a owl:Class ;
+fiaf:23.98fps a owl:Class ;
     rdfs:label "23.98 fps"@en ;
     rdfs:label "23.98 fps"@es ;
     rdfs:label "23.98 images/seconde"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/24fps> a owl:Class ;
+fiaf:24fps a owl:Class ;
     rdfs:label "24fps"@en ;
     rdfs:label "24fps"@es ;
     rdfs:label "24 images/seconde"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/25fps> a owl:Class ;
+fiaf:25fps a owl:Class ;
     rdfs:label "25fps"@en ;
     rdfs:label "25fps"@es ;
     rdfs:label "25 images/seconde"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/30fps> a owl:Class ;
+fiaf:30fps a owl:Class ;
     rdfs:label "30fps"@en ;
     rdfs:label "30fps"@es ;
     rdfs:label "30 images/seconde"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/48fps> a owl:Class ;
+fiaf:48fps a owl:Class ;
     rdfs:label "48fps"@en ;
     rdfs:label "48fps"@es ;
     rdfs:label "48 images/seconde"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/VariableFrameRate> a owl:Class ;
+fiaf:VariableFrameRate a owl:Class ;
     rdfs:label "Variable Frame Rate"@en ;
     rdfs:label "Variable Velocidad"@es ;
     rdfs:label "Variable images/seconde"@fr ;

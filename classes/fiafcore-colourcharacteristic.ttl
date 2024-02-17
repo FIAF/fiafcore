@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/ColourCharacteristic> a owl:Class ;
+fiaf:ColourCharacteristic a owl:Class ;
     rdfs:label "Colour Characteristic"@en ;
     rdfs:label "Características de color"@es ;
     rdfs:label "Caractéristiques de couleur"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/BlackAndWhite> a owl:Class ;
+fiaf:BlackAndWhite a owl:Class ;
     rdfs:label "Black and White"@en ;
     rdfs:label "Blanco y negro"@es ;
     rdfs:label "Noir et blanc"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
 
-<https://fiafcore.org/ontology/BlackAndWhiteTinted> a owl:Class ;
+fiaf:BlackAndWhiteTinted a owl:Class ;
     rdfs:label "Black and White (Tinted)"@en ;
     rdfs:label "Blanco y negro (teñido)"@es ;
     rdfs:label "Noir et blanc (teinté)"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
 
-<https://fiafcore.org/ontology/BlackAndWhiteTintedAndToned> a owl:Class ;
+fiaf:BlackAndWhiteTintedAndToned a owl:Class ;
     rdfs:label "Black and White (Tinted and Toned)"@en ;
     rdfs:label "Blanco y negro (teñido y atonado)"@es ;
     rdfs:label "Noir et blanc (teinté et viré)"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
 
-<https://fiafcore.org/ontology/BlackAndWhiteToned> a owl:Class ;
+fiaf:BlackAndWhiteToned a owl:Class ;
     rdfs:label "Black and White (Toned)"@en ;
     rdfs:label "Blanco y negro (atonado)"@es ;
     rdfs:label "Noir et blanc (viré)"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
     
-<https://fiafcore.org/ontology/Colour> a owl:Class ;
+fiaf:Colour a owl:Class ;
     rdfs:label "Colour"@en ;
     rdfs:label "Color"@es ;
     rdfs:label "Couleur"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
     
-<https://fiafcore.org/ontology/ColourBlackAndWhite> a owl:Class ;
+fiaf:ColourBlackAndWhite a owl:Class ;
     rdfs:label "Colour + Black And White"@en ;
     rdfs:label "Color + Blanco y negro"@es ;
     rdfs:label "Couleur + Noir et blanc"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
     
-<https://fiafcore.org/ontology/Tinted> a owl:Class ;
+fiaf:Tinted a owl:Class ;
     rdfs:label "Tinted"@en ;
     rdfs:label "Teñido"@es ;
     rdfs:label "Teinté"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.11"@fr ;
     rdfs:subClassOf fiaf:ColourCharacteristic .
     
-<https://fiafcore.org/ontology/Sepia> a owl:Class ;
+fiaf:Sepia a owl:Class ;
     rdfs:label "Sepia"@en ;
     rdfs:label "Sepia"@es ;
     rdfs:label "Sépia"@fr ;
@@ -90,7 +90,7 @@
     
 # Object Properties
 
-<https://fiafcore.org/ontology/hasColourStandard> a owl:ObjectProperty ;
+fiaf:hasColourStandard a owl:ObjectProperty ;
     rdfs:label "Has Colour Standard"@en ;
     rdfs:label "Tiene un Estándar de Color"@es ;
     rdfs:label "A un Procédé couleur"@fr ;

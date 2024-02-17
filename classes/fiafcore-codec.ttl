@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Codec> a owl:Class ;
+fiaf:Codec a owl:Class ;
     rdfs:label "Codec"@en ;
     rdfs:label "Códec"@es ;
     rdfs:label "Codec"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/AVC> a owl:Class ;
+fiaf:AVC a owl:Class ;
     rdfs:label "AVC"@en ;
     rdfs:label "AVC"@es ;
     rdfs:label "AVC"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/D10> a owl:Class ;
+fiaf:D10 a owl:Class ;
     rdfs:label "D10"@en ;
     rdfs:label "D10"@es ;
     rdfs:label "D10"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/ProRes422HQ> a owl:Class ;
+fiaf:ProRes422HQ a owl:Class ;
     rdfs:label "ProRes 422 (HQ)"@en ;
     rdfs:label "ProRes 422 (HQ)"@es ;
     rdfs:label "ProRes 422 (HQ)"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/S10> a owl:Class ;
+fiaf:S10 a owl:Class ;
     rdfs:label "S10"@en ;
     rdfs:label "S10"@es ;
     rdfs:label "S10"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/JPEG2000> a owl:Class ;
+fiaf:JPEG2000 a owl:Class ;
     rdfs:label "JPEG2000"@en ;
     rdfs:label "JPEG2000"@es ;
     rdfs:label "JPEG2000"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/MPEG4H264AVCMainProfile> a owl:Class ;
+fiaf:MPEG4H264AVCMainProfile a owl:Class ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@en ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@es ;
     rdfs:label "MPEG-4 H264/AVC Main Profile"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/AIFF> a owl:Class ;
+fiaf:AIFF a owl:Class ;
     rdfs:label "AIFF"@en ;
     rdfs:label "AIFF"@es ;
     rdfs:label "AIFF"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.10"@fr ;
     rdfs:subClassOf fiaf:Codec .
 
-<https://fiafcore.org/ontology/WAV> a owl:Class ;
+fiaf:WAV a owl:Class ;
     rdfs:label "WAV"@en ;
     rdfs:label "WAV"@es ;
     rdfs:label "WAV"@fr ;
