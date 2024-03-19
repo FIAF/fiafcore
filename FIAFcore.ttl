@@ -10847,6 +10847,14 @@
         "FIAF Lexique De Termes Filmographiques B.14"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Activity> .
 
+<https://ontology.fiafcore.org/Subject> a owl:Class ;
+    rdfs:label "Subject"@en,
+        "Materia"@es,
+        "Sujet"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr .
+
 <https://ontology.fiafcore.org/Carrier> a owl:Class ;
     rdfs:label "Carrier"@en,
         "Portador"@es,
