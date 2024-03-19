@@ -193,6 +193,9 @@ fiaf:AssistantArtDirector a owl:Class ;
     rdfs:label "Assistant Art Director"@en,
         "Ayudante de Director Artístico"@es,
         "Assistant directeur artistique"@fr ;
+    dc:source "FIAF Glossary Of Filmographic Terms B.6.3"@en,
+        "FIAF Glosario De Términos Cinematográficos B.6.3"@es,
+        "FIAF Lexique De Termes Filmographiques B.6.3"@fr ;        
     rdfs:subClassOf fiaf:ProductionDesignActivity .
 
 fiaf:AssistantDirector a owl:Class ;
