@@ -151,15 +151,15 @@ fiaf:ParallelTitle a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF A.2.4.1"@fr ;
     rdfs:subClassOf fiaf:AlternativeTitle .
 
-# Datatype Property 
+# Datatype Properties
 
 fiaf:hasTitleValue a owl:DatatypeProperty ;
-  rdfs:label "Has Title Value"@en ;
-  rdfs:label "Tiene valor de título"@es ;
-  rdfs:label "A une Valeur de Titre"@fr ;
+    rdfs:label "Has Title Value"@en ;
+    rdfs:label "Tiene valor de título"@es ;
+    rdfs:label "A une Valeur de Titre"@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2, 3.1.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2, 3.1.2"@fr ;
-  rdfs:domain fiaf:Title ;
-  rdfs:range xsd:string .
+    rdfs:domain fiaf:Title ;
+    rdfs:range xsd:string .
 

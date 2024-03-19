@@ -223,15 +223,15 @@ fiaf:WesternDigital a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.16"@fr ;
     rdfs:subClassOf fiaf:Stock .
 
-# Datatype Property 
+# Datatype Properties
 
 fiaf:hasStockValue a owl:DatatypeProperty ;
-  rdfs:label "Has Stock Value"@en ;
-  rdfs:label "Tiene valor de stock"@es ;
-  rdfs:label "A une Valeur de Support"@fr ;
+    rdfs:label "Has Stock Value"@en ;
+    rdfs:label "Tiene valor de stock"@es ;
+    rdfs:label "A une Valeur de Support"@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 3.1.5.15"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.15"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 3.1.5.15"@fr ;
-  rdfs:domain fiaf:Stock ;
-  rdfs:range xsd:string .
+    rdfs:domain fiaf:Stock ;
+    rdfs:range xsd:string .
 

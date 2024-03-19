@@ -12,12 +12,6 @@
 [Documentation](https://fiafcore.org/)      
 [WebVOWL](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/FIAF/FIAFcore/main/FIAFcore.ttl)
 
-### Versioning
-
--   major version (x.0.0) is URIs added, removed or changed.
--   minor version (0.x.0) is label or description changes.
--   patch version (0.0.x) is readme or pipeline fixes.
-
 ### License
 
 This ontology is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).

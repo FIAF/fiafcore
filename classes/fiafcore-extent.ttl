@@ -170,15 +170,14 @@ fiaf:Seconds a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5.3"@fr ;
     rdfs:subClassOf fiaf:Extent .
 
-# Datatype Property 
+# Datatype Properties
 
 fiaf:hasExtentValue a owl:DatatypeProperty ;
-  rdfs:label "Has Extent Value"@en ;
-  rdfs:label "Tiene valor de extensión"@es ;
-  rdfs:label "A une Valeur de Étendue"@fr ;
+    rdfs:label "Has Extent Value"@en ;
+    rdfs:label "Tiene valor de extensión"@es ;
+    rdfs:label "A une Valeur de Étendue"@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5, 3.1.5.8"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 2.3.5, 3.1.5.8"@fr ;
-  rdfs:domain fiaf:Extent ;
-  rdfs:range xsd:float .
-
+    rdfs:domain fiaf:Extent ;
+    rdfs:range xsd:float .
