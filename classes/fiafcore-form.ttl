@@ -10,7 +10,9 @@ fiaf:Form a owl:Class ;
     rdfs:label "Form"@en ;
     rdfs:label "Formato"@es ;
     rdfs:label "Forme"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.1"@en .
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.1"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.1"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.1"@fr .
 
 # Subclasses
 
@@ -18,90 +20,116 @@ fiaf:AmateurFilm a owl:Class ;
     rdfs:label "Amateur Film"@en ;
     rdfs:label "Película amateur."@es ;
     rdfs:label "Film amateur"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Compilation a owl:Class ;
     rdfs:label "Compilation"@en ;
     rdfs:label "Compilación"@es ;
     rdfs:label "Film de montage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Excerpt a owl:Class ;
     rdfs:label "Excerpt"@en ;
     rdfs:label "Extracto"@es ;
     rdfs:label "Extrait"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Feature a owl:Class ;
     rdfs:label "Feature"@en ;
     rdfs:label "Largometraje"@es ;
     rdfs:label "Long métrage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Featurette a owl:Class ;
     rdfs:label "Featurette"@en ;
     rdfs:label "Cómo se hizo"@es ;
     rdfs:label "Film sur le film"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:HomeMovie a owl:Class ;
     rdfs:label "Home Movie"@en ;
     rdfs:label "Película familiar"@es ;
     rdfs:label "Film de famille"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Outtake a owl:Class ;
     rdfs:label "Outtake"@en ;
     rdfs:label "Descartes"@es ;
     rdfs:label "Chutes"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:ScreenTest a owl:Class ;
     rdfs:label "Screen Test"@en ;
     rdfs:label "Prueba de pantalla"@es ;
     rdfs:label "Essai"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    ;
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Series a owl:Class ;
     rdfs:label "Series"@en ;
     rdfs:label "Serie"@es ;
     rdfs:label "Séries"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Short a owl:Class ;
     rdfs:label "Short"@en ;
     rdfs:label "Cortometraje"@es ;
     rdfs:label "Court métrage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:StockFootage a owl:Class ;
     rdfs:label "Stock Footage"@en ;
     rdfs:label "Imágenes de archivo"@es ;
     rdfs:label "Métrage d'archives"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:Trailer a owl:Class ;
     rdfs:label "Trailer"@en ;
     rdfs:label "Tráiler"@es ;
     rdfs:label "Bande-annonce"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 
 fiaf:UneditedFootage a owl:Class ;
     rdfs:label "Unedited Footage"@en ;
     rdfs:label "Material inédito"@es ;
     rdfs:label "Matériel non monté"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;    
     rdfs:subClassOf fiaf:Form .
 

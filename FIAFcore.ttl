@@ -671,7 +671,9 @@
     rdfs:label "Amateur Film"@en,
         "Película amateur."@es,
         "Film amateur"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/AmericanSamoa> a owl:Class ;
@@ -2336,7 +2338,9 @@
     rdfs:label "Compilation"@en,
         "Compilación"@es,
         "Film de montage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/Composer> a owl:Class ;
@@ -3371,7 +3375,9 @@
     rdfs:label "Excerpt"@en,
         "Extracto"@es,
         "Extrait"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/ExchangeEvent> a owl:Class ;
@@ -3476,14 +3482,18 @@
     rdfs:label "Feature"@en,
         "Largometraje"@es,
         "Long métrage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/Featurette> a owl:Class ;
     rdfs:label "Featurette"@en,
         "Cómo se hizo"@es,
         "Film sur le film"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/Feet> a owl:Class ;
@@ -4361,7 +4371,9 @@
     rdfs:label "Home Movie"@en,
         "Película familiar"@es,
         "Film de famille"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/HomeVideoPublicationEvent> a owl:Class ;
@@ -6915,7 +6927,9 @@
     rdfs:label "Outtake"@en,
         "Descartes"@es,
         "Chutes"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/PAL> a owl:Class ;
@@ -8044,7 +8058,9 @@
     rdfs:label "Screen Test"@en,
         "Prueba de pantalla"@es,
         "Essai"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/Seagate> a owl:Class ;
@@ -8156,7 +8172,9 @@
     rdfs:label "Series"@en,
         "Serie"@es,
         "Séries"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/SeriesCreatedby> a owl:Class ;
@@ -8253,7 +8271,9 @@
     rdfs:label "Short"@en,
         "Cortometraje"@es,
         "Court métrage"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/SierraLeone> a owl:Class ;
@@ -8801,7 +8821,9 @@
     rdfs:label "Stock Footage"@en,
         "Imágenes de archivo"@es,
         "Métrage d'archives"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/StoryboardArtist> a owl:Class ;
@@ -9401,7 +9423,9 @@
     rdfs:label "Trailer"@en,
         "Tráiler"@es,
         "Bande-annonce"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/TransferEvent> a owl:Class ;
@@ -9643,7 +9667,9 @@
     rdfs:label "Unedited Footage"@en,
         "Material inédito"@es,
         "Matériel non monté"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.9"@en ;
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.9"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.9"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.9"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Form> .
 
 <https://ontology.fiafcore.org/UnitedArabEmirates> a owl:Class ;
@@ -11407,7 +11433,9 @@
     rdfs:label "Form"@en,
         "Formato"@es,
         "Forme"@fr ;
-    dc:source "FIAF Glossary of Filmographic Terms D.1.1"@en .
+    dc:source "FIAF Glossary Of Filmographic Terms D.1.1"@en,
+        "FIAF Glosario De Términos Cinematográficos D.1.1"@es,
+        "FIAF Lexique De Termes Filmographiques D.1.1"@fr .
 
 <https://ontology.fiafcore.org/Element> a owl:Class ;
     rdfs:label "Element"@en,
