@@ -11,19 +11,10 @@
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
     owl:versionInfo "1.1" .
 
-<https://ontology.fiafcore.org/1-1.5> a owl:Class ;
+<https://ontology.fiafcore.org/1-1_5> a owl:Class ;
     rdfs:label "1-1.5%"@en,
         "1-1.5%"@es,
         "1-1.5%"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.16.6"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.16.6"@es,
-        "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Shrinkage> .
-
-<https://ontology.fiafcore.org/1.5-2> a owl:Class ;
-    rdfs:label "1.5-2%"@en,
-        "1.5-2%"@es,
-        "1.5-2%"@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.16.6"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.16.6"@es,
         "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
@@ -83,7 +74,7 @@
         "Manuel de catalogage des images animées de la FIAF D.7.2"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Audio> .
 
-<https://ontology.fiafcore.org/17.5mmFilm> a owl:Class ;
+<https://ontology.fiafcore.org/17_5mmFilm> a owl:Class ;
     rdfs:label "17.5mm Film"@en,
         "17.5mm Película"@es,
         "17.5mm Pellicule"@fr ;
@@ -101,7 +92,16 @@
         "Manuel de catalogage des images animées de la FIAF D.7.2"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Video> .
 
-<https://ontology.fiafcore.org/2-2.5> a owl:Class ;
+<https://ontology.fiafcore.org/1_5-2> a owl:Class ;
+    rdfs:label "1.5-2%"@en,
+        "1.5-2%"@es,
+        "1.5-2%"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.16.6"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.16.6"@es,
+        "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Shrinkage> .
+
+<https://ontology.fiafcore.org/2-2_5> a owl:Class ;
     rdfs:label "2-2.5%"@en,
         "2-2.5%"@es,
         "2-2.5%"@fr ;
@@ -110,43 +110,7 @@
         "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Shrinkage> .
 
-<https://ontology.fiafcore.org/2.34:1> a owl:Class ;
-    rdfs:label "2.34:1"@en,
-        "2.34:1"@es,
-        "2.34:1"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
-        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
-
-<https://ontology.fiafcore.org/2.39:1> a owl:Class ;
-    rdfs:label "2.39:1"@en,
-        "2.39:1"@es,
-        "2.39:1"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
-        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
-
-<https://ontology.fiafcore.org/2.52:1> a owl:Class ;
-    rdfs:label "2.52:1"@en,
-        "2.52:1"@es,
-        "2.52:1"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
-        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
-
-<https://ontology.fiafcore.org/2.7:1> a owl:Class ;
-    rdfs:label "2.7:1"@en,
-        "2.7:1"@es,
-        "2.7:1"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
-        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
-
-<https://ontology.fiafcore.org/23.98fps> a owl:Class ;
+<https://ontology.fiafcore.org/23_98fps> a owl:Class ;
     rdfs:label "23.98 fps"@en,
         "23.98 fps"@es,
         "23.98 images/seconde"@fr ;
@@ -199,6 +163,42 @@
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.19"@es,
         "Manuel de catalogage des images animées de la FIAF D.7.19"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Resolution> .
+
+<https://ontology.fiafcore.org/2_34_1> a owl:Class ;
+    rdfs:label "2.34:1"@en,
+        "2.34:1"@es,
+        "2.34:1"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
+        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
+
+<https://ontology.fiafcore.org/2_39_1> a owl:Class ;
+    rdfs:label "2.39:1"@en,
+        "2.39:1"@es,
+        "2.39:1"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
+        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
+
+<https://ontology.fiafcore.org/2_52_1> a owl:Class ;
+    rdfs:label "2.52:1"@en,
+        "2.52:1"@es,
+        "2.52:1"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
+        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
+
+<https://ontology.fiafcore.org/2_7_1> a owl:Class ;
+    rdfs:label "2.7:1"@en,
+        "2.7:1"@es,
+        "2.7:1"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
+        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
 
 <https://ontology.fiafcore.org/30fps> a owl:Class ;
     rdfs:label "30fps"@en,
@@ -272,15 +272,6 @@
         "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/FrameRate> .
 
-<https://ontology.fiafcore.org/4:3> a owl:Class ;
-    rdfs:label "4:3"@en,
-        "4:3"@es,
-        "4:3"@fr ;
-    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
-        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
-
 <https://ontology.fiafcore.org/4K> a owl:Class ;
     rdfs:label "4K"@en,
         "4K"@es,
@@ -289,6 +280,15 @@
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.19"@es,
         "Manuel de catalogage des images animées de la FIAF D.7.19"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Resolution> .
+
+<https://ontology.fiafcore.org/4_3> a owl:Class ;
+    rdfs:label "4:3"@en,
+        "4:3"@es,
+        "4:3"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual D.7.14"@en,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.7.14"@es,
+        "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ImageRatio> .
 
 <https://ontology.fiafcore.org/525> a owl:Class ;
     rdfs:label "525"@en,
@@ -353,7 +353,7 @@
         "Manuel de catalogage des images animées de la FIAF D.7.2"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Film> .
 
-<https://ontology.fiafcore.org/9.5mmFilm> a owl:Class ;
+<https://ontology.fiafcore.org/9_5mmFilm> a owl:Class ;
     rdfs:label "9.5mm Film"@en,
         "9.5mm Película"@es,
         "9.5mm Pellicule"@fr ;

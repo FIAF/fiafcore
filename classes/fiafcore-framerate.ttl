@@ -25,7 +25,7 @@ fiaf:16fps a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.18"@fr ;
     rdfs:subClassOf fiaf:FrameRate .
     
-fiaf:23.98fps a owl:Class ;
+fiaf:23_98fps a owl:Class ;
     rdfs:label "23.98 fps"@en ;
     rdfs:label "23.98 fps"@es ;
     rdfs:label "23.98 images/seconde"@fr ;

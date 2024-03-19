@@ -70,7 +70,7 @@ fiaf:Super8mmFilm a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.2"@fr ;
     rdfs:subClassOf fiaf:Film .
 
-fiaf:9.5mmFilm a owl:Class ;
+fiaf:9_5mmFilm a owl:Class ;
     rdfs:label "9.5mm Film"@en ;
     rdfs:label "9.5mm Película"@es ;
     rdfs:label "9.5mm Pellicule"@fr ;
@@ -79,7 +79,7 @@ fiaf:9.5mmFilm a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.2"@fr ;
     rdfs:subClassOf fiaf:Film .
 
-fiaf:17.5mmFilm a owl:Class ;
+fiaf:17_5mmFilm a owl:Class ;
     rdfs:label "17.5mm Film"@en ;
     rdfs:label "17.5mm Película"@es ;
     rdfs:label "17.5mm Pellicule"@fr ;

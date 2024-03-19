@@ -286,7 +286,7 @@ fiaf:Shrinkage a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
     rdfs:subClassOf fiaf:Condition .
 
-fiaf:1-1.5 a owl:Class ;
+fiaf:1-1_5 a owl:Class ;
     rdfs:label "1-1.5%"@en ;
     rdfs:label "1-1.5%"@es ;
     rdfs:label "1-1.5%"@fr ;
@@ -295,7 +295,7 @@ fiaf:1-1.5 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
     rdfs:subClassOf fiaf:Shrinkage .
 
-fiaf:1.5-2 a owl:Class ;
+fiaf:1_5-2 a owl:Class ;
     rdfs:label "1.5-2%"@en ;
     rdfs:label "1.5-2%"@es ;    
     rdfs:label "1.5-2%"@fr ;
@@ -304,7 +304,7 @@ fiaf:1.5-2 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.16.6"@fr ;
     rdfs:subClassOf fiaf:Shrinkage .
 
-fiaf:2-2.5 a owl:Class ;
+fiaf:2-2_5 a owl:Class ;
     rdfs:label "2-2.5%"@en ;
     rdfs:label "2-2.5%"@es ;
     rdfs:label "2-2.5%"@fr ;

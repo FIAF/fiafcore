@@ -25,7 +25,7 @@ fiaf:ImageRatio a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
     rdfs:subClassOf fiaf:ImageCharacteristic .
 
-fiaf:2.34:1 a owl:Class ;
+fiaf:2_34_1 a owl:Class ;
     rdfs:label "2.34:1"@en ;
     rdfs:label "2.34:1"@es ;
     rdfs:label "2.34:1"@fr ;
@@ -34,7 +34,7 @@ fiaf:2.34:1 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
     rdfs:subClassOf fiaf:ImageRatio .
 
-fiaf:2.39:1 a owl:Class ;
+fiaf:2_39_1 a owl:Class ;
     rdfs:label "2.39:1"@en ;
     rdfs:label "2.39:1"@es ;
     rdfs:label "2.39:1"@fr ;
@@ -43,7 +43,7 @@ fiaf:2.39:1 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
     rdfs:subClassOf fiaf:ImageRatio .
 
-fiaf:2.52:1 a owl:Class ;
+fiaf:2_52_1 a owl:Class ;
     rdfs:label "2.52:1"@en ;
     rdfs:label "2.52:1"@es ;
     rdfs:label "2.52:1"@fr ;
@@ -52,7 +52,7 @@ fiaf:2.52:1 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
     rdfs:subClassOf fiaf:ImageRatio .
 
-fiaf:2.7:1 a owl:Class ;
+fiaf:2_7_1 a owl:Class ;
     rdfs:label "2.7:1"@en ;
     rdfs:label "2.7:1"@es ;
     rdfs:label "2.7:1"@fr ;
@@ -61,7 +61,7 @@ fiaf:2.7:1 a owl:Class ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.14"@fr ;
     rdfs:subClassOf fiaf:ImageRatio .
 
-fiaf:4:3 a owl:Class ;
+fiaf:4_3 a owl:Class ;
     rdfs:label "4:3"@en ;
     rdfs:label "4:3"@es ;
     rdfs:label "4:3"@fr ;
