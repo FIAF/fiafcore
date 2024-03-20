@@ -10,6 +10,9 @@ fiaf:WorkVariant a owl:Class ;
     rdfs:label "Work/Variant"@en ;
     rdfs:label "Obra/Variante"@es ;
     rdfs:label "l'Œuvre/la Variante"@fr ;
+    dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium, e.g., what it is called, when it was made, who made it, who was in it, what it is about, etc. \nA moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole. Such Variants can be produced by minor additions, deletions or substitutions to the content. As a general guideline, changes that would result in a different content description should be treated as a separate Work rather than a Variant."@en,
+        "Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico, p. ej. cómo se le llama, cuándo fue hecho, quién lo hizo, quién aparece, de qué se trata, etc. \nUna Variante de imágenes en movimiento es una entidad que puede usarse para indicar cualquier cambio en las características relativas al contenido, que no modifican de manera significativa el contenido general de una obra como un todo. Dichas Variantes pueden producirse mediante adiciones menores, eliminación o sustitución de partes del contenido. Como pauta general, los cambios que pueden resultar en una descripción de contenido diferente, deberán tratarse como una Obra separada más que como una Variante."@es,
+        "L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique : comment elle s'intitule, quand elle a été réalisée, qui l'a réalisée, qui y apparaît, de quels sujets elle traite, etc. \nUne Variante est une entité utilisée pour indiquer tout changement dans les caractéristiques liées au contenu, qui ne modifie pas de façon significative le contenu global d'une Œuvre dans son ensemble. Ces Variantes peuvent être produites au moyen d’ajouts, de suppressions ou de remplacements mineurs apportés au contenu. En règle générale, toute modification menant à une description différente du contenu doit être traitée comme une Œuvre à part plutôt que comme une Variante."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.0"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.0"@fr .
@@ -20,6 +23,9 @@ fiaf:Analytic a owl:Class ;
     rdfs:label "Analytic"@en ;
     rdfs:label "Analítica"@es ;
     rdfs:label "Analytique"@fr ;
+    dc:description "Content that is contained in another content. A component part may itself be either monographic or serial."@en,
+        "Contenido que está vinculado con otro contenido. Una parte componente puede ser monográfica o seriada."@es,
+        "Contenu présent dans un autre contenu. Une partie composante peut être elle-même une monographie ou une série/film à épisodes."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -29,6 +35,9 @@ fiaf:Collection a owl:Class ;
     rdfs:label "Collection"@en ;
     rdfs:label "Colección"@es ;
     rdfs:label "Collection"@fr ;
+    dc:description "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en,
+        "Contenido emitido en varias partes independientes; una Obra bajo el título “Umbrella” comprende una serie de Obras/Variantes/Manifestaciones diferentes."@es,
+        "Contenu émis en plusieurs parties indépendantes ; un titre d’Œuvre générique recouvrant plusieurs Œuvres/Variantes/Manifestations différentes."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -38,6 +47,9 @@ fiaf:Monographic a owl:Class ;
     rdfs:label "Monographic"@en ;
     rdfs:label "Monográfico"@es ;
     rdfs:label "Monographie"@fr ;
+    dc:description "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en,
+        "Contenido completo en una parte o destinado a completarse en un número finito de partes. Esta definición también se aplica a los episodios de televisión. No obstante, una serie de televisión se cataloga en su totalidad como una Serie."@es,
+        "Contenu complet en une seule partie ou destiné à être complété par un nombre fini de parties. Cela s’applique aussi aux épisodes télévisés. La notice pour la série télévisée elle-même est cataloguée en tant que Série."@fr ;        
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -47,6 +59,9 @@ fiaf:Serial a owl:Class ;
     rdfs:label "Serial"@en ;
     rdfs:label "Serie"@es ;
     rdfs:label "Série"@fr ;
+    dc:description "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en,
+        "Contenido emitido en partes sucesivas y destinado a continuar de forma indefinida o en un lapso de tiempo específico. Un registro de Obra para una serie de televisión se cataloga como una 'Serie'. No obstante, los episodios individuales se pueden catalogar como registros monográficos."@es,
+        "Contenu émis en parties successives et destiné à être poursuivi indéfiniment ou durant un certain temps. Une notice d’Œuvre pour une série télévisée est cataloguée en tant que Série. Les épisodes individuels pourront être catalogués en tant que notices monographiques."@fr ;        
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF D.1"@fr ;

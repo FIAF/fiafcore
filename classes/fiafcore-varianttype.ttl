@@ -10,6 +10,9 @@ fiaf:VariantType a owl:Class ;
     rdfs:label "Variant Type"@en ;
     rdfs:label "Tipo de Variante"@es ;
     rdfs:label "Type de Variante"@fr ;
+    dc:description "Identify and describe the kind of change from a Work that gives rise to any instance(s) of a Variant. Selection should be made from a controlled list of values. Examples: Censored; Dubbed; Subtitled; Edited for TV."@en,
+        "Identifique y describa el tipo de cambio a partir de una Obra de la que ha surgido una Variante. La selección deberá realizarse a partir de una lista de valores controlados. Ejemplos: Censurada; Doblada; Subtitulada; Editada para televisión."@es,
+        "Identifiez et décrivez le type de changement par rapport à une Œuvre qui donne lieu à une ou plusieurs Variante(s). La sélection doit se faire à partir d'une liste de valeurs contrôlée. Exemples: Censuré; Doublé; Sous-titré; version TV."@fr ;        
     dc:source "FIAF Moving Image Cataloguing Manual 1.2.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.2.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.2.2"@fr .

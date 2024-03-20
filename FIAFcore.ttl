@@ -722,6 +722,9 @@
     rdfs:label "Analytic"@en,
         "Analítica"@es,
         "Analytique"@fr ;
+    dc:description "Content that is contained in another content. A component part may itself be either monographic or serial."@en,
+        "Contenido que está vinculado con otro contenido. Una parte componente puede ser monográfica o seriada."@es,
+        "Contenu présent dans un autre contenu. Une partie composante peut être elle-même une monographie ou une série/film à épisodes."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -1020,6 +1023,9 @@
     rdfs:label "Assistant Art Director"@en,
         "Ayudante de Director Artístico"@es,
         "Assistant directeur artistique"@fr ;
+    dc:source "FIAF Glossary Of Filmographic Terms B.6.3"@en,
+        "FIAF Glosario De Términos Cinematográficos B.6.3"@es,
+        "FIAF Lexique De Termes Filmographiques B.6.3"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> .
 
 <https://ontology.fiafcore.org/AssistantDirector> a owl:Class ;
@@ -2191,6 +2197,9 @@
     rdfs:label "Collection"@en,
         "Colección"@es,
         "Collection"@fr ;
+    dc:description "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en,
+        "Contenido emitido en varias partes independientes; una Obra bajo el título “Umbrella” comprende una serie de Obras/Variantes/Manifestaciones diferentes."@es,
+        "Contenu émis en plusieurs parties indépendantes ; un titre d’Œuvre générique recouvrant plusieurs Œuvres/Variantes/Manifestations différentes."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -6099,6 +6108,9 @@
     rdfs:label "Monographic"@en,
         "Monográfico"@es,
         "Monographie"@fr ;
+    dc:description "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en,
+        "Contenido completo en una parte o destinado a completarse en un número finito de partes. Esta definición también se aplica a los episodios de televisión. No obstante, una serie de televisión se cataloga en su totalidad como una Serie."@es,
+        "Contenu complet en une seule partie ou destiné à être complété par un nombre fini de parties. Cela s’applique aussi aux épisodes télévisés. La notice pour la série télévisée elle-même est cataloguée en tant que Série."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -8163,6 +8175,9 @@
     rdfs:label "Serial"@en,
         "Serie"@es,
         "Série"@fr ;
+    dc:description "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en,
+        "Contenido emitido en partes sucesivas y destinado a continuar de forma indefinida o en un lapso de tiempo específico. Un registro de Obra para una serie de televisión se cataloga como una 'Serie'. No obstante, los episodios individuales se pueden catalogar como registros monográficos."@es,
+        "Contenu émis en parties successives et destiné à être poursuivi indéfiniment ou durant un certain temps. Une notice d’Œuvre pour une série télévisée est cataloguée en tant que Série. Les épisodes individuels pourront être catalogués en tant que notices monographiques."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual D.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -11235,6 +11250,9 @@
     rdfs:label "Title"@en,
         "Título"@es,
         "Titre"@fr ;
+    dc:description "Record at least one title, identifying phrase, or name for the moving image Work or Variant. Record at least one title, identifying phrase, or name for the Manifestation Title. Record at least one title, identifying phrase, or name for the moving image Item Title."@en,
+        "Registre al menos un título, frase de identificación o nombre a la Obra o Variante de imágenes en movimiento. Registre al menos un título, frase identificadora o nombre como el Título de la Manifestación. Registre al menos un título, frase identificadora o nombre del Ítem de imágenes en movimiento."@es,
+        "Enregistrez au moins un titre, une expression identifiante ou un nom pour l’Œuvre ou la Variante. Enregistrez au moins un titre, une expression identifiante ou un nom dans le champ titre de la Manifestation. Enregistrez au moins un titre, une expression identifiante ou un nom dans le champ titre de l’Item."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2, 3.1.2"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2, 3.1.2"@es,
         "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2, 3.1.2"@fr .
@@ -11289,6 +11307,9 @@
     rdfs:label "Alternative Title"@en,
         "Título Alternativo"@es,
         "Titre Alternatif"@fr ;
+    dc:description "Alternative titles for the Work differ from uniform, preferred, and other title information and may be encountered in the course of cataloguing its Variants, Manifestations and Items. If the Work could reasonably be sought under the title(s) of one of these Variants/Manifestations, the alternative title should be indexed in such a way that a user who searches on it is led to the Work."@en,
+        "Los títulos alternativos de la Obra difieren de los títulos uniformes y los títulos preferidos y de la otra información sobre el título; y se les pueden encontrar en el curso de la catalogación de sus Variantes, Manifestaciones e Ítems. Si la Obra puede buscarse bajo el(los) título(s) de una de esas Variantes/Manifestaciones, el título alternativo deberá indizarse de tal manera que un usuario que lo busca sea dirigido hacia la Obra."@es,
+        "Les titres alternatifs de l'Œuvre diffèrent des titres uniformes, des titres privilégiés et des compléments de titre et peuvent apparaître lors du catalogage de ses Variantes, Manifestations et Items. Si l'Œuvre peut raisonnablement être recherchée sous le(s) titre(s) de l'une de ces Variantes/Manifestations, le titre alternatif devrait être indexé de manière à ce qu'un utilisateur qui le recherche soit redirigé vers l'Œuvre."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual A.2.4"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento A.2.4"@es,
         "Manuel de catalogage des images animées de la FIAF A.2.4"@fr ;
@@ -11373,6 +11394,9 @@
     rdfs:label "Variant Type"@en,
         "Tipo de Variante"@es,
         "Type de Variante"@fr ;
+    dc:description "Identify and describe the kind of change from a Work that gives rise to any instance(s) of a Variant. Selection should be made from a controlled list of values. Examples: Censored; Dubbed; Subtitled; Edited for TV."@en,
+        "Identifique y describa el tipo de cambio a partir de una Obra de la que ha surgido una Variante. La selección deberá realizarse a partir de una lista de valores controlados. Ejemplos: Censurada; Doblada; Subtitulada; Editada para televisión."@es,
+        "Identifiez et décrivez le type de changement par rapport à une Œuvre qui donne lieu à une ou plusieurs Variante(s). La sélection doit se faire à partir d'une liste de valeurs contrôlée. Exemples: Censuré; Doublé; Sous-titré; version TV."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.2.2"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.2.2"@es,
         "Manuel de catalogage des images animées de la FIAF 1.2.2"@fr .
@@ -11449,6 +11473,12 @@
     rdfs:label "Work/Variant"@en,
         "Obra/Variante"@es,
         "l'Œuvre/la Variante"@fr ;
+    dc:description """A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium, e.g., what it is called, when it was made, who made it, who was in it, what it is about, etc. 
+A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole. Such Variants can be produced by minor additions, deletions or substitutions to the content. As a general guideline, changes that would result in a different content description should be treated as a separate Work rather than a Variant."""@en,
+        """Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico, p. ej. cómo se le llama, cuándo fue hecho, quién lo hizo, quién aparece, de qué se trata, etc. 
+Una Variante de imágenes en movimiento es una entidad que puede usarse para indicar cualquier cambio en las características relativas al contenido, que no modifican de manera significativa el contenido general de una obra como un todo. Dichas Variantes pueden producirse mediante adiciones menores, eliminación o sustitución de partes del contenido. Como pauta general, los cambios que pueden resultar en una descripción de contenido diferente, deberán tratarse como una Obra separada más que como una Variante."""@es,
+        """L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique : comment elle s'intitule, quand elle a été réalisée, qui l'a réalisée, qui y apparaît, de quels sujets elle traite, etc. 
+Une Variante est une entité utilisée pour indiquer tout changement dans les caractéristiques liées au contenu, qui ne modifie pas de façon significative le contenu global d'une Œuvre dans son ensemble. Ces Variantes peuvent être produites au moyen d’ajouts, de suppressions ou de remplacements mineurs apportés au contenu. En règle générale, toute modification menant à une description différente du contenu doit être traitée comme une Œuvre à part plutôt que comme une Variante."""@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.0"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0"@es,
         "Manuel de catalogage des images animées de la FIAF 1.0"@fr .
