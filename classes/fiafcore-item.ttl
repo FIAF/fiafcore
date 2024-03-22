@@ -10,6 +10,9 @@ fiaf:Item a owl:Class ;
     rdfs:label "Item"@en ;
     rdfs:label "Ítem"@es ;
     rdfs:label "Item"@fr ;
+    dc:description "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository’s collection."@en,
+        "Un Ítem de imágenes en movimiento es el producto físico o digital de la Manifestación de una Obra o Variante, i.e., la copia real de una obra o Variante. Mientras que el registro de la Manifestación describe el “ideal” de un formato o publicación particular, el registro del Ítem representa la existencia real dentro de la colección de un repositorio."@es,
+        "Un Item d’une image animée est le produit physique ou numérique de la Manifestation d'une Œuvre ou d’une Variante, c'est-à-dire la copie réelle d'une Œuvre ou d'une Variante. Alors que la notice Manifestation décrit le modèle idéal d'un format ou d'une publication en particulier, l’Item représente le document réel conservé dans la collection d'une institution."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual 3.0"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 3.0"@fr .
