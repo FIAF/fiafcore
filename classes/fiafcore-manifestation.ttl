@@ -10,6 +10,9 @@ fiaf:Manifestation a owl:Class ;
     rdfs:label "Manifestation"@en ;
     rdfs:label "Manifestación"@es ;
     rdfs:label "Manifestation"@fr ;
+    dc:description "A moving image Manifestation is the embodiment of a moving image Work/Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work/Variant."@en,
+        "Una Manifestación de imágenes en movimiento es la materialización de una Obra/Variante. Las Manifestaciones generalmente incluyen todos los medios analógicos, digitales y en línea, asociados con una particular materialización de una Obra/Variante."@es,
+        "Une Manifestation est la matérialisation d'une Œuvre/Variante. Les Manifestations comprennent habituellement tous les médias analogiques, numériques et en ligne associés à une matérialisation particulière d'une Œuvre/Variante."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual 2.0"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 2.0"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 2.0"@fr .
