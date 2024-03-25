@@ -9,6 +9,10 @@
 fiaf:Carrier a owl:Class ;
     rdfs:label "Carrier"@en ;    
     rdfs:label "Portador"@es ;
-    rdfs:label "Article"@fr .
+    rdfs:label "Article"@fr ;
+    dc:description "A moving image carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en,
+        "Un soporte de imágenes en movimiento es la unidad física discreta en la que se conserva la imagen en movimiento. Puede contener toda la obra artística o una parte, por ejemplo en el caso de bobinas individuales de película."@es,
+        "Un support d'image en mouvement est l'unité physique discrète sur laquelle l'image en mouvement est conservée. Il peut contenir l'ensemble de l'œuvre artistique ou une partie, par exemple dans le cas de bobines de film individuelles."@fr .    
+
     
 

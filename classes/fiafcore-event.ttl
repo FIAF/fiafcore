@@ -10,6 +10,9 @@ fiaf:Event a owl:Class ;
     rdfs:label "Event"@en ;
     rdfs:label "Evento"@es ;
     rdfs:label "Événement"@fr ;
+    dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en,
+        "Un Evento caracteriza las ocurrencias en el ciclo de vida de una Obra, Variante, Manifestación o Artículo de imagen en movimiento. Las instancias de cualquier Evento pueden tener relaciones de Actividad (y Agente)."@es,
+        "Un événement caractérise les occurrences dans le cycle de vie d'une œuvre, d'une variante, d'une manifestation ou d'un élément d'image animée. Les instances d'un événement peuvent avoir des relations d'activité (et d'agent)."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr .

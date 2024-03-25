@@ -2078,6 +2078,9 @@ fiaf:Activity a owl:Class ;
     rdfs:label "Activity"@en,
         "Actividad"@es,
         "Activité"@fr ;
+    dc:description "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en,
+        "Describe la actividad o el papel del Agente en relación con la Obra/Variante de imagen en movimiento, o para explicitar la(s) relación(es) entre el Agente y la Manifestación o el Objeto."@es,
+        "Il s'agit de décrire l'activité ou le rôle de l'agent par rapport à l'œuvre/variante de l'image en mouvement, ou d'expliciter la ou les relations entre l'agent et la manifestation ou l'objet."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es,
         "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr .

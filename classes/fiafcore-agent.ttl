@@ -10,6 +10,9 @@ fiaf:Agent a owl:Class ;
     rdfs:label "Agent"@en ;
     rdfs:label "Agente"@es ;
     rdfs:label "Agent"@fr ;
+    dc:description "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en,
+        "Los agentes, ya se trate de obras/variantes, manifestaciones o elementos de imágenes en movimiento, son entidades que intervienen en su creación, explotación o conservación, con distinciones típicas que incluyen la persona, la persona jurídica, la familia y el grupo de personas, y que abarcan responsabilidades como la liberación, la distribución, la adquisición o la conservación."@es,
+        "Les agents, qu'il s'agisse d'œuvres/variantes, de manifestations ou d'éléments d'images animées, sont des entités impliquées dans leur création, leur exploitation ou leur préservation, avec des distinctions typiques incluant la personne, la personne morale, la famille et le groupe de personnes, englobant des responsabilités telles que la diffusion, la distribution, l'acquisition ou la préservation."@fr ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr .

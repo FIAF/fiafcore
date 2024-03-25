@@ -10899,7 +10899,10 @@
 <https://ontology.fiafcore.org/Carrier> a owl:Class ;
     rdfs:label "Carrier"@en,
         "Portador"@es,
-        "Article"@fr .
+        "Article"@fr ;
+    ns1:description "A moving image carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en,
+        "Un soporte de imágenes en movimiento es la unidad física discreta en la que se conserva la imagen en movimiento. Puede contener toda la obra artística o una parte, por ejemplo en el caso de bobinas individuales de película."@es,
+        "Un support d'image en mouvement est l'unité physique discrète sur laquelle l'image en mouvement est conservée. Il peut contenir l'ensemble de l'œuvre artistique ou une partie, par exemple dans le cas de bobines de film individuelles."@fr .
 
 <https://ontology.fiafcore.org/EditingActivity> a owl:Class ;
     rdfs:label "Editing Activity"@en,
@@ -11112,6 +11115,9 @@
     rdfs:label "Agent"@en,
         "Agente"@es,
         "Agent"@fr ;
+    ns1:description "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en,
+        "Los agentes, ya se trate de obras/variantes, manifestaciones o elementos de imágenes en movimiento, son entidades que intervienen en su creación, explotación o conservación, con distinciones típicas que incluyen la persona, la persona jurídica, la familia y el grupo de personas, y que abarcan responsabilidades como la liberación, la distribución, la adquisición o la conservación."@es,
+        "Les agents, qu'il s'agisse d'œuvres/variantes, de manifestations ou d'éléments d'images animées, sont des entités impliquées dans leur création, leur exploitation ou leur préservation, avec des distinctions typiques incluant la personne, la personne morale, la famille et le groupe de personnes, englobant des responsabilités telles que la diffusion, la distribution, l'acquisition ou la préservation."@fr ;
     ns1:source "FIAF Moving Image Cataloguing Manual 1.4.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es,
         "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr .
@@ -11429,6 +11435,9 @@
     rdfs:label "Event"@en,
         "Evento"@es,
         "Événement"@fr ;
+    ns1:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en,
+        "Un Evento caracteriza las ocurrencias en el ciclo de vida de una Obra, Variante, Manifestación o Artículo de imagen en movimiento. Las instancias de cualquier Evento pueden tener relaciones de Actividad (y Agente)."@es,
+        "Un événement caractérise les occurrences dans le cycle de vie d'une œuvre, d'une variante, d'une manifestation ou d'un élément d'image animée. Les instances d'un événement peuvent avoir des relations d'activité (et d'agent)."@fr ;
     ns1:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es,
         "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr .
@@ -11484,6 +11493,9 @@
     rdfs:label "Activity"@en,
         "Actividad"@es,
         "Activité"@fr ;
+    ns1:description "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en,
+        "Describe la actividad o el papel del Agente en relación con la Obra/Variante de imagen en movimiento, o para explicitar la(s) relación(es) entre el Agente y la Manifestación o el Objeto."@es,
+        "Il s'agit de décrire l'activité ou le rôle de l'agent par rapport à l'œuvre/variante de l'image en mouvement, ou d'expliciter la ou les relations entre l'agent et la manifestation ou l'objet."@fr ;
     ns1:source "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es,
         "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr .
