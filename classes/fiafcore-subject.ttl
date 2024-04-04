@@ -1,0 +1,15 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Class
+
+fiaf:Subject a owl:Class ;
+    rdfs:label "Subject"@en ;
+    rdfs:label "Materia"@es ;
+    rdfs:label "Sujet"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ;
+    dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ;
+    dc:source "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr .

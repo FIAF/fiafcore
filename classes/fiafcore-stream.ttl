@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Stream> a owl:Class ;
+fiaf:Stream a owl:Class ;
     rdfs:label "Stream"@en ;
     rdfs:label "Flujo"@es ;
     rdfs:label "Flux"@fr ;
@@ -14,19 +14,19 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/AudioStream> a owl:Class ;
+fiaf:AudioStream a owl:Class ;
     rdfs:label "Audio Stream"@en ;
     rdfs:label "Flujo de sonido"@es ;
     rdfs:label "Flux Audio"@fr ;
     rdfs:subClassOf fiaf:Stream .
 
-<https://fiafcore.org/ontology/SubtitleStream> a owl:Class ;
+fiaf:SubtitleStream a owl:Class ;
     rdfs:label "Subtitle Stream"@en ;
     rdfs:label "Flujo de subtítulos"@es ;
     rdfs:label "Flux de Sous-titres"@fr ;
     rdfs:subClassOf fiaf:Stream .
 
-<https://fiafcore.org/ontology/VideoStream> a owl:Class ;
+fiaf:VideoStream a owl:Class ;
     rdfs:label "Video Stream"@en ;
     rdfs:label "Flujo de vídeo"@es ;
     rdfs:label "Flux Vidéo"@fr ;
@@ -34,7 +34,7 @@
 
 # Object Properties
 
-<https://fiafcore.org/ontology/hasBitDepth> a owl:ObjectProperty ;
+fiaf:hasBitDepth a owl:ObjectProperty ;
     rdfs:label "Has Bit Depth"@en ;
     rdfs:label "Tiene profundidad de bits"@es ;
     rdfs:label "A une Profondeur de bit"@fr ;
@@ -44,7 +44,7 @@
     rdfs:domain fiaf:Stream ;
     rdfs:range fiaf:BitDepth .
 
-<https://fiafcore.org/ontology/hasCodec> a owl:ObjectProperty ;
+fiaf:hasCodec a owl:ObjectProperty ;
     rdfs:label "Has Codec"@en ;
     rdfs:label "Tiene códec"@es ;
     rdfs:label "A un Codec"@fr ;

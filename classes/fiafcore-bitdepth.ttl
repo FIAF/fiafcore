@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/BitDepth> a owl:Class ;
+fiaf:BitDepth a owl:Class ;
     rdfs:label "Bit Depth"@en ;
     rdfs:label "Cantidad de Bits"@es ;
     rdfs:label "Profondeur de bit"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/10bit> a owl:Class ;
+fiaf:10bit a owl:Class ;
     rdfs:label "10bit"@en ;
     rdfs:label "10bit"@es ;
     rdfs:label "10bit"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
-<https://fiafcore.org/ontology/16bit> a owl:Class ;
+fiaf:16bit a owl:Class ;
     rdfs:label "16bit"@en ;
     rdfs:label "16bit"@es ;
     rdfs:label "16bit"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
-<https://fiafcore.org/ontology/24bit> a owl:Class ;
+fiaf:24bit a owl:Class ;
     rdfs:label "24bit"@en ;
     rdfs:label "24bit"@es ;
     rdfs:label "24bit"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.17"@fr ;
     rdfs:subClassOf fiaf:BitDepth .
 
-<https://fiafcore.org/ontology/32bit> a owl:Class ;
+fiaf:32bit a owl:Class ;
     rdfs:label "32bit"@en ;
     rdfs:label "32bit"@es ;
     rdfs:label "32bit"@fr ;

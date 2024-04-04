@@ -1,14 +1,18 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Carrier> a owl:Class ;
+fiaf:Carrier a owl:Class ;
     rdfs:label "Carrier"@en ;    
     rdfs:label "Portador"@es ;
-    rdfs:label "Article"@fr .
+    rdfs:label "Article"@fr ;
+    dc:description "A moving image carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en,
+        "Un soporte de imágenes en movimiento es la unidad física discreta en la que se conserva la imagen en movimiento. Puede contener toda la obra artística o una parte, por ejemplo en el caso de bobinas individuales de película."@es,
+        "Un support d'image en mouvement est l'unité physique discrète sur laquelle l'image en mouvement est conservée. Il peut contenir l'ensemble de l'œuvre artistique ou une partie, par exemple dans le cas de bobines de film individuelles."@fr .    
+
     
 

@@ -1,22 +1,25 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/VariantType> a owl:Class ;
+fiaf:VariantType a owl:Class ;
     rdfs:label "Variant Type"@en ;
     rdfs:label "Tipo de Variante"@es ;
     rdfs:label "Type de Variante"@fr ;
+    dc:description "Identify and describe the kind of change from a Work that gives rise to any instance(s) of a Variant. Selection should be made from a controlled list of values. Examples: Censored; Dubbed; Subtitled; Edited for TV."@en,
+        "Identifique y describa el tipo de cambio a partir de una Obra de la que ha surgido una Variante. La selección deberá realizarse a partir de una lista de valores controlados. Ejemplos: Censurada; Doblada; Subtitulada; Editada para televisión."@es,
+        "Identifiez et décrivez le type de changement par rapport à une Œuvre qui donne lieu à une ou plusieurs Variante(s). La sélection doit se faire à partir d'une liste de valeurs contrôlée. Exemples: Censuré; Doublé; Sous-titré; version TV."@fr ;        
     dc:source "FIAF Moving Image Cataloguing Manual 1.2.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.2.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.2.2"@fr .
 
 # Subclasses
 
-<https://fiafcore.org/ontology/AbridgedCondensed> a owl:Class ;
+fiaf:AbridgedCondensed a owl:Class ;
     rdfs:label "Abridged/Condensed"@en ;
     rdfs:label "Abreviada/Condensada"@es ;
     rdfs:label "Raccourci/condensé"@fr ; 
@@ -25,7 +28,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Augmented> a owl:Class ;
+fiaf:Augmented a owl:Class ;
     rdfs:label "Augmented"@en ;
     rdfs:label "Aumentada"@es ;
     rdfs:label "Augmentée"@fr ;
@@ -34,7 +37,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/BlackAndWhiteCopyOfWorkOriginallyIssuedInColour> a owl:Class ;
+fiaf:BlackAndWhiteCopyOfWorkOriginallyIssuedInColour a owl:Class ;
     rdfs:label "Black and white copy of work originally issued in colour"@en ;
     rdfs:label "Copia en blanco y negro de una obra originalmente producida a color"@es ;
     rdfs:label "Copie noir et blanc d’une œuvre sortie à l’origine en couleurs"@fr ;
@@ -43,7 +46,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Censored> a owl:Class ;
+fiaf:Censored a owl:Class ;
     rdfs:label "Censored"@en ;
     rdfs:label "Censurada"@es ;
     rdfs:label "Censuré"@fr ;
@@ -52,7 +55,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Colourized> a owl:Class ;
+fiaf:Colourized a owl:Class ;
     rdfs:label "Colourized"@en ;
     rdfs:label "Coloreada"@es ;
     rdfs:label "Colorisé"@fr ;
@@ -61,7 +64,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/DifferentSoundTrack> a owl:Class ;
+fiaf:DifferentSoundTrack a owl:Class ;
     rdfs:label "Different sound track"@en ;
     rdfs:label "Diferentes pistas de sonido"@es ;
     rdfs:label "Bande sonore différente"@fr ;
@@ -70,7 +73,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Dubbed> a owl:Class ;
+fiaf:Dubbed a owl:Class ;
     rdfs:label "Dubbed"@en ;
     rdfs:label "Doblada"@es ;
     rdfs:label "Doublé"@fr ;
@@ -79,7 +82,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/PreservationRestoration> a owl:Class ;
+fiaf:PreservationRestoration a owl:Class ;
     rdfs:label "Preservation/Restoration"@en ;
     rdfs:label "Preservación/Restauración"@es ;
     rdfs:label "Conservation/Restauration"@fr ;
@@ -88,7 +91,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Sonorized> a owl:Class ;
+fiaf:Sonorized a owl:Class ;
     rdfs:label "Sonorized"@en ;
     rdfs:label "Sonorizada"@es ;
     rdfs:label "Sonorisé"@fr ;
@@ -97,7 +100,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf fiaf:VariantType .
 
-<https://fiafcore.org/ontology/Subtitled> a owl:Class ;
+fiaf:Subtitled a owl:Class ;
     rdfs:label "Subtitled"@en ;
     rdfs:label "Subtítulada"@es ;
     rdfs:label "Sous-titré"@fr ;

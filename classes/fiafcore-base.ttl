@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Base> a owl:Class ;
+fiaf:Base a owl:Class ;
     rdfs:label "Base"@en ;
     rdfs:label "Base"@es ;
     rdfs:label "Base"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/Acetate> a owl:Class ;
+fiaf:Acetate a owl:Class ;
     rdfs:label "Acetate"@en ;
     rdfs:label "Acetato"@es ;
     rdfs:label "Acétate"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Acrylic> a owl:Class ;
+fiaf:Acrylic a owl:Class ;
     rdfs:label "Acrylic"@en ;
     rdfs:label "Acrílico"@es ;
     rdfs:label "Acrylique"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Cta> a owl:Class ;
+fiaf:Cta a owl:Class ;
     rdfs:label "CTA"@en ;
     rdfs:label "CTA"@es ;
     rdfs:label "CTA"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Diacetate> a owl:Class ;
+fiaf:Diacetate a owl:Class ;
     rdfs:label "Diacetate"@en ;
     rdfs:label "Diacetato"@es ;
     rdfs:label "Diacétate"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/MainlyNitrate> a owl:Class ;
+fiaf:MainlyNitrate a owl:Class ;
     rdfs:label "Mainly nitrate"@en ;
     rdfs:label "Nitrato (principalmente)"@es ;
     rdfs:label "En majeure partie nitrate"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/MainlySafety> a owl:Class ;
+fiaf:MainlySafety a owl:Class ;
     rdfs:label "Mainly safety"@en ;
     rdfs:label "Seguridad (principalmente)"@es ;
     rdfs:label "En majeure partie safety"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Mixed> a owl:Class ;
+fiaf:Mixed a owl:Class ;
     rdfs:label "Mixed"@en ;
     rdfs:label "Mezclado"@es ;
     rdfs:label "Mixte"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Mylar> a owl:Class ;
+fiaf:Mylar a owl:Class ;
     rdfs:label "Mylar"@en ;
     rdfs:label "Mylar"@es ;
     rdfs:label "Mylar"@fr ;
@@ -88,7 +88,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Nitrate> a owl:Class ;
+fiaf:Nitrate a owl:Class ;
     rdfs:label "Nitrate"@en ;
     rdfs:label "Nitrato"@es ;
     rdfs:label "Nitrate"@fr ;
@@ -97,7 +97,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Polyester> a owl:Class ;
+fiaf:Polyester a owl:Class ;
     rdfs:label "Polyester"@en ;
     rdfs:label "Poliester"@es ;
     rdfs:label "Polyester"@fr ;
@@ -106,7 +106,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Pvc> a owl:Class ;
+fiaf:Pvc a owl:Class ;
     rdfs:label "PVC"@en ;
     rdfs:label "PVC"@es ;
     rdfs:label "PVC"@fr ;
@@ -115,7 +115,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Safety> a owl:Class ;
+fiaf:Safety a owl:Class ;
     rdfs:label "Safety"@en ;
     rdfs:label "Seguridad"@es ;
     rdfs:label "Safety"@fr ;
@@ -124,7 +124,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.7"@fr ;
     rdfs:subClassOf fiaf:Base .
 
-<https://fiafcore.org/ontology/Vinyl> a owl:Class ;
+fiaf:Vinyl a owl:Class ;
     rdfs:label "Vinyl"@en ;
     rdfs:label "Vinilo"@es ;
     rdfs:label "Vinyle"@fr ;

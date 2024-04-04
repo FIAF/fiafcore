@@ -1,22 +1,25 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Event> a owl:Class ;
+fiaf:Event a owl:Class ;
     rdfs:label "Event"@en ;
     rdfs:label "Evento"@es ;
     rdfs:label "Événement"@fr ;
+    dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en,
+        "Un Evento caracteriza las ocurrencias en el ciclo de vida de una Obra, Variante, Manifestación o Artículo de imagen en movimiento. Las instancias de cualquier Evento pueden tener relaciones de Actividad (y Agente)."@es,
+        "Un événement caractérise les occurrences dans le cycle de vie d'une œuvre, d'une variante, d'une manifestation ou d'un élément d'image animée. Les instances d'un événement peuvent avoir des relations d'activité (et d'agent)."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr .
 
 # Subclasses
 
-<https://fiafcore.org/ontology/PublicationEvent> a owl:Class ;
+fiaf:PublicationEvent a owl:Class ;
     rdfs:label "Publication Event"@en ;
     rdfs:label "Publicación Evento"@es ;
     rdfs:label "Publication Événement"@fr ;
@@ -25,7 +28,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.1"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/ReleaseEvent> a owl:Class ;
+fiaf:ReleaseEvent a owl:Class ;
     rdfs:label "Release Event"@en ;
     rdfs:label "Estreno Evento"@es ;
     rdfs:label "Sortie Événement"@fr ;
@@ -34,7 +37,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/DistributionEvent> a owl:Class ;
+fiaf:DistributionEvent a owl:Class ;
     rdfs:label "Distribution Event"@en ;
     rdfs:label "Distribución Evento"@es ;
     rdfs:label "Distribution Événement"@fr ;
@@ -43,7 +46,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/BroadcastEvent> a owl:Class ;
+fiaf:BroadcastEvent a owl:Class ;
     rdfs:label "Broadcast Event"@en ;
     rdfs:label "Teletransmisión Evento"@es ;
     rdfs:label "Télédiffusion Événement"@fr ;
@@ -52,7 +55,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/OnlineTransmissionEvent> a owl:Class ;
+fiaf:OnlineTransmissionEvent a owl:Class ;
     rdfs:label "Online Transmission Event"@en ;
     rdfs:label "Transmisión en línea Evento"@es ;
     rdfs:label "Diffusion en ligne Événement"@fr ;
@@ -61,7 +64,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/PreReleaseEvent> a owl:Class ;
+fiaf:PreReleaseEvent a owl:Class ;
     rdfs:label "Pre-Release Event"@en ;
     rdfs:label "Pre-estreno Evento"@es ;
     rdfs:label "Pré-diffusion Événement"@fr ;
@@ -70,7 +73,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/TheatricalDistributionEvent> a owl:Class ;
+fiaf:TheatricalDistributionEvent a owl:Class ;
     rdfs:label "Theatrical Distribution Event"@en ;
     rdfs:label "Distribución en cines Evento"@es ;
     rdfs:label "Distribution en salles Événement"@fr ;
@@ -79,7 +82,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/NonTheatricalDistributionEvent> a owl:Class ;
+fiaf:NonTheatricalDistributionEvent a owl:Class ;
     rdfs:label "Non-Theatrical Distribution Event"@en ;
     rdfs:label "Distribución no comercial Evento"@es ;
     rdfs:label "Distribution non commerciale Événement"@fr ;
@@ -88,7 +91,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/NotForReleaseEvent> a owl:Class ;
+fiaf:NotForReleaseEvent a owl:Class ;
     rdfs:label "Not For Release Event"@en ;
     rdfs:label "Uso privado Evento"@es ;
     rdfs:label "Pas pour la diffusion Événement"@fr ;
@@ -97,7 +100,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/HomeVideoPublicationEvent> a owl:Class ;
+fiaf:HomeVideoPublicationEvent a owl:Class ;
     rdfs:label "Home Video Publication Event"@en ;
     rdfs:label "Publicación en video Evento"@es ;
     rdfs:label "Distribution pour visionnage domestique Événement"@fr ;
@@ -106,7 +109,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/UnknownEvent> a owl:Class ;
+fiaf:UnknownEvent a owl:Class ;
     rdfs:label "Unknown Event"@en ;
     rdfs:label "Desconocida Evento"@es ;
     rdfs:label "Inconnu Événement"@fr ;
@@ -115,7 +118,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.10"@fr ;
     rdfs:subClassOf fiaf:PublicationEvent .
 
-<https://fiafcore.org/ontology/AwardsOrNominationsEvent> a owl:Class ;
+fiaf:AwardsOrNominationsEvent a owl:Class ;
     rdfs:label "Award(s) or Nomination(s) Event"@en ;
     rdfs:label "Premio(s) o Nominación(es) Evento"@es ;
     rdfs:label "Récompense(s) ou nomination(s)"@fr ;
@@ -124,7 +127,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.2"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/ProductionEvent> a owl:Class ;
+fiaf:ProductionEvent a owl:Class ;
     rdfs:label "Production Event"@en ;
     rdfs:label "Producción Evento"@es ;
     rdfs:label "Production Événement"@fr ;
@@ -133,7 +136,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.3"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/CastingEvent> a owl:Class ;
+fiaf:CastingEvent a owl:Class ;
     rdfs:label "Casting Event"@en ;
     rdfs:label "Selección de reparto Evento"@es ;
     rdfs:label "Distribution (casting) Événement"@fr ;
@@ -142,7 +145,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.11"@fr ;
     rdfs:subClassOf fiaf:ProductionEvent .
 
-<https://fiafcore.org/ontology/OutdoorShootingEvent> a owl:Class ;
+fiaf:OutdoorShootingEvent a owl:Class ;
     rdfs:label "Outdoor Shooting Event"@en ;
     rdfs:label "Tomas en exteriores Evento"@es ;
     rdfs:label "Tournage en extérieur Événement"@fr ;
@@ -151,7 +154,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.11"@fr ;
     rdfs:subClassOf fiaf:ProductionEvent .
 
-<https://fiafcore.org/ontology/IndoorShootingEvent> a owl:Class ;
+fiaf:IndoorShootingEvent a owl:Class ;
     rdfs:label "Indoor Shooting Event"@en ;
     rdfs:label "Tomas en interiores Evento"@es ;
     rdfs:label "Tournage en intérieur Événement"@fr ;
@@ -160,7 +163,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.11"@fr ;
     rdfs:subClassOf fiaf:ProductionEvent .
 
-<https://fiafcore.org/ontology/PostProductionEvent> a owl:Class ;
+fiaf:PostProductionEvent a owl:Class ;
     rdfs:label "Post-Production"@en ;
     rdfs:label "Post-producción Evento"@es ;
     rdfs:label "Post-production Événement"@fr ;
@@ -169,7 +172,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.11"@fr ;
     rdfs:subClassOf fiaf:ProductionEvent .
 
-<https://fiafcore.org/ontology/RightsCopyrightRegistrationEvent> a owl:Class ;
+fiaf:RightsCopyrightRegistrationEvent a owl:Class ;
     rdfs:label "Rights/Copyright/Registration Event"@en ;
     rdfs:label "Derechos/Copyright/Registro de Propiedad Intelectual Evento"@es ;
     rdfs:label "Droits/Copyright/Déclaration DPI Événement"@fr ;
@@ -178,7 +181,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.4"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/PreservationEvent> a owl:Class ;
+fiaf:PreservationEvent a owl:Class ;
     rdfs:label "Preservation Event"@en ;
     rdfs:label "Preservación Evento"@es ;
     rdfs:label "Conservation Événement"@fr ;
@@ -187,7 +190,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.5"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/DuplicationEvent> a owl:Class ;
+fiaf:DuplicationEvent a owl:Class ;
     rdfs:label "Duplication Event"@en ;
     rdfs:label "Duplicación Evento"@es ;
     rdfs:label "Duplication Événement"@fr ;
@@ -196,7 +199,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.12"@fr ;
     rdfs:subClassOf fiaf:PreservationEvent .
 
-<https://fiafcore.org/ontology/TransferEvent> a owl:Class ;
+fiaf:TransferEvent a owl:Class ;
     rdfs:label "Transfer Event"@en ;
     rdfs:label "Transferencia Evento"@es ;
     rdfs:label "Transfert Événement"@fr ;
@@ -205,7 +208,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.12"@fr ;
     rdfs:subClassOf fiaf:PreservationEvent .
 
-<https://fiafcore.org/ontology/ReproductionEvent> a owl:Class ;
+fiaf:ReproductionEvent a owl:Class ;
     rdfs:label "Reproduction Event"@en ;
     rdfs:label "Reproducción Evento"@es ;
     rdfs:label "Reproduction Événement"@fr ;
@@ -214,7 +217,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.12"@fr ;
     rdfs:subClassOf fiaf:PreservationEvent .
 
-<https://fiafcore.org/ontology/DigitisationEvent> a owl:Class ;
+fiaf:DigitisationEvent a owl:Class ;
     rdfs:label "Digitisation Event"@en ;
     rdfs:label "Digitalización Evento"@es ;
     rdfs:label "Numérisation Événement"@fr ;
@@ -223,7 +226,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.12"@fr ;
     rdfs:subClassOf fiaf:PreservationEvent .
 
-<https://fiafcore.org/ontology/DecisionEvent> a owl:Class ;
+fiaf:DecisionEvent a owl:Class ;
     rdfs:label "Decision Event"@en ;
     rdfs:label "Decisión Evento"@es ;
     rdfs:label "Décision Événement"@fr ;
@@ -232,7 +235,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.6"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/CensorshipEvent> a owl:Class ;
+fiaf:CensorshipEvent a owl:Class ;
     rdfs:label "Censorship Event"@en ;
     rdfs:label "Censura Evento"@es ;
     rdfs:label "Censure Événement"@fr ;
@@ -241,7 +244,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.13"@fr ;
     rdfs:subClassOf fiaf:DecisionEvent .
     
-<https://fiafcore.org/ontology/RevisionEvent> a owl:Class ;
+fiaf:RevisionEvent a owl:Class ;
     rdfs:label "Revision Event"@en ;
     rdfs:label "Revisión Evento"@es ;
     rdfs:label "Révision Événement"@fr ;
@@ -250,7 +253,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.13"@fr ;
     rdfs:subClassOf fiaf:DecisionEvent .
     
-<https://fiafcore.org/ontology/RatingEvent> a owl:Class ;
+fiaf:RatingEvent a owl:Class ;
     rdfs:label "Rating Event"@en ;
     rdfs:label "Clasificación Evento"@es ;
     rdfs:label "Classification Événement"@fr ;
@@ -259,7 +262,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.13"@fr ;
     rdfs:subClassOf fiaf:DecisionEvent .
 
-<https://fiafcore.org/ontology/ManufactureEvent> a owl:Class ;
+fiaf:ManufactureEvent a owl:Class ;
     rdfs:label "Manufacture Event"@en ;
     rdfs:label "Manufactura Evento"@es ;
     rdfs:label "Fabrication Événement"@fr ;
@@ -268,7 +271,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.7"@fr ;
     rdfs:subClassOf fiaf:Event .
     
-<https://fiafcore.org/ontology/FilmPrintingEvent> a owl:Class ;
+fiaf:FilmPrintingEvent a owl:Class ;
     rdfs:label "Film Printing Event"@en ;
     rdfs:label "Impresión en película Evento"@es ;
     rdfs:label "Tireuse cinématographique Événement"@fr ;
@@ -277,7 +280,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .
 
-<https://fiafcore.org/ontology/TelecineEvent> a owl:Class ;
+fiaf:TelecineEvent a owl:Class ;
     rdfs:label "Telecine Event"@en ;
     rdfs:label "Telecine Evento"@es ;
     rdfs:label "Télécinéma Événement"@fr ;
@@ -286,7 +289,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .  
     
-<https://fiafcore.org/ontology/VideoCopyingEvent> a owl:Class ;
+fiaf:VideoCopyingEvent a owl:Class ;
     rdfs:label "Video Copying Event"@en ;
     rdfs:label "Copiado en video Evento"@es ;
     rdfs:label "Copie vidéo Événement"@fr ;
@@ -295,7 +298,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .  
    
-<https://fiafcore.org/ontology/ScanningEvent> a owl:Class ;
+fiaf:ScanningEvent a owl:Class ;
     rdfs:label "Scanning Event"@en ;
     rdfs:label "Escaneo Evento"@es ;
     rdfs:label "Scan Événement"@fr ;
@@ -304,7 +307,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .   
     
-<https://fiafcore.org/ontology/MasteringEvent> a owl:Class ;
+fiaf:MasteringEvent a owl:Class ;
     rdfs:label "Mastering Event"@en ;
     rdfs:label "Masterización Evento"@es ;
     rdfs:label "Mastering Événement"@fr ;
@@ -313,7 +316,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .   
     
-<https://fiafcore.org/ontology/UploadingEvent> a owl:Class ;
+fiaf:UploadingEvent a owl:Class ;
     rdfs:label "Uploading Event"@en ;
     rdfs:label "Carga de subida Evento"@es ;
     rdfs:label "Téléchargement Événement"@fr ;
@@ -322,7 +325,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.14"@fr ;
     rdfs:subClassOf fiaf:ManufactureEvent .       
     
-<https://fiafcore.org/ontology/InspectionEvent> a owl:Class ;
+fiaf:InspectionEvent a owl:Class ;
     rdfs:label "Inspection Event"@en ;
     rdfs:label "Inspección Evento"@es ;
     rdfs:label "Contrôle Événement"@fr ;
@@ -331,7 +334,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.8"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/AcquisitionEvent> a owl:Class ;
+fiaf:AcquisitionEvent a owl:Class ;
     rdfs:label "Acquisition Event"@en ;
     rdfs:label "Adquisición Evento"@es ;
     rdfs:label "Acquisition Événement"@fr ;
@@ -340,7 +343,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.4.9"@fr ;
     rdfs:subClassOf fiaf:Event .
 
-<https://fiafcore.org/ontology/DonationEvent> a owl:Class ;
+fiaf:DonationEvent a owl:Class ;
     rdfs:label "Donation Event"@en ;
     rdfs:label "Donación Evento"@es ;
     rdfs:label "Don Événement"@fr ;
@@ -349,7 +352,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.15.1"@fr ;
     rdfs:subClassOf fiaf:AcquisitionEvent .       
         
-<https://fiafcore.org/ontology/ExchangeEvent> a owl:Class ;
+fiaf:ExchangeEvent a owl:Class ;
     rdfs:label "Exchange Event"@en ;
     rdfs:label "Intercambio Evento"@es ;
     rdfs:label "Echange Événement"@fr ;
@@ -358,7 +361,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.15.1"@fr ;
     rdfs:subClassOf fiaf:AcquisitionEvent .       
     
-<https://fiafcore.org/ontology/LoanEvent> a owl:Class ;
+fiaf:LoanEvent a owl:Class ;
     rdfs:label "Loan Event"@en ;
     rdfs:label "Préstamo Evento"@es ;
     rdfs:label "Prêt Événement"@fr ;
@@ -367,7 +370,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.15.1"@fr ;
     rdfs:subClassOf fiaf:AcquisitionEvent .       
     
-<https://fiafcore.org/ontology/PurchaseEvent> a owl:Class ;
+fiaf:PurchaseEvent a owl:Class ;
     rdfs:label "Purchase Event"@en ;
     rdfs:label "Compra Evento"@es ;
     rdfs:label "Achat Événement"@fr ;
@@ -376,7 +379,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.15.1"@fr ;
     rdfs:subClassOf fiaf:AcquisitionEvent .       
     
-<https://fiafcore.org/ontology/OffAirRecordingEvent> a owl:Class ;
+fiaf:OffAirRecordingEvent a owl:Class ;
     rdfs:label "Off-Air Recording Event"@en ;
     rdfs:label "Grabación “off-air” Evento"@es ;
     rdfs:label "Enregistrement hors antenne Événement"@fr ;
@@ -387,7 +390,7 @@
     
 # Object Properties
 
-<https://fiafcore.org/ontology/hasActivity> a owl:ObjectProperty ;
+fiaf:hasActivity a owl:ObjectProperty ;
     rdfs:label "Has Activity"@en ;
     rdfs:label "Tiene Actividad"@es ;
     rdfs:label "A une Activité"@fr ;
@@ -397,7 +400,7 @@
     rdfs:domain fiaf:Event ;
     rdfs:range fiaf:Activity .
 
-<https://fiafcore.org/ontology/hasCondition> a owl:ObjectProperty ;
+fiaf:hasCondition a owl:ObjectProperty ;
     rdfs:label "Has Condition"@en ;
     rdfs:label "Tiene Condición"@es ;
     rdfs:label "A un État"@fr ;
@@ -407,7 +410,7 @@
     rdfs:domain fiaf:InspectionEvent ;
     rdfs:range fiaf:Condition .
 
-<https://fiafcore.org/ontology/hasEventLocation> a owl:ObjectProperty ;
+fiaf:hasEventLocation a owl:ObjectProperty ;
     rdfs:label "Has Event Location"@en ;
     rdfs:label "Tiene Ubicación del Evento"@es ;
     rdfs:label "A une Location"@fr ;
@@ -419,7 +422,7 @@
 
 # Datatype Properties
 
-<https://fiafcore.org/ontology/hasEventDate> a owl:DatatypeProperty ;
+fiaf:hasEventDate a owl:DatatypeProperty ;
     rdfs:label "Has Event Date"@en ;
     rdfs:label "Tiene Fecha del Evento"@es ;
     rdfs:label "A une Date"@fr ;
@@ -429,7 +432,7 @@
     rdfs:domain fiaf:Event ;
     rdfs:range xsd:date .
 
-<https://fiafcore.org/ontology/hasAwardName> a owl:DatatypeProperty ;
+fiaf:hasAwardName a owl:DatatypeProperty ;
     rdfs:label "Has Award Name"@en ;
     rdfs:label "Tiene Nombre del Premio"@es ;
     rdfs:label "A un Nom de la récompense"@fr ;
@@ -439,7 +442,7 @@
     rdfs:domain fiaf:AwardsOrNominationsEvent ;
     rdfs:range xsd:string .
 
-<https://fiafcore.org/ontology/nominationOnly> a owl:DatatypeProperty ;
+fiaf:nominationOnly a owl:DatatypeProperty ;
     rdfs:label "Nomination Only"@en ;
     rdfs:label "Sólo Nominación"@es ;
     rdfs:label "Est une Nomination seule"@fr ;
@@ -449,7 +452,7 @@
     rdfs:domain fiaf:AwardsOrNominationsEvent ;
     rdfs:range xsd:boolean .
 
-<https://fiafcore.org/ontology/hasAchievement> a owl:DatatypeProperty ;
+fiaf:hasAchievement a owl:DatatypeProperty ;
     rdfs:label "Has Achievement"@en ;
     rdfs:label "Tiene Reconocimientos"@es ;
     rdfs:label "A une Prestation"@fr ;
@@ -459,7 +462,7 @@
     rdfs:domain fiaf:AwardsOrNominationsEvent ;
     rdfs:range xsd:string .
 
-<https://fiafcore.org/ontology/hasDecisionID> a owl:DatatypeProperty ;
+fiaf:hasDecisionID a owl:DatatypeProperty ;
     rdfs:label "Has Decision ID"@en ;
     rdfs:label "Tiene Número de Certificado"@es ;
     rdfs:label "A un Numéro de visa"@fr ;
@@ -469,7 +472,7 @@
     rdfs:domain fiaf:DecisionEvent ;
     rdfs:range xsd:string .
 
-<https://fiafcore.org/ontology/hasVerdict> a owl:DatatypeProperty ;
+fiaf:hasVerdict a owl:DatatypeProperty ;
     rdfs:label "Has Verdict"@en ;
     rdfs:label "Tiene Veredicto"@es ;
     rdfs:label "A une Décision"@fr ;

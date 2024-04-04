@@ -1,22 +1,25 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/Item> a owl:Class ;
+fiaf:Item a owl:Class ;
     rdfs:label "Item"@en ;
     rdfs:label "Ítem"@es ;
     rdfs:label "Item"@fr ;
+    dc:description "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository’s collection."@en,
+        "Un Ítem de imágenes en movimiento es el producto físico o digital de la Manifestación de una Obra o Variante, i.e., la copia real de una obra o Variante. Mientras que el registro de la Manifestación describe el “ideal” de un formato o publicación particular, el registro del Ítem representa la existencia real dentro de la colección de un repositorio."@es,
+        "Un Item d’une image animée est le produit physique ou numérique de la Manifestation d'une Œuvre ou d’une Variante, c'est-à-dire la copie réelle d'une Œuvre ou d'une Variante. Alors que la notice Manifestation décrit le modèle idéal d'un format ou d'une publication en particulier, l’Item représente le document réel conservé dans la collection d'une institution."@fr ;    
     dc:source "FIAF Moving Image Cataloguing Manual 3.0"@en ;
     dc:source "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ;
     dc:source "Manuel de catalogage des images animées de la FIAF 3.0"@fr .
 
 # Object Properties
     
-<https://fiafcore.org/ontology/hasBase> a owl:ObjectProperty ;
+fiaf:hasBase a owl:ObjectProperty ;
     rdfs:label "Has Base"@en ;
     rdfs:label "Tiene Base"@es ;
     rdfs:label "A une Base"@fr ;
@@ -26,7 +29,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Base .
     
-<https://fiafcore.org/ontology/hasBroadcastStandard> a owl:ObjectProperty ;
+fiaf:hasBroadcastStandard a owl:ObjectProperty ;
     rdfs:label "Has Broadcast Standard"@en ;
     rdfs:label "Tiene Norma de Emisión"@es ;
     rdfs:label "A un Standard de Télédiffusion"@fr ;
@@ -36,14 +39,14 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:BroadcastStandard .
     
-<https://fiafcore.org/ontology/hasCarrier> a owl:ObjectProperty ;
+fiaf:hasCarrier a owl:ObjectProperty ;
     rdfs:label "Has Carrier"@en ;
     rdfs:label "Tiene Portador"@es ;
     rdfs:label "A un Article"@fr ;
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Carrier .
 
-<https://fiafcore.org/ontology/hasColourCharacteristic> a owl:ObjectProperty ;
+fiaf:hasColourCharacteristic a owl:ObjectProperty ;
     rdfs:label "Has Colour Characteristic"@en ;
     rdfs:label "Tiene una característica de color"@es ;
     rdfs:label "A une Caractéristique de couleur"@fr ;
@@ -55,7 +58,7 @@
     ] ;
     rdfs:range fiaf:ColourCharacteristic .
 
-<https://fiafcore.org/ontology/isElement> a owl:ObjectProperty ;
+fiaf:isElement a owl:ObjectProperty ;
     rdfs:label "Is Element"@en ;
     rdfs:label "Es Elemento"@es ;
     rdfs:label "Est de Nature"@fr ;
@@ -65,7 +68,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Element .
     
-<https://fiafcore.org/ontology/hasExtent> a owl:ObjectProperty ;
+fiaf:hasExtent a owl:ObjectProperty ;
     rdfs:label "Has Extent"@en ;
     rdfs:label "Tiene una Extensión"@es ;
     rdfs:label "A une Étendue"@fr ;
@@ -77,7 +80,7 @@
     ] ;
     rdfs:range fiaf:Extent .
     
-<https://fiafcore.org/ontology/hasFormat> a owl:ObjectProperty ;
+fiaf:hasFormat a owl:ObjectProperty ;
     rdfs:label "Has Format"@en ;
     rdfs:label "Tiene un Formato"@es ;
     rdfs:label "A un Format"@fr ;
@@ -89,7 +92,7 @@
     ] ;
     rdfs:range fiaf:Format .
     
-<https://fiafcore.org/ontology/hasFrameRate> a owl:ObjectProperty ;
+fiaf:hasFrameRate a owl:ObjectProperty ;
     rdfs:label "Has Frame Rate"@en ;
     rdfs:label "Tiene Velocidad de Cuadros"@es ;
     rdfs:label "A le Nombre d’images par seconde"@fr ;
@@ -99,7 +102,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:FrameRate .
 
-<https://fiafcore.org/ontology/hasHoldingInstitution> a owl:ObjectProperty ;
+fiaf:hasHoldingInstitution a owl:ObjectProperty ;
     rdfs:label "Has Holding Institution"@en ;
     rdfs:label "A una institución de cartera"@es ;
     rdfs:label "A un Établissement détenteur"@fr ;
@@ -109,7 +112,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Institution .
     
-<https://fiafcore.org/ontology/hasImageCharacteristic> a owl:ObjectProperty ;
+fiaf:hasImageCharacteristic a owl:ObjectProperty ;
     rdfs:label "Has Image Characteristic"@en ;
     rdfs:label "Tiene una característica de imagen"@es ;
     rdfs:label "A une Caractéristique d'image"@fr ;
@@ -121,7 +124,7 @@
     ] ;
     rdfs:range fiaf:ImageCharacteristic .
     
-<https://fiafcore.org/ontology/hasLineStandard> a owl:ObjectProperty ;
+fiaf:hasLineStandard a owl:ObjectProperty ;
     rdfs:label "Has Line Standard"@en ;
     rdfs:label "Tiene Norma de Líneas"@es ;
     rdfs:label "A des Lignes de balayage"@fr ;
@@ -131,7 +134,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:LineStandard .
     
-<https://fiafcore.org/ontology/hasResolution> a owl:ObjectProperty ;
+fiaf:hasResolution a owl:ObjectProperty ;
     rdfs:label "Has Resolution"@en ;
     rdfs:label "Tiene Resolución"@es ;
     rdfs:label "A une Résolution"@fr ;
@@ -141,7 +144,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Resolution .
     
-<https://fiafcore.org/ontology/hasSoundCharacteristic> a owl:ObjectProperty ;
+fiaf:hasSoundCharacteristic a owl:ObjectProperty ;
     rdfs:label "Has Sound Characteristic"@en ;
     rdfs:label "Tiene características de sonido"@es ;
     rdfs:label "A une Caractéristique de son"@fr ;
@@ -153,7 +156,7 @@
     ] ;
     rdfs:range fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/hasSourceDevice> a owl:ObjectProperty ;
+fiaf:hasSourceDevice a owl:ObjectProperty ;
     rdfs:label "Has Source Device"@en ;
     rdfs:label "Tiene Dispositivo para reproducción"@es ;
     rdfs:label "A un Périphérique de lecture"@fr ;
@@ -163,7 +166,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:SourceDevice .
     
-<https://fiafcore.org/ontology/hasSourceSoftware> a owl:ObjectProperty ;
+fiaf:hasSourceSoftware a owl:ObjectProperty ;
     rdfs:label "Has Source Software"@en ;
     rdfs:label "Tiene Software Fuente"@es ;
     rdfs:label "A un Logiciel"@fr ;
@@ -173,7 +176,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:SourceSoftware .
 
-<https://fiafcore.org/ontology/hasStatus> a owl:ObjectProperty ;
+fiaf:hasStatus a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
     rdfs:label "Tiene Estado"@es ;
     rdfs:label "A un Statut"@fr ;
@@ -183,7 +186,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Status .
 
-<https://fiafcore.org/ontology/hasStock> a owl:ObjectProperty ;
+fiaf:hasStock a owl:ObjectProperty ;
     rdfs:label "Has Stock"@en ;
     rdfs:label "Tiene Stock"@es ;
     rdfs:label "A une Marque du support"@fr ;
@@ -193,7 +196,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Stock .
 
-<https://fiafcore.org/ontology/hasStream> a owl:ObjectProperty ;
+fiaf:hasStream a owl:ObjectProperty ;
     rdfs:label "Has Stream"@en ;
     rdfs:label "Tiene Flujo"@es ;
     rdfs:label "A un Flux"@fr ;
@@ -203,7 +206,7 @@
     rdfs:domain fiaf:Item ;
     rdfs:range fiaf:Stream .
 
-<https://fiafcore.org/ontology/hasTransferSpeed> a owl:ObjectProperty ;
+fiaf:hasTransferSpeed a owl:ObjectProperty ;
     rdfs:label "Has Transfer Speed"@en ;
     rdfs:label "Tiene velocidad de transferencia"@es ;
     rdfs:label "A une Vitesse de transfert"@fr ;

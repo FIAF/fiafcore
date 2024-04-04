@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/LanguageUsage> a owl:Class ;
+fiaf:LanguageUsage a owl:Class ;
     rdfs:label "Language Usage"@en ;
     rdfs:label "Uso de lenguas"@es ;
     rdfs:label "Utilisation des Langues"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/DialogueLanguages> a owl:Class ;
+fiaf:DialogueLanguages a owl:Class ;
     rdfs:label "Dialogue language(s)"@en ;
     rdfs:label "Idioma(s) de diálogo(s)"@es ;
     rdfs:label "Langue(s) des dialogues"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
-<https://fiafcore.org/ontology/NoDialogue> a owl:Class ;
+fiaf:NoDialogue a owl:Class ;
     rdfs:label "No Dialogue"@en ;
     rdfs:label "Sin diálogo"@es ;
     rdfs:label "Sans dialogue"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
-<https://fiafcore.org/ontology/SignedLanguage> a owl:Class ;
+fiaf:SignedLanguage a owl:Class ;
     rdfs:label "Signed Language"@en ;
     rdfs:label "Idiomade señas"@es ;
     rdfs:label "Langue(s) des signes"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
-<https://fiafcore.org/ontology/SpokenLanguage> a owl:Class ;
+fiaf:SpokenLanguage a owl:Class ;
     rdfs:label "Spoken Language"@en ;
     rdfs:label "Idioma hablado"@es ;
     rdfs:label "Langue(s) parlée(s)"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
-<https://fiafcore.org/ontology/SungLanguage> a owl:Class ;
+fiaf:SungLanguage a owl:Class ;
     rdfs:label "Sung Language"@en ;
     rdfs:label "Idioma cantado"@es ;
     rdfs:label "Langue(s) chantée(s)"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:DialogueLanguages .
 
-<https://fiafcore.org/ontology/LanguagesOfAccompanyingMaterial> a owl:Class ;
+fiaf:LanguagesOfAccompanyingMaterial a owl:Class ;
     rdfs:label "Language(s) of accompanying material"@en ;
     rdfs:label "Idioma(s) del material(es) acompañante(s)"@es ;
     rdfs:label "Langue(s) du matériel d'accompagnement"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
-<https://fiafcore.org/ontology/LanguagesOfSummariesOnContainers> a owl:Class ;
+fiaf:LanguagesOfSummariesOnContainers a owl:Class ;
     rdfs:label "Language(s) of summaries on containers"@en ;
     rdfs:label "Idioma(s) del resúmen(es) en el envase"@es ;
     rdfs:label "Langue(s) des résumés sur les contenants"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
-<https://fiafcore.org/ontology/WrittenLanguages> a owl:Class ;
+fiaf:WrittenLanguages a owl:Class ;
     rdfs:label "Written Languages"@en ;
     rdfs:label "Idioma(s) escrito(s)"@es ;
     rdfs:label "Langue(s) écrite(s)"@fr ;
@@ -88,7 +88,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:LanguageUsage .
 
-<https://fiafcore.org/ontology/Captions> a owl:Class ;
+fiaf:Captions a owl:Class ;
     rdfs:label "Captions"@en ;
     rdfs:label "Subtítulos especiales"@es ;
     rdfs:label "Synthés"@fr ;
@@ -97,7 +97,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:WrittenLanguages .
 
-<https://fiafcore.org/ontology/Intertitles> a owl:Class ;
+fiaf:Intertitles a owl:Class ;
     rdfs:label "Intertitles"@en ;
     rdfs:label "Intertítulos"@es ;
     rdfs:label "Intertitres"@fr ;
@@ -106,7 +106,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.6"@fr ;
     rdfs:subClassOf fiaf:WrittenLanguages .
 
-<https://fiafcore.org/ontology/Subtitles> a owl:Class ;
+fiaf:Subtitles a owl:Class ;
     rdfs:label "Subtitles"@en ;
     rdfs:label "Subtítulos"@es ;
     rdfs:label "Sous-titres"@fr ;
@@ -117,7 +117,7 @@
 
 # Object Properties
 
-<https://fiafcore.org/ontology/hasLanguage> a owl:ObjectProperty ;
+fiaf:hasLanguage a owl:ObjectProperty ;
     rdfs:label "Has Language"@en ;
     rdfs:label "Tiene lengua"@es ;
     rdfs:label "A une Langue"@fr ;

@@ -1,12 +1,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fiaf: <https://fiafcore.org/ontology/> .
+@prefix fiaf: <https://ontology.fiafcore.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Class
 
-<https://fiafcore.org/ontology/SoundCharacteristic> a owl:Class ;
+fiaf:SoundCharacteristic a owl:Class ;
     rdfs:label "Sound Characteristic"@en ;
     rdfs:label "Características de sonido"@es ;
     rdfs:label "Caractéristiques sonores"@fr ;
@@ -16,7 +16,7 @@
 
 # Subclasses
 
-<https://fiafcore.org/ontology/Sound> a owl:Class ;
+fiaf:Sound a owl:Class ;
     rdfs:label "Sound"@en ;
     rdfs:label "Sonido"@es ;
     rdfs:label "Sonore"@fr ;
@@ -25,7 +25,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/Silent> a owl:Class ;
+fiaf:Silent a owl:Class ;
     rdfs:label "Silent"@en ;
     rdfs:label "Silente"@es ;
     rdfs:label "Non pisté"@fr ;
@@ -34,7 +34,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/Mute> a owl:Class ;
+fiaf:Mute a owl:Class ;
     rdfs:label "Mute"@en ;
     rdfs:label "Mudo"@es ;
     rdfs:label "Muet"@fr ;
@@ -43,7 +43,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/Combined> a owl:Class ;
+fiaf:Combined a owl:Class ;
     rdfs:label "Combined"@en ;
     rdfs:label "Combinado"@es ;
     rdfs:label "Combiné"@fr ;
@@ -52,7 +52,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/CombinedAsMute> a owl:Class ;
+fiaf:CombinedAsMute a owl:Class ;
     rdfs:label "Combined as Mute"@en ;
     rdfs:label "Combinado con Mudo"@es ;
     rdfs:label "Muet Combiné"@fr ;
@@ -61,7 +61,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/CombinedAsSound> a owl:Class ;
+fiaf:CombinedAsSound a owl:Class ;
     rdfs:label "Combined as Sound"@en ;
     rdfs:label "Combinado con Sonido"@es ;
     rdfs:label "Son Combiné"@fr ;
@@ -70,7 +70,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/MixedSound> a owl:Class ;
+fiaf:MixedSound a owl:Class ;
     rdfs:label "Mixed Sound"@en ;
     rdfs:label "Mixto"@es ;
     rdfs:label "Son Mixé"@fr ;
@@ -79,7 +79,7 @@
     dc:source "Manuel de catalogage des images animées de la FIAF D.7.4"@fr ;
     rdfs:subClassOf fiaf:SoundCharacteristic .
 
-<https://fiafcore.org/ontology/Temporary> a owl:Class ;
+fiaf:Temporary a owl:Class ;
     rdfs:label "Temporary"@en ;
     rdfs:label "Temporario"@es ;
     rdfs:label "Temporaire"@fr ;
@@ -90,7 +90,7 @@
 
 # Object Properties
 
-<https://fiafcore.org/ontology/hasSoundFixation> a owl:ObjectProperty ;
+fiaf:hasSoundFixation a owl:ObjectProperty ;
     rdfs:label "Has Sound Fixation"@en ;
     rdfs:label "Tiene fijación de sonido"@es ;
     rdfs:label "A une Fixation du Son"@fr ;
@@ -100,7 +100,7 @@
     rdfs:domain fiaf:SoundCharacteristic ;
     rdfs:range fiaf:SoundFixation .
 
-<https://fiafcore.org/ontology/hasSoundSystem> a owl:ObjectProperty ;
+fiaf:hasSoundSystem a owl:ObjectProperty ;
     rdfs:label "Has Sound System"@en ;
     rdfs:label "Tiene sistema de sonido"@es ;
     rdfs:label "A un Procédé Sonore"@fr ;
