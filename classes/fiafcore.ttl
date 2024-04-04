@@ -4,7 +4,7 @@
 
 # Ontology
 
-<https://fiafcore.org/ontology/> a owl:Ontology ;
+<https://ontology.fiafcore.org/> a owl:Ontology ;
     dc:title "FIAFcore" ;
     owl:versionInfo "1.1" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
