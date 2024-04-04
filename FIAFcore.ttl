@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://fiafcore.org/ontology/> a owl:Ontology ;
+<https://ontology.fiafcore.org/> a owl:Ontology ;
     ns1:creator "FIAF Cataloguing & Documentation Commission" ;
     ns1:title "FIAFcore" ;
     ns2:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
