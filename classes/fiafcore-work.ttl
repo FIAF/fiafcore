@@ -90,3 +90,107 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
 .
 
+### Object Properties
+
+<https://ontology.fiafcore.org/hasCountry>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Country"@en ,
+        "Tiene un País"@es ,
+        "A un Pays"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://ontology.fiafcore.org/hasEvent>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Event"@en ,
+        "Tiene un Evento"@es ,
+        "A un Évènement"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
+    rdfs:domain [
+        owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>)
+    ] ;
+    rdfs:range <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/hasGenre>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Genre"@en ,
+        "Tiene un Género"@es ,
+        "A un Genre"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Genre> ;
+.
+
+<https://ontology.fiafcore.org/hasForm>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Form"@en ,
+        "Tiene una Forma"@es ,
+        "A une Forme"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Form> ;
+.
+
+<https://ontology.fiafcore.org/hasIdentifier>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Identifier"@en ,     
+        "Tiene un Identificador"@es ,
+        "A un Identifiant"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.1, 2.3.1, 3.1.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.1, 2.3.1, 3.1.1"@fr ;
+    rdfs:domain [
+        owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>)
+    ] ;
+    rdfs:range <https://ontology.fiafcore.org/Identifier> ;
+    
+.
+
+<https://ontology.fiafcore.org/hasManifestation>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Manifestation"@en ,
+        "Tiene una Manifestación"@es ,
+        "A une Manifestation"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.6"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.6"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.6"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/hasSubject>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Subject"@en ,
+        "Tiene una Materia"@es ,
+        "A un Sujet"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Subject> ;
+.
+
+<https://ontology.fiafcore.org/hasTitle>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Title"@en ,
+        "Tiene un Título"@es ,
+        "A un Titre"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2.1, 3.1.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2.1, 3.1.2"@fr ;
+    rdfs:domain [
+        owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>)
+    ] ;
+    rdfs:range <https://ontology.fiafcore.org/Title> ;
+.
