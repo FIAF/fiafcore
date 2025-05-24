@@ -153,8 +153,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:domain [
         owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>)
     ] ;
-    rdfs:range <https://ontology.fiafcore.org/Identifier> ;
-    
+    rdfs:range <https://ontology.fiafcore.org/Identifier> ;   
 .
 
 <https://ontology.fiafcore.org/hasManifestation>
@@ -193,4 +192,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>)
     ] ;
     rdfs:range <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/hasVariant>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Variant"@en ,
+        "Tiene una Variante"@es ,
+        "A une Variante"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.5"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.5"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.5"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/hasWork>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Work/Variant"@en ,
+        "Tiene una Obra/Variante"@es ,
+        "A une Œuvre/Variante"@fr ;
+    dc:source "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.4"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Work> ;
 .
