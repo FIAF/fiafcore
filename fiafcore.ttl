@@ -1,0 +1,451 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://ontology.fiafcore.org/AbridgedCondensed>
+    a owl:Class ;
+    rdfs:label
+        "Abridged/Condensed"@en ,
+        "Abreviada/Condensada"@es ,
+        "Raccourci/condensé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Analytic>
+    a owl:Class ;
+    rdfs:label
+        "Analytic Work"@en ,
+        "Analítica"@es ,
+        "Analytique"@fr ;
+    dc:description
+        "Content that is contained in another content. A component part may itself be either monographic or serial."@en ,
+        "Contenido que está vinculado con otro contenido. Una parte componente puede ser monográfica o seriada."@es ,
+        "Contenu présent dans un autre contenu. Une partie composante peut être elle-même une monographie ou une série/film à épisodes."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/Augmented>
+    a owl:Class ;
+    rdfs:label
+        "Augmented"@en ,
+        "Aumentada"@es ,
+        "Augmentée"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/BlackAndWhiteCopyOfWorkOriginallyIssuedInColour>
+    a owl:Class ;
+    rdfs:label
+        "Black and white copy of work originally issued in colour"@en ,
+        "Copia en blanco y negro de una obra originalmente producida a color"@es ,
+        "Copie noir et blanc d’une œuvre sortie à l’origine en couleurs"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Censored>
+    a owl:Class ;
+    rdfs:label
+        "Censored"@en ,
+        "Censurada"@es ,
+        "Censuré"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Collection>
+    a owl:Class ;
+    rdfs:label
+        "Collection Work"@en ,
+        "Colección"@es ,
+        "Collection"@fr ;
+    dc:description
+        "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ,
+        "Contenido emitido en varias partes independientes; una Obra bajo el título “Umbrella” comprende una serie de Obras/Variantes/Manifestaciones diferentes."@es ,
+        "Contenu émis en plusieurs parties indépendantes ; un titre d’Œuvre générique recouvrant plusieurs Œuvres/Variantes/Manifestations différentes."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/Colourized>
+    a owl:Class ;
+    rdfs:label
+        "Colourized"@en ,
+        "Coloreada"@es ,
+        "Colorisé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/DifferentSoundTrack>
+    a owl:Class ;
+    rdfs:label
+        "Different sound track"@en ,
+        "Diferentes pistas de sonido"@es ,
+        "Bande sonore différente"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Dubbed>
+    a owl:Class ;
+    rdfs:label
+        "Dubbed"@en ,
+        "Doblada"@es ,
+        "Doublé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Monographic>
+    a owl:Class ;
+    rdfs:label
+        "Monographic Work"@en ,
+        "Monográfico"@es ,
+        "Monographie"@fr ;
+    dc:description
+        "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en ,
+        "Contenido completo en una parte o destinado a completarse en un número finito de partes. Esta definición también se aplica a los episodios de televisión. No obstante, una serie de televisión se cataloga en su totalidad como una Serie."@es ,
+        "Contenu complet en une seule partie ou destiné à être complété par un nombre fini de parties. Cela s’applique aussi aux épisodes télévisés. La notice pour la série télévisée elle-même est cataloguée en tant que Série."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/PreservationRestoration>
+    a owl:Class ;
+    rdfs:label
+        "Preservation/Restoration"@en ,
+        "Preservación/Restauración"@es ,
+        "Conservation/Restauration"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Serial>
+    a owl:Class ;
+    rdfs:label
+        "Serial Work"@en ,
+        "Serie"@es ,
+        "Série"@fr ;
+    dc:description
+        "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ,
+        "Contenido emitido en partes sucesivas y destinado a continuar de forma indefinida o en un lapso de tiempo específico. Un registro de Obra para una serie de televisión se cataloga como una 'Serie'. No obstante, los episodios individuales se pueden catalogar como registros monográficos."@es ,
+        "Contenu émis en parties successives et destiné à être poursuivi indéfiniment ou durant un certain temps. Une notice d’Œuvre pour une série télévisée est cataloguée en tant que Série. Les épisodes individuels pourront être catalogués en tant que notices monographiques."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/Sonorized>
+    a owl:Class ;
+    rdfs:label
+        "Sonorized"@en ,
+        "Sonorizada"@es ,
+        "Sonorisé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Subtitled>
+    a owl:Class ;
+    rdfs:label
+        "Subtitled"@en ,
+        "Subtítulada"@es ,
+        "Sous-titré"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/hasCountry>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Country"@en ,
+        "Tiene un País"@es ,
+        "A un Pays"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://ontology.fiafcore.org/hasEvent>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Event"@en ,
+        "Tiene un Evento"@es ,
+        "A un Évènement"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+                <https://ontology.fiafcore.org/Manifestation>
+                <https://ontology.fiafcore.org/Item>
+                <https://ontology.fiafcore.org/Carrier>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/hasForm>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Form"@en ,
+        "Tiene una Forma"@es ,
+        "A une Forme"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Form> ;
+.
+
+<https://ontology.fiafcore.org/hasGenre>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Genre"@en ,
+        "Tiene un Género"@es ,
+        "A un Genre"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Genre> ;
+.
+
+<https://ontology.fiafcore.org/hasIdentifier>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Identifier"@en ,
+        "Tiene un Identificador"@es ,
+        "A un Identifiant"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.1, 2.3.1, 3.1.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.1, 2.3.1, 3.1.1"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+                <https://ontology.fiafcore.org/Manifestation>
+                <https://ontology.fiafcore.org/Item>
+                <https://ontology.fiafcore.org/Carrier>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Identifier> ;
+.
+
+<https://ontology.fiafcore.org/hasLanguageUsage>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Language Usage"@en ,
+        "Tiene uso de la lengua"@es ,
+        "A une Utilisation des Langues"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 2.3.3.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.3.2"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+                <https://ontology.fiafcore.org/Manifestation>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/LanguageUsage> ;
+.
+
+<https://ontology.fiafcore.org/hasManifestation>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Manifestation"@en ,
+        "Tiene una Manifestación"@es ,
+        "A une Manifestation"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.6"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.6"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.6"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/hasSubject>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Subject"@en ,
+        "Tiene una Materia"@es ,
+        "A un Sujet"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Subject> ;
+.
+
+<https://ontology.fiafcore.org/hasTitle>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Title"@en ,
+        "Tiene un Título"@es ,
+        "A un Titre"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2.1, 3.1.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2.1, 3.1.2"@fr ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://ontology.fiafcore.org/Work>
+                <https://ontology.fiafcore.org/Variant>
+                <https://ontology.fiafcore.org/Manifestation>
+                <https://ontology.fiafcore.org/Item>
+            ) ;
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/hasVariant>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Variant"@en ,
+        "Tiene una Variante"@es ,
+        "A une Variante"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.5"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.5"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.5"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/hasWork>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Work/Variant"@en ,
+        "Tiene una Obra/Variante"@es ,
+        "A une Œuvre/Variante"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.4"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:range <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/Work>
+    a owl:Class ;
+    rdfs:label
+        "Work"@en ,
+        "Obra"@es ,
+        "l'Œuvre"@fr ;
+    dc:description
+        "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ,
+        "Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico."@es ,
+        "L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.0.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.0.1"@fr ;
+.
+
+<https://ontology.fiafcore.org/Variant>
+    a owl:Class ;
+    rdfs:label
+        "Variant"@en ,
+        "Variante"@es ,
+        "la Variante"@fr ;
+    dc:description
+        "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ,
+        "Una Variante de imágenes en movimiento es una entidad que puede usarse para indicar cualquier cambio en las características relativas al contenido, que no modifican de manera significativa el contenido general de una obra como un todo."@es ,
+        "Une Variante est une entité utilisée pour indiquer tout changement dans les caractéristiques liées au contenu, qui ne modifie pas de façon significative le contenu global d'une Œuvre dans son ensemble."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.0.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.0.2"@fr ;
+.
