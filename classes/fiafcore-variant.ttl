@@ -21,3 +21,133 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 ### Subclasses
+
+<https://ontology.fiafcore.org/AbridgedCondensed>
+    a owl:Class ;
+    rdfs:label
+        "Abridged/Condensed"@en ,
+        "Abreviada/Condensada"@es ,
+        "Raccourci/condensé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Augmented>
+    a owl:Class ;
+    rdfs:label
+        "Augmented"@en ,
+        "Aumentada"@es ,
+        "Augmentée"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/BlackAndWhiteCopyOfWorkOriginallyIssuedInColour>
+    a owl:Class ;
+    rdfs:label
+        "Black and white copy of work originally issued in colour"@en ,
+        "Copia en blanco y negro de una obra originalmente producida a color"@es ,
+        "Copie noir et blanc d’une œuvre sortie à l’origine en couleurs"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Censored>
+    a owl:Class ;
+    rdfs:label
+        "Censored"@en ,
+        "Censurada"@es ,
+        "Censuré"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Colourized>
+    a owl:Class ;
+    rdfs:label
+        "Colourized"@en ,
+        "Coloreada"@es ,
+        "Colorisé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/DifferentSoundTrack>
+    a owl:Class ;
+    rdfs:label
+        "Different sound track"@en ,
+        "Diferentes pistas de sonido"@es ,
+        "Bande sonore différente"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Dubbed>
+    a owl:Class ;
+    rdfs:label
+        "Dubbed"@en ,
+        "Doblada"@es ,
+        "Doublé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/PreservationRestoration>
+    a owl:Class ;
+    rdfs:label
+        "Preservation/Restoration"@en ,
+        "Preservación/Restauración"@es ,
+        "Conservation/Restauration"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Sonorized>
+    a owl:Class ;
+    rdfs:label
+        "Sonorized"@en ,
+        "Sonorizada"@es ,
+        "Sonorisé"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Subtitled>
+    a owl:Class ;
+    rdfs:label
+        "Subtitled"@en ,
+        "Subtítulada"@es ,
+        "Sous-titré"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual D.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
