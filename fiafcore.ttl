@@ -212,13 +212,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
-    rdfs:domain
-        [
-            owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-            ) ;
-        ] ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://vocabulary.fiafcore.org/Country> ;
 .
 
@@ -255,13 +249,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
-    rdfs:domain
-        [
-            owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-            ) ;
-        ] ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Form> ;
 .
 
@@ -275,13 +263,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
-    rdfs:domain
-        [
-            owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-            ) ;
-        ] ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Genre> ;
 .
 
@@ -359,13 +341,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
-    rdfs:domain
-        [
-            owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-            ) ;
-        ] ;
+    rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Subject> ;
 .
 
@@ -431,22 +407,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
 .
 
-<https://ontology.fiafcore.org/Work>
-    a owl:Class ;
-    rdfs:label
-        "Work"@en ,
-        "Obra"@es ,
-        "l'Œuvre"@fr ;
-    dc:description
-        "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ,
-        "Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico."@es ,
-        "L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique."@fr ;
-    dc:source
-        "FIAF Moving Image Cataloguing Manual 1.0.1"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.1"@es ,
-        "Manuel de catalogage des images animées de la FIAF 1.0.1"@fr ;
-.
-
 <https://ontology.fiafcore.org/Variant>
     a owl:Class ;
     rdfs:label
@@ -461,4 +421,20 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "FIAF Moving Image Cataloguing Manual 1.0.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.0.2"@fr ;
+.
+
+<https://ontology.fiafcore.org/Work>
+    a owl:Class ;
+    rdfs:label
+        "Work"@en ,
+        "Obra"@es ,
+        "l'Œuvre"@fr ;
+    dc:description
+        "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ,
+        "Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico."@es ,
+        "L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.0.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.0.1"@fr ;
 .
