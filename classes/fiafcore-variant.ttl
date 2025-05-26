@@ -1,0 +1,23 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://ontology.fiafcore.org/Variant>
+    a owl:Class ;
+    rdfs:label
+        "Variant"@en ,
+        "Variante"@es ,
+        "la Variante"@fr ;
+    dc:description
+        "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ,
+        "Una Variante de imágenes en movimiento es una entidad que puede usarse para indicar cualquier cambio en las características relativas al contenido, que no modifican de manera significativa el contenido general de una obra como un todo."@es ,
+        "Une Variante est une entité utilisée pour indiquer tout changement dans les caractéristiques liées au contenu, qui ne modifie pas de façon significative le contenu global d'une Œuvre dans son ensemble."@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.0.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.0.2"@fr ;
+.
+
+### Subclasses
