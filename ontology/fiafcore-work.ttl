@@ -103,7 +103,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:domain [
         owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant>)
     ] ;
-    rdfs:range <https://ontology.fiafcore.org/Country> ;
+    rdfs:range <https://vocabulary.fiafcore.org/Country> ;
 .
 
 <https://ontology.fiafcore.org/hasEvent>

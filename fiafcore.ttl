@@ -2,6 +2,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://ontology.fiafcore.org/AbridgedCondensed>
     a owl:Class ;
@@ -218,7 +219,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 <https://ontology.fiafcore.org/Variant>
             ) ;
         ] ;
-    rdfs:range <https://ontology.fiafcore.org/Country> ;
+    rdfs:range <https://vocabulary.fiafcore.org/Country> ;
 .
 
 <https://ontology.fiafcore.org/hasEvent>
@@ -416,6 +417,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
     rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://vocabulary.fiafcore.org/Country>
+    a skos:ConceptScheme ;
+    rdfs:label
+        "Country"@en ,
+        "País"@es ,
+        "Pays"@fr ;
+    dc:source
+        "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
 .
 
 <https://ontology.fiafcore.org/Work>

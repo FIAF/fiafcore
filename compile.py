@@ -1,12 +1,13 @@
 import pathlib
 import rdflib
 
-class_path = pathlib.Path.cwd() / 'classes'
-class_files = [x for x in class_path.iterdir() if x.suffix == '.ttl']
-
 g = rdflib.Graph()
-for c in class_files:
-    g += rdflib.Graph().parse(c)
+
+for sect in ['ontology', 'vocabularies']:
+    ttl_path = pathlib.Path.cwd() / sect
+    ttl_files = [x for x in ttl_path.iterdir() if x.suffix == '.ttl']
+    for c in ttl_files:
+        g += rdflib.Graph().parse(c)
     
 g.serialize(
     destination=str(pathlib.Path.cwd() / 'fiafcore.ttl'), 
