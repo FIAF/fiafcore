@@ -1,8 +1,7 @@
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX ns1: <http://purl.org/dc/elements/1.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://ontology.fiafcore.org/AbridgedCondensed>
     a owl:Class ;
@@ -10,11 +9,43 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Abridged/Condensed"@en ,
         "Abreviada/Condensada"@es ,
         "Raccourci/condensé"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/Activity>
+    a owl:Class ;
+    rdfs:label
+        "Activity"@en ,
+        "Actividad"@es ,
+        "Activité"@fr ;
+    ns1:description
+        "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ,
+        "Describe la actividad o el papel del Agente en relación con la Obra/Variante de imagen en movimiento, o para explicitar la(s) relación(es) entre el Agente y la Manifestación o el Objeto."@es ,
+        "Il s'agit de décrire l'activité ou le rôle de l'agent par rapport à l'œuvre/variante de l'image en mouvement, ou d'expliciter la ou les relations entre l'agent et la manifestation ou l'objet."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr ;
+.
+
+<https://ontology.fiafcore.org/Agent>
+    a owl:Class ;
+    rdfs:label
+        "Agent"@en ,
+        "Agente"@es ,
+        "Agent"@fr ;
+    ns1:description
+        "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ,
+        "Los agentes, ya se trate de obras/variantes, manifestaciones o elementos de imágenes en movimiento, son entidades que intervienen en su creación, explotación o conservación, con distinciones típicas que incluyen la persona, la persona jurídica, la familia y el grupo de personas, y que abarcan responsabilidades como la liberación, la distribución, la adquisición o la conservación."@es ,
+        "Les agents, qu'il s'agisse d'œuvres/variantes, de manifestations ou d'éléments d'images animées, sont des entités impliquées dans leur création, leur exploitation ou leur préservation, avec des distinctions typiques incluant la personne, la personne morale, la famille et le groupe de personnes, englobant des responsabilités telles que la diffusion, la distribution, l'acquisition ou la préservation."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
 .
 
 <https://ontology.fiafcore.org/Analytic>
@@ -23,11 +54,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Analytic Work"@en ,
         "Analítica"@es ,
         "Analytique"@fr ;
-    dc:description
+    ns1:description
         "Content that is contained in another content. A component part may itself be either monographic or serial."@en ,
         "Contenido que está vinculado con otro contenido. Una parte componente puede ser monográfica o seriada."@es ,
         "Contenu présent dans un autre contenu. Une partie composante peut être elle-même une monographie ou une série/film à épisodes."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -40,7 +71,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Augmented"@en ,
         "Aumentada"@es ,
         "Augmentée"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -53,7 +84,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Black and white copy of work originally issued in colour"@en ,
         "Copia en blanco y negro de una obra originalmente producida a color"@es ,
         "Copie noir et blanc d’une œuvre sortie à l’origine en couleurs"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -66,7 +97,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Censored"@en ,
         "Censurada"@es ,
         "Censuré"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -79,11 +110,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Collection Work"@en ,
         "Colección"@es ,
         "Collection"@fr ;
-    dc:description
+    ns1:description
         "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ,
         "Contenido emitido en varias partes independientes; una Obra bajo el título “Umbrella” comprende una serie de Obras/Variantes/Manifestaciones diferentes."@es ,
         "Contenu émis en plusieurs parties indépendantes ; un titre d’Œuvre générique recouvrant plusieurs Œuvres/Variantes/Manifestations différentes."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -96,7 +127,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Colourized"@en ,
         "Coloreada"@es ,
         "Colorisé"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -109,7 +140,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Different sound track"@en ,
         "Diferentes pistas de sonido"@es ,
         "Bande sonore différente"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -122,7 +153,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Dubbed"@en ,
         "Doblada"@es ,
         "Doublé"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -135,11 +166,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Monographic Work"@en ,
         "Monográfico"@es ,
         "Monographie"@fr ;
-    dc:description
+    ns1:description
         "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en ,
         "Contenido completo en una parte o destinado a completarse en un número finito de partes. Esta definición también se aplica a los episodios de televisión. No obstante, una serie de televisión se cataloga en su totalidad como una Serie."@es ,
         "Contenu complet en une seule partie ou destiné à être complété par un nombre fini de parties. Cela s’applique aussi aux épisodes télévisés. La notice pour la série télévisée elle-même est cataloguée en tant que Série."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -152,7 +183,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Preservation/Restoration"@en ,
         "Preservación/Restauración"@es ,
         "Conservation/Restauration"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -165,11 +196,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Serial Work"@en ,
         "Serie"@es ,
         "Série"@fr ;
-    dc:description
+    ns1:description
         "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ,
         "Contenido emitido en partes sucesivas y destinado a continuar de forma indefinida o en un lapso de tiempo específico. Un registro de Obra para una serie de televisión se cataloga como una 'Serie'. No obstante, los episodios individuales se pueden catalogar como registros monográficos."@es ,
         "Contenu émis en parties successives et destiné à être poursuivi indéfiniment ou durant un certain temps. Une notice d’Œuvre pour une série télévisée est cataloguée en tant que Série. Les épisodes individuels pourront être catalogués en tant que notices monographiques."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.1"@es ,
         "Manuel de catalogage des images animées de la FIAF D.1"@fr ;
@@ -182,7 +213,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Sonorized"@en ,
         "Sonorizada"@es ,
         "Sonorisé"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -195,7 +226,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Subtitled"@en ,
         "Subtítulada"@es ,
         "Sous-titré"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual D.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento D.2"@es ,
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
@@ -208,7 +239,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Country"@en ,
         "Tiene un País"@es ,
         "A un Pays"@fr ;
-    dc:source
+    ns1:description "Where known and applicable, record the geographic origin of the Moving Image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
@@ -222,19 +254,19 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Event"@en ,
         "Tiene un Evento"@es ,
         "A un Évènement"@fr ;
-    dc:source
+    ns1:description "An Event characterises occurrences in the lifecycle of a Moving Image Work, Variant, Manifestation or Item."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
-    rdfs:domain
-        [
+    rdfs:domain [
             owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-                <https://ontology.fiafcore.org/Manifestation>
-                <https://ontology.fiafcore.org/Item>
-                <https://ontology.fiafcore.org/Carrier>
-            ) ;
+                    <https://ontology.fiafcore.org/Work>
+                    <https://ontology.fiafcore.org/Variant>
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                    <https://ontology.fiafcore.org/Carrier>
+                )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/Event> ;
 .
@@ -245,7 +277,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Form"@en ,
         "Tiene una Forma"@es ,
         "A une Forme"@fr ;
-    dc:source
+    ns1:description "Form describes the format and/or purpose of a Work."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -259,7 +292,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Genre"@en ,
         "Tiene un Género"@es ,
         "A un Genre"@fr ;
-    dc:source
+    ns1:description "Genre describes categories of Works, characterized by similar plots, themes, settings, situations, and characters."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -273,19 +307,19 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Identifier"@en ,
         "Tiene un Identificador"@es ,
         "A un Identifiant"@fr ;
-    dc:source
+    ns1:description "An Identifier refers to a specific Work and provides clear disambiguation between Works when there is confusion."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.1, 2.3.1, 3.1.1"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.1, 2.3.1, 3.1.1"@fr ;
-    rdfs:domain
-        [
+    rdfs:domain [
             owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-                <https://ontology.fiafcore.org/Manifestation>
-                <https://ontology.fiafcore.org/Item>
-                <https://ontology.fiafcore.org/Carrier>
-            ) ;
+                    <https://ontology.fiafcore.org/Work>
+                    <https://ontology.fiafcore.org/Variant>
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                    <https://ontology.fiafcore.org/Carrier>
+                )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/Identifier> ;
 .
@@ -296,17 +330,17 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Language Usage"@en ,
         "Tiene uso de la lengua"@es ,
         "A une Utilisation des Langues"@fr ;
-    dc:source
+    ns1:description "Record the usage type of a language (e.g. spoken, intertitles, subtitles, etc)."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 2.3.3.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 2.3.3.2"@fr ;
-    rdfs:domain
-        [
+    rdfs:domain [
             owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-                <https://ontology.fiafcore.org/Manifestation>
-            ) ;
+                    <https://ontology.fiafcore.org/Work>
+                    <https://ontology.fiafcore.org/Variant>
+                    <https://ontology.fiafcore.org/Manifestation>
+                )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/LanguageUsage> ;
 .
@@ -317,16 +351,16 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Manifestation"@en ,
         "Tiene una Manifestación"@es ,
         "A une Manifestation"@fr ;
-    dc:source
+    ns1:description "Express the relationship between a Moving Image Work and a Moving Image Manifestation."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.6"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.6"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.6"@fr ;
-    rdfs:domain
-        [
+    rdfs:domain [
             owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-            ) ;
+                    <https://ontology.fiafcore.org/Work>
+                    <https://ontology.fiafcore.org/Variant>
+                )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/Manifestation> ;
 .
@@ -337,7 +371,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Subject"@en ,
         "Tiene una Materia"@es ,
         "A un Sujet"@fr ;
-    dc:source
+    ns1:description "Provide access to the Work by means of subjects (or subject identifiers) that describe the content of the Work."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -351,18 +386,18 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Title"@en ,
         "Tiene un Título"@es ,
         "A un Titre"@fr ;
-    dc:source
+    ns1:description "Record at least one title, identifying phrase, or name for the Moving Image Work."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2.1, 3.1.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2.1, 3.1.2"@fr ;
-    rdfs:domain
-        [
+    rdfs:domain [
             owl:unionOf (
-                <https://ontology.fiafcore.org/Work>
-                <https://ontology.fiafcore.org/Variant>
-                <https://ontology.fiafcore.org/Manifestation>
-                <https://ontology.fiafcore.org/Item>
-            ) ;
+                    <https://ontology.fiafcore.org/Work>
+                    <https://ontology.fiafcore.org/Variant>
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/Title> ;
 .
@@ -373,7 +408,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Variant"@en ,
         "Tiene una Variante"@es ,
         "A une Variante"@fr ;
-    dc:source
+    ns1:description "Express the relationship between a Moving Image Work and a Moving Image Variant."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.5"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.5"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.5"@fr ;
@@ -387,7 +423,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Has Work/Variant"@en ,
         "Tiene una Obra/Variante"@es ,
         "A une Œuvre/Variante"@fr ;
-    dc:source
+    ns1:description "Express the relationship between a Moving Image Work and another Moving Image Work."@en ;
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.4"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
@@ -395,16 +432,76 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     rdfs:range <https://ontology.fiafcore.org/Work> ;
 .
 
+<https://ontology.fiafcore.org/Event>
+    a owl:Class ;
+    rdfs:label
+        "Event"@en ,
+        "Evento"@es ,
+        "Événement"@fr ;
+    ns1:description
+        "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en ,
+        "Un Evento caracteriza las ocurrencias en el ciclo de vida de una Obra, Variante, Manifestación o Artículo de imagen en movimiento. Las instancias de cualquier Evento pueden tener relaciones de Actividad (y Agente)."@es ,
+        "Un événement caractérise les occurrences dans le cycle de vie d'une œuvre, d'une variante, d'une manifestation ou d'un élément d'image animée. Les instances d'un événement peuvent avoir des relations d'activité (et d'agent)."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
+.
+
 <https://vocabulary.fiafcore.org/Country>
-    a skos:ConceptScheme ;
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
     rdfs:label
         "Country"@en ,
         "País"@es ,
         "Pays"@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
+.
+
+<https://ontology.fiafcore.org/Carrier>
+    a owl:Class ;
+    rdfs:label
+        "Carrier"@en ,
+        "Portador"@es ,
+        "Article"@fr ;
+    ns1:description
+        "A moving image carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ,
+        "Un soporte de imágenes en movimiento es la unidad física discreta en la que se conserva la imagen en movimiento. Puede contener toda la obra artística o una parte, por ejemplo en el caso de bobinas individuales de película."@es ,
+        "Un support d'image en mouvement est l'unité physique discrète sur laquelle l'image en mouvement est conservée. Il peut contenir l'ensemble de l'œuvre artistique ou une partie, par exemple dans le cas de bobines de film individuelles."@fr ;
+.
+
+<https://ontology.fiafcore.org/Item>
+    a owl:Class ;
+    rdfs:label
+        "Item"@en ,
+        "Ítem"@es ,
+        "Item"@fr ;
+    ns1:description
+        "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository’s collection."@en ,
+        "Un Ítem de imágenes en movimiento es el producto físico o digital de la Manifestación de una Obra o Variante, i.e., la copia real de una obra o Variante. Mientras que el registro de la Manifestación describe el “ideal” de un formato o publicación particular, el registro del Ítem representa la existencia real dentro de la colección de un repositorio."@es ,
+        "Un Item d’une image animée est le produit physique ou numérique de la Manifestation d'une Œuvre ou d’une Variante, c'est-à-dire la copie réelle d'une Œuvre ou d'une Variante. Alors que la notice Manifestation décrit le modèle idéal d'un format ou d'une publication en particulier, l’Item représente le document réel conservé dans la collection d'une institution."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.0"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.0"@fr ;
+.
+
+<https://ontology.fiafcore.org/Manifestation>
+    a owl:Class ;
+    rdfs:label
+        "Manifestation"@en ,
+        "Manifestación"@es ,
+        "la Manifestation"@fr ;
+    ns1:description
+        "A moving image Manifestation is the embodiment of a moving image Work/Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work/Variant."@en ,
+        "Una Manifestación de imágenes en movimiento es la materialización de una Obra/Variante. Las Manifestaciones generalmente incluyen todos los medios analógicos, digitales y en línea, asociados con una particular materialización de una Obra/Variante."@es ,
+        "Une Manifestation est la matérialisation d'une Œuvre/Variante. Les Manifestations comprennent habituellement tous les médias analogiques, numériques et en ligne associés à une matérialisation particulière d'une Œuvre/Variante."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.0"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.0"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.0"@fr ;
 .
 
 <https://ontology.fiafcore.org/Variant>
@@ -413,11 +510,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Variant"@en ,
         "Variante"@es ,
         "la Variante"@fr ;
-    dc:description
+    ns1:description
         "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ,
         "Una Variante de imágenes en movimiento es una entidad que puede usarse para indicar cualquier cambio en las características relativas al contenido, que no modifican de manera significativa el contenido general de una obra como un todo."@es ,
         "Une Variante est une entité utilisée pour indiquer tout changement dans les caractéristiques liées au contenu, qui ne modifie pas de façon significative le contenu global d'une Œuvre dans son ensemble."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.0.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.0.2"@fr ;
@@ -429,12 +526,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         "Work"@en ,
         "Obra"@es ,
         "l'Œuvre"@fr ;
-    dc:description
+    ns1:description
         "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ,
         "Una Obra de imágenes en movimiento abarca tanto el contenido intelectual como el contenido artístico y el proceso de realización en un medio cinematográfico."@es ,
         "L’Œuvre composée d’images animées comprend à la fois le contenu intellectuel ou artistique et le processus de réalisation sous une forme cinématographique."@fr ;
-    dc:source
+    ns1:source
         "FIAF Moving Image Cataloguing Manual 1.0.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.1"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.0.1"@fr ;
 .
+

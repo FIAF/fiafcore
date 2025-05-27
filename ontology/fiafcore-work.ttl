@@ -97,6 +97,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Country"@en ,
         "Tiene un País"@es ,
         "A un Pays"@fr ;
+    dc:description
+        "Where known and applicable, record the geographic origin of the Moving Image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
@@ -109,6 +111,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Event"@en ,
         "Tiene un Evento"@es ,
         "A un Évènement"@fr ;
+    dc:description
+        "An Event characterises occurrences in the lifecycle of a Moving Image Work, Variant, Manifestation or Item."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.2, 2.4.2, 3.3.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
@@ -123,6 +127,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Genre"@en ,
         "Tiene un Género"@es ,
         "A un Genre"@fr ;
+    dc:description
+        "Genre describes categories of Works, characterized by similar plots, themes, settings, situations, and characters."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -135,6 +141,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Form"@en ,
         "Tiene una Forma"@es ,
         "A une Forme"@fr ;
+    dc:description
+        "Form describes the format and/or purpose of a Work."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -147,6 +155,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Identifier"@en ,     
         "Tiene un Identificador"@es ,
         "A un Identifiant"@fr ;
+    dc:description
+        "An Identifier refers to a specific Work and provides clear disambiguation between Works when there is confusion."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.3.1, 2.3.1, 3.1.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.1, 2.3.1, 3.1.1"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.1, 2.3.1, 3.1.1"@fr ;
@@ -161,6 +171,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Language Usage"@en ,
         "Tiene uso de la lengua"@es ,
         "A une Utilisation des Langues"@fr ;
+    dc:description
+        "Record the usage type of a language (e.g. spoken, intertitles, subtitles, etc)."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 2.3.3.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.3.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 2.3.3.2"@fr ;
@@ -175,6 +187,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Manifestation"@en ,
         "Tiene una Manifestación"@es ,
         "A une Manifestation"@fr ;
+    dc:description
+        "Express the relationship between a Moving Image Work and a Moving Image Manifestation."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.6"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.6"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.6"@fr ;
@@ -189,6 +203,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Subject"@en ,
         "Tiene una Materia"@es ,
         "A un Sujet"@fr ;
+    dc:description
+        "Provide access to the Work by means of subjects (or subject identifiers) that describe the content of the Work."@en ;    
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.3"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.3"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
@@ -201,6 +217,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Title"@en ,
         "Tiene un Título"@es ,
         "A un Titre"@fr ;
+    dc:description
+        "Record at least one title, identifying phrase, or name for the Moving Image Work."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.3.2, 2.3.2.1, 3.1.2"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.2, 2.3.2.1, 3.1.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.3.2, 2.3.2.1, 3.1.2"@fr ;
@@ -215,6 +233,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Variant"@en ,
         "Tiene una Variante"@es ,
         "A une Variante"@fr ;
+    dc:description
+        "Express the relationship between a Moving Image Work and a Moving Image Variant."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.5"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.5"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.5"@fr ;
@@ -227,6 +247,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Work/Variant"@en ,
         "Tiene una Obra/Variante"@es ,
         "A une Œuvre/Variante"@fr ;
+    dc:description
+        "Express the relationship between a Moving Image Work and another Moving Image Work."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.4"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
