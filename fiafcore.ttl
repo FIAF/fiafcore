@@ -16,38 +16,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/Activity>
-    a owl:Class ;
-    rdfs:label
-        "Activity"@en ,
-        "Actividad"@es ,
-        "Activité"@fr ;
-    ns1:description
-        "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ,
-        "Describe la actividad o el papel del Agente en relación con la Obra/Variante de imagen en movimiento, o para explicitar la(s) relación(es) entre el Agente y la Manifestación o el Objeto."@es ,
-        "Il s'agit de décrire l'activité ou le rôle de l'agent par rapport à l'œuvre/variante de l'image en mouvement, ou d'expliciter la ou les relations entre l'agent et la manifestation ou l'objet."@fr ;
-    ns1:source
-        "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ,
-        "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr ;
-.
-
-<https://ontology.fiafcore.org/Agent>
-    a owl:Class ;
-    rdfs:label
-        "Agent"@en ,
-        "Agente"@es ,
-        "Agent"@fr ;
-    ns1:description
-        "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ,
-        "Los agentes, ya se trate de obras/variantes, manifestaciones o elementos de imágenes en movimiento, son entidades que intervienen en su creación, explotación o conservación, con distinciones típicas que incluyen la persona, la persona jurídica, la familia y el grupo de personas, y que abarcan responsabilidades como la liberación, la distribución, la adquisición o la conservación."@es ,
-        "Les agents, qu'il s'agisse d'œuvres/variantes, de manifestations ou d'éléments d'images animées, sont des entités impliquées dans leur création, leur exploitation ou leur préservation, avec des distinctions typiques incluant la personne, la personne morale, la famille et le groupe de personnes, englobant des responsabilités telles que la diffusion, la distribution, l'acquisition ou la préservation."@fr ;
-    ns1:source
-        "FIAF Moving Image Cataloguing Manual 1.4.1"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ,
-        "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
-.
-
 <https://ontology.fiafcore.org/Analytic>
     a owl:Class ;
     rdfs:label
@@ -233,6 +201,97 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/hasActivity>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Activity"@en ,
+        "Tiene Actividad"@es ,
+        "A une Activité"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1.1, 2.4.1.1, 3.3.1.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1, 2.4.1.1, 3.3.1.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1.1, 2.4.1.1, 3.3.1.1"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range <https://ontology.fiafcore.org/Activity> ;
+.
+
+<https://ontology.fiafcore.org/hasAgent>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Agent"@en ,
+        "Tiene un Agente"@es ,
+        "A un Agent"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1, 2.4.1, 3.3.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1, 2.4.1, 3.3.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1, 2.4.1, 3.3.11"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Activity> ;
+    rdfs:range <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/hasBase>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Base"@en ,
+        "Tiene Base"@es ,
+        "A une Base"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.13"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.13"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.13"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Base> ;
+.
+
+<https://ontology.fiafcore.org/hasBroadcastStandard>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Broadcast Standard"@en ,
+        "Tiene Norma de Emisión"@es ,
+        "A un Standard de Télédiffusion"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.10"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.10"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.10"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://ontology.fiafcore.org/hasCarrier>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Carrier"@en ,
+        "Tiene Portador"@es ,
+        "A un Article"@fr ;
+    ns1:description "TODO"@en ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Carrier> ;
+.
+
+<https://ontology.fiafcore.org/hasColourCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Colour Characteristic"@en ,
+        "Tiene una característica de color"@es ,
+        "A une Caractéristique de couleur"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.3.4.4, 3.1.5.6"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.4, 3.1.5.6"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.4.4, 3.1.5.6"@fr ;
+    rdfs:domain [
+            owl:unionOf (
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/ColourCharacteristic> ;
+.
+
 <https://ontology.fiafcore.org/hasCountry>
     a owl:ObjectProperty ;
     rdfs:label
@@ -271,6 +330,26 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Event> ;
 .
 
+<https://ontology.fiafcore.org/hasExtent>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Extent"@en ,
+        "Tiene una Extensión"@es ,
+        "A une Étendue"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.5, 3.1.5.8"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.5, 3.1.5.8"@fr ;
+    rdfs:domain [
+            owl:unionOf (
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Extent> ;
+.
+
 <https://ontology.fiafcore.org/hasForm>
     a owl:ObjectProperty ;
     rdfs:label
@@ -286,6 +365,41 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Form> ;
 .
 
+<https://ontology.fiafcore.org/hasFormat>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Format"@en ,
+        "Tiene un Formato"@es ,
+        "A un Format"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.3.4, 3.1.5"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4, 3.1.5"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.4, 3.1.5"@fr ;
+    rdfs:domain [
+            owl:unionOf (
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://ontology.fiafcore.org/hasFrameRate>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Frame Rate"@en ,
+        "Tiene Velocidad de Cuadros"@es ,
+        "A le Nombre d’images par seconde"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.12"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.12"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.12"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/FrameRate> ;
+.
+
 <https://ontology.fiafcore.org/hasGenre>
     a owl:ObjectProperty ;
     rdfs:label
@@ -299,6 +413,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manuel de catalogage des images animées de la FIAF 1.4.3"@fr ;
     rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Genre> ;
+.
+
+<https://ontology.fiafcore.org/hasHoldingInstitution>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Holding Institution"@en ,
+        "A una institución de cartera"@es ,
+        "A un Établissement détenteur"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.3"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/CorporateBody> ;
 .
 
 <https://ontology.fiafcore.org/hasIdentifier>
@@ -324,6 +453,41 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Identifier> ;
 .
 
+<https://ontology.fiafcore.org/hasImageCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Image Characteristic"@en ,
+        "Tiene una característica de imagen"@es ,
+        "A une Caractéristique d'image"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.3.4.2, 3.1.5.9"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.2, 3.1.5.9"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.4.2, 3.1.5.9"@fr ;
+    rdfs:domain [
+            owl:unionOf (
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/ImageCharacteristic> ;
+.
+
+<https://ontology.fiafcore.org/hasItem>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Item"@en ,
+        "Tiene un Item"@es ,
+        "A un Item"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.4.4"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.4.4"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.4.4"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:range <https://ontology.fiafcore.org/Item> ;
+.
+
 <https://ontology.fiafcore.org/hasLanguageUsage>
     a owl:ObjectProperty ;
     rdfs:label
@@ -345,6 +509,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/LanguageUsage> ;
 .
 
+<https://ontology.fiafcore.org/hasLineStandard>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Line Standard"@en ,
+        "Tiene Norma de Líneas"@es ,
+        "A des Lignes de balayage"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.19"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.19"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.19"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/LineStandard> ;
+.
+
 <https://ontology.fiafcore.org/hasManifestation>
     a owl:ObjectProperty ;
     rdfs:label
@@ -363,6 +542,116 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 )
         ] ;
     rdfs:range <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/hasResolution>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Resolution"@en ,
+        "Tiene Resolución"@es ,
+        "A une Résolution"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.18"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.18"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.18"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Resolution> ;
+.
+
+<https://ontology.fiafcore.org/hasSoundCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Sound Characteristic"@en ,
+        "Tiene características de sonido"@es ,
+        "A une Caractéristique de son"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 2.3.4.3, 3.1.5.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3, 3.1.5.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 2.3.4.3, 3.1.5.3"@fr ;
+    rdfs:domain [
+            owl:unionOf (
+                    <https://ontology.fiafcore.org/Manifestation>
+                    <https://ontology.fiafcore.org/Item>
+                )
+        ] ;
+    rdfs:range <https://ontology.fiafcore.org/SoundCharacteristic> ;
+.
+
+<https://ontology.fiafcore.org/hasSourceDevice>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Source Device"@en ,
+        "Tiene Dispositivo para reproducción"@es ,
+        "A un Périphérique de lecture"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.21"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.21"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.21"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/SourceDevice> ;
+.
+
+<https://ontology.fiafcore.org/hasSourceSoftware>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Source Software"@en ,
+        "Tiene Software Fuente"@es ,
+        "A un Logiciel"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.22"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.22"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.22"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/SourceSoftware> ;
+.
+
+<https://ontology.fiafcore.org/hasStatus>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Status"@en ,
+        "Tiene Estado"@es ,
+        "A un Statut"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.2"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.2"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.2"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Status> ;
+.
+
+<https://ontology.fiafcore.org/hasStock>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Stock"@en ,
+        "Tiene Stock"@es ,
+        "A une Marque du support"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.14"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.14"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.14"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/hasStream>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Stream"@en ,
+        "Tiene Flujo"@es ,
+        "A un Flux"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.16"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.16"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.16"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Stream> ;
 .
 
 <https://ontology.fiafcore.org/hasSubject>
@@ -402,6 +691,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Title> ;
 .
 
+<https://ontology.fiafcore.org/hasTransferSpeed>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Has Transfer Speed"@en ,
+        "Tiene velocidad de transferencia"@es ,
+        "A une Vitesse de transfert"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.5.23"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.5.23"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.5.23"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/FrameRate> ;
+.
+
 <https://ontology.fiafcore.org/hasVariant>
     a owl:ObjectProperty ;
     rdfs:label
@@ -420,9 +724,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/hasWork>
     a owl:ObjectProperty ;
     rdfs:label
-        "Has Work/Variant"@en ,
-        "Tiene una Obra/Variante"@es ,
-        "A une Œuvre/Variante"@fr ;
+        "Has Work"@en ,
+        "Tiene una Obra"@es ,
+        "A une Œuvre"@fr ;
     ns1:description "Express the relationship between a Moving Image Work and another Moving Image Work."@en ;
     ns1:source
         "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
@@ -430,6 +734,65 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manuel de catalogage des images animées de la FIAF 1.4.4"@fr ;
     rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/isElement>
+    a owl:ObjectProperty ;
+    rdfs:label
+        "Is Element"@en ,
+        "Es Elemento"@es ,
+        "Est de Nature"@fr ;
+    ns1:description "TODO"@en ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.1.4"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.1.4"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.1.4"@fr ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range <https://ontology.fiafcore.org/Element> ;
+.
+
+<https://ontology.fiafcore.org/Agent>
+    a owl:Class ;
+    rdfs:label
+        "Agent"@en ,
+        "Agente"@es ,
+        "Agent"@fr ;
+    ns1:description
+        "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ,
+        "Los agentes, ya se trate de obras/variantes, manifestaciones o elementos de imágenes en movimiento, son entidades que intervienen en su creación, explotación o conservación, con distinciones típicas que incluyen la persona, la persona jurídica, la familia y el grupo de personas, y que abarcan responsabilidades como la liberación, la distribución, la adquisición o la conservación."@es ,
+        "Les agents, qu'il s'agisse d'œuvres/variantes, de manifestations ou d'éléments d'images animées, sont des entités impliquées dans leur création, leur exploitation ou leur préservation, avec des distinctions typiques incluant la personne, la personne morale, la famille et le groupe de personnes, englobant des responsabilités telles que la diffusion, la distribution, l'acquisition ou la préservation."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1"@fr ;
+.
+
+<https://vocabulary.fiafcore.org/Country>
+    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+    rdfs:label
+        "Country"@en ,
+        "País"@es ,
+        "Pays"@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
+.
+
+<https://ontology.fiafcore.org/Activity>
+    a owl:Class ;
+    rdfs:label
+        "Activity"@en ,
+        "Actividad"@es ,
+        "Activité"@fr ;
+    ns1:description
+        "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ,
+        "Describe la actividad o el papel del Agente en relación con la Obra/Variante de imagen en movimiento, o para explicitar la(s) relación(es) entre el Agente y la Manifestación o el Objeto."@es ,
+        "Il s'agit de décrire l'activité ou le rôle de l'agent par rapport à l'œuvre/variante de l'image en mouvement, ou d'expliciter la ou les relations entre l'agent et la manifestation ou l'objet."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 1.4.1.1"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ,
+        "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr ;
 .
 
 <https://ontology.fiafcore.org/Event>
@@ -448,18 +811,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
 .
 
-<https://vocabulary.fiafcore.org/Country>
-    a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-    rdfs:label
-        "Country"@en ,
-        "País"@es ,
-        "Pays"@fr ;
-    ns1:source
-        "FIAF Moving Image Cataloguing Manual 1.3.3"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 1.3.3"@es ,
-        "Manuel de catalogage des images animées de la FIAF 1.3.3"@fr ;
-.
-
 <https://ontology.fiafcore.org/Carrier>
     a owl:Class ;
     rdfs:label
@@ -470,22 +821,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "A moving image carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ,
         "Un soporte de imágenes en movimiento es la unidad física discreta en la que se conserva la imagen en movimiento. Puede contener toda la obra artística o una parte, por ejemplo en el caso de bobinas individuales de película."@es ,
         "Un support d'image en mouvement est l'unité physique discrète sur laquelle l'image en mouvement est conservée. Il peut contenir l'ensemble de l'œuvre artistique ou une partie, par exemple dans le cas de bobines de film individuelles."@fr ;
-.
-
-<https://ontology.fiafcore.org/Item>
-    a owl:Class ;
-    rdfs:label
-        "Item"@en ,
-        "Ítem"@es ,
-        "Item"@fr ;
-    ns1:description
-        "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository’s collection."@en ,
-        "Un Ítem de imágenes en movimiento es el producto físico o digital de la Manifestación de una Obra o Variante, i.e., la copia real de una obra o Variante. Mientras que el registro de la Manifestación describe el “ideal” de un formato o publicación particular, el registro del Ítem representa la existencia real dentro de la colección de un repositorio."@es ,
-        "Un Item d’une image animée est le produit physique ou numérique de la Manifestation d'une Œuvre ou d’une Variante, c'est-à-dire la copie réelle d'une Œuvre ou d'une Variante. Alors que la notice Manifestation décrit le modèle idéal d'un format ou d'une publication en particulier, l’Item représente le document réel conservé dans la collection d'une institution."@fr ;
-    ns1:source
-        "FIAF Moving Image Cataloguing Manual 3.0"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ,
-        "Manuel de catalogage des images animées de la FIAF 3.0"@fr ;
 .
 
 <https://ontology.fiafcore.org/Manifestation>
@@ -534,5 +869,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "FIAF Moving Image Cataloguing Manual 1.0.1"@en ,
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.1"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.0.1"@fr ;
+.
+
+<https://ontology.fiafcore.org/Item>
+    a owl:Class ;
+    rdfs:label
+        "Item"@en ,
+        "Ítem"@es ,
+        "Item"@fr ;
+    ns1:description
+        "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository’s collection."@en ,
+        "Un Ítem de imágenes en movimiento es el producto físico o digital de la Manifestación de una Obra o Variante, i.e., la copia real de una obra o Variante. Mientras que el registro de la Manifestación describe el “ideal” de un formato o publicación particular, el registro del Ítem representa la existencia real dentro de la colección de un repositorio."@es ,
+        "Un Item d’une image animée est le produit physique ou numérique de la Manifestation d'une Œuvre ou d’une Variante, c'est-à-dire la copie réelle d'une Œuvre ou d'une Variante. Alors que la notice Manifestation décrit le modèle idéal d'un format ou d'une publication en particulier, l’Item représente le document réel conservé dans la collection d'une institution."@fr ;
+    ns1:source
+        "FIAF Moving Image Cataloguing Manual 3.0"@en ,
+        "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ,
+        "Manuel de catalogage des images animées de la FIAF 3.0"@fr ;
 .
 

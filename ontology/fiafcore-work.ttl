@@ -244,9 +244,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://ontology.fiafcore.org/hasWork>
     a owl:ObjectProperty ;
-    rdfs:label "Has Work/Variant"@en ,
-        "Tiene una Obra/Variante"@es ,
-        "A une Œuvre/Variante"@fr ;
+    rdfs:label "Has Work"@en ,
+        "Tiene una Obra"@es ,
+        "A une Œuvre"@fr ;
     dc:description
         "Express the relationship between a Moving Image Work and another Moving Image Work."@en ;
     dc:source "FIAF Moving Image Cataloguing Manual 1.4.4"@en ,
