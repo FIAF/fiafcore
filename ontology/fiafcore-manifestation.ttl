@@ -138,23 +138,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-
-
-TODO: properties below!
-
-
-
-
-
 <https://ontology.fiafcore.org/hasColourCharacteristic>
     a owl:ObjectProperty ;
     rdfs:label 
         "Has Colour Characteristic"@en ;
     dc:description
-        "TODO"@en ;
+        "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
     dc:source 
-        <> ;
-        "FIAF Moving Image Cataloguing Manual 2.3.4.4, 3.1.5.6"@en ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2075%3A135> ;
     rdfs:domain 
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
     rdfs:range 
@@ -166,10 +157,9 @@ TODO: properties below!
     rdfs:label 
         "Has Extent"@en ;
     dc:description
-        "TODO"@en ;
+        "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
     dc:source 
-        <> ;
-        "FIAF Moving Image Cataloguing Manual 2.3.5, 3.1.5.8"@en ,
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2076%3A140> ;
     rdfs:domain 
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
     rdfs:range 
@@ -181,14 +171,9 @@ TODO: properties below!
     rdfs:label 
         "Has Format"@en ;
     dc:description
-        "TODO"@en ;
+        "The format of a Manifestation is the description of the physical artefact or the digital file on which it is fixed."@en ;
     dc:source 
-    
-        <> ;
-    
-    "FIAF Moving Image Cataloguing Manual 2.3.4, 3.1.5"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4, 3.1.5"@es ,
-        "Manuel de catalogage des images animées de la FIAF 2.3.4, 3.1.5"@fr ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2066%3A119> ;    
     rdfs:domain 
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
     rdfs:range 
@@ -200,31 +185,23 @@ TODO: properties below!
     rdfs:label 
         "Has Image Characteristic"@en ;
     dc:description
-        "TODO"@en ;
+        "The projection characteristics of a Manifestation include aspect ratio and aperture or image format."@en ;
     dc:source 
-        <> ;
-    "FIAF Moving Image Cataloguing Manual 2.3.4.2, 3.1.5.9"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.2, 3.1.5.9"@es ,
-        "Manuel de catalogage des images animées de la FIAF 2.3.4.2, 3.1.5.9"@fr ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2071%3A126> ;
     rdfs:domain 
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
     rdfs:range 
         <https://ontology.fiafcore.org/ImageCharacteristic> ;
 .
 
-
 <https://ontology.fiafcore.org/hasItem>
     a owl:ObjectProperty ;
     rdfs:label 
         "Has Item"@en ;
     dc:description
-        "TODO"@en ;
+        "Express the relationship between a moving image Manifestation and a moving image Item"@en ;
     dc:source 
-        <> ;
-    
-    "FIAF Moving Image Cataloguing Manual 2.4.4"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.4.4"@es ,
-        "Manuel de catalogage des images animées de la FIAF 2.4.4"@fr ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2093%3A170> ;
     rdfs:domain 
         <https://ontology.fiafcore.org/Manifestation> ;          
     rdfs:range 
@@ -236,13 +213,9 @@ TODO: properties below!
     rdfs:label 
         "Has Sound Characteristic"@en ;
     dc:description
-        "TODO"@en ;
+        "Sound characteristics are technical specifications relating to the placement of sound on a Manifestation."@en ;
     dc:source 
-    
-        <> ;
-    "FIAF Moving Image Cataloguing Manual 2.3.4.3, 3.1.5.3"@en ,
-        "Manual FIAF de Catalogación de Imágenes en Movimiento 2.3.4.3, 3.1.5.3"@es ,
-        "Manuel de catalogage des images animées de la FIAF 2.3.4.3, 3.1.5.3"@fr ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2072%3A129> ;
     rdfs:domain 
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
     rdfs:range 
