@@ -16,7 +16,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/Analytic>
+<https://ontology.fiafcore.org/AnalyticWork>
     a owl:Class ;
     rdfs:label
         "Analytic Work"@en ;
@@ -28,7 +28,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/Collection>
+<https://ontology.fiafcore.org/CollectionWork>
     a owl:Class ;
     rdfs:label
         "Collection Work"@en ;
@@ -40,7 +40,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/Monographic>
+<https://ontology.fiafcore.org/MonographicWork>
     a owl:Class ;
     rdfs:label
         "Monographic Work"@en ;
@@ -52,7 +52,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/Serial>
+<https://ontology.fiafcore.org/SerialWork>
     a owl:Class ;
     rdfs:label
         "Serial Work"@en ;
