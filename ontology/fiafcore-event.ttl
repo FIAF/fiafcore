@@ -7,6 +7,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/Event>
     a owl:Class ;
     rdfs:label
+        "Event"@en ;
+    dc:description
+        "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2049%3A82> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Event>
+    a owl:Class ;
+    rdfs:label
         "Event"@en ,
         "Evento"@es ,
         "Événement"@fr ;
@@ -19,6 +45,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.2, 2.4.2, 3.3.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.2, 2.4.2, 3.3.2"@fr ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Object Properties
 

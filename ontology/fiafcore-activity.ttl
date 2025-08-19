@@ -7,6 +7,25 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/Activity>
     a owl:Class ;
     rdfs:label
+        "Activity"@en ;
+    dc:description
+        "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Activity>
+    a owl:Class ;
+    rdfs:label
         "Activity"@en ,
         "Actividad"@es ,
         "Activité"@fr ;
@@ -19,6 +38,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.4.1.1"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.4.1.1"@fr ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Object Properties
 

@@ -11,8 +11,29 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:description
         "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
     dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.19215%3A4112> ;
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
+
+### Object Properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Subclasses
 
@@ -63,6 +84,27 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf 
         <https://ontology.fiafcore.org/Work> ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Object Properties
 

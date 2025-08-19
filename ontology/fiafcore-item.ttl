@@ -7,6 +7,25 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/Item>
     a owl:Class ;
     rdfs:label
+        "Item"@en ;
+    dc:description
+        "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository's collection."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36209%3A5084> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Item>
+    a owl:Class ;
+    rdfs:label
         "Item"@en ,
         "Ítem"@es ,
         "Item"@fr ;
@@ -19,6 +38,20 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manual FIAF de Catalogación de Imágenes en Movimiento 3.0"@es ,
         "Manuel de catalogage des images animées de la FIAF 3.0"@fr ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Object Properties
 

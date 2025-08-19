@@ -7,6 +7,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/Variant>
     a owl:Class ;
     rdfs:label
+        "Variant"@en ;
+    dc:description
+        "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35990%3A5031> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Variant>
+    a owl:Class ;
+    rdfs:label
         "Variant"@en ,
         "Variante"@es ,
         "la Variante"@fr ;
@@ -19,6 +41,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manual FIAF de Catalogación de Imágenes en Movimiento 1.0.2"@es ,
         "Manuel de catalogage des images animées de la FIAF 1.0.2"@fr ;
 .
+
+
+
+
+
+
+
+
+
+
+
 
 ### Subclasses
 
@@ -151,3 +184,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         "Manuel de catalogage des images animées de la FIAF D.2"@fr ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
+
+
+
+
+
+
+
+

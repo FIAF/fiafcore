@@ -9,10 +9,51 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label
         "Manifestation"@en ;
     dc:description
+        "A moving image Manifestation is the embodiment of a moving image Work or Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work or Variant."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36114%3A5061> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Manifestation>
+    a owl:Class ;
+    rdfs:label
+        "Manifestation"@en ;
+    dc:description
         "A moving image Manifestation is the embodiment of a moving image Work/Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work/Variant."@en ;
     dc:source
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.24079%3A4425> ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Subclasses
 
@@ -135,6 +176,22 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf 
         <https://ontology.fiafcore.org/Manifestation> ;
 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Object Properties
 

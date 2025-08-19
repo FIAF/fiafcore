@@ -7,6 +7,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://ontology.fiafcore.org/Agent>
     a owl:Class ;
     rdfs:label
+        "Agent"@en ;
+    dc:description
+        "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ;
+    dc:source 
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
+.
+
+### Object Properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<https://ontology.fiafcore.org/Agent>
+    a owl:Class ;
+    rdfs:label
         "Agent"@en ,
         "Agente"@es ,
         "Agent"@fr ;
