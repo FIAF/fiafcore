@@ -16,6 +16,40 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
 
+  </tr>
+  <tr>
+    <td>fiafcore:hasEvent</td>
+    <td>fiafcore:Event</td>
+    <td>An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasIdentifier</td>
+    <td>fiafcore:Identifier</td>
+    <td>An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -19,6 +19,141 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
 
+  <tr>
+    <td>fiafcore:hasBase</td>
+    <td>fiafcore:Base</td>
+    <td>The physical material or video format on which the Item is captured.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasBroadcastStandard</td>
+    <td>fiafcore:BroadcastStandard</td>
+    <td>The broadcast standard for a video or DVD/BluRay.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasCarrier</td>
+    <td>fiafcore:Carrier</td>
+    <td>Express the relationship between a moving image Item and a moving image Carrier.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasColourCharacteristic</td>
+    <td>fiafcore:ColourCharacteristic</td>
+    <td>The presence of colour(s), tone(s), etc. in a Manifestation or an Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasEvent</td>
+    <td>fiafcore:Event</td>
+    <td>An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasExtent</td>
+    <td>fiafcore:Extent</td>
+    <td>The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasFormat</td>
+    <td>fiafcore:Format</td>
+    <td>The medium on or the encoding format in which the moving image Manifestation or Item is fixed.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasFrameRate</td>
+    <td>fiafcore:FrameRate</td>
+    <td>Frame rate is the native frame rate for the Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasHoldingInstitution</td>
+    <td>fiafcore:HoldingInstitution</td>
+    <td>Record the name of the institution possessing the moving image Item or authorised to make it available.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasIdentifier</td>
+    <td>fiafcore:Identifier</td>
+    <td>An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasImageCharacteristic</td>
+    <td>fiafcore:ImageCharacteristic</td>
+    <td>The image characteristics of a moving image Manifestation or Item include aspect ratio and aperture or image format.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasLineStandard</td>
+    <td>fiafcore:LineStandard</td>
+    <td>Describes the number of scan lines which make up the image and indicates the resolution.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasResolution</td>
+    <td>fiafcore:Resolution</td>
+    <td>Note whether the Item's resolution is Standard Definition, High Definition.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasSoundCharacteristic</td>
+    <td>fiafcore:SoundCharacteristic</td>
+    <td>Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasSourceDevice</td>
+    <td>fiafcore:SourceDevice</td>
+    <td>Record the source playback device used in transfer projects. This can be a video deck, film printer, or hardware.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasSourceSoftware</td>
+    <td>fiafcore:SourceSoftware</td>
+    <td>Record the source software used in creating a digital file.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasStatus</td>
+    <td>fiafcore:Status</td>
+    <td>Description of the preservation or access status of the Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasStock</td>
+    <td>fiafcore:Stock</td>
+    <td>Describes the specific stock/brand on which the Item is captured.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasStream</td>
+    <td>fiafcore:Stream</td>
+    <td>Record the components of the digital file.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasTitle</td>
+    <td>fiafcore:Title</td>
+    <td>Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasTransferSpeed</td>
+    <td>fiafcore:TransferSpeed</td>
+    <td>Record the transfer speed, if different from the frame rate.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:isElement</td>
+    <td>fiafcore:Element</td>
+    <td>Record the nature or function of the moving image Item, describing its place in the photochemical or digital production or duplication process.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

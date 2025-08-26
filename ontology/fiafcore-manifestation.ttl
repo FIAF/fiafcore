@@ -17,6 +17,88 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 ### Object Properties
 
 
+  <tr>
+    <td>fiafcore:hasColourCharacteristic</td>
+    <td>fiafcore:ColourCharacteristic</td>
+    <td>The presence of colour(s), tone(s), etc. in a Manifestation or an Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasEvent</td>
+    <td>fiafcore:Event</td>
+    <td>An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasExtent</td>
+    <td>fiafcore:Extent</td>
+    <td>The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasFormat</td>
+    <td>fiafcore:Format</td>
+    <td>The medium on or the encoding format in which the moving image Manifestation or Item is fixed.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasIdentifier</td>
+    <td>fiafcore:Identifier</td>
+    <td>An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasImageCharacteristic</td>
+    <td>fiafcore:ImageCharacteristic</td>
+    <td>The image characteristics of a moving image Manifestation or Item include aspect ratio and aperture or image format.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasItem</td>
+    <td>fiafcore:Item</td>
+    <td>Express the relationship between a moving image Manifestation and a moving image Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasLanguageUsage</td>
+    <td>fiafcore:LanguageUsage</td>
+    <td>Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasSoundCharacteristic</td>
+    <td>fiafcore:SoundCharacteristic</td>
+    <td>Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasTitle</td>
+    <td>fiafcore:Title</td>
+    <td>Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

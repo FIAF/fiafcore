@@ -21,6 +21,77 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
 
+  <tr>
+    <td>fiafcore:hasCountry</td>
+    <td>fiafcore:Country</td>
+    <td>Where known and applicable, record the geographic origin of the moving image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasEvent</td>
+    <td>fiafcore:Event</td>
+    <td>An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasGenre</td>
+    <td>fiafcore:Genre</td>
+    <td>Genre describes categories of Works, characterized by similar plots, themes, settings, situations, and characters.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasForm</td>
+    <td>fiafcore:Form</td>
+    <td>Form describes the format and/or purpose of a Work.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasIdentifier</td>
+    <td>fiafcore:Identifier</td>
+    <td>An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasLanguageUsage</td>
+    <td>fiafcore:LanguageUsage</td>
+    <td>Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasManifestation</td>
+    <td>fiafcore:Manifestation</td>
+    <td>Express the relationship between a moving image Work or Variant and a moving image Manifestation.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasSubject</td>
+    <td>fiafcore:Subject</td>
+    <td>Provide access to the Work by means of subjects (or subject identifiers) that describe the content of the Work.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasTitle</td>
+    <td>fiafcore:Title</td>
+    <td>Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasVariant</td>
+    <td>fiafcore:Variant</td>
+    <td>Express the relationship between a moving image Work and a moving image Variant.</td>
+  </tr>
+  <tr>
+    <td>fiafcore:hasWork</td>
+    <td>fiafcore:Work</td>
+    <td>Express the relationship between a moving image Work and another moving image Work.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
