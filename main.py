@@ -10,7 +10,7 @@ def main():
         for c in ttl_files:
             g += rdflib.Graph().parse(c)
 
-    g.serialize(destination=str(pathlib.Path.cwd() / "fiafcore.ttl"), format="turtle")
+    g.serialize(destination=str(pathlib.Path.cwd() / "fiafcore.ttl"), format="longturtle")
 
     print(len(g), "triples.")
 
