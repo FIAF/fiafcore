@@ -14,19 +14,3 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
 .
 
-### Object Properties
-
-<https://ontology.fiafcore.org/hasIdentifier>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Identifier"@en ; 
-    dc:description
-        "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier> <https://ontology.fiafcore.org/Agent>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Identifier> ;   
-.
-

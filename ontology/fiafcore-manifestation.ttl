@@ -30,20 +30,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/ColourCharacteristic> ;   
 .
 
-<https://ontology.fiafcore.org/hasEvent>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Event"@en ; 
-    dc:description
-        "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Event> ;   
-.
-
 <https://ontology.fiafcore.org/hasExtent>
     a owl:ObjectProperty ;
     rdfs:label 
@@ -70,20 +56,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
     rdfs:range 
         <https://ontology.fiafcore.org/Format> ;   
-.
-
-<https://ontology.fiafcore.org/hasIdentifier>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Identifier"@en ; 
-    dc:description
-        "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier> <https://ontology.fiafcore.org/Agent>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Identifier> ;   
 .
 
 <https://ontology.fiafcore.org/hasImageCharacteristic>
@@ -114,20 +86,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Item> ;   
 .
   
-<https://ontology.fiafcore.org/hasLanguageUsage>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Language Usage"@en ;
-    dc:description
-        "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/LanguageUsage> ;
-.
-  
 <https://ontology.fiafcore.org/hasSoundCharacteristic>
     a owl:ObjectProperty ;
     rdfs:label 
@@ -140,20 +98,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
     rdfs:range 
         <https://ontology.fiafcore.org/SoundCharacteristic> ;   
-.
-
-<https://ontology.fiafcore.org/hasTitle>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Title"@en ; 
-    dc:description
-        "Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Title> ;   
 .
   
 ### Subclasses

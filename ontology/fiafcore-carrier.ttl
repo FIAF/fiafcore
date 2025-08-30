@@ -11,33 +11,3 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:description
         "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
 .
-
-### Object Properties
-
-<https://ontology.fiafcore.org/hasEvent>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Event"@en ; 
-    dc:description
-        "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Event> ;   
-.
-
-<https://ontology.fiafcore.org/hasIdentifier>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Identifier"@en ; 
-    dc:description
-        "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier> <https://ontology.fiafcore.org/Agent>) ] ;
-    rdfs:range 
-        <https://ontology.fiafcore.org/Identifier> ;   
-.
