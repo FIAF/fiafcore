@@ -16,127 +16,146 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-
-  <tr>
-    <td>fiafcore:hasColourCharacteristic</td>
-    <td>fiafcore:ColourCharacteristic</td>
-    <td>The presence of colour(s), tone(s), etc. in a Manifestation or an Item.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasEvent</td>
-    <td>fiafcore:Event</td>
-    <td>An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasExtent</td>
-    <td>fiafcore:Extent</td>
-    <td>The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasFormat</td>
-    <td>fiafcore:Format</td>
-    <td>The medium on or the encoding format in which the moving image Manifestation or Item is fixed.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasIdentifier</td>
-    <td>fiafcore:Identifier</td>
-    <td>An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasImageCharacteristic</td>
-    <td>fiafcore:ImageCharacteristic</td>
-    <td>The image characteristics of a moving image Manifestation or Item include aspect ratio and aperture or image format.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasItem</td>
-    <td>fiafcore:Item</td>
-    <td>Express the relationship between a moving image Manifestation and a moving image Item.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasLanguageUsage</td>
-    <td>fiafcore:LanguageUsage</td>
-    <td>Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasSoundCharacteristic</td>
-    <td>fiafcore:SoundCharacteristic</td>
-    <td>Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item.</td>
-  </tr>
-  <tr>
-    <td>fiafcore:hasTitle</td>
-    <td>fiafcore:Title</td>
-    <td>Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
-  </tr>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<https://ontology.fiafcore.org/Manifestation>
-    a owl:Class ;
-    rdfs:label
-        "Manifestation"@en ;
+<https://ontology.fiafcore.org/hasColourCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Colour Characteristic"@en ; 
     dc:description
-        "A moving image Manifestation is the embodiment of a moving image Work/Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work/Variant."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.24079%3A4425> ;
+        "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/ColourCharacteristic> ;   
 .
 
+<https://ontology.fiafcore.org/hasEvent>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Event"@en ; 
+    dc:description
+        "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/Event> ;   
+.
 
+<https://ontology.fiafcore.org/hasExtent>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Extent"@en ; 
+    dc:description
+        "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/Extent> ;   
+.
 
+<https://ontology.fiafcore.org/hasFormat>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Format"@en ; 
+    dc:description
+        "The medium on or the encoding format in which the moving image Manifestation or Item is fixed."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/Format> ;   
+.
 
+<https://ontology.fiafcore.org/hasIdentifier>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Identifier"@en ; 
+    dc:description
+        "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier> <https://ontology.fiafcore.org/Agent>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/Identifier> ;   
+.
 
+<https://ontology.fiafcore.org/hasImageCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Image Characteristic"@en ; 
+    dc:description
+        "The image characteristics of a moving image Manifestation or Item include aspect ratio and aperture or image format."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/ImageCharacteristic> ;   
+.
+    
+<https://ontology.fiafcore.org/hasItem>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Item"@en ; 
+    dc:description
+        "Express the relationship between a moving image Manifestation and a moving image Item."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Manifestation> ; 
+    rdfs:range 
+        <https://ontology.fiafcore.org/Item> ;   
+.
+  
+<https://ontology.fiafcore.org/hasLanguageUsage>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Language Usage"@en ;
+    dc:description
+        "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/LanguageUsage> ;
+.
+  
+<https://ontology.fiafcore.org/hasSoundCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Sound Characteristic"@en ; 
+    dc:description
+        "Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/SoundCharacteristic> ;   
+.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<https://ontology.fiafcore.org/hasTitle>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Title"@en ; 
+    dc:description
+        "Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
+    rdfs:range 
+        <https://ontology.fiafcore.org/Title> ;   
+.
+  
 ### Subclasses
 
 <https://ontology.fiafcore.org/BroadcastManifestation>
@@ -259,104 +278,3 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Manifestation> ;
 .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Object Properties
-
-<https://ontology.fiafcore.org/hasColourCharacteristic>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Colour Characteristic"@en ;
-    dc:description
-        "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2075%3A135> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
-    rdfs:range 
-        <https://ontology.fiafcore.org/ColourCharacteristic> ;
-.
-
-<https://ontology.fiafcore.org/hasExtent>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Extent"@en ;
-    dc:description
-        "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2076%3A140> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
-    rdfs:range 
-        <https://ontology.fiafcore.org/Extent> ;
-.
-
-<https://ontology.fiafcore.org/hasFormat>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Format"@en ;
-    dc:description
-        "The format of a Manifestation is the description of the physical artefact or the digital file on which it is fixed."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2066%3A119> ;    
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
-    rdfs:range 
-        <https://ontology.fiafcore.org/Format> ;
-.
-
-<https://ontology.fiafcore.org/hasImageCharacteristic>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Image Characteristic"@en ;
-    dc:description
-        "The projection characteristics of a Manifestation include aspect ratio and aperture or image format."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2071%3A126> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
-    rdfs:range 
-        <https://ontology.fiafcore.org/ImageCharacteristic> ;
-.
-
-<https://ontology.fiafcore.org/hasItem>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Item"@en ;
-    dc:description
-        "Express the relationship between a moving image Manifestation and a moving image Item"@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2093%3A170> ;
-    rdfs:domain 
-        <https://ontology.fiafcore.org/Manifestation> ;          
-    rdfs:range 
-        <https://ontology.fiafcore.org/Item> ;
-.
-
-<https://ontology.fiafcore.org/hasSoundCharacteristic>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Sound Characteristic"@en ;
-    dc:description
-        "Sound characteristics are technical specifications relating to the placement of sound on a Manifestation."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2072%3A129> ;
-    rdfs:domain 
-        [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;        
-    rdfs:range 
-        <https://ontology.fiafcore.org/SoundCharacteristic> ;
-.
