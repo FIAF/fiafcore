@@ -11,3 +11,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:description
         "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
 .
+
+### Subclasses
+
+### Object Properties

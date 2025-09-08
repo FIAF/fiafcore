@@ -14,6 +14,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36209%3A5084> ;
 .
 
+### Subclasses
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasBase>

@@ -14,3 +14,42 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
 .
 
+### Subclasses
+
+<https://ontology.fiafcore.org/CorporateAgent>
+    a owl:Class ;
+    rdfs:label
+        "Corporate Agent"@en ;
+    dc:description
+        ""@en ;
+    dc:source
+        <> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/GroupAgent>
+    a owl:Class ;
+    rdfs:label
+        "Group Agent"@en ;
+    dc:description
+        ""@en ;
+    dc:source
+        <> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/PersonAgent>
+    a owl:Class ;
+    rdfs:label
+        "Person Agent"@en ;
+    dc:description
+        ""@en ;
+    dc:source
+        <> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Agent> ;
+.
+
+### Object Properties
