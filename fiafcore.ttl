@@ -2,6 +2,15 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://ontology.fiafcore.org/AbridgedVariant>
+    a owl:Class ;
+    rdfs:label "Abridged Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
 
 <https://ontology.fiafcore.org/AnalyticWork>
     a owl:Class ;
@@ -9,6 +18,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:description "Content that is contained in another content. A component part may itself be either monographic or serial."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/AugmentedVariant>
+    a owl:Class ;
+    rdfs:label "Augmented Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
 <https://ontology.fiafcore.org/BroadcastManifestation>
@@ -19,12 +36,68 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/CensoredVariant>
+    a owl:Class ;
+    rdfs:label "Censored Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
 <https://ontology.fiafcore.org/CollectionWork>
     a owl:Class ;
     rdfs:label "Collection Work"@en ;
     dc:description "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/ColourizedVariant>
+    a owl:Class ;
+    rdfs:label "Colourized Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/CorporateAgent>
+    a owl:Class ;
+    rdfs:label "Corporate Agent"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/DifferentSoundtrackVariant>
+    a owl:Class ;
+    rdfs:label "Different Soundtrack Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/DubbedVariant>
+    a owl:Class ;
+    rdfs:label "Dubbed Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/GreyscaledVariant>
+    a owl:Class ;
+    rdfs:label "Greyscaled Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/GroupAgent>
+    a owl:Class ;
+    rdfs:label "Group Agent"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
 .
 
 <https://ontology.fiafcore.org/HomeViewingManifestation>
@@ -67,6 +140,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/PersonAgent>
+    a owl:Class ;
+    rdfs:label "Person Agent"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
+.
+
 <https://ontology.fiafcore.org/PreReleaseManifestation>
     a owl:Class ;
     rdfs:label "Pre-Release Manifestation"@en ;
@@ -83,6 +164,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/PreservationVariant>
+    a owl:Class ;
+    rdfs:label "Preservation Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
 <https://ontology.fiafcore.org/RestorationManifestation>
     a owl:Class ;
     rdfs:label "Restoration Manifestation"@en ;
@@ -91,12 +180,36 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/RestorationVariant>
+    a owl:Class ;
+    rdfs:label "Restoration Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
 <https://ontology.fiafcore.org/SerialWork>
     a owl:Class ;
     rdfs:label "Serial Work"@en ;
     dc:description "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/SonorizedVariant>
+    a owl:Class ;
+    rdfs:label "Sonorized Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/SubtitledVariant>
+    a owl:Class ;
+    rdfs:label "Subtitled Variant"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
 <https://ontology.fiafcore.org/TheatricalManifestation>
@@ -115,6 +228,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/hasAchievement>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Achievement"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range xsd:string ;
+.
+
 <https://ontology.fiafcore.org/hasActivity>
     a owl:ObjectProperty ;
     rdfs:label "Has Activity"@en ;
@@ -131,6 +253,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-activity.ttl> ;
     rdfs:domain <https://ontology.fiafcore.org/Activity> ;
     rdfs:range <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/hasAwardName>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Award Name"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range xsd:string ;
 .
 
 <https://ontology.fiafcore.org/hasBase>
@@ -175,6 +306,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/ColourCharacteristic> ;
 .
 
+<https://ontology.fiafcore.org/hasCondition>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Condition"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/InspectionEvent> ;
+    rdfs:range <https://ontology.fiafcore.org/Condition> ;
+.
+
 <https://ontology.fiafcore.org/hasCountry>
     a owl:ObjectProperty ;
     rdfs:label "Has Country"@en ;
@@ -182,6 +322,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2032%3A57> ;
     rdfs:domain <https://ontology.fiafcore.org/Work> ;
     rdfs:range <https://vocabulary.fiafcore.org/Country> ;
+.
+
+<https://ontology.fiafcore.org/hasDate>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Date"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range xsd:date ;
 .
 
 <https://ontology.fiafcore.org/hasEvent>
@@ -327,6 +476,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/LineStandard> ;
 .
 
+<https://ontology.fiafcore.org/hasLocation>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Location"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range <https://ontology.fiafcore.org/Location> ;
+.
+
 <https://ontology.fiafcore.org/hasManifestation>
     a owl:ObjectProperty ;
     rdfs:label "Has Manifestation"@en ;
@@ -455,6 +613,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/hasVerdict>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Verdict"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range xsd:string ;
+.
+
 <https://ontology.fiafcore.org/hasWork>
     a owl:ObjectProperty ;
     rdfs:label "Has Work"@en ;
@@ -473,6 +640,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range <https://ontology.fiafcore.org/Element> ;
 .
 
+<https://ontology.fiafcore.org/nominationOnly>
+    a owl:ObjectProperty ;
+    rdfs:label "Nomination Only"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:range xsd:boolean ;
+.
+
 <https://ontology.fiafcore.org/FrameRate>
     a owl:ObjectProperty ;
     rdfs:label "Has Frame Rate"@en ;
@@ -489,6 +665,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
 .
 
+<https://ontology.fiafcore.org/Carrier>
+    a owl:Class ;
+    rdfs:label "Carrier"@en ;
+    dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
+.
+
 <https://ontology.fiafcore.org/Agent>
     a owl:Class ;
     rdfs:label "Agent"@en ;
@@ -503,10 +685,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2049%3A82> ;
 .
 
-<https://ontology.fiafcore.org/Carrier>
+<https://ontology.fiafcore.org/Work>
     a owl:Class ;
-    rdfs:label "Carrier"@en ;
-    dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
+    rdfs:label "Work"@en ;
+    dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
 
 <https://ontology.fiafcore.org/Variant>
@@ -514,13 +697,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Variant"@en ;
     dc:description "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35990%3A5031> ;
-.
-
-<https://ontology.fiafcore.org/Work>
-    a owl:Class ;
-    rdfs:label "Work"@en ;
-    dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
-    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
 
 <https://ontology.fiafcore.org/Manifestation>

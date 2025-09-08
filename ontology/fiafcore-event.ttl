@@ -14,6 +14,80 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2049%3A82> ;
 .
 
+### Subclasses
+
+### Datatype Properties
+
+<https://ontology.fiafcore.org/hasAchievement>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Achievement"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#string> ;   
+.
+
+<https://ontology.fiafcore.org/hasAwardName>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Award Name"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#string> ;   
+.
+
+<https://ontology.fiafcore.org/hasDate>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Date"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#date> ;   
+.
+
+<https://ontology.fiafcore.org/nominationOnly>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Nomination Only"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#boolean> ;   
+.
+
+<https://ontology.fiafcore.org/hasVerdict>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Verdict"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#string> ;   
+.
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasActivity>
@@ -29,3 +103,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range 
         <https://ontology.fiafcore.org/Activity> ;   
 .
+
+<https://ontology.fiafcore.org/hasCondition>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Condition"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/InspectionEvent> ;   
+    rdfs:range 
+        <https://ontology.fiafcore.org/Condition> ;   
+.
+
+<https://ontology.fiafcore.org/hasLocation>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Location"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Event> ;   
+    rdfs:range 
+        <https://ontology.fiafcore.org/Location> ;   
+.
+
