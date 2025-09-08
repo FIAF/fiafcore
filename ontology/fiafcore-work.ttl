@@ -14,6 +14,56 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
 
+### Subclasses
+
+<https://ontology.fiafcore.org/AnalyticWork>
+    a owl:Class ;
+    rdfs:label
+        "Analytic Work"@en ;
+    dc:description
+        "Content that is contained in another content. A component part may itself be either monographic or serial."@en ;
+    dc:source
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/CollectionWork>
+    a owl:Class ;
+    rdfs:label
+        "Collection Work"@en ;
+    dc:description
+        "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ;
+    dc:source
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/MonographicWork>
+    a owl:Class ;
+    rdfs:label
+        "Monographic Work"@en ;
+    dc:description
+        "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en ;
+    dc:source
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Work> ;
+.
+
+<https://ontology.fiafcore.org/SerialWork>
+    a owl:Class ;
+    rdfs:label
+        "Serial Work"@en ;
+    dc:description
+        "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ;
+    dc:source
+        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
+    rdfs:subClassOf 
+        <https://ontology.fiafcore.org/Work> ;
+.
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasCountry>
@@ -169,54 +219,3 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:range 
         <https://ontology.fiafcore.org/Work> ;
 .
-
-### Subclasses
-
-<https://ontology.fiafcore.org/AnalyticWork>
-    a owl:Class ;
-    rdfs:label
-        "Analytic Work"@en ;
-    dc:description
-        "Content that is contained in another content. A component part may itself be either monographic or serial."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Work> ;
-.
-
-<https://ontology.fiafcore.org/CollectionWork>
-    a owl:Class ;
-    rdfs:label
-        "Collection Work"@en ;
-    dc:description
-        "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Work> ;
-.
-
-<https://ontology.fiafcore.org/MonographicWork>
-    a owl:Class ;
-    rdfs:label
-        "Monographic Work"@en ;
-    dc:description
-        "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Work> ;
-.
-
-<https://ontology.fiafcore.org/SerialWork>
-    a owl:Class ;
-    rdfs:label
-        "Serial Work"@en ;
-    dc:description
-        "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Work> ;
-.
-
