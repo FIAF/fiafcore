@@ -28,6 +28,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/AwardOrNominationEvent>
+    a owl:Class ;
+    rdfs:label "Award Or Nomination Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/BroadcastEvent>
+    a owl:Class ;
+    rdfs:label "Broadcast Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
 <https://ontology.fiafcore.org/BroadcastManifestation>
     a owl:Class ;
     rdfs:label "Broadcast Manifestation"@en ;
@@ -36,12 +52,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/CastingEvent>
+    a owl:Class ;
+    rdfs:label "Casting Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ProductionEvent> ;
+.
+
 <https://ontology.fiafcore.org/CensoredVariant>
     a owl:Class ;
     rdfs:label "Censored Variant"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/CensorshipEvent>
+    a owl:Class ;
+    rdfs:label "Censorship Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DecisionEvent> ;
 .
 
 <https://ontology.fiafcore.org/CollectionWork>
@@ -76,12 +108,60 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/DigitisationEvent>
+    a owl:Class ;
+    rdfs:label "Digitisation Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PreservationEvent> ;
+.
+
+<https://ontology.fiafcore.org/DistributionEvent>
+    a owl:Class ;
+    rdfs:label "Distribution Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
+<https://ontology.fiafcore.org/DonationEvent>
+    a owl:Class ;
+    rdfs:label "Donation Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AcquisitionEvent> ;
+.
+
 <https://ontology.fiafcore.org/DubbedVariant>
     a owl:Class ;
     rdfs:label "Dubbed Variant"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/DuplicationEvent>
+    a owl:Class ;
+    rdfs:label "Duplication Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PreservationEvent> ;
+.
+
+<https://ontology.fiafcore.org/ExchangeEvent>
+    a owl:Class ;
+    rdfs:label "Exchange Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://ontology.fiafcore.org/FilmPrintingEvent>
+    a owl:Class ;
+    rdfs:label "FilmPrinting Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://ontology.fiafcore.org/GreyscaledVariant>
@@ -100,6 +180,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
 .
 
+<https://ontology.fiafcore.org/HomeVideoPublicationEvent>
+    a owl:Class ;
+    rdfs:label "Home Video Publication Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
 <https://ontology.fiafcore.org/HomeViewingManifestation>
     a owl:Class ;
     rdfs:label "Home Viewing Manifestation"@en ;
@@ -108,12 +196,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/IndoorShootingEvent>
+    a owl:Class ;
+    rdfs:label "Indoor Shooting Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ProductionEvent> ;
+.
+
 <https://ontology.fiafcore.org/InternetManifestation>
     a owl:Class ;
     rdfs:label "Internet Manifestation"@en ;
     dc:description "A moving image Manifestation distributed on the Internet (stream or download) for works of any type."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36472%3A5147> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/LoanEvent>
+    a owl:Class ;
+    rdfs:label "Loan Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://ontology.fiafcore.org/MasteringEvent>
+    a owl:Class ;
+    rdfs:label "Mastering Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://ontology.fiafcore.org/MonographicWork>
@@ -132,12 +244,52 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/NontheatricalDistributionEvent>
+    a owl:Class ;
+    rdfs:label "Nontheatrical Distribution Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
+<https://ontology.fiafcore.org/NotForReleaseEvent>
+    a owl:Class ;
+    rdfs:label "Not For Release Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
 <https://ontology.fiafcore.org/NotForReleaseManifestation>
     a owl:Class ;
     rdfs:label "Not For Release Manifestation"@en ;
     dc:description "Any moving image Manifestation where the viewing activity was private, due to the nature of the work or the nature of the viewing."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36455%3A5143> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/OffAirRecordingEvent>
+    a owl:Class ;
+    rdfs:label "Off-Air Recording Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://ontology.fiafcore.org/OnlineTransmissionEvent>
+    a owl:Class ;
+    rdfs:label "Online Transmission Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
+<https://ontology.fiafcore.org/OutdoorShootingEvent>
+    a owl:Class ;
+    rdfs:label "Outdoor Shooting Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ProductionEvent> ;
 .
 
 <https://ontology.fiafcore.org/PersonAgent>
@@ -148,12 +300,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
 .
 
+<https://ontology.fiafcore.org/PostproductionEvent>
+    a owl:Class ;
+    rdfs:label "Postproduction Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ProductionEvent> ;
+.
+
 <https://ontology.fiafcore.org/PreReleaseManifestation>
     a owl:Class ;
     rdfs:label "Pre-Release Manifestation"@en ;
     dc:description "A moving image Manifestation type that may be used to represent any embodiments of a moving image Work that exist before the finalisation or release of the moving image Work."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36443%3A5140> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/PrereleaseEvent>
+    a owl:Class ;
+    rdfs:label "Prerelease Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
 .
 
 <https://ontology.fiafcore.org/PreservationManifestation>
@@ -172,6 +340,38 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/PurchaseEvent>
+    a owl:Class ;
+    rdfs:label "Purchase Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://ontology.fiafcore.org/RatingEvent>
+    a owl:Class ;
+    rdfs:label "Rating Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DecisionEvent> ;
+.
+
+<https://ontology.fiafcore.org/ReleaseEvent>
+    a owl:Class ;
+    rdfs:label "Release Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
+<https://ontology.fiafcore.org/ReproductionEvent>
+    a owl:Class ;
+    rdfs:label "Reproduction Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PreservationEvent> ;
+.
+
 <https://ontology.fiafcore.org/RestorationManifestation>
     a owl:Class ;
     rdfs:label "Restoration Manifestation"@en ;
@@ -186,6 +386,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
+.
+
+<https://ontology.fiafcore.org/RevisionEvent>
+    a owl:Class ;
+    rdfs:label "Revision Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DecisionEvent> ;
+.
+
+<https://ontology.fiafcore.org/RightsCopyrightRegistrationEvent>
+    a owl:Class ;
+    rdfs:label "Rights/Copyright/Registration Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/ScanningEvent>
+    a owl:Class ;
+    rdfs:label "Scanning Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://ontology.fiafcore.org/SerialWork>
@@ -212,6 +436,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
+<https://ontology.fiafcore.org/TelecineEvent>
+    a owl:Class ;
+    rdfs:label "Telecine Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://ontology.fiafcore.org/TheatricalDistributionEvent>
+    a owl:Class ;
+    rdfs:label "Theatrical Distribution Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PublicationEvent> ;
+.
+
 <https://ontology.fiafcore.org/TheatricalManifestation>
     a owl:Class ;
     rdfs:label "Theatrical Manifestation"@en ;
@@ -220,12 +460,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
 .
 
+<https://ontology.fiafcore.org/TransferEvent>
+    a owl:Class ;
+    rdfs:label "Transfer Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/PreservationEvent> ;
+.
+
 <https://ontology.fiafcore.org/UnreleasedManifestation>
     a owl:Class ;
     rdfs:label "Unreleased Manifestation"@en ;
     dc:description "Refers to Manifestations which do not represent a release/distribution event, but where the work was intended for release, e.g. the film was made, completed and intended for release, but was not then released due to censorship or political impediments, or other reason."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36459%3A5144> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+.
+
+<https://ontology.fiafcore.org/UploadingEvent>
+    a owl:Class ;
+    rdfs:label "Uploading Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://ontology.fiafcore.org/VideoCopyingEvent>
+    a owl:Class ;
+    rdfs:label "VideoCopying Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://ontology.fiafcore.org/hasAchievement>
@@ -618,7 +882,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:label "Has Verdict"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:domain <https://ontology.fiafcore.org/Event> ;
+    rdfs:domain <https://ontology.fiafcore.org/DecisionEvent> ;
     rdfs:range xsd:string ;
 .
 
@@ -658,6 +922,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range <https://ontology.fiafcore.org/FrameRate> ;
 .
 
+<https://ontology.fiafcore.org/InspectionEvent>
+    a owl:Class ;
+    rdfs:label "Inspection Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
 <https://ontology.fiafcore.org/Activity>
     a owl:Class ;
     rdfs:label "Activity"@en ;
@@ -671,11 +943,59 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
 .
 
+<https://ontology.fiafcore.org/DecisionEvent>
+    a owl:Class ;
+    rdfs:label "Decision Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/PreservationEvent>
+    a owl:Class ;
+    rdfs:label "Preservation Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/ProductionEvent>
+    a owl:Class ;
+    rdfs:label "Production Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/AcquisitionEvent>
+    a owl:Class ;
+    rdfs:label "Acquisition Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
 <https://ontology.fiafcore.org/Agent>
     a owl:Class ;
     rdfs:label "Agent"@en ;
     dc:description "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
+.
+
+<https://ontology.fiafcore.org/ManufactureEvent>
+    a owl:Class ;
+    rdfs:label "Manufacture Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
+.
+
+<https://ontology.fiafcore.org/PublicationEvent>
+    a owl:Class ;
+    rdfs:label "Publication Event"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
 .
 
 <https://ontology.fiafcore.org/Event>
