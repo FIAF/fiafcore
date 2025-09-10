@@ -16,6 +16,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
+### Datatype Properties
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasBase>
