@@ -4,6 +4,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
+<https://ontology.fiafcore.org/Genre>
+    a owl:Class ;
+    rdfs:label
+        "Genre"@en ;
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+.
+
 ### Subclasses
 
 ### Datatype Properties

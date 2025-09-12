@@ -444,14 +444,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
-<https://ontology.fiafcore.org/CorporateAgent>
-    a owl:Class ;
-    rdfs:label "Corporate Agent"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
-.
-
 <https://ontology.fiafcore.org/CostumeDesigner>
     a owl:Class ;
     rdfs:label "Costume Designer"@en ;
@@ -490,6 +482,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description "Costumer. The person or persons responsible for taking measurements of cast members and fitting the costumes in pre-production, and, during shooting, making sure the costumes are correct, complete, and not in need of repair or alteration. In the past incorporated into the wardrobe function, but today a distinctly separate category."@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-activity.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+.
+
+<https://ontology.fiafcore.org/Country>
+    a owl:Class ;
+    rdfs:label "Country"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-country.ttl> ;
 .
 
 <https://ontology.fiafcore.org/CraneOperator>
@@ -1965,7 +1964,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description "Record the name of the institution possessing the moving image Item or authorised to make it available."@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/HoldingInstitution> ;
+    rdfs:range <https://ontology.fiafcore.org/CorporateAgent> ;
 .
 
 <https://ontology.fiafcore.org/hasIdentifier>
@@ -2209,12 +2208,69 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range xsd:boolean ;
 .
 
+<https://ontology.fiafcore.org/Base>
+    a owl:Class ;
+    rdfs:label "Base"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-base.ttl> ;
+.
+
+<https://ontology.fiafcore.org/BroadcastStandard>
+    a owl:Class ;
+    rdfs:label "Broadcast Standard"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-broadcaststandard.ttl> ;
+.
+
 <https://ontology.fiafcore.org/CensorshipActivity>
     a owl:Class ;
     rdfs:label "Censorship Activity"@en ;
     dc:description "Censorship and Rating"@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-activity.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
+.
+
+<https://ontology.fiafcore.org/ColourCharacteristic>
+    a owl:Class ;
+    rdfs:label "Colour Characteristic"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
+.
+
+<https://ontology.fiafcore.org/CorporateAgent>
+    a owl:Class ;
+    rdfs:label "Corporate Agent"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
+.
+
+<https://ontology.fiafcore.org/Element>
+    a owl:Class ;
+    rdfs:label "Element"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-element.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Extent>
+    a owl:Class ;
+    rdfs:label "Extent"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Form>
+    a owl:Class ;
+    rdfs:label "Form"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-form.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Format>
+    a owl:Class ;
+    rdfs:label "Format"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-format.ttl> ;
 .
 
 <https://ontology.fiafcore.org/FrameRate>
@@ -2226,6 +2282,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range <https://ontology.fiafcore.org/FrameRate> ;
 .
 
+<https://ontology.fiafcore.org/Genre>
+    a owl:Class ;
+    rdfs:label "Genre"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-genre.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Identifier>
+    a owl:Class ;
+    rdfs:label "Identifier"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+.
+
+<https://ontology.fiafcore.org/ImageCharacteristic>
+    a owl:Class ;
+    rdfs:label "Image Characteristic"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-imagecharacteristic.ttl> ;
+.
+
 <https://ontology.fiafcore.org/InspectionEvent>
     a owl:Class ;
     rdfs:label "Inspection Event"@en ;
@@ -2234,12 +2311,89 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Event> ;
 .
 
+<https://ontology.fiafcore.org/LanguageUsage>
+    a owl:Class ;
+    rdfs:label "Language Usage"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+.
+
+<https://ontology.fiafcore.org/LineStandard>
+    a owl:Class ;
+    rdfs:label "Line Standard"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-linestandard.ttl> ;
+.
+
 <https://ontology.fiafcore.org/PuppetActivity>
     a owl:Class ;
     rdfs:label "Puppet Activity"@en ;
     dc:description "Puppet Films"@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-activity.ttl> ;
     rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
+.
+
+<https://ontology.fiafcore.org/Resolution>
+    a owl:Class ;
+    rdfs:label "Resolution"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-resolution.ttl> ;
+.
+
+<https://ontology.fiafcore.org/SoundCharacteristic>
+    a owl:Class ;
+    rdfs:label "Sound Characteristic"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
+.
+
+<https://ontology.fiafcore.org/SourceDevice>
+    a owl:Class ;
+    rdfs:label "Source Device"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-sourcedevice.ttl> ;
+.
+
+<https://ontology.fiafcore.org/SourceSoftware>
+    a owl:Class ;
+    rdfs:label "Source Software"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-sourcesoftware.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Status>
+    a owl:Class ;
+    rdfs:label "Status"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-status.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Stock>
+    a owl:Class ;
+    rdfs:label "Stock"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Stream>
+    a owl:Class ;
+    rdfs:label "Stream"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stream.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Subject>
+    a owl:Class ;
+    rdfs:label "Subject"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-subject.ttl> ;
+.
+
+<https://ontology.fiafcore.org/Title>
+    a owl:Class ;
+    rdfs:label "Title"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
 .
 
 <https://ontology.fiafcore.org/EditingActivity>
