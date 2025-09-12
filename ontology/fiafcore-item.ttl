@@ -87,7 +87,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:domain 
         <https://ontology.fiafcore.org/Item> ; 
     rdfs:range 
-        <https://ontology.fiafcore.org/HoldingInstitution> ;   
+        <https://ontology.fiafcore.org/CorporateAgent> ;   
 .
 
 <https://ontology.fiafcore.org/hasLineStandard>
