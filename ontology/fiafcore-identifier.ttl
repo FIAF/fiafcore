@@ -18,4 +18,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
+<https://ontology.fiafcore.org/hasIdentifierValue>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Identifier Value"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Identifier> ; 
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#string> ;   
+.
+
 ### Object Properties
+
+<https://ontology.fiafcore.org/hasIdentifierAuthority>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Identifier Authority"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Identifier> ; 
+    rdfs:range 
+        <https://ontology.fiafcore.org/CorporateAgent> ;
+.

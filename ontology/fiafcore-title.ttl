@@ -18,4 +18,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
+<https://ontology.fiafcore.org/hasTitleValue>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Title Value"@en ; 
+    dc:description
+        ""@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Title> ; 
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#string> ;   
+.
+
 ### Object Properties

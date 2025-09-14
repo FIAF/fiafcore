@@ -723,6 +723,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
+<https://ontology.fiafcore.org/FrameRate>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Frame Rate"@en ;
+    dc:description "Frame rate is the native frame rate for the Item."@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Item> ;
+    rdfs:range xsd:integer ;
+.
+
 <https://ontology.fiafcore.org/GafferLighting>
     a owl:Class ;
     rdfs:label "Gaffer/Lighting"@en ;
@@ -1986,6 +1995,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range <https://ontology.fiafcore.org/Identifier> ;
 .
 
+<https://ontology.fiafcore.org/hasIdentifierAuthority>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Identifier Authority"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Identifier> ;
+    rdfs:range <https://ontology.fiafcore.org/CorporateAgent> ;
+.
+
+<https://ontology.fiafcore.org/hasIdentifierValue>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Identifier Value"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Identifier> ;
+    rdfs:range xsd:string ;
+.
+
 <https://ontology.fiafcore.org/hasImageCharacteristic>
     a owl:ObjectProperty ;
     rdfs:label "Has Image Characteristic"@en ;
@@ -2154,13 +2181,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range <https://ontology.fiafcore.org/Title> ;
 .
 
+<https://ontology.fiafcore.org/hasTitleValue>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Title Value"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
+    rdfs:domain <https://ontology.fiafcore.org/Title> ;
+    rdfs:range xsd:string ;
+.
+
 <https://ontology.fiafcore.org/hasTransferSpeed>
     a owl:ObjectProperty ;
     rdfs:label "Has Transfer Speed"@en ;
     dc:description "Record the transfer speed, if different from the frame rate."@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/TransferSpeed> ;
+    rdfs:range xsd:integer ;
 .
 
 <https://ontology.fiafcore.org/hasVariant>
@@ -2237,14 +2273,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
 .
 
-<https://ontology.fiafcore.org/CorporateAgent>
-    a owl:Class ;
-    rdfs:label "Corporate Agent"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
-.
-
 <https://ontology.fiafcore.org/Element>
     a owl:Class ;
     rdfs:label "Element"@en ;
@@ -2273,27 +2301,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-format.ttl> ;
 .
 
-<https://ontology.fiafcore.org/FrameRate>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Frame Rate"@en ;
-    dc:description "Frame rate is the native frame rate for the Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/FrameRate> ;
-.
-
 <https://ontology.fiafcore.org/Genre>
     a owl:Class ;
     rdfs:label "Genre"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-genre.ttl> ;
-.
-
-<https://ontology.fiafcore.org/Identifier>
-    a owl:Class ;
-    rdfs:label "Identifier"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
 .
 
 <https://ontology.fiafcore.org/ImageCharacteristic>
@@ -2389,11 +2401,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-subject.ttl> ;
 .
 
-<https://ontology.fiafcore.org/Title>
+<https://ontology.fiafcore.org/CorporateAgent>
     a owl:Class ;
-    rdfs:label "Title"@en ;
+    rdfs:label "Corporate Agent"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-agent.ttl> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
 .
 
 <https://ontology.fiafcore.org/EditingActivity>
@@ -2404,10 +2417,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
+<https://ontology.fiafcore.org/Title>
+    a owl:Class ;
+    rdfs:label "Title"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
+.
+
 <https://ontology.fiafcore.org/Carrier>
     a owl:Class ;
     rdfs:label "Carrier"@en ;
     dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
+.
+
+<https://ontology.fiafcore.org/Identifier>
+    a owl:Class ;
+    rdfs:label "Identifier"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
 .
 
 <https://ontology.fiafcore.org/DecisionEvent>
