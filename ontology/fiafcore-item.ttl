@@ -18,6 +18,34 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
+<https://ontology.fiafcore.org/FrameRate>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Frame Rate"@en ; 
+    dc:description
+        "Frame rate is the native frame rate for the Item."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Item> ; 
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#integer> ;   
+.
+
+<https://ontology.fiafcore.org/hasTransferSpeed>
+    a owl:ObjectProperty ;
+    rdfs:label 
+        "Has Transfer Speed"@en ; 
+    dc:description
+        "Record the transfer speed, if different from the frame rate."@en ;
+    dc:source 
+        <> ;
+    rdfs:domain 
+        <https://ontology.fiafcore.org/Item> ; 
+    rdfs:range 
+        <http://www.w3.org/2001/XMLSchema#integer> ;   
+.
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasBase>
@@ -60,20 +88,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Item> ; 
     rdfs:range 
         <https://ontology.fiafcore.org/Carrier> ;   
-.
-
-<https://ontology.fiafcore.org/FrameRate>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Frame Rate"@en ; 
-    dc:description
-        "Frame rate is the native frame rate for the Item."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        <https://ontology.fiafcore.org/Item> ; 
-    rdfs:range 
-        <https://ontology.fiafcore.org/FrameRate> ;   
 .
 
 <https://ontology.fiafcore.org/hasHoldingInstitution>
@@ -186,20 +200,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://ontology.fiafcore.org/Item> ; 
     rdfs:range 
         <https://ontology.fiafcore.org/Stream> ;   
-.
-
-<https://ontology.fiafcore.org/hasTransferSpeed>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Transfer Speed"@en ; 
-    dc:description
-        "Record the transfer speed, if different from the frame rate."@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        <https://ontology.fiafcore.org/Item> ; 
-    rdfs:range 
-        <https://ontology.fiafcore.org/TransferSpeed> ;   
 .
 
 <https://ontology.fiafcore.org/isElement>
