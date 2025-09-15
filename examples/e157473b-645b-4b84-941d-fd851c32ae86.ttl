@@ -38,6 +38,60 @@
         ] ;
 .
 
+### Manifestation
+
+<https://example.fiafcore.org/1d7d2b60-6b79-481f-a7fc-a206b761b952> ; 
+    a <https://ontology.fiafcore.org/Manifestation> ;
+    <https://ontology.fiafcore.org/hasColourCharacteristic>
+        TODO ;
+    <https://ontology.fiafcore.org/hasExtent>
+        TODO ;
+    <https://ontology.fiafcore.org/hasFormat>
+        TODO ;
+    <https://ontology.fiafcore.org/hasImageCharacteristic>
+        TODO ;
+    <https://ontology.fiafcore.org/hasItem>
+        <https://example.fiafcore.org/b5a36b25-ce54-465c-9cc8-0bc5f523ecd6> ;
+    <https://ontology.fiafcore.org/hasSoundCharacteristic>
+        TODO ;                                        
+.
+
+### Item
+
+<https://example.fiafcore.org/b5a36b25-ce54-465c-9cc8-0bc5f523ecd6> ; 
+    a <https://ontology.fiafcore.org/Item> ;
+    <https://ontology.fiafcore.org/hasBase>
+        TODO ;
+    <https://ontology.fiafcore.org/hasBroadcastStandard>
+        TODO ;
+    <https://ontology.fiafcore.org/hasCarrier>
+        <https://example.fiafcore.org/6c6c5bcf-de54-407c-a7bb-20636d21bf74> ;
+    <https://ontology.fiafcore.org/hasHoldingInstitution>
+        TODO ;
+    <https://ontology.fiafcore.org/hasLineStandard>
+        TODO ;
+    <https://ontology.fiafcore.org/hasResolution>
+        TODO ;
+    <https://ontology.fiafcore.org/hasSourceDevice>
+        TODO ;
+    <https://ontology.fiafcore.org/hasSourceSoftware>
+        TODO ;
+    <https://ontology.fiafcore.org/hasStatus>
+        TODO ;
+    <https://ontology.fiafcore.org/hasStock>
+        TODO ;
+    <https://ontology.fiafcore.org/hasStream>
+        TODO ;
+    <https://ontology.fiafcore.org/isElement>
+        TODO ;
+.
+
+### Carrier
+
+<https://example.fiafcore.org/6c6c5bcf-de54-407c-a7bb-20636d21bf74> ;
+    a <https://ontology.fiafcore.org/Carrier> ;
+.
+
 ### Institution
 
 <https://example.fiafcore.org/c0f3912b-8506-4591-b650-7a50026592d2> 
