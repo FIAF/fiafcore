@@ -1,11 +1,17 @@
+
+### Work
+
 <https://example.fiafcore.org/e157473b-645b-4b84-941d-fd851c32ae86> 
-    a <https://ontology.fiafcore.org/Work> ;
+    a <https://ontology.fiafcore.org/MonographicWork> ;
     <https://ontology.fiafcore.org/hasCountry>
-        <https://example.fiafcore.org/vocabulary/country/Germany> ;
+        <example://vocabulary/country/Germany> ;
+
+    # TODO production event goes here.
+
     <https://ontology.fiafcore.org/hasForm>
-        <https://example.fiafcore.org/vocabulary/form/Feature> ;        
+        <example://vocabulary/form/Feature> ;        
     <https://ontology.fiafcore.org/hasGenre>
-        <https://example.fiafcore.org/vocabulary/genre/Drama> ;
+        <example://vocabulary/genre/Drama> ;
     <https://ontology.fiafcore.org/hasIdentifier>
           [
             a <https://ontology.fiafcore.org/Identifier> ;
@@ -18,16 +24,24 @@
         [
             a <https://ontology.fiafcore.org/LanguageUsage> ;
             <https://ontology.fiafcore.org/hasLanguage>
-                <https://example.fiafcore.org/vocabulary/language/German> ;
+                <example://vocabulary/language/German> ;
         ] ;
     <https://ontology.fiafcore.org/hasManifestation>
         <https://example.fiafcore.org/1d7d2b60-6b79-481f-a7fc-a206b761b952> ; 
     <https://ontology.fiafcore.org/hasSubject>
-        <https://example.fiafcore.org/vocabulary/subject/Porters> ;  
+        <example://vocabulary/subject/Porters> ;  
     <https://ontology.fiafcore.org/hasTitle>
         [
             a <https://ontology.fiafcore.org/Title> ;
             <https://ontology.fiafcore.org/hasTitleValue>
                 "Der Letzte Mann" ;  
         ] ;
+.
+
+### Institution
+
+<https://example.fiafcore.org/c0f3912b-8506-4591-b650-7a50026592d2> 
+    a <https://ontology.fiafcore.org/CorporateAgent> ;
+    rdfs:label 
+        "Bundesarchiv"@en ;  
 .
