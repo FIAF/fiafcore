@@ -18,7 +18,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
-<https://ontology.fiafcore.org/FrameRate>
+<https://ontology.fiafcore.org/hasFrameRate>
     a owl:ObjectProperty ;
     rdfs:label 
         "Has Frame Rate"@en ; 
