@@ -4,7 +4,8 @@ import rdflib
 
 def main():
     g = rdflib.Graph()
-    for sect in ["ontology", "vocabularies"]:
+    # for sect in ["ontology", "vocabularies"]:
+    for sect in ["ontology"]:
         ttl_path = pathlib.Path.cwd() / sect
         ttl_files = [x for x in ttl_path.iterdir() if x.suffix == ".ttl"]
         for c in ttl_files:
