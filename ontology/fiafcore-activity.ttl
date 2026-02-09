@@ -2130,6 +2130,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
+# None
+
 ### Object Properties
 
 <https://ontology.fiafcore.org/hasAgent>
