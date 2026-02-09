@@ -1,0 +1,26 @@
+PREFIX base: <https://vocabulary.fiafcore.org/base/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/base/> a skos:ConceptScheme;
+    skos:hasTopConcept base:Acetate, base:Nitrate, base:Polyester ;
+    skos:prefLabel "Base"@en ;
+    skos:definition "The primary chemical characteristic of the physical carrier."@en ;
+.
+
+<https://vocabulary.fiafcore.org/base/Acetate> a skos:Concept;
+    skos:prefLabel "Acetate"@en ;
+    skos:definition "Cellulose acetate bases, including cellulose diacetate and cellulose triacetate."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Nitrate> a skos:Concept;
+    skos:prefLabel "Nitrate"@en ;
+    skos:definition "Cellulose nitrate bases, used from the birth of film until the 1950s."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Polyester> a skos:Concept;
+    skos:prefLabel "Polyester"@en ;
+    skos:definition "Polyester bases, used for film, video and audiotape."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+.
