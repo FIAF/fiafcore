@@ -1,0 +1,41 @@
+PREFIX broa: <https://vocabulary.fiafcore.org/broadcaststandard/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/broadcaststandard/> a skos:ConceptScheme;
+    skos:hasTopConcept broa:NTSC, broa:PAL, broa:SECAM ;
+    skos:prefLabel "Broadcast Standard"@en ;
+    skos:definition "Standard for broadcast encoding."@en ;
+.
+
+<https://ontology.fiafcore.org/BroadcastStandard> a owl:Class ;
+    rdfs:label "Broadcast Standard"@en ;
+    dc:description "Standard for broadcast encoding."@en ;
+.
+
+<https://vocabulary.fiafcore.org/broadcaststandard/NTSC> a owl:Class, skos:Concept;
+    skos:prefLabel "NTSC"@en ;
+    skos:definition "Broadcast standard most commonly associated with North America."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/broadcaststandard/> ;
+    rdfs:label "NTSC"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/broadcaststandard/PAL> a owl:Class, skos:Concept;
+    skos:prefLabel "PAL"@en ;
+    skos:definition "Broadcast standard most commonly associated with Europe and Australia."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/broadcaststandard/> ;
+    rdfs:label "PAL"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/broadcaststandard/SECAM> a owl:Class, skos:Concept;
+    skos:prefLabel "SECAM"@en ;
+    skos:definition "Broadcast standard most commonly associated with France and Russia."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/broadcaststandard/> ;
+    rdfs:label "SECAM"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/BroadcastStandard> ;
+.
+
