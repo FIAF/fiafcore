@@ -1,0 +1,81 @@
+PREFIX colo: <https://vocabulary.fiafcore.org/colourstandard/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/colourstandard/> a skos:ConceptScheme;
+    skos:hasTopConcept base:Agfacolor, base:DeLuxe, base:Duartcolor, base:Eastmancolor, base:Fujicolor, base:Metrocolor, base:Orwocolor, base:Technicolor ;
+    skos:prefLabel "Colour Standard"@en ;
+    skos:definition "A standardised colour process."@en ;
+.
+
+<https://ontology.fiafcore.org/ColourStandard> a owl:Class ;
+    rdfs:label "Colour Standard"@en ;
+    dc:description "A standardised colour process."@en ;
+.
+
+<https://vocabulary.fiafcore.org/base/Agfacolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Agfacolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Agfacolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/DeLuxe> a owl:Class, skos:Concept;
+    skos:prefLabel "DeLuxe"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "DeLuxe"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Duartcolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Duartcolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Duartcolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Eastmancolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Eastmancolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Eastmancolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Fujicolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Fujicolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Fujicolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Metrocolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Metrocolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Metrocolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Orwocolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Orwocolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Orwocolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
+<https://vocabulary.fiafcore.org/base/Technicolor> a owl:Class, skos:Concept;
+    skos:prefLabel "Technicolor"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/colourstandard/> ;
+    rdfs:label "Technicolor"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
