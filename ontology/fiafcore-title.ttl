@@ -4,32 +4,129 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Title>
-    a owl:Class ;
-    rdfs:label
-        "Title"@en ;
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
+<https://ontology.fiafcore.org/Title> a owl:Class ;
+    rdfs:label "Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
+<https://ontology.fiafcore.org/AlternativeTitle> a owl:Class;
+    rdfs:label "Alternative Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/IdentifiyingTitle> a owl:Class;
+    rdfs:label "Identifiying Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/PreferredTitle> a owl:Class;
+    rdfs:label "Preferred Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/SuppliedDevisedTitle> a owl:Class;
+    rdfs:label "Supplied/Devised Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/TitleProper> a owl:Class;
+    rdfs:label "Title Proper"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Title> ;
+.
+
+<https://ontology.fiafcore.org/AbbreviatedTitle> a owl:Class;
+    rdfs:label "Abbreviated Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/AcquisitionTitle> a owl:Class;
+    rdfs:label "Acquisition Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/CorrectedTitle> a owl:Class;
+    rdfs:label "Corrected Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/ParallelTitle> a owl:Class;
+    rdfs:label "Parallel Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/Pre-ReleaseTitle> a owl:Class;
+    rdfs:label "Pre-Release Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/SearchTitle> a owl:Class;
+    rdfs:label "Search Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/SeriesTitle> a owl:Class;
+    rdfs:label "Series Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/TranslatedTitle> a owl:Class;
+    rdfs:label "Translated Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/TransliteratedTitle> a owl:Class;
+    rdfs:label "Transliterated Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
+<https://ontology.fiafcore.org/WorkingTitle> a owl:Class;
+    rdfs:label "Working Title"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AlternativeTitle> ;
+.
+
 ### Datatype Properties
 
-<https://ontology.fiafcore.org/hasTitleValue>
-    a owl:ObjectProperty ;
-    rdfs:label 
-        "Has Title Value"@en ; 
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
-    rdfs:domain 
-        <https://ontology.fiafcore.org/Title> ; 
-    rdfs:range 
-        <http://www.w3.org/2001/XMLSchema#string> ;   
+<https://ontology.fiafcore.org/hasTitleValue> a owl:ObjectProperty ;
+    rdfs:label "Has Title Value"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:domain <https://ontology.fiafcore.org/Title> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 .
 
 ### Object Properties
+
+# None
