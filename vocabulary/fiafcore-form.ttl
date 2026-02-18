@@ -1,0 +1,95 @@
+PREFIX form: <https://vocabulary.fiafcore.org/form/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/form/> a skos:ConceptScheme;
+    skos:hasTopConcept form:AmateurFilm,
+        form:CompilationFilm,
+        form:FeatureFilm,
+        form:HomeMovie,
+        form:Outtake,
+        form:ScreenTest,
+        form:Serial,
+        form:Series,
+        form:ShortFilm,
+        form:Trailer;
+    skos:prefLabel "Form"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/Form> a owl:Class ;
+    rdfs:label "Form"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/Form/AmateurFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Amateur Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Amateur Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/CompilationFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Compilation Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Compilation Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/FeatureFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Feature Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Feature Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/HomeMovie> a owl:Class, skos:Concept;
+    skos:prefLabel "Home Movie"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Home Movie"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/Outtake> a owl:Class, skos:Concept;
+    skos:prefLabel "Outtake"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Outtake"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/ScreenTest> a owl:Class, skos:Concept;
+    skos:prefLabel "Screen Test"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Screen Test"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/Serial> a owl:Class, skos:Concept;
+    skos:prefLabel "Serial"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Serial"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/Series> a owl:Class, skos:Concept;
+    skos:prefLabel "Series"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Series"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/ShortFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Short Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Short Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
+
+<https://vocabulary.fiafcore.org/Form/Trailer> a owl:Class, skos:Concept;
+    skos:prefLabel "Trailer"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/form/> ;
+    rdfs:label "Trailer"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/form> ;
+.
