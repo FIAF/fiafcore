@@ -1,0 +1,71 @@
+PREFIX soun: <https://vocabulary.fiafcore.org/soundsystem/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/soundsystem/> a skos:ConceptScheme;
+    skos:hasTopConcept soun:DolbyDigital,
+        soun:DolbyStereo,
+        soun:DTS,
+        soun:Magnetic,
+        soun:OpticalVariableArea,
+        soun:OpticalVariableDensity,
+        soun:SDDS;
+    skos:prefLabel "Sound System"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/SoundSystem> a owl:Class ;
+    rdfs:label "Sound System"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/DolbyDigital> a owl:Class, skos:Concept;
+    skos:prefLabel "Dolby Digital"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "Dolby Digital"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/DolbyStereo> a owl:Class, skos:Concept;
+    skos:prefLabel "Dolby Stereo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "Dolby Stereo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/DTS> a owl:Class, skos:Concept;
+    skos:prefLabel "DTS"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "DTS"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/Magnetic> a owl:Class, skos:Concept;
+    skos:prefLabel "Magnetic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "Magnetic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/OpticalVariableArea> a owl:Class, skos:Concept;
+    skos:prefLabel "Optical Variable Area"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "Optical Variable Area"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/OpticalVariableDensity> a owl:Class, skos:Concept;
+    skos:prefLabel "Optical Variable Density"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "Optical Variable Density"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
+
+<https://vocabulary.fiafcore.org/soundsystem/SDDS> a owl:Class, skos:Concept;
+    skos:prefLabel "SDDS"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/soundsystem/> ;
+    rdfs:label "SDDS"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/SoundSystem> ;
+.
