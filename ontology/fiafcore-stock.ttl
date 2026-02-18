@@ -4,18 +4,130 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Stock>
-    a owl:Class ;
-    rdfs:label
-        "Stock"@en ;
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
+<https://ontology.fiafcore.org/Stock> a owl:Class ;
+    rdfs:label "Stock"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
+<https://ontology.fiafcore.org/3M> a owl:Class;
+    rdfs:label "3M"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Agfa> a owl:Class;
+    rdfs:label "Agfa"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/AgfaGevaert> a owl:Class;
+    rdfs:label "Agfa Gevaert"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Dupont> a owl:Class;
+    rdfs:label "Dupont"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Eastman> a owl:Class;
+    rdfs:label "Eastman"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/EastmanKodak> a owl:Class;
+    rdfs:label "Eastman Kodak"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Ferrania> a owl:Class;
+    rdfs:label "Ferrania"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Fuji> a owl:Class;
+    rdfs:label "Fuji"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Gevaert> a owl:Class;
+    rdfs:label "Gevaert"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/GevaertBelgium> a owl:Class;
+    rdfs:label "Gevaert Belgium"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Ilford> a owl:Class;
+    rdfs:label "Ilford"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Kodak> a owl:Class;
+    rdfs:label "Kodak"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Orwo> a owl:Class;
+    rdfs:label "Orwo"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Panasonic> a owl:Class;
+    rdfs:label "Panasonic"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Pathe> a owl:Class;
+    rdfs:label "Pathe"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
+<https://ontology.fiafcore.org/Sony> a owl:Class;
+    rdfs:label "Sony"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Stock> ;
+.
+
 ### Datatype Properties
 
+# None
+
 ### Object Properties
+
+# None
