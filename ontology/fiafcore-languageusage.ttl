@@ -6,16 +6,94 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://ontology.fiafcore.org/LanguageUsage>
     a owl:Class ;
-    rdfs:label
-        "Language Usage"@en ;
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
+    rdfs:label "Language Usage"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
+<https://ontology.fiafcore.org/Dialogue> a owl:Class ;
+    rdfs:label "Dialogue"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/LanguageUsage> ;
+.
+
+<https://ontology.fiafcore.org/NoDialogue> a owl:Class ;
+    rdfs:label "No Dialogue"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+.
+
+<https://ontology.fiafcore.org/SignedLanguage> a owl:Class ;
+    rdfs:label "Signed Language"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+.
+
+<https://ontology.fiafcore.org/SpokenLanguage> a owl:Class ;
+    rdfs:label "Spoken Language"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+.
+
+<https://ontology.fiafcore.org/SungLanguage> a owl:Class ;
+    rdfs:label "Sung Language "@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+.
+
+<https://ontology.fiafcore.org/WrittenLanguage> a owl:Class ;
+    rdfs:label "Written Language"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/LanguageUsage> ;
+.
+
+<https://ontology.fiafcore.org/Captions> a owl:Class ;
+    rdfs:label "Captions"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+.
+
+<https://ontology.fiafcore.org/Credits> a owl:Class ;
+    rdfs:label "Credits"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+.
+
+<https://ontology.fiafcore.org/Intertitles> a owl:Class ;
+    rdfs:label "Intertitles"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+.
+
+<https://ontology.fiafcore.org/Subtitles> a owl:Class ;
+    rdfs:label "Subtitles"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+.
+
 ### Datatype Properties
 
+# None
+
 ### Object Properties
+
+<https://ontology.fiafcore.org/hasLanguage>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Language"@en ;
+    dc:description "Express a language."@en ;
+    dc:source <> ;
+    rdfs:domain <https://ontology.fiafcore.org/LanguageUsage> ;
+    rdfs:range <https://ontology.fiafcore.org/Language> ;
+.
