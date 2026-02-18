@@ -4,16 +4,19 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Carrier>
-    a owl:Class ;
-    rdfs:label
-        "Carrier"@en ;
-    dc:description
-        "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
+<https://ontology.fiafcore.org/Carrier> a owl:Class ;
+    rdfs:label "Carrier"@en ;
+    dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
 .
 
 ### Subclasses
 
+# None
+
 ### Datatype Properties
 
+# None
+
 ### Object Properties
+
+# None
