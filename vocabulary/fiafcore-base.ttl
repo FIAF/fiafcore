@@ -1,0 +1,40 @@
+PREFIX base: <https://vocabulary.fiafcore.org/base/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/base/> a skos:ConceptScheme;
+    skos:hasTopConcept base:Acetate, base:Nitrate, base:Polyester ;
+    skos:prefLabel "Base"@en ;
+    skos:definition "The primary chemical characteristic of the physical carrier."@en ;
+.
+
+<https://ontology.fiafcore.org/Base> a owl:Class ;
+    rdfs:label "Base"@en ;
+    dc:description "The primary chemical characteristic of the physical carrier."@en ;
+.
+
+<https://vocabulary.fiafcore.org/base/AcetateBase> a owl:Class, skos:Concept;
+    skos:prefLabel "Acetate Base"@en ;
+    skos:definition "Cellulose acetate bases, including cellulose diacetate and cellulose triacetate."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+    rdfs:label "Acetate Base"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Base> ;
+.
+
+<https://vocabulary.fiafcore.org/base/NitrateBase> a owl:Class, skos:Concept;
+    skos:prefLabel "Nitrate Base"@en ;
+    skos:definition "Cellulose nitrate bases, used from the birth of film until the 1950s."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+    rdfs:label "Nitrate Base"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Base> ;
+.
+
+<https://vocabulary.fiafcore.org/base/PolyesterBase> a owl:Class, skos:Concept;
+    skos:prefLabel "Polyester Base"@en ;
+    skos:definition "Polyester bases, used for film, video and audiotape."@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/base/> ;
+    rdfs:label "Polyester Base"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Base> ;
+.
