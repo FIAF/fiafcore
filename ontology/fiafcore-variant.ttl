@@ -4,150 +4,95 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Variant>
-    a owl:Class ;
-    rdfs:label
-        "Variant"@en ;
-    dc:description
-        "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ;
-    dc:source 
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35990%3A5031> ;
+<https://ontology.fiafcore.org/Variant> a owl:Class ;
+    rdfs:label "Variant"@en ;
+    dc:description "A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35990%3A5031> ;
 .
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/AbridgedVariant>
-    a owl:Class ;
-    rdfs:label
-        "Abridged Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/AugmentedVariant> a owl:Class;
+    rdfs:label "Augmented Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/AugmentedVariant>
-    a owl:Class ;
-    rdfs:label
-        "Augmented Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/CensoredVariant> a owl:Class;
+    rdfs:label "Censored Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/CensoredVariant>
-    a owl:Class ;
-    rdfs:label
-        "Censored Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/ColourizedVariant> a owl:Class;
+    rdfs:label "Colourized Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/ColourizedVariant>
-    a owl:Class ;
-    rdfs:label
-        "Colourized Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/CondensedVariant> a owl:Class;
+    rdfs:label "Condensed Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/DifferentSoundtrackVariant>
-    a owl:Class ;
-    rdfs:label
-        "Different Soundtrack Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/DifferentSoundTrackVariant> a owl:Class;
+    rdfs:label "Different Soundtrack Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/DubbedVariant>
-    a owl:Class ;
-    rdfs:label
-        "Dubbed Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/DubbedVariant> a owl:Class;
+    rdfs:label "Dubbed Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/GreyscaledVariant>
-    a owl:Class ;
-    rdfs:label
-        "Greyscaled Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/GreyscaledVariant> a owl:Class;
+    rdfs:label "Greyscaled Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/PreservationVariant>
-    a owl:Class ;
-    rdfs:label
-        "Preservation Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/PreservationVariant> a owl:Class;
+    rdfs:label "Preservation Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/RestorationVariant>
-    a owl:Class ;
-    rdfs:label
-        "Restoration Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/RestorationVariant> a owl:Class;
+    rdfs:label "Restoration Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/SonorizedVariant>
-    a owl:Class ;
-    rdfs:label
-        "Sonorized Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/SonorizedVariant> a owl:Class;
+    rdfs:label "Sonorized Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/SubtitledVariant>
-    a owl:Class ;
-    rdfs:label
-        "Subtitled Variant"@en ;
-    dc:description
-        ""@en ;
-    dc:source
-        <> ;
-    rdfs:subClassOf 
-        <https://ontology.fiafcore.org/Variant> ;
+<https://ontology.fiafcore.org/SubtitledVariant> a owl:Class;
+    rdfs:label "Subtitled Variant"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Variant> ;
 .
 
 ### Datatype Properties
 
+# None
+
 ### Object Properties
+
+# None
