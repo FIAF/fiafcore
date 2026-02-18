@@ -1,0 +1,1487 @@
+PREFIX lang: <https://vocabulary.fiafcore.org/language/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/language/> a skos:ConceptScheme;
+    skos:hasTopConcept lang:Abkhazian,
+        lang:Afar,
+        lang:Afrikaans,
+        lang:Akan,
+        lang:Albanian,
+        lang:Amharic,
+        lang:Arabic,
+        lang:Aragonese,
+        lang:Armenian,
+        lang:Assamese,
+        lang:Avaric,
+        lang:Avestan,
+        lang:Aymara,
+        lang:Azerbaijani,
+        lang:Bambara,
+        lang:Bashkir,
+        lang:Basque,
+        lang:Belarusian,
+        lang:Bengali,
+        lang:Bislama,
+        lang:Bosnian,
+        lang:Breton,
+        lang:Bulgarian,
+        lang:Burmese,
+        lang:Catalan,
+        lang:CentralKhmer,
+        lang:Chamorro,
+        lang:Chechen,
+        lang:Chichewa,
+        lang:Chinese,
+        lang:ChurchSlavonic,
+        lang:Chuvash,
+        lang:Cornish,
+        lang:Corsican,
+        lang:Cree,
+        lang:Croatian,
+        lang:Czech,
+        lang:Danish,
+        lang:Divehi,
+        lang:Dutch,
+        lang:Dzongkha,
+        lang:English,
+        lang:Esperanto,
+        lang:Estonian,
+        lang:Ewe,
+        lang:Faroese,
+        lang:Fijian,
+        lang:Finnish,
+        lang:French,
+        lang:Fulah,
+        lang:Gaelic,
+        lang:Galician,
+        lang:Ganda,
+        lang:Georgian,
+        lang:German,
+        lang:Greek,
+        lang:Guarani,
+        lang:Gujarati,
+        lang:Haitian,
+        lang:Hausa,
+        lang:Hawaiian,
+        lang:Hebrew,
+        lang:Herero,
+        lang:Hindi,
+        lang:HiriMotu,
+        lang:Hungarian,
+        lang:Icelandic,
+        lang:Ido,
+        lang:Igbo,
+        lang:Indonesian,
+        lang:Interlingua,
+        lang:Interlingue,
+        lang:Inuktitut,
+        lang:Inupiaq,
+        lang:Irish,
+        lang:Italian,
+        lang:Japanese,
+        lang:Javanese,
+        lang:Kalaallisut,
+        lang:Kannada,
+        lang:Kanuri,
+        lang:Kashmiri,
+        lang:Kazakh,
+        lang:Kikuyu,
+        lang:Kinyarwanda,
+        lang:Komi,
+        lang:Kongo,
+        lang:Korean,
+        lang:Kuanyama,
+        lang:Kurdish,
+        lang:Kyrgyz,
+        lang:Lao,
+        lang:Latin,
+        lang:Latvian,
+        lang:Limburgan,
+        lang:Lingala,
+        lang:Lithuanian,
+        lang:Lubakatanga,
+        lang:Luxembourgish,
+        lang:Macedonian,
+        lang:Malagasy,
+        lang:Malay,
+        lang:Malayalam,
+        lang:Maltese,
+        lang:Manx,
+        lang:Maori,
+        lang:Marathi,
+        lang:Marshallese,
+        lang:Mongolian,
+        lang:Nauru,
+        lang:Navajo,
+        lang:Ndonga,
+        lang:Nepali,
+        lang:NorthNdebele,
+        lang:NorthernSami,
+        lang:Norwegian,
+        lang:NorwegianBokmal,
+        lang:NorwegianNynorsk,
+        lang:Occitan,
+        lang:Ojibwa,
+        lang:Oriya,
+        lang:Oromo,
+        lang:Ossetian,
+        lang:Pali,
+        lang:Pashto,
+        lang:Persian,
+        lang:Polish,
+        lang:Portuguese,
+        lang:Punjabi,
+        lang:Quechua,
+        lang:Romanian,
+        lang:Romansh,
+        lang:Rundi,
+        lang:Russian,
+        lang:Samoan,
+        lang:Sango,
+        lang:Sanskrit,
+        lang:Sardinian,
+        lang:Serbian,
+        lang:Shona,
+        lang:SichuanYi,
+        lang:Sindhi,
+        lang:Sinhala,
+        lang:Slovak,
+        lang:Slovenian,
+        lang:Somali,
+        lang:SouthNdebele,
+        lang:SouthernSotho,
+        lang:Spanish,
+        lang:Sundanese,
+        lang:Swahili,
+        lang:Swati,
+        lang:Swedish,
+        lang:Tagalog,
+        lang:Tahitian,
+        lang:Tajik,
+        lang:Tamil,
+        lang:Tatar,
+        lang:Telugu,
+        lang:Thai,
+        lang:Tibetan,
+        lang:Tigrinya,
+        lang:Tonga,
+        lang:Tsonga,
+        lang:Tswana,
+        lang:Turkish,
+        lang:Turkmen,
+        lang:Twi,
+        lang:Uighur,
+        lang:Ukrainian,
+        lang:Urdu,
+        lang:Uzbek,
+        lang:Venda,
+        lang:Vietnamese,
+        lang:Volapuk,
+        lang:Walloon,
+        lang:Welsh,
+        lang:WesternFrisian,
+        lang:Wolof,
+        lang:Xhosa,
+        lang:Yiddish,
+        lang:Yoruba,
+        lang:Zhuang,
+        lang:Zulu;
+    skos:prefLabel "Language"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/Language> a owl:Class ;
+    rdfs:label "Language"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/language/Abkhazian> a owl:Class, skos:Concept;
+    skos:prefLabel "Abkhazian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Abkhazian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Afar> a owl:Class, skos:Concept;
+    skos:prefLabel "Afar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Afar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Afrikaans> a owl:Class, skos:Concept;
+    skos:prefLabel "Afrikaans"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Afrikaans"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Akan> a owl:Class, skos:Concept;
+    skos:prefLabel "Akan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Akan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Albanian> a owl:Class, skos:Concept;
+    skos:prefLabel "Albanian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Albanian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Amharic> a owl:Class, skos:Concept;
+    skos:prefLabel "Amharic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Amharic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Arabic> a owl:Class, skos:Concept;
+    skos:prefLabel "Arabic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Arabic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Aragonese> a owl:Class, skos:Concept;
+    skos:prefLabel "Aragonese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Aragonese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Armenian> a owl:Class, skos:Concept;
+    skos:prefLabel "Armenian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Armenian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Assamese> a owl:Class, skos:Concept;
+    skos:prefLabel "Assamese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Assamese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Avaric> a owl:Class, skos:Concept;
+    skos:prefLabel "Avaric"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Avaric"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Avestan> a owl:Class, skos:Concept;
+    skos:prefLabel "Avestan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Avestan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Aymara> a owl:Class, skos:Concept;
+    skos:prefLabel "Aymara"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Aymara"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Azerbaijani> a owl:Class, skos:Concept;
+    skos:prefLabel "Azerbaijani"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Azerbaijani"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bambara> a owl:Class, skos:Concept;
+    skos:prefLabel "Bambara"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bambara"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bashkir> a owl:Class, skos:Concept;
+    skos:prefLabel "Bashkir"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bashkir"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Basque> a owl:Class, skos:Concept;
+    skos:prefLabel "Basque"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Basque"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Belarusian> a owl:Class, skos:Concept;
+    skos:prefLabel "Belarusian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Belarusian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bengali> a owl:Class, skos:Concept;
+    skos:prefLabel "Bengali"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bengali"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bislama> a owl:Class, skos:Concept;
+    skos:prefLabel "Bislama"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bislama"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bosnian> a owl:Class, skos:Concept;
+    skos:prefLabel "Bosnian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bosnian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Breton> a owl:Class, skos:Concept;
+    skos:prefLabel "Breton"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Breton"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Bulgarian> a owl:Class, skos:Concept;
+    skos:prefLabel "Bulgarian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Bulgarian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Burmese> a owl:Class, skos:Concept;
+    skos:prefLabel "Burmese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Burmese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Catalan> a owl:Class, skos:Concept;
+    skos:prefLabel "Catalan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Catalan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/CentralKhmer> a owl:Class, skos:Concept;
+    skos:prefLabel "Central Khmer"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Central Khmer"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Chamorro> a owl:Class, skos:Concept;
+    skos:prefLabel "Chamorro"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Chamorro"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Chechen> a owl:Class, skos:Concept;
+    skos:prefLabel "Chechen"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Chechen"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Chichewa> a owl:Class, skos:Concept;
+    skos:prefLabel "Chichewa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Chichewa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Chinese> a owl:Class, skos:Concept;
+    skos:prefLabel "Chinese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Chinese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/ChurchSlavonic> a owl:Class, skos:Concept;
+    skos:prefLabel "Church Slavonic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Church Slavonic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Chuvash> a owl:Class, skos:Concept;
+    skos:prefLabel "Chuvash"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Chuvash"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Cornish> a owl:Class, skos:Concept;
+    skos:prefLabel "Cornish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Cornish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Corsican> a owl:Class, skos:Concept;
+    skos:prefLabel "Corsican"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Corsican"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Cree> a owl:Class, skos:Concept;
+    skos:prefLabel "Cree"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Cree"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Croatian> a owl:Class, skos:Concept;
+    skos:prefLabel "Croatian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Croatian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Czech> a owl:Class, skos:Concept;
+    skos:prefLabel "Czech"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Czech"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Danish> a owl:Class, skos:Concept;
+    skos:prefLabel "Danish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Danish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Divehi> a owl:Class, skos:Concept;
+    skos:prefLabel "Divehi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Divehi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Dutch> a owl:Class, skos:Concept;
+    skos:prefLabel "Dutch"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Dutch"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Dzongkha> a owl:Class, skos:Concept;
+    skos:prefLabel "Dzongkha"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Dzongkha"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/English> a owl:Class, skos:Concept;
+    skos:prefLabel "English"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "English"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Esperanto> a owl:Class, skos:Concept;
+    skos:prefLabel "Esperanto"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Esperanto"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Estonian> a owl:Class, skos:Concept;
+    skos:prefLabel "Estonian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Estonian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ewe> a owl:Class, skos:Concept;
+    skos:prefLabel "Ewe"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ewe"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Faroese> a owl:Class, skos:Concept;
+    skos:prefLabel "Faroese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Faroese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Fijian> a owl:Class, skos:Concept;
+    skos:prefLabel "Fijian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Fijian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Finnish> a owl:Class, skos:Concept;
+    skos:prefLabel "Finnish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Finnish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/French> a owl:Class, skos:Concept;
+    skos:prefLabel "French"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "French"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Fulah> a owl:Class, skos:Concept;
+    skos:prefLabel "Fulah"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Fulah"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Gaelic> a owl:Class, skos:Concept;
+    skos:prefLabel "Gaelic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Gaelic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Galician> a owl:Class, skos:Concept;
+    skos:prefLabel "Galician"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Galician"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ganda> a owl:Class, skos:Concept;
+    skos:prefLabel "Ganda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ganda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Georgian> a owl:Class, skos:Concept;
+    skos:prefLabel "Georgian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Georgian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/German> a owl:Class, skos:Concept;
+    skos:prefLabel "German"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "German"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Greek> a owl:Class, skos:Concept;
+    skos:prefLabel "Greek"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Greek"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Guarani> a owl:Class, skos:Concept;
+    skos:prefLabel "Guarani"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Guarani"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Gujarati> a owl:Class, skos:Concept;
+    skos:prefLabel "Gujarati"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Gujarati"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Haitian> a owl:Class, skos:Concept;
+    skos:prefLabel "Haitian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Haitian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Hausa> a owl:Class, skos:Concept;
+    skos:prefLabel "Hausa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hausa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Hawaiian> a owl:Class, skos:Concept;
+    skos:prefLabel "Hawaiian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hawaiian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Hebrew> a owl:Class, skos:Concept;
+    skos:prefLabel "Hebrew"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hebrew"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Herero> a owl:Class, skos:Concept;
+    skos:prefLabel "Herero"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Herero"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Hindi> a owl:Class, skos:Concept;
+    skos:prefLabel "Hindi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hindi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/HiriMotu> a owl:Class, skos:Concept;
+    skos:prefLabel "Hiri Motu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hiri Motu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Hungarian> a owl:Class, skos:Concept;
+    skos:prefLabel "Hungarian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Hungarian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Icelandic> a owl:Class, skos:Concept;
+    skos:prefLabel "Icelandic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Icelandic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ido> a owl:Class, skos:Concept;
+    skos:prefLabel "Ido"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ido"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Igbo> a owl:Class, skos:Concept;
+    skos:prefLabel "Igbo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Igbo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Indonesian> a owl:Class, skos:Concept;
+    skos:prefLabel "Indonesian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Indonesian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Interlingua> a owl:Class, skos:Concept;
+    skos:prefLabel "Interlingua"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Interlingua"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Interlingue> a owl:Class, skos:Concept;
+    skos:prefLabel "Interlingue"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Interlingue"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Inuktitut> a owl:Class, skos:Concept;
+    skos:prefLabel "Inuktitut"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Inuktitut"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Inupiaq> a owl:Class, skos:Concept;
+    skos:prefLabel "Inupiaq"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Inupiaq"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Irish> a owl:Class, skos:Concept;
+    skos:prefLabel "Irish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Irish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Italian> a owl:Class, skos:Concept;
+    skos:prefLabel "Italian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Italian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Japanese> a owl:Class, skos:Concept;
+    skos:prefLabel "Japanese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Japanese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Javanese> a owl:Class, skos:Concept;
+    skos:prefLabel "Javanese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Javanese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kalaallisut> a owl:Class, skos:Concept;
+    skos:prefLabel "Kalaallisut"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kalaallisut"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kannada> a owl:Class, skos:Concept;
+    skos:prefLabel "Kannada"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kannada"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kanuri> a owl:Class, skos:Concept;
+    skos:prefLabel "Kanuri"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kanuri"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kashmiri> a owl:Class, skos:Concept;
+    skos:prefLabel "Kashmiri"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kashmiri"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kazakh> a owl:Class, skos:Concept;
+    skos:prefLabel "Kazakh"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kazakh"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kikuyu> a owl:Class, skos:Concept;
+    skos:prefLabel "Kikuyu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kikuyu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kinyarwanda> a owl:Class, skos:Concept;
+    skos:prefLabel "Kinyarwanda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kinyarwanda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Komi> a owl:Class, skos:Concept;
+    skos:prefLabel "Komi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Komi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kongo> a owl:Class, skos:Concept;
+    skos:prefLabel "Kongo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kongo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Korean> a owl:Class, skos:Concept;
+    skos:prefLabel "Korean"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Korean"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kuanyama> a owl:Class, skos:Concept;
+    skos:prefLabel "Kuanyama"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kuanyama"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kurdish> a owl:Class, skos:Concept;
+    skos:prefLabel "Kurdish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kurdish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Kyrgyz> a owl:Class, skos:Concept;
+    skos:prefLabel "Kyrgyz"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Kyrgyz"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Lao> a owl:Class, skos:Concept;
+    skos:prefLabel "Lao"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Lao"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Latin> a owl:Class, skos:Concept;
+    skos:prefLabel "Latin"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Latin"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Latvian> a owl:Class, skos:Concept;
+    skos:prefLabel "Latvian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Latvian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Limburgan> a owl:Class, skos:Concept;
+    skos:prefLabel "Limburgan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Limburgan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Lingala> a owl:Class, skos:Concept;
+    skos:prefLabel "Lingala"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Lingala"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Lithuanian> a owl:Class, skos:Concept;
+    skos:prefLabel "Lithuanian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Lithuanian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Lubakatanga> a owl:Class, skos:Concept;
+    skos:prefLabel "Luba-Katanga"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Luba-Katanga"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Luxembourgish> a owl:Class, skos:Concept;
+    skos:prefLabel "Luxembourgish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Luxembourgish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Macedonian> a owl:Class, skos:Concept;
+    skos:prefLabel "Macedonian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Macedonian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Malagasy> a owl:Class, skos:Concept;
+    skos:prefLabel "Malagasy"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Malagasy"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Malay> a owl:Class, skos:Concept;
+    skos:prefLabel "Malay"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Malay"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Malayalam> a owl:Class, skos:Concept;
+    skos:prefLabel "Malayalam"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Malayalam"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Maltese> a owl:Class, skos:Concept;
+    skos:prefLabel "Maltese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Maltese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Manx> a owl:Class, skos:Concept;
+    skos:prefLabel "Manx"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Manx"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Maori> a owl:Class, skos:Concept;
+    skos:prefLabel "Maori"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Maori"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Marathi> a owl:Class, skos:Concept;
+    skos:prefLabel "Marathi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Marathi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Marshallese> a owl:Class, skos:Concept;
+    skos:prefLabel "Marshallese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Marshallese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Mongolian> a owl:Class, skos:Concept;
+    skos:prefLabel "Mongolian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Mongolian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Nauru> a owl:Class, skos:Concept;
+    skos:prefLabel "Nauru"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Nauru"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Navajo> a owl:Class, skos:Concept;
+    skos:prefLabel "Navajo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Navajo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ndonga> a owl:Class, skos:Concept;
+    skos:prefLabel "Ndonga"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ndonga"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Nepali> a owl:Class, skos:Concept;
+    skos:prefLabel "Nepali"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Nepali"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/NorthNdebele> a owl:Class, skos:Concept;
+    skos:prefLabel "North Ndebele"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "North Ndebele"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/NorthernSami> a owl:Class, skos:Concept;
+    skos:prefLabel "Northern Sami"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Northern Sami"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Norwegian> a owl:Class, skos:Concept;
+    skos:prefLabel "Norwegian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Norwegian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/NorwegianBokmal> a owl:Class, skos:Concept;
+    skos:prefLabel "Norwegian Bokmål"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Norwegian Bokmål"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/NorwegianNynorsk> a owl:Class, skos:Concept;
+    skos:prefLabel "Norwegian Nynorsk"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Norwegian Nynorsk"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Occitan> a owl:Class, skos:Concept;
+    skos:prefLabel "Occitan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Occitan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ojibwa> a owl:Class, skos:Concept;
+    skos:prefLabel "Ojibwa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ojibwa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Oriya> a owl:Class, skos:Concept;
+    skos:prefLabel "Oriya"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Oriya"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Oromo> a owl:Class, skos:Concept;
+    skos:prefLabel "Oromo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Oromo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ossetian> a owl:Class, skos:Concept;
+    skos:prefLabel "Ossetian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ossetian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Pali> a owl:Class, skos:Concept;
+    skos:prefLabel "Pali"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Pali"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Pashto> a owl:Class, skos:Concept;
+    skos:prefLabel "Pashto"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Pashto"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Persian> a owl:Class, skos:Concept;
+    skos:prefLabel "Persian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Persian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Polish> a owl:Class, skos:Concept;
+    skos:prefLabel "Polish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Polish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Portuguese> a owl:Class, skos:Concept;
+    skos:prefLabel "Portuguese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Portuguese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Punjabi> a owl:Class, skos:Concept;
+    skos:prefLabel "Punjabi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Punjabi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Quechua> a owl:Class, skos:Concept;
+    skos:prefLabel "Quechua"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Quechua"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Romanian> a owl:Class, skos:Concept;
+    skos:prefLabel "Romanian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Romanian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Romansh> a owl:Class, skos:Concept;
+    skos:prefLabel "Romansh"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Romansh"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Rundi> a owl:Class, skos:Concept;
+    skos:prefLabel "Rundi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Rundi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Russian> a owl:Class, skos:Concept;
+    skos:prefLabel "Russian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Russian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Samoan> a owl:Class, skos:Concept;
+    skos:prefLabel "Samoan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Samoan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sango> a owl:Class, skos:Concept;
+    skos:prefLabel "Sango"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sango"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sanskrit> a owl:Class, skos:Concept;
+    skos:prefLabel "Sanskrit"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sanskrit"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sardinian> a owl:Class, skos:Concept;
+    skos:prefLabel "Sardinian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sardinian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Serbian> a owl:Class, skos:Concept;
+    skos:prefLabel "Serbian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Serbian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Shona> a owl:Class, skos:Concept;
+    skos:prefLabel "Shona"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Shona"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/SichuanYi> a owl:Class, skos:Concept;
+    skos:prefLabel "Sichuan Yi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sichuan Yi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sindhi> a owl:Class, skos:Concept;
+    skos:prefLabel "Sindhi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sindhi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sinhala> a owl:Class, skos:Concept;
+    skos:prefLabel "Sinhala"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sinhala"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Slovak> a owl:Class, skos:Concept;
+    skos:prefLabel "Slovak"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Slovak"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Slovenian> a owl:Class, skos:Concept;
+    skos:prefLabel "Slovenian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Slovenian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Somali> a owl:Class, skos:Concept;
+    skos:prefLabel "Somali"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Somali"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/SouthNdebele> a owl:Class, skos:Concept;
+    skos:prefLabel "South Ndebele"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "South Ndebele"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/SouthernSotho> a owl:Class, skos:Concept;
+    skos:prefLabel "Southern Sotho"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Southern Sotho"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Spanish> a owl:Class, skos:Concept;
+    skos:prefLabel "Spanish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Spanish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Sundanese> a owl:Class, skos:Concept;
+    skos:prefLabel "Sundanese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Sundanese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Swahili> a owl:Class, skos:Concept;
+    skos:prefLabel "Swahili"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Swahili"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Swati> a owl:Class, skos:Concept;
+    skos:prefLabel "Swati"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Swati"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Swedish> a owl:Class, skos:Concept;
+    skos:prefLabel "Swedish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Swedish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tagalog> a owl:Class, skos:Concept;
+    skos:prefLabel "Tagalog"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tagalog"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tahitian> a owl:Class, skos:Concept;
+    skos:prefLabel "Tahitian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tahitian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tajik> a owl:Class, skos:Concept;
+    skos:prefLabel "Tajik"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tajik"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tamil> a owl:Class, skos:Concept;
+    skos:prefLabel "Tamil"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tamil"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tatar> a owl:Class, skos:Concept;
+    skos:prefLabel "Tatar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tatar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Telugu> a owl:Class, skos:Concept;
+    skos:prefLabel "Telugu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Telugu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Thai> a owl:Class, skos:Concept;
+    skos:prefLabel "Thai"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Thai"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tibetan> a owl:Class, skos:Concept;
+    skos:prefLabel "Tibetan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tibetan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tigrinya> a owl:Class, skos:Concept;
+    skos:prefLabel "Tigrinya"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tigrinya"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tonga> a owl:Class, skos:Concept;
+    skos:prefLabel "Tonga"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tonga"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tsonga> a owl:Class, skos:Concept;
+    skos:prefLabel "Tsonga"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tsonga"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Tswana> a owl:Class, skos:Concept;
+    skos:prefLabel "Tswana"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Tswana"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Turkish> a owl:Class, skos:Concept;
+    skos:prefLabel "Turkish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Turkish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Turkmen> a owl:Class, skos:Concept;
+    skos:prefLabel "Turkmen"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Turkmen"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Twi> a owl:Class, skos:Concept;
+    skos:prefLabel "Twi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Twi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Uighur> a owl:Class, skos:Concept;
+    skos:prefLabel "Uighur"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Uighur"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Ukrainian> a owl:Class, skos:Concept;
+    skos:prefLabel "Ukrainian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Ukrainian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Urdu> a owl:Class, skos:Concept;
+    skos:prefLabel "Urdu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Urdu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Uzbek> a owl:Class, skos:Concept;
+    skos:prefLabel "Uzbek"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Uzbek"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Venda> a owl:Class, skos:Concept;
+    skos:prefLabel "Venda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Venda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Vietnamese> a owl:Class, skos:Concept;
+    skos:prefLabel "Vietnamese"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Vietnamese"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Volapuk> a owl:Class, skos:Concept;
+    skos:prefLabel "Volapük"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Volapük"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Walloon> a owl:Class, skos:Concept;
+    skos:prefLabel "Walloon"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Walloon"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Welsh> a owl:Class, skos:Concept;
+    skos:prefLabel "Welsh"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Welsh"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/WesternFrisian> a owl:Class, skos:Concept;
+    skos:prefLabel "Western Frisian"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Western Frisian"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Wolof> a owl:Class, skos:Concept;
+    skos:prefLabel "Wolof"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Wolof"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Xhosa> a owl:Class, skos:Concept;
+    skos:prefLabel "Xhosa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Xhosa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Yiddish> a owl:Class, skos:Concept;
+    skos:prefLabel "Yiddish"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Yiddish"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Yoruba> a owl:Class, skos:Concept;
+    skos:prefLabel "Yoruba"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Yoruba"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Zhuang> a owl:Class, skos:Concept;
+    skos:prefLabel "Zhuang"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Zhuang"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
+
+<https://vocabulary.fiafcore.org/language/Zulu> a owl:Class, skos:Concept;
+    skos:prefLabel "Zulu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/language/> ;
+    rdfs:label "Zulu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Language> ;
+.
