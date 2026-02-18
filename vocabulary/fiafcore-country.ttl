@@ -1,0 +1,2007 @@
+PREFIX coun: <https://vocabulary.fiafcore.org/country/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/country/> a skos:ConceptScheme;
+    skos:hasTopConcept coun:Afghanistan,
+        coun:AlandIslands,
+        coun:Albania,
+        coun:Algeria,
+        coun:AmericanSamoa,
+        coun:Andorra,
+        coun:Angola,
+        coun:Anguilla,
+        coun:Antarctica,
+        coun:AntiguaAndBarbuda,
+        coun:Argentina,
+        coun:Armenia,
+        coun:Aruba,
+        coun:Australia,
+        coun:Austria,
+        coun:Azerbaijan,
+        coun:Bahamas,
+        coun:Bahrain,
+        coun:Bangladesh,
+        coun:Barbados,
+        coun:Belarus,
+        coun:Belgium,
+        coun:Belize,
+        coun:Benin,
+        coun:Bermuda,
+        coun:Bhutan,
+        coun:BoliviaPlurinationalStateOf,
+        coun:BonaireSintEustatiusAndSaba,
+        coun:BosniaAndHerzegovina,
+        coun:Botswana,
+        coun:BouvetIsland,
+        coun:Brazil,
+        coun:BritishIndianOceanTerritory,
+        coun:BruneiDarussalam,
+        coun:Bulgaria,
+        coun:BurkinaFaso,
+        coun:Burundi,
+        coun:CaboVerde,
+        coun:Cambodia,
+        coun:Cameroon,
+        coun:Canada,
+        coun:CaymanIslands,
+        coun:CentralAfricanRepublic,
+        coun:Chad,
+        coun:Chile,
+        coun:China,
+        coun:ChristmasIsland,
+        coun:CocosKeelingIslands,
+        coun:Colombia,
+        coun:Comoros,
+        coun:Congo,
+        coun:CongoDemocraticRepublicOfThe,
+        coun:CookIslands,
+        coun:CostaRica,
+        coun:Croatia,
+        coun:Cuba,
+        coun:Curacao,
+        coun:Cyprus,
+        coun:Czechia,
+        coun:CoteDivoire,
+        coun:Denmark,
+        coun:Djibouti,
+        coun:Dominica,
+        coun:DominicanRepublic,
+        coun:Ecuador,
+        coun:Egypt,
+        coun:ElSalvador,
+        coun:EquatorialGuinea,
+        coun:Eritrea,
+        coun:Estonia,
+        coun:Eswatini,
+        coun:Ethiopia,
+        coun:FalklandIslandsMalvinas,
+        coun:FaroeIslands,
+        coun:Fiji,
+        coun:Finland,
+        coun:France,
+        coun:FrenchGuiana,
+        coun:FrenchPolynesia,
+        coun:FrenchSouthernTerritories,
+        coun:Gabon,
+        coun:Gambia,
+        coun:Georgia,
+        coun:Germany,
+        coun:Ghana,
+        coun:Gibraltar,
+        coun:Greece,
+        coun:Greenland,
+        coun:Grenada,
+        coun:Guadeloupe,
+        coun:Guam,
+        coun:Guatemala,
+        coun:Guernsey,
+        coun:Guinea,
+        coun:GuineaBissau,
+        coun:Guyana,
+        coun:Haiti,
+        coun:HeardIslandAndMcdonaldIslands,
+        coun:HolySee,
+        coun:Honduras,
+        coun:HongKong,
+        coun:Hungary,
+        coun:Iceland,
+        coun:India,
+        coun:Indonesia,
+        coun:IranIslamicRepublicOf,
+        coun:Iraq,
+        coun:Ireland,
+        coun:IsleOfMan,
+        coun:Israel,
+        coun:Italy,
+        coun:Jamaica,
+        coun:Japan,
+        coun:Jersey,
+        coun:Jordan,
+        coun:Kazakhstan,
+        coun:Kenya,
+        coun:Kiribati,
+        coun:KoreaDemocraticPeoplesRepublicOf,
+        coun:KoreaRepublicOf,
+        coun:Kuwait,
+        coun:Kyrgyzstan,
+        coun:LaoPeoplesDemocraticRepublic,
+        coun:Latvia,
+        coun:Lebanon,
+        coun:Lesotho,
+        coun:Liberia,
+        coun:Libya,
+        coun:Liechtenstein,
+        coun:Lithuania,
+        coun:Luxembourg,
+        coun:Macao,
+        coun:Madagascar,
+        coun:Malawi,
+        coun:Malaysia,
+        coun:Maldives,
+        coun:Mali,
+        coun:Malta,
+        coun:MarshallIslands,
+        coun:Martinique,
+        coun:Mauritania,
+        coun:Mauritius,
+        coun:Mayotte,
+        coun:Mexico,
+        coun:MicronesiaFederatedStatesOf,
+        coun:MoldovaRepublicOf,
+        coun:Monaco,
+        coun:Mongolia,
+        coun:Montenegro,
+        coun:Montserrat,
+        coun:Morocco,
+        coun:Mozambique,
+        coun:Myanmar,
+        coun:Namibia,
+        coun:Nauru,
+        coun:Nepal,
+        coun:NetherlandsKingdomOfThe,
+        coun:NewCaledonia,
+        coun:NewZealand,
+        coun:Nicaragua,
+        coun:Niger,
+        coun:Nigeria,
+        coun:Niue,
+        coun:NorfolkIsland,
+        coun:NorthMacedonia,
+        coun:NorthernMarianaIslands,
+        coun:Norway,
+        coun:Oman,
+        coun:Pakistan,
+        coun:Palau,
+        coun:PalestineStateOf,
+        coun:Panama,
+        coun:PapuaNewGuinea,
+        coun:Paraguay,
+        coun:Peru,
+        coun:Philippines,
+        coun:Pitcairn,
+        coun:Poland,
+        coun:Portugal,
+        coun:PuertoRico,
+        coun:Qatar,
+        coun:Romania,
+        coun:RussianFederation,
+        coun:Rwanda,
+        coun:Reunion,
+        coun:SaintBarthelemy,
+        coun:SaintHelenaAscensionAndTristanDaCunha,
+        coun:SaintKittsAndNevis,
+        coun:SaintLucia,
+        coun:SaintMartinFrenchPart,
+        coun:SaintPierreAndMiquelon,
+        coun:SaintVincentAndTheGrenadines,
+        coun:Samoa,
+        coun:SanMarino,
+        coun:SaoTomeAndPrincipe,
+        coun:SaudiArabia,
+        coun:Senegal,
+        coun:Serbia,
+        coun:Seychelles,
+        coun:SierraLeone,
+        coun:Singapore,
+        coun:SintMaartenDutchPart,
+        coun:Slovakia,
+        coun:Slovenia,
+        coun:SolomonIslands,
+        coun:Somalia,
+        coun:SouthAfrica,
+        coun:SouthGeorgiaAndTheSouthSandwichIslands,
+        coun:SouthSudan,
+        coun:Spain,
+        coun:SriLanka,
+        coun:Sudan,
+        coun:Suriname,
+        coun:SvalbardAndJanMayen,
+        coun:Sweden,
+        coun:Switzerland,
+        coun:SyrianArabRepublic,
+        coun:TaiwanProvinceOfChina,
+        coun:Tajikistan,
+        coun:TanzaniaUnitedRepublicOf,
+        coun:Thailand,
+        coun:Timorleste,
+        coun:Togo,
+        coun:Tokelau,
+        coun:Tonga,
+        coun:TrinidadAndTobago,
+        coun:Tunisia,
+        coun:Turkmenistan,
+        coun:TurksAndCaicosIslands,
+        coun:Tuvalu,
+        coun:Turkiye,
+        coun:Uganda,
+        coun:Ukraine,
+        coun:UnitedArabEmirates,
+        coun:UnitedKingdomOfGreatBritainAndNorthernIreland,
+        coun:UnitedStatesMinorOutlyingIslands,
+        coun:UnitedStatesOfAmerica,
+        coun:Uruguay,
+        coun:Uzbekistan,
+        coun:Vanuatu,
+        coun:VenezuelaBolivarianRepublicOf,
+        coun:VietNam,
+        coun:VirginIslandsBritish,
+        coun:VirginIslandsUs,
+        coun:WallisAndFutuna,
+        coun:WesternSahara,
+        coun:Yemen,
+        coun:Zambia,
+        coun:Zimbabwe;
+    skos:prefLabel "Country"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/Country> a owl:Class ;
+    rdfs:label "Country"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/country/Afghanistan> a owl:Class, skos:Concept;
+    skos:prefLabel "Afghanistan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Afghanistan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/AlandIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Åland Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Åland Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Albania> a owl:Class, skos:Concept;
+    skos:prefLabel "Albania"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Albania"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Algeria> a owl:Class, skos:Concept;
+    skos:prefLabel "Algeria"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Algeria"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/AmericanSamoa> a owl:Class, skos:Concept;
+    skos:prefLabel "American Samoa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "American Samoa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Andorra> a owl:Class, skos:Concept;
+    skos:prefLabel "Andorra"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Andorra"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Angola> a owl:Class, skos:Concept;
+    skos:prefLabel "Angola"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Angola"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Anguilla> a owl:Class, skos:Concept;
+    skos:prefLabel "Anguilla"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Anguilla"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Antarctica> a owl:Class, skos:Concept;
+    skos:prefLabel "Antarctica"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Antarctica"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/AntiguaAndBarbuda> a owl:Class, skos:Concept;
+    skos:prefLabel "Antigua and Barbuda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Antigua and Barbuda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Argentina> a owl:Class, skos:Concept;
+    skos:prefLabel "Argentina"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Argentina"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Armenia> a owl:Class, skos:Concept;
+    skos:prefLabel "Armenia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Armenia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Aruba> a owl:Class, skos:Concept;
+    skos:prefLabel "Aruba"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Aruba"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Australia> a owl:Class, skos:Concept;
+    skos:prefLabel "Australia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Australia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Austria> a owl:Class, skos:Concept;
+    skos:prefLabel "Austria"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Austria"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Azerbaijan> a owl:Class, skos:Concept;
+    skos:prefLabel "Azerbaijan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Azerbaijan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bahamas> a owl:Class, skos:Concept;
+    skos:prefLabel "Bahamas"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bahamas"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bahrain> a owl:Class, skos:Concept;
+    skos:prefLabel "Bahrain"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bahrain"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bangladesh> a owl:Class, skos:Concept;
+    skos:prefLabel "Bangladesh"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bangladesh"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Barbados> a owl:Class, skos:Concept;
+    skos:prefLabel "Barbados"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Barbados"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Belarus> a owl:Class, skos:Concept;
+    skos:prefLabel "Belarus"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Belarus"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Belgium> a owl:Class, skos:Concept;
+    skos:prefLabel "Belgium"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Belgium"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Belize> a owl:Class, skos:Concept;
+    skos:prefLabel "Belize"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Belize"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Benin> a owl:Class, skos:Concept;
+    skos:prefLabel "Benin"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Benin"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bermuda> a owl:Class, skos:Concept;
+    skos:prefLabel "Bermuda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bermuda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bhutan> a owl:Class, skos:Concept;
+    skos:prefLabel "Bhutan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bhutan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BoliviaPlurinationalStateOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Bolivia, Plurinational State of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bolivia, Plurinational State of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BonaireSintEustatiusAndSaba> a owl:Class, skos:Concept;
+    skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bonaire, Sint Eustatius and Saba"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BosniaAndHerzegovina> a owl:Class, skos:Concept;
+    skos:prefLabel "Bosnia and Herzegovina"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bosnia and Herzegovina"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Botswana> a owl:Class, skos:Concept;
+    skos:prefLabel "Botswana"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Botswana"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BouvetIsland> a owl:Class, skos:Concept;
+    skos:prefLabel "Bouvet Island"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bouvet Island"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Brazil> a owl:Class, skos:Concept;
+    skos:prefLabel "Brazil"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Brazil"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BritishIndianOceanTerritory> a owl:Class, skos:Concept;
+    skos:prefLabel "British Indian Ocean Territory"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "British Indian Ocean Territory"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BruneiDarussalam> a owl:Class, skos:Concept;
+    skos:prefLabel "Brunei Darussalam"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Brunei Darussalam"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Bulgaria> a owl:Class, skos:Concept;
+    skos:prefLabel "Bulgaria"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Bulgaria"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/BurkinaFaso> a owl:Class, skos:Concept;
+    skos:prefLabel "Burkina Faso"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Burkina Faso"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Burundi> a owl:Class, skos:Concept;
+    skos:prefLabel "Burundi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Burundi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CaboVerde> a owl:Class, skos:Concept;
+    skos:prefLabel "Cabo Verde"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cabo Verde"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Cambodia> a owl:Class, skos:Concept;
+    skos:prefLabel "Cambodia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cambodia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Cameroon> a owl:Class, skos:Concept;
+    skos:prefLabel "Cameroon"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cameroon"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Canada> a owl:Class, skos:Concept;
+    skos:prefLabel "Canada"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Canada"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CaymanIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Cayman Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cayman Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CentralAfricanRepublic> a owl:Class, skos:Concept;
+    skos:prefLabel "Central African Republic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Central African Republic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Chad> a owl:Class, skos:Concept;
+    skos:prefLabel "Chad"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Chad"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Chile> a owl:Class, skos:Concept;
+    skos:prefLabel "Chile"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Chile"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/China> a owl:Class, skos:Concept;
+    skos:prefLabel "China"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "China"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/ChristmasIsland> a owl:Class, skos:Concept;
+    skos:prefLabel "Christmas Island"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Christmas Island"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CocosKeelingIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Cocos (Keeling) Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cocos (Keeling) Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Colombia> a owl:Class, skos:Concept;
+    skos:prefLabel "Colombia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Colombia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Comoros> a owl:Class, skos:Concept;
+    skos:prefLabel "Comoros"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Comoros"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Congo> a owl:Class, skos:Concept;
+    skos:prefLabel "Congo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Congo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CongoDemocraticRepublicOfThe> a owl:Class, skos:Concept;
+    skos:prefLabel "Congo, Democratic Republic of the"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Congo, Democratic Republic of the"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CookIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Cook Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cook Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CostaRica> a owl:Class, skos:Concept;
+    skos:prefLabel "Costa Rica"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Costa Rica"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Croatia> a owl:Class, skos:Concept;
+    skos:prefLabel "Croatia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Croatia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Cuba> a owl:Class, skos:Concept;
+    skos:prefLabel "Cuba"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cuba"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Curacao> a owl:Class, skos:Concept;
+    skos:prefLabel "Curaçao"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Curaçao"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Cyprus> a owl:Class, skos:Concept;
+    skos:prefLabel "Cyprus"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Cyprus"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Czechia> a owl:Class, skos:Concept;
+    skos:prefLabel "Czechia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Czechia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/CoteDivoire> a owl:Class, skos:Concept;
+    skos:prefLabel "Côte d'Ivoire"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Côte d'Ivoire"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Denmark> a owl:Class, skos:Concept;
+    skos:prefLabel "Denmark"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Denmark"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Djibouti> a owl:Class, skos:Concept;
+    skos:prefLabel "Djibouti"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Djibouti"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Dominica> a owl:Class, skos:Concept;
+    skos:prefLabel "Dominica"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Dominica"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/DominicanRepublic> a owl:Class, skos:Concept;
+    skos:prefLabel "Dominican Republic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Dominican Republic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Ecuador> a owl:Class, skos:Concept;
+    skos:prefLabel "Ecuador"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Ecuador"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Egypt> a owl:Class, skos:Concept;
+    skos:prefLabel "Egypt"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Egypt"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/ElSalvador> a owl:Class, skos:Concept;
+    skos:prefLabel "El Salvador"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "El Salvador"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/EquatorialGuinea> a owl:Class, skos:Concept;
+    skos:prefLabel "Equatorial Guinea"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Equatorial Guinea"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Eritrea> a owl:Class, skos:Concept;
+    skos:prefLabel "Eritrea"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Eritrea"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Estonia> a owl:Class, skos:Concept;
+    skos:prefLabel "Estonia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Estonia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Eswatini> a owl:Class, skos:Concept;
+    skos:prefLabel "Eswatini"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Eswatini"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Ethiopia> a owl:Class, skos:Concept;
+    skos:prefLabel "Ethiopia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Ethiopia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/FalklandIslandsMalvinas> a owl:Class, skos:Concept;
+    skos:prefLabel "Falkland Islands (Malvinas)"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Falkland Islands (Malvinas)"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/FaroeIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Faroe Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Faroe Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Fiji> a owl:Class, skos:Concept;
+    skos:prefLabel "Fiji"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Fiji"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Finland> a owl:Class, skos:Concept;
+    skos:prefLabel "Finland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Finland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/France> a owl:Class, skos:Concept;
+    skos:prefLabel "France"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "France"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/FrenchGuiana> a owl:Class, skos:Concept;
+    skos:prefLabel "French Guiana"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "French Guiana"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/FrenchPolynesia> a owl:Class, skos:Concept;
+    skos:prefLabel "French Polynesia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "French Polynesia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/FrenchSouthernTerritories> a owl:Class, skos:Concept;
+    skos:prefLabel "French Southern Territories"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "French Southern Territories"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Gabon> a owl:Class, skos:Concept;
+    skos:prefLabel "Gabon"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Gabon"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Gambia> a owl:Class, skos:Concept;
+    skos:prefLabel "Gambia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Gambia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Georgia> a owl:Class, skos:Concept;
+    skos:prefLabel "Georgia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Georgia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Germany> a owl:Class, skos:Concept;
+    skos:prefLabel "Germany"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Germany"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Ghana> a owl:Class, skos:Concept;
+    skos:prefLabel "Ghana"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Ghana"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Gibraltar> a owl:Class, skos:Concept;
+    skos:prefLabel "Gibraltar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Gibraltar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Greece> a owl:Class, skos:Concept;
+    skos:prefLabel "Greece"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Greece"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Greenland> a owl:Class, skos:Concept;
+    skos:prefLabel "Greenland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Greenland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Grenada> a owl:Class, skos:Concept;
+    skos:prefLabel "Grenada"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Grenada"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guadeloupe> a owl:Class, skos:Concept;
+    skos:prefLabel "Guadeloupe"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guadeloupe"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guam> a owl:Class, skos:Concept;
+    skos:prefLabel "Guam"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guam"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guatemala> a owl:Class, skos:Concept;
+    skos:prefLabel "Guatemala"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guatemala"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guernsey> a owl:Class, skos:Concept;
+    skos:prefLabel "Guernsey"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guernsey"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guinea> a owl:Class, skos:Concept;
+    skos:prefLabel "Guinea"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guinea"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/GuineaBissau> a owl:Class, skos:Concept;
+    skos:prefLabel "Guinea-Bissau"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guinea-Bissau"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Guyana> a owl:Class, skos:Concept;
+    skos:prefLabel "Guyana"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Guyana"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Haiti> a owl:Class, skos:Concept;
+    skos:prefLabel "Haiti"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Haiti"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/HeardIslandAndMcdonaldIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Heard Island and McDonald Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Heard Island and McDonald Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/HolySee> a owl:Class, skos:Concept;
+    skos:prefLabel "Holy See"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Holy See"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Honduras> a owl:Class, skos:Concept;
+    skos:prefLabel "Honduras"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Honduras"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/HongKong> a owl:Class, skos:Concept;
+    skos:prefLabel "Hong Kong"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Hong Kong"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Hungary> a owl:Class, skos:Concept;
+    skos:prefLabel "Hungary"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Hungary"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Iceland> a owl:Class, skos:Concept;
+    skos:prefLabel "Iceland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Iceland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/India> a owl:Class, skos:Concept;
+    skos:prefLabel "India"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "India"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Indonesia> a owl:Class, skos:Concept;
+    skos:prefLabel "Indonesia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Indonesia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/IranIslamicRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Iran, Islamic Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Iran, Islamic Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Iraq> a owl:Class, skos:Concept;
+    skos:prefLabel "Iraq"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Iraq"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Ireland> a owl:Class, skos:Concept;
+    skos:prefLabel "Ireland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Ireland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/IsleOfMan> a owl:Class, skos:Concept;
+    skos:prefLabel "Isle of Man"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Isle of Man"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Israel> a owl:Class, skos:Concept;
+    skos:prefLabel "Israel"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Israel"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Italy> a owl:Class, skos:Concept;
+    skos:prefLabel "Italy"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Italy"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Jamaica> a owl:Class, skos:Concept;
+    skos:prefLabel "Jamaica"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Jamaica"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Japan> a owl:Class, skos:Concept;
+    skos:prefLabel "Japan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Japan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Jersey> a owl:Class, skos:Concept;
+    skos:prefLabel "Jersey"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Jersey"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Jordan> a owl:Class, skos:Concept;
+    skos:prefLabel "Jordan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Jordan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Kazakhstan> a owl:Class, skos:Concept;
+    skos:prefLabel "Kazakhstan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Kazakhstan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Kenya> a owl:Class, skos:Concept;
+    skos:prefLabel "Kenya"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Kenya"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Kiribati> a owl:Class, skos:Concept;
+    skos:prefLabel "Kiribati"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Kiribati"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/KoreaDemocraticPeoplesRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Korea, Democratic People's Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Korea, Democratic People's Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/KoreaRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Korea, Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Korea, Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Kuwait> a owl:Class, skos:Concept;
+    skos:prefLabel "Kuwait"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Kuwait"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Kyrgyzstan> a owl:Class, skos:Concept;
+    skos:prefLabel "Kyrgyzstan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Kyrgyzstan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/LaoPeoplesDemocraticRepublic> a owl:Class, skos:Concept;
+    skos:prefLabel "Lao People's Democratic Republic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Lao People's Democratic Republic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Latvia> a owl:Class, skos:Concept;
+    skos:prefLabel "Latvia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Latvia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Lebanon> a owl:Class, skos:Concept;
+    skos:prefLabel "Lebanon"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Lebanon"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Lesotho> a owl:Class, skos:Concept;
+    skos:prefLabel "Lesotho"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Lesotho"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Liberia> a owl:Class, skos:Concept;
+    skos:prefLabel "Liberia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Liberia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Libya> a owl:Class, skos:Concept;
+    skos:prefLabel "Libya"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Libya"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Liechtenstein> a owl:Class, skos:Concept;
+    skos:prefLabel "Liechtenstein"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Liechtenstein"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Lithuania> a owl:Class, skos:Concept;
+    skos:prefLabel "Lithuania"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Lithuania"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Luxembourg> a owl:Class, skos:Concept;
+    skos:prefLabel "Luxembourg"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Luxembourg"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Macao> a owl:Class, skos:Concept;
+    skos:prefLabel "Macao"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Macao"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Madagascar> a owl:Class, skos:Concept;
+    skos:prefLabel "Madagascar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Madagascar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Malawi> a owl:Class, skos:Concept;
+    skos:prefLabel "Malawi"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Malawi"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Malaysia> a owl:Class, skos:Concept;
+    skos:prefLabel "Malaysia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Malaysia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Maldives> a owl:Class, skos:Concept;
+    skos:prefLabel "Maldives"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Maldives"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mali> a owl:Class, skos:Concept;
+    skos:prefLabel "Mali"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mali"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Malta> a owl:Class, skos:Concept;
+    skos:prefLabel "Malta"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Malta"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/MarshallIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Marshall Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Marshall Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Martinique> a owl:Class, skos:Concept;
+    skos:prefLabel "Martinique"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Martinique"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mauritania> a owl:Class, skos:Concept;
+    skos:prefLabel "Mauritania"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mauritania"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mauritius> a owl:Class, skos:Concept;
+    skos:prefLabel "Mauritius"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mauritius"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mayotte> a owl:Class, skos:Concept;
+    skos:prefLabel "Mayotte"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mayotte"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mexico> a owl:Class, skos:Concept;
+    skos:prefLabel "Mexico"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mexico"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/MicronesiaFederatedStatesOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Micronesia, Federated States of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Micronesia, Federated States of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/MoldovaRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Moldova, Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Moldova, Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Monaco> a owl:Class, skos:Concept;
+    skos:prefLabel "Monaco"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Monaco"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mongolia> a owl:Class, skos:Concept;
+    skos:prefLabel "Mongolia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mongolia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Montenegro> a owl:Class, skos:Concept;
+    skos:prefLabel "Montenegro"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Montenegro"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Montserrat> a owl:Class, skos:Concept;
+    skos:prefLabel "Montserrat"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Montserrat"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Morocco> a owl:Class, skos:Concept;
+    skos:prefLabel "Morocco"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Morocco"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Mozambique> a owl:Class, skos:Concept;
+    skos:prefLabel "Mozambique"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Mozambique"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Myanmar> a owl:Class, skos:Concept;
+    skos:prefLabel "Myanmar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Myanmar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Namibia> a owl:Class, skos:Concept;
+    skos:prefLabel "Namibia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Namibia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Nauru> a owl:Class, skos:Concept;
+    skos:prefLabel "Nauru"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Nauru"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Nepal> a owl:Class, skos:Concept;
+    skos:prefLabel "Nepal"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Nepal"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NetherlandsKingdomOfThe> a owl:Class, skos:Concept;
+    skos:prefLabel "Netherlands, Kingdom of the"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Netherlands, Kingdom of the"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NewCaledonia> a owl:Class, skos:Concept;
+    skos:prefLabel "New Caledonia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "New Caledonia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NewZealand> a owl:Class, skos:Concept;
+    skos:prefLabel "New Zealand"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "New Zealand"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Nicaragua> a owl:Class, skos:Concept;
+    skos:prefLabel "Nicaragua"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Nicaragua"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Niger> a owl:Class, skos:Concept;
+    skos:prefLabel "Niger"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Niger"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Nigeria> a owl:Class, skos:Concept;
+    skos:prefLabel "Nigeria"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Nigeria"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Niue> a owl:Class, skos:Concept;
+    skos:prefLabel "Niue"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Niue"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NorfolkIsland> a owl:Class, skos:Concept;
+    skos:prefLabel "Norfolk Island"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Norfolk Island"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NorthMacedonia> a owl:Class, skos:Concept;
+    skos:prefLabel "North Macedonia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "North Macedonia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/NorthernMarianaIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Northern Mariana Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Northern Mariana Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Norway> a owl:Class, skos:Concept;
+    skos:prefLabel "Norway"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Norway"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Oman> a owl:Class, skos:Concept;
+    skos:prefLabel "Oman"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Oman"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Pakistan> a owl:Class, skos:Concept;
+    skos:prefLabel "Pakistan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Pakistan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Palau> a owl:Class, skos:Concept;
+    skos:prefLabel "Palau"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Palau"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/PalestineStateOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Palestine, State of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Palestine, State of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Panama> a owl:Class, skos:Concept;
+    skos:prefLabel "Panama"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Panama"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/PapuaNewGuinea> a owl:Class, skos:Concept;
+    skos:prefLabel "Papua New Guinea"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Papua New Guinea"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Paraguay> a owl:Class, skos:Concept;
+    skos:prefLabel "Paraguay"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Paraguay"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Peru> a owl:Class, skos:Concept;
+    skos:prefLabel "Peru"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Peru"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Philippines> a owl:Class, skos:Concept;
+    skos:prefLabel "Philippines"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Philippines"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Pitcairn> a owl:Class, skos:Concept;
+    skos:prefLabel "Pitcairn"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Pitcairn"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Poland> a owl:Class, skos:Concept;
+    skos:prefLabel "Poland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Poland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Portugal> a owl:Class, skos:Concept;
+    skos:prefLabel "Portugal"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Portugal"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/PuertoRico> a owl:Class, skos:Concept;
+    skos:prefLabel "Puerto Rico"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Puerto Rico"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Qatar> a owl:Class, skos:Concept;
+    skos:prefLabel "Qatar"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Qatar"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Romania> a owl:Class, skos:Concept;
+    skos:prefLabel "Romania"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Romania"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/RussianFederation> a owl:Class, skos:Concept;
+    skos:prefLabel "Russian Federation"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Russian Federation"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Rwanda> a owl:Class, skos:Concept;
+    skos:prefLabel "Rwanda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Rwanda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Reunion> a owl:Class, skos:Concept;
+    skos:prefLabel "Réunion"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Réunion"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintBarthelemy> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Barthélemy"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Barthélemy"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintHelenaAscensionAndTristanDaCunha> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Helena, Ascension and Tristan da Cunha"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Helena, Ascension and Tristan da Cunha"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintKittsAndNevis> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Kitts and Nevis"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Kitts and Nevis"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintLucia> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Lucia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Lucia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintMartinFrenchPart> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Martin (French part)"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Martin (French part)"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintPierreAndMiquelon> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Pierre and Miquelon"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Pierre and Miquelon"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaintVincentAndTheGrenadines> a owl:Class, skos:Concept;
+    skos:prefLabel "Saint Vincent and the Grenadines"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saint Vincent and the Grenadines"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Samoa> a owl:Class, skos:Concept;
+    skos:prefLabel "Samoa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Samoa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SanMarino> a owl:Class, skos:Concept;
+    skos:prefLabel "San Marino"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "San Marino"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaoTomeAndPrincipe> a owl:Class, skos:Concept;
+    skos:prefLabel "Sao Tome and Principe"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sao Tome and Principe"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SaudiArabia> a owl:Class, skos:Concept;
+    skos:prefLabel "Saudi Arabia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Saudi Arabia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Senegal> a owl:Class, skos:Concept;
+    skos:prefLabel "Senegal"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Senegal"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Serbia> a owl:Class, skos:Concept;
+    skos:prefLabel "Serbia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Serbia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Seychelles> a owl:Class, skos:Concept;
+    skos:prefLabel "Seychelles"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Seychelles"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SierraLeone> a owl:Class, skos:Concept;
+    skos:prefLabel "Sierra Leone"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sierra Leone"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Singapore> a owl:Class, skos:Concept;
+    skos:prefLabel "Singapore"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Singapore"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SintMaartenDutchPart> a owl:Class, skos:Concept;
+    skos:prefLabel "Sint Maarten (Dutch part)"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sint Maarten (Dutch part)"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Slovakia> a owl:Class, skos:Concept;
+    skos:prefLabel "Slovakia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Slovakia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Slovenia> a owl:Class, skos:Concept;
+    skos:prefLabel "Slovenia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Slovenia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SolomonIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Solomon Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Solomon Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Somalia> a owl:Class, skos:Concept;
+    skos:prefLabel "Somalia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Somalia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SouthAfrica> a owl:Class, skos:Concept;
+    skos:prefLabel "South Africa"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "South Africa"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SouthGeorgiaAndTheSouthSandwichIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "South Georgia and the South Sandwich Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "South Georgia and the South Sandwich Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SouthSudan> a owl:Class, skos:Concept;
+    skos:prefLabel "South Sudan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "South Sudan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Spain> a owl:Class, skos:Concept;
+    skos:prefLabel "Spain"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Spain"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SriLanka> a owl:Class, skos:Concept;
+    skos:prefLabel "Sri Lanka"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sri Lanka"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Sudan> a owl:Class, skos:Concept;
+    skos:prefLabel "Sudan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sudan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Suriname> a owl:Class, skos:Concept;
+    skos:prefLabel "Suriname"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Suriname"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SvalbardAndJanMayen> a owl:Class, skos:Concept;
+    skos:prefLabel "Svalbard and Jan Mayen"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Svalbard and Jan Mayen"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Sweden> a owl:Class, skos:Concept;
+    skos:prefLabel "Sweden"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Sweden"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Switzerland> a owl:Class, skos:Concept;
+    skos:prefLabel "Switzerland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Switzerland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/SyrianArabRepublic> a owl:Class, skos:Concept;
+    skos:prefLabel "Syrian Arab Republic"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Syrian Arab Republic"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/TaiwanProvinceOfChina> a owl:Class, skos:Concept;
+    skos:prefLabel "Taiwan, Province of China"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Taiwan, Province of China"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Tajikistan> a owl:Class, skos:Concept;
+    skos:prefLabel "Tajikistan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tajikistan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/TanzaniaUnitedRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Tanzania, United Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tanzania, United Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Thailand> a owl:Class, skos:Concept;
+    skos:prefLabel "Thailand"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Thailand"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Timorleste> a owl:Class, skos:Concept;
+    skos:prefLabel "Timor-Leste"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Timor-Leste"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Togo> a owl:Class, skos:Concept;
+    skos:prefLabel "Togo"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Togo"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Tokelau> a owl:Class, skos:Concept;
+    skos:prefLabel "Tokelau"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tokelau"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Tonga> a owl:Class, skos:Concept;
+    skos:prefLabel "Tonga"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tonga"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/TrinidadAndTobago> a owl:Class, skos:Concept;
+    skos:prefLabel "Trinidad and Tobago"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Trinidad and Tobago"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Tunisia> a owl:Class, skos:Concept;
+    skos:prefLabel "Tunisia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tunisia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Turkmenistan> a owl:Class, skos:Concept;
+    skos:prefLabel "Turkmenistan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Turkmenistan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/TurksAndCaicosIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "Turks and Caicos Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Turks and Caicos Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Tuvalu> a owl:Class, skos:Concept;
+    skos:prefLabel "Tuvalu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Tuvalu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Turkiye> a owl:Class, skos:Concept;
+    skos:prefLabel "Türkiye"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Türkiye"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Uganda> a owl:Class, skos:Concept;
+    skos:prefLabel "Uganda"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Uganda"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Ukraine> a owl:Class, skos:Concept;
+    skos:prefLabel "Ukraine"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Ukraine"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/UnitedArabEmirates> a owl:Class, skos:Concept;
+    skos:prefLabel "United Arab Emirates"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "United Arab Emirates"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/UnitedKingdomOfGreatBritainAndNorthernIreland> a owl:Class, skos:Concept;
+    skos:prefLabel "United Kingdom of Great Britain and Northern Ireland"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "United Kingdom of Great Britain and Northern Ireland"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/UnitedStatesMinorOutlyingIslands> a owl:Class, skos:Concept;
+    skos:prefLabel "United States Minor Outlying Islands"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "United States Minor Outlying Islands"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/UnitedStatesOfAmerica> a owl:Class, skos:Concept;
+    skos:prefLabel "United States of America"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "United States of America"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Uruguay> a owl:Class, skos:Concept;
+    skos:prefLabel "Uruguay"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Uruguay"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Uzbekistan> a owl:Class, skos:Concept;
+    skos:prefLabel "Uzbekistan"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Uzbekistan"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Vanuatu> a owl:Class, skos:Concept;
+    skos:prefLabel "Vanuatu"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Vanuatu"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/VenezuelaBolivarianRepublicOf> a owl:Class, skos:Concept;
+    skos:prefLabel "Venezuela, Bolivarian Republic of"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Venezuela, Bolivarian Republic of"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/VietNam> a owl:Class, skos:Concept;
+    skos:prefLabel "Viet Nam"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Viet Nam"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/VirginIslandsBritish> a owl:Class, skos:Concept;
+    skos:prefLabel "Virgin Islands (British)"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Virgin Islands (British)"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/VirginIslandsUs> a owl:Class, skos:Concept;
+    skos:prefLabel "Virgin Islands (U.S.)"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Virgin Islands (U.S.)"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/WallisAndFutuna> a owl:Class, skos:Concept;
+    skos:prefLabel "Wallis and Futuna"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Wallis and Futuna"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/WesternSahara> a owl:Class, skos:Concept;
+    skos:prefLabel "Western Sahara"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Western Sahara"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Yemen> a owl:Class, skos:Concept;
+    skos:prefLabel "Yemen"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Yemen"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Zambia> a owl:Class, skos:Concept;
+    skos:prefLabel "Zambia"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Zambia"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
+
+<https://vocabulary.fiafcore.org/country/Zimbabwe> a owl:Class, skos:Concept;
+    skos:prefLabel "Zimbabwe"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/country/> ;
+    rdfs:label "Zimbabwe"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Country> ;
+.
