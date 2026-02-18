@@ -6,16 +6,53 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://ontology.fiafcore.org/ColourCharacteristic>
     a owl:Class ;
-    rdfs:label
-        "Colour Characteristic"@en ;
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
+    rdfs:label "Colour Characteristic"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
+<https://ontology.fiafcore.org/BlackAndWhite> a owl:Class ;
+    rdfs:label "Black And White"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://ontology.fiafcore.org/Colour> a owl:Class ;
+    rdfs:label "Colour"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://ontology.fiafcore.org/Tinted> a owl:Class ;
+    rdfs:label "Tinted"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://ontology.fiafcore.org/Toned> a owl:Class ;
+    rdfs:label "Toned"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+.
+
 ### Datatype Properties
 
+# None
+
 ### Object Properties
+
+<https://ontology.fiafcore.org/hasColourStandard>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Standard"@en ;
+    dc:description "Express a specific colour process."@en ;
+    dc:source <> ;
+    rdfs:domain <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://ontology.fiafcore.org/ColourStandard> ;
+.
+
