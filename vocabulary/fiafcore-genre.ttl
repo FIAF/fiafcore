@@ -1,0 +1,743 @@
+PREFIX genr: <https://vocabulary.fiafcore.org/genre/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/base/> a skos:ConceptScheme;
+    skos:hasTopConcept genr:AbstractFilm,
+        genr:ActionFilm,
+        genr:AdventureFilm,
+        genr:AgriculturalForestryFilm,
+        genr:AnimalFilm,
+        genr:AnimationFilm,
+        genr:AntiWarFilm,
+        genr:ArtFilm,
+        genr:AvantGardeFilm,
+        genr:BalletFilm,
+        genr:BiographicalFilm,
+        genr:BiologicalFilm,
+        genr:BlaxploitationFilm,
+        genr:ChildrensFilm,
+        genr:CircusFilm,
+        genr:CityAndLandscapeFilm,
+        genr:ComedyFilm,
+        genr:ContemporaryFilm,
+        genr:CountryFilm,
+        genr:CourtroomFilm,
+        genr:CrimeFilm,
+        genr:CulturalFilm,
+        genr:DanceFilm,
+        genr:DetectiveFilm,
+        genr:DisasterFilm,
+        genr:DramaFilm,
+        genr:EducationalFilm,
+        genr:ElectionFilm,
+        genr:EnvironmentalFilm,
+        genr:EroticFilm,
+        genr:EthnographicFilm,
+        genr:ExpeditionFilm,
+        genr:ExperimentalFilm,
+        genr:ExpressionistFilm,
+        genr:FairyTaleFilm,
+        genr:FantasyFilm,
+        genr:GangsterFilm,
+        genr:HandPuppetFilm,
+        genr:HistoricalCostumeFilm,
+        genr:HistoricalFilm,
+        genr:HorrorFilm,
+        genr:IndustrialFilm,
+        genr:LiteraryAdaptationFilm,
+        genr:MedicalFilm,
+        genr:MelodramaFilm,
+        genr:MilitaryFilm,
+        genr:MixedFilm,
+        genr:MountainFilm,
+        genr:MusicFilm,
+        genr:MusicalFilm,
+        genr:NatureFilm,
+        genr:OperaFilm,
+        genr:OperettaFilm,
+        genr:ParodyFilm,
+        genr:PartisanFilm,
+        genr:PhilosophicalFilm,
+        genr:PoliticalThrillerFilm,
+        genr:PoliticalGeographicalFilm,
+        genr:PopularScienceFilm,
+        genr:PornographicFilm,
+        genr:PortraitFilm,
+        genr:PrisonFilm,
+        genr:PropagandaFilm,
+        genr:PuppetFilm,
+        genr:ReligiousFilm,
+        genr:ResearchFilm,
+        genr:RevolutionaryFilm,
+        genr:RevueFilm,
+        genr:RoadMovieFilm,
+        genr:RomanticFilm,
+        genr:SatireFilm,
+        genr:ScienceFictionFilm,
+        genr:SensationalFilm,
+        genr:SexFilm,
+        genr:SlapstickFilm,
+        genr:SportsFilm,
+        genr:SpyFilm,
+        genr:StickPuppetFilm,
+        genr:SurrealistFilm,
+        genr:TechnicalFilm,
+        genr:ThrillerFilm,
+        genr:TrafficFilm,
+        genr:TragedyFilm,
+        genr:TragicomedyFilm,
+        genr:TravelFilm,
+        genr:UndergroundFilm,
+        genr:WarFilm,
+        genr:WesternFilm,
+        genr:WomensFilm,
+        genr:WorkingClassFilm,
+        genr:YouthFilm;
+    skos:prefLabel "Genre"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/Genre> a owl:Class ;
+    rdfs:label "Genre"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AbstractFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Abstract Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Abstract Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ActionFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Action Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Action Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AdventureFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Adventure Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Adventure Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AgriculturalForestryFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Agricultural/forestry Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Agricultural/forestry Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AnimalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Animal Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Animal Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AnimationFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Animation Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Animation Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AntiWarFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Anti-war Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Anti-war Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ArtFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Art Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Art Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/AvantGardeFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Avant-garde Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Avant-garde Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/BalletFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Ballet Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Ballet Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/BiographicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Biographical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Biographical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/BiologicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Biological Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Biological Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/BlaxploitationFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Blaxploitation Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Blaxploitation Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ChildrensFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Children's Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Children's Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CircusFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Circus Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Circus Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CityAndLandscapeFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "City and landscape Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "City and landscape Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ComedyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Comedy Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Comedy Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ContemporaryFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Contemporary Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Contemporary Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CountryFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Country Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Country Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CourtroomFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Courtroom Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Courtroom Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CrimeFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Crime Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Crime Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/CulturalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Cultural Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Cultural Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/DanceFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Dance Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Dance Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/DetectiveFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Detective Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Detective Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/DisasterFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Disaster Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Disaster Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/DramaFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Drama Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Drama Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/EducationalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Educational Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Educational Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ElectionFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Election Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Election Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/EnvironmentalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Environmental Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Environmental Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/EroticFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Erotic Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Erotic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/EthnographicFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Ethnographic Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Ethnographic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ExpeditionFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Expedition Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Expedition Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ExperimentalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Experimental Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Experimental Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ExpressionistFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Expressionist Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Expressionist Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/FairyTaleFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Fairy tale Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Fairy tale Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/FantasyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Fantasy Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Fantasy Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/GangsterFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Gangster Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Gangster Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/HandPuppetFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Hand puppet Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Hand puppet Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/HistoricalCostumeFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Historical costume Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Historical costume Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/HistoricalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Historical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Historical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/HorrorFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Horror Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Horror Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/IndustrialFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Industrial Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Industrial Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/LiteraryAdaptationFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Literary adaptation Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Literary adaptation Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MedicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Medical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Medical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MelodramaFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Melodrama Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Melodrama Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MilitaryFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Military Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Military Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MixedFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Mixed Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Mixed Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MountainFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Mountain Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Mountain Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MusicFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Music Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Music Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/MusicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Musical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Musical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/NatureFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Nature Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Nature Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/OperaFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Opera Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Opera Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/OperettaFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Operetta Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Operetta Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ParodyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Parody Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Parody Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PartisanFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Partisan Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Partisan Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PhilosophicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Philosophical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Philosophical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PoliticalThrillerFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Political thriller Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Political thriller Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PoliticalGeographicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Political-geographical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Political-geographical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PopularScienceFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Popular science Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Popular science Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PornographicFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Pornographic Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Pornographic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PortraitFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Portrait Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Portrait Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PrisonFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Prison Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Prison Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PropagandaFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Propaganda Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Propaganda Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/PuppetFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Puppet Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Puppet Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ReligiousFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Religious Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Religious Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ResearchFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Research Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Research Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/RevolutionaryFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Revolutionary Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Revolutionary Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/RevueFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Revue Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Revue Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/RoadMovieFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Road movie Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Road movie Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/RomanticFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Romantic Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Romantic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SatireFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Satire Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Satire Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ScienceFictionFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Science fiction Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Science fiction Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SensationalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Sensational Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Sensational Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SexFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Sex Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Sex Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SlapstickFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Slapstick Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Slapstick Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SportsFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Sports Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Sports Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SpyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Spy Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Spy Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/StickPuppetFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Stick puppet Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Stick puppet Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/SurrealistFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Surrealist Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Surrealist Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/TechnicalFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Technical Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Technical Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/ThrillerFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Thriller Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Thriller Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/TrafficFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Traffic Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Traffic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/TragedyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Tragedy Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Tragedy Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/TragicomedyFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Tragicomedy Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Tragicomedy Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/TravelFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Travel Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Travel Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/UndergroundFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Underground Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Underground Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/WarFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "War Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "War Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/WesternFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Western Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Western Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/WomensFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Women's Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Women's Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/WorkingClassFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Working-class Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Working-class Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
+
+<https://vocabulary.fiafcore.org/Genre/YouthFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Youth Film"@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/genre/> ;
+    rdfs:label "Youth Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/genre> ;
+.
