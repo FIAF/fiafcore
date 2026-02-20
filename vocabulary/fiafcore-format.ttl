@@ -1,0 +1,331 @@
+PREFIX form: <https://vocabulary.fiafcore.org/format/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://vocabulary.fiafcore.org/format/> a skos:ConceptScheme;
+    skos:hasTopConcept base:AudioFormat, base:DigitalFormat, base:FilmFormat, base:OpticalFormat, base:VideoFormat ;
+    skos:prefLabel "Format"@en ;
+    skos:definition ""@en ;
+.
+
+<https://ontology.fiafcore.org/Format> a owl:Class ;
+    rdfs:label "Format"@en ;
+    dc:description ""@en ;
+.
+
+<https://vocabulary.fiafcore.org/format/AudioFormat> a owl:Class, skos:Concept;
+    skos:prefLabel "Audio Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Audio Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://vocabulary.fiafcore.org/format/DigitalFormat> a owl:Class, skos:Concept;
+    skos:prefLabel "Digital Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Digital Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://vocabulary.fiafcore.org/format/FilmFormat> a owl:Class, skos:Concept;
+    skos:prefLabel "Film Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Film Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://vocabulary.fiafcore.org/format/OpticalFormat> a owl:Class, skos:Concept;
+    skos:prefLabel "Optical Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Optical Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://vocabulary.fiafcore.org/format/VideoFormat> a owl:Class, skos:Concept;
+    skos:prefLabel "Video Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Video Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Format> ;
+.
+
+<https://vocabulary.fiafcore.org/format/HalfInchAudiotape> a owl:Class, skos:Concept;
+    skos:prefLabel "Video Format"@en ;
+    skos:definition ""@en ;
+    skos:topConceptOf <https://vocabulary.fiafcore.org/format/> ;
+    rdfs:label "Video Format"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+
+<https://vocabulary.fiafcore.org/format/HalfInchAudiotape> a owl:Class, skos:Concept;
+    skos:prefLabel "Half Inch Audiotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "Half Inch Audiotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/QuerterInchAudiotape> a owl:Class, skos:Concept;
+    skos:prefLabel "Querter Inch Audiotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "Querter Inch Audiotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/OneInchAudiotape> a owl:Class, skos:Concept;
+    skos:prefLabel "One Inch Audiotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "One Inch Audiotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/TwoInchAudiotape> a owl:Class, skos:Concept;
+    skos:prefLabel "Two Inch Audiotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "Two Inch Audiotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/OneInchVideotape> a owl:Class, skos:Concept;
+    skos:prefLabel "One Inch Videotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "One Inch Videotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/TwoInchVideotape> a owl:Class, skos:Concept;
+    skos:prefLabel "Two Inch Videotape"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "Two Inch Videotape"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/8mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "8mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "8mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/9.5mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "9.5mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "9.5mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/16mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "16mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "16mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/16mmMagneticFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "16mm Magnetic Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "16mm Magnetic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/17.5mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "17.5mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "17.5mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/35mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "35mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "35mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/35mmMagneticFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "35mm Magnetic Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "35mm Magnetic Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/70mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "70mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "70mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/Audiocassette> a owl:Class, skos:Concept;
+    skos:prefLabel "Audiocassette"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/AudioFormat> ;
+    rdfs:label "Audiocassette"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/AudioFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/AVI> a owl:Class, skos:Concept;
+    skos:prefLabel "AVI"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "AVI"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/BetacamSP> a owl:Class, skos:Concept;
+    skos:prefLabel "Betacam SP"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "Betacam SP"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/BluRay> a owl:Class, skos:Concept;
+    skos:prefLabel "BluRay"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/OpticalFormat> ;
+    rdfs:label "BluRay"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/OpticalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/CD> a owl:Class, skos:Concept;
+    skos:prefLabel "CD"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/OpticalFormat> ;
+    rdfs:label "CD"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/OpticalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/D1> a owl:Class, skos:Concept;
+    skos:prefLabel "D1"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "D1"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/D5> a owl:Class, skos:Concept;
+    skos:prefLabel "D5"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "D5"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/DigitalBetacam> a owl:Class, skos:Concept;
+    skos:prefLabel "Digital Betacam"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "Digital Betacam"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/DPX> a owl:Class, skos:Concept;
+    skos:prefLabel "DPX"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "DPX"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/DVD> a owl:Class, skos:Concept;
+    skos:prefLabel "DVD"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/OpticalFormat> ;
+    rdfs:label "DVD"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/OpticalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/DVCPROHD> a owl:Class, skos:Concept;
+    skos:prefLabel "DVCPRO HD"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "DVCPRO HD"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/HDCAMSR> a owl:Class, skos:Concept;
+    skos:prefLabel "HDCAM SR"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/VideoFormat> ;
+    rdfs:label "HDCAM SR"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/VideoFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/LaserDisc> a owl:Class, skos:Concept;
+    skos:prefLabel "LaserDisc"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/OpticalFormat> ;
+    rdfs:label "LaserDisc"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/OpticalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/MOV> a owl:Class, skos:Concept;
+    skos:prefLabel "MOV"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "MOV"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/MP4> a owl:Class, skos:Concept;
+    skos:prefLabel "MP4"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "MP4"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/MPEG-4> a owl:Class, skos:Concept;
+    skos:prefLabel "MPEG-4"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "MPEG-4"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/MXF> a owl:Class, skos:Concept;
+    skos:prefLabel "MXF"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "MXF"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/Quicktime> a owl:Class, skos:Concept;
+    skos:prefLabel "Quicktime"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "Quicktime"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/RealVideo> a owl:Class, skos:Concept;
+    skos:prefLabel "Real Video"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "Real Video"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/Super16mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Super 16mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "Super 16mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/Super8mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Super 8mm Film"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
+    rdfs:label "Super 8mm Film"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/SVCD> a owl:Class, skos:Concept;
+    skos:prefLabel "SVCD"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "SVCD"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/VCD> a owl:Class, skos:Concept;
+    skos:prefLabel "VCD"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "VCD"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
+<https://vocabulary.fiafcore.org/format/WindowsMedia> a owl:Class, skos:Concept;
+    skos:prefLabel "Windows Media"@en ;
+    skos:definition ""@en ;
+    skos:broader <https://vocabulary.fiafcore.org/format/DigitalFormat> ;
+    rdfs:label "Windows Media"@en ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
+.
