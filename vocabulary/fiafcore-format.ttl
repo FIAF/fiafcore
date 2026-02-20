@@ -295,17 +295,17 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     rdfs:subClassOf <https://ontology.fiafcore.org/DigitalFormat> ;
 .
 <https://vocabulary.fiafcore.org/format/Super16mmFilm> a owl:Class, skos:Concept;
-    skos:prefLabel "Super16mm Film"@en ;
+    skos:prefLabel "Super 16mm Film"@en ;
     skos:definition ""@en ;
     skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
-    rdfs:label "Super16mm Film"@en ;
+    rdfs:label "Super 16mm Film"@en ;
     rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
 .
-<https://vocabulary.fiafcore.org/format/Super8mm> a owl:Class, skos:Concept;
-    skos:prefLabel "Super8mm"@en ;
+<https://vocabulary.fiafcore.org/format/Super8mmFilm> a owl:Class, skos:Concept;
+    skos:prefLabel "Super 8mm Film"@en ;
     skos:definition ""@en ;
     skos:broader <https://vocabulary.fiafcore.org/format/FilmFormat> ;
-    rdfs:label "Super8mm"@en ;
+    rdfs:label "Super 8mm Film"@en ;
     rdfs:subClassOf <https://ontology.fiafcore.org/FilmFormat> ;
 .
 <https://vocabulary.fiafcore.org/format/SVCD> a owl:Class, skos:Concept;
