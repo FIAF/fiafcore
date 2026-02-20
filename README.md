@@ -5,7 +5,7 @@ FIAFcore is an ontology for film archives, developed to enable the federation of
 
 ### Documentation
 
-Documentation for this resource can be found at [fiafcore.org](fiafcore.org).
+Documentation for this resource can be found at [fiafcore.org](https://fiafcore.org).
 
 ### License
 
