@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://vocabulary.fiafcore.org/colourstandard/> a skos:ConceptScheme;
-    skos:hasTopConcept base:Agfacolor, base:DeLuxe, base:Duartcolor, base:Eastmancolor, base:Fujicolor, base:Metrocolor, base:Orwocolor, base:Technicolor ;
+    skos:hasTopConcept colo:Agfacolor, colo:DeLuxe, colo:Duartcolor, colo:Eastmancolor, colo:Fujicolor, colo:Metrocolor, colo:Orwocolor, colo:Technicolor ;
     skos:prefLabel "Colour Standard"@en ;
     skos:definition "A standardised colour process."@en ;
 .
@@ -78,4 +78,3 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     rdfs:label "Technicolor"@en ;
     rdfs:subClassOf <https://ontology.fiafcore.org/ColourStandard> ;
 .
-

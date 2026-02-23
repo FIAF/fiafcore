@@ -5,2127 +5,1416 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 ### Class
 
 <https://ontology.fiafcore.org/Activity>
-    a owl:Class ;
-    rdfs:label
-        "Activity"@en ;
-    dc:description
-        "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
+  a owl:Class ;
+  rdfs:label "Activity"@en ;
+  dc:description "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
 .
 
 ### Subclasses
 
 <https://ontology.fiafcore.org/Adaptation>
-    a owl:Class ;
-    rdfs:label
-        "Adaptation"@en ;
-    dc:description
-        "Adaptation, Adapted by. Credit for the individual(s) who modifies a literary or any other existing work so that it becomes suitable for filming."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Adaptation"@en ;
+  dc:description "Adaptation, Adapted by. Credit for the individual(s) who modifies a literary or any other existing work so that it becomes suitable for filming."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Advisor>
-    a owl:Class ;
-    rdfs:label
-        "Advisor"@en ;
-    dc:description
-        "Advisor, Consultant. Technical or subject specialist (e.g. historian, scientist, military officer) engaged to advise on the accuracy of details of the film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Advisor"@en ;
+  dc:description "Advisor, Consultant. Technical or subject specialist (e.g. historian, scientist, military officer) engaged to advise on the accuracy of details of the film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/AerialPhotography>
-    a owl:Class ;
-    rdfs:label
-        "Aerial Photography"@en ;
-    dc:description
-        "Aerial Cameraman, Aerial Photography, Aerial Sequences. Cameraman for air to air or air to ground shots."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Aerial Photography"@en ;
+  dc:description "Aerial Cameraman, Aerial Photography, Aerial Sequences. Cameraman for air to air or air to ground shots."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/AgentResponsibleForPreservation>
-    a owl:Class ;
-    rdfs:label
-        "Agent responsible for preservation"@en ;
-    dc:description
-        "Agent responsible for the preservation of a Manifestation: namely the rights-owner(s), the distributor(s) or an archive."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36605%3A5179> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Agent responsible for preservation"@en ;
+  dc:description "Agent responsible for the preservation of a Manifestation: namely the rights-owner(s), the distributor(s) or an archive."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36605%3A5179> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AgentResponsibleForReproductionOrTransfer>
-    a owl:Class ;
-    rdfs:label
-        "Agent responsible for reproduction or transfer"@en ;
-    dc:description
-        "Agent responsible for the activities of duplication/reproduction/transfer (dupes and masters)."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36609%3A5180> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Agent responsible for reproduction or transfer"@en ;
+  dc:description "Agent responsible for the activities of duplication/reproduction/transfer (dupes and masters)."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36609%3A5180> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AgentResponsibleForTheArchivalAvailability>
-    a owl:Class ;
-    rdfs:label
-        "Agent responsible for the archival availability"@en ;
-    dc:description
-        "The institution responsible for the availability of a moving image Manifestation intended for consultation or exploitation for cultural “fair” use, on the premises or through the activities of the institution."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36613%3A5181> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Agent responsible for the archival availability"@en ;
+  dc:description "The institution responsible for the availability of a moving image Manifestation intended for consultation or exploitation for cultural “fair” use, on the premises or through the activities of the institution."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36613%3A5181> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AgentResponsibleForTheMereAvailability>
-    a owl:Class ;
-    rdfs:label
-        "Agent responsible for the mere availability"@en ;
-    dc:description
-        "Agent responsible for making available a Manifestation not intended for public release (distribution, publication or broadcasting) in private environments."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36617%3A5182> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Agent responsible for the mere availability"@en ;
+  dc:description "Agent responsible for making available a Manifestation not intended for public release (distribution, publication or broadcasting) in private environments."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36617%3A5182> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AnimalTrainer>
-    a owl:Class ;
-    rdfs:label
-        "Animal Trainer"@en ;
-    dc:description
-        "Animal Trainer. The person responsible for handling and directing the animals to be used in the film. The Animal Trainer primarily works with small creatures (dogs, cats, reptiles) and wild and/or potentially dangerous animals."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Animal Trainer"@en ;
+  dc:description "Animal Trainer. The person responsible for handling and directing the animals to be used in the film. The Animal Trainer primarily works with small creatures (dogs, cats, reptiles) and wild and/or potentially dangerous animals."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/Animation>
-    a owl:Class ;
-    rdfs:label
-        "Animation"@en ;
-    dc:description
-        "Animation. In the broadest sense, the art, techniques and processes involved in creating the illusion of movement of inanimate objects by cinematographic means."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Animation"@en ;
+  dc:description "Animation. In the broadest sense, the art, techniques and processes involved in creating the illusion of movement of inanimate objects by cinematographic means."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AnimationActivity>
-    a owl:Class ;
-    rdfs:label
-        "Animation Activity"@en ;
-    dc:description
-        "Animation contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Animation Activity"@en ;
+  dc:description "Animation contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/AnimationDirector>
-    a owl:Class ;
-    rdfs:label
-        "Animation Director"@en ;
-    dc:description
-        "Animation Director. The person with the overall responsibility for turning a screenplay for an animated film into a motion picture and determining the visual look, characterizations, and narrative style of the production."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Animation Director"@en ;
+  dc:description "Animation Director. The person with the overall responsibility for turning a screenplay for an animated film into a motion picture and determining the visual look, characterizations, and narrative style of the production."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/AnimationLighter>
-    a owl:Class ;
-    rdfs:label
-        "Animation Lighter"@en ;
-    dc:description
-        "Lighter. In Computer Animation, the individual(s) responsible for adding light and shadows to three-dimensional models."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Animation Lighter"@en ;
+  dc:description "Lighter. In Computer Animation, the individual(s) responsible for adding light and shadows to three-dimensional models."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/Animator>
-    a owl:Class ;
-    rdfs:label
-        "Animator"@en ;
-    dc:description
-        "Animator, Animated by, Animation by. The person who draws the animation cels, manipulates objects, or creates computer generated images which when filmed will produce movement on screen. As part of a larger animation team, he or she elaborates the key points developed by the Supervising Animator."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Animator"@en ;
+  dc:description "Animator, Animated by, Animation by. The person who draws the animation cels, manipulates objects, or creates computer generated images which when filmed will produce movement on screen. As part of a larger animation team, he or she elaborates the key points developed by the Supervising Animator."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/Animatronics>
-    a owl:Class ;
-    rdfs:label
-        "Animatronics"@en ;
-    dc:description
-        "Animatronics. The use of electronically or manually operated puppets, models, or other mechanical devices to simulate and replicate movement, whether of existing life forms or fictional creations."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Animatronics"@en ;
+  dc:description "Animatronics. The use of electronically or manually operated puppets, models, or other mechanical devices to simulate and replicate movement, whether of existing life forms or fictional creations."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/Armorer>
-    a owl:Class ;
-    rdfs:label
-        "Armorer"@en ;
-    dc:description
-        "Armorer. A technician responsible for the selection and handling of all weaponry to be used in the production."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Armorer"@en ;
+  dc:description "Armorer. A technician responsible for the selection and handling of all weaponry to be used in the production."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/ArtDirector>
-    a owl:Class ;
-    rdfs:label
-        "Art Director"@en ;
-    dc:description
-        "Art Director, Art Direction. The person responsible for the film’s physical settings (set construction, interior design, prop placement, etc). Usually works under the supervision of the Production Designer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Art Director"@en ;
+  dc:description "Art Director, Art Direction. The person responsible for the film’s physical settings (set construction, interior design, prop placement, etc). Usually works under the supervision of the Production Designer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/AssistantArtDirector>
-    a owl:Class ;
-    rdfs:label
-        "Assistant Art Director"@en ;
-    dc:description
-        "The first assistant to the Art Director or Production Designer (depending on the size of the production)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Assistant Art Director"@en ;
+  dc:description "The first assistant to the Art Director or Production Designer (depending on the size of the production)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/AssistantDirector>
-    a owl:Class ;
-    rdfs:label
-        "Assistant Director"@en ;
-    dc:description
-        "Assistant Director. The Assistant Director is the Director’s right hand person at all stages of the shooting, but his or her work is primarily administrative rather than creative. Depending on the size of the production, the job can be split among three individuals with varying degrees of responsibility (First, Second, and Second Second or Third Assistant Director)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Assistant Director"@en ;
+  dc:description "Assistant Director. The Assistant Director is the Director’s right hand person at all stages of the shooting, but his or her work is primarily administrative rather than creative. Depending on the size of the production, the job can be split among three individuals with varying degrees of responsibility (First, Second, and Second Second or Third Assistant Director)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/AssistantFilmEditor>
-    a owl:Class ;
-    rdfs:label
-        "Assistant Film Editor"@en ;
-    dc:description
-        "Assistant Film Editor, Assistant Editor. The person who carries out, for the editor, various technical tasks such as managing the cutting room, synchronizing dailies, maintaining logs, loading and/or digitizing material from videotape, etc."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/EditingActivity> ;
+  a owl:Class ;
+  rdfs:label "Assistant Film Editor"@en ;
+  dc:description "Assistant Film Editor, Assistant Editor. The person who carries out, for the editor, various technical tasks such as managing the cutting room, synchronizing dailies, maintaining logs, loading and/or digitizing material from videotape, etc."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/EditingActivity> ;
 .
 
 <https://ontology.fiafcore.org/AssistantProducer>
-    a owl:Class ;
-    rdfs:label
-        "Assistant Producer"@en ;
-    dc:description
-        "Assistant Producer. The person who assists the Producer in managing and tracking the production."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Assistant Producer"@en ;
+  dc:description "Assistant Producer. The person who assists the Producer in managing and tracking the production."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/AssociateProducer>
-    a owl:Class ;
-    rdfs:label
-        "Associate Producer"@en ;
-    dc:description
-        "Associate Producer. The person charged with a limited number of producing functions who works under the direct supervision of the Producer. The term often refers to an individual who has contributed to the development and/or funding of the film, although on a level subordinate to that of the Executive Producer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Associate Producer"@en ;
+  dc:description "Associate Producer. The person charged with a limited number of producing functions who works under the direct supervision of the Producer. The term often refers to an individual who has contributed to the development and/or funding of the film, although on a level subordinate to that of the Executive Producer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/BasedonCharactersCreatedby>
-    a owl:Class ;
-    rdfs:label
-        "Based on Characters Created by"@en ;
-    dc:description
-        "Based on Characters Created by. A credit indicating that a film’s characters, but not the plot, originated in an existing work. In the U.S., the term is primarily used for sequels."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Based on Characters Created by"@en ;
+  dc:description "Based on Characters Created by. A credit indicating that a film’s characters, but not the plot, originated in an existing work. In the U.S., the term is primarily used for sequels."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/BestBoy>
-    a owl:Class ;
-    rdfs:label
-        "Best Boy"@en ;
-    dc:description
-        "Best Boy, Assistant Chief Lighting Technician, Best Boy Electric. The first assistant to the Chief Lighting Technician. The term Best Boy can also be used to indicate the second in command of a different group (e.g. Best Boy Grip)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Best Boy"@en ;
+  dc:description "Best Boy, Assistant Chief Lighting Technician, Best Boy Electric. The first assistant to the Chief Lighting Technician. The term Best Boy can also be used to indicate the second in command of a different group (e.g. Best Boy Grip)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/BoomOperator>
-    a owl:Class ;
-    rdfs:label
-        "Boom Operator"@en ;
-    dc:description
-        "Boom Operator. A technician who operates the boom, a mechanical arm from which a microphone is suspended."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Boom Operator"@en ;
+  dc:description "Boom Operator. A technician who operates the boom, a mechanical arm from which a microphone is suspended."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/Broadcaster>
-    a owl:Class ;
-    rdfs:label
-        "Broadcaster"@en ;
-    dc:description
-        "Agent responsible for the broadcasting of a Manifestation."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36592%3A5176> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Broadcaster"@en ;
+  dc:description "Agent responsible for the broadcasting of a Manifestation."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36592%3A5176> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/CGIArtist>
-    a owl:Class ;
-    rdfs:label
-        "CGI Artist"@en ;
-    dc:description
-        "Computer Generated Imagery, CGI. The use of computer technology to modify, manipulate, and/or create images to be incorporated into a motion picture. The process can involve both images conceived and created digitally, as well as existing images captured on film or video tape which are modified with the use of digital technology."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "CGI Artist"@en ;
+  dc:description "Computer Generated Imagery, CGI. The use of computer technology to modify, manipulate, and/or create images to be incorporated into a motion picture. The process can involve both images conceived and created digitally, as well as existing images captured on film or video tape which are modified with the use of digital technology."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/CameraAssistant>
-    a owl:Class ;
-    rdfs:label
-        "Camera Assistant"@en ;
-    dc:description
-        "Assistant Cameraman, Camera Assistant, Assistant Camera Operator. An assistant to the Camera Operator who maintains the camera and all of its accessories. In units with two Assistant Cameramen, the 1st Assistant usually performs the duties of the Focus Puller, while the 2nd assumes the job of the Clapper (or Clapper Loader). In smaller units, the Assistant Cameraman may perform the duties of both the Focus Puller and the Clapper Loader."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Camera Assistant"@en ;
+  dc:description "Assistant Cameraman, Camera Assistant, Assistant Camera Operator. An assistant to the Camera Operator who maintains the camera and all of its accessories. In units with two Assistant Cameramen, the 1st Assistant usually performs the duties of the Focus Puller, while the 2nd assumes the job of the Clapper (or Clapper Loader). In smaller units, the Assistant Cameraman may perform the duties of both the Focus Puller and the Clapper Loader."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/CameraOperator>
-    a owl:Class ;
-    rdfs:label
-        "Camera Operator"@en ;
-    dc:description
-        "Camera Operator, Cameraman, Camera. The person responsible for operating and moving the camera based on instructions from the Director of Photography. This role is sometimes assumed by the Director of Photography, or even by the Director."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Camera Operator"@en ;
+  dc:description "Camera Operator, Cameraman, Camera. The person responsible for operating and moving the camera based on instructions from the Director of Photography. This role is sometimes assumed by the Director of Photography, or even by the Director."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/CastActivity>
-    a owl:Class ;
-    rdfs:label
-        "Cast Activity"@en ;
-    dc:description
-        "Cast contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Cast Activity"@en ;
+  dc:description "Cast contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/CastMember>
-    a owl:Class ;
-    rdfs:label
-        "Cast Member"@en ;
-    dc:description
-        "Cast, Cast of Characters, Players. Collective term for actors in a film and the characters they play. Cast members’ names may be preceded by such terms as: Starring, Co-Starring, Also Starring, Introducing, Featuring, Guest Star, Guest Appearance, Cameo Appearance, or With…"@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Cast Member"@en ;
+  dc:description "Cast, Cast of Characters, Players. Collective term for actors in a film and the characters they play. Cast members’ names may be preceded by such terms as: Starring, Co-Starring, Also Starring, Introducing, Featuring, Guest Star, Guest Appearance, Cameo Appearance, or With…"@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/CastingDirector>
-    a owl:Class ;
-    rdfs:label
-        "Casting Director"@en ;
-    dc:description
-        "Casting Director, Casting by. A person responsible for the auditioning, selection, and hiring of actors (except lead players), but having no further involvement in the production. Usually works with input from the Director and Producer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Casting Director"@en ;
+  dc:description "Casting Director, Casting by. A person responsible for the auditioning, selection, and hiring of actors (except lead players), but having no further involvement in the production. Usually works with input from the Director and Producer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Censor>
-    a owl:Class ;
-    rdfs:label
-        "Censor"@en ;
-    dc:description
-        "Censorship, Censor, Censored by, Approved by. A legal authority charged with determining a film’s compliance with prevailing moral and legal standards, and, if deemed necessary, initiating the modification or suppression of the film or parts thereof."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CensorshipActivity> ;
+  a owl:Class ;
+  rdfs:label "Censor"@en ;
+  dc:description "Censorship, Censor, Censored by, Approved by. A legal authority charged with determining a film’s compliance with prevailing moral and legal standards, and, if deemed necessary, initiating the modification or suppression of the film or parts thereof."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CensorshipActivity> ;
 .
 
 <https://ontology.fiafcore.org/CensorshipActivity>
-    a owl:Class ;
-    rdfs:label
-        "Censorship Activity"@en ;
-    dc:description
-        "Censorship and Rating of a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Censorship Activity"@en ;
+  dc:description "Censorship and Rating of a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/CharacterDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Character Designer"@en ;
-    dc:description
-        "Character Design, Character Designer. The individual(s) who provide the look and the personality of an animated figure. This is accomplished by creating drawings, defining features, proportions, clothes, etc., of a character, and by specifying types of expressions and reactions."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Character Designer"@en ;
+  dc:description "Character Design, Character Designer. The individual(s) who provide the look and the personality of an animated figure. This is accomplished by creating drawings, defining features, proportions, clothes, etc., of a character, and by specifying types of expressions and reactions."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/Choreographer>
-    a owl:Class ;
-    rdfs:label
-        "Choreographer"@en ;
-    dc:description
-        "Choreographer, Choreography, Choreographed by, Dance Director. The person who creates and rehearses solo and ensemble dance routines for sequences which contain music and/or songs."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Choreographer"@en ;
+  dc:description "Choreographer, Choreography, Choreographed by, Dance Director. The person who creates and rehearses solo and ensemble dance routines for sequences which contain music and/or songs."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/Cinematographer>
-    a owl:Class ;
-    rdfs:label
-        "Cinematographer"@en ;
-    dc:description
-        "Director of Photography, Cinematographer. The person in charge of photographing a motion picture, who plans the technical aspects of lighting and photographing of scenes, and often assists the Director in the choice of angles, camera setups, and lighting moods. He or she may also supervise the further processing of filmed material up to the completion of the work print."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Cinematographer"@en ;
+  dc:description "Director of Photography, Cinematographer. The person in charge of photographing a motion picture, who plans the technical aspects of lighting and photographing of scenes, and often assists the Director in the choice of angles, camera setups, and lighting moods. He or she may also supervise the further processing of filmed material up to the completion of the work print."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/CinematographyActivity>
-    a owl:Class ;
-    rdfs:label
-        "Cinematography Activity"@en ;
-    dc:description
-        "Cinematography contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Cinematography Activity"@en ;
+  dc:description "Cinematography contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Cleanup>
-    a owl:Class ;
-    rdfs:label
-        "Cleanup"@en ;
-    dc:description
-        "Cleanup. Credit for individual(s) responsible for creating a detailed drawing from an animator’s rough sketch."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Cleanup"@en ;
+  dc:description "Cleanup. Credit for individual(s) responsible for creating a detailed drawing from an animator’s rough sketch."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/ColorConsultant>
-    a owl:Class ;
-    rdfs:label
-        "Color Consultant"@en ;
-    dc:description
-        "Color Consultant. Today primarily an individual with technical expertise in film stock and film developing who provides advice to the Director of Photography. Originally more often consulted on the selection of certain colors for props, costumes, and make-up to achieve the desired effect in relation to the selected color system."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Color Consultant"@en ;
+  dc:description "Color Consultant. Today primarily an individual with technical expertise in film stock and film developing who provides advice to the Director of Photography. Originally more often consulted on the selection of certain colors for props, costumes, and make-up to achieve the desired effect in relation to the selected color system."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/Colorist>
-    a owl:Class ;
-    rdfs:label
-        "Colorist"@en ;
-    dc:description
-        "Color Timer, Timer, Grader, Color Grader, Digital Colorist. The laboratory technician who analyzes the color balance, brightness, and/or density of the camera negative and modifies all three during printing either to achieve a specific effect (as requested by the Director and Cinematographer), or simply to generate a print that is consistent and balanced. Today, color timing is often performed digitally."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/LaboratoryActivity> ;
+  a owl:Class ;
+  rdfs:label "Colorist"@en ;
+  dc:description "Color Timer, Timer, Grader, Color Grader, Digital Colorist. The laboratory technician who analyzes the color balance, brightness, and/or density of the camera negative and modifies all three during printing either to achieve a specific effect (as requested by the Director and Cinematographer), or simply to generate a print that is consistent and balanced. Today, color timing is often performed digitally."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/LaboratoryActivity> ;
 .
 
 <https://ontology.fiafcore.org/Composer>
-    a owl:Class ;
-    rdfs:label
-        "Composer"@en ;
-    dc:description
-        "Music Composer, Music Composed by, Composer, Composed by, Music by. The person responsible for the film’s original music score. He or she is usually brought into the production as the editing process is being finalized, and works closely with the Director to write the music appropriate for the emotional content, mood, and tempo of the film and/or individual scenes."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Composer"@en ;
+  dc:description "Music Composer, Music Composed by, Composer, Composed by, Music by. The person responsible for the film’s original music score. He or she is usually brought into the production as the editing process is being finalized, and works closely with the Director to write the music appropriate for the emotional content, mood, and tempo of the film and/or individual scenes."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/Compositor>
-    a owl:Class ;
-    rdfs:label
-        "Compositor"@en ;
-    dc:description
-        "Compositing, Digital Compositing. Combining two or more elements from separate shots (or two or more computer generated elements) into a single image."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Compositor"@en ;
+  dc:description "Compositing, Digital Compositing. Combining two or more elements from separate shots (or two or more computer generated elements) into a single image."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/ConstructionCoordinator>
-    a owl:Class ;
-    rdfs:label
-        "Construction Coordinator"@en ;
-    dc:description
-        "Construction Coordinator, Construction Manager. The person responsible for the physical construction of the set. Duties may also include hiring of the construction crew, tracking costs, and generating financial reports."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Construction Coordinator"@en ;
+  dc:description "Construction Coordinator, Construction Manager. The person responsible for the physical construction of the set. Duties may also include hiring of the construction crew, tracking costs, and generating financial reports."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Continuity>
-    a owl:Class ;
-    rdfs:label
-        "Continuity"@en ;
-    dc:description
-        "Script Supervisor, Continuity, Continuity by, Script-girl. The person responsible for maintaining the proper matching of details, movement, and dialogue from shot to shot. He or she keeps a record of individual takes with details such as the props appearing on the set, the camera position and movement, the dialogue recorded, the placement and movement of actors, etc. Script-girl is today considered an obsolete term and has been replaced with Script Supervisor. In the U.S. in the 1920’s and early 1930’s, Continuity by was often synonymous with a screenplay credit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Continuity"@en ;
+  dc:description "Script Supervisor, Continuity, Continuity by, Script-girl. The person responsible for maintaining the proper matching of details, movement, and dialogue from shot to shot. He or she keeps a record of individual takes with details such as the props appearing on the set, the camera position and movement, the dialogue recorded, the placement and movement of actors, etc. Script-girl is today considered an obsolete term and has been replaced with Script Supervisor. In the U.S. in the 1920’s and early 1930’s, Continuity by was often synonymous with a screenplay credit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Cooperation>
-    a owl:Class ;
-    rdfs:label
-        "Cooperation"@en ;
-    dc:description
-        "Cooperation (by outside body in making of film). Credit for an institution or person outside of the production unit that provides expertise or help not obtainable within the production company."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Cooperation"@en ;
+  dc:description "Cooperation (by outside body in making of film). Credit for an institution or person outside of the production unit that provides expertise or help not obtainable within the production company."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Coproducer>
-    a owl:Class ;
-    rdfs:label
-        "Co-producer"@en ;
-    dc:description
-        "Co-producer. The person charged with a significant part of the producing function, but with less overall responsibility than the Producer. This role may be assumed by a more experienced Production Manager."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Co-producer"@en ;
+  dc:description "Co-producer. The person charged with a significant part of the producing function, but with less overall responsibility than the Producer. This role may be assumed by a more experienced Production Manager."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/CopyrightandDistributionActivity>
-    a owl:Class ;
-    rdfs:label
-        "Copyright and Distribution Activity"@en ;
-    dc:description
-        "Copyright and Distribution contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Copyright and Distribution Activity"@en ;
+  dc:description "Copyright and Distribution contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/CostumeDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Costume Designer"@en ;
-    dc:description
-        "Costume Designer, Costume Design, Costumes by. The person in charge of designing the period and/or contemporary clothes and related accessories to be worn by cast members during filming. He or she may also supervise the fabrication of costumes and selection of acquired (purchased or rented) costuming. Works in close collaboration with the Production Designer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Costume Designer"@en ;
+  dc:description "Costume Designer, Costume Design, Costumes by. The person in charge of designing the period and/or contemporary clothes and related accessories to be worn by cast members during filming. He or she may also supervise the fabrication of costumes and selection of acquired (purchased or rented) costuming. Works in close collaboration with the Production Designer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/CostumeMaker>
-    a owl:Class ;
-    rdfs:label
-        "Costume Maker"@en ;
-    dc:description
-        "Costume Maker, Costumes Made by, Cutter, Seamstress. The person who makes the costumes according to the sketches or patterns provided by the Costume Designer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Costume Maker"@en ;
+  dc:description "Costume Maker, Costumes Made by, Cutter, Seamstress. The person who makes the costumes according to the sketches or patterns provided by the Costume Designer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/CostumeSupervisor>
-    a owl:Class ;
-    rdfs:label
-        "Costume Supervisor"@en ;
-    dc:description
-        "Costume Supervisor. The individual who oversees the measuring, making, and fitting of fabricated costumes, and is responsible for the selection and renting or buying of acquired costuming. He or she also prepares the costume schedule, which specifies the costumes and changes to the costumes for each scene and character."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Costume Supervisor"@en ;
+  dc:description "Costume Supervisor. The individual who oversees the measuring, making, and fitting of fabricated costumes, and is responsible for the selection and renting or buying of acquired costuming. He or she also prepares the costume schedule, which specifies the costumes and changes to the costumes for each scene and character."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/CostumeSupplier>
-    a owl:Class ;
-    rdfs:label
-        "Costume Supplier"@en ;
-    dc:description
-        "Costume Supplier, Costumes Supplied by. Credit for a company contracted to supply all or part of the clothing required for a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Costume Supplier"@en ;
+  dc:description "Costume Supplier, Costumes Supplied by. Credit for a company contracted to supply all or part of the clothing required for a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Costumer>
-    a owl:Class ;
-    rdfs:label
-        "Costumer"@en ;
-    dc:description
-        "Costumer. The person or persons responsible for taking measurements of cast members and fitting the costumes in pre-production, and, during shooting, making sure the costumes are correct, complete, and not in need of repair or alteration. In the past incorporated into the wardrobe function, but today a distinctly separate category."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Costumer"@en ;
+  dc:description "Costumer. The person or persons responsible for taking measurements of cast members and fitting the costumes in pre-production, and, during shooting, making sure the costumes are correct, complete, and not in need of repair or alteration. In the past incorporated into the wardrobe function, but today a distinctly separate category."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/CraneOperator>
-    a owl:Class ;
-    rdfs:label
-        "Crane Operator"@en ;
-    dc:description
-        "Crane Operator. A person who operates the crane used for overhead shots and/or more complex camera movements."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Crane Operator"@en ;
+  dc:description "Crane Operator. A person who operates the crane used for overhead shots and/or more complex camera movements."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/Dancer>
-    a owl:Class ;
-    rdfs:label
-        "Dancer"@en ;
-    dc:description
-        "Dancer, Danced by. A person who performs on film, either alone or with others, a rhythmic and patterned succession of movements, commonly to music."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Dancer"@en ;
+  dc:description "Dancer, Danced by. A person who performs on film, either alone or with others, a rhythmic and patterned succession of movements, commonly to music."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/DialogueCoach>
-    a owl:Class ;
-    rdfs:label
-        "Dialogue Coach"@en ;
-    dc:description
-        "Dialogue Coach, Dialect Coach. A person who trains the actors in diction and/or the use of dialect(s) required by their roles."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Dialogue Coach"@en ;
+  dc:description "Dialogue Coach, Dialect Coach. A person who trains the actors in diction and/or the use of dialect(s) required by their roles."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/DialogueEditor>
-    a owl:Class ;
-    rdfs:label
-        "Dialogue Editor"@en ;
-    dc:description
-        "Dialogue Editor. A sound editor responsible for editing the dialogue recorded on the set and/or location."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Dialogue Editor"@en ;
+  dc:description "Dialogue Editor. A sound editor responsible for editing the dialogue recorded on the set and/or location."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/DirectingActivity>
-    a owl:Class ;
-    rdfs:label
-        "Directing Activity"@en ;
-    dc:description
-        "Directing contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Directing Activity"@en ;
+  dc:description "Directing contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Director>
-    a owl:Class ;
-    rdfs:label
-        "Director"@en ;
-    dc:description
-        "Director, Direction, Directed by. The person with the overall responsibility for all creative and technical aspects of making a film. He or she orchestrates the activities of the cast and crew as effectively as possible with the goal of interpreting the screenplay and turning it into a fully realized motion picture. The Director’s authority and scope of duties can vary depending on the individual, his or her contractual obligations, and the overall production environment."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Director"@en ;
+  dc:description "Director, Direction, Directed by. The person with the overall responsibility for all creative and technical aspects of making a film. He or she orchestrates the activities of the cast and crew as effectively as possible with the goal of interpreting the screenplay and turning it into a fully realized motion picture. The Director’s authority and scope of duties can vary depending on the individual, his or her contractual obligations, and the overall production environment."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Distributor>
-    a owl:Class ;
-    rdfs:label
-        "Distributor"@en ;
-    dc:description
-        "Distributor, Distribution, Distributed by, Released by. The person or corporate body who acts as an agent between the production company and the exhibitors, and is usually responsible for coordinating all aspects of a film’s release."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "Distributor"@en ;
+  dc:description "Distributor, Distribution, Distributed by, Released by. The person or corporate body who acts as an agent between the production company and the exhibitors, and is usually responsible for coordinating all aspects of a film’s release."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/DistributorNonTheatrical>
-    a owl:Class ;
-    rdfs:label
-        "Distributor (non-theatrical)"@en ;
-    dc:description
-        "Agent responsible for the non-theatrical distribution."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36588%3A5175> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Distributor (non-theatrical)"@en ;
+  dc:description "Agent responsible for the non-theatrical distribution."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36588%3A5175> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/DistributorTheatrical>
-    a owl:Class ;
-    rdfs:label
-        "Distributor (theatrical)"@en ;
-    dc:description
-        "Agent responsible for the theatrical distribution of a Manifestation."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36584%3A5174> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Distributor (theatrical)"@en ;
+  dc:description "Agent responsible for the theatrical distribution of a Manifestation."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36584%3A5174> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/DollyGrip>
-    a owl:Class ;
-    rdfs:label
-        "Dolly Grip"@en ;
-    dc:description
-        "Dolly Grip. The person in charge of setting up and moving a dolly, a wheeled platform that rolls along a set of tracks carrying the camera, the Camera Operator, and often the Assistant Cameraman."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Dolly Grip"@en ;
+  dc:description "Dolly Grip. The person in charge of setting up and moving a dolly, a wheeled platform that rolls along a set of tracks carrying the camera, the Camera Operator, and often the Assistant Cameraman."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/Double>
-    a owl:Class ;
-    rdfs:label
-        "Double"@en ;
-    dc:description
-        "Double, Stunt Double, Body Double. A person who is filmed in place of a leading actor either as part of a stunt scene (Stunt Double), or to replace the cast member’s body in e.g. shots requiring nudity or depiction of some physical property that the actor does not have (Body Double)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Double"@en ;
+  dc:description "Double, Stunt Double, Body Double. A person who is filmed in place of a leading actor either as part of a stunt scene (Stunt Double), or to replace the cast member’s body in e.g. shots requiring nudity or depiction of some physical property that the actor does not have (Body Double)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/DubbingDirector>
-    a owl:Class ;
-    rdfs:label
-        "Dubbing Director"@en ;
-    dc:description
-        "Dubbing Director. The person responsible for controlling the dubbing process and coaching the speaker or actor whose voice is being recorded."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Dubbing Director"@en ;
+  dc:description "Dubbing Director. The person responsible for controlling the dubbing process and coaching the speaker or actor whose voice is being recorded."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/DubbingEditor>
-    a owl:Class ;
-    rdfs:label
-        "Dubbing Editor"@en ;
-    dc:description
-        "Dubbing Editor, Loop Editor, ADR Editor. The person responsible for selecting and placing the dubbed dialogue segments in synchronization with the picture."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Dubbing Editor"@en ;
+  dc:description "Dubbing Editor, Loop Editor, ADR Editor. The person responsible for selecting and placing the dubbed dialogue segments in synchronization with the picture."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/DubbingMixer>
-    a owl:Class ;
-    rdfs:label
-        "Dubbing Mixer"@en ;
-    dc:description
-        "Re-recording Mixer, Dubbing Mixer, Mixer. The person responsible for the final mix during which all edited audio tracks (dialogue, sound effects, music, ADR, foley) are combined into a single track or mix."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Dubbing Mixer"@en ;
+  dc:description "Re-recording Mixer, Dubbing Mixer, Mixer. The person responsible for the final mix during which all edited audio tracks (dialogue, sound effects, music, ADR, foley) are combined into a single track or mix."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/DubbingSpeaker>
-    a owl:Class ;
-    rdfs:label
-        "Dubbing Speaker"@en ;
-    dc:description
-        "Dubbing Speakers, Speakers. The individuals whose voices are used in a dubbing session either to replace the voice of an actor actually appearing in the film, or to replace the dialogue or commentary in one language with that in another language."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Dubbing Speaker"@en ;
+  dc:description "Dubbing Speakers, Speakers. The individuals whose voices are used in a dubbing session either to replace the voice of an actor actually appearing in the film, or to replace the dialogue or commentary in one language with that in another language."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/EditingActivity>
-    a owl:Class ;
-    rdfs:label
-        "Editing Activity"@en ;
-    dc:description
-        "Editing contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Editing Activity"@en ;
+  dc:description "Editing contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Electrician>
-    a owl:Class ;
-    rdfs:label
-        "Electrician"@en ;
-    dc:description
-        "Electrician, Lamp Operator. The person in charge of hanging and focusing the lights and maintaining the lighting equipment."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Electrician"@en ;
+  dc:description "Electrician, Lamp Operator. The person in charge of hanging and focusing the lights and maintaining the lighting equipment."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/ExecutiveProducer>
-    a owl:Class ;
-    rdfs:label
-        "Executive Producer"@en ;
-    dc:description
-        "Executive Producer. Typically a person who is a top executive in the production company making the film. He or she selects and oversees the development of a concept and/or idea into a screenplay, and arranges the financing for the project, but is usually not involved in the actual production."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Executive Producer"@en ;
+  dc:description "Executive Producer. Typically a person who is a top executive in the production company making the film. He or she selects and oversees the development of a concept and/or idea into a screenplay, and arranges the financing for the project, but is usually not involved in the actual production."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Extra>
-    a owl:Class ;
-    rdfs:label
-        "Extra"@en ;
-    dc:description
-        "Extra. An actor who appears in crowd scenes or as an incidental figure without speaking any lines. Usually does not receive screen credit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Extra"@en ;
+  dc:description "Extra. An actor who appears in crowd scenes or as an incidental figure without speaking any lines. Usually does not receive screen credit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/FightArranger>
-    a owl:Class ;
-    rdfs:label
-        "Fight Arranger"@en ;
-    dc:description
-        "Fight Arranger, Fights Arranged by, Fight Master. A specialist responsible for planning the detailed movements of a screen fight."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Fight Arranger"@en ;
+  dc:description "Fight Arranger, Fights Arranged by, Fight Master. A specialist responsible for planning the detailed movements of a screen fight."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/FilmEditor>
-    a owl:Class ;
-    rdfs:label
-        "Film Editor"@en ;
-    dc:description
-        "Film Editor, Picture Editor, Editor, Editing, Edited by, Supervising Editor. The person who, following the script and in creative cooperation with the Director, selects, arranges, and assembles the filmed material, controls the synchronization of picture and sound, and participates in other post-production tasks such as sound mixing and visual effects processing. Today, picture editing is often performed digitally."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/EditingActivity> ;
+  a owl:Class ;
+  rdfs:label "Film Editor"@en ;
+  dc:description "Film Editor, Picture Editor, Editor, Editing, Edited by, Supervising Editor. The person who, following the script and in creative cooperation with the Director, selects, arranges, and assembles the filmed material, controls the synchronization of picture and sound, and participates in other post-production tasks such as sound mixing and visual effects processing. Today, picture editing is often performed digitally."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/EditingActivity> ;
 .
 
 <https://ontology.fiafcore.org/FocusPuller>
-    a owl:Class ;
-    rdfs:label
-        "Focus Puller"@en ;
-    dc:description
-        "Focus Puller. The person responsible for focus adjustments during shooting. In units with two Assistant Cameramen, this duty is usually performed by the 1st Assistant."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Focus Puller"@en ;
+  dc:description "Focus Puller. The person responsible for focus adjustments during shooting. In units with two Assistant Cameramen, this duty is usually performed by the 1st Assistant."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/FoleyArtist>
-    a owl:Class ;
-    rdfs:label
-        "Foley Artist"@en ;
-    dc:description
-        "Foley, Foley Artist, Sound Effects Specialist. Foley refers to creating sound effects by watching the visual component of a movie and mimicking the action in a recording studio. To recreate realistic sounds (e.g. punches, footsteps), Foley Artists (sometimes called Sound Effects Specialists) can use a variety of props and/or surfaces. The practice was named after Hack Foley, the former head of the sound effects department at Universal Studios."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Foley Artist"@en ;
+  dc:description "Foley, Foley Artist, Sound Effects Specialist. Foley refers to creating sound effects by watching the visual component of a movie and mimicking the action in a recording studio. To recreate realistic sounds (e.g. punches, footsteps), Foley Artists (sometimes called Sound Effects Specialists) can use a variety of props and/or surfaces. The practice was named after Hack Foley, the former head of the sound effects department at Universal Studios."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/GafferLighting>
-    a owl:Class ;
-    rdfs:label
-        "Gaffer/Lighting"@en ;
-    dc:description
-        "Chief Lighting Technician, Gaffer, Lighting. The chief electrician who supervises the lighting crew and is responsible for placing and operating the light sources as required by the Director of Photography."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Gaffer/Lighting"@en ;
+  dc:description "Chief Lighting Technician, Gaffer, Lighting. The chief electrician who supervises the lighting crew and is responsible for placing and operating the light sources as required by the Director of Photography."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/GeneratorOperator>
-    a owl:Class ;
-    rdfs:label
-        "Generator Operator"@en ;
-    dc:description
-        "Generator Operator, Genny Operator. The person in charge of the generator, primarily used for producing electricity for location shooting."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Generator Operator"@en ;
+  dc:description "Generator Operator, Genny Operator. The person in charge of the generator, primarily used for producing electricity for location shooting."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/Gowns>
-    a owl:Class ;
-    rdfs:label
-        "Gowns"@en ;
-    dc:description
-        "Gowns by. A couturier responsible for designing the gowns worn by a star. In the 1930’s commonly used as an overall costume design credit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Gowns"@en ;
+  dc:description "Gowns by. A couturier responsible for designing the gowns worn by a star. In the 1930’s commonly used as an overall costume design credit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Greensperson>
-    a owl:Class ;
-    rdfs:label
-        "Greensperson"@en ;
-    dc:description
-        "Greensman, Greensperson. The individual responsible for dressing the set with grass, shrubs, flowers and other vegetation."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Greensperson"@en ;
+  dc:description "Greensman, Greensperson. The individual responsible for dressing the set with grass, shrubs, flowers and other vegetation."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Grip>
-    a owl:Class ;
-    rdfs:label
-        "Grip"@en ;
-    dc:description
-        "Key Grip, Grip. Grips are stagehands responsible for setting up the camera and the lighting support equipment (scaffolding, screens, backdrops, overhead lighting grids, etc). Key Grip is the chief of the grip department. The term “grip” originates from the early days of Hollywood when workers on a set carried their tools in a sturdy bag called a grip bag."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Grip"@en ;
+  dc:description "Key Grip, Grip. Grips are stagehands responsible for setting up the camera and the lighting support equipment (scaffolding, screens, backdrops, overhead lighting grids, etc). Key Grip is the chief of the grip department. The term “grip” originates from the early days of Hollywood when workers on a set carried their tools in a sturdy bag called a grip bag."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/HairStylist>
-    a owl:Class ;
-    rdfs:label
-        "Hair Stylist"@en ;
-    dc:description
-        "Hairdresser, Hair Stylist. The person who styles hair for cast members, often according to suggestions from the Make-Up Artist."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Hair Stylist"@en ;
+  dc:description "Hairdresser, Hair Stylist. The person who styles hair for cast members, often according to suggestions from the Make-Up Artist."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Idea>
-    a owl:Class ;
-    rdfs:label
-        "Idea"@en ;
-    dc:description
-        "Based on an Idea by, From an Idea by, Idea. Credit given to a person or persons who originated the basis for a film’s plot but who may or may not have taken further part in the writing."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Idea"@en ;
+  dc:description "Based on an Idea by, From an Idea by, Idea. Credit given to a person or persons who originated the basis for a film’s plot but who may or may not have taken further part in the writing."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Interviewer>
-    a owl:Class ;
-    rdfs:label
-        "Interviewer"@en ;
-    dc:description
-        "Interviewer, Interviewed by. The person who questions either one or a group of individuals on film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Interviewer"@en ;
+  dc:description "Interviewer, Interviewed by. The person who questions either one or a group of individuals on film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/Laboratory>
-    a owl:Class ;
-    rdfs:label
-        "Laboratory"@en ;
-    dc:description
-        "Laboratory, Laboratory Services, Processing Laboratory. The name of the laboratory where the negative and/or the release print has been developed and printed."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/LaboratoryActivity> ;
+  a owl:Class ;
+  rdfs:label "Laboratory"@en ;
+  dc:description "Laboratory, Laboratory Services, Processing Laboratory. The name of the laboratory where the negative and/or the release print has been developed and printed."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/LaboratoryActivity> ;
 .
 
 <https://ontology.fiafcore.org/LaboratoryActivity>
-    a owl:Class ;
-    rdfs:label
-        "Laboratory Activity"@en ;
-    dc:description
-        "Laboratory contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Laboratory Activity"@en ;
+  dc:description "Laboratory contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/LaboratoryTechnician>
-    a owl:Class ;
-    rdfs:label
-        "Laboratory Technician"@en ;
-    dc:description
-        "Laboratory Technicians. Technicians employed in a film laboratory including quality controllers, negative cutters, negative and positive developers, timers, film cleaners, printers, and projectionists. In most cases, only the Negative Cutter and Color Timer receive screen credit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/LaboratoryActivity> ;
+  a owl:Class ;
+  rdfs:label "Laboratory Technician"@en ;
+  dc:description "Laboratory Technicians. Technicians employed in a film laboratory including quality controllers, negative cutters, negative and positive developers, timers, film cleaners, printers, and projectionists. In most cases, only the Negative Cutter and Color Timer receive screen credit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/LaboratoryActivity> ;
 .
 
 <https://ontology.fiafcore.org/LeadAnimator>
-    a owl:Class ;
-    rdfs:label
-        "Lead Animator"@en ;
-    dc:description
-        "Supervising Animator, Key Animator, Lead Animator. The person who works under the Animation Director, supervises the animators, and is usually responsible for developing and creating the key points in an animation sequence."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Lead Animator"@en ;
+  dc:description "Supervising Animator, Key Animator, Lead Animator. The person who works under the Animation Director, supervises the animators, and is usually responsible for developing and creating the key points in an animation sequence."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/LeadPerson>
-    a owl:Class ;
-    rdfs:label
-        "Lead Person"@en ;
-    dc:description
-        "Lead Man, Lead Person, Swing Gang. Lead Man refers to the head of the group (Swing Gang) that sets up and takes down the set."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Lead Person"@en ;
+  dc:description "Lead Man, Lead Person, Swing Gang. Lead Man refers to the head of the group (Swing Gang) that sets up and takes down the set."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Lenses>
-    a owl:Class ;
-    rdfs:label
-        "Lenses"@en ;
-    dc:description
-        "Lenses by, Opticals by. Manufacturer of the optical lenses."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Lenses"@en ;
+  dc:description "Lenses by, Opticals by. Manufacturer of the optical lenses."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/LineProducer>
-    a owl:Class ;
-    rdfs:label
-        "Line Producer"@en ;
-    dc:description
-        "Line Producer. The person primarily responsible for resolving budget and schedule issues on the set. Often acts as a bridge between the Director and the Production Manager. Can also be involved in the development phase, especially if the Producer lacks experience in production related matters."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Line Producer"@en ;
+  dc:description "Line Producer. The person primarily responsible for resolving budget and schedule issues on the set. Often acts as a bridge between the Director and the Production Manager. Can also be involved in the development phase, especially if the Producer lacks experience in production related matters."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/LoaderClapper>
-    a owl:Class ;
-    rdfs:label
-        "Loader/Clapper"@en ;
-    dc:description
-        "Clapper Loader, Film Loader, Camera Loader, Loader, Clapper. The person who loads and unloads the film magazines and operates the clapboard (or clapper board), a hinged slate with information identifying a take which also provides cues for the synchronization of sound and picture. In large units, the job is often split between two individuals. In units with two Assistant Cameramen, the duties of the Clapper (or Clapper Loader) are usually performed by the 2nd Assistant."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Loader/Clapper"@en ;
+  dc:description "Clapper Loader, Film Loader, Camera Loader, Loader, Clapper. The person who loads and unloads the film magazines and operates the clapboard (or clapper board), a hinged slate with information identifying a take which also provides cues for the synchronization of sound and picture. In large units, the job is often split between two individuals. In units with two Assistant Cameramen, the duties of the Clapper (or Clapper Loader) are usually performed by the 2nd Assistant."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/LocationManager>
-    a owl:Class ;
-    rdfs:label
-        "Location Manager"@en ;
-    dc:description
-        "Location Manager, Location Coordinator, Location Scout. The person charged with various aspects of shooting on location, from visiting possible locations during pre-production (Location Scout) to acquiring permits and permissions required for filming in specific places."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Location Manager"@en ;
+  dc:description "Location Manager, Location Coordinator, Location Scout. The person charged with various aspects of shooting on location, from visiting possible locations during pre-production (Location Scout) to acquiring permits and permissions required for filming in specific places."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Lyricist>
-    a owl:Class ;
-    rdfs:label
-        "Lyricist"@en ;
-    dc:description
-        "Writer of Lyrics, Lyricist, Lyrics by. The person who writes the words to be used with the music written by the Song Composer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Lyricist"@en ;
+  dc:description "Writer of Lyrics, Lyricist, Lyrics by. The person who writes the words to be used with the music written by the Song Composer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MakeUpArtist>
-    a owl:Class ;
-    rdfs:label
-        "Make-Up Artist"@en ;
-    dc:description
-        "Make-Up Artist, Make-Up. The person responsible for the enhancement and/or alteration of the natural appearance of the actors and actresses by means of cosmetics in order to bring about the effect required by the director. For special effects make-up see Prosthetics."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Make-Up Artist"@en ;
+  dc:description "Make-Up Artist, Make-Up. The person responsible for the enhancement and/or alteration of the natural appearance of the actors and actresses by means of cosmetics in order to bring about the effect required by the director. For special effects make-up see Prosthetics."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/ManifestationActivity>
-    a owl:Class ;
-    rdfs:label
-        "Manifestation Activity"@en ;
-    dc:description
-        "Contribution to a moving image Manifestation."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36580%3A5173> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Manifestation Activity"@en ;
+  dc:description "Contribution to a moving image Manifestation."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36580%3A5173> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Manufacturer>
-    a owl:Class ;
-    rdfs:label
-        "Manufacturer"@en ;
-    dc:description
-        "Agent responsible for the activities of manufacturing a Manifestation."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36601%3A5178> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Manufacturer"@en ;
+  dc:description "Agent responsible for the activities of manufacturing a Manifestation."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36601%3A5178> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/MatteArtist>
-    a owl:Class ;
-    rdfs:label
-        "Matte Artist"@en ;
-    dc:description
-        "Matte, Matte Painting, Traveling Matte. Matte refers to the technique of masking either part of the camera lens during filming or part of the aperture in the printer, with the goal of creating a composite image by inserting another visual element in the unexposed area. Matte Painting is a painted background, commonly on glass, which is combined with live action (or physical sets) to create a composite image. A Traveling Matte changes shape from frame to frame in order to correspond to the movement of the image or a subject within the image. Today, matte effects are usually designed and created digitally."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Matte Artist"@en ;
+  dc:description "Matte, Matte Painting, Traveling Matte. Matte refers to the technique of masking either part of the camera lens during filming or part of the aperture in the printer, with the goal of creating a composite image by inserting another visual element in the unexposed area. Matte Painting is a painted background, commonly on glass, which is combined with live action (or physical sets) to create a composite image. A Traveling Matte changes shape from frame to frame in order to correspond to the movement of the image or a subject within the image. Today, matte effects are usually designed and created digitally."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/MechanicalEffects>
-    a owl:Class ;
-    rdfs:label
-        "Mechanical Effects"@en ;
-    dc:description
-        "Mechanical Effects, Physical Effects. Special effects created on the set, in front of the camera, which in most cases do not require any additional photographic or digital manipulation (e.g. pyrotechnics, prosthetics, atmospheric effects)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Mechanical Effects"@en ;
+  dc:description "Mechanical Effects, Physical Effects. Special effects created on the set, in front of the camera, which in most cases do not require any additional photographic or digital manipulation (e.g. pyrotechnics, prosthetics, atmospheric effects)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/ModelMaker>
-    a owl:Class ;
-    rdfs:label
-        "Model Maker"@en ;
-    dc:description
-        "Model Maker, Modeler, Modeling. Model Makers are individual(s) who create three-dimensional objects for animation. Modeling usually refers to creating computer generated models."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/AnimationActivity> ;
+  a owl:Class ;
+  rdfs:label "Model Maker"@en ;
+  dc:description "Model Maker, Modeler, Modeling. Model Makers are individual(s) who create three-dimensional objects for animation. Modeling usually refers to creating computer generated models."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/AnimationActivity> ;
 .
 
 <https://ontology.fiafcore.org/MotionCapture>
-    a owl:Class ;
-    rdfs:label
-        "Motion Capture"@en ;
-    dc:description
-        "Motion Capture. The technique of feeding the movements of a living person into a computer, which is then used to create motion of a digitally created form."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Motion Capture"@en ;
+  dc:description "Motion Capture. The technique of feeding the movements of a living person into a computer, which is then used to create motion of a digitally created form."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicActivity>
-    a owl:Class ;
-    rdfs:label
-        "Music Activity"@en ;
-    dc:description
-        "Music contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Music Activity"@en ;
+  dc:description "Music contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/MusicArranger>
-    a owl:Class ;
-    rdfs:label
-        "Music Arranger"@en ;
-    dc:description
-        "Music Arranger, Musical Arrangement, Music Arranged by, Arranger, Arrangements, Arranged by, Music Adapter, Music Adaptation by, Music Orchestrated by, Orchestrated by, Orchestration, Orchestration by. The individual who arranges or orchestrates the original music, or adapts existing music compositions."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Arranger"@en ;
+  dc:description "Music Arranger, Musical Arrangement, Music Arranged by, Arranger, Arrangements, Arranged by, Music Adapter, Music Adaptation by, Music Orchestrated by, Orchestrated by, Orchestration, Orchestration by. The individual who arranges or orchestrates the original music, or adapts existing music compositions."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicConductor>
-    a owl:Class ;
-    rdfs:label
-        "Music Conductor"@en ;
-    dc:description
-        "Music Conducted by, Conducted by, Conductor. The person who directs the musicians who perform the film’s music score in the recording studio."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Conductor"@en ;
+  dc:description "Music Conducted by, Conducted by, Conductor. The person who directs the musicians who perform the film’s music score in the recording studio."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicContractor>
-    a owl:Class ;
-    rdfs:label
-        "Music Contractor"@en ;
-    dc:description
-        "Music Contractor, Orchestra Contractor. The person who hires the musicians for recording the film’s music score."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Contractor"@en ;
+  dc:description "Music Contractor, Orchestra Contractor. The person who hires the musicians for recording the film’s music score."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicEditor>
-    a owl:Class ;
-    rdfs:label
-        "Music Editor"@en ;
-    dc:description
-        "Music Editor. The person responsible for editing the music score and synchronizing it to the picture. The Music Editor is also often charged with creating a temporary music track (“temp track”), which is assembled for use with early versions of the film, before the original music is written or selected."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Editor"@en ;
+  dc:description "Music Editor. The person responsible for editing the music score and synchronizing it to the picture. The Music Editor is also often charged with creating a temporary music track (“temp track”), which is assembled for use with early versions of the film, before the original music is written or selected."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicPerformer>
-    a owl:Class ;
-    rdfs:label
-        "Music Performer"@en ;
-    dc:description
-        "Music Performers, Music Performed by. The individuals or groups (orchestra, chorus, dance band) who perform the film’s music score in the recording studio. In some films, they may actually appear on screen."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Performer"@en ;
+  dc:description "Music Performers, Music Performed by. The individuals or groups (orchestra, chorus, dance band) who perform the film’s music score in the recording studio. In some films, they may actually appear on screen."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/MusicSupervisor>
-    a owl:Class ;
-    rdfs:label
-        "Music Supervisor"@en ;
-    dc:description
-        "Music Supervisor, Musical Supervision, Music Supervised by, Music Director, Music Direction, Music Directed by. The person responsible for coordinating the work of all parties involved in providing the music score (Composer, Music Editor, Re-recording Mixer), and often charged with selecting, negotiating, and licensing of existing music to be used in the film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Music Supervisor"@en ;
+  dc:description "Music Supervisor, Musical Supervision, Music Supervised by, Music Director, Music Direction, Music Directed by. The person responsible for coordinating the work of all parties involved in providing the music score (Composer, Music Editor, Re-recording Mixer), and often charged with selecting, negotiating, and licensing of existing music to be used in the film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/NarrationWriter>
-    a owl:Class ;
-    rdfs:label
-        "Narration Writer"@en ;
-    dc:description
-        "Narration Written by, Narration, Commentary Written by, Commentary. Screen credit for the author(s) of an informative or explanatory speech, often delivered off camera, which can serve a variety of functions, from telling or complementing a story to simply describing the images in a neutral manner. Narration and Commentary have been commonly used as interchangeable terms, although today the latter primarily refers to the un-scripted speech associated with television broadcasts."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Narration Writer"@en ;
+  dc:description "Narration Written by, Narration, Commentary Written by, Commentary. Screen credit for the author(s) of an informative or explanatory speech, often delivered off camera, which can serve a variety of functions, from telling or complementing a story to simply describing the images in a neutral manner. Narration and Commentary have been commonly used as interchangeable terms, although today the latter primarily refers to the un-scripted speech associated with television broadcasts."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Narrator>
-    a owl:Class ;
-    rdfs:label
-        "Narrator"@en ;
-    dc:description
-        "Narrator, Narration, Narrated by, Commentator, Commentary, Commentary Spoken by. An on or off camera performer who guides the audience through the film or parts thereof by supplying spoken information necessary to identify and interpret the images on the screen. Also used in the traditional role of storyteller. Today, Commentator primarily refers to an individual delivering the unscripted speech associated with television broadcasts."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Narrator"@en ;
+  dc:description "Narrator, Narration, Narrated by, Commentator, Commentary, Commentary Spoken by. An on or off camera performer who guides the audience through the film or parts thereof by supplying spoken information necessary to identify and interpret the images on the screen. Also used in the traditional role of storyteller. Today, Commentator primarily refers to an individual delivering the unscripted speech associated with television broadcasts."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity>
 .
 
 <https://ontology.fiafcore.org/NationalDistributor>
-    a owl:Class ;
-    rdfs:label
-        "National Distributor"@en ;
-    dc:description
-        "Distributor (National). The person or corporate body who organizes the national distribution of a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "National Distributor"@en ;
+  dc:description "Distributor (National). The person or corporate body who organizes the national distribution of a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/NegativeCutter>
-    a owl:Class ;
-    rdfs:label
-        "Negative Cutter"@en ;
-    dc:description
-        "Negative Cutter, Negative Cutting, Negative Matching, Negative Conforming. The person who cuts and assembles the original negative to match the edited work print (a positive copy of the original negative that is cut during the editing process). If the film is edited digitally, the process involves conforming the original negative to the digital cut."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/LaboratoryActivity> ;
+  a owl:Class ;
+  rdfs:label "Negative Cutter"@en ;
+  dc:description "Negative Cutter, Negative Cutting, Negative Matching, Negative Conforming. The person who cuts and assembles the original negative to match the edited work print (a positive copy of the original negative that is cut during the editing process). If the film is edited digitally, the process involves conforming the original negative to the digital cut."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/LaboratoryActivity> ;
 .
 
 <https://ontology.fiafcore.org/OriginalCopyrightOwner>
-    a owl:Class ;
-    rdfs:label
-        "Original Copyright Owner"@en ;
-    dc:description
-        "Copyright Owner (Original), Copyrighted by. The person or corporate body in whom first is vested the rights of ownership and protection against unauthorized use of an individual film, whether published or unpublished. This may or may not require registration depending on the laws of the country concerned."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "Original Copyright Owner"@en ;
+  dc:description "Copyright Owner (Original), Copyrighted by. The person or corporate body in whom first is vested the rights of ownership and protection against unauthorized use of an individual film, whether published or unpublished. This may or may not require registration depending on the laws of the country concerned."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/OriginalDistributor>
-    a owl:Class ;
-    rdfs:label
-        "Original Distributor"@en ;
-    dc:description
-        "Distributor (Original). The person or corporate body who organizes the first distribution of a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "Original Distributor"@en ;
+  dc:description "Distributor (Original). The person or corporate body who organizes the first distribution of a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/PostProductionSupervisor>
-    a owl:Class ;
-    rdfs:label
-        "Post-Production Supervisor"@en ;
-    dc:description
-        "Post-Production Supervisor. The individual who oversees the completion of the film following the shooting phase and coordinates various tasks involved in the post-production (editing, sound mixing, music score, visual effects, laboratory, preview screenings, etc)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Post-Production Supervisor"@en ;
+  dc:description "Post-Production Supervisor. The individual who oversees the completion of the film following the shooting phase and coordinates various tasks involved in the post-production (editing, sound mixing, music score, visual effects, laboratory, preview screenings, etc)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/PresentCopyrightOwner>
-    a owl:Class ;
-    rdfs:label
-        "Present Copyright Owner"@en ;
-    dc:description
-        "Copyright Owner (Present). The person or corporate body to whom the original copyright owner or successors have legally transferred rights pertaining to ownership and protection against unauthorized use of an individual film, whether published or unpublished. Theatrical and television rights need not necessarily be vested in the same persons or companies."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "Present Copyright Owner"@en ;
+  dc:description "Copyright Owner (Present). The person or corporate body to whom the original copyright owner or successors have legally transferred rights pertaining to ownership and protection against unauthorized use of an individual film, whether published or unpublished. Theatrical and television rights need not necessarily be vested in the same persons or companies."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/Presenter>
-    a owl:Class ;
-    rdfs:label
-        "Presenter"@en ;
-    dc:description
-        "Presenter, Presented by. A vanity credit; in early years, normally the head of a studio; today, a person or corporate body in some way associated with the production, financing, or distribution of the film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Presenter"@en ;
+  dc:description "Presenter, Presented by. A vanity credit; in early years, normally the head of a studio; today, a person or corporate body in some way associated with the production, financing, or distribution of the film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Producer>
-    a owl:Class ;
-    rdfs:label
-        "Producer"@en ;
-    dc:description
-        "Producer, Production, Produced by. The head of production who bears the ultimate administrative and financial responsibility for a film. In practice, the role of a Producer may be wider and can include creative involvement."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Producer"@en ;
+  dc:description "Producer, Production, Produced by. The head of production who bears the ultimate administrative and financial responsibility for a film. In practice, the role of a Producer may be wider and can include creative involvement."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProducingActivity>
-    a owl:Class ;
-    rdfs:label
-        "Producing Activity"@en ;
-    dc:description
-        "Producing contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Producing Activity"@en ;
+  dc:description "Producing contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionAccountant>
-    a owl:Class ;
-    rdfs:label
-        "Production Accountant"@en ;
-    dc:description
-        "Production Accountant, Production Auditor. The person responsible for keeping track of all expenditures during production and overseeing the payment of salaries and other expenses."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Accountant"@en ;
+  dc:description "Production Accountant, Production Auditor. The person responsible for keeping track of all expenditures during production and overseeing the payment of salaries and other expenses."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionAssistant>
-    a owl:Class ;
-    rdfs:label
-        "Production Assistant"@en ;
-    dc:description
-        "Production Assistant, Runner, Gopher, Assistant to. The person responsible for various small tasks such as stopping traffic on the set, performing courier jobs, and fetching drinks and snacks. Production Assistants are often assigned to individual directors, producers, and actors."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Assistant"@en ;
+  dc:description "Production Assistant, Runner, Gopher, Assistant to. The person responsible for various small tasks such as stopping traffic on the set, performing courier jobs, and fetching drinks and snacks. Production Assistants are often assigned to individual directors, producers, and actors."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionCompany>
-    a owl:Class ;
-    rdfs:label
-        "Production Company"@en ;
-    dc:description
-        "Production Company. The name of the company under whose financial, technical and organizational management a film is made."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Company"@en ;
+  dc:description "Production Company. The name of the company under whose financial, technical and organizational management a film is made."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionCoordinator>
-    a owl:Class ;
-    rdfs:label
-        "Production Coordinator"@en ;
-    dc:description
-        "Production Coordinator, Production Office Coordinator. The individual who runs the production office and as such is the Production Manager’s right-hand person. He or she handles the production’s paperwork, communications, equipment orders, deliveries, film shipments, etc."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Coordinator"@en ;
+  dc:description "Production Coordinator, Production Office Coordinator. The individual who runs the production office and as such is the Production Manager’s right-hand person. He or she handles the production’s paperwork, communications, equipment orders, deliveries, film shipments, etc."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionDesignActivity>
-    a owl:Class ;
-    rdfs:label
-        "Production Design Activity"@en ;
-    dc:description
-        "Production Design contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Production Design Activity"@en ;
+  dc:description "Production Design contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Production Designer"@en ;
-    dc:description
-        "Production Designer, Production Design. The person who conceives, plans, and supervises the overall physical look of a movie, and as such is responsible for almost everything that is placed before the camera (apart from the actors). Works closely with the Director and the Director of Photography from the earliest stages of the production. In smaller units, this role can be assumed by the Art Director."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Designer"@en ;
+  dc:description "Production Designer, Production Design. The person who conceives, plans, and supervises the overall physical look of a movie, and as such is responsible for almost everything that is placed before the camera (apart from the actors). Works closely with the Director and the Director of Photography from the earliest stages of the production. In smaller units, this role can be assumed by the Art Director."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/ProductionManager>
-    a owl:Class ;
-    rdfs:label
-        "Production Manager"@en ;
-    dc:description
-        "Production Manager, Unit Production Manager, Production Supervisor. The individual who manages all administrative and technical details of the production, from preparing the shooting schedule and negotiating crew and equipment contracts, to approving purchase orders and authorizing the payroll. In units with both a Production Supervisor and Production Manager, the former is usually subordinate to the latter, but may assume some of his or her responsibilities if the Production Manager also acts as the Co-producer."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Production Manager"@en ;
+  dc:description "Production Manager, Unit Production Manager, Production Supervisor. The individual who manages all administrative and technical details of the production, from preparing the shooting schedule and negotiating crew and equipment contracts, to approving purchase orders and authorizing the payroll. In units with both a Production Supervisor and Production Manager, the former is usually subordinate to the latter, but may assume some of his or her responsibilities if the Production Manager also acts as the Co-producer."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/PropertyMaster>
-    a owl:Class ;
-    rdfs:label
-        "Property Master"@en ;
-    dc:description
-        "Property Master, Props Master, Property Man, Prop Man, Props. The person in charge of purchasing, altering, or building the non-structural set furnishings (properties or props) to be used in the film, including furniture, books, lamps, curtains, cigarette lighters, etc. In units with both a Property Master and a Property Man, the latter usually functions as an assistant to the former."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Property Master"@en ;
+  dc:description "Property Master, Props Master, Property Man, Prop Man, Props. The person in charge of purchasing, altering, or building the non-structural set furnishings (properties or props) to be used in the film, including furniture, books, lamps, curtains, cigarette lighters, etc. In units with both a Property Master and a Property Man, the latter usually functions as an assistant to the former."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Prosthetics>
-    a owl:Class ;
-    rdfs:label
-        "Prosthetics"@en ;
-    dc:description
-        "Prosthetics. Special make-up effects that distort the appearance of an actor by applying to his or her skin materials such as rubber, plastic, metal, or cloth. These effects are also used to create the illusion of open and bleeding wounds."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Prosthetics"@en ;
+  dc:description "Prosthetics. Special make-up effects that distort the appearance of an actor by applying to his or her skin materials such as rubber, plastic, metal, or cloth. These effects are also used to create the illusion of open and bleeding wounds."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/Publicist>
-    a owl:Class ;
-    rdfs:label
-        "Publicist"@en ;
-    dc:description
-        "Director of Publicity, Publicity Director, Unit Publicist, Publicist. Director of Publicity conceives and supervises the publicity campaign preceding and accompanying the film’s release. A Unit Publicist works on the set and/or location and is charged with arranging visits by members of the press, acting as a liaison between the production unit and the local population, and compiling notes on the making of the film for the movie’s press kit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Publicist"@en ;
+  dc:description "Director of Publicity, Publicity Director, Unit Publicist, Publicist. Director of Publicity conceives and supervises the publicity campaign preceding and accompanying the film’s release. A Unit Publicist works on the set and/or location and is charged with arranging visits by members of the press, acting as a liaison between the production unit and the local population, and compiling notes on the making of the film for the movie’s press kit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Publisher>
-    a owl:Class ;
-    rdfs:label
-        "Publisher"@en ;
-    dc:description
-        "Agent responsible for the home video publication or for the web publication of a moving image Manifestation."@en ;
-    dc:source
-        <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36597%3A5177> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ManifestationActivity> ;
+  a owl:Class ;
+  rdfs:label "Publisher"@en ;
+  dc:description "Agent responsible for the home video publication or for the web publication of a moving image Manifestation."@en ;
+  dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36597%3A5177> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ManifestationActivity> ;
 .
 
 <https://ontology.fiafcore.org/PuppetActivity>
-    a owl:Class ;
-    rdfs:label
-        "Puppet Activity"@en ;
-    dc:description
-        "Puppetry contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Puppet Activity"@en ;
+  dc:description "Puppetry contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Puppeteer>
-    a owl:Class ;
-    rdfs:label
-        "Puppeteer"@en ;
-    dc:description
-        "Puppet Handler, Puppets Manipulated by, Puppeteer. The person who operates the puppets, whether by hand or with rods, strings or wireless control."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/PuppetActivity> ;
+  a owl:Class ;
+  rdfs:label "Puppeteer"@en ;
+  dc:description "Puppet Handler, Puppets Manipulated by, Puppeteer. The person who operates the puppets, whether by hand or with rods, strings or wireless control."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/PuppetActivity> ;
 .
 
 <https://ontology.fiafcore.org/Pyrotechnics>
-    a owl:Class ;
-    rdfs:label
-        "Pyrotechnics"@en ;
-    dc:description
-        "Pyrotechnics. Special effects involving incendiary devices which produce explosions, smoke, and fire."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Pyrotechnics"@en ;
+  dc:description "Pyrotechnics. Special effects involving incendiary devices which produce explosions, smoke, and fire."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/RegionalDistributor>
-    a owl:Class ;
-    rdfs:label
-        "Regional Distributor"@en ;
-    dc:description
-        "Distributor (Regional), State Rights Distributor. The person or corporate body who organizes the regional distribution of a film. In the U.S., States Rights Distribution was a system prevalent during the silent era by which producers leased the rights to a film to independent distributors in individual states (as opposed to national distributors)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+  a owl:Class ;
+  rdfs:label "Regional Distributor"@en ;
+  dc:description "Distributor (Regional), State Rights Distributor. The person or corporate body who organizes the regional distribution of a film. In the U.S., States Rights Distribution was a system prevalent during the silent era by which producers leased the rights to a film to independent distributors in individual states (as opposed to national distributors)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
 <https://ontology.fiafcore.org/Research>
-    a owl:Class ;
-    rdfs:label
-        "Research"@en ;
-    dc:description
-        "Research by, Researcher. An individual who performs detailed investigation to determine and authenticate subject matter, objects, and events in a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Research"@en ;
+  dc:description "Research by, Researcher. An individual who performs detailed investigation to determine and authenticate subject matter, objects, and events in a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/RotoscopeArtist>
-    a owl:Class ;
-    rdfs:label
-        "Rotoscope Artist"@en ;
-    dc:description
-        "Rotoscoping. The process of tracing frames of live action for creating mattes or animated figures."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Rotoscope Artist"@en ;
+  dc:description "Rotoscoping. The process of tracing frames of live action for creating mattes or animated figures."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/ScenicArtist>
-    a owl:Class ;
-    rdfs:label
-        "Scenic Artist"@en ;
-    dc:description
-        "Scenic Artist. Typically a painter responsible for creating murals, faux paintings, and painted graphics."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Scenic Artist"@en ;
+  dc:description "Scenic Artist. Typically a painter responsible for creating murals, faux paintings, and painted graphics."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/ScreenStory>
-    a owl:Class ;
-    rdfs:label
-        "Screen Story"@en ;
-    dc:description
-        "Original Story, Story by, Screen Story. Original Story and Story by indicate a story written expressly for a film and not based on any existing work. Screen Story, on the other hand, is based on an existing work, but is at the same time substantially new or different from the source material."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Screen Story"@en ;
+  dc:description "Original Story, Story by, Screen Story. Original Story and Story by indicate a story written expressly for a film and not based on any existing work. Screen Story, on the other hand, is based on an existing work, but is at the same time substantially new or different from the source material."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/SecondUnitDirector>
-    a owl:Class ;
-    rdfs:label
-        "Second Unit Director"@en ;
-    dc:description
-        "Second Unit Director. The person responsible for directing the second unit, a film crew charged with photographing scenes that do not necessarily require the presence of the Director and stars (stunts, crowd scenes, establishing shots, etc)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Second Unit Director"@en ;
+  dc:description "Second Unit Director. The person responsible for directing the second unit, a film crew charged with photographing scenes that do not necessarily require the presence of the Director and stars (stunts, crowd scenes, establishing shots, etc)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/SecondUnitDirectorofPhotography>
-    a owl:Class ;
-    rdfs:label
-        "Second Unit Director of Photography"@en ;
-    dc:description
-        "Second Unit Director of Photography, Second Unit Photography. The individual responsible for photographing scenes filmed by the Second Unit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Second Unit Director of Photography"@en ;
+  dc:description "Second Unit Director of Photography, Second Unit Photography. The individual responsible for photographing scenes filmed by the Second Unit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/SeriesCreatedby>
-    a owl:Class ;
-    rdfs:label
-        "Series Created by"@en ;
-    dc:description
-        "Series Created by. The person responsible for the conception and format of a series, but not necessarily for the content of its individual parts."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Series Created by"@en ;
+  dc:description "Series Created by. The person responsible for the conception and format of a series, but not necessarily for the content of its individual parts."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/SeriesProducer>
-    a owl:Class ;
-    rdfs:label
-        "Series Producer"@en ;
-    dc:description
-        "Series Producer, Series Production, Series Produced by. The person responsible for the overall production of a series, the individual parts of which may be written, directed, or produced by different people."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Series Producer"@en ;
+  dc:description "Series Producer, Series Production, Series Produced by. The person responsible for the overall production of a series, the individual parts of which may be written, directed, or produced by different people."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/SetDecorator>
-    a owl:Class ;
-    rdfs:label
-        "Set Decorator"@en ;
-    dc:description
-        "Set Decorator, Set Decoration, Set Dresser, Set Dressing, Decor, Decoration. The person who physically decorates (dresses) the set with props, furniture, artwork, etc."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Set Decorator"@en ;
+  dc:description "Set Decorator, Set Decoration, Set Dresser, Set Dressing, Decor, Decoration. The person who physically decorates (dresses) the set with props, furniture, artwork, etc."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/SetDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Set Designer"@en ;
-    dc:description
-        "Set Designer, Set Design, Set(s) Designed by. The person who creates working construction drawings of the sets from the Production Designer’s (or Art Director’s) sketches."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Set Designer"@en ;
+  dc:description "Set Designer, Set Design, Set(s) Designed by. The person who creates working construction drawings of the sets from the Production Designer’s (or Art Director’s) sketches."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Singer>
-    a owl:Class ;
-    rdfs:label
-        "Singer"@en ;
-    dc:description
-        "Singer. A person who provides vocal music for the film and appears in it."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Singer"@en ;
+  dc:description "Singer. A person who provides vocal music for the film and appears in it."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/SingingVoice>
-    a owl:Class ;
-    rdfs:label
-        "Singing Voice"@en ;
-    dc:description
-        "Singing Voice, Score Vocals Performed by, Playback Singer. A person who provides vocal music for the film without appearing in it. The voice may be dubbed in for a cast member who cannot sing but whose role calls for him or her to do so, or it may be used simply as part of background music."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Singing Voice"@en ;
+  dc:description "Singing Voice, Score Vocals Performed by, Playback Singer. A person who provides vocal music for the film without appearing in it. The voice may be dubbed in for a cast member who cannot sing but whose role calls for him or her to do so, or it may be used simply as part of background music."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/SongComposer>
-    a owl:Class ;
-    rdfs:label
-        "Song Composer"@en ;
-    dc:description
-        "Song Composer, Songs Composed by, Songs by. The person who creates the music for the songs to be used in the film. Songs by is a joint credit for the Song Composer and the Lyricist."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/MusicActivity> ;
+  a owl:Class ;
+  rdfs:label "Song Composer"@en ;
+  dc:description "Song Composer, Songs Composed by, Songs by. The person who creates the music for the songs to be used in the film. Songs by is a joint credit for the Song Composer and the Lyricist."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/MusicActivity> ;
 .
 
 <https://ontology.fiafcore.org/SoundActivity>
-    a owl:Class ;
-    rdfs:label
-        "Sound Activity"@en ;
-    dc:description
-        "Sound contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Sound Activity"@en ;
+  dc:description "Sound contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/SoundDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Sound Designer"@en ;
-    dc:description
-        "Sound Designer, Sound Design. The person who works with the Director to shape an overall, consistent audio track which is closely related to the film’s narrative and thematic needs. The term can also refer to a person charged with creating specific sound effects."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Sound Designer"@en ;
+  dc:description "Sound Designer, Sound Design. The person who works with the Director to shape an overall, consistent audio track which is closely related to the film’s narrative and thematic needs. The term can also refer to a person charged with creating specific sound effects."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/SoundEditor>
-    a owl:Class ;
-    rdfs:label
-        "Sound Editor"@en ;
-    dc:description
-        "Sound Editor, Sound Editing, Sound Edited by, Sound Effects Editor. The person primarily responsible for the selection, assembly, and synchronization of the film’s sound effects (as opposed to dialogue and music)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Sound Editor"@en ;
+  dc:description "Sound Editor, Sound Editing, Sound Edited by, Sound Effects Editor. The person primarily responsible for the selection, assembly, and synchronization of the film’s sound effects (as opposed to dialogue and music)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/SoundEngineer>
-    a owl:Class ;
-    rdfs:label
-        "Sound Engineer"@en ;
-    dc:description
-        "Sound Engineer, Re-recording Engineer. A technician responsible for maintaining the electronic and mechanical equipment associated with sound recording and/or re-recording. In the U.S. in the 1930’s, commonly used as an overall sound credit."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Sound Engineer"@en ;
+  dc:description "Sound Engineer, Re-recording Engineer. A technician responsible for maintaining the electronic and mechanical equipment associated with sound recording and/or re-recording. In the U.S. in the 1930’s, commonly used as an overall sound credit."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/SoundRecorderMixer>
-    a owl:Class ;
-    rdfs:label
-        "Sound Recorder/Mixer"@en ;
-    dc:description
-        "Sound Recordist, Sound Recorder, Sound Recorded by, Production Sound Mixer, Production Mixer, Sound Mixer. The person responsible for recording sound during filming. Duties include selecting the microphones, operating the sound recorder, communicating with the Director about any audio related problems, keeping sound levels constant, etc. In this context, the term Production Sound Mixer (or Production Mixer/Sound Mixer) is primarily used in the U.S."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Sound Recorder/Mixer"@en ;
+  dc:description "Sound Recordist, Sound Recorder, Sound Recorded by, Production Sound Mixer, Production Mixer, Sound Mixer. The person responsible for recording sound during filming. Duties include selecting the microphones, operating the sound recorder, communicating with the Director about any audio related problems, keeping sound levels constant, etc. In this context, the term Production Sound Mixer (or Production Mixer/Sound Mixer) is primarily used in the U.S."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/SoundSupervisor>
-    a owl:Class ;
-    rdfs:label
-        "Sound Supervisor"@en ;
-    dc:description
-        "Sound Supervisor. The person directly responsible to the Producer for all matters pertaining to the supplying, operating, and maintaining the sound equipment used in the making of a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Sound Supervisor"@en ;
+  dc:description "Sound Supervisor. The person directly responsible to the Producer for all matters pertaining to the supplying, operating, and maintaining the sound equipment used in the making of a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/SourceMaterial>
-    a owl:Class ;
-    rdfs:label
-        "Source Material"@en ;
-    dc:description
-        "Original Source, Source Material, Based on. The literary or any other work (novel, play, magazine story, poem, comic book, musical piece) upon which a film’s screenplay is based."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Source Material"@en ;
+  dc:description "Original Source, Source Material, Based on. The literary or any other work (novel, play, magazine story, poem, comic book, musical piece) upon which a film’s screenplay is based."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/SpecialEffects>
-    a owl:Class ;
-    rdfs:label
-        "Special Effects"@en ;
-    dc:description
-        "Special Effects, SFX, Effects, FX. A broad term used for any artificial visual or sound element produced by unusual mechanical, photographic, or digital means. In the U.S., the term Special Effects today primarily refers to Mechanical Effects."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Special Effects"@en ;
+  dc:description "Special Effects, SFX, Effects, FX. A broad term used for any artificial visual or sound element produced by unusual mechanical, photographic, or digital means. In the U.S., the term Special Effects today primarily refers to Mechanical Effects."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/SpecialEffectsActivity>
-    a owl:Class ;
-    rdfs:label
-        "Special Effects Activity"@en ;
-    dc:description
-        "Special Effects contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+  a owl:Class ;
+  rdfs:label "Special Effects Activity"@en ;
+  dc:description "Special Effects contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 <https://ontology.fiafcore.org/Sponsor>
-    a owl:Class ;
-    rdfs:label
-        "Sponsor"@en ;
-    dc:description
-        "Sponsor, Sponsored by. An individual or company which finances the production of a film primarily for furtherance of public relations. Common on films made for non-theatrical distribution."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Sponsor"@en ;
+  dc:description "Sponsor, Sponsored by. An individual or company which finances the production of a film primarily for furtherance of public relations. Common on films made for non-theatrical distribution."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/Stagedby>
-    a owl:Class ;
-    rdfs:label
-        "Staged by"@en ;
-    dc:description
-        "Staged by. The person who directed the stage play upon which a film is based."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+  a owl:Class ;
+  rdfs:label "Staged by"@en ;
+  dc:description "Staged by. The person who directed the stage play upon which a film is based."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
 <https://ontology.fiafcore.org/StandIn>
-    a owl:Class ;
-    rdfs:label
-        "Stand-In"@en ;
-    dc:description
-        "Stand-In. A person with approximately the same physical characteristics as a particular actor who takes his or her place in the lengthy set up of a shot."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Stand-In"@en ;
+  dc:description "Stand-In. A person with approximately the same physical characteristics as a particular actor who takes his or her place in the lengthy set up of a shot."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/SteadicamOperator>
-    a owl:Class ;
-    rdfs:label
-        "Steadicam Operator"@en ;
-    dc:description
-        "Steadicam Operator. The person who operates a Steadicam, a hydraulically balanced camera apparatus which is attached to the body of the operator, enabling him or her to take smooth and steady shots while moving along with the action."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Steadicam Operator"@en ;
+  dc:description "Steadicam Operator. The person who operates a Steadicam, a hydraulically balanced camera apparatus which is attached to the body of the operator, enabling him or her to take smooth and steady shots while moving along with the action."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/StillPhotographer>
-    a owl:Class ;
-    rdfs:label
-        "Still Photographer"@en ;
-    dc:description
-        "Still Photographer, Stills Photography. The person responsible for the taking of publicity and production photographs on the set and locations."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Still Photographer"@en ;
+  dc:description "Still Photographer, Stills Photography. The person responsible for the taking of publicity and production photographs on the set and locations."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/StoryboardArtist>
-    a owl:Class ;
-    rdfs:label
-        "Storyboard Artist"@en ;
-    dc:description
-        "Previsualization, Storyboard Artist, Production Illustrator, Illustrator. Previsualization refers to any system that enables the production personnel to see what a segment of the film will look like before the actual shooting. A traditional form of Previsualization is the Storyboard, a series of illustrations (sometimes resembling comic strip panels) that depict the various shots as seen through the camera lens, and often provide an outline of the film’s story (or a complex scene) with its action and characters. Today, Previsualization usually involves the creation of digital images and is often used for planning and designing visual effects."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Storyboard Artist"@en ;
+  dc:description "Previsualization, Storyboard Artist, Production Illustrator, Illustrator. Previsualization refers to any system that enables the production personnel to see what a segment of the film will look like before the actual shooting. A traditional form of Previsualization is the Storyboard, a series of illustrations (sometimes resembling comic strip panels) that depict the various shots as seen through the camera lens, and often provide an outline of the film’s story (or a complex scene) with its action and characters. Today, Previsualization usually involves the creation of digital images and is often used for planning and designing visual effects."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/Studio>
-    a owl:Class ;
-    rdfs:label
-        "Studio"@en ;
-    dc:description
-        "Studio, Location of Studios. The name and location of the production facility or facilities in which all or part of the film was made."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Studio"@en ;
+  dc:description "Studio, Location of Studios. The name and location of the production facility or facilities in which all or part of the film was made."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/StuntArranger>
-    a owl:Class ;
-    rdfs:label
-        "Stunt Arranger"@en ;
-    dc:description
-        "Stunt Arranger, Stunts Arranged by, Stunt Coordinator. A specialist who plans action sequences to be performed by stunt men and women."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/DirectingActivity> ;
+  a owl:Class ;
+  rdfs:label "Stunt Arranger"@en ;
+  dc:description "Stunt Arranger, Stunts Arranged by, Stunt Coordinator. A specialist who plans action sequences to be performed by stunt men and women."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/DirectingActivity> ;
 .
 
 <https://ontology.fiafcore.org/StuntPerformer>
-    a owl:Class ;
-    rdfs:label
-        "Stunt Performer"@en ;
-    dc:description
-        "Stunt Man, Stunt Woman, Stunt Performer, Stunts. A professional who performs feats required by the script which are difficult or appear dangerous."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Stunt Performer"@en ;
+  dc:description "Stunt Man, Stunt Woman, Stunt Performer, Stunts. A professional who performs feats required by the script which are difficult or appear dangerous."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/SupervisingSoundEditor>
-    a owl:Class ;
-    rdfs:label
-        "Supervising Sound Editor"@en ;
-    dc:description
-        "Supervising Sound Editor. The person who oversees the sound editorial process, during which dialogue, music, and sound effects are edited in preparation for the final mix. He or she also supervises the final mix itself."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SoundActivity> ;
+  a owl:Class ;
+  rdfs:label "Supervising Sound Editor"@en ;
+  dc:description "Supervising Sound Editor. The person who oversees the sound editorial process, during which dialogue, music, and sound effects are edited in preparation for the final mix. He or she also supervises the final mix itself."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SoundActivity> ;
 .
 
 <https://ontology.fiafcore.org/TitleDesigner>
-    a owl:Class ;
-    rdfs:label
-        "Title Designer"@en ;
-    dc:description
-        "Title Design, Titles Designed by, Title Designer, Titles. The individual, usually a graphic designer, who plans, designs, and creates front, interior, and/or end titles (i.e. credits). This task may also extend to the actual making and inserting of all titles which are to be included in the film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Title Designer"@en ;
+  dc:description "Title Design, Titles Designed by, Title Designer, Titles. The individual, usually a graphic designer, who plans, designs, and creates front, interior, and/or end titles (i.e. credits). This task may also extend to the actual making and inserting of all titles which are to be included in the film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
 <https://ontology.fiafcore.org/TransportationManager>
-    a owl:Class ;
-    rdfs:label
-        "Transportation Manager"@en ;
-    dc:description
-        "Transportation Manager, Transportation Coordinator. The person who manages the drivers and coordinates the transportation of cast, crew, and equipment between various locations."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProducingActivity> ;
+  a owl:Class ;
+  rdfs:label "Transportation Manager"@en ;
+  dc:description "Transportation Manager, Transportation Coordinator. The person who manages the drivers and coordinates the transportation of cast, crew, and equipment between various locations."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProducingActivity> ;
 .
 
 <https://ontology.fiafcore.org/UnderwaterPhotography>
-    a owl:Class ;
-    rdfs:label
-        "Underwater Photography"@en ;
-    dc:description
-        "Underwater Cameraman, Underwater Photography, Underwater Sequences. Cameraman for underwater shots."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Underwater Photography"@en ;
+  dc:description "Underwater Cameraman, Underwater Photography, Underwater Sequences. Cameraman for underwater shots."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/VideoAssist>
-    a owl:Class ;
-    rdfs:label
-        "Video Assist"@en ;
-    dc:description
-        "Video Assist Operator, Video Assist. The person responsible for the Video Assist system which, plugged into the motion picture camera, allows the director and other production personnel to view on a video monitor (live or on tape) the exact image as it will be exposed on the film. Often used to evaluate a take immediately after it is shot."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CinematographyActivity> ;
+  a owl:Class ;
+  rdfs:label "Video Assist"@en ;
+  dc:description "Video Assist Operator, Video Assist. The person responsible for the Video Assist system which, plugged into the motion picture camera, allows the director and other production personnel to view on a video monitor (live or on tape) the exact image as it will be exposed on the film. Often used to evaluate a take immediately after it is shot."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CinematographyActivity> ;
 .
 
 <https://ontology.fiafcore.org/VisualEffects>
-    a owl:Class ;
-    rdfs:label
-        "Visual Effects"@en ;
-    dc:description
-        "Visual Effects, VFX, Photographic Effects, Special Photographic Effects, Optical Effects. Visual Effects are special effects generated with the aid of photographic or digital technology, usually in post-production. More specifically, Photographic Effects denote effects achieved through special photographic techniques (e.g. Traveling Matte), while Optical Effects refer to special effects generated in an optical printer using already exposed film (e.g. dissolves and fades). Today, Visual Effects are often synonymous with Computer Generated Imagery."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
+  a owl:Class ;
+  rdfs:label "Visual Effects"@en ;
+  dc:description "Visual Effects, VFX, Photographic Effects, Special Photographic Effects, Optical Effects. Visual Effects are special effects generated with the aid of photographic or digital technology, usually in post-production. More specifically, Photographic Effects denote effects achieved through special photographic techniques (e.g. Traveling Matte), while Optical Effects refer to special effects generated in an optical printer using already exposed film (e.g. dissolves and fades). Today, Visual Effects are often synonymous with Computer Generated Imagery."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/SpecialEffectsActivity> ;
 .
 
 <https://ontology.fiafcore.org/Voices>
-    a owl:Class ;
-    rdfs:label
-        "Voices"@en ;
-    dc:description
-        "Voices by. Individuals who supply voices for characters appearing in the film. Common credit on animated and puppet films."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+  a owl:Class ;
+  rdfs:label "Voices"@en ;
+  dc:description "Voices by. Individuals who supply voices for characters appearing in the film. Common credit on animated and puppet films."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
 <https://ontology.fiafcore.org/WardrobeSupervisor>
-    a owl:Class ;
-    rdfs:label
-        "Wardrobe Supervisor"@en ;
-    dc:description
-        "Wardrobe Supervisor, Wardrobe Supervision, Wardrobe Master, Wardrobe Mistress. The wardrobe personnel is primarily responsible for physically handling and maintaining the costumes and related accessories on the set, and making sure that the cast members are properly dressed for each scene to be photographed."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/ProductionDesignActivity> ;
+  a owl:Class ;
+  rdfs:label "Wardrobe Supervisor"@en ;
+  dc:description "Wardrobe Supervisor, Wardrobe Supervision, Wardrobe Master, Wardrobe Mistress. The wardrobe personnel is primarily responsible for physically handling and maintaining the costumes and related accessories on the set, and making sure that the cast members are properly dressed for each scene to be photographed."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/ProductionDesignActivity> ;
 .
 
-<https://ontology.fiafcore.org/WorldDistributor>
-    a owl:Class ;
-    rdfs:label
-        "World Distributor"@en ;
-    dc:description
-        "Distributor (World). The person or corporate body who organizes the world-wide (international) distribution of a film."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
+<https://ontology.fiafcore.org/WorldDistributor> a owl:Class ;
+  rdfs:label "World Distributor"@en ;
+  dc:description "Distributor (World). The person or corporate body who organizes the world-wide (international) distribution of a film."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
-<https://ontology.fiafcore.org/Wrangler>
-    a owl:Class ;
-    rdfs:label
-        "Wrangler"@en ;
-    dc:description
-        "Wrangler. The person responsible for handling all livestock (horses, mules, cows, sheep, and pigs) to be used in the film. Today, the term has a wider use, and can be applied not only to other animals (e.g. bug wrangler), but also to a variety of unrelated production jobs such as working with extras (extras wrangler) and even manipulating digital data (data wrangler)."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/CastActivity> ;
+<https://ontology.fiafcore.org/Wrangler> a owl:Class ;
+  rdfs:label "Wrangler"@en ;
+  dc:description "Wrangler. The person responsible for handling all livestock (horses, mules, cows, sheep, and pigs) to be used in the film. Today, the term has a wider use, and can be applied not only to other animals (e.g. bug wrangler), but also to a variety of unrelated production jobs such as working with extras (extras wrangler) and even manipulating digital data (data wrangler)."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/CastActivity> ;
 .
 
-<https://ontology.fiafcore.org/Writer>
-    a owl:Class ;
-    rdfs:label
-        "Writer"@en ;
-    dc:description
-        "Screenplay by, Writer, Written by. Screen credit for the author(s) of a screenplay. In the U.S., the credit Written by indicates that the author(s) wrote both the film’s original story and the screenplay."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/WritingActivity> ;
+<https://ontology.fiafcore.org/Writer> a owl:Class ;
+  rdfs:label "Writer"@en ;
+  dc:description "Screenplay by, Writer, Written by. Screen credit for the author(s) of a screenplay. In the U.S., the credit Written by indicates that the author(s) wrote both the film’s original story and the screenplay."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/WritingActivity> ;
 .
 
-<https://ontology.fiafcore.org/WritingActivity>
-    a owl:Class ;
-    rdfs:label
-        "Writing Activity"@en ;
-    dc:description
-        "Writing contribution to a moving image work."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:subClassOf
-        <https://ontology.fiafcore.org/Activity> ;
+<https://ontology.fiafcore.org/WritingActivity> a owl:Class ;
+  rdfs:label "Writing Activity"@en ;
+  dc:description "Writing contribution to a moving image work."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:subClassOf <https://ontology.fiafcore.org/Activity> ;
 .
 
 ### Datatype Properties
@@ -2134,16 +1423,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasAgent>
-    a owl:ObjectProperty ;
-    rdfs:label
-        "Has Agent"@en ;
-    dc:description
-        "Express the relationship between an Activity and an Agent."@en ;
-    dc:source
-        <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
-    rdfs:domain
-        <https://ontology.fiafcore.org/Activity> ;
-    rdfs:range
-        <https://ontology.fiafcore.org/Agent> ;
+<https://ontology.fiafcore.org/hasAgent> a owl:ObjectProperty ;
+  rdfs:label "Has Agent"@en ;
+  dc:description "Express the relationship between an Activity and an Agent."@en ;
+  dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
+  rdfs:domain <https://ontology.fiafcore.org/Activity> ;
+  rdfs:range <https://ontology.fiafcore.org/Agent> ;
 .
