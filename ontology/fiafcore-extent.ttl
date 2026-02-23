@@ -4,18 +4,88 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Extent>
-    a owl:Class ;
-    rdfs:label
-        "Extent"@en ;
-    dc:description
-        ""@en ;
-    dc:source 
-        <> ;
+<https://ontology.fiafcore.org/Extent> a owl:Class ;
+    rdfs:label "Extent"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
+<https://ontology.fiafcore.org/Foot> a owl:Class ;
+    rdfs:label "Foot"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Gigabyte> a owl:Class ;
+    rdfs:label "Gigabyte"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Kilobyte> a owl:Class ;
+    rdfs:label "Kilobyte"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Megabyte> a owl:Class ;
+    rdfs:label "Megabyte"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Metre> a owl:Class ;
+    rdfs:label "Metre"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Minute> a owl:Class ;
+    rdfs:label "Minute"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Reel> a owl:Class ;
+    rdfs:label "Reel"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Second> a owl:Class ;
+    rdfs:label "Second"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
+<https://ontology.fiafcore.org/Terabyte> a owl:Class ;
+    rdfs:label "Terabyte"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://ontology.fiafcore.org/Extent> ;
+.
+
 ### Datatype Properties
 
+<https://ontology.fiafcore.org/hasExtentValue>
+    a owl:DatatypeProperty ;
+    rdfs:label "Has Extent Value"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:domain <https://ontology.fiafcore.org/Extent> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+.
+
 ### Object Properties
+
+# None
