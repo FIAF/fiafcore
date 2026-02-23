@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://vocabulary.fiafcore.org/format/> a skos:ConceptScheme;
-    skos:hasTopConcept base:AudioFormat, base:DigitalFormat, base:FilmFormat, base:OpticalFormat, base:VideoFormat ;
+    skos:hasTopConcept form:AudioFormat, form:DigitalFormat, form:FilmFormat, form:OpticalFormat, form:VideoFormat ;
     skos:prefLabel "Format"@en ;
     skos:definition ""@en ;
 .

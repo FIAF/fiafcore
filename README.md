@@ -1,7 +1,7 @@
 
 # FIAFcore
 
-FIAFcore is an ontology for film archives, developed to enable the federation of filmographic data from disparate sources. It is heavily based on the language and structures of the [FIAF Cataloguing Manual](https://www.fiafnet.org/pages/e-resources/cataloguing-manual.html).
+FIAFcore is an ontology for film archives, developed to enable the federation of film related data from disparate sources. It is heavily based on the language and structures of the [FIAF Cataloguing Manual](https://www.fiafnet.org/pages/e-resources/cataloguing-manual.html).
 
 ### Documentation
 
