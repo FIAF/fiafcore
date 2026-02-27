@@ -119,7 +119,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
-<https://ontology.fiafcore.org/hasTitleValue> a owl:ObjectProperty ;
+<https://ontology.fiafcore.org/hasTitleValue> a owl:DatatypeProperty ;
     rdfs:label "Has Title Value"@en ;
     dc:description ""@en ;
     dc:source <> ;
