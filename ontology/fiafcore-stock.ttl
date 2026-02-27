@@ -126,7 +126,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Datatype Properties
 
-# None
+<https://ontology.fiafcore.org/hasStockCode> a owl:ObjectProperty ;
+    rdfs:label "Has Stock Code"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:domain <https://ontology.fiafcore.org/Stock> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+.
 
 ### Object Properties
 
