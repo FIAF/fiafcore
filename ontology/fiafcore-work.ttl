@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Work> a owl:Class ;
+<https://dev.fiafcore.org/Work> a owl:Class ;
     rdfs:label "Work"@en ;
     dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
@@ -12,32 +12,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/AnalyticWork> a owl:Class ;
+<https://dev.fiafcore.org/AnalyticWork> a owl:Class ;
     rdfs:label "Analytic Work"@en ;
     dc:description "Content that is contained in another content. A component part may itself be either monographic or serial."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/CollectionWork> a owl:Class ;
+<https://dev.fiafcore.org/CollectionWork> a owl:Class ;
     rdfs:label "Collection Work"@en ;
     dc:description "Content issued in several independent parts; an ‘umbrella’ work title covering a number of different Works/Variants/Manifestations."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/MonographicWork> a owl:Class ;
+<https://dev.fiafcore.org/MonographicWork> a owl:Class ;
     rdfs:label "Monographic Work"@en ;
     dc:description "Complete content in one part or intended to be completed in a finite number of parts. This is also applicable to television episodes. The record for the television series itself is catalogued as a Serial."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Work> ;
 .
 
-<https://ontology.fiafcore.org/SerialWork> a owl:Class ;
+<https://dev.fiafcore.org/SerialWork> a owl:Class ;
     rdfs:label "Serial Work"@en ;
     dc:description "Content issued in successive parts and intended to be continued indefinitely, or across a span of time. A Work record for a television series is catalogued as a “Serial.” Individual episodes may be catalogued as a Monographic record."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36384%3A5126> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Work> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Work> ;
 .
 
 ### Datatype Properties
@@ -46,82 +46,82 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasCountry> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasCountry> a owl:ObjectProperty ;
     rdfs:label "Has Country"@en ;
     dc:description "Where known and applicable, record the geographic origin of the moving image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2032%3A57> ;
-    rdfs:domain <https://ontology.fiafcore.org/Work> ;
+    rdfs:domain <https://dev.fiafcore.org/Work> ;
     rdfs:range <https://vocabulary.fiafcore.org/Country> ;
 .
 
-<https://ontology.fiafcore.org/hasEvent> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasEvent> a owl:ObjectProperty ;
     rdfs:label "Has Event"@en ;
     dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Event> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/Carrier>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Event> ;
 .
 
-<https://ontology.fiafcore.org/hasForm> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasForm> a owl:ObjectProperty ;
     rdfs:label "Has Form"@en ;
     dc:description "Form describes the format and/or purpose of a Work."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2050%3A85> ;
-    rdfs:domain <https://ontology.fiafcore.org/Work> ;
-    rdfs:range <https://ontology.fiafcore.org/Form> ;
+    rdfs:domain <https://dev.fiafcore.org/Work> ;
+    rdfs:range <https://dev.fiafcore.org/Form> ;
 .
 
-<https://ontology.fiafcore.org/hasGenre> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasGenre> a owl:ObjectProperty ;
     rdfs:label "Has Genre"@en ;
     dc:description "Genre describes categories of Works, characterized by similar plots, themes, settings, situations, and characters."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2050%3A85> ;
-    rdfs:domain <https://ontology.fiafcore.org/Work> ;
-    rdfs:range <https://ontology.fiafcore.org/Genre> ;
+    rdfs:domain <https://dev.fiafcore.org/Work> ;
+    rdfs:range <https://dev.fiafcore.org/Genre> ;
 .
 
-<https://ontology.fiafcore.org/hasIdentifier> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasIdentifier> a owl:ObjectProperty ;
     rdfs:label "Has Identifier"@en ;
     dc:description "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item> <https://ontology.fiafcore.org/Carrier> <https://ontology.fiafcore.org/Agent>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Identifier> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/Carrier> <https://dev.fiafcore.org/Agent>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Identifier> ;
 .
 
-<https://ontology.fiafcore.org/hasLanguageUsage> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasLanguageUsage> a owl:ObjectProperty ;
     rdfs:label "Has Language Usage"@en ;
     dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/LanguageUsage> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation>) ] ;
+    rdfs:range <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
-<https://ontology.fiafcore.org/hasManifestation> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasManifestation> a owl:ObjectProperty ;
     rdfs:label "Has Manifestation"@en ;
     dc:description "Express the relationship between a moving image Work or Variant and a moving image Manifestation."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36110%3A5060> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/hasTitle> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasTitle> a owl:ObjectProperty ;
     rdfs:label "Has Title"@en ;
     dc:description "Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Work> <https://ontology.fiafcore.org/Variant> <https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Title> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Title> ;
 .
 
-<https://ontology.fiafcore.org/hasVariant> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasVariant> a owl:ObjectProperty ;
     rdfs:label "Has Variant"@en ;
     dc:description "Express the relationship between a moving image Work and a moving image Variant."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36106%3A5059> ;
-    rdfs:domain <https://ontology.fiafcore.org/Work> ;
-    rdfs:range <https://ontology.fiafcore.org/Variant> ;
+    rdfs:domain <https://dev.fiafcore.org/Work> ;
+    rdfs:range <https://dev.fiafcore.org/Variant> ;
 .
 
-<https://ontology.fiafcore.org/hasWork> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasWork> a owl:ObjectProperty ;
     rdfs:label "Has Work"@en ;
     dc:description "Express the relationship between a moving image Work and another moving image Work."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36102%3A5058> ;
-    rdfs:domain <https://ontology.fiafcore.org/Work> ;
-    rdfs:range <https://ontology.fiafcore.org/Work> ;
+    rdfs:domain <https://dev.fiafcore.org/Work> ;
+    rdfs:range <https://dev.fiafcore.org/Work> ;
 .

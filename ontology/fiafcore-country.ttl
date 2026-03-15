@@ -1,0 +1,1514 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/Country> a owl:Class ;
+    rdfs:label "Country"@en ;
+    dc:description ""@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Afghanistan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Afghanistan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/AlandIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Åland Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Albania> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Albania"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Algeria> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Algeria"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/AmericanSamoa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "American Samoa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Andorra> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Andorra"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Angola> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Angola"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Anguilla> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Anguilla"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Antarctica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Antarctica"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/AntiguaAndBarbuda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Antigua and Barbuda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Argentina> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Argentina"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Armenia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Armenia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Aruba> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Aruba"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Australia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Australia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Austria> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Austria"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Azerbaijan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Azerbaijan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bahamas> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bahamas"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bahrain> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bahrain"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bangladesh> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bangladesh"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Barbados> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Barbados"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Belarus> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Belarus"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Belgium> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Belgium"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Belize> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Belize"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Benin> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Benin"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bermuda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bermuda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bhutan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bhutan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BoliviaPlurinationalStateOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bolivia, Plurinational State of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BonaireSintEustatiusAndSaba> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bonaire, Sint Eustatius and Saba"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BosniaAndHerzegovina> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bosnia and Herzegovina"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Botswana> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Botswana"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BouvetIsland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bouvet Island"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Brazil> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Brazil"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BritishIndianOceanTerritory> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "British Indian Ocean Territory"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BruneiDarussalam> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Brunei Darussalam"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Bulgaria> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bulgaria"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BurkinaFaso> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Burkina Faso"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Burundi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Burundi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CaboVerde> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cabo Verde"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Cambodia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cambodia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Cameroon> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cameroon"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Canada> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Canada"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CaymanIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cayman Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CentralAfricanRepublic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Central African Republic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Chad> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chad"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Chile> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chile"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/China> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "China"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/ChristmasIsland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Christmas Island"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CocosKeelingIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cocos (Keeling) Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Colombia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Colombia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Comoros> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Comoros"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Congo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Congo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CongoDemocraticRepublicOfThe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Congo, Democratic Republic of the"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CookIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cook Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CostaRica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Costa Rica"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Croatia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Croatia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Cuba> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cuba"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Curacao> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Curaçao"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Cyprus> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cyprus"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Czechia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Czechia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/CoteDivoire> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Côte d'Ivoire"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Denmark> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Denmark"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Djibouti> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Djibouti"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Dominica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Dominica"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/DominicanRepublic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Dominican Republic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ecuador> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ecuador"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Egypt> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Egypt"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/ElSalvador> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "El Salvador"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/EquatorialGuinea> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Equatorial Guinea"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Eritrea> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Eritrea"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Estonia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Estonia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Eswatini> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Eswatini"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ethiopia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ethiopia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/FalklandIslandsMalvinas> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Falkland Islands (Malvinas)"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/FaroeIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Faroe Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Fiji> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fiji"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Finland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Finland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/France> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "France"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/FrenchGuiana> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "French Guiana"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/FrenchPolynesia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "French Polynesia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/FrenchSouthernTerritories> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "French Southern Territories"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Gabon> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gabon"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Gambia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gambia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Georgia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Georgia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Germany> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Germany"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ghana> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ghana"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Gibraltar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gibraltar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Greece> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Greece"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Greenland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Greenland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Grenada> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Grenada"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guadeloupe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guadeloupe"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guam> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guam"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guatemala> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guatemala"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guernsey> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guernsey"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guinea> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guinea"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/GuineaBissau> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guinea-Bissau"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Guyana> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guyana"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Haiti> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Haiti"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/HeardIslandAndMcdonaldIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Heard Island and McDonald Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/HolySee> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Holy See"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Honduras> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Honduras"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/HongKong> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hong Kong"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Hungary> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hungary"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Iceland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Iceland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/India> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "India"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Indonesia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Indonesia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/IranIslamicRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Iran, Islamic Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Iraq> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Iraq"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ireland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ireland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/IsleOfMan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Isle of Man"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Israel> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Israel"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Italy> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Italy"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Jamaica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Jamaica"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Japan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Japan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Jersey> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Jersey"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Jordan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Jordan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Kazakhstan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kazakhstan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Kenya> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kenya"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Kiribati> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kiribati"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/KoreaDemocraticPeoplesRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Korea, Democratic People's Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/KoreaRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Korea, Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Kuwait> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kuwait"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Kyrgyzstan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kyrgyzstan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/LaoPeoplesDemocraticRepublic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lao People's Democratic Republic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Latvia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Latvia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Lebanon> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lebanon"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Lesotho> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lesotho"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Liberia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Liberia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Libya> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Libya"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Liechtenstein> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Liechtenstein"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Lithuania> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lithuania"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Luxembourg> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Luxembourg"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Macao> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Macao"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Madagascar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Madagascar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Malawi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malawi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Malaysia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malaysia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Maldives> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Maldives"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mali> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mali"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Malta> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malta"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/MarshallIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Marshall Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Martinique> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Martinique"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mauritania> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mauritania"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mauritius> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mauritius"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mayotte> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mayotte"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mexico> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mexico"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/MicronesiaFederatedStatesOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Micronesia, Federated States of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/MoldovaRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Moldova, Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Monaco> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Monaco"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mongolia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mongolia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Montenegro> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Montenegro"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Montserrat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Montserrat"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Morocco> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Morocco"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Mozambique> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mozambique"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Myanmar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Myanmar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Namibia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Namibia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Nauru> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nauru"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Nepal> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nepal"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NetherlandsKingdomOfThe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Netherlands, Kingdom of the"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NewCaledonia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "New Caledonia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NewZealand> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "New Zealand"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Nicaragua> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nicaragua"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Niger> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Niger"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Nigeria> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nigeria"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Niue> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Niue"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NorfolkIsland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Norfolk Island"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NorthMacedonia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "North Macedonia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/NorthernMarianaIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Northern Mariana Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Norway> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Norway"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Oman> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Oman"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Pakistan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Pakistan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Palau> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Palau"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/PalestineStateOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Palestine, State of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Panama> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Panama"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/PapuaNewGuinea> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Papua New Guinea"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Paraguay> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Paraguay"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Peru> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Peru"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Philippines> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Philippines"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Pitcairn> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Pitcairn"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Poland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Poland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Portugal> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Portugal"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/PuertoRico> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Puerto Rico"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Qatar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Qatar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Romania> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Romania"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/RussianFederation> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Russian Federation"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Rwanda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Rwanda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Reunion> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Réunion"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintBarthelemy> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Barthélemy"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintHelenaAscensionAndTristanDaCunha> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Helena, Ascension and Tristan da Cunha"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintKittsAndNevis> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Kitts and Nevis"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintLucia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Lucia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintMartinFrenchPart> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Martin (French part)"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintPierreAndMiquelon> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Pierre and Miquelon"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaintVincentAndTheGrenadines> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saint Vincent and the Grenadines"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Samoa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Samoa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SanMarino> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "San Marino"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaoTomeAndPrincipe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sao Tome and Principe"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SaudiArabia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Saudi Arabia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Senegal> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Senegal"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Serbia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Serbia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Seychelles> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Seychelles"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SierraLeone> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sierra Leone"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Singapore> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Singapore"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SintMaartenDutchPart> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sint Maarten (Dutch part)"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Slovakia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Slovakia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Slovenia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Slovenia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SolomonIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Solomon Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Somalia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Somalia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SouthAfrica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "South Africa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SouthGeorgiaAndTheSouthSandwichIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "South Georgia and the South Sandwich Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SouthSudan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "South Sudan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Spain> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Spain"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SriLanka> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sri Lanka"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Sudan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sudan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Suriname> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Suriname"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SvalbardAndJanMayen> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Svalbard and Jan Mayen"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Sweden> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sweden"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Switzerland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Switzerland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SyrianArabRepublic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Syrian Arab Republic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/TaiwanProvinceOfChina> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Taiwan, Province of China"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Tajikistan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tajikistan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/TanzaniaUnitedRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tanzania, United Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Thailand> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Thailand"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Timorleste> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Timor-Leste"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Togo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Togo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Tokelau> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tokelau"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Tonga> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tonga"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/TrinidadAndTobago> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Trinidad and Tobago"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Tunisia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tunisia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Turkmenistan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Turkmenistan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/TurksAndCaicosIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Turks and Caicos Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Tuvalu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tuvalu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Turkiye> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Türkiye"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Uganda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Uganda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ukraine> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ukraine"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/UnitedArabEmirates> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "United Arab Emirates"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/UnitedKingdomOfGreatBritainAndNorthernIreland> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "United Kingdom of Great Britain and Northern Ireland"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/UnitedStatesMinorOutlyingIslands> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "United States Minor Outlying Islands"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/UnitedStatesOfAmerica> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "United States of America"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Uruguay> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Uruguay"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Uzbekistan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Uzbekistan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Vanuatu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Vanuatu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/VenezuelaBolivarianRepublicOf> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Venezuela, Bolivarian Republic of"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/VietNam> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Viet Nam"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/VirginIslandsBritish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Virgin Islands (British)"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/VirginIslandsUs> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Virgin Islands (U.S.)"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/WallisAndFutuna> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Wallis and Futuna"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/WesternSahara> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Western Sahara"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Yemen> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Yemen"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Zambia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Zambia"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Zimbabwe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Zimbabwe"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

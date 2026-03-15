@@ -1,32 +1,16 @@
-PREFIX stat: <https://vocabulary.fiafcore.org/status/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://vocabulary.fiafcore.org/status/> a skos:ConceptScheme;
-    skos:hasTopConcept stat:Access, stat:Preservation ;
-    skos:prefLabel "Status"@en ;
+<https://dev.fiafcore.org/Status> a skos:ConceptScheme ;
     skos:definition ""@en ;
-.
+    skos:prefLabel "Status"@en .
 
-<https://ontology.fiafcore.org/Status> a owl:Class ;
-    rdfs:label "Status"@en ;
-    dc:description ""@en ;
-.
-
-<https://vocabulary.fiafcore.org/status/Access> a owl:Class, skos:Concept;
-    skos:prefLabel "Access"@en ;
+<https://dev.fiafcore.org/Access> a skos:Concept ;
     skos:definition ""@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/status/> ;
-    rdfs:label "Access"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Access> ;
-.
+    skos:inScheme <https://dev.fiafcore.org/Access> ;
+    skos:prefLabel "Access"@en .
 
-<https://vocabulary.fiafcore.org/status/Preservation> a owl:Class, skos:Concept;
-    skos:prefLabel "Preservation"@en ;
+<https://dev.fiafcore.org/Preservation> a skos:Concept ;
     skos:definition ""@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/status/> ;
-    rdfs:label "Preservation"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Preservation> ;
-.
+    skos:inScheme <https://dev.fiafcore.org/Preservation> ;
+    skos:prefLabel "Preservation"@en .
+

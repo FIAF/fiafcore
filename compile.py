@@ -1,15 +1,56 @@
-import pathlib
 
+import pathlib
 import rdflib
 
-# build single turtle file from ontology and vocabularies.
+def convert_vocabulary(input_file):
+    ''' Convert OWL file to SKOS. '''
+
+    g = rdflib.Graph().parse(pathlib.Path.cwd() / 'ontology' / input_file)
+    skos_graph = rdflib.Graph()
+    for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.OWL.Class)):
+
+        if not len([x for x in g.triples((s, rdflib.RDFS.subClassOf, None))]):
+            skos_graph.add((s, rdflib.RDF.type, rdflib.SKOS.ConceptScheme))
+        else:
+            skos_graph.add((s, rdflib.RDF.type, rdflib.SKOS.Concept))
+
+        for a,b,c in g.triples((s, rdflib.RDFS.label, None)):
+            skos_graph.add((s, rdflib.SKOS.prefLabel, c))
+
+        for a,b,c in g.triples((s, rdflib.DC.description, None)):
+            skos_graph.add((s, rdflib.SKOS.definition, c))
+
+        for a,b,c in g.triples((s, rdflib.RDFS.subClassOf, None)):
+            skos_graph.add((s, rdflib.SKOS.inScheme, c))
+
+    skos_graph.serialize(
+        destination=pathlib.Path.cwd()  / 'vocabulary' / input_file,
+        format="turtle",
+        )
+
+# convert ontology vocabularies to SKOS.
+
+for vocab in [
+    'fiafcore-base.ttl',
+    'fiafcore-broadcaststandard.ttl',
+    'fiafcore-colourcharacteristic.ttl',
+    'fiafcore-country.ttl',
+    'fiafcore-element.ttl',
+    'fiafcore-form.ttl',
+    'fiafcore-format.ttl',
+    'fiafcore-genre.ttl',
+    'fiafcore-language.ttl',
+    'fiafcore-soundsystem.ttl',
+    'fiafcore-status.ttl']:
+    convert_vocabulary(vocab)
+
+# build single turtle file from ontology.
 
 g = rdflib.Graph()
-for sect in ["ontology", "vocabulary"]:
-    ttl_path = pathlib.Path.cwd() / sect
-    ttl_files = [x for x in ttl_path.iterdir() if x.suffix == ".ttl"]
-    for c in ttl_files:
-        g += rdflib.Graph().parse(c)
+ontology_path = pathlib.Path.cwd() / 'ontology'
+ttl_files = [x for x in ontology_path.iterdir() if x.suffix == ".ttl"]
+for c in ttl_files:
+    g += rdflib.Graph().parse(c)
 
 # add ontology triples.
 
@@ -19,7 +60,7 @@ g += rdflib.Graph().parse(
     @prefix dcterms: <http://purl.org/dc/terms/> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-    <https://ontology.fiafcore.org/> a owl:Ontology ;
+    <https://dev.fiafcore.org/> a owl:Ontology ;
         dc:title "FIAFcore" ;
         owl:versionInfo "dev-2.0.0" ;
         dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;

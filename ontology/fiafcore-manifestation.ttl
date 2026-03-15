@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Manifestation> a owl:Class ;
+<https://dev.fiafcore.org/Manifestation> a owl:Class ;
     rdfs:label "Manifestation"@en ;
     dc:description "A moving image Manifestation is the embodiment of a moving image Work or Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work or Variant."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36114%3A5061> ;
@@ -12,74 +12,74 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/BroadcastManifestation> a owl:Class ;
+<https://dev.fiafcore.org/BroadcastManifestation> a owl:Class ;
     rdfs:label "Broadcast Manifestation"@en ;
     dc:description "A moving image Manifestation type for TV transmission."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36467%3A5146> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/HomeViewingManifestation> a owl:Class ;
+<https://dev.fiafcore.org/HomeViewingManifestation> a owl:Class ;
     rdfs:label "Home Viewing Manifestation"@en ;
     dc:description "A published Manifestation for viewing in the home or similar small-scale private context, of any type of work."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36463%3A5145> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/InternetManifestation> a owl:Class ;
+<https://dev.fiafcore.org/InternetManifestation> a owl:Class ;
     rdfs:label "Internet Manifestation"@en ;
     dc:description "A moving image Manifestation distributed on the Internet (stream or download) for works of any type."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36472%3A5147> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/NonTheatricalManifestation> a owl:Class ;
+<https://dev.fiafcore.org/NonTheatricalManifestation> a owl:Class ;
     rdfs:label "Non-Theatrical Manifestation"@en ;
     dc:description "A moving image Manifestation screened or exhibited outside the public theatrical context."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36451%3A5142> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/NotForReleaseManifestation> a owl:Class ;
+<https://dev.fiafcore.org/NotForReleaseManifestation> a owl:Class ;
     rdfs:label "Not For Release Manifestation"@en ;
     dc:description "Any moving image Manifestation where the viewing activity was private, due to the nature of the work or the nature of the viewing."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36455%3A5143> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/PreReleaseManifestation> a owl:Class ;
+<https://dev.fiafcore.org/PreReleaseManifestation> a owl:Class ;
     rdfs:label "Pre-Release Manifestation"@en ;
     dc:description "A moving image Manifestation type that may be used to represent any embodiments of a moving image Work that exist before the finalisation or release of the moving image Work."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36443%3A5140> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/PreservationManifestation> a owl:Class ;
+<https://dev.fiafcore.org/PreservationManifestation> a owl:Class ;
     rdfs:label "Preservation Manifestation"@en ;
     dc:description "Refers to manifestations which represent the outcome(s) of restoration events/activities, usually involving selection and aggregation of materials from diverse source elements to replicate an ‘original’ or ‘ideal’ manifestation."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36476%3A5148> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/RestorationManifestation> a owl:Class ;
+<https://dev.fiafcore.org/RestorationManifestation> a owl:Class ;
     rdfs:label "Restoration Manifestation"@en ;
     dc:description "Refers to manifestations which represent the outcome(s) of restoration events/activities, usually involving selection and aggregation of materials from diverse source elements to replicate an ‘original’ or ‘ideal’ manifestation."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36476%3A5148> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/TheatricalManifestation> a owl:Class ;
+<https://dev.fiafcore.org/TheatricalManifestation> a owl:Class ;
     rdfs:label "Theatrical Manifestation"@en ;
     dc:description "A moving image Manifestation type representing Manifestations distributed and exhibited in cinema theatres."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36447%3A5141> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
-<https://ontology.fiafcore.org/UnreleasedManifestation> a owl:Class ;
+<https://dev.fiafcore.org/UnreleasedManifestation> a owl:Class ;
     rdfs:label "Unreleased Manifestation"@en ;
     dc:description "Refers to Manifestations which do not represent a release/distribution event, but where the work was intended for release, e.g. the film was made, completed and intended for release, but was not then released due to censorship or political impediments, or other reason."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36459%3A5144> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Manifestation> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Manifestation> ;
 .
 
 ### Datatype Properties
@@ -88,42 +88,42 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasColourCharacteristic> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasColourCharacteristic> a owl:ObjectProperty ;
     rdfs:label "Has Colour Characteristic"@en ;
     dc:description "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:range <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/hasExtent> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasExtent> a owl:ObjectProperty ;
     rdfs:label "Has Extent"@en ;
     dc:description "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Extent> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Extent> ;
 .
 
-<https://ontology.fiafcore.org/hasFormat> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasFormat> a owl:ObjectProperty ;
     rdfs:label "Has Format"@en ;
     dc:description "The medium on or the encoding format in which the moving image Manifestation or Item is fixed."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/Format> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:range <https://dev.fiafcore.org/Format> ;
 .
 
-<https://ontology.fiafcore.org/hasItem> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasItem> a owl:ObjectProperty ;
     rdfs:label "Has Item"@en ;
     dc:description "Express the relationship between a moving image Manifestation and a moving image Item."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Manifestation> ;
-    rdfs:range <https://ontology.fiafcore.org/Item> ;
+    rdfs:domain <https://dev.fiafcore.org/Manifestation> ;
+    rdfs:range <https://dev.fiafcore.org/Item> ;
 .
 
-<https://ontology.fiafcore.org/hasSoundCharacteristic> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasSoundCharacteristic> a owl:ObjectProperty ;
     rdfs:label "Has Sound Characteristic"@en ;
     dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://ontology.fiafcore.org/Manifestation> <https://ontology.fiafcore.org/Item>) ] ;
-    rdfs:range <https://ontology.fiafcore.org/SoundCharacteristic> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:range <https://dev.fiafcore.org/SoundCharacteristic> ;
 .

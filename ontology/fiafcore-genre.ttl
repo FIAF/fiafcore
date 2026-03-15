@@ -1,0 +1,566 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/Genre> a owl:Class ;
+    rdfs:label "Genre"@en ;
+    dc:description ""@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/AbstractFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Abstract Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ActionFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Action Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AdventureFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Adventure Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AgriculturalForestryFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Agricultural/forestry Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AnimalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Animal Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AnimationFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Animation Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AntiWarFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Anti-war Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ArtFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Art Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/AvantGardeFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Avant-garde Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/BalletFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ballet Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/BiographicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Biographical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/BiologicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Biological Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/BlaxploitationFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Blaxploitation Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ChildrensFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Children's Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CircusFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Circus Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CityAndLandscapeFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "City and landscape Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ComedyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Comedy Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ContemporaryFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Contemporary Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CountryFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Country Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CourtroomFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Courtroom Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CrimeFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Crime Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/CulturalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cultural Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/DanceFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Dance Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/DetectiveFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Detective Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/DisasterFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Disaster Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/DramaFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Drama Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/EducationalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Educational Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ElectionFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Election Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/EnvironmentalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Environmental Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/EroticFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Erotic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/EthnographicFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ethnographic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ExpeditionFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Expedition Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ExperimentalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Experimental Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ExpressionistFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Expressionist Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/FairyTaleFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fairy tale Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/FantasyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fantasy Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/GangsterFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gangster Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/HandPuppetFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hand puppet Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/HistoricalCostumeFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Historical costume Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/HistoricalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Historical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/HorrorFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Horror Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/IndustrialFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Industrial Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/LiteraryAdaptationFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Literary adaptation Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MedicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Medical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MelodramaFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Melodrama Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MilitaryFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Military Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MixedFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mixed Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MountainFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mountain Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MusicFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Music Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/MusicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Musical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/NatureFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nature Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/OperaFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Opera Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/OperettaFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Operetta Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ParodyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Parody Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PartisanFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Partisan Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PhilosophicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Philosophical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PoliticalThrillerFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Political thriller Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PoliticalGeographicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Political-geographical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PopularScienceFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Popular science Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PornographicFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Pornographic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PortraitFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Portrait Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PrisonFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Prison Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PropagandaFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Propaganda Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/PuppetFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Puppet Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ReligiousFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Religious Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ResearchFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Research Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/RevolutionaryFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Revolutionary Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/RevueFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Revue Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/RoadMovieFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Road movie Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/RomanticFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Romantic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SatireFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Satire Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ScienceFictionFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Science fiction Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SensationalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sensational Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SexFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sex Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SlapstickFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Slapstick Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SportsFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sports Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SpyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Spy Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/StickPuppetFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Stick puppet Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SurrealistFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Surrealist Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/TechnicalFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Technical Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ThrillerFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Thriller Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/TrafficFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Traffic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/TragedyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tragedy Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/TragicomedyFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tragicomedy Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/TravelFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Travel Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/UndergroundFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Underground Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/WarFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "War Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/WesternFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Western Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/WomensFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Women's Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/WorkingClassFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Working-class Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/YouthFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Youth Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# Non

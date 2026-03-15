@@ -1,0 +1,247 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/Format> a owl:Class ;
+    rdfs:label "Format"@en ;
+    dc:description ""@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/AudioFormat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Audio Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/DigitalFormat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Digital Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/FilmFormat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Film Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/OpticalFormat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Optical Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/VideoFormat> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Video Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/HalfInchAudiotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Video Format"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+
+<https://dev.fiafcore.org/HalfInchAudiotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Half Inch Audiotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/QuerterInchAudiotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Querter Inch Audiotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/OneInchAudiotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "One Inch Audiotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/TwoInchAudiotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Two Inch Audiotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/OneInchVideotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "One Inch Videotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/TwoInchVideotape> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Two Inch Videotape"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/8mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "8mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/9.5mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "9.5mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/16mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "16mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/16mmMagneticFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "16mm Magnetic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/17.5mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "17.5mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/35mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "35mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/35mmMagneticFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "35mm Magnetic Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/70mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "70mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/Audiocassette> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Audiocassette"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+<https://dev.fiafcore.org/AVI> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "AVI"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/BetacamSP> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Betacam SP"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/BluRay> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "BluRay"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+.
+<https://dev.fiafcore.org/CD> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "CD"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+.
+<https://dev.fiafcore.org/D1> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "D1"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/D5> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "D5"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/DigitalBetacam> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Digital Betacam"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/DPX> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "DPX"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/DVD> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "DVD"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+.
+<https://dev.fiafcore.org/DVCPROHD> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "DVCPRO HD"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/HDCAMSR> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "HDCAM SR"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/LaserDisc> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "LaserDisc"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+.
+<https://dev.fiafcore.org/MOV> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "MOV"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/MP4> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "MP4"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/MPEG-4> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "MPEG-4"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/MXF> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "MXF"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/Quicktime> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Quicktime"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/RealVideo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Real Video"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/Super16mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Super 16mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/Super8mmFilm> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Super 8mm Film"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+<https://dev.fiafcore.org/SVCD> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "SVCD"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/VCD> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "VCD"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+<https://dev.fiafcore.org/WindowsMedia> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Windows Media"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# Non

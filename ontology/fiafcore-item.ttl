@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Item> a owl:Class ;
+<https://dev.fiafcore.org/Item> a owl:Class ;
     rdfs:label "Item"@en ;
     dc:description "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository's collection."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36209%3A5084> ;
@@ -20,58 +20,58 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasBase> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasBase> a owl:ObjectProperty ;
     rdfs:label "Has Base"@en ;
     dc:description "The physical material or video format on which the Item is captured."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Base> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Base> ;
 .
 
-<https://ontology.fiafcore.org/hasBroadcastStandard> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasBroadcastStandard> a owl:ObjectProperty ;
     rdfs:label "Has Broadcast Standard"@en ;
     dc:description "The broadcast standard for a video or DVD/BluRay."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/BroadcastStandard> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/BroadcastStandard> ;
 .
 
-<https://ontology.fiafcore.org/hasCarrier> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasCarrier> a owl:ObjectProperty ;
     rdfs:label "Has Carrier"@en ;
     dc:description "Express the relationship between a moving image Item and a moving image Carrier."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Carrier> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Carrier> ;
 .
 
-<https://ontology.fiafcore.org/hasHoldingInstitution> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasHoldingInstitution> a owl:ObjectProperty ;
     rdfs:label "Has Holding Institution"@en ;
     dc:description "Record the name of the institution possessing the moving image Item or authorised to make it available."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Organisation> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Organisation> ;
 .
 
-<https://ontology.fiafcore.org/hasStatus> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasStatus> a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
     dc:description "Description of the preservation or access status of the Item."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Status> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Status> ;
 .
 
-<https://ontology.fiafcore.org/hasStock> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasStock> a owl:ObjectProperty ;
     rdfs:label "Has Stock"@en ;
     dc:description "Describes the specific stock/brand on which the Item is captured."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Stock> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Stock> ;
 .
 
-<https://ontology.fiafcore.org/isElement> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/isElement> a owl:ObjectProperty ;
     rdfs:label "Is Element"@en ;
     dc:description "Record the nature or function of the moving image Item, describing its place in the photochemical or digital production or duplication process."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/Item> ;
-    rdfs:range <https://ontology.fiafcore.org/Element> ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Element> ;
 .

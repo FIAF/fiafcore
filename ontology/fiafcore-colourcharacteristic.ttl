@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/ColourCharacteristic>
+<https://dev.fiafcore.org/ColourCharacteristic>
     a owl:Class ;
     rdfs:label "Colour Characteristic"@en ;
     dc:description ""@en ;
@@ -13,32 +13,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/BlackAndWhite> a owl:Class ;
+<https://dev.fiafcore.org/BlackAndWhite> a owl:Class ;
     rdfs:label "Black And White"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/Colour> a owl:Class ;
+<https://dev.fiafcore.org/Colour> a owl:Class ;
     rdfs:label "Colour"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/Tinted> a owl:Class ;
+<https://dev.fiafcore.org/Tinted> a owl:Class ;
     rdfs:label "Tinted"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/Toned> a owl:Class ;
+<https://dev.fiafcore.org/Toned> a owl:Class ;
     rdfs:label "Toned"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/ColourCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
 ### Datatype Properties
@@ -47,12 +47,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasColourStandard>
+<https://dev.fiafcore.org/hasColourStandard>
     a owl:ObjectProperty ;
     rdfs:label "Has Colour Standard"@en ;
     dc:description "Express a specific colour process."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/ColourCharacteristic> ;
-    rdfs:range <https://ontology.fiafcore.org/ColourStandard> ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
 .
-

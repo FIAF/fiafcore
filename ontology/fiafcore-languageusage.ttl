@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/LanguageUsage>
+<https://dev.fiafcore.org/LanguageUsage>
     a owl:Class ;
     rdfs:label "Language Usage"@en ;
     dc:description ""@en ;
@@ -13,74 +13,74 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/Dialogue> a owl:Class ;
+<https://dev.fiafcore.org/Dialogue> a owl:Class ;
     rdfs:label "Dialogue"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/LanguageUsage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
-<https://ontology.fiafcore.org/NoDialogue> a owl:Class ;
+<https://dev.fiafcore.org/NoDialogue> a owl:Class ;
     rdfs:label "No Dialogue"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
-<https://ontology.fiafcore.org/SignedLanguage> a owl:Class ;
+<https://dev.fiafcore.org/SignedLanguage> a owl:Class ;
     rdfs:label "Signed Language"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
-<https://ontology.fiafcore.org/SpokenLanguage> a owl:Class ;
+<https://dev.fiafcore.org/SpokenLanguage> a owl:Class ;
     rdfs:label "Spoken Language"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
-<https://ontology.fiafcore.org/SungLanguage> a owl:Class ;
+<https://dev.fiafcore.org/SungLanguage> a owl:Class ;
     rdfs:label "Sung Language "@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Dialogue> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
-<https://ontology.fiafcore.org/WrittenLanguage> a owl:Class ;
+<https://dev.fiafcore.org/WrittenLanguage> a owl:Class ;
     rdfs:label "Written Language"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/LanguageUsage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
-<https://ontology.fiafcore.org/Captions> a owl:Class ;
+<https://dev.fiafcore.org/Captions> a owl:Class ;
     rdfs:label "Captions"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
-<https://ontology.fiafcore.org/Credits> a owl:Class ;
+<https://dev.fiafcore.org/Credits> a owl:Class ;
     rdfs:label "Credits"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
-<https://ontology.fiafcore.org/Intertitles> a owl:Class ;
+<https://dev.fiafcore.org/Intertitles> a owl:Class ;
     rdfs:label "Intertitles"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
-<https://ontology.fiafcore.org/Subtitles> a owl:Class ;
+<https://dev.fiafcore.org/Subtitles> a owl:Class ;
     rdfs:label "Subtitles"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/WrittenLanguage> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
 ### Datatype Properties
@@ -89,11 +89,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://ontology.fiafcore.org/hasLanguage>
+<https://dev.fiafcore.org/hasLanguage>
     a owl:ObjectProperty ;
     rdfs:label "Has Language"@en ;
     dc:description "Express a language."@en ;
     dc:source <> ;
-    rdfs:domain <https://ontology.fiafcore.org/LanguageUsage> ;
-    rdfs:range <https://ontology.fiafcore.org/Language> ;
+    rdfs:domain <https://dev.fiafcore.org/LanguageUsage> ;
+    rdfs:range <https://dev.fiafcore.org/Language> ;
 .

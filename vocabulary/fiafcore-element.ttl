@@ -1,63 +1,36 @@
-PREFIX elem: <https://vocabulary.fiafcore.org/element/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://vocabulary.fiafcore.org/element/> a skos:ConceptScheme;
-    skos:hasTopConcept elem:DuplicateNegative,
-        elem:DuplicatePositive,
-        elem:OriginalNegative,
-        elem:ReleasePrint,
-        elem:SoundNegative,
-        elem:SoundPositive;
-    skos:prefLabel "Element"@en ;
+<https://dev.fiafcore.org/DuplicateNegative> a skos:Concept ;
     skos:definition ""@en ;
-.
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Duplicate Negative"@en .
 
-<https://ontology.fiafcore.org/Element> a owl:Class ;
-    rdfs:label ""@en ;
-    dc:description ""@en ;
-.
+<https://dev.fiafcore.org/DuplicatePositive> a skos:Concept ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Duplicate Positive"@en .
 
-<https://vocabulary.fiafcore.org/element/DuplicateNegative> a owl:Class, skos:Concept;
-    skos:prefLabel "Duplicate Negative"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Duplicate Negative"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.
+<https://dev.fiafcore.org/Element> a skos:ConceptScheme ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
 
-<https://vocabulary.fiafcore.org/element/DuplicatePositive> a owl:Class, skos:Concept;
-    skos:prefLabel "Duplicate Positive"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Duplicate Positive"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.
+<https://dev.fiafcore.org/OriginalNegative> a skos:Concept ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Original Negative"@en .
 
-<https://vocabulary.fiafcore.org/element/OriginalNegative> a owl:Class, skos:Concept;
-    skos:prefLabel "Original Negative"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Original Negative"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.
+<https://dev.fiafcore.org/ReleasePrint> a skos:Concept ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Release Print"@en .
 
-<https://vocabulary.fiafcore.org/element/ReleasePrint> a owl:Class, skos:Concept;
-    skos:prefLabel "Release Print"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Release Print"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.
+<https://dev.fiafcore.org/SoundNegative> a skos:Concept ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Sound Negative"@en .
 
-<https://vocabulary.fiafcore.org/element/SoundNegative> a owl:Class, skos:Concept;
-    skos:prefLabel "Sound Negative"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Sound Negative"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.
+<https://dev.fiafcore.org/SoundPositive> a skos:Concept ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/element> ;
+    skos:prefLabel "Sound Positive"@en .
 
-<https://vocabulary.fiafcore.org/element/SoundPositive> a owl:Class, skos:Concept;
-    skos:prefLabel "Sound Positive"@en ;
-    skos:topConceptOf <https://vocabulary.fiafcore.org/element/> ;
-    rdfs:label "Sound Positive"@en ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/element> ;
-.

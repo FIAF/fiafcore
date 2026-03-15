@@ -1,0 +1,62 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/SoundSystem> a owl:Class ;
+    rdfs:label "Sound System"@en ;
+    dc:description ""@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/DolbyDigital> a owl:Class ;
+    rdfs:label "Dolby Digital"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DolbyStereo> a owl:Class ;
+    rdfs:label "Dolby Stereo"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DTS> a owl:Class ;
+    rdfs:label "DTS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/Magnetic> a owl:Class ;
+    rdfs:label "Magnetic"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/OpticalVariableArea> a owl:Class ;
+    rdfs:label "Optical Variable Area"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/OpticalVariableDensity> a owl:Class ;
+    rdfs:label "Optical Variable Density"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+<https://dev.fiafcore.org/SDDS> a owl:Class ;
+    rdfs:label "SDDS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

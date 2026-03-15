@@ -1,0 +1,68 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/ColourStandard> a owl:Class ;
+    rdfs:label "Colour Standard"@en ;
+    dc:description "A standardised colour process."@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Agfacolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Agfacolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/DeLuxe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "DeLuxe"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Duartcolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Duartcolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Eastmancolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Eastmancolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Fujicolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fujicolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Metrocolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Metrocolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Orwocolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Orwocolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Technicolor> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Technicolor"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

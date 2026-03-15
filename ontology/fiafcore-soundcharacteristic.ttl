@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/SoundCharacteristic> a owl:Class ;
+<https://dev.fiafcore.org/SoundCharacteristic> a owl:Class ;
     rdfs:label "Sound Characteristic"@en ;
     dc:description ""@en ;
     dc:source <> ;
@@ -12,25 +12,25 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/Mute> a owl:Class ;
+<https://dev.fiafcore.org/Mute> a owl:Class ;
     rdfs:label "Mute"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/SoundCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/Silent> a owl:Class ;
+<https://dev.fiafcore.org/Silent> a owl:Class ;
     rdfs:label "Silent"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/SoundCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
-<https://ontology.fiafcore.org/Sound> a owl:Class ;
+<https://dev.fiafcore.org/Sound> a owl:Class ;
     rdfs:label "Sound"@en ;
     dc:description ""@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/SoundCharacteristic> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
 ### Datatype Properties

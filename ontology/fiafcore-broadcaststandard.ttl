@@ -1,0 +1,38 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/BroadcastStandard> a owl:Class ;
+    rdfs:label "Broadcast Standard"@en ;
+    dc:description "Standard for broadcast encoding."@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/NTSC> a owl:Class ;
+    rdfs:label "NTSC"@en ;
+    dc:description "Broadcast standard most commonly associated with North America."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://dev.fiafcore.org/PAL> a owl:Class ;
+    rdfs:label "PAL"@en ;
+    dc:description "Broadcast standard most commonly associated with Europe and Australia."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://dev.fiafcore.org/SECAM> a owl:Class ;
+    rdfs:label "SECAM"@en ;
+    dc:description "Broadcast standard most commonly associated with France and Russia."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/BroadcastStandard> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

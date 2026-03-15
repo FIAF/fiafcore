@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Class
 
-<https://ontology.fiafcore.org/Agent> a owl:Class ;
+<https://dev.fiafcore.org/Agent> a owl:Class ;
     rdfs:label "Agent"@en ;
     dc:description "Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
@@ -12,18 +12,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://ontology.fiafcore.org/Organisation> a owl:Class ;
+<https://dev.fiafcore.org/Organisation> a owl:Class ;
     rdfs:label "Organisation"@en ;
     dc:description "A collection of human beings, collaborating for commercial or artistic purposes."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
 .
 
-<https://ontology.fiafcore.org/Person> a owl:Class ;
+<https://dev.fiafcore.org/Person> a owl:Class ;
     rdfs:label "Person"@en ;
     dc:description "A single human being."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
-    rdfs:subClassOf <https://ontology.fiafcore.org/Agent> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
 .
 
 ### Datatype Properties

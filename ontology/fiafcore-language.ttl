@@ -1,0 +1,1124 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/Language> a owl:Class ;
+    rdfs:label "Language"@en ;
+    dc:description ""@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Abkhazian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Abkhazian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Afar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Afar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Afrikaans> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Afrikaans"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Akan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Akan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Albanian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Albanian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Amharic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Amharic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Arabic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Arabic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Aragonese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Aragonese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Armenian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Armenian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Assamese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Assamese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Avaric> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Avaric"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Avestan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Avestan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Aymara> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Aymara"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Azerbaijani> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Azerbaijani"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bambara> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bambara"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bashkir> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bashkir"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Basque> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Basque"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Belarusian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Belarusian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bengali> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bengali"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bislama> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bislama"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bosnian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bosnian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Breton> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Breton"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Bulgarian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bulgarian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Burmese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Burmese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Catalan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Catalan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/CentralKhmer> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Central Khmer"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Chamorro> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chamorro"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Chechen> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chechen"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Chichewa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chichewa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Chinese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chinese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/ChurchSlavonic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Church Slavonic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Chuvash> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Chuvash"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Cornish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cornish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Corsican> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Corsican"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Cree> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Cree"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Croatian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Croatian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Czech> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Czech"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Danish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Danish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Divehi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Divehi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Dutch> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Dutch"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Dzongkha> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Dzongkha"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/English> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "English"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Esperanto> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Esperanto"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Estonian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Estonian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ewe> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ewe"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Faroese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Faroese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Fijian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fijian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Finnish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Finnish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/French> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "French"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Fulah> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Fulah"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Gaelic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gaelic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Galician> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Galician"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ganda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ganda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Georgian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Georgian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/German> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "German"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Greek> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Greek"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Guarani> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Guarani"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Gujarati> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Gujarati"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Haitian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Haitian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hausa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hausa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hawaiian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hawaiian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hebrew> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hebrew"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Herero> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Herero"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hindi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hindi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/HiriMotu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hiri Motu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hungarian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hungarian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Icelandic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Icelandic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ido> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ido"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Igbo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Igbo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Indonesian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Indonesian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Interlingua> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Interlingua"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Interlingue> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Interlingue"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Inuktitut> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Inuktitut"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Inupiaq> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Inupiaq"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Irish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Irish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Italian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Italian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Japanese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Japanese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Javanese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Javanese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kalaallisut> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kalaallisut"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kannada> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kannada"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kanuri> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kanuri"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kashmiri> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kashmiri"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kazakh> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kazakh"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kikuyu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kikuyu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kinyarwanda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kinyarwanda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Komi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Komi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kongo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kongo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Korean> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Korean"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kuanyama> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kuanyama"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kurdish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kurdish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Kyrgyz> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Kyrgyz"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Lao> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lao"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Latin> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Latin"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Latvian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Latvian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Limburgan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Limburgan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Lingala> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lingala"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Lithuanian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lithuanian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Lubakatanga> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Luba-Katanga"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Luxembourgish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Luxembourgish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Macedonian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Macedonian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Malagasy> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malagasy"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Malay> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malay"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Malayalam> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Malayalam"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Maltese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Maltese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Manx> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Manx"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Maori> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Maori"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Marathi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Marathi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Marshallese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Marshallese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Mongolian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Mongolian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Nauru> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nauru"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Navajo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Navajo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ndonga> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ndonga"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Nepali> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Nepali"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/NorthNdebele> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "North Ndebele"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/NorthernSami> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Northern Sami"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Norwegian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Norwegian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/NorwegianBokmal> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Norwegian Bokmål"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/NorwegianNynorsk> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Norwegian Nynorsk"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Occitan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Occitan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ojibwa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ojibwa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Oriya> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Oriya"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Oromo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Oromo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ossetian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ossetian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Pali> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Pali"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Pashto> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Pashto"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Persian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Persian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Polish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Polish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Portuguese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Portuguese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Punjabi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Punjabi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Quechua> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Quechua"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Romanian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Romanian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Romansh> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Romansh"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Rundi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Rundi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Russian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Russian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Samoan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Samoan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sango> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sango"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sanskrit> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sanskrit"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sardinian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sardinian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Serbian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Serbian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Shona> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Shona"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/SichuanYi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sichuan Yi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sindhi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sindhi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sinhala> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sinhala"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Slovak> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Slovak"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Slovenian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Slovenian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Somali> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Somali"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/SouthNdebele> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "South Ndebele"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/SouthernSotho> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Southern Sotho"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Spanish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Spanish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sundanese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Sundanese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Swahili> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Swahili"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Swati> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Swati"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Swedish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Swedish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tagalog> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tagalog"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tahitian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tahitian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tajik> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tajik"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tamil> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tamil"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tatar> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tatar"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Telugu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Telugu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Thai> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Thai"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tibetan> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tibetan"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tigrinya> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tigrinya"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tonga> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tonga"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tsonga> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tsonga"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Tswana> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Tswana"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Turkish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Turkish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Turkmen> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Turkmen"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Twi> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Twi"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Uighur> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Uighur"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ukrainian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Ukrainian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Urdu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Urdu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Uzbek> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Uzbek"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Venda> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Venda"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Vietnamese> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Vietnamese"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Volapuk> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Volapük"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Walloon> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Walloon"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Welsh> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Welsh"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/WesternFrisian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Western Frisian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Wolof> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Wolof"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Xhosa> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Xhosa"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Yiddish> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Yiddish"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Yoruba> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Yoruba"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Zhuang> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Zhuang"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Zulu> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Zulu"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# Non

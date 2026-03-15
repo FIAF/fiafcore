@@ -1,0 +1,38 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/Base> a owl:Class ;
+    rdfs:label "Base"@en ;
+    dc:description "The primary chemical characteristic of the physical carrier."@en ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/AcetateBase> a owl:Class ;
+    rdfs:label "Acetate Base"@en ;
+    dc:description "Cellulose acetate bases, including cellulose diacetate and cellulose triacetate."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
+<https://dev.fiafcore.org/NitrateBase> a owl:Class ;
+    rdfs:label "Nitrate Base"@en ;
+    dc:description "Cellulose nitrate bases, used from the birth of film until the 1950s."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
+<https://dev.fiafcore.org/PolyesterBase> a owl:Class ;
+    rdfs:label "Polyester Base"@en ;
+    dc:description "Polyester bases, used for film, video and audiotape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None
