@@ -1,926 +1,1479 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/Abkhazian> a skos:Concept ;
+<https://dev.fiafcore.org/Abkhazian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Abkhazian"@en .
+    skos:prefLabel "Abkhazian"@en ;
+.
 
-<https://dev.fiafcore.org/Afar> a skos:Concept ;
+<https://dev.fiafcore.org/Afar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Afar"@en .
+    skos:prefLabel "Afar"@en ;
+.
 
-<https://dev.fiafcore.org/Afrikaans> a skos:Concept ;
+<https://dev.fiafcore.org/Afrikaans>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Afrikaans"@en .
+    skos:prefLabel "Afrikaans"@en ;
+.
 
-<https://dev.fiafcore.org/Akan> a skos:Concept ;
+<https://dev.fiafcore.org/Akan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Akan"@en .
+    skos:prefLabel "Akan"@en ;
+.
 
-<https://dev.fiafcore.org/Albanian> a skos:Concept ;
+<https://dev.fiafcore.org/Albanian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Albanian"@en .
+    skos:prefLabel "Albanian"@en ;
+.
 
-<https://dev.fiafcore.org/Amharic> a skos:Concept ;
+<https://dev.fiafcore.org/Amharic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Amharic"@en .
+    skos:prefLabel "Amharic"@en ;
+.
 
-<https://dev.fiafcore.org/Arabic> a skos:Concept ;
+<https://dev.fiafcore.org/Arabic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Arabic"@en .
+    skos:prefLabel "Arabic"@en ;
+.
 
-<https://dev.fiafcore.org/Aragonese> a skos:Concept ;
+<https://dev.fiafcore.org/Aragonese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Aragonese"@en .
+    skos:prefLabel "Aragonese"@en ;
+.
 
-<https://dev.fiafcore.org/Armenian> a skos:Concept ;
+<https://dev.fiafcore.org/Armenian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Armenian"@en .
+    skos:prefLabel "Armenian"@en ;
+.
 
-<https://dev.fiafcore.org/Assamese> a skos:Concept ;
+<https://dev.fiafcore.org/Assamese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Assamese"@en .
+    skos:prefLabel "Assamese"@en ;
+.
 
-<https://dev.fiafcore.org/Avaric> a skos:Concept ;
+<https://dev.fiafcore.org/Avaric>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Avaric"@en .
+    skos:prefLabel "Avaric"@en ;
+.
 
-<https://dev.fiafcore.org/Avestan> a skos:Concept ;
+<https://dev.fiafcore.org/Avestan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Avestan"@en .
+    skos:prefLabel "Avestan"@en ;
+.
 
-<https://dev.fiafcore.org/Aymara> a skos:Concept ;
+<https://dev.fiafcore.org/Aymara>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Aymara"@en .
+    skos:prefLabel "Aymara"@en ;
+.
 
-<https://dev.fiafcore.org/Azerbaijani> a skos:Concept ;
+<https://dev.fiafcore.org/Azerbaijani>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Azerbaijani"@en .
+    skos:prefLabel "Azerbaijani"@en ;
+.
 
-<https://dev.fiafcore.org/Bambara> a skos:Concept ;
+<https://dev.fiafcore.org/Bambara>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bambara"@en .
+    skos:prefLabel "Bambara"@en ;
+.
 
-<https://dev.fiafcore.org/Bashkir> a skos:Concept ;
+<https://dev.fiafcore.org/Bashkir>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bashkir"@en .
+    skos:prefLabel "Bashkir"@en ;
+.
 
-<https://dev.fiafcore.org/Basque> a skos:Concept ;
+<https://dev.fiafcore.org/Basque>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Basque"@en .
+    skos:prefLabel "Basque"@en ;
+.
 
-<https://dev.fiafcore.org/Belarusian> a skos:Concept ;
+<https://dev.fiafcore.org/Belarusian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Belarusian"@en .
+    skos:prefLabel "Belarusian"@en ;
+.
 
-<https://dev.fiafcore.org/Bengali> a skos:Concept ;
+<https://dev.fiafcore.org/Bengali>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bengali"@en .
+    skos:prefLabel "Bengali"@en ;
+.
 
-<https://dev.fiafcore.org/Bislama> a skos:Concept ;
+<https://dev.fiafcore.org/Bislama>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bislama"@en .
+    skos:prefLabel "Bislama"@en ;
+.
 
-<https://dev.fiafcore.org/Bosnian> a skos:Concept ;
+<https://dev.fiafcore.org/Bosnian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bosnian"@en .
+    skos:prefLabel "Bosnian"@en ;
+.
 
-<https://dev.fiafcore.org/Breton> a skos:Concept ;
+<https://dev.fiafcore.org/Breton>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Breton"@en .
+    skos:prefLabel "Breton"@en ;
+.
 
-<https://dev.fiafcore.org/Bulgarian> a skos:Concept ;
+<https://dev.fiafcore.org/Bulgarian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Bulgarian"@en .
+    skos:prefLabel "Bulgarian"@en ;
+.
 
-<https://dev.fiafcore.org/Burmese> a skos:Concept ;
+<https://dev.fiafcore.org/Burmese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Burmese"@en .
+    skos:prefLabel "Burmese"@en ;
+.
 
-<https://dev.fiafcore.org/Catalan> a skos:Concept ;
+<https://dev.fiafcore.org/Catalan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Catalan"@en .
+    skos:prefLabel "Catalan"@en ;
+.
 
-<https://dev.fiafcore.org/CentralKhmer> a skos:Concept ;
+<https://dev.fiafcore.org/CentralKhmer>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Central Khmer"@en .
+    skos:prefLabel "Central Khmer"@en ;
+.
 
-<https://dev.fiafcore.org/Chamorro> a skos:Concept ;
+<https://dev.fiafcore.org/Chamorro>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Chamorro"@en .
+    skos:prefLabel "Chamorro"@en ;
+.
 
-<https://dev.fiafcore.org/Chechen> a skos:Concept ;
+<https://dev.fiafcore.org/Chechen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Chechen"@en .
+    skos:prefLabel "Chechen"@en ;
+.
 
-<https://dev.fiafcore.org/Chichewa> a skos:Concept ;
+<https://dev.fiafcore.org/Chichewa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Chichewa"@en .
+    skos:prefLabel "Chichewa"@en ;
+.
 
-<https://dev.fiafcore.org/Chinese> a skos:Concept ;
+<https://dev.fiafcore.org/Chinese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Chinese"@en .
+    skos:prefLabel "Chinese"@en ;
+.
 
-<https://dev.fiafcore.org/ChurchSlavonic> a skos:Concept ;
+<https://dev.fiafcore.org/ChurchSlavonic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Church Slavonic"@en .
+    skos:prefLabel "Church Slavonic"@en ;
+.
 
-<https://dev.fiafcore.org/Chuvash> a skos:Concept ;
+<https://dev.fiafcore.org/Chuvash>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Chuvash"@en .
+    skos:prefLabel "Chuvash"@en ;
+.
 
-<https://dev.fiafcore.org/Cornish> a skos:Concept ;
+<https://dev.fiafcore.org/Cornish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Cornish"@en .
+    skos:prefLabel "Cornish"@en ;
+.
 
-<https://dev.fiafcore.org/Corsican> a skos:Concept ;
+<https://dev.fiafcore.org/Corsican>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Corsican"@en .
+    skos:prefLabel "Corsican"@en ;
+.
 
-<https://dev.fiafcore.org/Cree> a skos:Concept ;
+<https://dev.fiafcore.org/Cree>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Cree"@en .
+    skos:prefLabel "Cree"@en ;
+.
 
-<https://dev.fiafcore.org/Croatian> a skos:Concept ;
+<https://dev.fiafcore.org/Croatian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Croatian"@en .
+    skos:prefLabel "Croatian"@en ;
+.
 
-<https://dev.fiafcore.org/Czech> a skos:Concept ;
+<https://dev.fiafcore.org/Czech>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Czech"@en .
+    skos:prefLabel "Czech"@en ;
+.
 
-<https://dev.fiafcore.org/Danish> a skos:Concept ;
+<https://dev.fiafcore.org/Danish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Danish"@en .
+    skos:prefLabel "Danish"@en ;
+.
 
-<https://dev.fiafcore.org/Divehi> a skos:Concept ;
+<https://dev.fiafcore.org/Divehi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Divehi"@en .
+    skos:prefLabel "Divehi"@en ;
+.
 
-<https://dev.fiafcore.org/Dutch> a skos:Concept ;
+<https://dev.fiafcore.org/Dutch>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Dutch"@en .
+    skos:prefLabel "Dutch"@en ;
+.
 
-<https://dev.fiafcore.org/Dzongkha> a skos:Concept ;
+<https://dev.fiafcore.org/Dzongkha>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Dzongkha"@en .
+    skos:prefLabel "Dzongkha"@en ;
+.
 
-<https://dev.fiafcore.org/English> a skos:Concept ;
+<https://dev.fiafcore.org/English>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "English"@en .
+    skos:prefLabel "English"@en ;
+.
 
-<https://dev.fiafcore.org/Esperanto> a skos:Concept ;
+<https://dev.fiafcore.org/Esperanto>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Esperanto"@en .
+    skos:prefLabel "Esperanto"@en ;
+.
 
-<https://dev.fiafcore.org/Estonian> a skos:Concept ;
+<https://dev.fiafcore.org/Estonian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Estonian"@en .
+    skos:prefLabel "Estonian"@en ;
+.
 
-<https://dev.fiafcore.org/Ewe> a skos:Concept ;
+<https://dev.fiafcore.org/Ewe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ewe"@en .
+    skos:prefLabel "Ewe"@en ;
+.
 
-<https://dev.fiafcore.org/Faroese> a skos:Concept ;
+<https://dev.fiafcore.org/Faroese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Faroese"@en .
+    skos:prefLabel "Faroese"@en ;
+.
 
-<https://dev.fiafcore.org/Fijian> a skos:Concept ;
+<https://dev.fiafcore.org/Fijian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Fijian"@en .
+    skos:prefLabel "Fijian"@en ;
+.
 
-<https://dev.fiafcore.org/Finnish> a skos:Concept ;
+<https://dev.fiafcore.org/Finnish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Finnish"@en .
+    skos:prefLabel "Finnish"@en ;
+.
 
-<https://dev.fiafcore.org/French> a skos:Concept ;
+<https://dev.fiafcore.org/French>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "French"@en .
+    skos:prefLabel "French"@en ;
+.
 
-<https://dev.fiafcore.org/Fulah> a skos:Concept ;
+<https://dev.fiafcore.org/Fulah>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Fulah"@en .
+    skos:prefLabel "Fulah"@en ;
+.
 
-<https://dev.fiafcore.org/Gaelic> a skos:Concept ;
+<https://dev.fiafcore.org/Gaelic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Gaelic"@en .
+    skos:prefLabel "Gaelic"@en ;
+.
 
-<https://dev.fiafcore.org/Galician> a skos:Concept ;
+<https://dev.fiafcore.org/Galician>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Galician"@en .
+    skos:prefLabel "Galician"@en ;
+.
 
-<https://dev.fiafcore.org/Ganda> a skos:Concept ;
+<https://dev.fiafcore.org/Ganda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ganda"@en .
+    skos:prefLabel "Ganda"@en ;
+.
 
-<https://dev.fiafcore.org/Georgian> a skos:Concept ;
+<https://dev.fiafcore.org/Georgian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Georgian"@en .
+    skos:prefLabel "Georgian"@en ;
+.
 
-<https://dev.fiafcore.org/German> a skos:Concept ;
+<https://dev.fiafcore.org/German>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "German"@en .
+    skos:prefLabel "German"@en ;
+.
 
-<https://dev.fiafcore.org/Greek> a skos:Concept ;
+<https://dev.fiafcore.org/Greek>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Greek"@en .
+    skos:prefLabel "Greek"@en ;
+.
 
-<https://dev.fiafcore.org/Guarani> a skos:Concept ;
+<https://dev.fiafcore.org/Guarani>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Guarani"@en .
+    skos:prefLabel "Guarani"@en ;
+.
 
-<https://dev.fiafcore.org/Gujarati> a skos:Concept ;
+<https://dev.fiafcore.org/Gujarati>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Gujarati"@en .
+    skos:prefLabel "Gujarati"@en ;
+.
 
-<https://dev.fiafcore.org/Haitian> a skos:Concept ;
+<https://dev.fiafcore.org/Haitian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Haitian"@en .
+    skos:prefLabel "Haitian"@en ;
+.
 
-<https://dev.fiafcore.org/Hausa> a skos:Concept ;
+<https://dev.fiafcore.org/Hausa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hausa"@en .
+    skos:prefLabel "Hausa"@en ;
+.
 
-<https://dev.fiafcore.org/Hawaiian> a skos:Concept ;
+<https://dev.fiafcore.org/Hawaiian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hawaiian"@en .
+    skos:prefLabel "Hawaiian"@en ;
+.
 
-<https://dev.fiafcore.org/Hebrew> a skos:Concept ;
+<https://dev.fiafcore.org/Hebrew>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hebrew"@en .
+    skos:prefLabel "Hebrew"@en ;
+.
 
-<https://dev.fiafcore.org/Herero> a skos:Concept ;
+<https://dev.fiafcore.org/Herero>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Herero"@en .
+    skos:prefLabel "Herero"@en ;
+.
 
-<https://dev.fiafcore.org/Hindi> a skos:Concept ;
+<https://dev.fiafcore.org/Hindi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hindi"@en .
+    skos:prefLabel "Hindi"@en ;
+.
 
-<https://dev.fiafcore.org/HiriMotu> a skos:Concept ;
+<https://dev.fiafcore.org/HiriMotu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hiri Motu"@en .
+    skos:prefLabel "Hiri Motu"@en ;
+.
 
-<https://dev.fiafcore.org/Hungarian> a skos:Concept ;
+<https://dev.fiafcore.org/Hungarian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Hungarian"@en .
+    skos:prefLabel "Hungarian"@en ;
+.
 
-<https://dev.fiafcore.org/Icelandic> a skos:Concept ;
+<https://dev.fiafcore.org/Icelandic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Icelandic"@en .
+    skos:prefLabel "Icelandic"@en ;
+.
 
-<https://dev.fiafcore.org/Ido> a skos:Concept ;
+<https://dev.fiafcore.org/Ido>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ido"@en .
+    skos:prefLabel "Ido"@en ;
+.
 
-<https://dev.fiafcore.org/Igbo> a skos:Concept ;
+<https://dev.fiafcore.org/Igbo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Igbo"@en .
+    skos:prefLabel "Igbo"@en ;
+.
 
-<https://dev.fiafcore.org/Indonesian> a skos:Concept ;
+<https://dev.fiafcore.org/Indonesian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Indonesian"@en .
+    skos:prefLabel "Indonesian"@en ;
+.
 
-<https://dev.fiafcore.org/Interlingua> a skos:Concept ;
+<https://dev.fiafcore.org/Interlingua>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Interlingua"@en .
+    skos:prefLabel "Interlingua"@en ;
+.
 
-<https://dev.fiafcore.org/Interlingue> a skos:Concept ;
+<https://dev.fiafcore.org/Interlingue>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Interlingue"@en .
+    skos:prefLabel "Interlingue"@en ;
+.
 
-<https://dev.fiafcore.org/Inuktitut> a skos:Concept ;
+<https://dev.fiafcore.org/Inuktitut>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Inuktitut"@en .
+    skos:prefLabel "Inuktitut"@en ;
+.
 
-<https://dev.fiafcore.org/Inupiaq> a skos:Concept ;
+<https://dev.fiafcore.org/Inupiaq>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Inupiaq"@en .
+    skos:prefLabel "Inupiaq"@en ;
+.
 
-<https://dev.fiafcore.org/Irish> a skos:Concept ;
+<https://dev.fiafcore.org/Irish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Irish"@en .
+    skos:prefLabel "Irish"@en ;
+.
 
-<https://dev.fiafcore.org/Italian> a skos:Concept ;
+<https://dev.fiafcore.org/Italian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Italian"@en .
+    skos:prefLabel "Italian"@en ;
+.
 
-<https://dev.fiafcore.org/Japanese> a skos:Concept ;
+<https://dev.fiafcore.org/Japanese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Japanese"@en .
+    skos:prefLabel "Japanese"@en ;
+.
 
-<https://dev.fiafcore.org/Javanese> a skos:Concept ;
+<https://dev.fiafcore.org/Javanese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Javanese"@en .
+    skos:prefLabel "Javanese"@en ;
+.
 
-<https://dev.fiafcore.org/Kalaallisut> a skos:Concept ;
+<https://dev.fiafcore.org/Kalaallisut>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kalaallisut"@en .
+    skos:prefLabel "Kalaallisut"@en ;
+.
 
-<https://dev.fiafcore.org/Kannada> a skos:Concept ;
+<https://dev.fiafcore.org/Kannada>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kannada"@en .
+    skos:prefLabel "Kannada"@en ;
+.
 
-<https://dev.fiafcore.org/Kanuri> a skos:Concept ;
+<https://dev.fiafcore.org/Kanuri>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kanuri"@en .
+    skos:prefLabel "Kanuri"@en ;
+.
 
-<https://dev.fiafcore.org/Kashmiri> a skos:Concept ;
+<https://dev.fiafcore.org/Kashmiri>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kashmiri"@en .
+    skos:prefLabel "Kashmiri"@en ;
+.
 
-<https://dev.fiafcore.org/Kazakh> a skos:Concept ;
+<https://dev.fiafcore.org/Kazakh>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kazakh"@en .
+    skos:prefLabel "Kazakh"@en ;
+.
 
-<https://dev.fiafcore.org/Kikuyu> a skos:Concept ;
+<https://dev.fiafcore.org/Kikuyu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kikuyu"@en .
+    skos:prefLabel "Kikuyu"@en ;
+.
 
-<https://dev.fiafcore.org/Kinyarwanda> a skos:Concept ;
+<https://dev.fiafcore.org/Kinyarwanda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kinyarwanda"@en .
+    skos:prefLabel "Kinyarwanda"@en ;
+.
 
-<https://dev.fiafcore.org/Komi> a skos:Concept ;
+<https://dev.fiafcore.org/Komi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Komi"@en .
+    skos:prefLabel "Komi"@en ;
+.
 
-<https://dev.fiafcore.org/Kongo> a skos:Concept ;
+<https://dev.fiafcore.org/Kongo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kongo"@en .
+    skos:prefLabel "Kongo"@en ;
+.
 
-<https://dev.fiafcore.org/Korean> a skos:Concept ;
+<https://dev.fiafcore.org/Korean>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Korean"@en .
+    skos:prefLabel "Korean"@en ;
+.
 
-<https://dev.fiafcore.org/Kuanyama> a skos:Concept ;
+<https://dev.fiafcore.org/Kuanyama>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kuanyama"@en .
+    skos:prefLabel "Kuanyama"@en ;
+.
 
-<https://dev.fiafcore.org/Kurdish> a skos:Concept ;
+<https://dev.fiafcore.org/Kurdish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kurdish"@en .
+    skos:prefLabel "Kurdish"@en ;
+.
 
-<https://dev.fiafcore.org/Kyrgyz> a skos:Concept ;
+<https://dev.fiafcore.org/Kyrgyz>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Kyrgyz"@en .
+    skos:prefLabel "Kyrgyz"@en ;
+.
 
-<https://dev.fiafcore.org/Lao> a skos:Concept ;
+<https://dev.fiafcore.org/Lao>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Lao"@en .
+    skos:prefLabel "Lao"@en ;
+.
 
-<https://dev.fiafcore.org/Latin> a skos:Concept ;
+<https://dev.fiafcore.org/Latin>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Latin"@en .
+    skos:prefLabel "Latin"@en ;
+.
 
-<https://dev.fiafcore.org/Latvian> a skos:Concept ;
+<https://dev.fiafcore.org/Latvian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Latvian"@en .
+    skos:prefLabel "Latvian"@en ;
+.
 
-<https://dev.fiafcore.org/Limburgan> a skos:Concept ;
+<https://dev.fiafcore.org/Limburgan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Limburgan"@en .
+    skos:prefLabel "Limburgan"@en ;
+.
 
-<https://dev.fiafcore.org/Lingala> a skos:Concept ;
+<https://dev.fiafcore.org/Lingala>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Lingala"@en .
+    skos:prefLabel "Lingala"@en ;
+.
 
-<https://dev.fiafcore.org/Lithuanian> a skos:Concept ;
+<https://dev.fiafcore.org/Lithuanian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Lithuanian"@en .
+    skos:prefLabel "Lithuanian"@en ;
+.
 
-<https://dev.fiafcore.org/Lubakatanga> a skos:Concept ;
+<https://dev.fiafcore.org/Lubakatanga>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Luba-Katanga"@en .
+    skos:prefLabel "Luba-Katanga"@en ;
+.
 
-<https://dev.fiafcore.org/Luxembourgish> a skos:Concept ;
+<https://dev.fiafcore.org/Luxembourgish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Luxembourgish"@en .
+    skos:prefLabel "Luxembourgish"@en ;
+.
 
-<https://dev.fiafcore.org/Macedonian> a skos:Concept ;
+<https://dev.fiafcore.org/Macedonian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Macedonian"@en .
+    skos:prefLabel "Macedonian"@en ;
+.
 
-<https://dev.fiafcore.org/Malagasy> a skos:Concept ;
+<https://dev.fiafcore.org/Malagasy>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Malagasy"@en .
+    skos:prefLabel "Malagasy"@en ;
+.
 
-<https://dev.fiafcore.org/Malay> a skos:Concept ;
+<https://dev.fiafcore.org/Malay>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Malay"@en .
+    skos:prefLabel "Malay"@en ;
+.
 
-<https://dev.fiafcore.org/Malayalam> a skos:Concept ;
+<https://dev.fiafcore.org/Malayalam>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Malayalam"@en .
+    skos:prefLabel "Malayalam"@en ;
+.
 
-<https://dev.fiafcore.org/Maltese> a skos:Concept ;
+<https://dev.fiafcore.org/Maltese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Maltese"@en .
+    skos:prefLabel "Maltese"@en ;
+.
 
-<https://dev.fiafcore.org/Manx> a skos:Concept ;
+<https://dev.fiafcore.org/Manx>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Manx"@en .
+    skos:prefLabel "Manx"@en ;
+.
 
-<https://dev.fiafcore.org/Maori> a skos:Concept ;
+<https://dev.fiafcore.org/Maori>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Maori"@en .
+    skos:prefLabel "Maori"@en ;
+.
 
-<https://dev.fiafcore.org/Marathi> a skos:Concept ;
+<https://dev.fiafcore.org/Marathi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Marathi"@en .
+    skos:prefLabel "Marathi"@en ;
+.
 
-<https://dev.fiafcore.org/Marshallese> a skos:Concept ;
+<https://dev.fiafcore.org/Marshallese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Marshallese"@en .
+    skos:prefLabel "Marshallese"@en ;
+.
 
-<https://dev.fiafcore.org/Mongolian> a skos:Concept ;
+<https://dev.fiafcore.org/Mongolian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Mongolian"@en .
+    skos:prefLabel "Mongolian"@en ;
+.
 
-<https://dev.fiafcore.org/Nauru> a skos:Concept ;
+<https://dev.fiafcore.org/Nauru>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Nauru"@en .
+    skos:prefLabel "Nauru"@en ;
+.
 
-<https://dev.fiafcore.org/Navajo> a skos:Concept ;
+<https://dev.fiafcore.org/Navajo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Navajo"@en .
+    skos:prefLabel "Navajo"@en ;
+.
 
-<https://dev.fiafcore.org/Ndonga> a skos:Concept ;
+<https://dev.fiafcore.org/Ndonga>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ndonga"@en .
+    skos:prefLabel "Ndonga"@en ;
+.
 
-<https://dev.fiafcore.org/Nepali> a skos:Concept ;
+<https://dev.fiafcore.org/Nepali>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Nepali"@en .
+    skos:prefLabel "Nepali"@en ;
+.
 
-<https://dev.fiafcore.org/NorthNdebele> a skos:Concept ;
+<https://dev.fiafcore.org/NorthNdebele>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "North Ndebele"@en .
+    skos:prefLabel "North Ndebele"@en ;
+.
 
-<https://dev.fiafcore.org/NorthernSami> a skos:Concept ;
+<https://dev.fiafcore.org/NorthernSami>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Northern Sami"@en .
+    skos:prefLabel "Northern Sami"@en ;
+.
 
-<https://dev.fiafcore.org/Norwegian> a skos:Concept ;
+<https://dev.fiafcore.org/Norwegian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Norwegian"@en .
+    skos:prefLabel "Norwegian"@en ;
+.
 
-<https://dev.fiafcore.org/NorwegianBokmal> a skos:Concept ;
+<https://dev.fiafcore.org/NorwegianBokmal>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Norwegian Bokmål"@en .
+    skos:prefLabel "Norwegian Bokmål"@en ;
+.
 
-<https://dev.fiafcore.org/NorwegianNynorsk> a skos:Concept ;
+<https://dev.fiafcore.org/NorwegianNynorsk>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Norwegian Nynorsk"@en .
+    skos:prefLabel "Norwegian Nynorsk"@en ;
+.
 
-<https://dev.fiafcore.org/Occitan> a skos:Concept ;
+<https://dev.fiafcore.org/Occitan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Occitan"@en .
+    skos:prefLabel "Occitan"@en ;
+.
 
-<https://dev.fiafcore.org/Ojibwa> a skos:Concept ;
+<https://dev.fiafcore.org/Ojibwa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ojibwa"@en .
+    skos:prefLabel "Ojibwa"@en ;
+.
 
-<https://dev.fiafcore.org/Oriya> a skos:Concept ;
+<https://dev.fiafcore.org/Oriya>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Oriya"@en .
+    skos:prefLabel "Oriya"@en ;
+.
 
-<https://dev.fiafcore.org/Oromo> a skos:Concept ;
+<https://dev.fiafcore.org/Oromo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Oromo"@en .
+    skos:prefLabel "Oromo"@en ;
+.
 
-<https://dev.fiafcore.org/Ossetian> a skos:Concept ;
+<https://dev.fiafcore.org/Ossetian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ossetian"@en .
+    skos:prefLabel "Ossetian"@en ;
+.
 
-<https://dev.fiafcore.org/Pali> a skos:Concept ;
+<https://dev.fiafcore.org/Pali>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Pali"@en .
+    skos:prefLabel "Pali"@en ;
+.
 
-<https://dev.fiafcore.org/Pashto> a skos:Concept ;
+<https://dev.fiafcore.org/Pashto>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Pashto"@en .
+    skos:prefLabel "Pashto"@en ;
+.
 
-<https://dev.fiafcore.org/Persian> a skos:Concept ;
+<https://dev.fiafcore.org/Persian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Persian"@en .
+    skos:prefLabel "Persian"@en ;
+.
 
-<https://dev.fiafcore.org/Polish> a skos:Concept ;
+<https://dev.fiafcore.org/Polish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Polish"@en .
+    skos:prefLabel "Polish"@en ;
+.
 
-<https://dev.fiafcore.org/Portuguese> a skos:Concept ;
+<https://dev.fiafcore.org/Portuguese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Portuguese"@en .
+    skos:prefLabel "Portuguese"@en ;
+.
 
-<https://dev.fiafcore.org/Punjabi> a skos:Concept ;
+<https://dev.fiafcore.org/Punjabi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Punjabi"@en .
+    skos:prefLabel "Punjabi"@en ;
+.
 
-<https://dev.fiafcore.org/Quechua> a skos:Concept ;
+<https://dev.fiafcore.org/Quechua>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Quechua"@en .
+    skos:prefLabel "Quechua"@en ;
+.
 
-<https://dev.fiafcore.org/Romanian> a skos:Concept ;
+<https://dev.fiafcore.org/Romanian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Romanian"@en .
+    skos:prefLabel "Romanian"@en ;
+.
 
-<https://dev.fiafcore.org/Romansh> a skos:Concept ;
+<https://dev.fiafcore.org/Romansh>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Romansh"@en .
+    skos:prefLabel "Romansh"@en ;
+.
 
-<https://dev.fiafcore.org/Rundi> a skos:Concept ;
+<https://dev.fiafcore.org/Rundi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Rundi"@en .
+    skos:prefLabel "Rundi"@en ;
+.
 
-<https://dev.fiafcore.org/Russian> a skos:Concept ;
+<https://dev.fiafcore.org/Russian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Russian"@en .
+    skos:prefLabel "Russian"@en ;
+.
 
-<https://dev.fiafcore.org/Samoan> a skos:Concept ;
+<https://dev.fiafcore.org/Samoan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Samoan"@en .
+    skos:prefLabel "Samoan"@en ;
+.
 
-<https://dev.fiafcore.org/Sango> a skos:Concept ;
+<https://dev.fiafcore.org/Sango>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sango"@en .
+    skos:prefLabel "Sango"@en ;
+.
 
-<https://dev.fiafcore.org/Sanskrit> a skos:Concept ;
+<https://dev.fiafcore.org/Sanskrit>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sanskrit"@en .
+    skos:prefLabel "Sanskrit"@en ;
+.
 
-<https://dev.fiafcore.org/Sardinian> a skos:Concept ;
+<https://dev.fiafcore.org/Sardinian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sardinian"@en .
+    skos:prefLabel "Sardinian"@en ;
+.
 
-<https://dev.fiafcore.org/Serbian> a skos:Concept ;
+<https://dev.fiafcore.org/Serbian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Serbian"@en .
+    skos:prefLabel "Serbian"@en ;
+.
 
-<https://dev.fiafcore.org/Shona> a skos:Concept ;
+<https://dev.fiafcore.org/Shona>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Shona"@en .
+    skos:prefLabel "Shona"@en ;
+.
 
-<https://dev.fiafcore.org/SichuanYi> a skos:Concept ;
+<https://dev.fiafcore.org/SichuanYi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sichuan Yi"@en .
+    skos:prefLabel "Sichuan Yi"@en ;
+.
 
-<https://dev.fiafcore.org/Sindhi> a skos:Concept ;
+<https://dev.fiafcore.org/Sindhi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sindhi"@en .
+    skos:prefLabel "Sindhi"@en ;
+.
 
-<https://dev.fiafcore.org/Sinhala> a skos:Concept ;
+<https://dev.fiafcore.org/Sinhala>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sinhala"@en .
+    skos:prefLabel "Sinhala"@en ;
+.
 
-<https://dev.fiafcore.org/Slovak> a skos:Concept ;
+<https://dev.fiafcore.org/Slovak>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Slovak"@en .
+    skos:prefLabel "Slovak"@en ;
+.
 
-<https://dev.fiafcore.org/Slovenian> a skos:Concept ;
+<https://dev.fiafcore.org/Slovenian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Slovenian"@en .
+    skos:prefLabel "Slovenian"@en ;
+.
 
-<https://dev.fiafcore.org/Somali> a skos:Concept ;
+<https://dev.fiafcore.org/Somali>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Somali"@en .
+    skos:prefLabel "Somali"@en ;
+.
 
-<https://dev.fiafcore.org/SouthNdebele> a skos:Concept ;
+<https://dev.fiafcore.org/SouthNdebele>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "South Ndebele"@en .
+    skos:prefLabel "South Ndebele"@en ;
+.
 
-<https://dev.fiafcore.org/SouthernSotho> a skos:Concept ;
+<https://dev.fiafcore.org/SouthernSotho>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Southern Sotho"@en .
+    skos:prefLabel "Southern Sotho"@en ;
+.
 
-<https://dev.fiafcore.org/Spanish> a skos:Concept ;
+<https://dev.fiafcore.org/Spanish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Spanish"@en .
+    skos:prefLabel "Spanish"@en ;
+.
 
-<https://dev.fiafcore.org/Sundanese> a skos:Concept ;
+<https://dev.fiafcore.org/Sundanese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Sundanese"@en .
+    skos:prefLabel "Sundanese"@en ;
+.
 
-<https://dev.fiafcore.org/Swahili> a skos:Concept ;
+<https://dev.fiafcore.org/Swahili>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Swahili"@en .
+    skos:prefLabel "Swahili"@en ;
+.
 
-<https://dev.fiafcore.org/Swati> a skos:Concept ;
+<https://dev.fiafcore.org/Swati>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Swati"@en .
+    skos:prefLabel "Swati"@en ;
+.
 
-<https://dev.fiafcore.org/Swedish> a skos:Concept ;
+<https://dev.fiafcore.org/Swedish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Swedish"@en .
+    skos:prefLabel "Swedish"@en ;
+.
 
-<https://dev.fiafcore.org/Tagalog> a skos:Concept ;
+<https://dev.fiafcore.org/Tagalog>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tagalog"@en .
+    skos:prefLabel "Tagalog"@en ;
+.
 
-<https://dev.fiafcore.org/Tahitian> a skos:Concept ;
+<https://dev.fiafcore.org/Tahitian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tahitian"@en .
+    skos:prefLabel "Tahitian"@en ;
+.
 
-<https://dev.fiafcore.org/Tajik> a skos:Concept ;
+<https://dev.fiafcore.org/Tajik>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tajik"@en .
+    skos:prefLabel "Tajik"@en ;
+.
 
-<https://dev.fiafcore.org/Tamil> a skos:Concept ;
+<https://dev.fiafcore.org/Tamil>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tamil"@en .
+    skos:prefLabel "Tamil"@en ;
+.
 
-<https://dev.fiafcore.org/Tatar> a skos:Concept ;
+<https://dev.fiafcore.org/Tatar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tatar"@en .
+    skos:prefLabel "Tatar"@en ;
+.
 
-<https://dev.fiafcore.org/Telugu> a skos:Concept ;
+<https://dev.fiafcore.org/Telugu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Telugu"@en .
+    skos:prefLabel "Telugu"@en ;
+.
 
-<https://dev.fiafcore.org/Thai> a skos:Concept ;
+<https://dev.fiafcore.org/Thai>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Thai"@en .
+    skos:prefLabel "Thai"@en ;
+.
 
-<https://dev.fiafcore.org/Tibetan> a skos:Concept ;
+<https://dev.fiafcore.org/Tibetan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tibetan"@en .
+    skos:prefLabel "Tibetan"@en ;
+.
 
-<https://dev.fiafcore.org/Tigrinya> a skos:Concept ;
+<https://dev.fiafcore.org/Tigrinya>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tigrinya"@en .
+    skos:prefLabel "Tigrinya"@en ;
+.
 
-<https://dev.fiafcore.org/Tonga> a skos:Concept ;
+<https://dev.fiafcore.org/Tonga>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tonga"@en .
+    skos:prefLabel "Tonga"@en ;
+.
 
-<https://dev.fiafcore.org/Tsonga> a skos:Concept ;
+<https://dev.fiafcore.org/Tsonga>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tsonga"@en .
+    skos:prefLabel "Tsonga"@en ;
+.
 
-<https://dev.fiafcore.org/Tswana> a skos:Concept ;
+<https://dev.fiafcore.org/Tswana>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Tswana"@en .
+    skos:prefLabel "Tswana"@en ;
+.
 
-<https://dev.fiafcore.org/Turkish> a skos:Concept ;
+<https://dev.fiafcore.org/Turkish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Turkish"@en .
+    skos:prefLabel "Turkish"@en ;
+.
 
-<https://dev.fiafcore.org/Turkmen> a skos:Concept ;
+<https://dev.fiafcore.org/Turkmen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Turkmen"@en .
+    skos:prefLabel "Turkmen"@en ;
+.
 
-<https://dev.fiafcore.org/Twi> a skos:Concept ;
+<https://dev.fiafcore.org/Twi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Twi"@en .
+    skos:prefLabel "Twi"@en ;
+.
 
-<https://dev.fiafcore.org/Uighur> a skos:Concept ;
+<https://dev.fiafcore.org/Uighur>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Uighur"@en .
+    skos:prefLabel "Uighur"@en ;
+.
 
-<https://dev.fiafcore.org/Ukrainian> a skos:Concept ;
+<https://dev.fiafcore.org/Ukrainian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Ukrainian"@en .
+    skos:prefLabel "Ukrainian"@en ;
+.
 
-<https://dev.fiafcore.org/Urdu> a skos:Concept ;
+<https://dev.fiafcore.org/Urdu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Urdu"@en .
+    skos:prefLabel "Urdu"@en ;
+.
 
-<https://dev.fiafcore.org/Uzbek> a skos:Concept ;
+<https://dev.fiafcore.org/Uzbek>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Uzbek"@en .
+    skos:prefLabel "Uzbek"@en ;
+.
 
-<https://dev.fiafcore.org/Venda> a skos:Concept ;
+<https://dev.fiafcore.org/Venda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Venda"@en .
+    skos:prefLabel "Venda"@en ;
+.
 
-<https://dev.fiafcore.org/Vietnamese> a skos:Concept ;
+<https://dev.fiafcore.org/Vietnamese>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Vietnamese"@en .
+    skos:prefLabel "Vietnamese"@en ;
+.
 
-<https://dev.fiafcore.org/Volapuk> a skos:Concept ;
+<https://dev.fiafcore.org/Volapuk>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Volapük"@en .
+    skos:prefLabel "Volapük"@en ;
+.
 
-<https://dev.fiafcore.org/Walloon> a skos:Concept ;
+<https://dev.fiafcore.org/Walloon>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Walloon"@en .
+    skos:prefLabel "Walloon"@en ;
+.
 
-<https://dev.fiafcore.org/Welsh> a skos:Concept ;
+<https://dev.fiafcore.org/Welsh>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Welsh"@en .
+    skos:prefLabel "Welsh"@en ;
+.
 
-<https://dev.fiafcore.org/WesternFrisian> a skos:Concept ;
+<https://dev.fiafcore.org/WesternFrisian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Western Frisian"@en .
+    skos:prefLabel "Western Frisian"@en ;
+.
 
-<https://dev.fiafcore.org/Wolof> a skos:Concept ;
+<https://dev.fiafcore.org/Wolof>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Wolof"@en .
+    skos:prefLabel "Wolof"@en ;
+.
 
-<https://dev.fiafcore.org/Xhosa> a skos:Concept ;
+<https://dev.fiafcore.org/Xhosa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Xhosa"@en .
+    skos:prefLabel "Xhosa"@en ;
+.
 
-<https://dev.fiafcore.org/Yiddish> a skos:Concept ;
+<https://dev.fiafcore.org/Yiddish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Yiddish"@en .
+    skos:prefLabel "Yiddish"@en ;
+.
 
-<https://dev.fiafcore.org/Yoruba> a skos:Concept ;
+<https://dev.fiafcore.org/Yoruba>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Yoruba"@en .
+    skos:prefLabel "Yoruba"@en ;
+.
 
-<https://dev.fiafcore.org/Zhuang> a skos:Concept ;
+<https://dev.fiafcore.org/Zhuang>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Zhuang"@en .
+    skos:prefLabel "Zhuang"@en ;
+.
 
-<https://dev.fiafcore.org/Zulu> a skos:Concept ;
+<https://dev.fiafcore.org/Zulu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
-    skos:prefLabel "Zulu"@en .
+    skos:prefLabel "Zulu"@en ;
+.
 
-<https://dev.fiafcore.org/Language> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/Language>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:prefLabel "Language"@en .
-
+    skos:prefLabel "Language"@en ;
+.

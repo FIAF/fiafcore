@@ -106,6 +106,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/Access>
+    a owl:Class ;
+    rdfs:label "Access"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
+.
+
 <https://dev.fiafcore.org/AcetateBase>
     a owl:Class ;
     rdfs:label "Acetate Base"@en ;
@@ -281,7 +288,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Amateur Film"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/AmericanSamoa>
@@ -1254,7 +1261,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Compilation Film"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Composer>
@@ -1812,14 +1819,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Duplicate Negative"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/DuplicatePositive>
     a owl:Class ;
     rdfs:label "Duplicate Positive"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/DuplicationEvent>
@@ -2086,7 +2093,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Feature Film"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Ferrania>
@@ -2596,7 +2603,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Home Movie"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/HomeVideoPublicationEvent>
@@ -4072,7 +4079,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Original Negative"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/Oriya>
@@ -4123,7 +4130,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Outtake"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/PAL>
@@ -4404,6 +4411,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
 .
 
+<https://dev.fiafcore.org/Preservation>
+    a owl:Class ;
+    rdfs:label "Preservation"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
+.
+
 <https://dev.fiafcore.org/PreservationManifestation>
     a owl:Class ;
     rdfs:label "Preservation Manifestation"@en ;
@@ -4638,7 +4652,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Release Print"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/ReligiousFilm>
@@ -4963,7 +4977,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Screen Test"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/SearchTitle>
@@ -5030,7 +5044,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Serial"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/SerialWork>
@@ -5045,7 +5059,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Series"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/SeriesCreatedby>
@@ -5113,7 +5127,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Short Film"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/SichuanYi>
@@ -5306,14 +5320,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Sound Negative"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/SoundPositive>
     a owl:Class ;
     rdfs:label "Sound Positive"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/SoundRecorderMixer>
@@ -5867,7 +5881,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Trailer"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/TransferEvent>
@@ -6778,13 +6792,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range xsd:boolean ;
 .
 
-<https://dev.fiafcore.org/Access>
-    a owl:Class ;
-    rdfs:label "Access"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Access> ;
-.
-
 <https://dev.fiafcore.org/CensorshipActivity>
     a owl:Class ;
     rdfs:label "Censorship Activity"@en ;
@@ -6793,37 +6800,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/Element>
-    a owl:Class ;
-    rdfs:label ""@en ;
-    dc:description ""@en ;
-.
-
-<https://dev.fiafcore.org/Form>
-    a owl:Class ;
-    rdfs:label "Form"@en ;
-    dc:description ""@en ;
-.
-
-<https://dev.fiafcore.org/Preservation>
-    a owl:Class ;
-    rdfs:label "Preservation"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Preservation> ;
-.
-
 <https://dev.fiafcore.org/PuppetActivity>
     a owl:Class ;
     rdfs:label "Puppet Activity"@en ;
     dc:description "Puppetry contribution to a moving image work."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
-.
-
-<https://dev.fiafcore.org/Status>
-    a owl:Class ;
-    rdfs:label "Status"@en ;
-    dc:description ""@en ;
 .
 
 <https://dev.fiafcore.org/EditingActivity>
@@ -6853,6 +6835,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:label "Identifier"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+.
+
+<https://dev.fiafcore.org/Status>
+    a owl:Class ;
+    rdfs:label "Status"@en ;
+    dc:description ""@en ;
 .
 
 <https://dev.fiafcore.org/Agent>
@@ -6995,6 +6983,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+<https://dev.fiafcore.org/Element>
+    a owl:Class ;
+    rdfs:label ""@en ;
+    dc:description ""@en ;
+.
+
 <https://dev.fiafcore.org/SoundSystem>
     a owl:Class ;
     rdfs:label "Sound System"@en ;
@@ -7080,6 +7074,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:label "Extent"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
+.
+
+<https://dev.fiafcore.org/Form>
+    a owl:Class ;
+    rdfs:label "Form"@en ;
+    dc:description ""@en ;
 .
 
 <https://dev.fiafcore.org/MusicActivity>

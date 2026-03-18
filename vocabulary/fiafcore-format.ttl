@@ -1,222 +1,353 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/16mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "16mm Film"@en .
-
-<https://dev.fiafcore.org/16mmMagneticFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "16mm Magnetic Film"@en .
-
-<https://dev.fiafcore.org/17.5mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "17.5mm Film"@en .
-
-<https://dev.fiafcore.org/35mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "35mm Film"@en .
-
-<https://dev.fiafcore.org/35mmMagneticFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "35mm Magnetic Film"@en .
-
-<https://dev.fiafcore.org/70mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "70mm Film"@en .
-
-<https://dev.fiafcore.org/8mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "8mm Film"@en .
-
-<https://dev.fiafcore.org/9.5mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "9.5mm Film"@en .
-
-<https://dev.fiafcore.org/AVI> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "AVI"@en .
-
-<https://dev.fiafcore.org/Audiocassette> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "Audiocassette"@en .
-
-<https://dev.fiafcore.org/BetacamSP> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "Betacam SP"@en .
-
-<https://dev.fiafcore.org/BluRay> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/OpticalFormat> ;
-    skos:prefLabel "BluRay"@en .
-
-<https://dev.fiafcore.org/CD> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/OpticalFormat> ;
-    skos:prefLabel "CD"@en .
-
-<https://dev.fiafcore.org/D1> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "D1"@en .
-
-<https://dev.fiafcore.org/D5> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "D5"@en .
-
-<https://dev.fiafcore.org/DPX> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "DPX"@en .
-
-<https://dev.fiafcore.org/DVCPROHD> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "DVCPRO HD"@en .
-
-<https://dev.fiafcore.org/DVD> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/OpticalFormat> ;
-    skos:prefLabel "DVD"@en .
-
-<https://dev.fiafcore.org/DigitalBetacam> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "Digital Betacam"@en .
-
-<https://dev.fiafcore.org/HDCAMSR> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "HDCAM SR"@en .
-
-<https://dev.fiafcore.org/HalfInchAudiotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "Half Inch Audiotape"@en,
-        "Video Format"@en .
-
-<https://dev.fiafcore.org/LaserDisc> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/OpticalFormat> ;
-    skos:prefLabel "LaserDisc"@en .
-
-<https://dev.fiafcore.org/MOV> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "MOV"@en .
-
-<https://dev.fiafcore.org/MP4> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "MP4"@en .
-
-<https://dev.fiafcore.org/MPEG-4> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "MPEG-4"@en .
-
-<https://dev.fiafcore.org/MXF> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "MXF"@en .
-
-<https://dev.fiafcore.org/OneInchAudiotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "One Inch Audiotape"@en .
-
-<https://dev.fiafcore.org/OneInchVideotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "One Inch Videotape"@en .
-
-<https://dev.fiafcore.org/QuerterInchAudiotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "Querter Inch Audiotape"@en .
-
-<https://dev.fiafcore.org/Quicktime> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "Quicktime"@en .
-
-<https://dev.fiafcore.org/RealVideo> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "Real Video"@en .
-
-<https://dev.fiafcore.org/SVCD> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "SVCD"@en .
-
-<https://dev.fiafcore.org/Super16mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "Super 16mm Film"@en .
-
-<https://dev.fiafcore.org/Super8mmFilm> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/FilmFormat> ;
-    skos:prefLabel "Super 8mm Film"@en .
-
-<https://dev.fiafcore.org/TwoInchAudiotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/AudioFormat> ;
-    skos:prefLabel "Two Inch Audiotape"@en .
-
-<https://dev.fiafcore.org/TwoInchVideotape> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/VideoFormat> ;
-    skos:prefLabel "Two Inch Videotape"@en .
-
-<https://dev.fiafcore.org/VCD> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "VCD"@en .
-
-<https://dev.fiafcore.org/WindowsMedia> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/DigitalFormat> ;
-    skos:prefLabel "Windows Media"@en .
-
-<https://dev.fiafcore.org/OpticalFormat> a skos:Concept ;
+<https://dev.fiafcore.org/16mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "Optical Format"@en .
+    skos:prefLabel "16mm Film"@en ;
+.
 
-<https://dev.fiafcore.org/Format> a skos:ConceptScheme ;
-    skos:definition ""@en ;
-    skos:prefLabel "Format"@en .
-
-<https://dev.fiafcore.org/AudioFormat> a skos:Concept ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "Audio Format"@en .
-
-<https://dev.fiafcore.org/FilmFormat> a skos:Concept ;
+<https://dev.fiafcore.org/16mmMagneticFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "Film Format"@en .
+    skos:prefLabel "16mm Magnetic Film"@en ;
+.
 
-<https://dev.fiafcore.org/VideoFormat> a skos:Concept ;
+<https://dev.fiafcore.org/17.5mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "Video Format"@en .
+    skos:prefLabel "17.5mm Film"@en ;
+.
 
-<https://dev.fiafcore.org/DigitalFormat> a skos:Concept ;
+<https://dev.fiafcore.org/35mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "Digital Format"@en .
+    skos:prefLabel "35mm Film"@en ;
+.
 
+<https://dev.fiafcore.org/35mmMagneticFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "35mm Magnetic Film"@en ;
+.
+
+<https://dev.fiafcore.org/70mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "70mm Film"@en ;
+.
+
+<https://dev.fiafcore.org/8mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "8mm Film"@en ;
+.
+
+<https://dev.fiafcore.org/9.5mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "9.5mm Film"@en ;
+.
+
+<https://dev.fiafcore.org/AVI>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "AVI"@en ;
+.
+
+<https://dev.fiafcore.org/Audiocassette>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Audiocassette"@en ;
+.
+
+<https://dev.fiafcore.org/BetacamSP>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Betacam SP"@en ;
+.
+
+<https://dev.fiafcore.org/BluRay>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OpticalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "BluRay"@en ;
+.
+
+<https://dev.fiafcore.org/CD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OpticalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "CD"@en ;
+.
+
+<https://dev.fiafcore.org/D1>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "D1"@en ;
+.
+
+<https://dev.fiafcore.org/D5>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "D5"@en ;
+.
+
+<https://dev.fiafcore.org/DPX>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "DPX"@en ;
+.
+
+<https://dev.fiafcore.org/DVCPROHD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "DVCPRO HD"@en ;
+.
+
+<https://dev.fiafcore.org/DVD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OpticalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "DVD"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalBetacam>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Digital Betacam"@en ;
+.
+
+<https://dev.fiafcore.org/HDCAMSR>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "HDCAM SR"@en ;
+.
+
+<https://dev.fiafcore.org/HalfInchAudiotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel
+        "Half Inch Audiotape"@en ,
+        "Video Format"@en ;
+.
+
+<https://dev.fiafcore.org/LaserDisc>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OpticalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "LaserDisc"@en ;
+.
+
+<https://dev.fiafcore.org/MOV>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "MOV"@en ;
+.
+
+<https://dev.fiafcore.org/MP4>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "MP4"@en ;
+.
+
+<https://dev.fiafcore.org/MPEG-4>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "MPEG-4"@en ;
+.
+
+<https://dev.fiafcore.org/MXF>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "MXF"@en ;
+.
+
+<https://dev.fiafcore.org/OneInchAudiotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "One Inch Audiotape"@en ;
+.
+
+<https://dev.fiafcore.org/OneInchVideotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "One Inch Videotape"@en ;
+.
+
+<https://dev.fiafcore.org/QuerterInchAudiotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Querter Inch Audiotape"@en ;
+.
+
+<https://dev.fiafcore.org/Quicktime>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Quicktime"@en ;
+.
+
+<https://dev.fiafcore.org/RealVideo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Real Video"@en ;
+.
+
+<https://dev.fiafcore.org/SVCD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "SVCD"@en ;
+.
+
+<https://dev.fiafcore.org/Super16mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Super 16mm Film"@en ;
+.
+
+<https://dev.fiafcore.org/Super8mmFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Super 8mm Film"@en ;
+.
+
+<https://dev.fiafcore.org/TwoInchAudiotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Two Inch Audiotape"@en ;
+.
+
+<https://dev.fiafcore.org/TwoInchVideotape>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Two Inch Videotape"@en ;
+.
+
+<https://dev.fiafcore.org/VCD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "VCD"@en ;
+.
+
+<https://dev.fiafcore.org/WindowsMedia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalFormat> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Windows Media"@en ;
+.
+
+<https://dev.fiafcore.org/OpticalFormat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Format> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Optical Format"@en ;
+.
+
+<https://dev.fiafcore.org/AudioFormat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Format> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Audio Format"@en ;
+.
+
+<https://dev.fiafcore.org/FilmFormat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Format> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Film Format"@en ;
+.
+
+<https://dev.fiafcore.org/VideoFormat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Format> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Video Format"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalFormat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Format> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "Digital Format"@en ;
+.
+
+<https://dev.fiafcore.org/Format>
+    a skos:ConceptScheme ;
+    skos:definition ""@en ;
+    skos:prefLabel "Format"@en ;
+.

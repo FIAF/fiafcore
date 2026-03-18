@@ -1,56 +1,87 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/AmateurFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AmateurFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Amateur Film"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Amateur Film"@en ;
+.
 
-<https://dev.fiafcore.org/CompilationFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CompilationFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Compilation Film"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Compilation Film"@en ;
+.
 
-<https://dev.fiafcore.org/FeatureFilm> a skos:Concept ;
+<https://dev.fiafcore.org/FeatureFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Feature Film"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Feature Film"@en ;
+.
 
-<https://dev.fiafcore.org/Form> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/HomeMovie>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:prefLabel "Form"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Home Movie"@en ;
+.
 
-<https://dev.fiafcore.org/HomeMovie> a skos:Concept ;
+<https://dev.fiafcore.org/Outtake>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Home Movie"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Outtake"@en ;
+.
 
-<https://dev.fiafcore.org/Outtake> a skos:Concept ;
+<https://dev.fiafcore.org/ScreenTest>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Outtake"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Screen Test"@en ;
+.
 
-<https://dev.fiafcore.org/ScreenTest> a skos:Concept ;
+<https://dev.fiafcore.org/Serial>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Screen Test"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Serial"@en ;
+.
 
-<https://dev.fiafcore.org/Serial> a skos:Concept ;
+<https://dev.fiafcore.org/Series>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Serial"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Series"@en ;
+.
 
-<https://dev.fiafcore.org/Series> a skos:Concept ;
+<https://dev.fiafcore.org/ShortFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Series"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Short Film"@en ;
+.
 
-<https://dev.fiafcore.org/ShortFilm> a skos:Concept ;
+<https://dev.fiafcore.org/Trailer>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Form> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Short Film"@en .
+    skos:inScheme <https://dev.fiafcore.org/Form> ;
+    skos:prefLabel "Trailer"@en ;
+.
 
-<https://dev.fiafcore.org/Trailer> a skos:Concept ;
+<https://dev.fiafcore.org/Form>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/form> ;
-    skos:prefLabel "Trailer"@en .
-
+    skos:prefLabel "Form"@en ;
+.

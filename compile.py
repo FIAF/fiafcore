@@ -7,6 +7,19 @@ def convert_vocabulary(input_file):
 
     g = rdflib.Graph().parse(pathlib.Path.cwd() / 'ontology' / input_file)
     skos_graph = rdflib.Graph()
+
+    # identify concept scheme.
+
+    concept_scheme = None
+    for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.OWL.Class)):
+        if not len([x for x in g.triples((s, rdflib.RDFS.subClassOf, None))]):
+            concept_scheme = s
+
+    if not concept_scheme:
+        raise Exception('Concept scheme should have been detected.')
+
+    # parse triples.
+
     for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.OWL.Class)):
 
         if not len([x for x in g.triples((s, rdflib.RDFS.subClassOf, None))]):
@@ -21,11 +34,14 @@ def convert_vocabulary(input_file):
             skos_graph.add((s, rdflib.SKOS.definition, c))
 
         for a,b,c in g.triples((s, rdflib.RDFS.subClassOf, None)):
-            skos_graph.add((s, rdflib.SKOS.inScheme, c))
+            skos_graph.add((s, rdflib.SKOS.broader, c))
+
+        for a,b,c in g.triples((s, rdflib.RDFS.subClassOf, None)):
+            skos_graph.add((s, rdflib.SKOS.inScheme, concept_scheme))
 
     skos_graph.serialize(
         destination=pathlib.Path.cwd()  / 'vocabulary' / input_file,
-        format="turtle",
+        format="longturtle",
         )
 
 # convert ontology vocabularies to SKOS.

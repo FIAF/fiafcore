@@ -1,41 +1,63 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/DTS> a skos:Concept ;
+<https://dev.fiafcore.org/DTS>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "DTS"@en .
+    skos:prefLabel "DTS"@en ;
+.
 
-<https://dev.fiafcore.org/DolbyDigital> a skos:Concept ;
+<https://dev.fiafcore.org/DolbyDigital>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "Dolby Digital"@en .
+    skos:prefLabel "Dolby Digital"@en ;
+.
 
-<https://dev.fiafcore.org/DolbyStereo> a skos:Concept ;
+<https://dev.fiafcore.org/DolbyStereo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "Dolby Stereo"@en .
+    skos:prefLabel "Dolby Stereo"@en ;
+.
 
-<https://dev.fiafcore.org/Magnetic> a skos:Concept ;
+<https://dev.fiafcore.org/Magnetic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "Magnetic"@en .
+    skos:prefLabel "Magnetic"@en ;
+.
 
-<https://dev.fiafcore.org/OpticalVariableArea> a skos:Concept ;
+<https://dev.fiafcore.org/OpticalVariableArea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "Optical Variable Area"@en .
+    skos:prefLabel "Optical Variable Area"@en ;
+.
 
-<https://dev.fiafcore.org/OpticalVariableDensity> a skos:Concept ;
+<https://dev.fiafcore.org/OpticalVariableDensity>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "Optical Variable Density"@en .
+    skos:prefLabel "Optical Variable Density"@en ;
+.
 
-<https://dev.fiafcore.org/SDDS> a skos:Concept ;
+<https://dev.fiafcore.org/SDDS>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundSystem> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundSystem> ;
-    skos:prefLabel "SDDS"@en .
+    skos:prefLabel "SDDS"@en ;
+.
 
-<https://dev.fiafcore.org/SoundSystem> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/SoundSystem>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:prefLabel "Sound System"@en .
-
+    skos:prefLabel "Sound System"@en ;
+.

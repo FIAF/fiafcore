@@ -14,61 +14,61 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/AmateurFilm> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Amateur Film"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/CompilationFilm> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Compilation Film"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/FeatureFilm> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Feature Film"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/HomeMovie> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Home Movie"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Outtake> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Outtake"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/ScreenTest> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Screen Test"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Serial> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Serial"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Series> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Series"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/ShortFilm> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Short Film"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 <https://dev.fiafcore.org/Trailer> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Trailer"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/form> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Form> ;
 .
 
 ### Datatype Properties

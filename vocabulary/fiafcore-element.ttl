@@ -1,36 +1,55 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/DuplicateNegative> a skos:Concept ;
+<https://dev.fiafcore.org/DuplicateNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Duplicate Negative"@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Duplicate Negative"@en ;
+.
 
-<https://dev.fiafcore.org/DuplicatePositive> a skos:Concept ;
+<https://dev.fiafcore.org/DuplicatePositive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Duplicate Positive"@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Duplicate Positive"@en ;
+.
 
-<https://dev.fiafcore.org/Element> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/OriginalNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:prefLabel ""@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Negative"@en ;
+.
 
-<https://dev.fiafcore.org/OriginalNegative> a skos:Concept ;
+<https://dev.fiafcore.org/ReleasePrint>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Original Negative"@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Release Print"@en ;
+.
 
-<https://dev.fiafcore.org/ReleasePrint> a skos:Concept ;
+<https://dev.fiafcore.org/SoundNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Release Print"@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Sound Negative"@en ;
+.
 
-<https://dev.fiafcore.org/SoundNegative> a skos:Concept ;
+<https://dev.fiafcore.org/SoundPositive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Sound Negative"@en .
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Sound Positive"@en ;
+.
 
-<https://dev.fiafcore.org/SoundPositive> a skos:Concept ;
+<https://dev.fiafcore.org/Element>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/element> ;
-    skos:prefLabel "Sound Positive"@en .
-
+    skos:prefLabel ""@en ;
+.

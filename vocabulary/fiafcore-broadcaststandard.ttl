@@ -1,21 +1,31 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/NTSC> a skos:Concept ;
+<https://dev.fiafcore.org/NTSC>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/BroadcastStandard> ;
     skos:definition "Broadcast standard most commonly associated with North America."@en ;
     skos:inScheme <https://dev.fiafcore.org/BroadcastStandard> ;
-    skos:prefLabel "NTSC"@en .
+    skos:prefLabel "NTSC"@en ;
+.
 
-<https://dev.fiafcore.org/PAL> a skos:Concept ;
+<https://dev.fiafcore.org/PAL>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/BroadcastStandard> ;
     skos:definition "Broadcast standard most commonly associated with Europe and Australia."@en ;
     skos:inScheme <https://dev.fiafcore.org/BroadcastStandard> ;
-    skos:prefLabel "PAL"@en .
+    skos:prefLabel "PAL"@en ;
+.
 
-<https://dev.fiafcore.org/SECAM> a skos:Concept ;
+<https://dev.fiafcore.org/SECAM>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/BroadcastStandard> ;
     skos:definition "Broadcast standard most commonly associated with France and Russia."@en ;
     skos:inScheme <https://dev.fiafcore.org/BroadcastStandard> ;
-    skos:prefLabel "SECAM"@en .
+    skos:prefLabel "SECAM"@en ;
+.
 
-<https://dev.fiafcore.org/BroadcastStandard> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/BroadcastStandard>
+    a skos:ConceptScheme ;
     skos:definition "Standard for broadcast encoding."@en ;
-    skos:prefLabel "Broadcast Standard"@en .
-
+    skos:prefLabel "Broadcast Standard"@en ;
+.

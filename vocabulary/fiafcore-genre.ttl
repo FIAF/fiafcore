@@ -1,461 +1,735 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/AbstractFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AbstractFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Abstract Film"@en .
+    skos:prefLabel "Abstract Film"@en ;
+.
 
-<https://dev.fiafcore.org/ActionFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ActionFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Action Film"@en .
+    skos:prefLabel "Action Film"@en ;
+.
 
-<https://dev.fiafcore.org/AdventureFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AdventureFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Adventure Film"@en .
+    skos:prefLabel "Adventure Film"@en ;
+.
 
-<https://dev.fiafcore.org/AgriculturalForestryFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AgriculturalForestryFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Agricultural/forestry Film"@en .
+    skos:prefLabel "Agricultural/forestry Film"@en ;
+.
 
-<https://dev.fiafcore.org/AnimalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AnimalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Animal Film"@en .
+    skos:prefLabel "Animal Film"@en ;
+.
 
-<https://dev.fiafcore.org/AnimationFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AnimationFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Animation Film"@en .
+    skos:prefLabel "Animation Film"@en ;
+.
 
-<https://dev.fiafcore.org/AntiWarFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AntiWarFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Anti-war Film"@en .
+    skos:prefLabel "Anti-war Film"@en ;
+.
 
-<https://dev.fiafcore.org/ArtFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ArtFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Art Film"@en .
+    skos:prefLabel "Art Film"@en ;
+.
 
-<https://dev.fiafcore.org/AvantGardeFilm> a skos:Concept ;
+<https://dev.fiafcore.org/AvantGardeFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Avant-garde Film"@en .
+    skos:prefLabel "Avant-garde Film"@en ;
+.
 
-<https://dev.fiafcore.org/BalletFilm> a skos:Concept ;
+<https://dev.fiafcore.org/BalletFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Ballet Film"@en .
+    skos:prefLabel "Ballet Film"@en ;
+.
 
-<https://dev.fiafcore.org/BiographicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/BiographicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Biographical Film"@en .
+    skos:prefLabel "Biographical Film"@en ;
+.
 
-<https://dev.fiafcore.org/BiologicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/BiologicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Biological Film"@en .
+    skos:prefLabel "Biological Film"@en ;
+.
 
-<https://dev.fiafcore.org/BlaxploitationFilm> a skos:Concept ;
+<https://dev.fiafcore.org/BlaxploitationFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Blaxploitation Film"@en .
+    skos:prefLabel "Blaxploitation Film"@en ;
+.
 
-<https://dev.fiafcore.org/ChildrensFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ChildrensFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Children's Film"@en .
+    skos:prefLabel "Children's Film"@en ;
+.
 
-<https://dev.fiafcore.org/CircusFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CircusFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Circus Film"@en .
+    skos:prefLabel "Circus Film"@en ;
+.
 
-<https://dev.fiafcore.org/CityAndLandscapeFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CityAndLandscapeFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "City and landscape Film"@en .
+    skos:prefLabel "City and landscape Film"@en ;
+.
 
-<https://dev.fiafcore.org/ComedyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ComedyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Comedy Film"@en .
+    skos:prefLabel "Comedy Film"@en ;
+.
 
-<https://dev.fiafcore.org/ContemporaryFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ContemporaryFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Contemporary Film"@en .
+    skos:prefLabel "Contemporary Film"@en ;
+.
 
-<https://dev.fiafcore.org/CountryFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CountryFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Country Film"@en .
+    skos:prefLabel "Country Film"@en ;
+.
 
-<https://dev.fiafcore.org/CourtroomFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CourtroomFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Courtroom Film"@en .
+    skos:prefLabel "Courtroom Film"@en ;
+.
 
-<https://dev.fiafcore.org/CrimeFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CrimeFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Crime Film"@en .
+    skos:prefLabel "Crime Film"@en ;
+.
 
-<https://dev.fiafcore.org/CulturalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/CulturalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Cultural Film"@en .
+    skos:prefLabel "Cultural Film"@en ;
+.
 
-<https://dev.fiafcore.org/DanceFilm> a skos:Concept ;
+<https://dev.fiafcore.org/DanceFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Dance Film"@en .
+    skos:prefLabel "Dance Film"@en ;
+.
 
-<https://dev.fiafcore.org/DetectiveFilm> a skos:Concept ;
+<https://dev.fiafcore.org/DetectiveFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Detective Film"@en .
+    skos:prefLabel "Detective Film"@en ;
+.
 
-<https://dev.fiafcore.org/DisasterFilm> a skos:Concept ;
+<https://dev.fiafcore.org/DisasterFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Disaster Film"@en .
+    skos:prefLabel "Disaster Film"@en ;
+.
 
-<https://dev.fiafcore.org/DramaFilm> a skos:Concept ;
+<https://dev.fiafcore.org/DramaFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Drama Film"@en .
+    skos:prefLabel "Drama Film"@en ;
+.
 
-<https://dev.fiafcore.org/EducationalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/EducationalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Educational Film"@en .
+    skos:prefLabel "Educational Film"@en ;
+.
 
-<https://dev.fiafcore.org/ElectionFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ElectionFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Election Film"@en .
+    skos:prefLabel "Election Film"@en ;
+.
 
-<https://dev.fiafcore.org/EnvironmentalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/EnvironmentalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Environmental Film"@en .
+    skos:prefLabel "Environmental Film"@en ;
+.
 
-<https://dev.fiafcore.org/EroticFilm> a skos:Concept ;
+<https://dev.fiafcore.org/EroticFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Erotic Film"@en .
+    skos:prefLabel "Erotic Film"@en ;
+.
 
-<https://dev.fiafcore.org/EthnographicFilm> a skos:Concept ;
+<https://dev.fiafcore.org/EthnographicFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Ethnographic Film"@en .
+    skos:prefLabel "Ethnographic Film"@en ;
+.
 
-<https://dev.fiafcore.org/ExpeditionFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ExpeditionFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Expedition Film"@en .
+    skos:prefLabel "Expedition Film"@en ;
+.
 
-<https://dev.fiafcore.org/ExperimentalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ExperimentalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Experimental Film"@en .
+    skos:prefLabel "Experimental Film"@en ;
+.
 
-<https://dev.fiafcore.org/ExpressionistFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ExpressionistFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Expressionist Film"@en .
+    skos:prefLabel "Expressionist Film"@en ;
+.
 
-<https://dev.fiafcore.org/FairyTaleFilm> a skos:Concept ;
+<https://dev.fiafcore.org/FairyTaleFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Fairy tale Film"@en .
+    skos:prefLabel "Fairy tale Film"@en ;
+.
 
-<https://dev.fiafcore.org/FantasyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/FantasyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Fantasy Film"@en .
+    skos:prefLabel "Fantasy Film"@en ;
+.
 
-<https://dev.fiafcore.org/GangsterFilm> a skos:Concept ;
+<https://dev.fiafcore.org/GangsterFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Gangster Film"@en .
+    skos:prefLabel "Gangster Film"@en ;
+.
 
-<https://dev.fiafcore.org/HandPuppetFilm> a skos:Concept ;
+<https://dev.fiafcore.org/HandPuppetFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Hand puppet Film"@en .
+    skos:prefLabel "Hand puppet Film"@en ;
+.
 
-<https://dev.fiafcore.org/HistoricalCostumeFilm> a skos:Concept ;
+<https://dev.fiafcore.org/HistoricalCostumeFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Historical costume Film"@en .
+    skos:prefLabel "Historical costume Film"@en ;
+.
 
-<https://dev.fiafcore.org/HistoricalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/HistoricalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Historical Film"@en .
+    skos:prefLabel "Historical Film"@en ;
+.
 
-<https://dev.fiafcore.org/HorrorFilm> a skos:Concept ;
+<https://dev.fiafcore.org/HorrorFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Horror Film"@en .
+    skos:prefLabel "Horror Film"@en ;
+.
 
-<https://dev.fiafcore.org/IndustrialFilm> a skos:Concept ;
+<https://dev.fiafcore.org/IndustrialFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Industrial Film"@en .
+    skos:prefLabel "Industrial Film"@en ;
+.
 
-<https://dev.fiafcore.org/LiteraryAdaptationFilm> a skos:Concept ;
+<https://dev.fiafcore.org/LiteraryAdaptationFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Literary adaptation Film"@en .
+    skos:prefLabel "Literary adaptation Film"@en ;
+.
 
-<https://dev.fiafcore.org/MedicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MedicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Medical Film"@en .
+    skos:prefLabel "Medical Film"@en ;
+.
 
-<https://dev.fiafcore.org/MelodramaFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MelodramaFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Melodrama Film"@en .
+    skos:prefLabel "Melodrama Film"@en ;
+.
 
-<https://dev.fiafcore.org/MilitaryFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MilitaryFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Military Film"@en .
+    skos:prefLabel "Military Film"@en ;
+.
 
-<https://dev.fiafcore.org/MixedFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MixedFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Mixed Film"@en .
+    skos:prefLabel "Mixed Film"@en ;
+.
 
-<https://dev.fiafcore.org/MountainFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MountainFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Mountain Film"@en .
+    skos:prefLabel "Mountain Film"@en ;
+.
 
-<https://dev.fiafcore.org/MusicFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MusicFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Music Film"@en .
+    skos:prefLabel "Music Film"@en ;
+.
 
-<https://dev.fiafcore.org/MusicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/MusicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Musical Film"@en .
+    skos:prefLabel "Musical Film"@en ;
+.
 
-<https://dev.fiafcore.org/NatureFilm> a skos:Concept ;
+<https://dev.fiafcore.org/NatureFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Nature Film"@en .
+    skos:prefLabel "Nature Film"@en ;
+.
 
-<https://dev.fiafcore.org/OperaFilm> a skos:Concept ;
+<https://dev.fiafcore.org/OperaFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Opera Film"@en .
+    skos:prefLabel "Opera Film"@en ;
+.
 
-<https://dev.fiafcore.org/OperettaFilm> a skos:Concept ;
+<https://dev.fiafcore.org/OperettaFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Operetta Film"@en .
+    skos:prefLabel "Operetta Film"@en ;
+.
 
-<https://dev.fiafcore.org/ParodyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ParodyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Parody Film"@en .
+    skos:prefLabel "Parody Film"@en ;
+.
 
-<https://dev.fiafcore.org/PartisanFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PartisanFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Partisan Film"@en .
+    skos:prefLabel "Partisan Film"@en ;
+.
 
-<https://dev.fiafcore.org/PhilosophicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PhilosophicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Philosophical Film"@en .
+    skos:prefLabel "Philosophical Film"@en ;
+.
 
-<https://dev.fiafcore.org/PoliticalGeographicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PoliticalGeographicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Political-geographical Film"@en .
+    skos:prefLabel "Political-geographical Film"@en ;
+.
 
-<https://dev.fiafcore.org/PoliticalThrillerFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PoliticalThrillerFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Political thriller Film"@en .
+    skos:prefLabel "Political thriller Film"@en ;
+.
 
-<https://dev.fiafcore.org/PopularScienceFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PopularScienceFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Popular science Film"@en .
+    skos:prefLabel "Popular science Film"@en ;
+.
 
-<https://dev.fiafcore.org/PornographicFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PornographicFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Pornographic Film"@en .
+    skos:prefLabel "Pornographic Film"@en ;
+.
 
-<https://dev.fiafcore.org/PortraitFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PortraitFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Portrait Film"@en .
+    skos:prefLabel "Portrait Film"@en ;
+.
 
-<https://dev.fiafcore.org/PrisonFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PrisonFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Prison Film"@en .
+    skos:prefLabel "Prison Film"@en ;
+.
 
-<https://dev.fiafcore.org/PropagandaFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PropagandaFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Propaganda Film"@en .
+    skos:prefLabel "Propaganda Film"@en ;
+.
 
-<https://dev.fiafcore.org/PuppetFilm> a skos:Concept ;
+<https://dev.fiafcore.org/PuppetFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Puppet Film"@en .
+    skos:prefLabel "Puppet Film"@en ;
+.
 
-<https://dev.fiafcore.org/ReligiousFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ReligiousFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Religious Film"@en .
+    skos:prefLabel "Religious Film"@en ;
+.
 
-<https://dev.fiafcore.org/ResearchFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ResearchFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Research Film"@en .
+    skos:prefLabel "Research Film"@en ;
+.
 
-<https://dev.fiafcore.org/RevolutionaryFilm> a skos:Concept ;
+<https://dev.fiafcore.org/RevolutionaryFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Revolutionary Film"@en .
+    skos:prefLabel "Revolutionary Film"@en ;
+.
 
-<https://dev.fiafcore.org/RevueFilm> a skos:Concept ;
+<https://dev.fiafcore.org/RevueFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Revue Film"@en .
+    skos:prefLabel "Revue Film"@en ;
+.
 
-<https://dev.fiafcore.org/RoadMovieFilm> a skos:Concept ;
+<https://dev.fiafcore.org/RoadMovieFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Road movie Film"@en .
+    skos:prefLabel "Road movie Film"@en ;
+.
 
-<https://dev.fiafcore.org/RomanticFilm> a skos:Concept ;
+<https://dev.fiafcore.org/RomanticFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Romantic Film"@en .
+    skos:prefLabel "Romantic Film"@en ;
+.
 
-<https://dev.fiafcore.org/SatireFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SatireFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Satire Film"@en .
+    skos:prefLabel "Satire Film"@en ;
+.
 
-<https://dev.fiafcore.org/ScienceFictionFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ScienceFictionFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Science fiction Film"@en .
+    skos:prefLabel "Science fiction Film"@en ;
+.
 
-<https://dev.fiafcore.org/SensationalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SensationalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Sensational Film"@en .
+    skos:prefLabel "Sensational Film"@en ;
+.
 
-<https://dev.fiafcore.org/SexFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SexFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Sex Film"@en .
+    skos:prefLabel "Sex Film"@en ;
+.
 
-<https://dev.fiafcore.org/SlapstickFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SlapstickFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Slapstick Film"@en .
+    skos:prefLabel "Slapstick Film"@en ;
+.
 
-<https://dev.fiafcore.org/SportsFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SportsFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Sports Film"@en .
+    skos:prefLabel "Sports Film"@en ;
+.
 
-<https://dev.fiafcore.org/SpyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SpyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Spy Film"@en .
+    skos:prefLabel "Spy Film"@en ;
+.
 
-<https://dev.fiafcore.org/StickPuppetFilm> a skos:Concept ;
+<https://dev.fiafcore.org/StickPuppetFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Stick puppet Film"@en .
+    skos:prefLabel "Stick puppet Film"@en ;
+.
 
-<https://dev.fiafcore.org/SurrealistFilm> a skos:Concept ;
+<https://dev.fiafcore.org/SurrealistFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Surrealist Film"@en .
+    skos:prefLabel "Surrealist Film"@en ;
+.
 
-<https://dev.fiafcore.org/TechnicalFilm> a skos:Concept ;
+<https://dev.fiafcore.org/TechnicalFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Technical Film"@en .
+    skos:prefLabel "Technical Film"@en ;
+.
 
-<https://dev.fiafcore.org/ThrillerFilm> a skos:Concept ;
+<https://dev.fiafcore.org/ThrillerFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Thriller Film"@en .
+    skos:prefLabel "Thriller Film"@en ;
+.
 
-<https://dev.fiafcore.org/TrafficFilm> a skos:Concept ;
+<https://dev.fiafcore.org/TrafficFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Traffic Film"@en .
+    skos:prefLabel "Traffic Film"@en ;
+.
 
-<https://dev.fiafcore.org/TragedyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/TragedyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Tragedy Film"@en .
+    skos:prefLabel "Tragedy Film"@en ;
+.
 
-<https://dev.fiafcore.org/TragicomedyFilm> a skos:Concept ;
+<https://dev.fiafcore.org/TragicomedyFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Tragicomedy Film"@en .
+    skos:prefLabel "Tragicomedy Film"@en ;
+.
 
-<https://dev.fiafcore.org/TravelFilm> a skos:Concept ;
+<https://dev.fiafcore.org/TravelFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Travel Film"@en .
+    skos:prefLabel "Travel Film"@en ;
+.
 
-<https://dev.fiafcore.org/UndergroundFilm> a skos:Concept ;
+<https://dev.fiafcore.org/UndergroundFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Underground Film"@en .
+    skos:prefLabel "Underground Film"@en ;
+.
 
-<https://dev.fiafcore.org/WarFilm> a skos:Concept ;
+<https://dev.fiafcore.org/WarFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "War Film"@en .
+    skos:prefLabel "War Film"@en ;
+.
 
-<https://dev.fiafcore.org/WesternFilm> a skos:Concept ;
+<https://dev.fiafcore.org/WesternFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Western Film"@en .
+    skos:prefLabel "Western Film"@en ;
+.
 
-<https://dev.fiafcore.org/WomensFilm> a skos:Concept ;
+<https://dev.fiafcore.org/WomensFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Women's Film"@en .
+    skos:prefLabel "Women's Film"@en ;
+.
 
-<https://dev.fiafcore.org/WorkingClassFilm> a skos:Concept ;
+<https://dev.fiafcore.org/WorkingClassFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Working-class Film"@en .
+    skos:prefLabel "Working-class Film"@en ;
+.
 
-<https://dev.fiafcore.org/YouthFilm> a skos:Concept ;
+<https://dev.fiafcore.org/YouthFilm>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Genre> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Genre> ;
-    skos:prefLabel "Youth Film"@en .
+    skos:prefLabel "Youth Film"@en ;
+.
 
-<https://dev.fiafcore.org/Genre> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/Genre>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:prefLabel "Genre"@en .
-
+    skos:prefLabel "Genre"@en ;
+.

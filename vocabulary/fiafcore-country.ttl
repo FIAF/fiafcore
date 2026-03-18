@@ -1,1251 +1,1999 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/Afghanistan> a skos:Concept ;
+<https://dev.fiafcore.org/Afghanistan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Afghanistan"@en .
+    skos:prefLabel "Afghanistan"@en ;
+.
 
-<https://dev.fiafcore.org/AlandIslands> a skos:Concept ;
+<https://dev.fiafcore.org/AlandIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Åland Islands"@en .
+    skos:prefLabel "Åland Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Albania> a skos:Concept ;
+<https://dev.fiafcore.org/Albania>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Albania"@en .
+    skos:prefLabel "Albania"@en ;
+.
 
-<https://dev.fiafcore.org/Algeria> a skos:Concept ;
+<https://dev.fiafcore.org/Algeria>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Algeria"@en .
+    skos:prefLabel "Algeria"@en ;
+.
 
-<https://dev.fiafcore.org/AmericanSamoa> a skos:Concept ;
+<https://dev.fiafcore.org/AmericanSamoa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "American Samoa"@en .
+    skos:prefLabel "American Samoa"@en ;
+.
 
-<https://dev.fiafcore.org/Andorra> a skos:Concept ;
+<https://dev.fiafcore.org/Andorra>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Andorra"@en .
+    skos:prefLabel "Andorra"@en ;
+.
 
-<https://dev.fiafcore.org/Angola> a skos:Concept ;
+<https://dev.fiafcore.org/Angola>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Angola"@en .
+    skos:prefLabel "Angola"@en ;
+.
 
-<https://dev.fiafcore.org/Anguilla> a skos:Concept ;
+<https://dev.fiafcore.org/Anguilla>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Anguilla"@en .
+    skos:prefLabel "Anguilla"@en ;
+.
 
-<https://dev.fiafcore.org/Antarctica> a skos:Concept ;
+<https://dev.fiafcore.org/Antarctica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Antarctica"@en .
+    skos:prefLabel "Antarctica"@en ;
+.
 
-<https://dev.fiafcore.org/AntiguaAndBarbuda> a skos:Concept ;
+<https://dev.fiafcore.org/AntiguaAndBarbuda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Antigua and Barbuda"@en .
+    skos:prefLabel "Antigua and Barbuda"@en ;
+.
 
-<https://dev.fiafcore.org/Argentina> a skos:Concept ;
+<https://dev.fiafcore.org/Argentina>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Argentina"@en .
+    skos:prefLabel "Argentina"@en ;
+.
 
-<https://dev.fiafcore.org/Armenia> a skos:Concept ;
+<https://dev.fiafcore.org/Armenia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Armenia"@en .
+    skos:prefLabel "Armenia"@en ;
+.
 
-<https://dev.fiafcore.org/Aruba> a skos:Concept ;
+<https://dev.fiafcore.org/Aruba>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Aruba"@en .
+    skos:prefLabel "Aruba"@en ;
+.
 
-<https://dev.fiafcore.org/Australia> a skos:Concept ;
+<https://dev.fiafcore.org/Australia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Australia"@en .
+    skos:prefLabel "Australia"@en ;
+.
 
-<https://dev.fiafcore.org/Austria> a skos:Concept ;
+<https://dev.fiafcore.org/Austria>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Austria"@en .
+    skos:prefLabel "Austria"@en ;
+.
 
-<https://dev.fiafcore.org/Azerbaijan> a skos:Concept ;
+<https://dev.fiafcore.org/Azerbaijan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Azerbaijan"@en .
+    skos:prefLabel "Azerbaijan"@en ;
+.
 
-<https://dev.fiafcore.org/Bahamas> a skos:Concept ;
+<https://dev.fiafcore.org/Bahamas>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bahamas"@en .
+    skos:prefLabel "Bahamas"@en ;
+.
 
-<https://dev.fiafcore.org/Bahrain> a skos:Concept ;
+<https://dev.fiafcore.org/Bahrain>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bahrain"@en .
+    skos:prefLabel "Bahrain"@en ;
+.
 
-<https://dev.fiafcore.org/Bangladesh> a skos:Concept ;
+<https://dev.fiafcore.org/Bangladesh>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bangladesh"@en .
+    skos:prefLabel "Bangladesh"@en ;
+.
 
-<https://dev.fiafcore.org/Barbados> a skos:Concept ;
+<https://dev.fiafcore.org/Barbados>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Barbados"@en .
+    skos:prefLabel "Barbados"@en ;
+.
 
-<https://dev.fiafcore.org/Belarus> a skos:Concept ;
+<https://dev.fiafcore.org/Belarus>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Belarus"@en .
+    skos:prefLabel "Belarus"@en ;
+.
 
-<https://dev.fiafcore.org/Belgium> a skos:Concept ;
+<https://dev.fiafcore.org/Belgium>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Belgium"@en .
+    skos:prefLabel "Belgium"@en ;
+.
 
-<https://dev.fiafcore.org/Belize> a skos:Concept ;
+<https://dev.fiafcore.org/Belize>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Belize"@en .
+    skos:prefLabel "Belize"@en ;
+.
 
-<https://dev.fiafcore.org/Benin> a skos:Concept ;
+<https://dev.fiafcore.org/Benin>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Benin"@en .
+    skos:prefLabel "Benin"@en ;
+.
 
-<https://dev.fiafcore.org/Bermuda> a skos:Concept ;
+<https://dev.fiafcore.org/Bermuda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bermuda"@en .
+    skos:prefLabel "Bermuda"@en ;
+.
 
-<https://dev.fiafcore.org/Bhutan> a skos:Concept ;
+<https://dev.fiafcore.org/Bhutan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bhutan"@en .
+    skos:prefLabel "Bhutan"@en ;
+.
 
-<https://dev.fiafcore.org/BoliviaPlurinationalStateOf> a skos:Concept ;
+<https://dev.fiafcore.org/BoliviaPlurinationalStateOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bolivia, Plurinational State of"@en .
+    skos:prefLabel "Bolivia, Plurinational State of"@en ;
+.
 
-<https://dev.fiafcore.org/BonaireSintEustatiusAndSaba> a skos:Concept ;
+<https://dev.fiafcore.org/BonaireSintEustatiusAndSaba>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en .
+    skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en ;
+.
 
-<https://dev.fiafcore.org/BosniaAndHerzegovina> a skos:Concept ;
+<https://dev.fiafcore.org/BosniaAndHerzegovina>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bosnia and Herzegovina"@en .
+    skos:prefLabel "Bosnia and Herzegovina"@en ;
+.
 
-<https://dev.fiafcore.org/Botswana> a skos:Concept ;
+<https://dev.fiafcore.org/Botswana>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Botswana"@en .
+    skos:prefLabel "Botswana"@en ;
+.
 
-<https://dev.fiafcore.org/BouvetIsland> a skos:Concept ;
+<https://dev.fiafcore.org/BouvetIsland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bouvet Island"@en .
+    skos:prefLabel "Bouvet Island"@en ;
+.
 
-<https://dev.fiafcore.org/Brazil> a skos:Concept ;
+<https://dev.fiafcore.org/Brazil>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Brazil"@en .
+    skos:prefLabel "Brazil"@en ;
+.
 
-<https://dev.fiafcore.org/BritishIndianOceanTerritory> a skos:Concept ;
+<https://dev.fiafcore.org/BritishIndianOceanTerritory>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "British Indian Ocean Territory"@en .
+    skos:prefLabel "British Indian Ocean Territory"@en ;
+.
 
-<https://dev.fiafcore.org/BruneiDarussalam> a skos:Concept ;
+<https://dev.fiafcore.org/BruneiDarussalam>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Brunei Darussalam"@en .
+    skos:prefLabel "Brunei Darussalam"@en ;
+.
 
-<https://dev.fiafcore.org/Bulgaria> a skos:Concept ;
+<https://dev.fiafcore.org/Bulgaria>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Bulgaria"@en .
+    skos:prefLabel "Bulgaria"@en ;
+.
 
-<https://dev.fiafcore.org/BurkinaFaso> a skos:Concept ;
+<https://dev.fiafcore.org/BurkinaFaso>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Burkina Faso"@en .
+    skos:prefLabel "Burkina Faso"@en ;
+.
 
-<https://dev.fiafcore.org/Burundi> a skos:Concept ;
+<https://dev.fiafcore.org/Burundi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Burundi"@en .
+    skos:prefLabel "Burundi"@en ;
+.
 
-<https://dev.fiafcore.org/CaboVerde> a skos:Concept ;
+<https://dev.fiafcore.org/CaboVerde>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cabo Verde"@en .
+    skos:prefLabel "Cabo Verde"@en ;
+.
 
-<https://dev.fiafcore.org/Cambodia> a skos:Concept ;
+<https://dev.fiafcore.org/Cambodia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cambodia"@en .
+    skos:prefLabel "Cambodia"@en ;
+.
 
-<https://dev.fiafcore.org/Cameroon> a skos:Concept ;
+<https://dev.fiafcore.org/Cameroon>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cameroon"@en .
+    skos:prefLabel "Cameroon"@en ;
+.
 
-<https://dev.fiafcore.org/Canada> a skos:Concept ;
+<https://dev.fiafcore.org/Canada>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Canada"@en .
+    skos:prefLabel "Canada"@en ;
+.
 
-<https://dev.fiafcore.org/CaymanIslands> a skos:Concept ;
+<https://dev.fiafcore.org/CaymanIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cayman Islands"@en .
+    skos:prefLabel "Cayman Islands"@en ;
+.
 
-<https://dev.fiafcore.org/CentralAfricanRepublic> a skos:Concept ;
+<https://dev.fiafcore.org/CentralAfricanRepublic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Central African Republic"@en .
+    skos:prefLabel "Central African Republic"@en ;
+.
 
-<https://dev.fiafcore.org/Chad> a skos:Concept ;
+<https://dev.fiafcore.org/Chad>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Chad"@en .
+    skos:prefLabel "Chad"@en ;
+.
 
-<https://dev.fiafcore.org/Chile> a skos:Concept ;
+<https://dev.fiafcore.org/Chile>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Chile"@en .
+    skos:prefLabel "Chile"@en ;
+.
 
-<https://dev.fiafcore.org/China> a skos:Concept ;
+<https://dev.fiafcore.org/China>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "China"@en .
+    skos:prefLabel "China"@en ;
+.
 
-<https://dev.fiafcore.org/ChristmasIsland> a skos:Concept ;
+<https://dev.fiafcore.org/ChristmasIsland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Christmas Island"@en .
+    skos:prefLabel "Christmas Island"@en ;
+.
 
-<https://dev.fiafcore.org/CocosKeelingIslands> a skos:Concept ;
+<https://dev.fiafcore.org/CocosKeelingIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cocos (Keeling) Islands"@en .
+    skos:prefLabel "Cocos (Keeling) Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Colombia> a skos:Concept ;
+<https://dev.fiafcore.org/Colombia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Colombia"@en .
+    skos:prefLabel "Colombia"@en ;
+.
 
-<https://dev.fiafcore.org/Comoros> a skos:Concept ;
+<https://dev.fiafcore.org/Comoros>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Comoros"@en .
+    skos:prefLabel "Comoros"@en ;
+.
 
-<https://dev.fiafcore.org/Congo> a skos:Concept ;
+<https://dev.fiafcore.org/Congo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Congo"@en .
+    skos:prefLabel "Congo"@en ;
+.
 
-<https://dev.fiafcore.org/CongoDemocraticRepublicOfThe> a skos:Concept ;
+<https://dev.fiafcore.org/CongoDemocraticRepublicOfThe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Congo, Democratic Republic of the"@en .
+    skos:prefLabel "Congo, Democratic Republic of the"@en ;
+.
 
-<https://dev.fiafcore.org/CookIslands> a skos:Concept ;
+<https://dev.fiafcore.org/CookIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cook Islands"@en .
+    skos:prefLabel "Cook Islands"@en ;
+.
 
-<https://dev.fiafcore.org/CostaRica> a skos:Concept ;
+<https://dev.fiafcore.org/CostaRica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Costa Rica"@en .
+    skos:prefLabel "Costa Rica"@en ;
+.
 
-<https://dev.fiafcore.org/CoteDivoire> a skos:Concept ;
+<https://dev.fiafcore.org/CoteDivoire>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Côte d'Ivoire"@en .
+    skos:prefLabel "Côte d'Ivoire"@en ;
+.
 
-<https://dev.fiafcore.org/Croatia> a skos:Concept ;
+<https://dev.fiafcore.org/Croatia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Croatia"@en .
+    skos:prefLabel "Croatia"@en ;
+.
 
-<https://dev.fiafcore.org/Cuba> a skos:Concept ;
+<https://dev.fiafcore.org/Cuba>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cuba"@en .
+    skos:prefLabel "Cuba"@en ;
+.
 
-<https://dev.fiafcore.org/Curacao> a skos:Concept ;
+<https://dev.fiafcore.org/Curacao>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Curaçao"@en .
+    skos:prefLabel "Curaçao"@en ;
+.
 
-<https://dev.fiafcore.org/Cyprus> a skos:Concept ;
+<https://dev.fiafcore.org/Cyprus>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Cyprus"@en .
+    skos:prefLabel "Cyprus"@en ;
+.
 
-<https://dev.fiafcore.org/Czechia> a skos:Concept ;
+<https://dev.fiafcore.org/Czechia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Czechia"@en .
+    skos:prefLabel "Czechia"@en ;
+.
 
-<https://dev.fiafcore.org/Denmark> a skos:Concept ;
+<https://dev.fiafcore.org/Denmark>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Denmark"@en .
+    skos:prefLabel "Denmark"@en ;
+.
 
-<https://dev.fiafcore.org/Djibouti> a skos:Concept ;
+<https://dev.fiafcore.org/Djibouti>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Djibouti"@en .
+    skos:prefLabel "Djibouti"@en ;
+.
 
-<https://dev.fiafcore.org/Dominica> a skos:Concept ;
+<https://dev.fiafcore.org/Dominica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Dominica"@en .
+    skos:prefLabel "Dominica"@en ;
+.
 
-<https://dev.fiafcore.org/DominicanRepublic> a skos:Concept ;
+<https://dev.fiafcore.org/DominicanRepublic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Dominican Republic"@en .
+    skos:prefLabel "Dominican Republic"@en ;
+.
 
-<https://dev.fiafcore.org/Ecuador> a skos:Concept ;
+<https://dev.fiafcore.org/Ecuador>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Ecuador"@en .
+    skos:prefLabel "Ecuador"@en ;
+.
 
-<https://dev.fiafcore.org/Egypt> a skos:Concept ;
+<https://dev.fiafcore.org/Egypt>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Egypt"@en .
+    skos:prefLabel "Egypt"@en ;
+.
 
-<https://dev.fiafcore.org/ElSalvador> a skos:Concept ;
+<https://dev.fiafcore.org/ElSalvador>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "El Salvador"@en .
+    skos:prefLabel "El Salvador"@en ;
+.
 
-<https://dev.fiafcore.org/EquatorialGuinea> a skos:Concept ;
+<https://dev.fiafcore.org/EquatorialGuinea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Equatorial Guinea"@en .
+    skos:prefLabel "Equatorial Guinea"@en ;
+.
 
-<https://dev.fiafcore.org/Eritrea> a skos:Concept ;
+<https://dev.fiafcore.org/Eritrea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Eritrea"@en .
+    skos:prefLabel "Eritrea"@en ;
+.
 
-<https://dev.fiafcore.org/Estonia> a skos:Concept ;
+<https://dev.fiafcore.org/Estonia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Estonia"@en .
+    skos:prefLabel "Estonia"@en ;
+.
 
-<https://dev.fiafcore.org/Eswatini> a skos:Concept ;
+<https://dev.fiafcore.org/Eswatini>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Eswatini"@en .
+    skos:prefLabel "Eswatini"@en ;
+.
 
-<https://dev.fiafcore.org/Ethiopia> a skos:Concept ;
+<https://dev.fiafcore.org/Ethiopia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Ethiopia"@en .
+    skos:prefLabel "Ethiopia"@en ;
+.
 
-<https://dev.fiafcore.org/FalklandIslandsMalvinas> a skos:Concept ;
+<https://dev.fiafcore.org/FalklandIslandsMalvinas>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Falkland Islands (Malvinas)"@en .
+    skos:prefLabel "Falkland Islands (Malvinas)"@en ;
+.
 
-<https://dev.fiafcore.org/FaroeIslands> a skos:Concept ;
+<https://dev.fiafcore.org/FaroeIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Faroe Islands"@en .
+    skos:prefLabel "Faroe Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Fiji> a skos:Concept ;
+<https://dev.fiafcore.org/Fiji>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Fiji"@en .
+    skos:prefLabel "Fiji"@en ;
+.
 
-<https://dev.fiafcore.org/Finland> a skos:Concept ;
+<https://dev.fiafcore.org/Finland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Finland"@en .
+    skos:prefLabel "Finland"@en ;
+.
 
-<https://dev.fiafcore.org/France> a skos:Concept ;
+<https://dev.fiafcore.org/France>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "France"@en .
+    skos:prefLabel "France"@en ;
+.
 
-<https://dev.fiafcore.org/FrenchGuiana> a skos:Concept ;
+<https://dev.fiafcore.org/FrenchGuiana>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "French Guiana"@en .
+    skos:prefLabel "French Guiana"@en ;
+.
 
-<https://dev.fiafcore.org/FrenchPolynesia> a skos:Concept ;
+<https://dev.fiafcore.org/FrenchPolynesia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "French Polynesia"@en .
+    skos:prefLabel "French Polynesia"@en ;
+.
 
-<https://dev.fiafcore.org/FrenchSouthernTerritories> a skos:Concept ;
+<https://dev.fiafcore.org/FrenchSouthernTerritories>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "French Southern Territories"@en .
+    skos:prefLabel "French Southern Territories"@en ;
+.
 
-<https://dev.fiafcore.org/Gabon> a skos:Concept ;
+<https://dev.fiafcore.org/Gabon>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Gabon"@en .
+    skos:prefLabel "Gabon"@en ;
+.
 
-<https://dev.fiafcore.org/Gambia> a skos:Concept ;
+<https://dev.fiafcore.org/Gambia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Gambia"@en .
+    skos:prefLabel "Gambia"@en ;
+.
 
-<https://dev.fiafcore.org/Georgia> a skos:Concept ;
+<https://dev.fiafcore.org/Georgia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Georgia"@en .
+    skos:prefLabel "Georgia"@en ;
+.
 
-<https://dev.fiafcore.org/Germany> a skos:Concept ;
+<https://dev.fiafcore.org/Germany>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Germany"@en .
+    skos:prefLabel "Germany"@en ;
+.
 
-<https://dev.fiafcore.org/Ghana> a skos:Concept ;
+<https://dev.fiafcore.org/Ghana>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Ghana"@en .
+    skos:prefLabel "Ghana"@en ;
+.
 
-<https://dev.fiafcore.org/Gibraltar> a skos:Concept ;
+<https://dev.fiafcore.org/Gibraltar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Gibraltar"@en .
+    skos:prefLabel "Gibraltar"@en ;
+.
 
-<https://dev.fiafcore.org/Greece> a skos:Concept ;
+<https://dev.fiafcore.org/Greece>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Greece"@en .
+    skos:prefLabel "Greece"@en ;
+.
 
-<https://dev.fiafcore.org/Greenland> a skos:Concept ;
+<https://dev.fiafcore.org/Greenland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Greenland"@en .
+    skos:prefLabel "Greenland"@en ;
+.
 
-<https://dev.fiafcore.org/Grenada> a skos:Concept ;
+<https://dev.fiafcore.org/Grenada>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Grenada"@en .
+    skos:prefLabel "Grenada"@en ;
+.
 
-<https://dev.fiafcore.org/Guadeloupe> a skos:Concept ;
+<https://dev.fiafcore.org/Guadeloupe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guadeloupe"@en .
+    skos:prefLabel "Guadeloupe"@en ;
+.
 
-<https://dev.fiafcore.org/Guam> a skos:Concept ;
+<https://dev.fiafcore.org/Guam>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guam"@en .
+    skos:prefLabel "Guam"@en ;
+.
 
-<https://dev.fiafcore.org/Guatemala> a skos:Concept ;
+<https://dev.fiafcore.org/Guatemala>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guatemala"@en .
+    skos:prefLabel "Guatemala"@en ;
+.
 
-<https://dev.fiafcore.org/Guernsey> a skos:Concept ;
+<https://dev.fiafcore.org/Guernsey>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guernsey"@en .
+    skos:prefLabel "Guernsey"@en ;
+.
 
-<https://dev.fiafcore.org/Guinea> a skos:Concept ;
+<https://dev.fiafcore.org/Guinea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guinea"@en .
+    skos:prefLabel "Guinea"@en ;
+.
 
-<https://dev.fiafcore.org/GuineaBissau> a skos:Concept ;
+<https://dev.fiafcore.org/GuineaBissau>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guinea-Bissau"@en .
+    skos:prefLabel "Guinea-Bissau"@en ;
+.
 
-<https://dev.fiafcore.org/Guyana> a skos:Concept ;
+<https://dev.fiafcore.org/Guyana>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Guyana"@en .
+    skos:prefLabel "Guyana"@en ;
+.
 
-<https://dev.fiafcore.org/Haiti> a skos:Concept ;
+<https://dev.fiafcore.org/Haiti>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Haiti"@en .
+    skos:prefLabel "Haiti"@en ;
+.
 
-<https://dev.fiafcore.org/HeardIslandAndMcdonaldIslands> a skos:Concept ;
+<https://dev.fiafcore.org/HeardIslandAndMcdonaldIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Heard Island and McDonald Islands"@en .
+    skos:prefLabel "Heard Island and McDonald Islands"@en ;
+.
 
-<https://dev.fiafcore.org/HolySee> a skos:Concept ;
+<https://dev.fiafcore.org/HolySee>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Holy See"@en .
+    skos:prefLabel "Holy See"@en ;
+.
 
-<https://dev.fiafcore.org/Honduras> a skos:Concept ;
+<https://dev.fiafcore.org/Honduras>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Honduras"@en .
+    skos:prefLabel "Honduras"@en ;
+.
 
-<https://dev.fiafcore.org/HongKong> a skos:Concept ;
+<https://dev.fiafcore.org/HongKong>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Hong Kong"@en .
+    skos:prefLabel "Hong Kong"@en ;
+.
 
-<https://dev.fiafcore.org/Hungary> a skos:Concept ;
+<https://dev.fiafcore.org/Hungary>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Hungary"@en .
+    skos:prefLabel "Hungary"@en ;
+.
 
-<https://dev.fiafcore.org/Iceland> a skos:Concept ;
+<https://dev.fiafcore.org/Iceland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Iceland"@en .
+    skos:prefLabel "Iceland"@en ;
+.
 
-<https://dev.fiafcore.org/India> a skos:Concept ;
+<https://dev.fiafcore.org/India>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "India"@en .
+    skos:prefLabel "India"@en ;
+.
 
-<https://dev.fiafcore.org/Indonesia> a skos:Concept ;
+<https://dev.fiafcore.org/Indonesia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Indonesia"@en .
+    skos:prefLabel "Indonesia"@en ;
+.
 
-<https://dev.fiafcore.org/IranIslamicRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/IranIslamicRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Iran, Islamic Republic of"@en .
+    skos:prefLabel "Iran, Islamic Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/Iraq> a skos:Concept ;
+<https://dev.fiafcore.org/Iraq>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Iraq"@en .
+    skos:prefLabel "Iraq"@en ;
+.
 
-<https://dev.fiafcore.org/Ireland> a skos:Concept ;
+<https://dev.fiafcore.org/Ireland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Ireland"@en .
+    skos:prefLabel "Ireland"@en ;
+.
 
-<https://dev.fiafcore.org/IsleOfMan> a skos:Concept ;
+<https://dev.fiafcore.org/IsleOfMan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Isle of Man"@en .
+    skos:prefLabel "Isle of Man"@en ;
+.
 
-<https://dev.fiafcore.org/Israel> a skos:Concept ;
+<https://dev.fiafcore.org/Israel>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Israel"@en .
+    skos:prefLabel "Israel"@en ;
+.
 
-<https://dev.fiafcore.org/Italy> a skos:Concept ;
+<https://dev.fiafcore.org/Italy>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Italy"@en .
+    skos:prefLabel "Italy"@en ;
+.
 
-<https://dev.fiafcore.org/Jamaica> a skos:Concept ;
+<https://dev.fiafcore.org/Jamaica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Jamaica"@en .
+    skos:prefLabel "Jamaica"@en ;
+.
 
-<https://dev.fiafcore.org/Japan> a skos:Concept ;
+<https://dev.fiafcore.org/Japan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Japan"@en .
+    skos:prefLabel "Japan"@en ;
+.
 
-<https://dev.fiafcore.org/Jersey> a skos:Concept ;
+<https://dev.fiafcore.org/Jersey>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Jersey"@en .
+    skos:prefLabel "Jersey"@en ;
+.
 
-<https://dev.fiafcore.org/Jordan> a skos:Concept ;
+<https://dev.fiafcore.org/Jordan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Jordan"@en .
+    skos:prefLabel "Jordan"@en ;
+.
 
-<https://dev.fiafcore.org/Kazakhstan> a skos:Concept ;
+<https://dev.fiafcore.org/Kazakhstan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Kazakhstan"@en .
+    skos:prefLabel "Kazakhstan"@en ;
+.
 
-<https://dev.fiafcore.org/Kenya> a skos:Concept ;
+<https://dev.fiafcore.org/Kenya>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Kenya"@en .
+    skos:prefLabel "Kenya"@en ;
+.
 
-<https://dev.fiafcore.org/Kiribati> a skos:Concept ;
+<https://dev.fiafcore.org/Kiribati>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Kiribati"@en .
+    skos:prefLabel "Kiribati"@en ;
+.
 
-<https://dev.fiafcore.org/KoreaDemocraticPeoplesRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/KoreaDemocraticPeoplesRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Korea, Democratic People's Republic of"@en .
+    skos:prefLabel "Korea, Democratic People's Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/KoreaRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/KoreaRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Korea, Republic of"@en .
+    skos:prefLabel "Korea, Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/Kuwait> a skos:Concept ;
+<https://dev.fiafcore.org/Kuwait>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Kuwait"@en .
+    skos:prefLabel "Kuwait"@en ;
+.
 
-<https://dev.fiafcore.org/Kyrgyzstan> a skos:Concept ;
+<https://dev.fiafcore.org/Kyrgyzstan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Kyrgyzstan"@en .
+    skos:prefLabel "Kyrgyzstan"@en ;
+.
 
-<https://dev.fiafcore.org/LaoPeoplesDemocraticRepublic> a skos:Concept ;
+<https://dev.fiafcore.org/LaoPeoplesDemocraticRepublic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Lao People's Democratic Republic"@en .
+    skos:prefLabel "Lao People's Democratic Republic"@en ;
+.
 
-<https://dev.fiafcore.org/Latvia> a skos:Concept ;
+<https://dev.fiafcore.org/Latvia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Latvia"@en .
+    skos:prefLabel "Latvia"@en ;
+.
 
-<https://dev.fiafcore.org/Lebanon> a skos:Concept ;
+<https://dev.fiafcore.org/Lebanon>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Lebanon"@en .
+    skos:prefLabel "Lebanon"@en ;
+.
 
-<https://dev.fiafcore.org/Lesotho> a skos:Concept ;
+<https://dev.fiafcore.org/Lesotho>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Lesotho"@en .
+    skos:prefLabel "Lesotho"@en ;
+.
 
-<https://dev.fiafcore.org/Liberia> a skos:Concept ;
+<https://dev.fiafcore.org/Liberia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Liberia"@en .
+    skos:prefLabel "Liberia"@en ;
+.
 
-<https://dev.fiafcore.org/Libya> a skos:Concept ;
+<https://dev.fiafcore.org/Libya>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Libya"@en .
+    skos:prefLabel "Libya"@en ;
+.
 
-<https://dev.fiafcore.org/Liechtenstein> a skos:Concept ;
+<https://dev.fiafcore.org/Liechtenstein>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Liechtenstein"@en .
+    skos:prefLabel "Liechtenstein"@en ;
+.
 
-<https://dev.fiafcore.org/Lithuania> a skos:Concept ;
+<https://dev.fiafcore.org/Lithuania>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Lithuania"@en .
+    skos:prefLabel "Lithuania"@en ;
+.
 
-<https://dev.fiafcore.org/Luxembourg> a skos:Concept ;
+<https://dev.fiafcore.org/Luxembourg>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Luxembourg"@en .
+    skos:prefLabel "Luxembourg"@en ;
+.
 
-<https://dev.fiafcore.org/Macao> a skos:Concept ;
+<https://dev.fiafcore.org/Macao>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Macao"@en .
+    skos:prefLabel "Macao"@en ;
+.
 
-<https://dev.fiafcore.org/Madagascar> a skos:Concept ;
+<https://dev.fiafcore.org/Madagascar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Madagascar"@en .
+    skos:prefLabel "Madagascar"@en ;
+.
 
-<https://dev.fiafcore.org/Malawi> a skos:Concept ;
+<https://dev.fiafcore.org/Malawi>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Malawi"@en .
+    skos:prefLabel "Malawi"@en ;
+.
 
-<https://dev.fiafcore.org/Malaysia> a skos:Concept ;
+<https://dev.fiafcore.org/Malaysia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Malaysia"@en .
+    skos:prefLabel "Malaysia"@en ;
+.
 
-<https://dev.fiafcore.org/Maldives> a skos:Concept ;
+<https://dev.fiafcore.org/Maldives>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Maldives"@en .
+    skos:prefLabel "Maldives"@en ;
+.
 
-<https://dev.fiafcore.org/Mali> a skos:Concept ;
+<https://dev.fiafcore.org/Mali>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mali"@en .
+    skos:prefLabel "Mali"@en ;
+.
 
-<https://dev.fiafcore.org/Malta> a skos:Concept ;
+<https://dev.fiafcore.org/Malta>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Malta"@en .
+    skos:prefLabel "Malta"@en ;
+.
 
-<https://dev.fiafcore.org/MarshallIslands> a skos:Concept ;
+<https://dev.fiafcore.org/MarshallIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Marshall Islands"@en .
+    skos:prefLabel "Marshall Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Martinique> a skos:Concept ;
+<https://dev.fiafcore.org/Martinique>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Martinique"@en .
+    skos:prefLabel "Martinique"@en ;
+.
 
-<https://dev.fiafcore.org/Mauritania> a skos:Concept ;
+<https://dev.fiafcore.org/Mauritania>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mauritania"@en .
+    skos:prefLabel "Mauritania"@en ;
+.
 
-<https://dev.fiafcore.org/Mauritius> a skos:Concept ;
+<https://dev.fiafcore.org/Mauritius>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mauritius"@en .
+    skos:prefLabel "Mauritius"@en ;
+.
 
-<https://dev.fiafcore.org/Mayotte> a skos:Concept ;
+<https://dev.fiafcore.org/Mayotte>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mayotte"@en .
+    skos:prefLabel "Mayotte"@en ;
+.
 
-<https://dev.fiafcore.org/Mexico> a skos:Concept ;
+<https://dev.fiafcore.org/Mexico>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mexico"@en .
+    skos:prefLabel "Mexico"@en ;
+.
 
-<https://dev.fiafcore.org/MicronesiaFederatedStatesOf> a skos:Concept ;
+<https://dev.fiafcore.org/MicronesiaFederatedStatesOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Micronesia, Federated States of"@en .
+    skos:prefLabel "Micronesia, Federated States of"@en ;
+.
 
-<https://dev.fiafcore.org/MoldovaRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/MoldovaRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Moldova, Republic of"@en .
+    skos:prefLabel "Moldova, Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/Monaco> a skos:Concept ;
+<https://dev.fiafcore.org/Monaco>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Monaco"@en .
+    skos:prefLabel "Monaco"@en ;
+.
 
-<https://dev.fiafcore.org/Mongolia> a skos:Concept ;
+<https://dev.fiafcore.org/Mongolia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mongolia"@en .
+    skos:prefLabel "Mongolia"@en ;
+.
 
-<https://dev.fiafcore.org/Montenegro> a skos:Concept ;
+<https://dev.fiafcore.org/Montenegro>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Montenegro"@en .
+    skos:prefLabel "Montenegro"@en ;
+.
 
-<https://dev.fiafcore.org/Montserrat> a skos:Concept ;
+<https://dev.fiafcore.org/Montserrat>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Montserrat"@en .
+    skos:prefLabel "Montserrat"@en ;
+.
 
-<https://dev.fiafcore.org/Morocco> a skos:Concept ;
+<https://dev.fiafcore.org/Morocco>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Morocco"@en .
+    skos:prefLabel "Morocco"@en ;
+.
 
-<https://dev.fiafcore.org/Mozambique> a skos:Concept ;
+<https://dev.fiafcore.org/Mozambique>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Mozambique"@en .
+    skos:prefLabel "Mozambique"@en ;
+.
 
-<https://dev.fiafcore.org/Myanmar> a skos:Concept ;
+<https://dev.fiafcore.org/Myanmar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Myanmar"@en .
+    skos:prefLabel "Myanmar"@en ;
+.
 
-<https://dev.fiafcore.org/Namibia> a skos:Concept ;
+<https://dev.fiafcore.org/Namibia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Namibia"@en .
+    skos:prefLabel "Namibia"@en ;
+.
 
-<https://dev.fiafcore.org/Nauru> a skos:Concept ;
+<https://dev.fiafcore.org/Nauru>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Nauru"@en .
+    skos:prefLabel "Nauru"@en ;
+.
 
-<https://dev.fiafcore.org/Nepal> a skos:Concept ;
+<https://dev.fiafcore.org/Nepal>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Nepal"@en .
+    skos:prefLabel "Nepal"@en ;
+.
 
-<https://dev.fiafcore.org/NetherlandsKingdomOfThe> a skos:Concept ;
+<https://dev.fiafcore.org/NetherlandsKingdomOfThe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Netherlands, Kingdom of the"@en .
+    skos:prefLabel "Netherlands, Kingdom of the"@en ;
+.
 
-<https://dev.fiafcore.org/NewCaledonia> a skos:Concept ;
+<https://dev.fiafcore.org/NewCaledonia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "New Caledonia"@en .
+    skos:prefLabel "New Caledonia"@en ;
+.
 
-<https://dev.fiafcore.org/NewZealand> a skos:Concept ;
+<https://dev.fiafcore.org/NewZealand>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "New Zealand"@en .
+    skos:prefLabel "New Zealand"@en ;
+.
 
-<https://dev.fiafcore.org/Nicaragua> a skos:Concept ;
+<https://dev.fiafcore.org/Nicaragua>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Nicaragua"@en .
+    skos:prefLabel "Nicaragua"@en ;
+.
 
-<https://dev.fiafcore.org/Niger> a skos:Concept ;
+<https://dev.fiafcore.org/Niger>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Niger"@en .
+    skos:prefLabel "Niger"@en ;
+.
 
-<https://dev.fiafcore.org/Nigeria> a skos:Concept ;
+<https://dev.fiafcore.org/Nigeria>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Nigeria"@en .
+    skos:prefLabel "Nigeria"@en ;
+.
 
-<https://dev.fiafcore.org/Niue> a skos:Concept ;
+<https://dev.fiafcore.org/Niue>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Niue"@en .
+    skos:prefLabel "Niue"@en ;
+.
 
-<https://dev.fiafcore.org/NorfolkIsland> a skos:Concept ;
+<https://dev.fiafcore.org/NorfolkIsland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Norfolk Island"@en .
+    skos:prefLabel "Norfolk Island"@en ;
+.
 
-<https://dev.fiafcore.org/NorthMacedonia> a skos:Concept ;
+<https://dev.fiafcore.org/NorthMacedonia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "North Macedonia"@en .
+    skos:prefLabel "North Macedonia"@en ;
+.
 
-<https://dev.fiafcore.org/NorthernMarianaIslands> a skos:Concept ;
+<https://dev.fiafcore.org/NorthernMarianaIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Northern Mariana Islands"@en .
+    skos:prefLabel "Northern Mariana Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Norway> a skos:Concept ;
+<https://dev.fiafcore.org/Norway>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Norway"@en .
+    skos:prefLabel "Norway"@en ;
+.
 
-<https://dev.fiafcore.org/Oman> a skos:Concept ;
+<https://dev.fiafcore.org/Oman>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Oman"@en .
+    skos:prefLabel "Oman"@en ;
+.
 
-<https://dev.fiafcore.org/Pakistan> a skos:Concept ;
+<https://dev.fiafcore.org/Pakistan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Pakistan"@en .
+    skos:prefLabel "Pakistan"@en ;
+.
 
-<https://dev.fiafcore.org/Palau> a skos:Concept ;
+<https://dev.fiafcore.org/Palau>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Palau"@en .
+    skos:prefLabel "Palau"@en ;
+.
 
-<https://dev.fiafcore.org/PalestineStateOf> a skos:Concept ;
+<https://dev.fiafcore.org/PalestineStateOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Palestine, State of"@en .
+    skos:prefLabel "Palestine, State of"@en ;
+.
 
-<https://dev.fiafcore.org/Panama> a skos:Concept ;
+<https://dev.fiafcore.org/Panama>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Panama"@en .
+    skos:prefLabel "Panama"@en ;
+.
 
-<https://dev.fiafcore.org/PapuaNewGuinea> a skos:Concept ;
+<https://dev.fiafcore.org/PapuaNewGuinea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Papua New Guinea"@en .
+    skos:prefLabel "Papua New Guinea"@en ;
+.
 
-<https://dev.fiafcore.org/Paraguay> a skos:Concept ;
+<https://dev.fiafcore.org/Paraguay>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Paraguay"@en .
+    skos:prefLabel "Paraguay"@en ;
+.
 
-<https://dev.fiafcore.org/Peru> a skos:Concept ;
+<https://dev.fiafcore.org/Peru>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Peru"@en .
+    skos:prefLabel "Peru"@en ;
+.
 
-<https://dev.fiafcore.org/Philippines> a skos:Concept ;
+<https://dev.fiafcore.org/Philippines>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Philippines"@en .
+    skos:prefLabel "Philippines"@en ;
+.
 
-<https://dev.fiafcore.org/Pitcairn> a skos:Concept ;
+<https://dev.fiafcore.org/Pitcairn>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Pitcairn"@en .
+    skos:prefLabel "Pitcairn"@en ;
+.
 
-<https://dev.fiafcore.org/Poland> a skos:Concept ;
+<https://dev.fiafcore.org/Poland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Poland"@en .
+    skos:prefLabel "Poland"@en ;
+.
 
-<https://dev.fiafcore.org/Portugal> a skos:Concept ;
+<https://dev.fiafcore.org/Portugal>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Portugal"@en .
+    skos:prefLabel "Portugal"@en ;
+.
 
-<https://dev.fiafcore.org/PuertoRico> a skos:Concept ;
+<https://dev.fiafcore.org/PuertoRico>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Puerto Rico"@en .
+    skos:prefLabel "Puerto Rico"@en ;
+.
 
-<https://dev.fiafcore.org/Qatar> a skos:Concept ;
+<https://dev.fiafcore.org/Qatar>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Qatar"@en .
+    skos:prefLabel "Qatar"@en ;
+.
 
-<https://dev.fiafcore.org/Reunion> a skos:Concept ;
+<https://dev.fiafcore.org/Reunion>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Réunion"@en .
+    skos:prefLabel "Réunion"@en ;
+.
 
-<https://dev.fiafcore.org/Romania> a skos:Concept ;
+<https://dev.fiafcore.org/Romania>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Romania"@en .
+    skos:prefLabel "Romania"@en ;
+.
 
-<https://dev.fiafcore.org/RussianFederation> a skos:Concept ;
+<https://dev.fiafcore.org/RussianFederation>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Russian Federation"@en .
+    skos:prefLabel "Russian Federation"@en ;
+.
 
-<https://dev.fiafcore.org/Rwanda> a skos:Concept ;
+<https://dev.fiafcore.org/Rwanda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Rwanda"@en .
+    skos:prefLabel "Rwanda"@en ;
+.
 
-<https://dev.fiafcore.org/SaintBarthelemy> a skos:Concept ;
+<https://dev.fiafcore.org/SaintBarthelemy>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Barthélemy"@en .
+    skos:prefLabel "Saint Barthélemy"@en ;
+.
 
-<https://dev.fiafcore.org/SaintHelenaAscensionAndTristanDaCunha> a skos:Concept ;
+<https://dev.fiafcore.org/SaintHelenaAscensionAndTristanDaCunha>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Helena, Ascension and Tristan da Cunha"@en .
+    skos:prefLabel "Saint Helena, Ascension and Tristan da Cunha"@en ;
+.
 
-<https://dev.fiafcore.org/SaintKittsAndNevis> a skos:Concept ;
+<https://dev.fiafcore.org/SaintKittsAndNevis>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Kitts and Nevis"@en .
+    skos:prefLabel "Saint Kitts and Nevis"@en ;
+.
 
-<https://dev.fiafcore.org/SaintLucia> a skos:Concept ;
+<https://dev.fiafcore.org/SaintLucia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Lucia"@en .
+    skos:prefLabel "Saint Lucia"@en ;
+.
 
-<https://dev.fiafcore.org/SaintMartinFrenchPart> a skos:Concept ;
+<https://dev.fiafcore.org/SaintMartinFrenchPart>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Martin (French part)"@en .
+    skos:prefLabel "Saint Martin (French part)"@en ;
+.
 
-<https://dev.fiafcore.org/SaintPierreAndMiquelon> a skos:Concept ;
+<https://dev.fiafcore.org/SaintPierreAndMiquelon>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Pierre and Miquelon"@en .
+    skos:prefLabel "Saint Pierre and Miquelon"@en ;
+.
 
-<https://dev.fiafcore.org/SaintVincentAndTheGrenadines> a skos:Concept ;
+<https://dev.fiafcore.org/SaintVincentAndTheGrenadines>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saint Vincent and the Grenadines"@en .
+    skos:prefLabel "Saint Vincent and the Grenadines"@en ;
+.
 
-<https://dev.fiafcore.org/Samoa> a skos:Concept ;
+<https://dev.fiafcore.org/Samoa>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Samoa"@en .
+    skos:prefLabel "Samoa"@en ;
+.
 
-<https://dev.fiafcore.org/SanMarino> a skos:Concept ;
+<https://dev.fiafcore.org/SanMarino>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "San Marino"@en .
+    skos:prefLabel "San Marino"@en ;
+.
 
-<https://dev.fiafcore.org/SaoTomeAndPrincipe> a skos:Concept ;
+<https://dev.fiafcore.org/SaoTomeAndPrincipe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sao Tome and Principe"@en .
+    skos:prefLabel "Sao Tome and Principe"@en ;
+.
 
-<https://dev.fiafcore.org/SaudiArabia> a skos:Concept ;
+<https://dev.fiafcore.org/SaudiArabia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Saudi Arabia"@en .
+    skos:prefLabel "Saudi Arabia"@en ;
+.
 
-<https://dev.fiafcore.org/Senegal> a skos:Concept ;
+<https://dev.fiafcore.org/Senegal>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Senegal"@en .
+    skos:prefLabel "Senegal"@en ;
+.
 
-<https://dev.fiafcore.org/Serbia> a skos:Concept ;
+<https://dev.fiafcore.org/Serbia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Serbia"@en .
+    skos:prefLabel "Serbia"@en ;
+.
 
-<https://dev.fiafcore.org/Seychelles> a skos:Concept ;
+<https://dev.fiafcore.org/Seychelles>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Seychelles"@en .
+    skos:prefLabel "Seychelles"@en ;
+.
 
-<https://dev.fiafcore.org/SierraLeone> a skos:Concept ;
+<https://dev.fiafcore.org/SierraLeone>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sierra Leone"@en .
+    skos:prefLabel "Sierra Leone"@en ;
+.
 
-<https://dev.fiafcore.org/Singapore> a skos:Concept ;
+<https://dev.fiafcore.org/Singapore>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Singapore"@en .
+    skos:prefLabel "Singapore"@en ;
+.
 
-<https://dev.fiafcore.org/SintMaartenDutchPart> a skos:Concept ;
+<https://dev.fiafcore.org/SintMaartenDutchPart>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sint Maarten (Dutch part)"@en .
+    skos:prefLabel "Sint Maarten (Dutch part)"@en ;
+.
 
-<https://dev.fiafcore.org/Slovakia> a skos:Concept ;
+<https://dev.fiafcore.org/Slovakia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Slovakia"@en .
+    skos:prefLabel "Slovakia"@en ;
+.
 
-<https://dev.fiafcore.org/Slovenia> a skos:Concept ;
+<https://dev.fiafcore.org/Slovenia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Slovenia"@en .
+    skos:prefLabel "Slovenia"@en ;
+.
 
-<https://dev.fiafcore.org/SolomonIslands> a skos:Concept ;
+<https://dev.fiafcore.org/SolomonIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Solomon Islands"@en .
+    skos:prefLabel "Solomon Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Somalia> a skos:Concept ;
+<https://dev.fiafcore.org/Somalia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Somalia"@en .
+    skos:prefLabel "Somalia"@en ;
+.
 
-<https://dev.fiafcore.org/SouthAfrica> a skos:Concept ;
+<https://dev.fiafcore.org/SouthAfrica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "South Africa"@en .
+    skos:prefLabel "South Africa"@en ;
+.
 
-<https://dev.fiafcore.org/SouthGeorgiaAndTheSouthSandwichIslands> a skos:Concept ;
+<https://dev.fiafcore.org/SouthGeorgiaAndTheSouthSandwichIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "South Georgia and the South Sandwich Islands"@en .
+    skos:prefLabel "South Georgia and the South Sandwich Islands"@en ;
+.
 
-<https://dev.fiafcore.org/SouthSudan> a skos:Concept ;
+<https://dev.fiafcore.org/SouthSudan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "South Sudan"@en .
+    skos:prefLabel "South Sudan"@en ;
+.
 
-<https://dev.fiafcore.org/Spain> a skos:Concept ;
+<https://dev.fiafcore.org/Spain>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Spain"@en .
+    skos:prefLabel "Spain"@en ;
+.
 
-<https://dev.fiafcore.org/SriLanka> a skos:Concept ;
+<https://dev.fiafcore.org/SriLanka>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sri Lanka"@en .
+    skos:prefLabel "Sri Lanka"@en ;
+.
 
-<https://dev.fiafcore.org/Sudan> a skos:Concept ;
+<https://dev.fiafcore.org/Sudan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sudan"@en .
+    skos:prefLabel "Sudan"@en ;
+.
 
-<https://dev.fiafcore.org/Suriname> a skos:Concept ;
+<https://dev.fiafcore.org/Suriname>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Suriname"@en .
+    skos:prefLabel "Suriname"@en ;
+.
 
-<https://dev.fiafcore.org/SvalbardAndJanMayen> a skos:Concept ;
+<https://dev.fiafcore.org/SvalbardAndJanMayen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Svalbard and Jan Mayen"@en .
+    skos:prefLabel "Svalbard and Jan Mayen"@en ;
+.
 
-<https://dev.fiafcore.org/Sweden> a skos:Concept ;
+<https://dev.fiafcore.org/Sweden>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Sweden"@en .
+    skos:prefLabel "Sweden"@en ;
+.
 
-<https://dev.fiafcore.org/Switzerland> a skos:Concept ;
+<https://dev.fiafcore.org/Switzerland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Switzerland"@en .
+    skos:prefLabel "Switzerland"@en ;
+.
 
-<https://dev.fiafcore.org/SyrianArabRepublic> a skos:Concept ;
+<https://dev.fiafcore.org/SyrianArabRepublic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Syrian Arab Republic"@en .
+    skos:prefLabel "Syrian Arab Republic"@en ;
+.
 
-<https://dev.fiafcore.org/TaiwanProvinceOfChina> a skos:Concept ;
+<https://dev.fiafcore.org/TaiwanProvinceOfChina>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Taiwan, Province of China"@en .
+    skos:prefLabel "Taiwan, Province of China"@en ;
+.
 
-<https://dev.fiafcore.org/Tajikistan> a skos:Concept ;
+<https://dev.fiafcore.org/Tajikistan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tajikistan"@en .
+    skos:prefLabel "Tajikistan"@en ;
+.
 
-<https://dev.fiafcore.org/TanzaniaUnitedRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/TanzaniaUnitedRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tanzania, United Republic of"@en .
+    skos:prefLabel "Tanzania, United Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/Thailand> a skos:Concept ;
+<https://dev.fiafcore.org/Thailand>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Thailand"@en .
+    skos:prefLabel "Thailand"@en ;
+.
 
-<https://dev.fiafcore.org/Timorleste> a skos:Concept ;
+<https://dev.fiafcore.org/Timorleste>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Timor-Leste"@en .
+    skos:prefLabel "Timor-Leste"@en ;
+.
 
-<https://dev.fiafcore.org/Togo> a skos:Concept ;
+<https://dev.fiafcore.org/Togo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Togo"@en .
+    skos:prefLabel "Togo"@en ;
+.
 
-<https://dev.fiafcore.org/Tokelau> a skos:Concept ;
+<https://dev.fiafcore.org/Tokelau>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tokelau"@en .
+    skos:prefLabel "Tokelau"@en ;
+.
 
-<https://dev.fiafcore.org/Tonga> a skos:Concept ;
+<https://dev.fiafcore.org/Tonga>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tonga"@en .
+    skos:prefLabel "Tonga"@en ;
+.
 
-<https://dev.fiafcore.org/TrinidadAndTobago> a skos:Concept ;
+<https://dev.fiafcore.org/TrinidadAndTobago>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Trinidad and Tobago"@en .
+    skos:prefLabel "Trinidad and Tobago"@en ;
+.
 
-<https://dev.fiafcore.org/Tunisia> a skos:Concept ;
+<https://dev.fiafcore.org/Tunisia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tunisia"@en .
+    skos:prefLabel "Tunisia"@en ;
+.
 
-<https://dev.fiafcore.org/Turkiye> a skos:Concept ;
+<https://dev.fiafcore.org/Turkiye>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Türkiye"@en .
+    skos:prefLabel "Türkiye"@en ;
+.
 
-<https://dev.fiafcore.org/Turkmenistan> a skos:Concept ;
+<https://dev.fiafcore.org/Turkmenistan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Turkmenistan"@en .
+    skos:prefLabel "Turkmenistan"@en ;
+.
 
-<https://dev.fiafcore.org/TurksAndCaicosIslands> a skos:Concept ;
+<https://dev.fiafcore.org/TurksAndCaicosIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Turks and Caicos Islands"@en .
+    skos:prefLabel "Turks and Caicos Islands"@en ;
+.
 
-<https://dev.fiafcore.org/Tuvalu> a skos:Concept ;
+<https://dev.fiafcore.org/Tuvalu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Tuvalu"@en .
+    skos:prefLabel "Tuvalu"@en ;
+.
 
-<https://dev.fiafcore.org/Uganda> a skos:Concept ;
+<https://dev.fiafcore.org/Uganda>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Uganda"@en .
+    skos:prefLabel "Uganda"@en ;
+.
 
-<https://dev.fiafcore.org/Ukraine> a skos:Concept ;
+<https://dev.fiafcore.org/Ukraine>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Ukraine"@en .
+    skos:prefLabel "Ukraine"@en ;
+.
 
-<https://dev.fiafcore.org/UnitedArabEmirates> a skos:Concept ;
+<https://dev.fiafcore.org/UnitedArabEmirates>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "United Arab Emirates"@en .
+    skos:prefLabel "United Arab Emirates"@en ;
+.
 
-<https://dev.fiafcore.org/UnitedKingdomOfGreatBritainAndNorthernIreland> a skos:Concept ;
+<https://dev.fiafcore.org/UnitedKingdomOfGreatBritainAndNorthernIreland>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "United Kingdom of Great Britain and Northern Ireland"@en .
+    skos:prefLabel "United Kingdom of Great Britain and Northern Ireland"@en ;
+.
 
-<https://dev.fiafcore.org/UnitedStatesMinorOutlyingIslands> a skos:Concept ;
+<https://dev.fiafcore.org/UnitedStatesMinorOutlyingIslands>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "United States Minor Outlying Islands"@en .
+    skos:prefLabel "United States Minor Outlying Islands"@en ;
+.
 
-<https://dev.fiafcore.org/UnitedStatesOfAmerica> a skos:Concept ;
+<https://dev.fiafcore.org/UnitedStatesOfAmerica>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "United States of America"@en .
+    skos:prefLabel "United States of America"@en ;
+.
 
-<https://dev.fiafcore.org/Uruguay> a skos:Concept ;
+<https://dev.fiafcore.org/Uruguay>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Uruguay"@en .
+    skos:prefLabel "Uruguay"@en ;
+.
 
-<https://dev.fiafcore.org/Uzbekistan> a skos:Concept ;
+<https://dev.fiafcore.org/Uzbekistan>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Uzbekistan"@en .
+    skos:prefLabel "Uzbekistan"@en ;
+.
 
-<https://dev.fiafcore.org/Vanuatu> a skos:Concept ;
+<https://dev.fiafcore.org/Vanuatu>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Vanuatu"@en .
+    skos:prefLabel "Vanuatu"@en ;
+.
 
-<https://dev.fiafcore.org/VenezuelaBolivarianRepublicOf> a skos:Concept ;
+<https://dev.fiafcore.org/VenezuelaBolivarianRepublicOf>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Venezuela, Bolivarian Republic of"@en .
+    skos:prefLabel "Venezuela, Bolivarian Republic of"@en ;
+.
 
-<https://dev.fiafcore.org/VietNam> a skos:Concept ;
+<https://dev.fiafcore.org/VietNam>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Viet Nam"@en .
+    skos:prefLabel "Viet Nam"@en ;
+.
 
-<https://dev.fiafcore.org/VirginIslandsBritish> a skos:Concept ;
+<https://dev.fiafcore.org/VirginIslandsBritish>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Virgin Islands (British)"@en .
+    skos:prefLabel "Virgin Islands (British)"@en ;
+.
 
-<https://dev.fiafcore.org/VirginIslandsUs> a skos:Concept ;
+<https://dev.fiafcore.org/VirginIslandsUs>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Virgin Islands (U.S.)"@en .
+    skos:prefLabel "Virgin Islands (U.S.)"@en ;
+.
 
-<https://dev.fiafcore.org/WallisAndFutuna> a skos:Concept ;
+<https://dev.fiafcore.org/WallisAndFutuna>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Wallis and Futuna"@en .
+    skos:prefLabel "Wallis and Futuna"@en ;
+.
 
-<https://dev.fiafcore.org/WesternSahara> a skos:Concept ;
+<https://dev.fiafcore.org/WesternSahara>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Western Sahara"@en .
+    skos:prefLabel "Western Sahara"@en ;
+.
 
-<https://dev.fiafcore.org/Yemen> a skos:Concept ;
+<https://dev.fiafcore.org/Yemen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Yemen"@en .
+    skos:prefLabel "Yemen"@en ;
+.
 
-<https://dev.fiafcore.org/Zambia> a skos:Concept ;
+<https://dev.fiafcore.org/Zambia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Zambia"@en .
+    skos:prefLabel "Zambia"@en ;
+.
 
-<https://dev.fiafcore.org/Zimbabwe> a skos:Concept ;
+<https://dev.fiafcore.org/Zimbabwe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
-    skos:prefLabel "Zimbabwe"@en .
+    skos:prefLabel "Zimbabwe"@en ;
+.
 
-<https://dev.fiafcore.org/Country> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/Country>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:prefLabel "Country"@en .
-
+    skos:prefLabel "Country"@en ;
+.

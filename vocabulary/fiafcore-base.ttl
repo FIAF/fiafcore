@@ -1,21 +1,31 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/AcetateBase> a skos:Concept ;
+<https://dev.fiafcore.org/AcetateBase>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Base> ;
     skos:definition "Cellulose acetate bases, including cellulose diacetate and cellulose triacetate."@en ;
     skos:inScheme <https://dev.fiafcore.org/Base> ;
-    skos:prefLabel "Acetate Base"@en .
+    skos:prefLabel "Acetate Base"@en ;
+.
 
-<https://dev.fiafcore.org/NitrateBase> a skos:Concept ;
+<https://dev.fiafcore.org/NitrateBase>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Base> ;
     skos:definition "Cellulose nitrate bases, used from the birth of film until the 1950s."@en ;
     skos:inScheme <https://dev.fiafcore.org/Base> ;
-    skos:prefLabel "Nitrate Base"@en .
+    skos:prefLabel "Nitrate Base"@en ;
+.
 
-<https://dev.fiafcore.org/PolyesterBase> a skos:Concept ;
+<https://dev.fiafcore.org/PolyesterBase>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Base> ;
     skos:definition "Polyester bases, used for film, video and audiotape."@en ;
     skos:inScheme <https://dev.fiafcore.org/Base> ;
-    skos:prefLabel "Polyester Base"@en .
+    skos:prefLabel "Polyester Base"@en ;
+.
 
-<https://dev.fiafcore.org/Base> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/Base>
+    a skos:ConceptScheme ;
     skos:definition "The primary chemical characteristic of the physical carrier."@en ;
-    skos:prefLabel "Base"@en .
-
+    skos:prefLabel "Base"@en ;
+.

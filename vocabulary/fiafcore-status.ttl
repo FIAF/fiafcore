@@ -1,16 +1,23 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/Status> a skos:ConceptScheme ;
+<https://dev.fiafcore.org/Access>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Status> ;
     skos:definition ""@en ;
-    skos:prefLabel "Status"@en .
+    skos:inScheme <https://dev.fiafcore.org/Status> ;
+    skos:prefLabel "Access"@en ;
+.
 
-<https://dev.fiafcore.org/Access> a skos:Concept ;
+<https://dev.fiafcore.org/Preservation>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Status> ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/Access> ;
-    skos:prefLabel "Access"@en .
+    skos:inScheme <https://dev.fiafcore.org/Status> ;
+    skos:prefLabel "Preservation"@en ;
+.
 
-<https://dev.fiafcore.org/Preservation> a skos:Concept ;
+<https://dev.fiafcore.org/Status>
+    a skos:ConceptScheme ;
     skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/Preservation> ;
-    skos:prefLabel "Preservation"@en .
-
+    skos:prefLabel "Status"@en ;
+.
