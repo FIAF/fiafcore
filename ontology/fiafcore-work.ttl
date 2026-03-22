@@ -51,7 +51,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dc:description "Where known and applicable, record the geographic origin of the moving image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2032%3A57> ;
     rdfs:domain <https://dev.fiafcore.org/Work> ;
-    rdfs:range <https://vocabulary.fiafcore.org/Country> ;
+    rdfs:range <https://dev.fiafcore.org/Country> ;
 .
 
 <https://dev.fiafcore.org/hasEvent> a owl:ObjectProperty ;
