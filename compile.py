@@ -49,14 +49,14 @@ def convert_vocabulary(input_file):
 for vocab in [
     'fiafcore-base.ttl',
     'fiafcore-broadcaststandard.ttl',
-    'fiafcore-colourcharacteristic.ttl',
+    'fiafcore-colourstandard.ttl',
     'fiafcore-country.ttl',
     'fiafcore-element.ttl',
     'fiafcore-form.ttl',
     'fiafcore-format.ttl',
     'fiafcore-genre.ttl',
     'fiafcore-language.ttl',
-    'fiafcore-soundsystem.ttl',
+    'fiafcore-soundstandard.ttl',
     'fiafcore-status.ttl']:
     convert_vocabulary(vocab)
 

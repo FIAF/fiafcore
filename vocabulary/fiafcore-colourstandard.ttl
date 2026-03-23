@@ -1,0 +1,71 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/Agfacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Agfacolor"@en ;
+.
+
+<https://dev.fiafcore.org/DeLuxe>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "DeLuxe"@en ;
+.
+
+<https://dev.fiafcore.org/Duartcolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Duartcolor"@en ;
+.
+
+<https://dev.fiafcore.org/Eastmancolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Eastmancolor"@en ;
+.
+
+<https://dev.fiafcore.org/Fujicolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Fujicolor"@en ;
+.
+
+<https://dev.fiafcore.org/Metrocolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Metrocolor"@en ;
+.
+
+<https://dev.fiafcore.org/Orwocolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Orwocolor"@en ;
+.
+
+<https://dev.fiafcore.org/Technicolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Technicolor"@en ;
+.
+
+<https://dev.fiafcore.org/ColourStandard>
+    a skos:ConceptScheme ;
+    skos:definition "A standardised colour process."@en ;
+    skos:prefLabel "Colour Standard"@en ;
+.

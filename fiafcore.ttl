@@ -1549,7 +1549,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "DTS"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/DVCPROHD>
@@ -1713,14 +1713,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Dolby Digital"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/DolbyStereo>
     a owl:Class ;
     rdfs:label "Dolby Stereo"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/DollyGrip>
@@ -3325,7 +3325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Magnetic"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/MakeUpArtist>
@@ -4049,14 +4049,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Optical Variable Area"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/OpticalVariableDensity>
     a owl:Class ;
     rdfs:label "Optical Variable Density"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/OriginalCopyrightOwner>
@@ -4813,7 +4813,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "SDDS"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundSystem> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/SECAM>
@@ -6694,6 +6694,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
+<https://dev.fiafcore.org/hasSoundStandard>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Sound Standard"@en ;
+    dc:description "Express a specific sound process."@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/SoundStandard> ;
+.
+
 <https://dev.fiafcore.org/hasStatus>
     a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
@@ -6916,13 +6925,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/SoundCharacteristic>
-    a owl:Class ;
-    rdfs:label "Sound Characteristic"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
-.
-
 <https://dev.fiafcore.org/WrittenLanguage>
     a owl:Class ;
     rdfs:label "Written Language"@en ;
@@ -6937,6 +6939,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/SoundCharacteristic>
+    a owl:Class ;
+    rdfs:label "Sound Characteristic"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
 .
 
 <https://dev.fiafcore.org/ColourCharacteristic>
@@ -6989,12 +6998,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description ""@en ;
 .
 
-<https://dev.fiafcore.org/SoundSystem>
-    a owl:Class ;
-    rdfs:label "Sound System"@en ;
-    dc:description ""@en ;
-.
-
 <https://dev.fiafcore.org/Title>
     a owl:Class ;
     rdfs:label "Title"@en ;
@@ -7015,6 +7018,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:label "Film Format"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/SoundStandard>
+    a owl:Class ;
+    rdfs:label "Sound Standard"@en ;
+    dc:description ""@en ;
 .
 
 <https://dev.fiafcore.org/VideoFormat>

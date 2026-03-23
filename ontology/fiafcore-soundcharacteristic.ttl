@@ -39,4 +39,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-# None
+<https://dev.fiafcore.org/hasSoundStandard>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Sound Standard"@en ;
+    dc:description "Express a specific sound process."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/SoundStandard> ;
+.
