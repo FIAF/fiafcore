@@ -31,7 +31,7 @@ The QLever indexing service can be run via Docker.
 docker run --rm -u $(id -u):$(id -g) -v /etc/localtime:/etc/localtime:ro --mount type=bind,src="$(pwd)",target=/index -w /index --name qlever.index.fiafcore --init --entrypoint bash docker.io/adfreiburg/qlever:latest -c 'cat fiafcore.nt | qlever-index -i fiafcore -s settings.json --vocabulary-type on-disk-compressed -F ttl -f - 2>&1 | tee fiafcore.index-log.txt'
 ```
 
-Once indexing is completed the QLever triplestore service can be deployed via Docker. For the current dataset (18,250,347 triples) the server (4GB of memory) crashes while indexing, but my local workstation (64GB of memory) processes in XXX minutes. This means that the workflow is to index the triples locally, and then move the index files to the server prior to launching the triplestore. 
+Once indexing is completed the QLever triplestore service can be deployed via Docker. For the current dataset (18,250,347 triples) the server (4GB of memory) consistently crashes while indexing, but my local workstation (64GB of memory) processes it fine in less than a minute. This means that the workflow is to index the triples locally, and then move the index files to the server prior to launching the triplestore. 
 
 ```sh
 docker run -d --restart=unless-stopped -u $(id -u):$(id -g) -v /etc/localtime:/etc/localtime:ro --mount type=bind,src="$(pwd)",target=/index -p 7019:7019 -w /index --name qlever.server.fiafcore --init --entrypoint bash docker.io/adfreiburg/qlever:latest -c 'qlever-server -i fiafcore -j 8 -p 7019 -m 5G -c 4G -e 2G -k 200 -s 30s -a fiafcore_7643543846_Mbtp5JXuTc9m > fiafcore.server-log.txt 2>&1'         
