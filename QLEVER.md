@@ -42,3 +42,59 @@ The service can be tested by running a basic SPARQL query.
 ```sh
 curl -s localhost:7019 -H "Accept: text/tab-separated-values" --data-urlencode query='SELECT * WHERE { ?s ?p ?o } LIMIT 10'
 ```
+
+Certbot can be used to grant the service a HTTPS certificate.
+
+```sh
+sudo certbot certonly --nginx --noninteractive --agree-tos -d data.fiafcore.org
+```
+
+Nginx can be configured with `sudo nano /etc/nginx/nginx.conf`. 
+
+```sh
+user  paulduchesne;
+worker_processes  1;
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+events {}
+
+http {
+    client_max_body_size 100M;
+    server {
+        listen 80;
+        server_name data.fiafcore.org;
+        return 301 https://$server_name$request_uri;
+    }
+    server {
+        listen 443 ssl;
+        server_name data.fiafcore.org;
+        ssl_certificate /etc/letsencrypt/live/data.fiafcore.org/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/data.fiafcore.org/privkey.pem;
+        ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers         HIGH:!aNULL:!MD5;
+        access_log /var/log/nginx/data.fiafcore.org.log;
+        location / {
+            proxy_pass http://127.0.0.1:7019;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-forwarded-host $host;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }  
+} 
+```
+
+The Nginx config can be tested with
+
+```sh
+sudo nginx -t  
+```
+
+The Nginx service can be reloaded with
+
+```sh
+sudo service nginx reload 
+```
+
+The service should now be accessible at https://data.fiafcore.org.
