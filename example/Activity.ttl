@@ -1,0 +1,7 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:blankNode2
+    a fiaf:CastMember ;
+    fiaf:hasAgent
+        <https://example.fiafcore.org/37101230-528d-4f14-b50b-e0127756b7fa> .

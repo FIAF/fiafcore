@@ -1,0 +1,23 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.fiafcore.org/732fce4e-9738-4501-bc5f-f9243db387af>
+    a fiaf:Item ;
+    rdfs:label "Metropolis Item" ;
+    fiaf:hasBase fiaf:PolyesterBase ;
+    fiaf:hasCarrier
+        <https://example.fiafcore.org/005ecbf8-1693-4986-8fef-43f55436dfe8> ;
+    fiaf:hasColourCharacteristic [ a fiaf:BlackAndWhite ] ;
+    fiaf:hasFormat fiaf:35mmFilm ;
+    fiaf:hasHoldingInstitution
+        <https://example.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0> ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority
+            <https://example.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0> ;
+        fiaf:hasIdentifierValue "482874" ] ;
+    fiaf:hasLanguageUsage [ a fiaf:Intertitles ;
+            fiaf:hasLanguage fiaf:German ] ;
+    fiaf:hasSoundCharacteristic [ a fiaf:Silent ] ;
+    fiaf:hasStatus fiaf:Preservation ;
+    fiaf:hasStock [ a fiaf:Agfa ] ;
+    fiaf:isElement fiaf:ReleasePrint .

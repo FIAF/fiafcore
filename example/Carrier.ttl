@@ -1,0 +1,10 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.fiafcore.org/005ecbf8-1693-4986-8fef-43f55436dfe8>
+    a fiaf:Carrier ;
+    rdfs:label "Metropolis Carrier" ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority
+            <https://example.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0> ;
+        fiaf:hasIdentifierValue "943602" ] .

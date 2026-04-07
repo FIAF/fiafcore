@@ -1,0 +1,8 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:blankNode1
+    a fiaf:ProductionEvent ;
+    rdfs:label "Metropolis Event" ;
+    fiaf:hasActivity _:blankNode2 ;
+    fiaf:hasDate "1924" .

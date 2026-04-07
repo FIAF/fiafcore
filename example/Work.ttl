@@ -1,0 +1,20 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.fiafcore.org/77566b79-9889-4772-adff-8640a0f6287e>
+    a fiaf:MonographicWork ;
+    rdfs:label "Metropolis" ;
+    fiaf:hasCountry fiaf:Germany ;
+    fiaf:hasEvent _:blankNode1 ;
+    fiaf:hasForm fiaf:FeatureFilm ;
+    fiaf:hasGenre fiaf:ScienceFictionFilm ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority
+            <https://example.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0> ;
+        fiaf:hasIdentifierValue "150041825" ] ;
+    fiaf:hasManifestation
+        <https://example.fiafcore.org/ede01e7e-3513-4d9c-bfac-a37e01785b22> ;
+    fiaf:hasTitle [ a fiaf:TitleProper ;
+            fiaf:hasTitleValue "Metropolis" ],
+        [ a fiaf:IdentifiyingTitle ;
+            fiaf:hasTitleValue "Metropolis (1925-1926)(Originaltitel)" ] .

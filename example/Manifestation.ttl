@@ -1,0 +1,17 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.fiafcore.org/ede01e7e-3513-4d9c-bfac-a37e01785b22>
+    a fiaf:Manifestation ;
+    rdfs:label "Metropolis Manifestation" ;
+    fiaf:hasColourCharacteristic [ a fiaf:BlackAndWhite ] ;
+    fiaf:hasFormat fiaf:35mmFilm ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority
+            <https://example.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0> ;
+        fiaf:hasIdentifierValue "365272" ] ;
+    fiaf:hasItem
+        <https://example.fiafcore.org/732fce4e-9738-4501-bc5f-f9243db387af> ;
+    fiaf:hasLanguageUsage [ a fiaf:Intertitles ;
+            fiaf:hasLanguage fiaf:German ] ;
+    fiaf:hasSoundCharacteristic [ a fiaf:Silent ] .
