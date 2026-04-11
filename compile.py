@@ -85,6 +85,18 @@ g += rdflib.Graph().parse(
     format="ttl",
 )
 
+# add labels for borrowed elements.
+
+g += rdflib.Graph().add((rdflib.DC.description, rdflib.RDFS.label, rdflib.Literal("Description")))
+g += rdflib.Graph().add((rdflib.DC.source, rdflib.RDFS.label, rdflib.Literal("Source")))
+g += rdflib.Graph().add((rdflib.OWL.Class, rdflib.RDFS.label, rdflib.Literal("Class")))
+g += rdflib.Graph().add((rdflib.OWL.DatatypeProperty, rdflib.RDFS.label, rdflib.Literal("Datatype Property")))
+g += rdflib.Graph().add((rdflib.OWL.ObjectProperty, rdflib.RDFS.label, rdflib.Literal("Object Property")))
+g += rdflib.Graph().add((rdflib.RDFS.domain, rdflib.RDFS.label, rdflib.Literal("Domain")))
+g += rdflib.Graph().add((rdflib.RDFS.label, rdflib.RDFS.label, rdflib.Literal("Label")))
+g += rdflib.Graph().add((rdflib.RDFS.range, rdflib.RDFS.label, rdflib.Literal("Range")))
+g += rdflib.Graph().add((rdflib.RDFS.subClassOf, rdflib.RDFS.label, rdflib.Literal("Subclass Of")))
+
 # write ontology graph to disk.
 
 g.serialize(destination=str(pathlib.Path.cwd() / "fiafcore.ttl"), format="longturtle")

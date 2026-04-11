@@ -5,6 +5,30 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+dc:description
+    rdfs:label "Description" ;
+.
+
+dc:source
+    rdfs:label "Source" ;
+.
+
+rdfs:domain
+    rdfs:label "Domain" ;
+.
+
+rdfs:label
+    rdfs:label "Label" ;
+.
+
+rdfs:range
+    rdfs:label "Range" ;
+.
+
+rdfs:subClassOf
+    rdfs:label "Subclass Of" ;
+.
+
 <https://dev.fiafcore.org/>
     a owl:Ontology ;
     dc:creator "FIAF Cataloguing and Documentation Commission" ;
@@ -6497,7 +6521,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description "Where known and applicable, record the geographic origin of the moving image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2032%3A57> ;
     rdfs:domain <https://dev.fiafcore.org/Work> ;
-    rdfs:range <https://vocabulary.fiafcore.org/Country> ;
+    rdfs:range <https://dev.fiafcore.org/Country> ;
 .
 
 <https://dev.fiafcore.org/hasDate>
@@ -6831,6 +6855,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dc:description "A collection of human beings, collaborating for commercial or artistic purposes."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
+.
+
+owl:DatatypeProperty
+    rdfs:label "Datatype Property" ;
 .
 
 <https://dev.fiafcore.org/Carrier>
@@ -7196,6 +7224,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+owl:ObjectProperty
+    rdfs:label "Object Property" ;
+.
+
 <https://dev.fiafcore.org/Genre>
     a owl:Class ;
     rdfs:label "Genre"@en ;
@@ -7212,4 +7244,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a owl:Class ;
     rdfs:label "Country"@en ;
     dc:description ""@en ;
+.
+
+owl:Class
+    rdfs:label "Class" ;
 .
