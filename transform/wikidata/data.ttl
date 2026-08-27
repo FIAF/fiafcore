@@ -1,11 +1,17 @@
 @prefix ns1: <https://dev.fiafcore.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://www.wikidata.org/wiki/Q151599> ns1:hasIdentifier [ ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
-            ns1:hasIdentifierValue "Q151599" ] .
+<https://www.wikidata.org/wiki/Q151599> ns1:hasIdentifier <wikidata://identifier/Q151599> .
 
-<https://www.wikidata.org/wiki/Q76813> ns1:hasIdentifier [ ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
-            ns1:hasIdentifierValue "Q76813" ] .
+<https://www.wikidata.org/wiki/Q76813> ns1:hasIdentifier <wikidata://identifier/Q76813> .
+
+<wikidata://identifier/Q151599> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q151599" .
+
+<wikidata://identifier/Q76813> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q76813" .
 
 <wikidata://resource/agent/wikidata> a ns1:Organisation ;
     rdfs:label "Wikidata" .

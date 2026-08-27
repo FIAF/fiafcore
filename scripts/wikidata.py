@@ -6,8 +6,8 @@ import pathlib
 import rdflib
 
 input = {
-    'fiaf':'https://dev.fiafcore.org/62010913-cfd4-43fd-9a00-6c52c17c7433',
-    'wd': 'https://www.wikidata.org/wiki/Q151599'
+    'fiaf':'https://dev.fiafcore.org/67374e03-1dd8-40a3-9ae7-4ab78e0dd1b3',
+    'wd': 'https://www.wikidata.org/wiki/Q76813'
 }
 
 # locate wikidata auth file.
@@ -40,22 +40,26 @@ triple_match = (
 g = rdflib.Graph().parse(wikidata_data)
 if not len([s for s,p,o in g.triples(triple_match)]):
 
-    bnode = rdflib.BNode()
-
     g.add((
         rdflib.URIRef(input['wd']),
         rdflib.URIRef('https://dev.fiafcore.org/hasIdentifier'),
-        bnode
+        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
     ))
 
     g.add((
-        bnode,
+        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
+        rdflib.RDF.type,
+        rdflib.URIRef('https://dev.fiafcore.org/Identifier')
+    ))
+
+    g.add((
+        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
         rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierAuthority'),
         rdflib.URIRef('wikidata://resource/agent/wikidata')
     ))
 
     g.add((
-        bnode,
+        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
         rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierValue'),
         rdflib.Literal(pathlib.Path(input['wd']).name)
     ))
