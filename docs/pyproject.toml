@@ -1,14 +1,10 @@
 [project]
-name = "fiafcore"
+name = "docs"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "rdflib>=7.1.4",
-]
-
-[tool.uv.workspace]
-members = [
-    "docs",
+    "flask>=3.1.3",
+    "python-dotenv>=1.2.3",
 ]
