@@ -9,7 +9,12 @@
 
 import dotenv
 import flask
+import json
 import os
+import pathlib
+import pyld
+import rdflib
+import requests
 
 # def pull_attribute(e, p, gr):
 
@@ -460,5 +465,140 @@ def home():
 
 
 
+
+
+
+
+def superclass():
+
+    """Predetermine superclasses for core child elements."""
+
+    ontology_path = pathlib.Path.cwd().parent / 'fiafcore.ttl'
+    if not ontology_path.exists():
+        raise Exception(f'{ontology_path} not found.')
+
+    ontology_graph = rdflib.Graph().parse(ontology_path)
+
+
+    query = """
+        prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        prefix fiaf: <https://dev.fiafcore.org/>
+        select ?parent ?child
+        where {
+            values ?parent { fiaf:Work fiaf:Variant fiaf:Manifestation fiaf:Item fiaf:Carrier fiaf:Agent }
+            ?child rdfs:subClassOf+ ?parent
+        }
+    """
+
+    result = dict([(row.child, row.parent) for row in ontology_graph.query(query)])
+    for entity_type in ['Work', 'Variant', 'Manifestation', 'Item', 'Carrier', 'Agent']:
+        entity_uri = rdflib.URIRef(f'https://dev.fiafcore.org/{entity_type}')
+        result[entity_uri] = entity_uri
+
+    return result
+
+superclass_lookup = superclass()
+
+@app.route('/<resource>', methods=['GET'])
+def entity(resource):
+
+    # convert to uri.
+
+    uri = f'https://dev.fiafcore.org/{resource}'
+
+    # determine if uri resolves within triplestore.
+
+    query = """
+        prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        select ?entity_type
+        where {
+            values ?entity { <"""+str(uri)+"""> }
+            ?entity rdf:type ?entity_type
+            } """
+
+    r = requests.post('https://data.fiafcore.org', data={'query': query})
+    if r.status_code != 200:
+        raise Exception(f'API {r.status_code}: {r.text}')
+
+    datum = r.json()['results']['bindings']
+    if not len(datum):
+        raise Exception(f'{uri} does not resolve in knowledge graph.')
+
+    # determine superclass of entity type.
+
+    entity_type = rdflib.URIRef(datum[0]['entity_type']['value'])
+    if entity_type not in superclass_lookup.keys():
+        raise Exception(f'{entity_type} not found in superclass lookup.')
+    superclass = superclass_lookup[entity_type]
+
+    if superclass == rdflib.URIRef('https://dev.fiafcore.org/Agent'):
+        shape = 'agent'
+    else:
+        raise Exception('Shape not detected.')
+
+
+    # route to appropriate shape and insert subject uri.
+
+    shape_path = pathlib.Path.cwd() / 'shapes' / f'{shape}.rq'
+    if not shape_path.exists():
+        raise Exception('{shape_path} not found.')
+
+    with open(shape_path) as construct:
+        construct = construct.read()
+        construct = construct.replace('SUBJECT_URI', f'<{uri}>')
+
+    # issue type specific sparql query to triplestore.
+
+    r = requests.post('https://data.fiafcore.org', data={'query': construct})
+    if r.status_code != 200:
+        raise Exception(f'API {r.status_code}: {r.text}')
+
+    # transform to json-ld.
+
+
+    test_frame = {
+        "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs" :"http://www.w3.org/2000/01/rdf-schema#",
+    "fiaf": "https://dev.fiafcore.org",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+
+
+
+
+    },
+    "@id": uri,
+
+    }
+
+
+    datum = rdflib.Graph().parse(data=r.text, format='ttl')
+    datum = json.loads(datum.serialize(format='json-ld'))
+    datum = pyld.jsonld.frame(datum, test_frame)
+
+
+
+    # raise Exception('@@', uri, len(datum), entity_type, superclass, datum, len(datum))
+
+
+    # okay so what are we doing here?
+    #
+    # 1. determine if uri resolves in triple store
+    #
+    # 2. superclass of item
+    #
+    # 3. construct based on superclass
+    #
+    # 4. json-ld frame
+    #
+    # 5. feed resulting json to template for plotting
+
+
+    return flask.render_template('entity.html', data=datum)
+
+
+
+
 if __name__ == "__main__":
-    app.run(debug=True, port=5030)
+    app.run(debug=True, port=5000)
