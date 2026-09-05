@@ -497,6 +497,28 @@ def superclass():
 
     return result
 
+
+
+
+def format_type(u, d):
+    new_types = list()
+    types = [x for x in d if x['@id'] == u]
+    if not len(types):
+        raise Exception(f'{u} not found.')
+    types = types[0]['@type']
+    for t in types:
+        print(t)
+        type_label = [x for x in d if x['@id'] == t]
+        print(type_label)
+        if not len(type_label):
+            raise Exception(f'{type_label} not found.')
+        type_label = type_label[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+        new_types.append({'id':t, 'label':type_label})
+
+    return new_types
+
+
+
 superclass_lookup = superclass()
 
 @app.route('/<resource>', methods=['GET'])
@@ -554,6 +576,26 @@ def entity(resource):
     if r.status_code != 200:
         raise Exception(f'API {r.status_code}: {r.text}')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     # transform to json-ld.
 
 
@@ -573,13 +615,12 @@ def entity(resource):
     }
 
 
+
     datum = rdflib.Graph().parse(data=r.text, format='ttl')
     datum = json.loads(datum.serialize(format='json-ld'))
-    datum = pyld.jsonld.frame(datum, test_frame)
+    payload = pyld.jsonld.frame(datum, test_frame)
+    payload['type'] = format_type(uri, datum)
 
-
-
-    # raise Exception('@@', uri, len(datum), entity_type, superclass, datum, len(datum))
 
 
     # okay so what are we doing here?
@@ -595,7 +636,7 @@ def entity(resource):
     # 5. feed resulting json to template for plotting
 
 
-    return flask.render_template('entity.html', data=datum)
+    return flask.render_template('entity.html', data=payload)
 
 
 
