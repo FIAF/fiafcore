@@ -498,8 +498,6 @@ def superclass():
     return result
 
 
-
-
 def format_type(u, d):
     new_types = list()
     types = [x for x in d if x['@id'] == u]
@@ -516,7 +514,6 @@ def format_type(u, d):
         new_types.append({'id':t, 'label':type_label})
 
     return new_types
-
 
 
 superclass_lookup = superclass()
@@ -576,69 +573,43 @@ def entity(resource):
     if r.status_code != 200:
         raise Exception(f'API {r.status_code}: {r.text}')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # transform to json-ld.
-
 
     test_frame = {
         "@context": {
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs" :"http://www.w3.org/2000/01/rdf-schema#",
-    "fiaf": "https://dev.fiafcore.org",
-    "label": "http://www.w3.org/2000/01/rdf-schema#label",
-
-
-
-
-    },
-    "@id": uri,
-
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs" :"http://www.w3.org/2000/01/rdf-schema#",
+            "fiaf": "https://dev.fiafcore.org",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            'hasIdentifier': 'https://dev.fiafcore.org/hasIdentifier',
+            'hasIdentifierAuthority': 'https://dev.fiafcore.org/hasIdentifierAuthority',
+            'hasIdentifierValue': 'https://dev.fiafcore.org/hasIdentifierValue',
+        },
+        "@id": uri,
+        "hasIdentifier": {
+            "hasIdentifierAuthority": {
+                "@embed": "@always"
+            }
+        }
     }
 
-
+    # apply transforms.
 
     datum = rdflib.Graph().parse(data=r.text, format='ttl')
     datum = json.loads(datum.serialize(format='json-ld'))
     payload = pyld.jsonld.frame(datum, test_frame)
     payload['type'] = format_type(uri, datum)
-
-
+    payload['id'] = pathlib.Path(payload['@id']).name
 
     # okay so what are we doing here?
     #
     # 1. determine if uri resolves in triple store
-    #
     # 2. superclass of item
-    #
     # 3. construct based on superclass
-    #
     # 4. json-ld frame
-    #
     # 5. feed resulting json to template for plotting
 
-
     return flask.render_template('entity.html', data=payload)
-
-
 
 
 if __name__ == "__main__":
