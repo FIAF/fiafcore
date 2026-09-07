@@ -1,0 +1,145 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix fiaf: <https://dev.fiafcore.org/>
+
+construct {
+
+  SUBJECT_URI rdfs:label ?label .
+  rdfs:label rdfs:label ?labelLabel .
+
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+
+  SUBJECT_URI fiaf:hasCountry ?country .
+  ?country rdfs:label ?countryLabel .
+  fiaf:hasCountry rdfs:label ?countryPropLabel .
+
+  SUBJECT_URI fiaf:hasEvent ?event .
+  fiaf:hasEvent rdfs:label ?eventPropLabel .
+  ?event rdf:type ?eventType .
+  ?eventType rdfs:label ?eventTypeLabel .
+
+  ?event fiaf:hasActivity ?activity .
+  fiaf:hasActivity rdfs:label ?activityPropLabel .
+  ?activity rdf:type ?activityType .
+  ?activityType rdfs:label ?activityTypeLabel .
+
+  ?activity fiaf:hasAgent ?agent .
+  ?agent rdfs:label ?agentLabel .
+  fiaf:hasAgent rdfs:label ?agentPropLabel .
+  ?agent rdf:type ?agentType .
+  ?agentType rdfs:label ?agentTypeLabel .
+
+  SUBJECT_URI fiaf:hasForm ?form .
+  ?form rdfs:label ?formLabel .
+  fiaf:hasForm rdfs:label ?formPropLabel .
+
+  SUBJECT_URI fiaf:hasGenre ?genre .
+  ?genre rdfs:label ?genreLabel .
+  fiaf:hasGenre rdfs:label ?genrePropLabel .
+
+  SUBJECT_URI fiaf:hasIdentifier ?identifier .
+  fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
+  ?identifier rdf:type ?identifierType .
+  ?identifierType rdfs:label ?identifierTypeLabel .
+  ?identifier fiaf:hasIdentifierValue ?identifierValue .
+  fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
+  ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+  fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
+  ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+
+  SUBJECT_URI fiaf:hasLanguageUsage ?languageUsage .
+  fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
+  ?languageUsage rdf:type ?languageUsageType .
+  ?languageUsageType rdfs:label ?languageUsageTypeLabel .
+  ?languageUsage fiaf:hasLanguage ?language .
+  fiaf:hasLanguage rdfs:label ?languagePropLabel .
+  ?language rdfs:label ?languageLabel .
+
+  SUBJECT_URI fiaf:hasManifestation ?manifestation .
+  ?manifestation rdfs:label ?manifestationLabel .
+  fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
+
+  SUBJECT_URI fiaf:hasTitle ?title .
+  fiaf:hasTitle rdfs:label ?titlePropLabel .
+  ?title rdf:type ?titleType .
+  ?titleType rdfs:label ?titleTypeLabel .
+  ?title fiaf:hasTitleValue ?titleValue .
+  fiaf:hasTitleValue rdfs:label ?titleValuePropLabel .
+
+}
+where {
+  optional {
+    SUBJECT_URI rdfs:label ?label .
+    rdfs:label rdfs:label ?labelLabel .
+  }
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+  optional {
+    SUBJECT_URI fiaf:hasCountry ?country .
+    ?country rdfs:label ?countryLabel .
+    fiaf:hasCountry rdfs:label ?countryPropLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasEvent ?event .
+    fiaf:hasEvent rdfs:label ?eventPropLabel .
+    ?event rdf:type ?eventType .
+    ?eventType rdfs:label ?eventTypeLabel .
+    optional {
+      ?event fiaf:hasActivity ?activity .
+      fiaf:hasActivity rdfs:label ?activityPropLabel .
+      ?activity rdf:type ?activityType .
+      ?activityType rdfs:label ?activityTypeLabel .
+      optional {
+        ?activity fiaf:hasAgent ?agent .
+        ?agent rdfs:label ?agentLabel .
+        fiaf:hasAgent rdfs:label ?agentPropLabel .
+        ?agent rdf:type ?agentType .
+        ?agentType rdfs:label ?agentTypeLabel .
+      }
+    }
+  }
+  optional {
+    SUBJECT_URI fiaf:hasForm ?form .
+    ?form rdfs:label ?formLabel .
+    fiaf:hasForm rdfs:label ?formPropLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasGenre ?genre .
+    ?genre rdfs:label ?genreLabel .
+    fiaf:hasGenre rdfs:label ?genrePropLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasIdentifier ?identifier .
+    fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
+    ?identifier rdf:type ?identifierType .
+    ?identifierType rdfs:label ?identifierTypeLabel .
+    ?identifier fiaf:hasIdentifierValue ?identifierValue .
+    fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
+    ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+    fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
+    ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasLanguageUsage ?languageUsage .
+    fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
+    ?languageUsage rdf:type ?languageUsageType .
+    ?languageUsageType rdfs:label ?languageUsageTypeLabel .
+    ?languageUsage fiaf:hasLanguage ?language .
+    fiaf:hasLanguage rdfs:label ?languagePropLabel .
+    ?language rdfs:label ?languageLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasManifestation ?manifestation .
+    ?manifestation rdfs:label ?manifestationLabel .
+    fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
+  }
+  optional {
+    SUBJECT_URI fiaf:hasTitle ?title .
+    fiaf:hasTitle rdfs:label ?titlePropLabel .
+    ?title rdf:type ?titleType .
+    ?titleType rdfs:label ?titleTypeLabel .
+    ?title fiaf:hasTitleValue ?titleValue .
+    fiaf:hasTitleValue rdfs:label ?titleValuePropLabel .
+  }
+}

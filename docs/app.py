@@ -499,13 +499,15 @@ def superclass():
 
 
 def format_type(u, d):
+    print('@@', u, d)
     new_types = list()
     types = [x for x in d if x['@id'] == u]
+    print('types', types)
     if not len(types):
         raise Exception(f'{u} not found.')
     types = types[0]['@type']
     for t in types:
-        print(t)
+        print('@@', t)
         type_label = [x for x in d if x['@id'] == t]
         print(type_label)
         if not len(type_label):
@@ -553,25 +555,31 @@ def entity(resource):
 
     if superclass == rdflib.URIRef('https://dev.fiafcore.org/Agent'):
         shape = 'agent'
+    elif superclass == rdflib.URIRef('https://dev.fiafcore.org/Work'):
+        shape = 'work'
     else:
-        raise Exception('Shape not detected.')
+        raise Exception(f'{superclass} shape not detected.')
 
 
     # route to appropriate shape and insert subject uri.
 
     shape_path = pathlib.Path.cwd() / 'shapes' / f'{shape}.rq'
     if not shape_path.exists():
-        raise Exception('{shape_path} not found.')
+        raise Exception(f'{shape_path} not found.')
 
     with open(shape_path) as construct:
         construct = construct.read()
         construct = construct.replace('SUBJECT_URI', f'<{uri}>')
+
+    print(construct)
 
     # issue type specific sparql query to triplestore.
 
     r = requests.post('https://data.fiafcore.org', data={'query': construct})
     if r.status_code != 200:
         raise Exception(f'API {r.status_code}: {r.text}')
+
+    print(r.text)
 
     # transform to json-ld.
 
@@ -584,22 +592,80 @@ def entity(resource):
             'hasIdentifier': 'https://dev.fiafcore.org/hasIdentifier',
             'hasIdentifierAuthority': 'https://dev.fiafcore.org/hasIdentifierAuthority',
             'hasIdentifierValue': 'https://dev.fiafcore.org/hasIdentifierValue',
+            'hasTitle': 'https://dev.fiafcore.org/hasTitle',
+            'hasTitleValue': 'https://dev.fiafcore.org/hasTitleValue',
+            'hasCountry': 'https://dev.fiafcore.org/hasCountry',
+            'hasForm': 'https://dev.fiafcore.org/hasForm',
+            'hasGenre': 'https://dev.fiafcore.org/hasGenre',
         },
         "@id": uri,
         "hasIdentifier": {
             "hasIdentifierAuthority": {
                 "@embed": "@always"
             }
+        },
+        "hasTitle": {
+
         }
     }
 
     # apply transforms.
 
     datum = rdflib.Graph().parse(data=r.text, format='ttl')
+    print('@@', datum.serialize(format='json-ld'))
     datum = json.loads(datum.serialize(format='json-ld'))
+    print('@@', datum)
     payload = pyld.jsonld.frame(datum, test_frame)
     payload['type'] = format_type(uri, datum)
     payload['id'] = pathlib.Path(payload['@id']).name
+
+    if type(payload['hasIdentifier']) is dict:
+        identifier_list = list()
+        identifier_list.append(payload['hasIdentifier'])
+        payload['hasIdentifier'] = identifier_list
+
+
+    if type(payload['hasCountry']) is dict:
+        identifier_list = list()
+        identifier_list.append(payload['hasCountry'])
+        payload['hasCountry'] = identifier_list
+
+    if 'hasForm' in payload.keys():
+        if type(payload['hasForm']) is dict:
+            identifier_list = list()
+            identifier_list.append(payload['hasForm'])
+            payload['hasForm'] = identifier_list
+
+
+    if 'hasGenre' in payload.keys():
+        if type(payload['hasGenre']) is dict:
+            identifier_list = list()
+            identifier_list.append(payload['hasGenre'])
+            payload['hasGenre'] = identifier_list
+
+
+    if 'hasTitle' in payload.keys():
+        if type(payload['hasTitle']) is dict:
+            identifier_list = list()
+            identifier_list.append(payload['hasTitle'])
+            payload['hasTitle'] = identifier_list
+
+
+    # add title type.
+
+
+    for x in payload['hasTitle']:
+        print('@@', x)
+        # title_type = x['@type']
+        match = [y for y in datum if y['@id'] == x['@type']]
+        if len(match):
+
+            match = match[0]
+            x['type'] = {'@id': match['@id'], 'label': match['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']}
+            # z = {}
+            # print('@@', match)
+
+
 
     # okay so what are we doing here?
     #
@@ -609,7 +675,7 @@ def entity(resource):
     # 4. json-ld frame
     # 5. feed resulting json to template for plotting
 
-    return flask.render_template('entity.html', data=payload)
+    return flask.render_template('entity.html', data=payload, d=datum)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,13 @@
-<!--hello {{ data }}-->
+
+<!--http://localhost:5000/002632e1-75ea-4ae8-b211-dae73dd38779-->
+<!--http://localhost:5000/a54ec8e3-5372-491f-8b12-d29219f87a75-->
+
+hello {{ data }}
 
 <h1>
+    {% if data.label %}
     {{ data.label.0 }}
+    {% endif %}
     [<a href="{{ data.type.0.id }}">{{ data.type.0.label }}</a>]
 </h1>
 
@@ -11,8 +17,66 @@ fiaf: < {{ data.id}}   >
 <br>
 <br>
 
-{% for x in data.hasIdentifier %}
+{% for x in data.hasTitle %}
+<a href="https://dev.fiafcore.org/hasTitle">
+    Has Title:
+</a>
+{{ x.hasTitleValue }} [
 
+<a href="{{ x.type['@id'] }}">
+    {{ x.type.label }}
+</a>]
+<br>
+{% endfor %}
+
+
+<br>
+<br>
+
+{% for x in data.hasCountry %}
+<a href="https://dev.fiafcore.org/hasCountry">
+    Has Country:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}
+
+
+<br>
+<br>
+
+{% for x in data.hasForm %}
+<a href="https://dev.fiafcore.org/hasForm">
+    Has Form:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}
+
+
+<br>
+<br>
+
+{% for x in data.hasGenre %}
+<a href="https://dev.fiafcore.org/hasGenre">
+    Has Genre:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}
+
+
+<br>
+<br>
+
+
+{% for x in data.hasIdentifier %}
 <a href="https://dev.fiafcore.org/hasIdentifier">
     Has Identifier:
 </a>
@@ -21,5 +85,7 @@ fiaf: < {{ data.id}}   >
     {{ x.hasIdentifierAuthority.label }}
 </a>]
 <br>
-
 {% endfor %}
+
+
+{{ d }}
