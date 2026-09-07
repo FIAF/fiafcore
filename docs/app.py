@@ -596,7 +596,11 @@ def entity(resource):
             'hasTitleValue': 'https://dev.fiafcore.org/hasTitleValue',
             'hasCountry': 'https://dev.fiafcore.org/hasCountry',
             'hasForm': 'https://dev.fiafcore.org/hasForm',
+            'hasEvent': 'https://dev.fiafcore.org/hasEvent',
             'hasGenre': 'https://dev.fiafcore.org/hasGenre',
+            'hasActivity': 'https://dev.fiafcore.org/hasActivity',
+            'hasAgent': 'https://dev.fiafcore.org/hasAgent',
+
         },
         "@id": uri,
         "hasIdentifier": {
@@ -604,9 +608,7 @@ def entity(resource):
                 "@embed": "@always"
             }
         },
-        "hasTitle": {
 
-        }
     }
 
     # apply transforms.
@@ -624,11 +626,11 @@ def entity(resource):
         identifier_list.append(payload['hasIdentifier'])
         payload['hasIdentifier'] = identifier_list
 
-
-    if type(payload['hasCountry']) is dict:
-        identifier_list = list()
-        identifier_list.append(payload['hasCountry'])
-        payload['hasCountry'] = identifier_list
+    if 'hasCountry' in payload.keys():
+        if type(payload['hasCountry']) is dict:
+            identifier_list = list()
+            identifier_list.append(payload['hasCountry'])
+            payload['hasCountry'] = identifier_list
 
     if 'hasForm' in payload.keys():
         if type(payload['hasForm']) is dict:
@@ -651,19 +653,52 @@ def entity(resource):
             payload['hasTitle'] = identifier_list
 
 
+
+
+    if 'hasEvent' in payload.keys():
+        if type(payload['hasEvent']) is dict:
+            identifier_list = list()
+            identifier_list.append(payload['hasEvent'])
+            payload['hasEvent'] = identifier_list
+
+
     # add title type.
 
+    if 'hasTitle' in payload.keys():
+        for x in payload['hasTitle']:
+            print('@@', x)
+            # title_type = x['@type']
+            match = [y for y in datum if y['@id'] == x['@type']]
+            if len(match):
 
-    for x in payload['hasTitle']:
-        print('@@', x)
-        # title_type = x['@type']
-        match = [y for y in datum if y['@id'] == x['@type']]
-        if len(match):
+                match = match[0]
+                x['type'] = {'@id': match['@id'], 'label': match['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']}
+                # z = {}
+                # print('@@', match)
 
-            match = match[0]
-            x['type'] = {'@id': match['@id'], 'label': match['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']}
-            # z = {}
-            # print('@@', match)
+
+
+    # you need to update this so that it returns, instead of "@type", "type" with {"id":..., "label":...}
+
+    if 'hasEvent' in payload.keys():
+        for x in payload['hasEvent']:
+            match = [y for y in datum if y['@id'] == x['@type']]
+            # print('&&&', match)
+            if match:
+                x['type_label'] = match[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+
+            if 'hasActivity' in x.keys():
+                for y in x['hasActivity']:
+                    match2 = [z for z in datum if z['@id'] == y['@type']]
+                    if len(match2):
+                        match2 = match2[0]
+                        match2['label'] = match2['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+                        y['type'] = match2
+
+
+                    print('%%%', y)
+
+
 
 
 

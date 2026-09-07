@@ -1,4 +1,4 @@
-
+<meta charset="UTF-8">
 <!--http://localhost:5000/002632e1-75ea-4ae8-b211-dae73dd38779-->
 <!--http://localhost:5000/a54ec8e3-5372-491f-8b12-d29219f87a75-->
 
@@ -75,6 +75,51 @@ fiaf: < {{ data.id}}   >
 <br>
 <br>
 
+<br>
+<br>
+
+
+
+{% for x in data.hasEvent %}
+<a href="https://dev.fiafcore.org/hasEvent">
+    Has Event:
+</a>
+Event [
+
+<a href="{{ x['@id'] }}">
+    {{ x.type_label }}
+</a>]
+<br>
+
+
+{% for y in x.hasActivity %}
+
+<!--^^ {{ y }}<br>-->
+<a href="{{ y['hasAgent']['@id']}}">
+{{y.hasAgent.label}}
+</a>
+
+[
+
+<a href="{{ y['type']['@id'] }}">
+    {{ y['type']['label'] }}
+</a>]
+
+
+
+
+
+<br>
+
+{% endfor %}
+
+
+
+{% endfor %}
+
+
+<br>
+<br>
 
 {% for x in data.hasIdentifier %}
 <a href="https://dev.fiafcore.org/hasIdentifier">
@@ -88,4 +133,4 @@ fiaf: < {{ data.id}}   >
 {% endfor %}
 
 
-{{ d }}
+<!--{{ d }}-->
