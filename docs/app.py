@@ -629,54 +629,101 @@ def entity(resource):
 
     # ensure all expected values are expanded to arrays.
 
-    if type(pydash.get(payload, '@type')) != list:
-        pydash.set_(payload, '@type', [pydash.get(payload, '@type')])
 
-    if type(pydash.get(payload, 'hasCountry')) != list:
-        pydash.set_(payload, 'hasCountry', [pydash.get(payload, 'hasCountry')])
+    for x in [
+        '@type',
+        'hasCountry',
+        'hasEvent',
+        'hasGenre',
+        'hasIdentifier',
+        'hasManifestation'
+    ]:
+        if type(pydash.get(payload, x)) is not list:
+            pydash.set_(payload, x, [pydash.get(payload, x)])
 
-    if type(pydash.get(payload, 'hasEvent')) != list:
-        pydash.set_(payload, 'hasEvent', [pydash.get(payload, 'hasEvent')])
+    for a in pydash.get(payload, 'hasEvent'):
+        if type(pydash.get(a, '@type')) is not list:
+            pydash.set_(a, '@type', [pydash.get(a, '@type')])
 
+        for b in pydash.get(a, 'hasActivity'):
+            if type(pydash.get(b, '@type')) is not list:
+                pydash.set_(b, '@type', [pydash.get(b, '@type')])
 
+            if type(pydash.get(b, 'hasAgent.@type')) is not list:
+                pydash.set_(b, 'hasAgent.@type', [pydash.get(b, 'hasAgent.@type')])
+            if type(pydash.get(b, 'hasAgent.label')) is not list:
+                pydash.set_(b, 'hasAgent.label', [pydash.get(b, 'hasAgent.label')])
 
+    for a in pydash.get(payload, 'hasTitle'):
+        if type(pydash.get(a, '@type')) is not list:
+            pydash.set_(a, '@type', [pydash.get(a, '@type')])
 
-    # if type(pydash.get(payload, 'hasEvent.@type')) != list:
-    #     pydash.set_(payload, 'hasEvent.@type', [pydash.get(payload, 'hasEvent.@type')])
+    for a in pydash.get(payload, 'hasManifestation'):
+        if type(pydash.get(a, '@type')) is not list:
+            pydash.set_(a, '@type', [pydash.get(a, '@type')])
 
-    # for x in pydash.get(payload, 'hasEvent.hasActivity'):
-    #     if type(pydash.get(x, '@type')) != list:
-    #         pydash.set_(x, '@type', [pydash.get(x, '@type')])
+        if type(pydash.get(a, 'hasColourCharacteristic')) is not list:
+            pydash.set_(a, 'hasColourCharacteristic', [pydash.get(a, 'hasColourCharacteristic')])
+        for b in pydash.get(a, 'hasColourCharacteristic'):
+            if type(pydash.get(b, '@type')) is not list:
+                pydash.set_(b, '@type', [pydash.get(b, '@type')])
 
-
-    # for x in pydash.get(payload, 'hasEvent.hasActivity'):
-    #     if type(pydash.get(x, 'hasAgent.@type')) != list:
-    #         pydash.set_(x, 'hasAgent.@type', [pydash.get(x, 'hasAgent.@type')])
-
-    #     if type(pydash.get(x, 'hasAgent.label')) != list:
-    #         pydash.set_(x, 'hasAgent.label', [pydash.get(x, 'hasAgent.label')])
-
-
-    # if type(pydash.get(payload, 'hasManifestation.@type')) != list:
-    #     pydash.set_(payload, 'hasManifestation.@type', [pydash.get(payload, 'hasManifestation.@type')])
-
-
-
-
-   # "hasManifestation": {
-   #     "@id": "https://dev.fiafcore.org/9e08a8ef-a92c-450d-bc41-d056b4c665c1",
-   #     "@type": "https://dev.fiafcore.org/Manifestation",
-   #     "hasColourCharacteristic": {
-   #         "@type": "https://dev.fiafcore.org/BlackAndWhite"
-   #     },
-
-# "hasEvent": {
-#     "@type": "https://dev.fiafcore.org/ProductionEvent",
-#     "hasActivity": [
-#         {
-
+        if type(pydash.get(a, 'hasSoundCharacteristic')) is not list:
+            pydash.set_(a, 'hasSoundCharacteristic', [pydash.get(a, 'hasSoundCharacteristic')])
+        for b in pydash.get(a, 'hasSoundCharacteristic'):
+            if type(pydash.get(b, '@type')) is not list:
+                pydash.set_(b, '@type', [pydash.get(b, '@type')])
 
 
+
+
+
+
+    # replace all types with existing defintions.
+
+    for i,x in enumerate(payload['@type']):
+        match = [y for y in datum if y['@id'] == x]
+        if not len(match):
+            raise Exception('Match not found.')
+
+        payload['@type'][i] = match[0]
+        # x = match[0]
+        # print(x)
+
+    for i,x in enumerate(payload['hasEvent']):
+        for j,y in enumerate(x['@type']):
+            match = [z for z in datum if z['@id'] == y]
+            if not len(match):
+                raise Exception('Match not found.')
+            payload['hasEvent'][i]['@type'][j] = match[0]
+
+
+    for i,x in enumerate(payload['hasEvent']):
+        for j,y in enumerate(x['hasActivity']):
+            for k,z in enumerate(y['@type']):
+                match = [a for a in datum if a['@id'] == z]
+                if not len(match):
+                    raise Exception(f'Match not found for {z}.')
+                payload['hasEvent'][i]['hasActivity'][j]['@type'][k] = match[0]
+
+            # print('@@', y.keys())
+            tt = y['hasAgent']
+            print('@@', y.keys(), tt)
+    #         print('tt', tt)
+    #         for k, z in enumerate(tt['@type']):
+    #             match = [b for b in datum if b['@id'] == z]
+    #             if not len(match):
+    #                 raise Exception(f'Match not found for {z}.')
+
+
+    # #                 payload['hasEvent'][i]['hasActivity'][j]['hasAgent']['@type'][k] = match[0]
+
+
+
+
+
+       # x = match[0]
+       # print(x)
 
 
     with open(pathlib.Path.cwd() / 'temp.json', 'w') as temp_save:

@@ -7,19 +7,19 @@
 
 hello {{ data }}
 
-<h1>
+<!--<h1>
     {% if data.label %}
     {{ data.label.0 }}
     {% endif %}
     [<a href="{{ data.type.0.id }}">{{ data.type.0.label }}</a>]
-</h1>
+</h1>-->
 
 
-fiaf: < {{ data.id}}   >
+<!--fiaf: < {{ data.id}}   >-->
 
 <br>
 <br>
-
+<!--
 {% for x in data.hasTitle %}
 <a href="https://dev.fiafcore.org/hasTitle">
     Has Title:
@@ -31,11 +31,11 @@ fiaf: < {{ data.id}}   >
 </a>]
 <br>
 {% endfor %}
-
+-->
 
 <br>
 <br>
-
+<!--
 {% for x in data.hasCountry %}
 <a href="https://dev.fiafcore.org/hasCountry">
     Has Country:
@@ -44,13 +44,13 @@ fiaf: < {{ data.id}}   >
     {{ x.label['@value'] }}
 </a>
 <br>
-{% endfor %}
+{% endfor %}-->
 
 
 <br>
 <br>
 
-{% for x in data.hasForm %}
+<!--{% for x in data.hasForm %}
 <a href="https://dev.fiafcore.org/hasForm">
     Has Form:
 </a>
@@ -58,13 +58,13 @@ fiaf: < {{ data.id}}   >
     {{ x.label['@value'] }}
 </a>
 <br>
-{% endfor %}
+{% endfor %}-->
 
 
 <br>
 <br>
 
-{% for x in data.hasGenre %}
+<!--{% for x in data.hasGenre %}
 <a href="https://dev.fiafcore.org/hasGenre">
     Has Genre:
 </a>
@@ -72,7 +72,7 @@ fiaf: < {{ data.id}}   >
     {{ x.label['@value'] }}
 </a>
 <br>
-{% endfor %}
+{% endfor %}-->
 
 
 <br>
@@ -83,7 +83,7 @@ fiaf: < {{ data.id}}   >
 
 
 
-{% for x in data.hasEvent %}
+<!--{% for x in data.hasEvent %}
 <a href="https://dev.fiafcore.org/hasEvent">
     Has Event:
 </a>
@@ -95,10 +95,10 @@ Event [
 <br>
 
 
-{% for y in x.hasActivity %}
+{% for y in x.hasActivity %}-->
 
 <!--^^ {{ y }}<br>-->
-<a href="{{ y['hasAgent']['@id']}}">
+<!--<a href="{{ y['hasAgent']['@id']}}">
 {{y.hasAgent.label}}
 </a>
 
@@ -118,13 +118,13 @@ Event [
 
 
 
-{% endfor %}
+{% endfor %}-->
 
 
 <br>
 <br>
 
-{% for x in data.hasManifestation %}
+<!--{% for x in data.hasManifestation %}
 <a href="https://dev.fiafcore.org/hasManifestation">
     Has Manifestation:
 </a>
@@ -132,11 +132,11 @@ Event [
  [
 <a href="{{ x['@type'] }}">
     {{ x.type_label }}
-</a>]
+</a>]-->
 
 <br>
 
-{% for y in x.hasColourCharacteristic %}
+<!--{% for y in x.hasColourCharacteristic %}
 <a href="https://dev.fiafcore.org/hasColourCharacteristic">
     Has ColourCharacteristic:
 </a>
@@ -144,7 +144,7 @@ Event [
     {{ y.label['@value'] }}
 </a>
 <br>
-{% endfor %}
+{% endfor %}-->
 
 
     <br>
@@ -154,13 +154,13 @@ Event [
 
 
 <br>
-{% endfor %}
+<!--{% endfor %}-->
 
 
 <br>
 <br>
 
-{% for x in data.hasIdentifier %}
+<!--{% for x in data.hasIdentifier %}
 <a href="https://dev.fiafcore.org/hasIdentifier">
     Has Identifier:
 </a>
@@ -169,7 +169,7 @@ Event [
     {{ x.hasIdentifierAuthority.label }}
 </a>]
 <br>
-{% endfor %}
+{% endfor %}-->
 
 
 {{ d }}
