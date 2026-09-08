@@ -60,6 +60,49 @@ construct {
   ?manifestation rdfs:label ?manifestationLabel .
   fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
 
+
+  ?manifestation rdf:type ?manifestationType .
+  ?manifestationType rdfs:label ?manifestationTypeLabel .
+
+  ?manifestation fiaf:hasColourCharacteristic ?colourCharacteristic .
+  fiaf:hasColourCharacteristic rdfs:label ?colourCharacteristicPropLabel .
+  ?colourCharacteristic rdf:type ?colourCharacteristicType .
+  ?colourCharacteristicType rdfs:label ?colourCharacteristicTypeLabel .
+
+  ?colourCharacteristic fiaf:hasColourStandard ?colourStandard .
+  fiaf:hasColourStandard rdfs:label ?colourStandardPropLabel .
+  ?colourStandard rdf:type ?colourStandardType .
+  ?colourStandardType rdfs:label ?colourStandardTypeLabel .
+
+  ?manifestation fiaf:hasFormat ?format .
+  ?format rdfs:label ?formatLabel .
+  fiaf:hasFormat rdfs:label ?formatPropLabel .
+
+
+  ?manifestation fiaf:hasItem ?item .
+  ?item rdfs:label ?itemLabel .
+  fiaf:hasItem rdfs:label ?itemPropLabel .
+
+  ?manifestation fiaf:hasLanguageUsage ?languageUsage .
+  fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
+  ?languageUsage rdf:type ?languageUsageType .
+  ?languageUsageType rdfs:label ?languageUsageTypeLabel .
+  ?languageUsage fiaf:hasLanguage ?language .
+  fiaf:hasLanguage rdfs:label ?languagePropLabel .
+  ?language rdfs:label ?languageLabel .
+
+  ?manifestation fiaf:hasSoundCharacteristic ?soundCharacteristic .
+  fiaf:hasSoundCharacteristic rdfs:label ?soundCharacteristicPropLabel .
+  ?soundCharacteristic rdf:type ?soundCharacteristicType .
+  ?soundCharacteristicType rdfs:label ?soundCharacteristicTypeLabel .
+
+  ?soundCharacteristic fiaf:hasSoundStandard ?soundStandard .
+  fiaf:hasSoundStandard rdfs:label ?soundStandardPropLabel .
+  ?soundStandard rdf:type ?soundStandardType .
+  ?soundStandardType rdfs:label ?soundStandardTypeLabel .
+
+
+
   SUBJECT_URI fiaf:hasTitle ?title .
   fiaf:hasTitle rdfs:label ?titlePropLabel .
   ?title rdf:type ?titleType .
@@ -131,8 +174,64 @@ where {
   }
   optional {
     SUBJECT_URI fiaf:hasManifestation ?manifestation .
-    ?manifestation rdfs:label ?manifestationLabel .
+    optional {
+        ?manifestation rdfs:label ?manifestationLabel .
+    }
     fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
+
+    optional {
+        ?manifestation rdf:type ?manifestationType .
+        ?manifestationType rdfs:label ?manifestationTypeLabel .
+    }
+
+
+
+
+  optional {
+    ?manifestation fiaf:hasColourCharacteristic ?colourCharacteristic .
+    fiaf:hasColourCharacteristic rdfs:label ?colourCharacteristicPropLabel .
+    ?colourCharacteristic rdf:type ?colourCharacteristicType .
+    ?colourCharacteristicType rdfs:label ?colourCharacteristicTypeLabel .
+    optional{
+      ?colourCharacteristic fiaf:hasColourStandard ?colourStandard .
+      fiaf:hasColourStandard rdfs:label ?colourStandardPropLabel .
+      ?colourStandard rdf:type ?colourStandardType .
+      ?colourStandardType rdfs:label ?colourStandardTypeLabel .
+    }
+  }
+  optional {
+    ?manifestation fiaf:hasFormat ?format .
+    ?format rdfs:label ?formatLabel .
+    fiaf:hasFormat rdfs:label ?formatPropLabel .
+  }
+
+  optional {
+    ?manifestation fiaf:hasItem ?item .
+    ?item rdfs:label ?itemLabel .
+    fiaf:hasItem rdfs:label ?itemPropLabel .
+  }
+  optional {
+    ?manifestation fiaf:hasLanguageUsage ?languageUsage .
+    fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
+    ?languageUsage rdf:type ?languageUsageType .
+    ?languageUsageType rdfs:label ?languageUsageTypeLabel .
+    ?languageUsage fiaf:hasLanguage ?language .
+    fiaf:hasLanguage rdfs:label ?languagePropLabel .
+    ?language rdfs:label ?languageLabel .
+  }
+  optional {
+    ?manifestation fiaf:hasSoundCharacteristic ?soundCharacteristic .
+    fiaf:hasSoundCharacteristic rdfs:label ?soundCharacteristicPropLabel .
+    ?soundCharacteristic rdf:type ?soundCharacteristicType .
+    ?soundCharacteristicType rdfs:label ?soundCharacteristicTypeLabel .
+    optional{
+      ?soundCharacteristic fiaf:hasSoundStandard ?soundStandard .
+      fiaf:hasSoundStandard rdfs:label ?soundStandardPropLabel .
+      ?soundStandard rdf:type ?soundStandardType .
+      ?soundStandardType rdfs:label ?soundStandardTypeLabel .
+    }
+  }
+
   }
   optional {
     SUBJECT_URI fiaf:hasTitle ?title .
@@ -142,4 +241,9 @@ where {
     ?title fiaf:hasTitleValue ?titleValue .
     fiaf:hasTitleValue rdfs:label ?titleValuePropLabel .
   }
+
+
+
+
+
 }

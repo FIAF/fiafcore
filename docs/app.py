@@ -12,6 +12,7 @@ import flask
 import json
 import os
 import pathlib
+import pydash
 import pyld
 import rdflib
 import requests
@@ -499,17 +500,17 @@ def superclass():
 
 
 def format_type(u, d):
-    print('@@', u, d)
+    # print('@@', u, d)
     new_types = list()
     types = [x for x in d if x['@id'] == u]
-    print('types', types)
+    # print('types', types)
     if not len(types):
         raise Exception(f'{u} not found.')
     types = types[0]['@type']
     for t in types:
-        print('@@', t)
+        # print('@@', t)
         type_label = [x for x in d if x['@id'] == t]
-        print(type_label)
+        # print(type_label)
         if not len(type_label):
             raise Exception(f'{type_label} not found.')
         type_label = type_label[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
@@ -571,7 +572,7 @@ def entity(resource):
         construct = construct.read()
         construct = construct.replace('SUBJECT_URI', f'<{uri}>')
 
-    print(construct)
+    # print(construct)
 
     # issue type specific sparql query to triplestore.
 
@@ -579,7 +580,7 @@ def entity(resource):
     if r.status_code != 200:
         raise Exception(f'API {r.status_code}: {r.text}')
 
-    print(r.text)
+    # print(r.text)
 
     # transform to json-ld.
 
@@ -600,11 +601,20 @@ def entity(resource):
             'hasGenre': 'https://dev.fiafcore.org/hasGenre',
             'hasActivity': 'https://dev.fiafcore.org/hasActivity',
             'hasAgent': 'https://dev.fiafcore.org/hasAgent',
+            'hasManifestation': 'https://dev.fiafcore.org/hasManifestation',
+            'hasColourCharacteristic': 'https://dev.fiafcore.org/hasColourCharacteristic',
+            'hasFormat': 'https://dev.fiafcore.org/hasFormat',
+            'hasSoundCharacteristic': 'https://dev.fiafcore.org/hasSoundCharacteristic',
 
         },
         "@id": uri,
         "hasIdentifier": {
             "hasIdentifierAuthority": {
+                "@embed": "@always"
+            }
+        },
+        "hasManifestation": {
+            "hasFormat": {
                 "@embed": "@always"
             }
         },
@@ -614,93 +624,166 @@ def entity(resource):
     # apply transforms.
 
     datum = rdflib.Graph().parse(data=r.text, format='ttl')
-    print('@@', datum.serialize(format='json-ld'))
     datum = json.loads(datum.serialize(format='json-ld'))
-    print('@@', datum)
     payload = pyld.jsonld.frame(datum, test_frame)
-    payload['type'] = format_type(uri, datum)
-    payload['id'] = pathlib.Path(payload['@id']).name
 
-    if type(payload['hasIdentifier']) is dict:
-        identifier_list = list()
-        identifier_list.append(payload['hasIdentifier'])
-        payload['hasIdentifier'] = identifier_list
+    # ensure all expected values are expanded to arrays.
 
-    if 'hasCountry' in payload.keys():
-        if type(payload['hasCountry']) is dict:
-            identifier_list = list()
-            identifier_list.append(payload['hasCountry'])
-            payload['hasCountry'] = identifier_list
+    if type(pydash.get(payload, '@type')) != list:
+        pydash.set_(payload, '@type', [pydash.get(payload, '@type')])
 
-    if 'hasForm' in payload.keys():
-        if type(payload['hasForm']) is dict:
-            identifier_list = list()
-            identifier_list.append(payload['hasForm'])
-            payload['hasForm'] = identifier_list
+    if type(pydash.get(payload, 'hasCountry')) != list:
+        pydash.set_(payload, 'hasCountry', [pydash.get(payload, 'hasCountry')])
 
-
-    if 'hasGenre' in payload.keys():
-        if type(payload['hasGenre']) is dict:
-            identifier_list = list()
-            identifier_list.append(payload['hasGenre'])
-            payload['hasGenre'] = identifier_list
-
-
-    if 'hasTitle' in payload.keys():
-        if type(payload['hasTitle']) is dict:
-            identifier_list = list()
-            identifier_list.append(payload['hasTitle'])
-            payload['hasTitle'] = identifier_list
+    if type(pydash.get(payload, 'hasEvent')) != list:
+        pydash.set_(payload, 'hasEvent', [pydash.get(payload, 'hasEvent')])
 
 
 
 
-    if 'hasEvent' in payload.keys():
-        if type(payload['hasEvent']) is dict:
-            identifier_list = list()
-            identifier_list.append(payload['hasEvent'])
-            payload['hasEvent'] = identifier_list
+    # if type(pydash.get(payload, 'hasEvent.@type')) != list:
+    #     pydash.set_(payload, 'hasEvent.@type', [pydash.get(payload, 'hasEvent.@type')])
+
+    # for x in pydash.get(payload, 'hasEvent.hasActivity'):
+    #     if type(pydash.get(x, '@type')) != list:
+    #         pydash.set_(x, '@type', [pydash.get(x, '@type')])
 
 
-    # add title type.
+    # for x in pydash.get(payload, 'hasEvent.hasActivity'):
+    #     if type(pydash.get(x, 'hasAgent.@type')) != list:
+    #         pydash.set_(x, 'hasAgent.@type', [pydash.get(x, 'hasAgent.@type')])
 
-    if 'hasTitle' in payload.keys():
-        for x in payload['hasTitle']:
-            print('@@', x)
-            # title_type = x['@type']
-            match = [y for y in datum if y['@id'] == x['@type']]
-            if len(match):
-
-                match = match[0]
-                x['type'] = {'@id': match['@id'], 'label': match['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']}
-                # z = {}
-                # print('@@', match)
+    #     if type(pydash.get(x, 'hasAgent.label')) != list:
+    #         pydash.set_(x, 'hasAgent.label', [pydash.get(x, 'hasAgent.label')])
 
 
-
-    # you need to update this so that it returns, instead of "@type", "type" with {"id":..., "label":...}
-
-    if 'hasEvent' in payload.keys():
-        for x in payload['hasEvent']:
-            match = [y for y in datum if y['@id'] == x['@type']]
-            # print('&&&', match)
-            if match:
-                x['type_label'] = match[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
-
-            if 'hasActivity' in x.keys():
-                for y in x['hasActivity']:
-                    match2 = [z for z in datum if z['@id'] == y['@type']]
-                    if len(match2):
-                        match2 = match2[0]
-                        match2['label'] = match2['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
-                        y['type'] = match2
-
-
-                    print('%%%', y)
+    # if type(pydash.get(payload, 'hasManifestation.@type')) != list:
+    #     pydash.set_(payload, 'hasManifestation.@type', [pydash.get(payload, 'hasManifestation.@type')])
 
 
 
 
+   # "hasManifestation": {
+   #     "@id": "https://dev.fiafcore.org/9e08a8ef-a92c-450d-bc41-d056b4c665c1",
+   #     "@type": "https://dev.fiafcore.org/Manifestation",
+   #     "hasColourCharacteristic": {
+   #         "@type": "https://dev.fiafcore.org/BlackAndWhite"
+   #     },
+
+# "hasEvent": {
+#     "@type": "https://dev.fiafcore.org/ProductionEvent",
+#     "hasActivity": [
+#         {
+
+
+
+
+
+    with open(pathlib.Path.cwd() / 'temp.json', 'w') as temp_save:
+        json.dump(payload, temp_save, ensure_ascii=False, indent=4)
+
+
+
+
+
+
+
+
+    # payload['type'] = format_type(uri, datum)
+    # payload['id'] = pathlib.Path(payload['@id']).name
+
+    # def ensure_arrary(data, key):
+    #     if key in data.keys():
+    #         if type(data[key]) is dict:
+    #             # identifier_list = list()
+    #             # identifier_list.append(payload['hasCountry'])
+    #             data[key] = [data[key]]
+
+    #     return data
+
+
+    # payload = ensure_arrary(payload, 'hasIdentifier')
+    # payload = ensure_arrary(payload, 'hasCountry')
+    # payload = ensure_arrary(payload, 'hasForm')
+    # payload = ensure_arrary(payload, 'hasGenre')
+    # payload = ensure_arrary(payload, 'hasTitle')
+    # payload = ensure_arrary(payload, 'hasEvent')
+    # payload = ensure_arrary(payload, 'hasManifestation')
+
+
+
+
+
+    # # add title type.
+
+    # if 'hasTitle' in payload.keys():
+    #     for x in payload['hasTitle']:
+    #         # print('@@', x)
+    #         # title_type = x['@type']
+    #         match = [y for y in datum if y['@id'] == x['@type']]
+    #         if len(match):
+
+    #             match = match[0]
+    #             x['type'] = {'@id': match['@id'], 'label': match['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']}
+    #             # z = {}
+    #             # print('@@', match)
+
+
+
+    # # you need to update this so that it returns, instead of "@type", "type" with {"id":..., "label":...}
+
+    # if 'hasEvent' in payload.keys():
+    #     for x in payload['hasEvent']:
+    #         match = [y for y in datum if y['@id'] == x['@type']]
+    #         # print('&&&', match)
+    #         if match:
+    #             x['type_label'] = match[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+
+    #         if 'hasActivity' in x.keys():
+    #             for y in x['hasActivity']:
+    #                 match2 = [z for z in datum if z['@id'] == y['@type']]
+    #                 if len(match2):
+    #                     match2 = match2[0]
+    #                     match2['label'] = match2['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+    #                     y['type'] = match2
+
+
+    #                 # print('%%%', y)
+
+
+
+    # if 'hasManifestation' in payload.keys():
+    #     for x in payload['hasManifestation']:
+    #         match = [y for y in datum if y['@id'] == x['@type']]
+    #         # print('&&&', match)
+    #         if match:
+    #             x['type_label'] = match[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value']
+
+
+
+
+    # # Okay I want to do a switch for manifestation sound type.
+
+    # if 'hasManifestation' in payload.keys():
+    #     for x in payload['hasManifestation']:
+    #         # print(x)
+    #         if 'hasSoundCharacteristic' in x.keys():
+    #             print(x['hasSoundCharacteristic']['@type'])
+    #             match = [y for y in datum if y['@id'] == x['hasSoundCharacteristic']['@type']]
+    #             x['hasSoundCharacteristic'] = match[0]
+
+    # if 'hasManifestation' in payload.keys():
+    #     for x in payload['hasManifestation']:
+    #         # print(x)
+    #         if 'hasColourCharacteristic' in x.keys():
+    #             print(x['hasColourCharacteristic']['@type'])
+    #             match = [y for y in datum if y['@id'] == x['hasColourCharacteristic']['@type']]
+    #             x['hasColourCharacteristic'] = match[0]
+
+
+
+
+# , 'hasSoundCharacteristic': {'@type': 'https://dev.fiafcore.org/Silent'}, 'type_label': 'Manifestation'
 
     # okay so what are we doing here?
     #
