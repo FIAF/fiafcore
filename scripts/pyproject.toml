@@ -1,15 +1,10 @@
 [project]
-name = "fiafcore"
+name = "scripts"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "rdflib>=7.1.4",
-]
-
-[tool.uv.workspace]
-members = [
-    "docs",
-    "scripts",
+    "jsonschema>=4.26.0",
+    "pydash>=8.1.0",
 ]

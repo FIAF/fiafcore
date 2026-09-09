@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "fiaf": "https://dev.fiafcore.org",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "hasIdentifier": "https://dev.fiafcore.org/hasIdentifier",
+    "hasIdentifierAuthority": "https://dev.fiafcore.org/hasIdentifierAuthority",
+    "hasIdentifierValue": "https://dev.fiafcore.org/hasIdentifierValue"
+  },
+  "@id": "",
+  "hasIdentifier": {
+    "hasIdentifierAuthority": {
+      "@embed": "@always"
+    }
+  }
+}

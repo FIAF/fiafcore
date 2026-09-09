@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "fiaf": "https://dev.fiafcore.org",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "hasIdentifier": "https://dev.fiafcore.org/hasIdentifier",
+    "hasIdentifierAuthority": "https://dev.fiafcore.org/hasIdentifierAuthority",
+    "hasIdentifierValue": "https://dev.fiafcore.org/hasIdentifierValue",
+    "hasTitle": "https://dev.fiafcore.org/hasTitle",
+    "hasTitleValue": "https://dev.fiafcore.org/hasTitleValue",
+    "hasCountry": "https://dev.fiafcore.org/hasCountry",
+    "hasGenre": "https://dev.fiafcore.org/hasGenre",
+    "hasEvent": "https://dev.fiafcore.org/hasEvent",
+    "hasActivity": "https://dev.fiafcore.org/hasActivity",
+    "hasAgent": "https://dev.fiafcore.org/hasAgent",
+    "hasManifestation": "https://dev.fiafcore.org/hasManifestation",
+    "hasColourCharacteristic": "https://dev.fiafcore.org/hasColourCharacteristic",
+
+    "hasSoundCharacteristic": "https://dev.fiafcore.org/hasSoundCharacteristic",
+    "hasFormat": "https://dev.fiafcore.org/hasFormat",
+
+    "hasItem": "https://dev.fiafcore.org/hasItem",
+
+
+
+    "hasBase": "https://dev.fiafcore.org/hasBase",
+
+    "hasHoldingInstitution": "https://dev.fiafcore.org/hasHoldingInstitution",
+
+
+    "hasStatus": "https://dev.fiafcore.org/hasStatus",
+
+
+    "isElement": "https://dev.fiafcore.org/isElement",
+
+
+    "hasStock": "https://dev.fiafcore.org/hasStock"
+
+
+
+
+
+  },
+  "@id": "",
+  "hasIdentifier": {
+    "hasIdentifierAuthority": {
+      "@embed": "@always"
+    }
+  }
+
+}

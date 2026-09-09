@@ -4,246 +4,194 @@ prefix fiaf: <https://dev.fiafcore.org/>
 
 construct {
 
-  SUBJECT_URI rdfs:label ?label .
-  rdfs:label rdfs:label ?labelLabel .
-
-  SUBJECT_URI rdf:type ?type .
-  ?type rdfs:label ?typeLabel .
-
-  SUBJECT_URI fiaf:hasCountry ?country .
-  ?country rdfs:label ?countryLabel .
-  fiaf:hasCountry rdfs:label ?countryPropLabel .
-
-  SUBJECT_URI fiaf:hasEvent ?event .
-  fiaf:hasEvent rdfs:label ?eventPropLabel .
-  ?event rdf:type ?eventType .
-  ?eventType rdfs:label ?eventTypeLabel .
-
-  ?event fiaf:hasActivity ?activity .
-  fiaf:hasActivity rdfs:label ?activityPropLabel .
-  ?activity rdf:type ?activityType .
-  ?activityType rdfs:label ?activityTypeLabel .
-
-  ?activity fiaf:hasAgent ?agent .
-  ?agent rdfs:label ?agentLabel .
-  fiaf:hasAgent rdfs:label ?agentPropLabel .
-  ?agent rdf:type ?agentType .
-  ?agentType rdfs:label ?agentTypeLabel .
-
-  SUBJECT_URI fiaf:hasForm ?form .
-  ?form rdfs:label ?formLabel .
-  fiaf:hasForm rdfs:label ?formPropLabel .
-
-  SUBJECT_URI fiaf:hasGenre ?genre .
-  ?genre rdfs:label ?genreLabel .
-  fiaf:hasGenre rdfs:label ?genrePropLabel .
-
-  SUBJECT_URI fiaf:hasIdentifier ?identifier .
-  fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
-  ?identifier rdf:type ?identifierType .
-  ?identifierType rdfs:label ?identifierTypeLabel .
-  ?identifier fiaf:hasIdentifierValue ?identifierValue .
-  fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
-  ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
-  fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
-  ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
-
-  SUBJECT_URI fiaf:hasLanguageUsage ?languageUsage .
-  fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
-  ?languageUsage rdf:type ?languageUsageType .
-  ?languageUsageType rdfs:label ?languageUsageTypeLabel .
-  ?languageUsage fiaf:hasLanguage ?language .
-  fiaf:hasLanguage rdfs:label ?languagePropLabel .
-  ?language rdfs:label ?languageLabel .
-
-  SUBJECT_URI fiaf:hasManifestation ?manifestation .
-  ?manifestation rdfs:label ?manifestationLabel .
-  fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
-
-
-  ?manifestation rdf:type ?manifestationType .
-  ?manifestationType rdfs:label ?manifestationTypeLabel .
-
-  ?manifestation fiaf:hasColourCharacteristic ?colourCharacteristic .
-  fiaf:hasColourCharacteristic rdfs:label ?colourCharacteristicPropLabel .
-  ?colourCharacteristic rdf:type ?colourCharacteristicType .
-  ?colourCharacteristicType rdfs:label ?colourCharacteristicTypeLabel .
-
-  ?colourCharacteristic fiaf:hasColourStandard ?colourStandard .
-  fiaf:hasColourStandard rdfs:label ?colourStandardPropLabel .
-  ?colourStandard rdf:type ?colourStandardType .
-  ?colourStandardType rdfs:label ?colourStandardTypeLabel .
-
-  ?manifestation fiaf:hasFormat ?format .
-  ?format rdfs:label ?formatLabel .
-  fiaf:hasFormat rdfs:label ?formatPropLabel .
-
-
-  ?manifestation fiaf:hasItem ?item .
-  ?item rdfs:label ?itemLabel .
-  fiaf:hasItem rdfs:label ?itemPropLabel .
-
-  ?manifestation fiaf:hasLanguageUsage ?languageUsage .
-  fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
-  ?languageUsage rdf:type ?languageUsageType .
-  ?languageUsageType rdfs:label ?languageUsageTypeLabel .
-  ?languageUsage fiaf:hasLanguage ?language .
-  fiaf:hasLanguage rdfs:label ?languagePropLabel .
-  ?language rdfs:label ?languageLabel .
-
-  ?manifestation fiaf:hasSoundCharacteristic ?soundCharacteristic .
-  fiaf:hasSoundCharacteristic rdfs:label ?soundCharacteristicPropLabel .
-  ?soundCharacteristic rdf:type ?soundCharacteristicType .
-  ?soundCharacteristicType rdfs:label ?soundCharacteristicTypeLabel .
-
-  ?soundCharacteristic fiaf:hasSoundStandard ?soundStandard .
-  fiaf:hasSoundStandard rdfs:label ?soundStandardPropLabel .
-  ?soundStandard rdf:type ?soundStandardType .
-  ?soundStandardType rdfs:label ?soundStandardTypeLabel .
-
-
-
-  SUBJECT_URI fiaf:hasTitle ?title .
-  fiaf:hasTitle rdfs:label ?titlePropLabel .
-  ?title rdf:type ?titleType .
-  ?titleType rdfs:label ?titleTypeLabel .
-  ?title fiaf:hasTitleValue ?titleValue .
-  fiaf:hasTitleValue rdfs:label ?titleValuePropLabel .
-
-}
-where {
-  optional {
     SUBJECT_URI rdfs:label ?label .
-    rdfs:label rdfs:label ?labelLabel .
-  }
-  SUBJECT_URI rdf:type ?type .
-  ?type rdfs:label ?typeLabel .
-  optional {
-    SUBJECT_URI fiaf:hasCountry ?country .
-    ?country rdfs:label ?countryLabel .
-    fiaf:hasCountry rdfs:label ?countryPropLabel .
-  }
-  optional {
-    SUBJECT_URI fiaf:hasEvent ?event .
-    fiaf:hasEvent rdfs:label ?eventPropLabel .
-    ?event rdf:type ?eventType .
-    ?eventType rdfs:label ?eventTypeLabel .
-    optional {
-      ?event fiaf:hasActivity ?activity .
-      fiaf:hasActivity rdfs:label ?activityPropLabel .
-      ?activity rdf:type ?activityType .
-      ?activityType rdfs:label ?activityTypeLabel .
-      optional {
-        ?activity fiaf:hasAgent ?agent .
-        ?agent rdfs:label ?agentLabel .
-        fiaf:hasAgent rdfs:label ?agentPropLabel .
-        ?agent rdf:type ?agentType .
-        ?agentType rdfs:label ?agentTypeLabel .
-      }
-    }
-  }
-  optional {
-    SUBJECT_URI fiaf:hasForm ?form .
-    ?form rdfs:label ?formLabel .
-    fiaf:hasForm rdfs:label ?formPropLabel .
-  }
-  optional {
-    SUBJECT_URI fiaf:hasGenre ?genre .
-    ?genre rdfs:label ?genreLabel .
-    fiaf:hasGenre rdfs:label ?genrePropLabel .
-  }
-  optional {
+
+    SUBJECT_URI rdf:type ?type .
+    ?type rdfs:label ?typeLabel .
+
     SUBJECT_URI fiaf:hasIdentifier ?identifier .
-    fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
-    ?identifier rdf:type ?identifierType .
-    ?identifierType rdfs:label ?identifierTypeLabel .
     ?identifier fiaf:hasIdentifierValue ?identifierValue .
-    fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
     ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
-    fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
     ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
-  }
-  optional {
-    SUBJECT_URI fiaf:hasLanguageUsage ?languageUsage .
-    fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
-    ?languageUsage rdf:type ?languageUsageType .
-    ?languageUsageType rdfs:label ?languageUsageTypeLabel .
-    ?languageUsage fiaf:hasLanguage ?language .
-    fiaf:hasLanguage rdfs:label ?languagePropLabel .
-    ?language rdfs:label ?languageLabel .
-  }
-  optional {
-    SUBJECT_URI fiaf:hasManifestation ?manifestation .
-    optional {
-        ?manifestation rdfs:label ?manifestationLabel .
-    }
-    fiaf:hasManifestation rdfs:label ?manifestationPropLabel .
 
-    optional {
-        ?manifestation rdf:type ?manifestationType .
-        ?manifestationType rdfs:label ?manifestationTypeLabel .
-    }
-
-
-
-
-  optional {
-    ?manifestation fiaf:hasColourCharacteristic ?colourCharacteristic .
-    fiaf:hasColourCharacteristic rdfs:label ?colourCharacteristicPropLabel .
-    ?colourCharacteristic rdf:type ?colourCharacteristicType .
-    ?colourCharacteristicType rdfs:label ?colourCharacteristicTypeLabel .
-    optional{
-      ?colourCharacteristic fiaf:hasColourStandard ?colourStandard .
-      fiaf:hasColourStandard rdfs:label ?colourStandardPropLabel .
-      ?colourStandard rdf:type ?colourStandardType .
-      ?colourStandardType rdfs:label ?colourStandardTypeLabel .
-    }
-  }
-  optional {
-    ?manifestation fiaf:hasFormat ?format .
-    ?format rdfs:label ?formatLabel .
-    fiaf:hasFormat rdfs:label ?formatPropLabel .
-  }
-
-  optional {
-    ?manifestation fiaf:hasItem ?item .
-    ?item rdfs:label ?itemLabel .
-    fiaf:hasItem rdfs:label ?itemPropLabel .
-  }
-  optional {
-    ?manifestation fiaf:hasLanguageUsage ?languageUsage .
-    fiaf:hasLanguageUsage rdfs:label ?languageUsagePropLabel .
-    ?languageUsage rdf:type ?languageUsageType .
-    ?languageUsageType rdfs:label ?languageUsageTypeLabel .
-    ?languageUsage fiaf:hasLanguage ?language .
-    fiaf:hasLanguage rdfs:label ?languagePropLabel .
-    ?language rdfs:label ?languageLabel .
-  }
-  optional {
-    ?manifestation fiaf:hasSoundCharacteristic ?soundCharacteristic .
-    fiaf:hasSoundCharacteristic rdfs:label ?soundCharacteristicPropLabel .
-    ?soundCharacteristic rdf:type ?soundCharacteristicType .
-    ?soundCharacteristicType rdfs:label ?soundCharacteristicTypeLabel .
-    optional{
-      ?soundCharacteristic fiaf:hasSoundStandard ?soundStandard .
-      fiaf:hasSoundStandard rdfs:label ?soundStandardPropLabel .
-      ?soundStandard rdf:type ?soundStandardType .
-      ?soundStandardType rdfs:label ?soundStandardTypeLabel .
-    }
-  }
-
-  }
-  optional {
     SUBJECT_URI fiaf:hasTitle ?title .
-    fiaf:hasTitle rdfs:label ?titlePropLabel .
     ?title rdf:type ?titleType .
     ?titleType rdfs:label ?titleTypeLabel .
     ?title fiaf:hasTitleValue ?titleValue .
-    fiaf:hasTitleValue rdfs:label ?titleValuePropLabel .
-  }
+
+    SUBJECT_URI fiaf:hasCountry ?country .
+    ?country rdfs:label ?countryLabel .
+
+    SUBJECT_URI fiaf:hasGenre ?genre .
+    ?genre rdfs:label ?genreLabel .
+
+    SUBJECT_URI fiaf:hasEvent ?event .
+    ?event rdf:type ?eventType .
+    ?eventType rdfs:label ?eventTypeLabel .
+
+    ?event fiaf:hasActivity ?activity .
+    ?activity rdf:type ?activityType .
+    ?activityType rdfs:label ?activityTypeLabel .
+
+    ?activity fiaf:hasAgent ?agent .
+    ?agent rdfs:label ?agentLabel .
+
+    SUBJECT_URI fiaf:hasManifestation ?manifestation .
+    ?manifestation rdf:type ?manifestationType .
+    ?manifestationType rdfs:label ?manifestationTypeLabel .
+
+    ?manifestation fiaf:hasColourCharacteristic ?colour .
+    ?colour rdf:type ?colourType .
+    ?colourType rdfs:label ?colourTypeLabel .
+
+    ?manifestation fiaf:hasSoundCharacteristic ?sound .
+    ?sound rdf:type ?soundType .
+    ?soundType rdfs:label ?soundTypeLabel .
+
+    ?manifestation fiaf:hasFormat ?format .
+    ?format rdfs:label ?formatLabel .
+
+
+    ?manifestation fiaf:hasItem ?item .
+
+    ?item fiaf:hasBase ?base .
+    ?base rdfs:label ?baseLabel .
+
+    ?item fiaf:hasHoldingInstitution ?institute .
+    ?institute rdfs:label ?instituteLabel .
+
+    ?item fiaf:hasStatus ?status .
+    ?status rdfs:label ?statusLabel .
+
+    ?item fiaf:isElement ?element .
+    ?element rdfs:label ?elementLabel .
+
+    ?item fiaf:hasStock ?stock .
+    ?stock rdf:type ?stockType .
+    ?stockType rdfs:label ?stockTypeLabel .
+
+    ?item fiaf:hasSoundCharacteristic ?itemSound .
+    ?itemSound rdf:type ?itemSoundType .
+    ?itemSoundType rdfs:label ?soundTypeLabel .
+
+
+}
+
+where {
+
+    optional {
+        SUBJECT_URI rdfs:label ?label .
+    }
+
+    optional {
+        SUBJECT_URI rdf:type ?type .
+        ?type rdfs:label ?typeLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasIdentifier ?identifier .
+        ?identifier fiaf:hasIdentifierValue ?identifierValue .
+        ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+        ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasTitle ?title .
+        ?title rdf:type ?titleType .
+        ?titleType rdfs:label ?titleTypeLabel .
+        ?title fiaf:hasTitleValue ?titleValue .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasCountry ?country .
+        ?country rdfs:label ?countryLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasGenre ?genre .
+        ?genre rdfs:label ?genreLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasEvent ?event .
+        ?event rdf:type ?eventType .
+        ?eventType rdfs:label ?eventTypeLabel .
+        optional {
+            ?event fiaf:hasActivity ?activity .
+            ?activity rdf:type ?activityType .
+            ?activityType rdfs:label ?activityTypeLabel .
+            optional {
+                ?activity fiaf:hasAgent ?agent .
+                ?agent rdfs:label ?agentLabel .
+            }
+        }
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasManifestation ?manifestation .
+        ?manifestation rdf:type ?manifestationType .
+        ?manifestationType rdfs:label ?manifestationTypeLabel .
+        optional {
+            ?manifestation fiaf:hasColourCharacteristic ?colour .
+            ?colour rdf:type ?colourType .
+            ?colourType rdfs:label ?colourTypeLabel .
+        }
+        optional {
+            ?manifestation fiaf:hasSoundCharacteristic ?sound .
+            ?sound rdf:type ?soundType .
+            ?soundType rdfs:label ?soundTypeLabel .
+        }
+        optional {
+            ?manifestation fiaf:hasFormat ?format .
+            ?format rdfs:label ?formatLabel .
+        }
+        optional {
+            ?manifestation fiaf:hasFormat ?format .
+            ?format rdfs:label ?formatLabel .
+        }
+        optional {
+            ?manifestation fiaf:hasItem ?item .
+
+            optional {
+                ?item fiaf:hasBase ?base .
+                ?base rdfs:label ?baseLabel .
+            }
+
+            optional {
+                ?item fiaf:hasHoldingInstitution ?institute .
+                ?institute rdfs:label ?instituteLabel .
+            }
+
+
+            optional {
+                ?item fiaf:hasStatus ?status .
+                ?status rdfs:label ?statusLabel .
+            }
+
+            optional {
+                ?item fiaf:isElement ?element .
+                ?element rdfs:label ?elementLabel .
+            }
+
+
+            optional {
+                ?item fiaf:hasStock ?stock .
+                ?stock rdf:type ?stockType .
+                ?stockType rdfs:label ?stockTypeLabel .
+            }
+
+            optional {
+                ?item fiaf:hasSoundCharacteristic ?itemSound .
+                ?itemSound rdf:type ?itemSoundType .
+                ?itemSoundType rdfs:label ?soundTypeLabel .
+            }
 
 
 
 
+        }
+
+
+    }
 
 }

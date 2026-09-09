@@ -4,37 +4,34 @@ prefix fiaf: <https://dev.fiafcore.org/>
 
 construct {
 
-  SUBJECT_URI rdfs:label ?label .
-  rdfs:label rdfs:label ?labelLabel .
+    SUBJECT_URI rdfs:label ?label .
 
-  SUBJECT_URI rdf:type ?type .
-  ?type rdfs:label ?typeLabel .
+    SUBJECT_URI rdf:type ?type .
+    ?type rdfs:label ?typeLabel .
 
-  SUBJECT_URI fiaf:hasIdentifier ?identifier .
-  fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
-  ?identifier rdf:type ?identifierType .
-  ?identifierType rdfs:label ?identifierTypeLabel .
-  ?identifier fiaf:hasIdentifierValue ?identifierValue .
-  fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
-  ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
-  fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
-  ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+    SUBJECT_URI fiaf:hasIdentifier ?identifier .
+    ?identifier fiaf:hasIdentifierValue ?identifierValue .
+    ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+    ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
 
 }
+
 where {
-  SUBJECT_URI rdfs:label ?label .
-  rdfs:label rdfs:label ?labelLabel .
-  SUBJECT_URI rdf:type ?type .
-  ?type rdfs:label ?typeLabel .
-  optional {
-    SUBJECT_URI fiaf:hasIdentifier ?identifier .
-    fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
-    ?identifier rdf:type ?identifierType .
-    ?identifierType rdfs:label ?identifierTypeLabel .
-    ?identifier fiaf:hasIdentifierValue ?identifierValue .
-    fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
-    ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
-    fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
-    ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
-  }
+
+    optional {
+        SUBJECT_URI rdfs:label ?label .
+    }
+
+    optional {
+        SUBJECT_URI rdf:type ?type .
+        ?type rdfs:label ?typeLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasIdentifier ?identifier .
+        ?identifier fiaf:hasIdentifierValue ?identifierValue .
+        ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+        ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+    }
+
 }

@@ -1,0 +1,40 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix fiaf: <https://dev.fiafcore.org/>
+
+construct {
+
+  SUBJECT_URI rdfs:label ?label .
+  rdfs:label rdfs:label ?labelLabel .
+
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+
+  SUBJECT_URI fiaf:hasIdentifier ?identifier .
+  fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
+  ?identifier rdf:type ?identifierType .
+  ?identifierType rdfs:label ?identifierTypeLabel .
+  ?identifier fiaf:hasIdentifierValue ?identifierValue .
+  fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
+  ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+  fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
+  ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+
+}
+where {
+  SUBJECT_URI rdfs:label ?label .
+  rdfs:label rdfs:label ?labelLabel .
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+  optional {
+    SUBJECT_URI fiaf:hasIdentifier ?identifier .
+    fiaf:hasIdentifier rdfs:label ?identifierPropLabel .
+    ?identifier rdf:type ?identifierType .
+    ?identifierType rdfs:label ?identifierTypeLabel .
+    ?identifier fiaf:hasIdentifierValue ?identifierValue .
+    fiaf:hasIdentifierValue rdfs:label ?identifierValuePropLabel .
+    ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+    fiaf:hasIdentifierAuthority rdfs:label ?identifierAuthorityPropLabel .
+    ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+  }
+}

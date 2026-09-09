@@ -1,0 +1,370 @@
+{
+  "type": "object",
+  "required": ["@context", "@id", "@type", "hasIdentifier", "hasTitle"],
+  "properties": {
+    "@context": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "label": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hasIdentifier": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@id", "hasIdentifierAuthority", "hasIdentifierValue"],
+        "properties": {
+          "@id": {
+            "type": "string"
+          },
+          "hasIdentifierAuthority": {
+            "type": "object",
+            "required": ["@id", "label"],
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "hasIdentifierValue": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "hasTitle": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@type", "hasTitleValue", "type"],
+        "properties": {
+          "@type": {
+            "type": "string",
+            "format": "uri"
+          },
+          "hasTitleValue": {
+            "type": "string"
+          },
+          "type": {
+            "type": "array"
+          },
+          "additionalProperties": false
+        },
+
+        "additionalProperties": false
+      }
+    },
+    "hasCountry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@id", "label"],
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "label": {
+            "type": "object",
+            "required": ["@language", "@value"],
+            "properties": {
+              "@language": {
+                "type": "string"
+              },
+              "@value": {
+                "type": "string"
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "hasGenre": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@id", "label"],
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "label": {
+            "type": "object",
+            "required": ["@language", "@value"],
+            "properties": {
+              "@language": {
+                "type": "string"
+              },
+              "@value": {
+                "type": "string"
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "hasEvent": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@type", "type"],
+        "properties": {
+          "@type": {
+            "type": "string",
+            "format": "uri"
+          },
+          "type": {
+            "type": "array"
+          },
+          "hasActivity": {
+            "type": "array",
+            "items": {
+              "required": ["@type", "hasAgent", "type"],
+              "properties": {
+                "@type": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "hasAgent": {
+                  "type": "object",
+
+                  "required": ["@id"],
+                  "properties": {
+                    "@id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "array"
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "type" : {"type":"array"},
+
+                "additionalProperties": false
+              },
+              "additionalProperties": false
+            }
+          },
+
+          "additionalProperties": false
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "hasManifestation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@id", "@type", "type"],
+        "properties": {
+          "@id": {
+            "type": "string"
+          },
+          "@type": {
+            "type": "array"
+          },
+
+          "type": {
+            "type": "array"
+          },
+          "hasColourCharacteristic": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["@type"],
+              "properties": {
+                "@type": {
+                  "type": "string"
+                },
+
+                "additionalProperties": false
+              }
+            }
+          },
+
+          "hasSoundCharacteristic": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["@type"],
+              "properties": {
+                "@type": {
+                  "type": "string"
+                },
+
+                "additionalProperties": false
+              }
+            }
+          },
+
+          "hasFormat": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["@id", "label"],
+              "properties": {
+                "@id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "object",
+                  "required": ["@language", "@value"],
+                  "properties": {
+                    "@language": {
+                      "type": "string"
+                    },
+                    "@value": {
+                      "type": "string"
+                    },
+
+                    "additionalProperties": false
+                  }
+                },
+
+                "additionalProperties": false
+              }
+            }
+          },
+
+          "hasItem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string"
+                },
+
+                "hasBase": {
+                  "type": "array",
+
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+
+
+                },
+
+                "hasHoldingInstitution": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "hasSoundCharacteristic": {
+
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+
+                },
+                "hasStatus": {
+
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+
+                },
+                "hasStock": {
+
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["@type"],
+                    "properties": {
+                      "@type": {
+                        "type": "array"
+                      }
+                    }
+                  }
+
+                },
+                "isElement": {
+
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+
+
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+
+          "additionalProperties": false
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+
+  },
+  "additionalProperties": false
+}

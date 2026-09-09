@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": ["@context", "@id", "@type", "label", "hasIdentifier"],
+  "properties": {
+    "@context": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "label": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hasIdentifier": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@id", "hasIdentifierAuthority", "hasIdentifierValue"],
+        "properties": {
+          "@id": {
+            "type": "string"
+          },
+          "hasIdentifierAuthority": {
+            "type": "object",
+            "required": ["@id", "label"],
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "hasIdentifierValue": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
