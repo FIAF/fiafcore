@@ -188,6 +188,36 @@ def home():
 
     return flask.render_template('index.html')
 
+
+@app.route('/sources', methods=['GET'])
+def sources():
+    if os.getenv('INSTANCE') != 'dev':
+        return flask.render_template('error.html')
+
+    return flask.render_template('sources.html')
+
+@app.route('/ontology', methods=['GET'])
+def ontology():
+    if os.getenv('INSTANCE') != 'dev':
+        return flask.render_template('error.html')
+
+    return flask.render_template('ontology.html')
+
+@app.route('/search', methods=['GET'])
+def search():
+    if os.getenv('INSTANCE') != 'dev':
+        return flask.render_template('error.html')
+
+    return flask.render_template('search.html')
+
+@app.route('/sparql', methods=['GET'])
+def sparql():
+    if os.getenv('INSTANCE') != 'dev':
+        return flask.render_template('error.html')
+
+    return flask.render_template('sparql.html')
+
+
 # @app.route('/ontology', methods=['GET'])
 # def ontology():
 #     if os.getenv('INSTANCE') != 'dev':

@@ -6,19 +6,119 @@
     <link href="../static/prism-laserwave.css" rel="stylesheet" />
     <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+
+
+
+    <style>
+      /* Reset & Navbar styling */
+      table.navbar {
+        /*width: 100%;*/
+        border-collapse: collapse;
+        /*background-color: #333;*/
+        /*font-family: Arial, sans-serif;*/
+      }
+
+      /* Style the main links horizontally */
+      table.navbar td.nav-item {
+        padding: 0;
+        text-align: center;
+        /* Adjust width as needed or let it auto-size */
+        /*width: 150px;*/
+      }
+
+      /* Target direct topbar links */
+      table.navbar td.nav-item > a {
+        display: block;
+        color: black;
+        padding: 14px 20px;
+        padding-left: 0px;
+        text-decoration: none;
+      }
+
+      /*table.navbar td.nav-item > a:hover {*/
+        /*background-color: #111;*/
+      /*}*/
+
+      /* --- The Dropdown Magic --- */
+
+      /* 1. Make the table cell container a relative anchor point */
+      .dropdown-container {
+        position: relative;
+      }
+
+      /* 2. Hide the submenu contents by default and position it absolutely */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%; /* Spawns exactly below the topbar cell */
+        left: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      /* Style individual links inside the dropdown menu */
+      .dropdown-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-container:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+
 </head>
 
 <body>
     <div style="width: 100%; background-color: white; display: flex; justify-content: center;">
         <div style="width: 800px; background-color: white;  ">
+
+
             <div class="menu"
-                style="display: flex; justify-content: center; background-color: white;  border-bottom: 1px black solid;">
+                style="display: flex; background-color: white;  border-bottom: 1px black solid;">
+
+            <table class="navbar">
+              <tr>
+                <td class="nav-item">
+                  <a id="index" href="/">Index</a>
+                </td>
+
+                <td class="nav-item">
+                  <a id="sources" href="/sources">Sources</a>
+                </td>
+
+                <td class="nav-item">
+                  <a id="ontology" href="/ontology">Ontology</a>
+                </td>
+
+                <td class="nav-item dropdown-container">
+                  <tspan id="access">Access</tspan>
+
+                  <div class="dropdown-menu">
+                    <a href="/search">Keyword Search</a>
+                    <a href="/sparql">SPARQL Query</a>
+                  </div>
+                </td>
+
+              </tr>
+            </table>
+
+                </div>
+            <!--<div class="menu"
+                style="display: flex; background-color: white;  border-bottom: 1px black solid;">
                 <div class="menu-item"><a id="index" href="https://dev.fiafcore.org">Index</a></div>
-                <div class="menu-item"><a id="ontology" href="https://dev.fiafcore.org/ontology">Ontology</a></div>
                 <div class="menu-item"><a id="sources" href="https://dev.fiafcore.org/sources">Sources</a></div>
-                <div class="menu-item"><a id="access" href="https://dev.fiafcore.org/access">Access</a></div>
-                <div class="menu-item"><a id="licence" href="https://dev.fiafcore.org/licence">Licence</a></div>
-            </div>
+
+                <div class="menu-item"><a id="ontology" href="https://dev.fiafcore.org/ontology">Ontology</a></div>
+                <div class="menu-item"><a id="access" href="https://dev.fiafcore.org/access">Access <tspan style="font-size:16;padding:4px">&#x25BE;</tspan></a></div>
+            </div>-->
+
+
             {% block content %}{% endblock %}
 
         </div>

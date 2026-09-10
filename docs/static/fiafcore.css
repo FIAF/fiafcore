@@ -1,4 +1,34 @@
+
+
 body {
+    font-family: "Nunito";
+}
+
+
+.menu {
+    color: black;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+.menu-item {
+    background-color: white;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    /*padding-left: 10px;*/
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
+/*body {
     font-family: "Nunito";
 }
 
@@ -156,4 +186,4 @@ td {
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-}
+}*/
