@@ -127,58 +127,70 @@ def ensure_array(data, key):
     if type(pydash.get(data, key)) is not list:
         pydash.set_(data, key, [pydash.get(data, key)])
 
+if '@type' in payload.keys():
+    ensure_array(payload, '@type')
+if 'hasIdentifier' in payload.keys():
+    ensure_array(payload, 'hasIdentifier')
+if 'hasTitle' in payload.keys():
+    ensure_array(payload, 'hasTitle')
+if 'hasCountry' in payload.keys():
+    ensure_array(payload, 'hasCountry')
+if 'hasGenre' in payload.keys():
+    ensure_array(payload, 'hasGenre')
+if 'hasEvent' in payload.keys():
+    ensure_array(payload, 'hasEvent')
 
-ensure_array(payload, '@type')
-ensure_array(payload, 'hasIdentifier')
-ensure_array(payload, 'hasTitle')
-ensure_array(payload, 'hasCountry')
-ensure_array(payload, 'hasGenre')
-ensure_array(payload, 'hasEvent')
+if 'hasEvent' in payload.keys():
+    for x in payload['hasEvent']:
+        print(x)
+        for y in x['hasActivity']:
+            ensure_array(y, 'hasAgent.label')
 
-for x in payload['hasEvent']:
-    for y in x['hasActivity']:
-        ensure_array(y, 'hasAgent.label')
-
-for x in payload['hasManifestation']:
-    if '@type' in x.keys():
-        ensure_array(x, '@type')
-
-
-    if 'hasColourCharacteristic' in x.keys():
-        ensure_array(x, 'hasColourCharacteristic')
-    if 'hasSoundCharacteristic' in x.keys():
-        ensure_array(x, 'hasSoundCharacteristic')
-    if 'hasFormat' in x.keys():
-        ensure_array(x, 'hasFormat')
-    if 'hasItem' in x.keys():
-        ensure_array(x, 'hasItem')
-
-for x in payload['hasManifestation']:
-    if 'hasItem' not in x.keys():
-        continue
-    for y in x['hasItem']:
-        if 'hasBase' in y.keys():
-            ensure_array(y, 'hasBase')
-        if 'hasHoldingInstitution' in y.keys():
-            ensure_array(y, 'hasHoldingInstitution')
-        if 'hasSoundCharacteristic' in y.keys():
-            ensure_array(y, 'hasSoundCharacteristic')
-        if 'hasStatus' in y.keys():
-            ensure_array(y, 'hasStatus')
-        if 'hasStock' in y.keys():
-            ensure_array(y, 'hasStock')
-        if 'isElement' in y.keys():
-            ensure_array(y, 'isElement')
+if 'hasManifestation' in payload.keys():
+    for x in payload['hasManifestation']:
+        if '@type' in x.keys():
+            ensure_array(x, '@type')
 
 
-for x in payload['hasManifestation']:
-    if 'hasItem' not in x.keys():
-        continue
-    for y in x['hasItem']:
-        if 'hasStock' in y.keys():
-            for z in y['hasStock']:
-                if '@type' in z.keys():
-                    ensure_array(z, '@type')
+        if 'hasColourCharacteristic' in x.keys():
+            ensure_array(x, 'hasColourCharacteristic')
+        if 'hasSoundCharacteristic' in x.keys():
+            ensure_array(x, 'hasSoundCharacteristic')
+        if 'hasFormat' in x.keys():
+            ensure_array(x, 'hasFormat')
+        if 'hasItem' in x.keys():
+            ensure_array(x, 'hasItem')
+
+
+
+if 'hasManifestation' in payload.keys():
+    for x in payload['hasManifestation']:
+        if 'hasItem' not in x.keys():
+            continue
+        for y in x['hasItem']:
+            if 'hasBase' in y.keys():
+                ensure_array(y, 'hasBase')
+            if 'hasHoldingInstitution' in y.keys():
+                ensure_array(y, 'hasHoldingInstitution')
+            if 'hasSoundCharacteristic' in y.keys():
+                ensure_array(y, 'hasSoundCharacteristic')
+            if 'hasStatus' in y.keys():
+                ensure_array(y, 'hasStatus')
+            if 'hasStock' in y.keys():
+                ensure_array(y, 'hasStock')
+            if 'isElement' in y.keys():
+                ensure_array(y, 'isElement')
+
+if 'hasManifestation' in payload.keys():
+
+    for x in payload['hasManifestation']:
+        if 'hasItem' not in x.keys():
+            continue
+        for y in x['hasItem']:
+            if 'hasStock' in y.keys():
+                for z in y['hasStock']:
+                    if '@type' in z.keys():
+                        ensure_array(z, '@type')
 
 
             # ensure_array(y, 'hasStock')
@@ -247,10 +259,41 @@ for x in payload.keys():
 # ideally all elements should just have "id" and "label" pairs
 
 
+
+# in ill-supported conveniance is to display filmographies against agents.
+
+if shape == 'agent':
+    query = """
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        prefix fiaf: <https://dev.fiafcore.org/>
+        SELECT distinct ?work ?title WHERE {
+            ?work fiaf:hasEvent ?event .
+            ?event fiaf:hasActivity ?activity .
+            ?activity fiaf:hasAgent fiaf:"""+id+""" .
+            ?work fiaf:hasTitle ?t .
+            ?t fiaf:hasTitleValue ?title .
+        }
+    """
+
+    r = requests.post('https://data.fiafcore.org', data={'query': query})
+    if r.status_code != 200:
+        raise Exception(f'API {r.status_code}: {r.text}')
+
+    filmography = list()
+    datum = r.json()['results']['bindings']
+    if len(datum):
+        for x in datum:
+            a = {'@id': pydash.get(x, 'work.value'), 'label': pydash.get(x, 'title.value')}
+            if a['@id'] in [x['@id'] for x in filmography]:
+                continue
+            filmography.append(a)
+
+    payload['filmography'] = filmography
+
 # print result.
 
 print(json.dumps(payload, indent=4))
-
 
 # validate result.
 
@@ -260,11 +303,15 @@ if not validate_path.exists():
 
 with open(validate_path) as valid:
     schema = json.load(valid)
-
 try:
     jsonschema.validate(instance=payload, schema=schema)
 except jsonschema.exceptions.ValidationError as e:
     raise Exception(f'Validation failed: {e}')
+
+
+
+
+
 
 
 # todo, expand first layer.

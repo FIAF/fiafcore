@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "required": ["@context", "@id", "@type", "label", "hasIdentifier"],
+  "required": ["@context", "@id", "@type", "label", "hasIdentifier", "type", "filmography"],
   "properties": {
     "@context": {
       "type": "object",
@@ -21,6 +21,18 @@
       "type": "array",
       "items": {
         "type": "string"
+      }
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "filmography": {
+      "type": "array",
+      "items": {
+        "type": "object"
       }
     },
     "hasIdentifier": {
