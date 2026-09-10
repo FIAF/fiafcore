@@ -3,8 +3,7 @@
   "required": ["@context", "@id", "@type", "hasIdentifier", "hasTitle"],
   "properties": {
     "@context": {
-      "type": "object",
-      "additionalProperties": { "type": "string" }
+      "type": "object"
     },
     "@id": {
       "type": "string",
@@ -60,8 +59,7 @@
         "required": ["@type", "hasTitleValue", "type"],
         "properties": {
           "@type": {
-            "type": "string",
-            "format": "uri"
+            "type": "array"
           },
           "hasTitleValue": {
             "type": "string"

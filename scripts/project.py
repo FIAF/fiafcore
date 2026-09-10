@@ -38,6 +38,36 @@ def superclass():
     return result
 
 
+def ensure_list(data, ref, target_key, new_key, new_value):
+
+    if isinstance(data, dict):
+        if target_key in data:
+            if type(data[target_key]) is not list:
+                data[target_key] = [data[target_key]]
+
+        for value in data.values():
+            ensure_list(value, ref, target_key, new_key, new_value)
+
+    elif isinstance(data, list):
+        for item in data:
+            ensure_list(item,ref, target_key, new_key, new_value)
+
+
+def add_type_label(data, ref, target_key, new_key, new_value):
+
+    if isinstance(data, dict):
+        if target_key in data:
+            data['type'] = [y for y in ref if y['@id'] in data[target_key]]
+
+        for value in data.values():
+            add_type_label(value, ref, target_key, new_key, new_value)
+
+    elif isinstance(data, list):
+        for item in data:
+            add_type_label(item,ref, target_key, new_key, new_value)
+
+
+
 # subject to render.
 
 id = 'a54ec8e3-5372-491f-8b12-d29219f87a75'
@@ -118,147 +148,13 @@ print(json.dumps(datum, indent=4))
 print('\n')
 payload = pyld.jsonld.frame(datum, frame)
 
+print(json.dumps(payload, indent=4))
 
 # post-process 1: expand all data areas.
 
-# payload['type']
+ensure_list(payload, datum, '@type', 'type_label', 'hello')
 
-def ensure_array(data, key):
-    if type(pydash.get(data, key)) is not list:
-        pydash.set_(data, key, [pydash.get(data, key)])
-
-if '@type' in payload.keys():
-    ensure_array(payload, '@type')
-if 'hasIdentifier' in payload.keys():
-    ensure_array(payload, 'hasIdentifier')
-if 'hasTitle' in payload.keys():
-    ensure_array(payload, 'hasTitle')
-if 'hasCountry' in payload.keys():
-    ensure_array(payload, 'hasCountry')
-if 'hasGenre' in payload.keys():
-    ensure_array(payload, 'hasGenre')
-if 'hasEvent' in payload.keys():
-    ensure_array(payload, 'hasEvent')
-
-if 'hasEvent' in payload.keys():
-    for x in payload['hasEvent']:
-        print(x)
-        for y in x['hasActivity']:
-            ensure_array(y, 'hasAgent.label')
-
-if 'hasManifestation' in payload.keys():
-    for x in payload['hasManifestation']:
-        if '@type' in x.keys():
-            ensure_array(x, '@type')
-
-
-        if 'hasColourCharacteristic' in x.keys():
-            ensure_array(x, 'hasColourCharacteristic')
-        if 'hasSoundCharacteristic' in x.keys():
-            ensure_array(x, 'hasSoundCharacteristic')
-        if 'hasFormat' in x.keys():
-            ensure_array(x, 'hasFormat')
-        if 'hasItem' in x.keys():
-            ensure_array(x, 'hasItem')
-
-
-
-if 'hasManifestation' in payload.keys():
-    for x in payload['hasManifestation']:
-        if 'hasItem' not in x.keys():
-            continue
-        for y in x['hasItem']:
-            if 'hasBase' in y.keys():
-                ensure_array(y, 'hasBase')
-            if 'hasHoldingInstitution' in y.keys():
-                ensure_array(y, 'hasHoldingInstitution')
-            if 'hasSoundCharacteristic' in y.keys():
-                ensure_array(y, 'hasSoundCharacteristic')
-            if 'hasStatus' in y.keys():
-                ensure_array(y, 'hasStatus')
-            if 'hasStock' in y.keys():
-                ensure_array(y, 'hasStock')
-            if 'isElement' in y.keys():
-                ensure_array(y, 'isElement')
-
-if 'hasManifestation' in payload.keys():
-
-    for x in payload['hasManifestation']:
-        if 'hasItem' not in x.keys():
-            continue
-        for y in x['hasItem']:
-            if 'hasStock' in y.keys():
-                for z in y['hasStock']:
-                    if '@type' in z.keys():
-                        ensure_array(z, '@type')
-
-
-            # ensure_array(y, 'hasStock')
-
-
-# for x in payload['hasEvent']:
-#     for y in x['hasActivity']:
-#         print(y)
-#         # ensure_array(y, 'hasAgent.label')
-#         print('\n')
-
-
-# raise Exception('@@')
-
-# post-process 2: insert "type" data.
-
-
-# TODO do this using an additive method,
-# traverse
-# detect of @type exists, should always be array?
-# find actual type in source,
-# and write to a new "type" key
-
-
-# for x in payload.keys():
-
-if '@type' in payload.keys():
-    payload['type'] = [y for y in datum if y['@id'] in payload['@type']]
-
-for x in payload.keys():
-    for y in payload[x]:
-        if type(y) is not dict:
-            continue
-        if '@type' not in y.keys():
-            continue
-        # print(y['@type'])
-        y['type'] = [z for z in datum if z['@id'] in y['@type']]
-
-        for z in y.keys():
-            for a in y[z]:
-                if type(a) is not dict:
-                    continue
-                if '@type' not in a.keys():
-                    continue
-                a['type'] = [b for b in datum if b['@id'] in a['@type']]
-
-                for d in a.keys():
-                    print(d)
-                    for e in a[d]:
-                        if type(e) is not dict:
-                            continue
-                        if '@type' not in e.keys():
-                            continue
-                        print(e['@type'])
-
-                        e['type'] = [f for f in datum if f['@id'] in e['@type']]
-
-
-
-        # print(y)
-
-
-# TODO
-# now contract, if label.value exists, reduce to "label"
-# if "type" exists, drop "@type"
-# ideally all elements should just have "id" and "label" pairs
-
-
+add_type_label(payload, datum, '@type', 'type_label', 'hello')
 
 # in ill-supported conveniance is to display filmographies against agents.
 
@@ -297,24 +193,13 @@ print(json.dumps(payload, indent=4))
 
 # validate result.
 
-validate_path = pathlib.Path.cwd().parent / 'docs' / 'validate' / f'{shape}.json'
-if not validate_path.exists():
-    raise Exception(f'{validate_path} not found.')
+# validate_path = pathlib.Path.cwd().parent / 'docs' / 'validate' / f'{shape}.json'
+# if not validate_path.exists():
+#     raise Exception(f'{validate_path} not found.')
 
-with open(validate_path) as valid:
-    schema = json.load(valid)
-try:
-    jsonschema.validate(instance=payload, schema=schema)
-except jsonschema.exceptions.ValidationError as e:
-    raise Exception(f'Validation failed: {e}')
-
-
-
-
-
-
-
-# todo, expand first layer.
-# add json schema
-# build out
-# add type replace.
+# with open(validate_path) as valid:
+#     schema = json.load(valid)
+# try:
+#     jsonschema.validate(instance=payload, schema=schema)
+# except jsonschema.exceptions.ValidationError as e:
+#     raise Exception(f'Validation failed: {e}')
