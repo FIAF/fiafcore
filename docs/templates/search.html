@@ -4,7 +4,34 @@
 {% block content %}
 <br>
 
+
+
+
+    # two sections, work search and agent search.
+
+
     SEARCH
+
+
+    <!-- Include YASR CSS and JS instead of Yasgui -->
+    <link href="https://unpkg.com" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com"></script>
+
+    <!-- The container where the table will render -->
+    <div id="results-table-only"></div>
+
+    <script>
+      // Initialize YASR on its own
+      const yasr = new Yasr(document.getElementById("results-table-only"));
+
+      // Pass your SPARQL query response data straight to the renderer
+      const mySparqlResultJson = {
+        "head": { "vars": [ "s", "p", "o" ] },
+        "results": { "bindings": [ /* ... your data ... */ ] }
+      };
+
+      yasr.setResponse(mySparqlResultJson);
+    </script>
 
 <script>
     document.getElementById("access").style.fontWeight = 'Bold';

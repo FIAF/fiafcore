@@ -2,9 +2,52 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+
+<style>
+table.dataset {
+    border-collapse: collapse;
+}
+
+th.dataset {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td.dataset {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+</style>
+
 <br>
 
-    SOURCES
+
+    Datasets which currently comprise the FIAF Knowledge Graph:
+
+    <br><br>
+
+    <center>
+    <table class="dataset" style="width:100%">
+      <tr class="dataset">
+        <th class="dataset">Institution</th>
+        <th class="dataset">Number of Cinematographic Works</th>
+        <th class="dataset">Refresh Date</th>
+      </tr>
+      <tr class="dataset">
+        <td class="dataset">British Film Institute</td>
+        <td class="dataset">17,416</td>
+        <td class="dataset">2025-04-24</td>
+      </tr>
+      <tr class="dataset">
+        <td class="dataset">Bundesarchiv</td>
+        <td class="dataset">37,298</td>
+        <td class="dataset">2024-02-01</td>
+      </tr>
+    </table>
+
+    </center>
 
 <script>
     document.getElementById("sources").style.fontWeight = 'Bold';
