@@ -28,6 +28,30 @@ a {
 }
 
 
+
+
+.search_block {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.search_field {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search_text {
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+    color: black;
+    height:25px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+}
+
 /*body {
     font-family: "Nunito";
 }

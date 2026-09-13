@@ -4,37 +4,60 @@
 {% block content %}
 <br>
 
+<h4>Work Search</h4>
+
+hello
 
 
+<h4>Agent Search</h4>
 
-    # two sections, work search and agent search.
+<div class="search_block">
+    <div class="search_field">
+        <div style="padding-right:10px">Name</div>
+        <input type="text" id='search_agent_name' name="label" class="search_text" placeholder="Type something here..." value=""></input>
+    </div>
+    <button onclick="agent_search()">Search</button>
+    <button onclick="agent_clear()">Clear</button>
+</div>
 
+<!-- Include YASR CSS and JS instead of Yasgui -->
+<link href="https://unpkg.com" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com"></script>
 
-    SEARCH
-
-
-    <!-- Include YASR CSS and JS instead of Yasgui -->
-    <link href="https://unpkg.com" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com"></script>
-
-    <!-- The container where the table will render -->
-    <div id="results-table-only"></div>
-
-    <script>
-      // Initialize YASR on its own
-      const yasr = new Yasr(document.getElementById("results-table-only"));
-
-      // Pass your SPARQL query response data straight to the renderer
-      const mySparqlResultJson = {
-        "head": { "vars": [ "s", "p", "o" ] },
-        "results": { "bindings": [ /* ... your data ... */ ] }
-      };
-
-      yasr.setResponse(mySparqlResultJson);
-    </script>
+<!-- The container where the table will render -->
+<div id="results-table-only"></div>
 
 <script>
-    document.getElementById("access").style.fontWeight = 'Bold';
+
+    // Initialize YASR on its own
+    const yasr = new Yasr(document.getElementById("results-table-only"));
+
+    // Pass your SPARQL query response data straight to the renderer
+    const mySparqlResultJson = {
+        "head": { "vars": [ "s", "p", "o" ] },
+        "results": { "bindings": [ /* ... your data ... */ ] }
+    };
+    yasr.setResponse(mySparqlResultJson);
+
 </script>
+
+<script>
+
+function agent_search(){
+  const search_agent_name = document.getElementById("search_agent_name").value;
+  console.log('hello', search_agent_name)
+}
+
+function agent_clear(){
+  document.getElementById("search_agent_name").value = "";
+}
+
+</script>
+
+<script>
+  document.getElementById("access").style.fontWeight = 'Bold';
+</script>
+
+
 
 {% endblock %}
