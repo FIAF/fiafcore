@@ -17,7 +17,7 @@
     <button onclick="work_clear()">Clear</button>
 </div>
 
-<div id="search_work_result"></div>
+<div id="search_work_result" style="display:none"></div>
 
 <h4>Agent Search</h4>
 
@@ -30,7 +30,7 @@
     <button onclick="agent_clear()">Clear</button>
 </div>
 
-<div id="search_agent_result"></div>
+<div id="search_agent_result" style="display:none"></div>
 
 <br><br>
 
@@ -41,8 +41,8 @@ async function sparql_query(endpoint, sparql) {
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
-                'Accept': 'application/sparql-results+json',
-                  'Content-Type': 'application/x-www-form-urlencoded'
+        'Accept': 'application/sparql-results+json',
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
       body: new URLSearchParams({query: sparql})
     });
@@ -59,58 +59,61 @@ async function sparql_query(endpoint, sparql) {
 }
 
 function work_search(){
+  document.getElementById("search_work_result").style.display = "none";
   const search_work_title = document.getElementById("search_work_title").value;
-  // console.log('hello', search_work_title)
-
   const sparql = `
     prefix fiaf: <https://dev.fiafcore.org/>
     prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    select distinct ?work ?title where {
+    select distinct ?work (sample(?t2) as ?title) where {
       ?work rdf:type/rdfs:subClassOf* fiaf:Work .
-      ?work fiaf:hasTitle ?t .
-      ?t fiaf:hasTitleValue ?title .
-      filter(contains(lcase(str(?title)), "${search_work_title}"))
+      ?work fiaf:hasTitle ?t1 .
+      ?t1 fiaf:hasTitleValue ?t2 .
+      filter(contains(lcase(str(?t2)), "${search_work_title}"))
     }
+    group by ?work
   `;
 
   endpoint = 'https://data.fiafcore.org'
   sparql_query(endpoint, sparql).then(result => {
     search_work_yasr.setResponse(result);
-  });
-}
-
-function agent_search(){
-  const search_agent_name = document.getElementById("search_agent_name").value;
-  // console.log('hello', search_agent_name)
-
-  const sparql = `
-    prefix fiaf: <https://dev.fiafcore.org/>
-    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    select distinct ?agent ?name where {
-      ?agent rdf:type/rdfs:subClassOf* fiaf:Agent .
-      ?agent rdfs:label ?name .
-      filter(contains(lcase(str(?name)), "${search_agent_name}"))
-    }
-  `;
-
-  endpoint = 'https://data.fiafcore.org'
-  sparql_query(endpoint, sparql).then(result => {
-
-    search_agent_yasr.setResponse(result);
+    document.getElementById("search_work_result").style.display = "block";
   });
 }
 
 function work_clear(){
   document.getElementById("search_work_title").value = "";
+  document.getElementById("search_work_result").style.display = "none";
+}
+
+let search_work_yasr = new Yasr(document.getElementById("search_work_result"));
+
+function agent_search(){
+  document.getElementById("search_agent_result").style.display = "none";
+  const search_agent_name = document.getElementById("search_agent_name").value;
+  const sparql = `
+    prefix fiaf: <https://dev.fiafcore.org/>
+    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    select distinct ?agent (sample(?n) as ?name) where {
+      ?agent rdf:type/rdfs:subClassOf* fiaf:Agent .
+      ?agent rdfs:label ?n .
+      filter(contains(lcase(str(?n)), "${search_agent_name}"))
+    }
+    group by ?agent
+  `;
+
+  endpoint = 'https://data.fiafcore.org'
+  sparql_query(endpoint, sparql).then(result => {
+    search_agent_yasr.setResponse(result);
+    document.getElementById("search_agent_result").style.display = "block";
+  });
 }
 
 function agent_clear(){
   document.getElementById("search_agent_name").value = "";
+  document.getElementById("search_agent_result").style.display = "none";
 }
-
-let search_work_yasr = new Yasr(document.getElementById("search_work_result"));
 
 let search_agent_yasr = new Yasr(document.getElementById("search_agent_result"));
 
@@ -119,7 +122,5 @@ let search_agent_yasr = new Yasr(document.getElementById("search_agent_result"))
 <script>
   document.getElementById("access").style.fontWeight = 'Bold';
 </script>
-
-
 
 {% endblock %}
