@@ -2,12 +2,22 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<br>
+
+<!-- notes to extend, YASR should be hidden on page load, during query and if clear is selected. -->
+<!-- SPARQL updates, only one entity should be returned, drop duplicates on id column -->
 
 <h4>Work Search</h4>
 
-hello
+<div class="search_block">
+    <div class="search_field">
+        <div style="padding-right:10px">Title</div>
+        <input type="text" id='search_work_title' name="label" class="search_text" placeholder="Type something here..." value=""></input>
+    </div>
+    <button onclick="work_search()">Search</button>
+    <button onclick="work_clear()">Clear</button>
+</div>
 
+<div id="search_work_result"></div>
 
 <h4>Agent Search</h4>
 
@@ -20,37 +30,89 @@ hello
     <button onclick="agent_clear()">Clear</button>
 </div>
 
-<!-- Include YASR CSS and JS instead of Yasgui -->
-<link href="https://unpkg.com" rel="stylesheet" type="text/css" />
-<script src="https://unpkg.com"></script>
+<div id="search_agent_result"></div>
 
-<!-- The container where the table will render -->
-<div id="results-table-only"></div>
+<br><br>
 
 <script>
 
-    // Initialize YASR on its own
-    const yasr = new Yasr(document.getElementById("results-table-only"));
+async function sparql_query(endpoint, sparql) {
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+                'Accept': 'application/sparql-results+json',
+                  'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams({query: sparql})
+    });
 
-    // Pass your SPARQL query response data straight to the renderer
-    const mySparqlResultJson = {
-        "head": { "vars": [ "s", "p", "o" ] },
-        "results": { "bindings": [ /* ... your data ... */ ] }
-    };
-    yasr.setResponse(mySparqlResultJson);
+    if (!response.ok) {
+      throw new Error(`Error: http status ${response.status}`);
+    }
 
-</script>
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error", error)
+  }
+}
 
-<script>
+function work_search(){
+  const search_work_title = document.getElementById("search_work_title").value;
+  // console.log('hello', search_work_title)
+
+  const sparql = `
+    prefix fiaf: <https://dev.fiafcore.org/>
+    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    select distinct ?work ?title where {
+      ?work rdf:type/rdfs:subClassOf* fiaf:Work .
+      ?work fiaf:hasTitle ?t .
+      ?t fiaf:hasTitleValue ?title .
+      filter(contains(lcase(str(?title)), "${search_work_title}"))
+    }
+  `;
+
+  endpoint = 'https://data.fiafcore.org'
+  sparql_query(endpoint, sparql).then(result => {
+    search_work_yasr.setResponse(result);
+  });
+}
 
 function agent_search(){
   const search_agent_name = document.getElementById("search_agent_name").value;
-  console.log('hello', search_agent_name)
+  // console.log('hello', search_agent_name)
+
+  const sparql = `
+    prefix fiaf: <https://dev.fiafcore.org/>
+    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    select distinct ?agent ?name where {
+      ?agent rdf:type/rdfs:subClassOf* fiaf:Agent .
+      ?agent rdfs:label ?name .
+      filter(contains(lcase(str(?name)), "${search_agent_name}"))
+    }
+  `;
+
+  endpoint = 'https://data.fiafcore.org'
+  sparql_query(endpoint, sparql).then(result => {
+
+    search_agent_yasr.setResponse(result);
+  });
+}
+
+function work_clear(){
+  document.getElementById("search_work_title").value = "";
 }
 
 function agent_clear(){
   document.getElementById("search_agent_name").value = "";
 }
+
+let search_work_yasr = new Yasr(document.getElementById("search_work_result"));
+
+let search_agent_yasr = new Yasr(document.getElementById("search_agent_result"));
 
 </script>
 
