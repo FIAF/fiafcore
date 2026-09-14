@@ -11,6 +11,7 @@ import dotenv
 import flask
 import json
 import os
+import pandas
 import pathlib
 import pydash
 import pyld
@@ -175,6 +176,29 @@ app = flask.Flask(__name__)
 
 #     return result
 
+
+def subclasses(superclass):
+    fiafcore_path = pathlib.Path.cwd().parent / 'fiafcore.ttl'
+    if not fiafcore_path.exists():
+        raise Exception(f'{fiafcore_path} not found.')
+
+    ontology = rdflib.Graph().parse(fiafcore_path, format='ttl')
+
+    query = """
+    prefix fiaf: <https://dev.fiafcore.org/>
+    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    select ?country ?label
+    where {
+        ?country rdfs:subClassOf fiaf:"""+superclass+""" .
+        ?country rdfs:label ?label .
+    }
+    """
+
+    country_result = pandas.DataFrame(ontology.query(query), columns=['id', 'label'])
+
+    return country_result.map(str).to_dict('records')
+
 # agent_classes = subclasses('https://dev.fiafcore.org/Agent')
 # work_classes = subclasses('https://dev.fiafcore.org/Work')
 # manifestation_classes = subclasses('https://dev.fiafcore.org/Manifestation')
@@ -208,7 +232,14 @@ def search():
     if os.getenv('INSTANCE') != 'dev':
         return flask.render_template('error.html')
 
-    return flask.render_template('search.html')
+
+    vocab = {
+        'country': subclasses('Country'),
+        'form': subclasses('Form'),
+        'genre': subclasses('Genre')
+    }
+
+    return flask.render_template('search.html', vocab=vocab)
 
 @app.route('/sparql', methods=['GET'])
 def sparql():

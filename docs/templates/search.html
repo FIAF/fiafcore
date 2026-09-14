@@ -13,6 +13,37 @@
         <div style="padding-right:10px">Title</div>
         <input type="text" id='search_work_title' name="label" class="search_text" placeholder="Type something here..." value=""></input>
     </div>
+
+    <div class="search_field">
+        <div style="padding-right:10px">Country</div>
+        <select id="search_work_country" class="field_value" name="type_id_fk" required>
+            <option value="none" > </option>
+            {% for v in vocab.country %}
+                <option value="{{ v.id }}" >{{ v.label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="search_field">
+        <div style="padding-right:10px">Form</div>
+        <select id="search_work_form" class="field_value" name="type_id_fk" required>
+            <option value="none" > </option>
+            {% for v in vocab.form %}
+                <option value="{{ v.id }}" >{{ v.label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="search_field">
+        <div style="padding-right:10px">Genre</div>
+        <select id="search_work_genre" class="field_value" name="type_id_fk" required>
+            <option value="none" > </option>
+            {% for v in vocab.genre %}
+                <option value="{{ v.id }}" >{{ v.label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
     <button onclick="work_search()">Search</button>
     <button onclick="work_clear()">Clear</button>
 </div>
@@ -60,7 +91,20 @@ async function sparql_query(endpoint, sparql) {
 
 function work_search(){
   document.getElementById("search_work_result").style.display = "none";
+
   const search_work_title = document.getElementById("search_work_title").value;
+  const search_work_country = document.getElementById("search_work_country").value;
+
+  console.log(search_work_title, search_work_country)
+
+  if (search_work_country != 'none') {
+    country_query = `?work fiaf:hasCountry <${search_work_country}> .`
+  } else {
+    country_query = ''
+  }
+
+  console.log(country_query)
+
   const sparql = `
     prefix fiaf: <https://dev.fiafcore.org/>
     prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -70,9 +114,12 @@ function work_search(){
       ?work fiaf:hasTitle ?t1 .
       ?t1 fiaf:hasTitleValue ?t2 .
       filter(contains(lcase(str(?t2)), "${search_work_title}"))
+      ${country_query}
     }
     group by ?work
   `;
+
+  console.log('@@@', sparql)
 
   endpoint = 'https://data.fiafcore.org'
   sparql_query(endpoint, sparql).then(result => {
