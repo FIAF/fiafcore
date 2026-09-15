@@ -2,10 +2,30 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+
 <br>
 
-    SPARQL
+Direct queries to the knowledge graph can be made below, expressed in the SPARQL querying langauge. <br><br>
 
+<div class="search_field">
+    <div style="padding-right:10px">Some example queries:</div>
+    <select id="search_work_country" class="field_value" name="type_id_fk" required>
+        <option value="none" >Why is the sky blue?</option>
+        <option value="none" >Who named the days?</option>
+        <option value="none" >Where are my socks?</option>
+    </select>
+</div>
+
+<div id="yasgui"></div>
+
+<script>
+    const yasgui = new Yasgui(document.getElementById("yasgui"), {
+      requestConfig: {
+        endpoint: "https://data.fiafcore.org"
+      },
+      copyEndpointOnNewTab: false
+    });
+</script>
 <script>
     document.getElementById("access").style.fontWeight = 'Bold';
 </script>

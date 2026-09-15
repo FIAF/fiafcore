@@ -3,8 +3,15 @@
 
 {% block content %}
 
-<!-- notes to extend, YASR should be hidden on page load, during query and if clear is selected. -->
-<!-- SPARQL updates, only one entity should be returned, drop duplicates on id column -->
+<div id="loading-overlay" class="loading-overlay">
+  <div class="spinner"></div>
+</div>
+
+<br>
+
+Queries to the knowledge graph can be made below, with keyword and attribute search.
+
+<br>
 
 <h4>Work Search</h4>
 
@@ -66,6 +73,14 @@
 <br><br>
 
 <script>
+const loader = document.getElementById('loading-overlay');
+const button = document.getElementById('start-btn');
+
+const showLoader = () => loader.classList.add('is-active');
+const hideLoader = () => loader.classList.remove('is-active');
+</script>
+
+<script>
 
 async function sparql_query(endpoint, sparql) {
   try {
@@ -90,18 +105,37 @@ async function sparql_query(endpoint, sparql) {
 }
 
 function work_search(){
+
+
+  showLoader(); // 1. Show the indicator immediately
+
+
   document.getElementById("search_work_result").style.display = "none";
 
   const search_work_title = document.getElementById("search_work_title").value;
+
   const search_work_country = document.getElementById("search_work_country").value;
-
-  console.log(search_work_title, search_work_country)
-
   if (search_work_country != 'none') {
     country_query = `?work fiaf:hasCountry <${search_work_country}> .`
   } else {
     country_query = ''
   }
+
+  const search_work_form = document.getElementById("search_work_form").value;
+  if (search_work_form != 'none') {
+    form_query = `?work fiaf:hasForm <${search_work_form}> .`
+  } else {
+    form_query = ''
+  }
+
+  const search_work_genre = document.getElementById("search_work_genre").value;
+  if (search_work_genre != 'none') {
+    genre_query = `?work fiaf:hasGenre <${search_work_genre}> .`
+  } else {
+    genre_query = ''
+  }
+
+
 
   console.log(country_query)
 
@@ -115,6 +149,8 @@ function work_search(){
       ?t1 fiaf:hasTitleValue ?t2 .
       filter(contains(lcase(str(?t2)), "${search_work_title}"))
       ${country_query}
+      ${form_query}
+      ${genre_query}
     }
     group by ?work
   `;
@@ -124,18 +160,27 @@ function work_search(){
   endpoint = 'https://data.fiafcore.org'
   sparql_query(endpoint, sparql).then(result => {
     search_work_yasr.setResponse(result);
+    document.getElementById("search_agent_result").style.display = "none";
     document.getElementById("search_work_result").style.display = "block";
+    hideLoader();
   });
 }
 
 function work_clear(){
   document.getElementById("search_work_title").value = "";
+  document.getElementById("search_work_country").value = "";
+  document.getElementById("search_work_genre").value = "";
+  document.getElementById("search_work_form").value = "";
+
   document.getElementById("search_work_result").style.display = "none";
 }
 
 let search_work_yasr = new Yasr(document.getElementById("search_work_result"));
 
 function agent_search(){
+
+  showLoader();
+
   document.getElementById("search_agent_result").style.display = "none";
   const search_agent_name = document.getElementById("search_agent_name").value;
   const sparql = `
@@ -153,7 +198,9 @@ function agent_search(){
   endpoint = 'https://data.fiafcore.org'
   sparql_query(endpoint, sparql).then(result => {
     search_agent_yasr.setResponse(result);
+    document.getElementById("search_work_result").style.display = "none";
     document.getElementById("search_agent_result").style.display = "block";
+    hideLoader();
   });
 }
 
