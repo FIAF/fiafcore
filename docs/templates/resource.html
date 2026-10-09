@@ -66,7 +66,7 @@ fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
 <div>
 {% if data.hasEvent %}
     {% for x in data.hasEvent %}
-        <div style="padding: 20px; background-color:pink">
+        <div style="padding: 20px; background-color:pink; border-radius: 15px"">
         Event [<a href="{{ x.type[0]['@id'] }}" style="color: #666">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
         {% if x.hasActivity %}
             {% for y in x.hasActivity %}
@@ -78,7 +78,8 @@ fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
             {% endfor %}
         {% endif %}
         </div>
-    {% endfor %}<br>
+        <br>
+    {% endfor %}
 {% endif %}
 
 
@@ -86,7 +87,7 @@ fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
 
 {% if data.hasManifestation %}
     {% for x in data.hasManifestation %}
-        <div style="padding: 20px; background-color:orange">
+        <div style="padding: 20px; background-color:orange; border-radius: 15px">
 
             Manifestation [<a href="{{ x.type[0]['@id'] }}">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
 
@@ -152,7 +153,7 @@ fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
         {% endif %}
         </div>
         <br>
-    {% endfor %}<br>
+    {% endfor %}
 {% endif %}
 
 <!--filmography.-->
