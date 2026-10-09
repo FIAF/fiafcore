@@ -1,0 +1,181 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <!--<meta charset="UTF-8">-->
+<h1>
+    {% if data.label %}
+        {{ data.label.0 }}
+        [<a href="{{ data['type'][0]['@id'] }}">{{ data['type'][0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
+    {% else %}
+        {% if data.hasTitle %}
+            {{ data.hasTitle.0.hasTitleValue }}
+            [<a href="{{ data['type'][0]['@id'] }}">{{ data['type'][0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
+        {% endif %}
+    {% endif %}
+</h1>
+
+fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
+
+<!--title.-->
+
+{% if data.hasTitle %}
+    {% for x in data.hasTitle %}
+        <!--<a href="https://dev.fiafcore.org/hasTitle" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Title</b></a>-->
+        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Title</b>
+        {{ x.hasTitleValue }} [<a href="{{ x.type[0]['@id'] }}" style="color: #666">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--country.-->
+
+{% if data.hasCountry %}
+    {% for x in data.hasCountry %}
+        <!--<a href="https://dev.fiafcore.org/hasCountry" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Country</b></a>-->
+        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Country</b>
+        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--form.-->
+
+{% if data.hasForm %}
+    {% for x in data.hasForm %}
+        <!--<a href="https://dev.fiafcore.org/hasForm" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Form</b></a>-->
+        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Form</b>
+        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--genre.-->
+
+{% if data.hasGenre %}
+    {% for x in data.hasGenre %}
+        <!--<a href="https://dev.fiafcore.org/hasGenre" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Genre</b></a>-->
+        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Form</b>
+        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--event.-->
+
+<div>
+{% if data.hasEvent %}
+    {% for x in data.hasEvent %}
+        <div style="padding: 20px; background-color:pink">
+        Event [<a href="{{ x.type[0]['@id'] }}" style="color: #666">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
+        {% if x.hasActivity %}
+            {% for y in x.hasActivity %}
+                {% if y.hasAgent.label %}
+                    <a href="{{ y.hasAgent['@id'] }}" style="color: #666">{{ y.hasAgent['label'][0] }}</a>
+                    [<a href="{{ y.type[0]['@id'] }}"style="color: #666">{{ y.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
+                    <br>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        </div>
+    {% endfor %}<br>
+{% endif %}
+
+
+<!--manifestation.-->
+
+{% if data.hasManifestation %}
+    {% for x in data.hasManifestation %}
+        <div style="padding: 20px; background-color:orange">
+
+            Manifestation [<a href="{{ x.type[0]['@id'] }}">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
+
+        {% if x.hasColourCharacteristic %}
+            {% for y in x.hasColourCharacteristic.type %}
+                <b>Colour Characteristic</b>
+                <a href="{{ y['@id'] }}">{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
+                <br>
+            {% endfor %}
+        {% endif %}
+
+        {% if x.hasFormat %}
+            <b>Format</b>
+            <a href="{{ x.hasFormat['@id'] }}">{{ x.hasFormat.label[0]['@value'] }}</a>
+            <br>
+        {% endif %}
+
+        {% if x.hasLanguageUsage %}
+            {% if x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage'] %}
+                <b>Language</b>
+                <a href="{{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['@id'] }}">
+                {{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['label'][0]['@value'] }}</a>
+                [<a href="{{ x.hasLanguageUsage.type[0]['@id'] }}">{{ x.hasLanguageUsage.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
+                <br>
+           {% endif %}
+        {% endif %}
+
+        {% if x.hasSoundCharacteristic %}
+            {% for y in x.hasSoundCharacteristic.type %}
+                <b>Sound</b>
+                <a href="{{ y['@id'] }}">{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
+                <br>
+
+            {% endfor %}
+        {% endif %}
+
+        {% if x.hasItem %}
+            {% for y in x.hasItem %}
+
+                Item
+
+                {% if y.hasBase %}
+                    <a href="{{ y.hasBase['@id']}}">{{ y.hasBase['label'][0]['@value']}}</a>
+                {% endif %}
+
+                {% if y.hasHoldingInstitution %}
+                    <a href="{{ y.hasHoldingInstitution['@id']}}">{{ y.hasHoldingInstitution['label'][0]}}</a>
+                {% endif %}
+
+                {% if y.hasStatus %}
+                    <a href="{{ y.hasStatus['@id']}}">{{ y.hasStatus['label'][0]['@value']}}</a>
+                {% endif %}
+
+                {% for z in y.hasStock.type %}
+                    <a href="{{ z['@id'] }}">{{ z['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
+                {% endfor %}
+
+                {% if y.isElement %}
+                    <a href="{{ y.isElement['@id']}}">{{ y.isElement['label'][0]['@value']}}</a>
+                {% endif %}
+
+            {% endfor %}
+        {% endif %}
+        </div>
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--filmography.-->
+
+{% if data.filmography %}
+    {% for x in data.filmography %}
+        <b  style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Filmography</b>
+        <a href="{{ x['@id'] }}" style="color: #666">{{ x.label }}</a>
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+<!--identifier.-->
+
+{% if data.hasIdentifier %}
+    {% for x in data.hasIdentifier %}
+        <!--<a href="https://dev.fiafcore.org/hasIdentifier"><b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Identifier</b></a>-->
+        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Identifier</b>
+        {{ x.hasIdentifierValue }}
+        [<a href="{{ x.hasIdentifierAuthority['@id'] }}" style="color: #666">{{ x.hasIdentifierAuthority.label }}</a>]
+        <br>
+    {% endfor %}<br>
+{% endif %}
+
+
+{% endblock %}

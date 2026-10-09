@@ -22,8 +22,20 @@ construct {
     SUBJECT_URI fiaf:hasCountry ?country .
     ?country rdfs:label ?countryLabel .
 
+    SUBJECT_URI fiaf:hasForm ?form .
+    ?form rdfs:label ?formLabel .
+
     SUBJECT_URI fiaf:hasGenre ?genre .
     ?genre rdfs:label ?genreLabel .
+
+
+    SUBJECT_URI fiaf:hasLanguageUsage ?languse .
+    ?languse rdf:type ?languseType .
+    ?languseType rdfs:label ?languseTypeLabel .
+    ?languse fiaf:hasLanguage ?lang .
+    ?lang rdfs:label ?langLabel .
+
+
 
     SUBJECT_URI fiaf:hasEvent ?event .
     ?event rdf:type ?eventType .
@@ -50,6 +62,14 @@ construct {
 
     ?manifestation fiaf:hasFormat ?format .
     ?format rdfs:label ?formatLabel .
+
+
+
+    ?manifestation fiaf:hasLanguageUsage ?manlanguse .
+    ?manlanguse rdf:type ?manlanguseType .
+    ?manlanguseType rdfs:label ?manlanguseTypeLabel .
+    ?manlanguse fiaf:hasLanguage ?manlang .
+    ?manlang rdfs:label ?manlangLabel .
 
 
     ?manifestation fiaf:hasItem ?item .
@@ -108,9 +128,24 @@ where {
     }
 
     optional {
+        SUBJECT_URI fiaf:hasForm ?form .
+        ?form rdfs:label ?formLabel .
+    }
+
+    optional {
         SUBJECT_URI fiaf:hasGenre ?genre .
         ?genre rdfs:label ?genreLabel .
     }
+
+
+    optional {
+        SUBJECT_URI fiaf:hasLanguageUsage ?languse .
+        ?languse rdf:type ?languseType .
+        ?languseType rdfs:label ?languseTypeLabel .
+        ?languse fiaf:hasLanguage ?lang .
+        ?lang rdfs:label ?langLabel .
+    }
+
 
     optional {
         SUBJECT_URI fiaf:hasEvent ?event .
@@ -149,6 +184,19 @@ where {
             ?manifestation fiaf:hasFormat ?format .
             ?format rdfs:label ?formatLabel .
         }
+
+        optional {
+
+
+            ?manifestation fiaf:hasLanguageUsage ?manlanguse .
+            ?manlanguse rdf:type ?manlanguseType .
+            ?manlanguseType rdfs:label ?manlanguseTypeLabel .
+            ?manlanguse fiaf:hasLanguage ?manlang .
+            ?manlang rdfs:label ?manlangLabel .
+
+
+        }
+
         optional {
             ?manifestation fiaf:hasItem ?item .
 

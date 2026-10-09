@@ -4,10 +4,691 @@
 {% block content %}
 <br>
 
-    ONTOLOGY
+
+<style>
+
+
+
+table.ontology {
+    border-collapse: collapse;
+}
+
+th.ontology {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td.ontology {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+</style>
+
+FIAFcore is an ontology for film archives, developed to enable the federation of film related data from disparate sources. It is heavily based on the language and structures of the <a href="https://www.fiafnet.org/pages/e-resources/cataloguing-manual.html" style="color: crimson;">FIAF Cataloguing Manual</a>.
+
+
+
+<h4>Work</h4>
+A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasCountry" style="color: crimson;">Has Country</a></td>
+        <td class="ontology">Where known and applicable, record the geographic origin of the moving image Work. This should be the country or countries where the principal offices or production facilities of the production company or companies are located.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/Germany" style="color: crimson;">Germany</a></td>
+    </tr>
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasEvent" style="color: crimson;">Has Event</a></td>
+        <td class="ontology">An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasForm" style="color: crimson;">Has Form</a></td>
+        <td class="ontology">Form describes the format and/or purpose of a Work.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/FeatureFilm" style="color: crimson;">Feature Film</a></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasGenre" style="color: crimson;">Has Genre</a></td>
+        <td class="ontology">Genre describes categories of Works, characterized by similar plots, themes, settings, situations, and characters.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/ScienceFictionFilm" style="color: crimson;">Science Fiction</a></td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+        <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasLanguageUsage" style="color: crimson;">Has Language Usage</a></td>
+        <td class="ontology">Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasManifestation" style="color: crimson;">Has Manifestation</a></td>
+        <td class="ontology">Express the relationship between a moving image Work or Variant and a moving image Manifestation.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/ede01e7e-3513-4d9c-bfac-a37e01785b22" style="color: crimson;">Metropolis Manifestation</a></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasTitle" style="color: crimson;">Has Title</a></td>
+        <td class="ontology">Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasVariant" style="color: crimson;">Has Variant</a></td>
+        <td class="ontology">Express the relationship between a moving image Work and a moving image Variant.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/ad37a673-201f-4e07-bc3b-39bed18400b8" style="color: crimson;">Metropolis Variant</a></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasWork" style="color: crimson;">Has Work</a></td>
+        <td class="ontology">Express the relationship between a moving image Work and another moving image Work.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/77566b79-9889-4772-adff-8640a0f6287e" style="color: crimson;">Metropolis</a></td>
+    </tr>
+
+
+
+
+</table>
+
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:77566b79-9889-4772-adff-8640a0f6287e
+    a fiaf:MonographicWork ;
+    rdfs:label "Metropolis" ;
+    fiaf:hasCountry fiaf:Germany ;
+    fiaf:hasEvent _:blankNode1 ;
+    fiaf:hasForm fiaf:FeatureFilm ;
+    fiaf:hasGenre fiaf:ScienceFictionFilm ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+        fiaf:hasIdentifierValue "150041825" ] ;
+    fiaf:hasManifestation fiaf:ede01e7e-3513-4d9c-bfac-a37e01785b22 ;
+    fiaf:hasTitle [ a fiaf:TitleProper ;
+            fiaf:hasTitleValue "Metropolis" ],
+        [ a fiaf:IdentifiyingTitle ;
+            fiaf:hasTitleValue "Metropolis (1925-1926)(Originaltitel)" ] .
+</code></pre>
+
+
+
+
+<h4>Variant</h4>
+A moving image Variant is an entity that may be used to indicate any change to content-related characteristics that do not significantly change the overall content of a Work as a whole.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasEvent" style="color: crimson;">Has Event</a></td>
+        <td class="ontology">An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+        <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasLanguageUsage" style="color: crimson;">Has Language Usage</a></td>
+        <td class="ontology">Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasManifestation" style="color: crimson;">Has Manifestation</a></td>
+        <td class="ontology">Express the relationship between a moving image Work or Variant and a moving image Manifestation.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/cf34eae1-2ccf-4ef1-b494-28cdd7253110" style="color: crimson;">Metropolis Manifestation</a></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasTitle" style="color: crimson;">Has Title</a></td>
+        <td class="ontology">Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+
+
+</table>
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:77566b79-9889-4772-adff-8640a0f6287e
+    a fiaf:ColourizedVariant ;
+    rdfs:label "Metropolis" ;
+    fiaf:hasManifestation fiaf:ede01e7e-3513-4d9c-bfac-a37e01785b22 .
+</code></pre>
+
+
+
+
+
+
+
+
+
+<h4>Manifestation</h4>
+A moving image Manifestation is the embodiment of a moving image Work or Variant. Manifestations usually include all analogue, digital and online media associated with a particular embodiment of a Work or Variant.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasColourCharacteristic" style="color: crimson;">Has Colour Characteristic</a></td>
+        <td class="ontology">The presence of colour(s), tone(s), etc. in a Manifestation or an Item.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasEvent" style="color: crimson;">Has Event</a></td>
+            <td class="ontology">An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasExtent" style="color: crimson;">Has Extent</a></td>
+            <td class="ontology">The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasFormat" style="color: crimson;">Has Format</a></td>
+            <td class="ontology">The medium on or the encoding format in which the moving image Manifestation or Item is fixed.</td>
+            <td class="ontology"><a href="https://dev.fiafcore.org/35mmFilm" style="color: crimson;">35mm Film</a></td>
+        </tr>
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+            <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasItem" style="color: crimson;">Has Item</a></td>
+            <td class="ontology">Express the relationship between a moving image Manifestation and a moving image Item.</td>
+            <td class="ontology"><a href="https://dev.fiafcore.org/732fce4e-9738-4501-bc5f-f9243db387af" style="color: crimson;">Metropolis Item</a></td>
+        </tr>
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasLanguageUsage" style="color: crimson;">Has Language Usage</a></td>
+            <td class="ontology">Record the usage type of a language e.g. spoken, intertitles, subtitles, etc.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasSoundCharacteristic" style="color: crimson;">Has Sound Characteristic</a></td>
+            <td class="ontology">Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasTitle" style="color: crimson;">Has Title</a></td>
+            <td class="ontology">Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+
+</table>
+
+
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:ede01e7e-3513-4d9c-bfac-a37e01785b22
+    a fiaf:Manifestation ;
+    rdfs:label "Metropolis Manifestation" ;
+    fiaf:hasColourCharacteristic [ a fiaf:BlackAndWhite ] ;
+    fiaf:hasFormat fiaf:35mmFilm ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+        fiaf:hasIdentifierValue "365272" ] ;
+    fiaf:hasItem fiaf:732fce4e-9738-4501-bc5f-f9243db387af ;
+    fiaf:hasLanguageUsage [ a fiaf:Intertitles ;
+            fiaf:hasLanguage fiaf:German ] ;
+    fiaf:hasSoundCharacteristic [ a fiaf:Silent ] .
+</code></pre>
+
+
+<h4>Item</h4>
+A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository's collection.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasBase" style="color: crimson;">Has Base</a></td>
+        <td class="ontology">The physical material or video format on which the Item is captured.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/PolyesterBase" style="color: crimson;">Polyester Base</a></td>
+    </tr>
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasBroadcastStandard" style="color: crimson;">Has Broadcast Standard</a></td>
+        <td class="ontology">The broadcast standard for a video or DVD/BluRay.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/NTSC" style="color: crimson;">NTSC</a></td>
+    </tr>
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasCarrier" style="color: crimson;">Has Carrier</a></td>
+        <td class="ontology">Express the relationship between a moving image Item and a moving image Carrier.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/005ecbf8-1693-4986-8fef-43f55436dfe8" style="color: crimson;">Metropolis Carrier</a></td>
+    </tr>
+
+
+
+
+
+
+
+
+
+        <tr class="ontology">
+            <td class="ontology"><a href="https://dev.fiafcore.org/hasColourCharacteristic" style="color: crimson;">Has Colour Characteristic</a></td>
+            <td class="ontology">The presence of colour(s), tone(s), etc. in a Manifestation or an Item.</td>
+            <td class="ontology">_:blankNode</td>
+        </tr>
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasEvent" style="color: crimson;">Has Event</a></td>
+                <td class="ontology">An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasExtent" style="color: crimson;">Has Extent</a></td>
+                <td class="ontology">The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasFormat" style="color: crimson;">Has Format</a></td>
+                <td class="ontology">The medium on or the encoding format in which the moving image Manifestation or Item is fixed.</td>
+                <td class="ontology"><a href="https://dev.fiafcore.org/35mmFilm" style="color: crimson;">35mm Film</a></td>
+            </tr>
+
+
+
+
+                <tr class="ontology">
+                    <td class="ontology"><a href="https://dev.fiafcore.org/hasHoldingInstitution" style="color: crimson;">Has Holding Institution</a></td>
+                    <td class="ontology">Record the name of the institution possessing the moving image Item or authorised to make it available.</td>
+                    <td class="ontology"><a href="https://dev.fiafcore.org/f0032f62-d28c-4730-a358-afb8106173e0" style="color: crimson;">British Film Institute</a></td>
+                </tr>
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+                <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+
+
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasSoundCharacteristic" style="color: crimson;">Has Sound Characteristic</a></td>
+                <td class="ontology">Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasStatus" style="color: crimson;">Has Status</a></td>
+                <td class="ontology">Description of the preservation or access status of the Item.</td>
+                <td class="ontology"><a href="https://dev.fiafcore.org/Preservation" style="color: crimson;">Preservation</a></td>
+            </tr>
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasStock" style="color: crimson;">Has Stock</a></td>
+                <td class="ontology">Describes the specific stock/brand on which the Item is captured.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/hasTitle" style="color: crimson;">Has Title</a></td>
+                <td class="ontology">Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item.</td>
+                <td class="ontology">_:blankNode</td>
+            </tr>
+
+
+            <tr class="ontology">
+                <td class="ontology"><a href="https://dev.fiafcore.org/isElement" style="color: crimson;">Is Element</a></td>
+                <td class="ontology">Record the nature or function of the moving image Item, describing its place in the photochemical or digital production or duplication process.</td>
+                <td class="ontology"><a href="https://dev.fiafcore.org/ReleasePrint" style="color: crimson;">Release Print</a></td>
+            </tr>
+
+
+
+
+</table>
+
+
+
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:732fce4e-9738-4501-bc5f-f9243db387af
+    a fiaf:Item ;
+    rdfs:label "Metropolis Item" ;
+    fiaf:hasBase fiaf:PolyesterBase ;
+    fiaf:hasCarrier fiaf:005ecbf8-1693-4986-8fef-43f55436dfe8 ;
+    fiaf:hasColourCharacteristic [ a fiaf:BlackAndWhite ] ;
+    fiaf:hasFormat fiaf:35mmFilm ;
+    fiaf:hasHoldingInstitution fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+        fiaf:hasIdentifierValue "482874" ] ;
+    fiaf:hasLanguageUsage [ a fiaf:Intertitles ;
+            fiaf:hasLanguage fiaf:German ] ;
+    fiaf:hasSoundCharacteristic [ a fiaf:Silent ] ;
+    fiaf:hasStatus fiaf:Preservation ;
+    fiaf:hasStock [ a fiaf:Agfa ] ;
+    fiaf:isElement fiaf:ReleasePrint .
+</code></pre>
+
+
+
+
+
+<h4>Carrier</h4>
+A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasEvent" style="color: crimson;">Has Event</a></td>
+        <td class="ontology">An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier.</td>
+        <td class="ontology">{example}</td>
+    </tr>
+
+
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+        <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+        <td class="ontology">{example}</td>
+    </tr>
+
+
+
+
+
+
+</table>
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:005ecbf8-1693-4986-8fef-43f55436dfe8
+    a fiaf:Carrier ;
+    rdfs:label "Metropolis Carrier" ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+        fiaf:hasIdentifierValue "943602" ] .
+</code></pre>
+
+
+
+
+<h4>Event</h4>
+An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasAchievement" style="color: crimson;">Has Achievement</a></td>
+        <td class="ontology"></td>
+        <td class="ontology"></td>
+    </tr>
+
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasActivity" style="color: crimson;">Has Activity</a></td>
+        <td class="ontology">Express the relationship between an Event and an Activity.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+
+
+
+
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasAwardName" style="color: crimson;">Has Award Name</a></td>
+        <td class="ontology"></td>
+        <td class="ontology"></td>
+    </tr>
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasDate" style="color: crimson;">Has Date</a></td>
+        <td class="ontology"></td>
+        <td class="ontology">"1925"</td>
+    </tr>
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasVerdict" style="color: crimson;">Has Verdict</a></td>
+        <td class="ontology"></td>
+        <td class="ontology"></td>
+    </tr>
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/nominationOnly" style="color: crimson;">Nomination Only</a></td>
+        <td class="ontology"></td>
+        <td class="ontology"></td>
+    </tr>
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+_:blankNode1
+    a fiaf:ProductionEvent ;
+    rdfs:label "Metropolis Production" ;
+    fiaf:hasDate "1925" ;
+    fiaf:hasActivity _:blankNode2 .
+</code></pre>
+
+
+
+
+<h4>Activity</h4>
+This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+
+
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasAgent" style="color: crimson;">Has Agent</a></td>
+        <td class="ontology">Express the relationship between an Activity and an Agent.</td>
+        <td class="ontology"><a href="https://dev.fiafcore.org/37101230-528d-4f14-b50b-e0127756b7fa" style="color: crimson;">Brigitte Helm</a></td>
+    </tr>
+
+
+
+
+</table>
+
+
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+
+_:blankNode2
+    a fiaf:CastMember ;
+    fiaf:hasAgent fiaf:37101230-528d-4f14-b50b-e0127756b7fa .
+</code></pre>
+
+
+
+<h4>Agent</h4>
+Agents, whether for works/variants, manifestations, or items in moving images, are entities involved in their creation, exploitation, or preservation, with typical distinctions including person, corporate body, family, and person group, encompassing responsibilities such as release, distribution, acquisition, or preservation.<br><br>
+<i>Properties</i><br><br>
+<table style='table-layout: fixed;width: 100%;' class="ontology">
+    <tr  class="ontology" style='background-color: grey;color: white'>
+        <td class="ontology"><b>Property</b></td><td class="ontology"><b>Description</b></td><td class="ontology"><b>Example</b></td>
+    </tr>
+    <tr class="ontology">
+        <td class="ontology"><a href="https://dev.fiafcore.org/hasIdentifier" style="color: crimson;">Has Identifier</a></td>
+        <td class="ontology">An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion.</td>
+        <td class="ontology">_:blankNode</td>
+    </tr>
+</table>
+<br>
+<i>Example</i><br><br>
+<pre><code class="language-turtle">@prefix fiaf: &lt;https://dev.fiafcore.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+fiaf:37101230-528d-4f14-b50b-e0127756b7fa
+    a fiaf:Person ;
+    rdfs:label "Brigitte Helm" ;
+    fiaf:hasIdentifier [ a fiaf:Identifier ;
+        fiaf:hasIdentifierAuthority fiaf:f0032f62-d28c-4730-a358-afb8106173e0 ;
+        fiaf:hasIdentifierValue "222178" ] .
+</code></pre>
+
+<br>
+<br>
+<br>
 
 <script>
     document.getElementById("ontology").style.fontWeight = 'Bold';
 </script>
-
+<script src="../static/prism.js"></script>
 {% endblock %}

@@ -25,7 +25,10 @@
       "@id": "https://dev.fiafcore.org/hasCountry",
       "@container": "@set"
     },
-
+    "hasForm": {
+      "@id": "https://dev.fiafcore.org/hasForm",
+      "@container": "@set"
+    },
     "hasGenre": {
       "@id": "https://dev.fiafcore.org/hasGenre",
       "@container": "@set"
@@ -46,6 +49,8 @@
 
     "hasSoundCharacteristic": "https://dev.fiafcore.org/hasSoundCharacteristic",
     "hasFormat": "https://dev.fiafcore.org/hasFormat",
+
+    "hasLanguageUsage": "https://dev.fiafcore.org/hasLanguageUsage",
 
     "hasItem": {
       "@id": "https://dev.fiafcore.org/hasItem",
@@ -69,6 +74,11 @@
     }
   },
   "hasManifestation": {
+    "hasColourCharacteristic": { "@embed": "@always" },
+    "hasFormat": { "@embed": "@always" },
+    "hasSoundCharacteristic": { "@embed": "@always" },
+    "hasLanguageUsage": { "@embed": "@always" },
+
     "hasItem": {
       "hasBase": { "@embed": "@always" },
       "hasHoldingInstitution": { "@embed": "@always" },
