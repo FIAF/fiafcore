@@ -2,7 +2,8 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <!--<meta charset="UTF-8">-->
+
+
 <h1>
     {% if data.label %}
         {{ data.label.0 }}
@@ -15,168 +16,243 @@
     {% endif %}
 </h1>
 
-fiaf:{{ data['@id'].split("/")[-1]}}<br><br>
+<!--<div style="background-color:#fff; border-radius: 6px;padding:4px"">-->
+    <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
-<!--title.-->
+<table style="  border-collapse: collapse;
+  border: none;
+  margin: 0;  ">
 
-{% if data.hasTitle %}
-    {% for x in data.hasTitle %}
-        <!--<a href="https://dev.fiafcore.org/hasTitle" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Title</b></a>-->
-        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Title</b>
-        {{ x.hasTitleValue }} [<a href="{{ x.type[0]['@id'] }}" style="color: #666">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
-        <br>
-    {% endfor %}<br>
-{% endif %}
+
+
+  <!--title.-->
+
+
+
+  {% if data.hasTitle %}
+      {% for x in data.hasTitle %}
+      <tr>
+          <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100;">Title</td>
+          <td>{{ x.hasTitleValue }} [<a href="{{ x.type[0]['@id'] }}"><u>{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>]</td>
+      </tr>
+      {% endfor %}
+  {% endif %}
+
+
+  <!--filmography.-->
+
+
+  {% if data.filmography %}
+
+
+
+                    {% for x in data.filmography %}
+                    <tr>
+                        <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Filmography</td>
+                       <td> <a href="{{ x['@id'] }}"><u>{{ x.label }}</u></a></td>
+                    </tr>
+                    {% endfor %}
+
+
+   {% endif %}
+
+
+
+  <!--identifier.-->
+
+  {% if data.hasIdentifier %}
+      {% for x in data.hasIdentifier %}
+      <tr>
+          <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100">Identifier</td>
+          <td>{{ x.hasIdentifierValue }}
+          [<a href="{{ x.hasIdentifierAuthority['@id'] }}"><u>{{ x.hasIdentifierAuthority.label }}</u></a>]
+          </td>
+      </tr>
+      {% endfor %}
+  {% endif %}
+
+
 
 <!--country.-->
 
 {% if data.hasCountry %}
     {% for x in data.hasCountry %}
-        <!--<a href="https://dev.fiafcore.org/hasCountry" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Country</b></a>-->
-        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Country</b>
-        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
-        <br>
-    {% endfor %}<br>
+    <tr>
+        <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100">Country</td>
+
+<td>        <a href="{{ x['@id'] }}"><u>{{ x['label'][0]['@value'] }}</u></a></td>
+    </tr>
+    {% endfor %}
 {% endif %}
 
 <!--form.-->
 
 {% if data.hasForm %}
     {% for x in data.hasForm %}
-        <!--<a href="https://dev.fiafcore.org/hasForm" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Form</b></a>-->
-        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Form</b>
-        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
-        <br>
-    {% endfor %}<br>
+
+    <tr>
+
+
+
+        <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100">Form</td>
+
+
+       <td> <a href="{{ x['@id'] }}"><u>{{ x['label'][0]['@value'] }}</u></a></td>
+    </tr>
+    {% endfor %}
 {% endif %}
 
 <!--genre.-->
 
 {% if data.hasGenre %}
     {% for x in data.hasGenre %}
-        <!--<a href="https://dev.fiafcore.org/hasGenre" style="visibility: {{ 'visible' if loop.first else 'hidden' }};"><b>Genre</b></a>-->
-        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Form</b>
-        <a href="{{ x['@id'] }}" style="color: #666">{{ x['label'][0]['@value'] }}</a>
-        <br>
-    {% endfor %}<br>
+    <tr>
+
+
+    <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100">Genre</td>
+
+
+       <td> <a href="{{ x['@id'] }}"><u>{{ x['label'][0]['@value'] }}</u></a></td>
+    </tr>
+    {% endfor %}
 {% endif %}
+
+
+
+
 
 <!--event.-->
 
 <div>
 {% if data.hasEvent %}
     {% for x in data.hasEvent %}
-        <div style="padding: 20px; background-color:pink; border-radius: 15px"">
-        Event [<a href="{{ x.type[0]['@id'] }}" style="color: #666">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
+
+
+
         {% if x.hasActivity %}
-            {% for y in x.hasActivity %}
-                {% if y.hasAgent.label %}
-                    <a href="{{ y.hasAgent['@id'] }}" style="color: #666">{{ y.hasAgent['label'][0] }}</a>
-                    [<a href="{{ y.type[0]['@id'] }}"style="color: #666">{{ y.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
-                    <br>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-        </div>
-        <br>
+                      {% for y in x.hasActivity %}
+                          {% if y.hasAgent.label %}
+                          <tr>
+                              <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Agent</td>
+                              <td>
+                              <a href="{{ y.hasAgent['@id'] }}"><u>{{ y.hasAgent['label'][0] }}</u></a>
+                              [<a href="{{ y.type[0]['@id'] }}"><u>{{ y.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>]
+                              </td> </tr>
+                          {% endif %}
+                      {% endfor %}
+         {% endif %}
+
+
+
+
+
+
+
     {% endfor %}
 {% endif %}
 
+
+  </table>
+
+
+</div><br>
 
 <!--manifestation.-->
 
 {% if data.hasManifestation %}
     {% for x in data.hasManifestation %}
-        <div style="padding: 20px; background-color:orange; border-radius: 15px">
+        <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
-            Manifestation [<a href="{{ x.type[0]['@id'] }}">{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]<br>
+                <table style="  border-collapse: collapse;
+                  border: none;
+                  margin: 0;  ">
 
-        {% if x.hasColourCharacteristic %}
-            {% for y in x.hasColourCharacteristic.type %}
-                <b>Colour Characteristic</b>
-                <a href="{{ y['@id'] }}">{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
-                <br>
-            {% endfor %}
-        {% endif %}
+<tr>
+    <td style="  width:150px; font-weight:100">Manifestation</td>
 
-        {% if x.hasFormat %}
-            <b>Format</b>
-            <a href="{{ x.hasFormat['@id'] }}">{{ x.hasFormat.label[0]['@value'] }}</a>
-            <br>
-        {% endif %}
+                      <!--<td>Manifestation </td>-->
+<td>                      <a href="{{ x.type[0]['@id'] }}"><u>{{ x.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a></td>
+</tr>
 
-        {% if x.hasLanguageUsage %}
-            {% if x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage'] %}
-                <b>Language</b>
-                <a href="{{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['@id'] }}">
-                {{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['label'][0]['@value'] }}</a>
-                [<a href="{{ x.hasLanguageUsage.type[0]['@id'] }}">{{ x.hasLanguageUsage.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>]
-                <br>
-           {% endif %}
-        {% endif %}
-
-        {% if x.hasSoundCharacteristic %}
-            {% for y in x.hasSoundCharacteristic.type %}
-                <b>Sound</b>
-                <a href="{{ y['@id'] }}">{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
-                <br>
-
-            {% endfor %}
-        {% endif %}
-
-        {% if x.hasItem %}
-            {% for y in x.hasItem %}
-
-                Item
-
-                {% if y.hasBase %}
-                    <a href="{{ y.hasBase['@id']}}">{{ y.hasBase['label'][0]['@value']}}</a>
-                {% endif %}
-
-                {% if y.hasHoldingInstitution %}
-                    <a href="{{ y.hasHoldingInstitution['@id']}}">{{ y.hasHoldingInstitution['label'][0]}}</a>
-                {% endif %}
-
-                {% if y.hasStatus %}
-                    <a href="{{ y.hasStatus['@id']}}">{{ y.hasStatus['label'][0]['@value']}}</a>
-                {% endif %}
-
-                {% for z in y.hasStock.type %}
-                    <a href="{{ z['@id'] }}">{{ z['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</a>
+                {% if x.hasColourCharacteristic %}
+                {% for y in x.hasColourCharacteristic.type %}
+                <tr>
+                    <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Colour</td>
+                    <td><a href="{{ y['@id'] }}"><u>{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a></td>
+                </tr>
                 {% endfor %}
-
-                {% if y.isElement %}
-                    <a href="{{ y.isElement['@id']}}">{{ y.isElement['label'][0]['@value']}}</a>
                 {% endif %}
 
-            {% endfor %}
-        {% endif %}
+                {% if x.hasFormat %}
+                <tr>
+                    <td style="  width:150px; font-weight: 100">Format</td>
+                    <td><a href="{{ x.hasFormat['@id'] }}"><u>{{ x.hasFormat.label[0]['@value'] }}</u></a></td>
+                </tr>
+                {% endif %}
+
+                {% if x.hasLanguageUsage %}
+                {% if x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage'] %}
+                <tr>
+                    <td style=" width:150px; font-weight: 100">Language</td>
+                    <td>
+                        <a href="{{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['@id'] }}">
+                        <u>{{ x.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['label'][0]['@value'] }}</u></a>
+                        [<a href="{{ x.hasLanguageUsage.type[0]['@id'] }}"><u>{{ x.hasLanguageUsage.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>]
+                    </td>
+                </tr>
+                {% endif %}
+                {% endif %}
+
+                {% if x.hasSoundCharacteristic %}
+                {% for y in x.hasSoundCharacteristic.type %}
+                <tr>
+                    <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Sound</td>
+                    <td><a href="{{ y['@id'] }}"><u>{{ y['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a></td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+
+                {% if x.hasItem %}
+                {% for y in x.hasItem %}
+                <tr>
+                    <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Item</td>
+                    <td>
+                        {% if y.hasHoldingInstitution %}
+                        <a href="{{ y.hasHoldingInstitution['@id']}}"><u>{{ y.hasHoldingInstitution['label'][0]}}</u></a>
+                        {% endif %}
+                        {% if y.hasStatus %}
+                        / <a href="{{ y.hasStatus['@id']}}"><u>{{ y.hasStatus['label'][0]['@value']}}</u></a>
+                        {% endif %}
+                        {% if y.isElement %}
+                        / <a href="{{ y.isElement['@id']}}"><u>{{ y.isElement['label'][0]['@value']}}</u></a>
+                        {% endif %}
+                        {% if y.hasBase %}
+                        / <a href="{{ y.hasBase['@id']}}"><u>{{ y.hasBase['label'][0]['@value']}}</u></a>
+                        {% endif %}
+                        {% for z in y.hasStock.type %}
+                        / <a href="{{ z['@id'] }}"><u>{{ z['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+                  </table>
         </div>
+
+
+
+
+
         <br>
     {% endfor %}
 {% endif %}
 
-<!--filmography.-->
 
-{% if data.filmography %}
-    {% for x in data.filmography %}
-        <b  style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Filmography</b>
-        <a href="{{ x['@id'] }}" style="color: #666">{{ x.label }}</a>
-        <br>
-    {% endfor %}<br>
-{% endif %}
+        <div style="background-color:#efefef; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
-<!--identifier.-->
+        <tspan style="font-weight: 100">fiaf:{{ data['@id'].split("/")[-1]}}</tspan>
+        </div><br>
 
-{% if data.hasIdentifier %}
-    {% for x in data.hasIdentifier %}
-        <!--<a href="https://dev.fiafcore.org/hasIdentifier"><b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Identifier</b></a>-->
-        <b style="visibility: {{ 'visible' if loop.first else 'hidden' }};">Identifier</b>
-        {{ x.hasIdentifierValue }}
-        [<a href="{{ x.hasIdentifierAuthority['@id'] }}" style="color: #666">{{ x.hasIdentifierAuthority.label }}</a>]
-        <br>
-    {% endfor %}<br>
-{% endif %}
 
 
 {% endblock %}
