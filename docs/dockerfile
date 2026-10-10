@@ -1,0 +1,14 @@
+
+FROM ghcr.io/astral-sh/uv:python3.13-alpine
+
+USER root
+
+RUN apk add --no-cache gcc musl-dev linux-headers python3-dev
+
+WORKDIR /app
+
+COPY . /app
+
+RUN uv sync
+
+CMD ["uv", "run", "gunicorn", "--no-control-socket", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]

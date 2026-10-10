@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{{ data }}
+<!--{{ data }}-->
 
 <h1>
     {% if data.label %}
@@ -63,12 +63,15 @@
 
   {% if data.hasIdentifier %}
       {% for x in data.hasIdentifier %}
+      {% if x.hasIdentifierAuthority %}
+
       <tr>
           <td style="visibility: {{ 'visible' if loop.first else 'hidden' }}; width:150px; font-weight: 100">Identifier</td>
           <td>{{ x.hasIdentifierValue }}
           [<a href="{{ x.hasIdentifierAuthority['@id'] }}"><u>{{ x.hasIdentifierAuthority.label }}</u></a>]
           </td>
-      </tr>
+      </tr>  {% endif %}
+
       {% endfor %}
   {% endif %}
 

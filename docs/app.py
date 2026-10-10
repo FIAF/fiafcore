@@ -11,11 +11,12 @@ import rdflib
 import requests
 
 def subclasses(superclass):
-    fiafcore_path = pathlib.Path.cwd().parent / 'fiafcore.ttl'
-    if not fiafcore_path.exists():
-        raise Exception(f'{fiafcore_path} not found.')
 
-    ontology = rdflib.Graph().parse(fiafcore_path, format='ttl')
+    r = requests.get('https://raw.githubusercontent.com/FIAF/fiafcore/refs/heads/develop/fiafcore.ttl')
+    if r.status_code != 200:
+        raise Exception(f'API {r.status_code}: {r.text}')
+
+    ontology_graph = rdflib.Graph().parse(data=r.text)
 
     query = """
         prefix fiaf: <https://dev.fiafcore.org/>
@@ -28,7 +29,7 @@ def subclasses(superclass):
         }
     """
 
-    result = pandas.DataFrame(ontology.query(query), columns=['id', 'label'])
+    result = pandas.DataFrame(ontology_graph.query(query), columns=['id', 'label'])
 
     return result.map(str).to_dict('records')
 
@@ -37,12 +38,11 @@ def superclass():
 
     """Predetermine superclasses for core child elements."""
 
-    ontology_path = pathlib.Path.cwd().parent / 'fiafcore.ttl'
-    if not ontology_path.exists():
-        raise Exception(f'{ontology_path} not found.')
+    r = requests.get('https://raw.githubusercontent.com/FIAF/fiafcore/refs/heads/develop/fiafcore.ttl')
+    if r.status_code != 200:
+        raise Exception(f'API {r.status_code}: {r.text}')
 
-    ontology_graph = rdflib.Graph().parse(ontology_path)
-
+    ontology_graph = rdflib.Graph().parse(data=r.text)
 
     query = """
         prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -95,10 +95,6 @@ def add_type_label(data, ref, target_key, new_key, new_value):
             add_type_label(item,ref, target_key, new_key, new_value)
 
 
-# load environ vars.
-
-dotenv.load_dotenv()
-
 # declare application.
 
 app = flask.Flask(__name__)
@@ -111,36 +107,26 @@ superclass_lookup = superclass()
 
 @app.route('/', methods=['GET'])
 def home():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     return flask.render_template('index.html')
 
 @app.route('/datasets', methods=['GET'])
 def datasets():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     return flask.render_template('datasets.html')
 
 @app.route('/ontology', methods=['GET'])
 def ontology():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     return flask.render_template('ontology.html')
 
 @app.route('/vocabularies', methods=['GET'])
 def vocabularies():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     return flask.render_template('vocabularies.html')
 
 @app.route('/search', methods=['GET'])
 def search():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     vocab = {
         'country': subclasses('Country'),
@@ -152,16 +138,8 @@ def search():
 
 @app.route('/sparql', methods=['GET'])
 def sparql():
-    if os.getenv('INSTANCE') != 'dev':
-        return flask.render_template('error.html')
 
     return flask.render_template('sparql.html')
-
-
-
-
-
-
 
 @app.route('/<id>', methods=['GET'])
 def entity(id):
