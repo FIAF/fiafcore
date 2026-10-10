@@ -5,9 +5,9 @@ USER root
 
 RUN apk add --no-cache gcc musl-dev linux-headers python3-dev
 
-WORKDIR /app
+WORKDIR /docs
 
-COPY . /app
+COPY . /docs
 
 RUN uv sync
 
