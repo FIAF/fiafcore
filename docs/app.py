@@ -59,6 +59,11 @@ def superclass():
         entity_uri = rdflib.URIRef(f'https://dev.fiafcore.org/{entity_type}')
         result[entity_uri] = entity_uri
 
+
+    result[rdflib.URIRef('http://www.w3.org/2002/07/owl#Class')] = rdflib.URIRef('http://www.w3.org/2002/07/owl#Class')
+
+    print('@@@', result)
+
     return result
 
 def ensure_list(data, ref, target_key, new_key, new_value):
@@ -158,15 +163,8 @@ def sparql():
 
 
 
-@app.route('/<resource>', methods=['GET'])
-def entity(resource):
-
-
-    # subject to render.
-
-    # id = 'a54ec8e3-5372-491f-8b12-d29219f87a75'
-    id = '2fe108df-ba7f-4e2b-a610-d0d46ff9b184'
-    id = resource
+@app.route('/<id>', methods=['GET'])
+def entity(id):
 
     # convert to uri.
 
@@ -203,6 +201,8 @@ def entity(resource):
         shape = 'agent'
     elif superclass == rdflib.URIRef('https://dev.fiafcore.org/Work'):
         shape = 'work'
+    elif superclass == rdflib.URIRef('http://www.w3.org/2002/07/owl#Class'):
+        shape = 'class'
     else:
         raise Exception(f'{superclass} shape not detected.')
 
@@ -252,7 +252,7 @@ def entity(resource):
 
     add_type_label(payload, datum, '@type', 'type_label', 'hello')
 
-    # in ill-supported conveniance is to display filmographies against agents.
+    # in ill-supported conveniance to display filmographies against agents.
 
     if shape == 'agent':
         query = """
@@ -305,6 +305,11 @@ def entity(resource):
     #     jsonschema.validate(instance=payload, schema=schema)
     # except jsonschema.exceptions.ValidationError as e:
     #     raise Exception(f'Validation failed: {e}')
+
+
+    if shape == 'class':
+        return flask.render_template('class.html', data=payload)
+
 
     return flask.render_template('resource.html', data=payload)
 
