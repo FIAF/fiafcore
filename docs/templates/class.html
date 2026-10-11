@@ -30,7 +30,7 @@
 
 
 
-  {% if data['http://purl.org/dc/elements/1.1/description'] %}
+  {% if data['http://purl.org/dc/elements/1.1/description']['@value'] %}
       <tr>
           <td style=" width:150px; font-weight: 100;">Description</td>
           <td>{{ data['http://purl.org/dc/elements/1.1/description']['@value']  }}</td>
