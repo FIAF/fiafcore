@@ -37,6 +37,28 @@
       </tr>
   {% endif %}
 
+<!--rdfs:domain': {'@id': 'https://dev.fiafcore.org/Work', 'label': {'@language': 'en', '@value': 'Work'}}, -->
+  {% if data['rdfs:domain'] %}
+      <tr>
+          <td style=" width:150px; font-weight: 100;">Domain</td>
+          <!--<td>{{ data['http://purl.org/dc/elements/1.1/description']['@value']  }}</td>-->
+          <td> <a href="{{ data['rdfs:domain']['@id'] }}"><u>{{ data['rdfs:domain']['label']['@value'] }}</u></a></td>
+
+      </tr>
+  {% endif %}
+  {% if data['rdfs:range'] %}
+      <tr>
+          <td style=" width:150px; font-weight: 100;">Domain</td>
+          <!--<td>{{ data['http://purl.org/dc/elements/1.1/description']['@value']  }}</td>-->
+          <td> <a href="{{ data['rdfs:range']['@id'] }}"><u>{{ data['rdfs:range']['label']['@value'] }}</u></a></td>
+
+      </tr>
+  {% endif %}
+
+
+
+
+
 
   <!--filmography.-->
 

@@ -59,8 +59,12 @@ def superclass():
         entity_uri = rdflib.URIRef(f'https://dev.fiafcore.org/{entity_type}')
         result[entity_uri] = entity_uri
 
-
     result[rdflib.URIRef('http://www.w3.org/2002/07/owl#Class')] = rdflib.URIRef('http://www.w3.org/2002/07/owl#Class')
+    result[rdflib.URIRef('http://www.w3.org/2002/07/owl#ObjectProperty')] = rdflib.URIRef('http://www.w3.org/2002/07/owl#ObjectProperty')
+
+    result[rdflib.URIRef('http://www.w3.org/2002/07/owl#DatatypeProperty')] = rdflib.URIRef('http://www.w3.org/2002/07/owl#DatatypeProperty')
+
+
 
     print('@@@', result)
 
@@ -165,7 +169,7 @@ def entity(id):
 
     datum = r.json()['results']['bindings']
     if not len(datum):
-        raise Exception(f'{uri} does not resolve in knowledge graph.')
+        return flask.render_template('error.html')
 
     # determine superclass of entity type.
 
@@ -181,6 +185,8 @@ def entity(id):
         shape = 'work'
     elif superclass == rdflib.URIRef('http://www.w3.org/2002/07/owl#Class'):
         shape = 'class'
+    elif superclass == rdflib.URIRef('http://www.w3.org/2002/07/owl#ObjectProperty'):
+        shape = 'property'
     else:
         raise Exception(f'{superclass} shape not detected.')
 
@@ -284,12 +290,12 @@ def entity(id):
     # except jsonschema.exceptions.ValidationError as e:
     #     raise Exception(f'Validation failed: {e}')
 
-
     if shape == 'class':
         return flask.render_template('class.html', data=payload)
-
-
-    return flask.render_template('resource.html', data=payload)
+    elif shape == 'property':
+        return flask.render_template('property.html', data=payload)
+    else:
+        return flask.render_template('resource.html', data=payload)
 
 
 if __name__ == "__main__":
