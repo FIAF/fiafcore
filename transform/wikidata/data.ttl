@@ -1,6 +1,16 @@
 @prefix ns1: <https://dev.fiafcore.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://www.wikidata.org/entity/Q152272> ns1:hasIdentifier <wikidata://identifier/Q152272> .
+
+<http://www.wikidata.org/entity/Q1523434> ns1:hasIdentifier <wikidata://identifier/Q1523434> .
+
+<http://www.wikidata.org/entity/Q216266> ns1:hasIdentifier <wikidata://identifier/Q216266> .
+
+<http://www.wikidata.org/entity/Q239823> ns1:hasIdentifier <wikidata://identifier/Q239823> .
+
+<http://www.wikidata.org/entity/Q55375> ns1:hasIdentifier <wikidata://identifier/Q55375> .
+
 <https://www.wikidata.org/wiki/Q151599> ns1:hasIdentifier <wikidata://identifier/Q151599> .
 
 <https://www.wikidata.org/wiki/Q76813> ns1:hasIdentifier <wikidata://identifier/Q76813> .
@@ -8,6 +18,26 @@
 <wikidata://identifier/Q151599> a ns1:Identifier ;
     ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
     ns1:hasIdentifierValue "Q151599" .
+
+<wikidata://identifier/Q152272> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q152272" .
+
+<wikidata://identifier/Q1523434> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q1523434" .
+
+<wikidata://identifier/Q216266> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q216266" .
+
+<wikidata://identifier/Q239823> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q239823" .
+
+<wikidata://identifier/Q55375> a ns1:Identifier ;
+    ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
+    ns1:hasIdentifierValue "Q55375" .
 
 <wikidata://identifier/Q76813> a ns1:Identifier ;
     ns1:hasIdentifierAuthority <wikidata://resource/agent/wikidata> ;
