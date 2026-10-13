@@ -147,7 +147,7 @@ function work_search(){
       ?work rdf:type/rdfs:subClassOf* fiaf:Work .
       ?work fiaf:hasTitle ?t1 .
       ?t1 fiaf:hasTitleValue ?t2 .
-      filter(contains(lcase(str(?t2)), "${search_work_title}"))
+      filter(contains(lcase(str(?t2)), lcase("${search_work_title}")))
       ${country_query}
       ${form_query}
       ${genre_query}
@@ -189,7 +189,7 @@ function agent_search(){
     select distinct ?agent (sample(?n) as ?name) where {
       ?agent rdf:type/rdfs:subClassOf* fiaf:Agent .
       ?agent rdfs:label ?n .
-      filter(contains(lcase(str(?n)), "${search_agent_name}"))
+      filter(contains(lcase(str(?n)), lcase("${search_agent_name}")))
     }
     group by ?agent
   `;
