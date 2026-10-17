@@ -267,10 +267,23 @@ margin: 0;  ">
 {% endif %}
 
 
+
+
+
         <div style="background-color:#efefef; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
         <tspan style="font-weight: 100">fiaf:{{ data['@id'].split("/")[-1]}}</tspan>
+
+        [<tspan onclick="copy_text('{{ data['@id'] }}')" style="cursor: pointer;"><u>copy</u></tspan>]
         </div><br>
+
+
+        <script>
+
+        function copy_text(text) {
+          navigator.clipboard.writeText(text);
+        }
+        </script>
 
 
 
