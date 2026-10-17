@@ -17,6 +17,38 @@
     {% endif %}
 </h1>
 
+
+
+
+
+<!--filmography.-->
+
+
+{% if data.filmography %}
+
+<div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+
+<table style="  border-collapse: collapse;
+border: none;
+margin: 0;  ">
+
+                  {% for x in data.filmography %}
+                  <tr>
+                      <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Filmography</td>
+                     <td> <a href="{{ x['@id'] }}"><u>{{ x.label }}</u></a></td>
+                  </tr>
+                  {% endfor %}
+</table>
+
+</div><br>
+
+ {% endif %}
+
+
+
+
+
+
 <!--<div style="background-color:#fff; border-radius: 6px;padding:4px"">-->
     <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
@@ -39,23 +71,6 @@
       {% endfor %}
   {% endif %}
 
-
-  <!--filmography.-->
-
-
-  {% if data.filmography %}
-
-
-
-                    {% for x in data.filmography %}
-                    <tr>
-                        <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Filmography</td>
-                       <td> <a href="{{ x['@id'] }}"><u>{{ x.label }}</u></a></td>
-                    </tr>
-                    {% endfor %}
-
-
-   {% endif %}
 
 
 
