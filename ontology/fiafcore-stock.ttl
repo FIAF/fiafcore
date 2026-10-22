@@ -33,6 +33,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
+<https://dev.fiafcore.org/BASF> a owl:Class;
+    rdfs:label "BASF"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Dupont> a owl:Class;
     rdfs:label "Dupont"@en ;
     dc:description ""@en ;
@@ -96,6 +103,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
+<https://dev.fiafcore.org/Maxell> a owl:Class;
+    rdfs:label "Maxell"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Orwo> a owl:Class;
     rdfs:label "Orwo"@en ;
     dc:description ""@en ;
@@ -117,8 +131,22 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
+<https://dev.fiafcore.org/Scotch> a owl:Class;
+    rdfs:label "Scotch"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Sony> a owl:Class;
     rdfs:label "Sony"@en ;
+    dc:description ""@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/TDK> a owl:Class;
+    rdfs:label "TDK"@en ;
     dc:description ""@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
