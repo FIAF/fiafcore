@@ -2039,6 +2039,95 @@
                 </xsl:choose>
             </xsl:if>
 
+            <!-- fiaf:hasFormat (video material types) -->
+
+            <xsl:if test="ba:Aufbewahrungseinheit/ba:Materialart">
+                <xsl:variable name="material" select="translate(ba:Aufbewahrungseinheit/ba:Materialart, ' ', '_')"/>
+                <xsl:choose>
+                    <xsl:when test="$material = 'Umatic'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/Umatic" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'U-matic-HB'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/UmaticHighBand" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'U-matic-HB/BA'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/UmaticHighBand" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'U-matic-HB/BA+TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/UmaticHighBand" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'U-matic-LB'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/UmaticLowBand" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'U-matic-LB/BA'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/UmaticLowBand" />
+                    </xsl:when>
+                    <xsl:when test="$material = '1_Zoll_A'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/OneInchTypeA" />
+                    </xsl:when>
+                    <xsl:when test="$material = '1_Zoll_B'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/OneInchTypeB" />
+                    </xsl:when>
+                    <xsl:when test="$material = '1_Zoll_C'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/OneInchTypeC" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VHS'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/VHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VHS/BA'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/VHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VHS/BA_+_TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/VHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VHS/TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/VHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'S-VHS'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/SuperVHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'S-VHS/BA'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/SuperVHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'S-VHS/BA+TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/SuperVHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'S-VHS/TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/SuperVHS" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Betamax'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/Betamax" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VCR'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/VCR" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'VIDEO_2000'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/Video2000" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'HD_CAM'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/HDCAM" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'HD_CAM_SR'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/HDCAMSR" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Mini_DV'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/MiniDV" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Betacam_SP'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/BetacamSP" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Betacam_SP/TC'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/BetacamSP" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Betacam_Digital'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/DigitalBetacam" />
+                    </xsl:when>
+                    <xsl:when test="$material = 'Betacam_Digital/BA'">
+                        <fiaf:hasFormat rdf:resource="https://dev.fiafcore.org/DigitalBetacam" />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:if>
+
             <!-- fiaf:hasHoldingInstitution  -->
 
             <fiaf:hasHoldingInstitution>
