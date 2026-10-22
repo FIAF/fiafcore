@@ -72,10 +72,45 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "One Inch Videotape"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
+<https://dev.fiafcore.org/OneInchTypeA> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "One Inch Type A"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+<https://dev.fiafcore.org/OneInchTypeB> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "One Inch Type B"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+<https://dev.fiafcore.org/OneInchTypeC> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "One Inch Type C"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
 <https://dev.fiafcore.org/TwoInchVideotape> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Two Inch Videotape"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/Umatic> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "U-matic"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/UmaticHighBand> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "U-matic High Band"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+<https://dev.fiafcore.org/UmaticSP> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "U-matic SP"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/UmaticHighBand> ;
+.
+<https://dev.fiafcore.org/UmaticLowBand> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "U-matic Low Band"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
 .
 <https://dev.fiafcore.org/8mmFilm> a owl:Class ;
     dc:description ""@en ;
@@ -175,6 +210,66 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/HDCAMSR> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "HDCAM SR"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/VHS> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "VHS"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/SuperVHS> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Super VHS"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/Betamax> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Betamax"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/VCR> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "VCR"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/Video8> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Video8"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/Hi8> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Hi8"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/Video2000> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Video 2000"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/DVCAM> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "DVCAM"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/D3> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "D-3"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/HDCAM> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "HDCAM"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/MiniDV> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "MiniDV"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+<https://dev.fiafcore.org/D2> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "D2"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 <https://dev.fiafcore.org/LaserDisc> a owl:Class ;
