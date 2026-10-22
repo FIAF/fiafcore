@@ -632,6 +632,14 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/BASF>
+    a owl:Class ;
+    rdfs:label "BASF"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Bahamas>
     a owl:Class ;
     rdfs:label "Bahamas"@en ;
@@ -3503,6 +3511,14 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Maxell>
+    a owl:Class ;
+    rdfs:label "Maxell"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Mayotte>
     a owl:Class ;
     rdfs:label "Mayotte"@en ;
@@ -4989,6 +5005,14 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/Scotch>
+    a owl:Class ;
+    rdfs:label "Scotch"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/ScreenStory>
     a owl:Class ;
     rdfs:label "Screen Story"@en ;
@@ -5672,6 +5696,14 @@ rdfs:subClassOf
     rdfs:label "Syrian Arab Republic"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/TDK>
+    a owl:Class ;
+    rdfs:label "TDK"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Tagalog>
@@ -7186,13 +7218,6 @@ owl:DatatypeProperty
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
 .
 
-<https://dev.fiafcore.org/Stock>
-    a owl:Class ;
-    rdfs:label "Stock"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
-.
-
 <https://dev.fiafcore.org/CinematographyActivity>
     a owl:Class ;
     rdfs:label "Cinematography Activity"@en ;
@@ -7222,6 +7247,13 @@ owl:DatatypeProperty
     dc:description "Production Design contribution to a moving image work."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
+.
+
+<https://dev.fiafcore.org/Stock>
+    a owl:Class ;
+    rdfs:label "Stock"@en ;
+    dc:description ""@en ;
+    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
 .
 
 owl:ObjectProperty
