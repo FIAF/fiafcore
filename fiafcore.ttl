@@ -760,6 +760,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
+<https://dev.fiafcore.org/Betamax>
+    a owl:Class ;
+    rdfs:label "Betamax"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Bhutan>
     a owl:Class ;
     rdfs:label "Bhutan"@en ;
@@ -1555,6 +1562,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
+<https://dev.fiafcore.org/D2>
+    a owl:Class ;
+    rdfs:label "D2"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/D3>
+    a owl:Class ;
+    rdfs:label "D-3"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/D5>
     a owl:Class ;
     rdfs:label "D5"@en ;
@@ -1574,6 +1595,13 @@ rdfs:subClassOf
     rdfs:label "DTS"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/DVCAM>
+    a owl:Class ;
+    rdfs:label "DVCAM"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/DVCPROHD>
@@ -2508,6 +2536,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/HDCAM>
+    a owl:Class ;
+    rdfs:label "HDCAM"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/HDCAMSR>
     a owl:Class ;
     rdfs:label "HDCAM SR"@en ;
@@ -2586,6 +2621,13 @@ rdfs:subClassOf
     rdfs:label "Herero"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hi8>
+    a owl:Class ;
+    rdfs:label "Hi8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/Hindi>
@@ -3576,6 +3618,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/MiniDV>
+    a owl:Class ;
+    rdfs:label "MiniDV"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Minute>
     a owl:Class ;
     rdfs:label "Minute"@en ;
@@ -4040,11 +4089,25 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
 .
 
-<https://dev.fiafcore.org/OneInchVideotape>
+<https://dev.fiafcore.org/OneInchTypeA>
     a owl:Class ;
-    rdfs:label "One Inch Videotape"@en ;
+    rdfs:label "One Inch Type A"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeB>
+    a owl:Class ;
+    rdfs:label "One Inch Type B"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeC>
+    a owl:Class ;
+    rdfs:label "One Inch Type C"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
 .
 
 <https://dev.fiafcore.org/OnlineTransmissionEvent>
@@ -5595,6 +5658,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
+<https://dev.fiafcore.org/SuperVHS>
+    a owl:Class ;
+    rdfs:label "Super VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/SupervisingSoundEditor>
     a owl:Class ;
     rdfs:label "Supervising Sound Editor"@en ;
@@ -6066,6 +6136,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/UmaticLowBand>
+    a owl:Class ;
+    rdfs:label "U-matic Low Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
+<https://dev.fiafcore.org/UmaticSP>
+    a owl:Class ;
+    rdfs:label "U-matic SP"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/UmaticHighBand> ;
+.
+
 <https://dev.fiafcore.org/UndergroundFilm>
     a owl:Class ;
     rdfs:label "Underground Film"@en ;
@@ -6160,6 +6244,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
 .
 
+<https://dev.fiafcore.org/VCR>
+    a owl:Class ;
+    rdfs:label "VCR"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/VHS>
+    a owl:Class ;
+    rdfs:label "VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Vanuatu>
     a owl:Class ;
     rdfs:label "Vanuatu"@en ;
@@ -6179,6 +6277,20 @@ rdfs:subClassOf
     rdfs:label "Venezuela, Bolivarian Republic of"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Video2000>
+    a owl:Class ;
+    rdfs:label "Video 2000"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/Video8>
+    a owl:Class ;
+    rdfs:label "Video8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/VideoAssist>
@@ -6841,6 +6953,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+<https://dev.fiafcore.org/UmaticHighBand>
+    a owl:Class ;
+    rdfs:label "U-matic High Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
 <https://dev.fiafcore.org/EditingActivity>
     a owl:Class ;
     rdfs:label "Editing Activity"@en ;
@@ -6855,6 +6974,13 @@ rdfs:subClassOf
     dc:description "A collection of human beings, collaborating for commercial or artistic purposes."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
+.
+
+<https://dev.fiafcore.org/Umatic>
+    a owl:Class ;
+    rdfs:label "U-matic"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 owl:DatatypeProperty
@@ -6872,6 +6998,13 @@ owl:DatatypeProperty
     rdfs:label "Identifier"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+.
+
+<https://dev.fiafcore.org/OneInchVideotape>
+    a owl:Class ;
+    rdfs:label "One Inch Videotape"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/Status>
@@ -7054,13 +7187,6 @@ owl:DatatypeProperty
     dc:description ""@en ;
 .
 
-<https://dev.fiafcore.org/VideoFormat>
-    a owl:Class ;
-    rdfs:label "Video Format"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
-.
-
 <https://dev.fiafcore.org/ColourStandard>
     a owl:Class ;
     rdfs:label "Colour Standard"@en ;
@@ -7222,6 +7348,13 @@ owl:DatatypeProperty
     dc:description "Production Design contribution to a moving image work."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
+.
+
+<https://dev.fiafcore.org/VideoFormat>
+    a owl:Class ;
+    rdfs:label "Video Format"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
 .
 
 owl:ObjectProperty
