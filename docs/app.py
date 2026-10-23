@@ -277,6 +277,12 @@ def entity(id):
         if type(payload['label']) is not list:
             payload['label'] = [payload['label']]
 
+   # post-transform fix 2, hasIdentifier has to be a list.
+
+    if 'hasIdentifier' in payload.keys():
+        if type(payload['hasIdentifier']) is not list:
+            payload['hasIdentifier'] = [payload['hasIdentifier']]
+
     # validate result.
 
     # validate_path = pathlib.Path.cwd().parent / 'docs' / 'validate' / f'{shape}.json'
