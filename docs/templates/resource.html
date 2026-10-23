@@ -21,28 +21,6 @@
 
 
 
-<!--filmography.-->
-
-
-{% if data.filmography %}
-
-<div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
-
-<table style="  border-collapse: collapse;
-border: none;
-margin: 0;  ">
-
-                  {% for x in data.filmography %}
-                  <tr>
-                      <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Filmography</td>
-                     <td> <a href="{{ x['@id'] }}"><u>{{ x.label }}</u></a></td>
-                  </tr>
-                  {% endfor %}
-</table>
-
-</div><br>
-
- {% endif %}
 
 
 
@@ -271,11 +249,36 @@ margin: 0;  ">
 
 
 
+<!--filmography.-->
+
+
+{% if data.filmography %}
+
+<div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+
+<table style="  border-collapse: collapse;
+border: none;
+margin: 0;  ">
+
+                  {% for x in data.filmography %}
+                  <tr>
+                      <td style="visibility: {{ 'visible' if loop.first else 'hidden' }};  width:150px; font-weight: 100">Filmography</td>
+                     <td> <a href="{{ x['@id'] }}"><u>{{ x.label }}</u></a></td>
+                  </tr>
+                  {% endfor %}
+</table>
+
+</div><br>
+
+ {% endif %}
+
+
+
         <div style="background-color:#efefef; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
 
         <tspan style="font-weight: 100">fiaf:{{ data['@id'].split("/")[-1]}}
 
-        [<tspan onclick="copy_text('{{ data['@id'] }}')" style="cursor: pointer;"><u>copy</u></tspan>]
+        <tspan onclick="copy_text('{{ data['@id'] }}')" style="cursor: pointer;"><u>📋</u></tspan>
 </tspan>
 
         </div><br>
