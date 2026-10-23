@@ -26,8 +26,12 @@
                     <xsl:variable name="apos">'</xsl:variable>
                     <xsl:variable name="country" select="translate(., $apos, '')" />
                         <xsl:choose>
-                            <xsl:when test="$country = 'USSR'"/>
-                            <xsl:when test="$country = 'Yugoslavia'"/>
+                            <xsl:when test="$country = 'USSR'">
+                                <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/SovietUnion" />
+                            </xsl:when>
+                            <xsl:when test="$country = 'Yugoslavia'">
+                                <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/Yugoslavia" />
+                            </xsl:when>
                             <xsl:when test="$country = 'USA'">
                                 <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/UnitedStatesOfAmerica" />
                             </xsl:when>
