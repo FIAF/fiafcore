@@ -1672,6 +1672,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "South Sudan"@en ;
 .
 
+<https://dev.fiafcore.org/SovietUnion>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Country> ;
+    skos:prefLabel "Soviet Union"@en ;
+.
+
 <https://dev.fiafcore.org/Spain>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Country> ;
@@ -1974,6 +1982,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Country> ;
     skos:prefLabel "Yemen"@en ;
+.
+
+<https://dev.fiafcore.org/Yugoslavia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Country> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Country> ;
+    skos:prefLabel "Yugoslavia"@en ;
 .
 
 <https://dev.fiafcore.org/Zambia>
