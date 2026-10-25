@@ -5,6 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "jsonschema>=4.26.0",
-    "pydash>=8.1.0",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "tqdm>=4.70.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "docs",
+    "scripts",
 ]

@@ -1,3 +1,2 @@
-/docs/.env
-temp.py
-temp.json
+scripts/wikidata.json
+scripts/merge.json

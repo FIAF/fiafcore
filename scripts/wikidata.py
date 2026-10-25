@@ -1,67 +1,76 @@
 
 # add auth transform and relevant triples to wikidata dataset.
 
+import json
 import pandas
 import pathlib
 import rdflib
 
-input = {
-    'fiaf':'https://dev.fiafcore.org/67374e03-1dd8-40a3-9ae7-4ab78e0dd1b3',
-    'wd': 'https://www.wikidata.org/wiki/Q76813'
-}
+# load input data, matching fiafcore to wikidata entities.
+# TODO jsonschema checks on load would be wonderful.
 
-# locate wikidata auth file.
+wd_path = pathlib.Path.cwd() / 'wikidata.json'
+if not wd_path.exists():
+    raise Exception(f'{wd_path} not found.')
 
-wikidata_auth = pathlib.Path.cwd().parent / 'transform' / 'wikidata' / 'auth.parquet'
-if not wikidata_auth.exists():
-    raise Exception(f'{wikidata_auth} not found.')
+input = json.loads(wd_path.read_text())
 
-# if not extant, add auth link.
+for i in input:
 
-df = pandas.read_parquet(wikidata_auth)
-if input['fiaf'] not in df.fiafcore.unique():
-    df.loc[len(df)] = [(input['fiaf']), (input['wd'])]
-    df.to_parquet(wikidata_auth, compression="zstd")
+    # locate wikidata auth file.
 
-# locate wikidata data file.
+    wikidata_auth = pathlib.Path.cwd().parent / 'transform' / 'wikidata' / 'auth.parquet'
+    if not wikidata_auth.exists():
+        raise Exception(f'{wikidata_auth} not found.')
 
-wikidata_data = pathlib.Path.cwd().parent / 'transform' / 'wikidata' / 'data.ttl'
-if not wikidata_data.exists():
-    raise Exception(f'{wikidata_data} not found.')
+    # if not extant, add auth link.
 
-# if rdf not extant, add.
+    df = pandas.read_parquet(wikidata_auth)
+    if i['fiafcore'] not in df.fiafcore.unique():
+        df.loc[len(df)] = [(i['fiafcore']), (i['wikidata'])]
+        df.to_parquet(wikidata_auth, compression="zstd")
 
-triple_match = (
-    rdflib.URIRef(input['wd']),
-    rdflib.URIRef('https://dev.fiafcore.org/hasIdentifier'),
-    None
-)
+    # locate wikidata data file.
 
-g = rdflib.Graph().parse(wikidata_data)
-if not len([s for s,p,o in g.triples(triple_match)]):
+    wikidata_data = pathlib.Path.cwd().parent / 'transform' / 'wikidata' / 'data.ttl'
+    if not wikidata_data.exists():
+        raise Exception(f'{wikidata_data} not found.')
 
-    g.add((
-        rdflib.URIRef(input['wd']),
+    # if rdf not extant, add.
+
+    triple_match = (
+        rdflib.URIRef(i['wikidata']),
         rdflib.URIRef('https://dev.fiafcore.org/hasIdentifier'),
-        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
-    ))
+        None
+    )
 
-    g.add((
-        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
-        rdflib.RDF.type,
-        rdflib.URIRef('https://dev.fiafcore.org/Identifier')
-    ))
+    g = rdflib.Graph().parse(wikidata_data)
+    if not len([s for s,p,o in g.triples(triple_match)]):
 
-    g.add((
-        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
-        rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierAuthority'),
-        rdflib.URIRef('wikidata://resource/agent/wikidata')
-    ))
+        wikidata_id = pathlib.Path(i['wikidata']).name
 
-    g.add((
-        rdflib.URIRef(f'wikidata://identifier/{pathlib.Path(input['wd']).name}'),
-        rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierValue'),
-        rdflib.Literal(pathlib.Path(input['wd']).name)
-    ))
+        g.add((
+            rdflib.URIRef(i['wikidata']),
+            rdflib.URIRef('https://dev.fiafcore.org/hasIdentifier'),
+            rdflib.URIRef(f'wikidata://identifier/{wikidata_id}'),
+        ))
 
-    g.serialize(destination=wikidata_data, format='ttl')
+        g.add((
+            rdflib.URIRef(f'wikidata://identifier/{wikidata_id}'),
+            rdflib.RDF.type,
+            rdflib.URIRef('https://dev.fiafcore.org/Identifier')
+        ))
+
+        g.add((
+            rdflib.URIRef(f'wikidata://identifier/{wikidata_id}'),
+            rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierAuthority'),
+            rdflib.URIRef('wikidata://resource/agent/wikidata')
+        ))
+
+        g.add((
+            rdflib.URIRef(f'wikidata://identifier/{wikidata_id}'),
+            rdflib.URIRef('https://dev.fiafcore.org/hasIdentifierValue'),
+            rdflib.Literal(wikidata_id)
+        ))
+
+        g.serialize(destination=wikidata_data, format='ttl')
