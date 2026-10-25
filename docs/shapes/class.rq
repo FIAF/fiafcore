@@ -1,0 +1,43 @@
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix fiaf: <https://dev.fiafcore.org/>
+
+construct {
+
+  SUBJECT_URI rdfs:label ?label .
+  rdfs:label rdfs:label ?labelLabel .
+
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+
+  SUBJECT_URI dc:description ?description .
+  dc:description rdfs:label ?descriptionPropLabel .
+
+  SUBJECT_URI dc:source ?source .
+  dc:source rdfs:label ?sourcePropLabel .
+
+  SUBJECT_URI rdfs:subClassOf ?subclass .
+  rdfs:subClassOf rdfs:label ?subclassPropLabel .
+  ?subclass rdfs:label ?subclassLabel .
+
+}
+where {
+  SUBJECT_URI rdfs:label ?label .
+  rdfs:label rdfs:label ?labelLabel .
+  SUBJECT_URI rdf:type ?type .
+  ?type rdfs:label ?typeLabel .
+  optional {
+    SUBJECT_URI dc:description ?description .
+    dc:description rdfs:label ?descriptionPropLabel .
+  }
+  optional {
+    SUBJECT_URI dc:source ?source .
+    dc:source rdfs:label ?sourcePropLabel .
+  }
+  optional {
+    SUBJECT_URI rdfs:subClassOf ?subclass .
+    rdfs:subClassOf rdfs:label ?subclassPropLabel .
+    ?subclass rdfs:label ?subclassLabel .
+  }
+}

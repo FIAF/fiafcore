@@ -1,0 +1,785 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<br>
+
+
+<style>
+
+
+
+table.ontology {
+    border-collapse: collapse;
+}
+
+th.ontology {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td.ontology {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+</style>
+
+The following vocabularies are used by the FIAFcore ontology.
+
+<br><br>
+<div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+    <table style="  border-collapse: collapse;
+      border: none;
+      margin: 0;  ">
+
+
+          <tr>
+              <td style=" width:150px; font-weight: 100;vertical-align: top;">Base</td>
+
+
+<td>
+<a href="https://dev.fiafcore.org/AcetateBase"><u>Acetate Base</u></a>,
+<a href="https://dev.fiafcore.org/NitrateBase"><u>Nitrate Base</u></a>,
+<a href="https://dev.fiafcore.org/PolyesterBase"><u>Polyester Base</u></a>
+</td>
+
+          </tr>
+
+      </table></div>
+<br>
+          <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+              <table style="  border-collapse: collapse;
+                border: none;
+                margin: 0;  ">
+
+
+
+<tr>
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Broadcast Standard</td>
+
+
+<td>
+<a href="https://dev.fiafcore.org/NTSC"><u>NTSC</u></a>,
+<a href="https://dev.fiafcore.org/PAL"><u>PAL</u></a>,
+<a href="https://dev.fiafcore.org/SECAM"><u>SECAM</u></a>
+</td>
+
+</tr>
+
+                </table></div>
+          <br>
+                    <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                        <table style="  border-collapse: collapse;
+                          border: none;
+                          margin: 0;  ">
+
+
+
+<tr>
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Colour Standard</td>
+<td>
+<a href="https://dev.fiafcore.org/Agfacolor"><u>Agfacolor</u></a>,
+<a href="https://dev.fiafcore.org/DeLuxe"><u>DeLuxe</u></a>,
+<a href="https://dev.fiafcore.org/Duartcolor"><u>Duartcolor</u></a>,
+<a href="https://dev.fiafcore.org/Eastmancolor"><u>Eastmancolor</u></a>,
+<a href="https://dev.fiafcore.org/Fujicolor"><u>Fujicolor</u></a>,
+<a href="https://dev.fiafcore.org/Metrocolor"><u>Metrocolor</u></a>,
+<a href="https://dev.fiafcore.org/Orwocolor"><u>Orwocolor</u></a>,
+<a href="https://dev.fiafcore.org/Technicolor"><u>Technicolor</u></a>
+</td>
+</tr>
+                          </table></div>
+                    <br>
+                              <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                                  <table style="  border-collapse: collapse;
+                                    border: none;
+                                    margin: 0;  ">
+
+
+
+<tr>
+
+
+
+<td style=" width:150px; font-weight: 100;vertical-align: top;">Country</td>
+<td>
+
+<a href="https://dev.fiafcore.org/Afghanistan"><u>Afghanistan</u></a>,
+<a href="https://dev.fiafcore.org/AlandIslands"><u>Åland Islands</u></a>,
+<a href="https://dev.fiafcore.org/Albania"><u>Albania</u></a>,
+<a href="https://dev.fiafcore.org/Algeria"><u>Algeria</u></a>,
+<a href="https://dev.fiafcore.org/AmericanSamoa"><u>American Samoa</u></a>,
+<a href="https://dev.fiafcore.org/Andorra"><u>Andorra</u></a>,
+<a href="https://dev.fiafcore.org/Angola"><u>Angola</u></a>,
+<a href="https://dev.fiafcore.org/Anguilla"><u>Anguilla</u></a>,
+<a href="https://dev.fiafcore.org/Antarctica"><u>Antarctica</u></a>,
+<a href="https://dev.fiafcore.org/AntiguaAndBarbuda"><u>Antigua and Barbuda</u></a>,
+<a href="https://dev.fiafcore.org/Argentina"><u>Argentina</u></a>,
+<a href="https://dev.fiafcore.org/Armenia"><u>Armenia</u></a>,
+<a href="https://dev.fiafcore.org/Aruba"><u>Aruba</u></a>,
+<a href="https://dev.fiafcore.org/Australia"><u>Australia</u></a>,
+<a href="https://dev.fiafcore.org/Austria"><u>Austria</u></a>,
+<a href="https://dev.fiafcore.org/Azerbaijan"><u>Azerbaijan</u></a>,
+<a href="https://dev.fiafcore.org/Bahamas"><u>Bahamas</u></a>,
+<a href="https://dev.fiafcore.org/Bahrain"><u>Bahrain</u></a>,
+<a href="https://dev.fiafcore.org/Bangladesh"><u>Bangladesh</u></a>,
+<a href="https://dev.fiafcore.org/Barbados"><u>Barbados</u></a>,
+<a href="https://dev.fiafcore.org/Belarus"><u>Belarus</u></a>,
+<a href="https://dev.fiafcore.org/Belgium"><u>Belgium</u></a>,
+<a href="https://dev.fiafcore.org/Belize"><u>Belize</u></a>,
+<a href="https://dev.fiafcore.org/Benin"><u>Benin</u></a>,
+<a href="https://dev.fiafcore.org/Bermuda"><u>Bermuda</u></a>,
+<a href="https://dev.fiafcore.org/Bhutan"><u>Bhutan</u></a>,
+<a href="https://dev.fiafcore.org/BoliviaPlurinationalStateOf"><u>Bolivia,  Plurinational State of</u></a>,
+<a href="https://dev.fiafcore.org/BonaireSintEustatiusAndSaba"><u>Bonaire,  Sint Eustatius and Saba</u></a>,
+<a href="https://dev.fiafcore.org/BosniaAndHerzegovina"><u>Bosnia and Herzegovina</u></a>,
+<a href="https://dev.fiafcore.org/Botswana"><u>Botswana</u></a>,
+<a href="https://dev.fiafcore.org/BouvetIsland"><u>Bouvet Island</u></a>,
+<a href="https://dev.fiafcore.org/Brazil"><u>Brazil</u></a>,
+<a href="https://dev.fiafcore.org/BritishIndianOceanTerritory"><u>British Indian Ocean Territory</u></a>,
+<a href="https://dev.fiafcore.org/BruneiDarussalam"><u>Brunei Darussalam</u></a>,
+<a href="https://dev.fiafcore.org/Bulgaria"><u>Bulgaria</u></a>,
+<a href="https://dev.fiafcore.org/BurkinaFaso"><u>Burkina Faso</u></a>,
+<a href="https://dev.fiafcore.org/Burundi"><u>Burundi</u></a>,
+<a href="https://dev.fiafcore.org/CaboVerde"><u>Cabo Verde</u></a>,
+<a href="https://dev.fiafcore.org/Cambodia"><u>Cambodia</u></a>,
+<a href="https://dev.fiafcore.org/Cameroon"><u>Cameroon</u></a>,
+<a href="https://dev.fiafcore.org/Canada"><u>Canada</u></a>,
+<a href="https://dev.fiafcore.org/CaymanIslands"><u>Cayman Islands</u></a>,
+<a href="https://dev.fiafcore.org/CentralAfricanRepublic"><u>Central African Republic</u></a>,
+<a href="https://dev.fiafcore.org/Chad"><u>Chad</u></a>,
+<a href="https://dev.fiafcore.org/Chile"><u>Chile</u></a>,
+<a href="https://dev.fiafcore.org/China"><u>China</u></a>,
+<a href="https://dev.fiafcore.org/ChristmasIsland"><u>Christmas Island</u></a>,
+<a href="https://dev.fiafcore.org/CocosKeelingIslands"><u>Cocos (Keeling) Islands</u></a>,
+<a href="https://dev.fiafcore.org/Colombia"><u>Colombia</u></a>,
+<a href="https://dev.fiafcore.org/Comoros"><u>Comoros</u></a>,
+<a href="https://dev.fiafcore.org/Congo"><u>Congo</u></a>,
+<a href="https://dev.fiafcore.org/CongoDemocraticRepublicOfThe"><u>Congo,  Democratic Republic of the</u></a>,
+<a href="https://dev.fiafcore.org/CookIslands"><u>Cook Islands</u></a>,
+<a href="https://dev.fiafcore.org/CostaRica"><u>Costa Rica</u></a>,
+<a href="https://dev.fiafcore.org/CoteDivoire"><u>Côte d'Ivoire</u></a>,
+<a href="https://dev.fiafcore.org/Croatia"><u>Croatia</u></a>,
+<a href="https://dev.fiafcore.org/Cuba"><u>Cuba</u></a>,
+<a href="https://dev.fiafcore.org/Curacao"><u>Curaçao</u></a>,
+<a href="https://dev.fiafcore.org/Cyprus"><u>Cyprus</u></a>,
+<a href="https://dev.fiafcore.org/Czechia"><u>Czechia</u></a>,
+<a href="https://dev.fiafcore.org/Denmark"><u>Denmark</u></a>,
+<a href="https://dev.fiafcore.org/Djibouti"><u>Djibouti</u></a>,
+<a href="https://dev.fiafcore.org/Dominica"><u>Dominica</u></a>,
+<a href="https://dev.fiafcore.org/DominicanRepublic"><u>Dominican Republic</u></a>,
+<a href="https://dev.fiafcore.org/Ecuador"><u>Ecuador</u></a>,
+<a href="https://dev.fiafcore.org/Egypt"><u>Egypt</u></a>,
+<a href="https://dev.fiafcore.org/ElSalvador"><u>El Salvador</u></a>,
+<a href="https://dev.fiafcore.org/EquatorialGuinea"><u>Equatorial Guinea</u></a>,
+<a href="https://dev.fiafcore.org/Eritrea"><u>Eritrea</u></a>,
+<a href="https://dev.fiafcore.org/Estonia"><u>Estonia</u></a>,
+<a href="https://dev.fiafcore.org/Eswatini"><u>Eswatini</u></a>,
+<a href="https://dev.fiafcore.org/Ethiopia"><u>Ethiopia</u></a>,
+<a href="https://dev.fiafcore.org/FalklandIslandsMalvinas"><u>Falkland Islands (Malvinas)</u></a>,
+<a href="https://dev.fiafcore.org/FaroeIslands"><u>Faroe Islands</u></a>,
+<a href="https://dev.fiafcore.org/Fiji"><u>Fiji</u></a>,
+<a href="https://dev.fiafcore.org/Finland"><u>Finland</u></a>,
+<a href="https://dev.fiafcore.org/France"><u>France</u></a>,
+<a href="https://dev.fiafcore.org/FrenchGuiana"><u>French Guiana</u></a>,
+<a href="https://dev.fiafcore.org/FrenchPolynesia"><u>French Polynesia</u></a>,
+<a href="https://dev.fiafcore.org/FrenchSouthernTerritories"><u>French Southern Territories</u></a>,
+<a href="https://dev.fiafcore.org/Gabon"><u>Gabon</u></a>,
+<a href="https://dev.fiafcore.org/Gambia"><u>Gambia</u></a>,
+<a href="https://dev.fiafcore.org/Georgia"><u>Georgia</u></a>,
+<a href="https://dev.fiafcore.org/Germany"><u>Germany</u></a>,
+<a href="https://dev.fiafcore.org/Ghana"><u>Ghana</u></a>,
+<a href="https://dev.fiafcore.org/Gibraltar"><u>Gibraltar</u></a>,
+<a href="https://dev.fiafcore.org/Greece"><u>Greece</u></a>,
+<a href="https://dev.fiafcore.org/Greenland"><u>Greenland</u></a>,
+<a href="https://dev.fiafcore.org/Grenada"><u>Grenada</u></a>,
+<a href="https://dev.fiafcore.org/Guadeloupe"><u>Guadeloupe</u></a>,
+<a href="https://dev.fiafcore.org/Guam"><u>Guam</u></a>,
+<a href="https://dev.fiafcore.org/Guatemala"><u>Guatemala</u></a>,
+<a href="https://dev.fiafcore.org/Guernsey"><u>Guernsey</u></a>,
+<a href="https://dev.fiafcore.org/Guinea"><u>Guinea</u></a>,
+<a href="https://dev.fiafcore.org/GuineaBissau"><u>Guinea-Bissau</u></a>,
+<a href="https://dev.fiafcore.org/Guyana"><u>Guyana</u></a>,
+<a href="https://dev.fiafcore.org/Haiti"><u>Haiti</u></a>,
+<a href="https://dev.fiafcore.org/HeardIslandAndMcdonaldIslands"><u>Heard Island and McDonald Islands</u></a>,
+<a href="https://dev.fiafcore.org/HolySee"><u>Holy See</u></a>,
+<a href="https://dev.fiafcore.org/Honduras"><u>Honduras</u></a>,
+<a href="https://dev.fiafcore.org/HongKong"><u>Hong Kong</u></a>,
+<a href="https://dev.fiafcore.org/Hungary"><u>Hungary</u></a>,
+<a href="https://dev.fiafcore.org/Iceland"><u>Iceland</u></a>,
+<a href="https://dev.fiafcore.org/India"><u>India</u></a>,
+<a href="https://dev.fiafcore.org/Indonesia"><u>Indonesia</u></a>,
+<a href="https://dev.fiafcore.org/IranIslamicRepublicOf"><u>Iran,  Islamic Republic of</u></a>,
+<a href="https://dev.fiafcore.org/Iraq"><u>Iraq</u></a>,
+<a href="https://dev.fiafcore.org/Ireland"><u>Ireland</u></a>,
+<a href="https://dev.fiafcore.org/IsleOfMan"><u>Isle of Man</u></a>,
+<a href="https://dev.fiafcore.org/Israel"><u>Israel</u></a>,
+<a href="https://dev.fiafcore.org/Italy"><u>Italy</u></a>,
+<a href="https://dev.fiafcore.org/Jamaica"><u>Jamaica</u></a>,
+<a href="https://dev.fiafcore.org/Japan"><u>Japan</u></a>,
+<a href="https://dev.fiafcore.org/Jersey"><u>Jersey</u></a>,
+<a href="https://dev.fiafcore.org/Jordan"><u>Jordan</u></a>,
+<a href="https://dev.fiafcore.org/Kazakhstan"><u>Kazakhstan</u></a>,
+<a href="https://dev.fiafcore.org/Kenya"><u>Kenya</u></a>,
+<a href="https://dev.fiafcore.org/Kiribati"><u>Kiribati</u></a>,
+<a href="https://dev.fiafcore.org/KoreaDemocraticPeoplesRepublicOf"><u>Korea,  Democratic People's Republic of</u></a>,
+<a href="https://dev.fiafcore.org/KoreaRepublicOf"><u>Korea,  Republic of</u></a>,
+<a href="https://dev.fiafcore.org/Kuwait"><u>Kuwait</u></a>,
+<a href="https://dev.fiafcore.org/Kyrgyzstan"><u>Kyrgyzstan</u></a>,
+<a href="https://dev.fiafcore.org/LaoPeoplesDemocraticRepublic"><u>Lao People's Democratic Republic</u></a>,
+<a href="https://dev.fiafcore.org/Latvia"><u>Latvia</u></a>,
+<a href="https://dev.fiafcore.org/Lebanon"><u>Lebanon</u></a>,
+<a href="https://dev.fiafcore.org/Lesotho"><u>Lesotho</u></a>,
+<a href="https://dev.fiafcore.org/Liberia"><u>Liberia</u></a>,
+<a href="https://dev.fiafcore.org/Libya"><u>Libya</u></a>,
+<a href="https://dev.fiafcore.org/Liechtenstein"><u>Liechtenstein</u></a>,
+<a href="https://dev.fiafcore.org/Lithuania"><u>Lithuania</u></a>,
+<a href="https://dev.fiafcore.org/Luxembourg"><u>Luxembourg</u></a>,
+<a href="https://dev.fiafcore.org/Macao"><u>Macao</u></a>,
+<a href="https://dev.fiafcore.org/Madagascar"><u>Madagascar</u></a>,
+<a href="https://dev.fiafcore.org/Malawi"><u>Malawi</u></a>,
+<a href="https://dev.fiafcore.org/Malaysia"><u>Malaysia</u></a>,
+<a href="https://dev.fiafcore.org/Maldives"><u>Maldives</u></a>,
+<a href="https://dev.fiafcore.org/Mali"><u>Mali</u></a>,
+<a href="https://dev.fiafcore.org/Malta"><u>Malta</u></a>,
+<a href="https://dev.fiafcore.org/MarshallIslands"><u>Marshall Islands</u></a>,
+<a href="https://dev.fiafcore.org/Martinique"><u>Martinique</u></a>,
+<a href="https://dev.fiafcore.org/Mauritania"><u>Mauritania</u></a>,
+<a href="https://dev.fiafcore.org/Mauritius"><u>Mauritius</u></a>,
+<a href="https://dev.fiafcore.org/Mayotte"><u>Mayotte</u></a>,
+<a href="https://dev.fiafcore.org/Mexico"><u>Mexico</u></a>,
+<a href="https://dev.fiafcore.org/MicronesiaFederatedStatesOf"><u>Micronesia,  Federated States of</u></a>,
+<a href="https://dev.fiafcore.org/MoldovaRepublicOf"><u>Moldova,  Republic of</u></a>,
+<a href="https://dev.fiafcore.org/Monaco"><u>Monaco</u></a>,
+<a href="https://dev.fiafcore.org/Mongolia"><u>Mongolia</u></a>,
+<a href="https://dev.fiafcore.org/Montenegro"><u>Montenegro</u></a>,
+<a href="https://dev.fiafcore.org/Montserrat"><u>Montserrat</u></a>,
+<a href="https://dev.fiafcore.org/Morocco"><u>Morocco</u></a>,
+<a href="https://dev.fiafcore.org/Mozambique"><u>Mozambique</u></a>,
+<a href="https://dev.fiafcore.org/Myanmar"><u>Myanmar</u></a>,
+<a href="https://dev.fiafcore.org/Namibia"><u>Namibia</u></a>,
+<a href="https://dev.fiafcore.org/Nauru"><u>Nauru</u></a>,
+<a href="https://dev.fiafcore.org/Nepal"><u>Nepal</u></a>,
+<a href="https://dev.fiafcore.org/NetherlandsKingdomOfThe"><u>Netherlands,  Kingdom of the</u></a>,
+<a href="https://dev.fiafcore.org/NewCaledonia"><u>New Caledonia</u></a>,
+<a href="https://dev.fiafcore.org/NewZealand"><u>New Zealand</u></a>,
+<a href="https://dev.fiafcore.org/Nicaragua"><u>Nicaragua</u></a>,
+<a href="https://dev.fiafcore.org/Niger"><u>Niger</u></a>,
+<a href="https://dev.fiafcore.org/Nigeria"><u>Nigeria</u></a>,
+<a href="https://dev.fiafcore.org/Niue"><u>Niue</u></a>,
+<a href="https://dev.fiafcore.org/NorfolkIsland"><u>Norfolk Island</u></a>,
+<a href="https://dev.fiafcore.org/NorthMacedonia"><u>North Macedonia</u></a>,
+<a href="https://dev.fiafcore.org/NorthernMarianaIslands"><u>Northern Mariana Islands</u></a>,
+<a href="https://dev.fiafcore.org/Norway"><u>Norway</u></a>,
+<a href="https://dev.fiafcore.org/Oman"><u>Oman</u></a>,
+<a href="https://dev.fiafcore.org/Pakistan"><u>Pakistan</u></a>,
+<a href="https://dev.fiafcore.org/Palau"><u>Palau</u></a>,
+<a href="https://dev.fiafcore.org/PalestineStateOf"><u>Palestine,  State of</u></a>,
+<a href="https://dev.fiafcore.org/Panama"><u>Panama</u></a>,
+<a href="https://dev.fiafcore.org/PapuaNewGuinea"><u>Papua New Guinea</u></a>,
+<a href="https://dev.fiafcore.org/Paraguay"><u>Paraguay</u></a>,
+<a href="https://dev.fiafcore.org/Peru"><u>Peru</u></a>,
+<a href="https://dev.fiafcore.org/Philippines"><u>Philippines</u></a>,
+<a href="https://dev.fiafcore.org/Pitcairn"><u>Pitcairn</u></a>,
+<a href="https://dev.fiafcore.org/Poland"><u>Poland</u></a>,
+<a href="https://dev.fiafcore.org/Portugal"><u>Portugal</u></a>,
+<a href="https://dev.fiafcore.org/PuertoRico"><u>Puerto Rico</u></a>,
+<a href="https://dev.fiafcore.org/Qatar"><u>Qatar</u></a>,
+<a href="https://dev.fiafcore.org/Reunion"><u>Réunion</u></a>,
+<a href="https://dev.fiafcore.org/Romania"><u>Romania</u></a>,
+<a href="https://dev.fiafcore.org/RussianFederation"><u>Russian Federation</u></a>,
+<a href="https://dev.fiafcore.org/Rwanda"><u>Rwanda</u></a>,
+<a href="https://dev.fiafcore.org/SaintBarthelemy"><u>Saint Barthélemy</u></a>,
+<a href="https://dev.fiafcore.org/SaintHelenaAscensionAndTristanDaCunha"><u>Saint Helena,  Ascension and Tristan da Cunha</u></a>,
+<a href="https://dev.fiafcore.org/SaintKittsAndNevis"><u>Saint Kitts and Nevis</u></a>,
+<a href="https://dev.fiafcore.org/SaintLucia"><u>Saint Lucia</u></a>,
+<a href="https://dev.fiafcore.org/SaintMartinFrenchPart"><u>Saint Martin (French part)</u></a>,
+<a href="https://dev.fiafcore.org/SaintPierreAndMiquelon"><u>Saint Pierre and Miquelon</u></a>,
+<a href="https://dev.fiafcore.org/SaintVincentAndTheGrenadines"><u>Saint Vincent and the Grenadines</u></a>,
+<a href="https://dev.fiafcore.org/Samoa"><u>Samoa</u></a>,
+<a href="https://dev.fiafcore.org/SanMarino"><u>San Marino</u></a>,
+<a href="https://dev.fiafcore.org/SaoTomeAndPrincipe"><u>Sao Tome and Principe</u></a>,
+<a href="https://dev.fiafcore.org/SaudiArabia"><u>Saudi Arabia</u></a>,
+<a href="https://dev.fiafcore.org/Senegal"><u>Senegal</u></a>,
+<a href="https://dev.fiafcore.org/Serbia"><u>Serbia</u></a>,
+<a href="https://dev.fiafcore.org/Seychelles"><u>Seychelles</u></a>,
+<a href="https://dev.fiafcore.org/SierraLeone"><u>Sierra Leone</u></a>,
+<a href="https://dev.fiafcore.org/Singapore"><u>Singapore</u></a>,
+<a href="https://dev.fiafcore.org/SintMaartenDutchPart"><u>Sint Maarten (Dutch part)</u></a>,
+<a href="https://dev.fiafcore.org/Slovakia"><u>Slovakia</u></a>,
+<a href="https://dev.fiafcore.org/Slovenia"><u>Slovenia</u></a>,
+<a href="https://dev.fiafcore.org/SolomonIslands"><u>Solomon Islands</u></a>,
+<a href="https://dev.fiafcore.org/Somalia"><u>Somalia</u></a>,
+<a href="https://dev.fiafcore.org/SouthAfrica"><u>South Africa</u></a>,
+<a href="https://dev.fiafcore.org/SouthGeorgiaAndTheSouthSandwichIslands"><u>South Georgia and the South Sandwich Islands</u></a>,
+<a href="https://dev.fiafcore.org/SouthSudan"><u>South Sudan</u></a>,
+<a href="https://dev.fiafcore.org/Spain"><u>Spain</u></a>,
+<a href="https://dev.fiafcore.org/SriLanka"><u>Sri Lanka</u></a>,
+<a href="https://dev.fiafcore.org/Sudan"><u>Sudan</u></a>,
+<a href="https://dev.fiafcore.org/Suriname"><u>Suriname</u></a>,
+<a href="https://dev.fiafcore.org/SvalbardAndJanMayen"><u>Svalbard and Jan Mayen</u></a>,
+<a href="https://dev.fiafcore.org/Sweden"><u>Sweden</u></a>,
+<a href="https://dev.fiafcore.org/Switzerland"><u>Switzerland</u></a>,
+<a href="https://dev.fiafcore.org/SyrianArabRepublic"><u>Syrian Arab Republic</u></a>,
+<a href="https://dev.fiafcore.org/TaiwanProvinceOfChina"><u>Taiwan,  Province of China</u></a>,
+<a href="https://dev.fiafcore.org/Tajikistan"><u>Tajikistan</u></a>,
+<a href="https://dev.fiafcore.org/TanzaniaUnitedRepublicOf"><u>Tanzania,  United Republic of</u></a>,
+<a href="https://dev.fiafcore.org/Thailand"><u>Thailand</u></a>,
+<a href="https://dev.fiafcore.org/Timorleste"><u>Timor-Leste</u></a>,
+<a href="https://dev.fiafcore.org/Togo"><u>Togo</u></a>,
+<a href="https://dev.fiafcore.org/Tokelau"><u>Tokelau</u></a>,
+<a href="https://dev.fiafcore.org/Tonga"><u>Tonga</u></a>,
+<a href="https://dev.fiafcore.org/TrinidadAndTobago"><u>Trinidad and Tobago</u></a>,
+<a href="https://dev.fiafcore.org/Tunisia"><u>Tunisia</u></a>,
+<a href="https://dev.fiafcore.org/Turkiye"><u>Türkiye</u></a>,
+<a href="https://dev.fiafcore.org/Turkmenistan"><u>Turkmenistan</u></a>,
+<a href="https://dev.fiafcore.org/TurksAndCaicosIslands"><u>Turks and Caicos Islands</u></a>,
+<a href="https://dev.fiafcore.org/Tuvalu"><u>Tuvalu</u></a>,
+<a href="https://dev.fiafcore.org/Uganda"><u>Uganda</u></a>,
+<a href="https://dev.fiafcore.org/Ukraine"><u>Ukraine</u></a>,
+<a href="https://dev.fiafcore.org/UnitedArabEmirates"><u>United Arab Emirates</u></a>,
+<a href="https://dev.fiafcore.org/UnitedKingdomOfGreatBritainAndNorthernIreland"><u>United Kingdom of Great Britain and Northern Ireland</u></a>,
+<a href="https://dev.fiafcore.org/UnitedStatesMinorOutlyingIslands"><u>United States Minor Outlying Islands</u></a>,
+<a href="https://dev.fiafcore.org/UnitedStatesOfAmerica"><u>United States of America</u></a>,
+<a href="https://dev.fiafcore.org/Uruguay"><u>Uruguay</u></a>,
+<a href="https://dev.fiafcore.org/Uzbekistan"><u>Uzbekistan</u></a>,
+<a href="https://dev.fiafcore.org/Vanuatu"><u>Vanuatu</u></a>,
+<a href="https://dev.fiafcore.org/VenezuelaBolivarianRepublicOf"><u>Venezuela,  Bolivarian Republic of</u></a>,
+<a href="https://dev.fiafcore.org/VietNam"><u>Viet Nam</u></a>,
+<a href="https://dev.fiafcore.org/VirginIslandsBritish"><u>Virgin Islands (British)</u></a>,
+<a href="https://dev.fiafcore.org/VirginIslandsUs"><u>Virgin Islands (U.S.)</u></a>,
+<a href="https://dev.fiafcore.org/WallisAndFutuna"><u>Wallis and Futuna</u></a>,
+<a href="https://dev.fiafcore.org/WesternSahara"><u>Western Sahara</u></a>,
+<a href="https://dev.fiafcore.org/Yemen"><u>Yemen</u></a>,
+<a href="https://dev.fiafcore.org/Zambia"><u>Zambia</u></a>,
+<a href="https://dev.fiafcore.org/Zimbabwe"><u>Zimbabwe</u></a>
+
+</td>
+</tr>
+
+</table></div>
+<br>
+    <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+        <table style="  border-collapse: collapse;
+          border: none;
+          margin: 0;  ">
+
+
+<tr>
+
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Element</td>
+<td>
+
+
+<a href="https://dev.fiafcore.org/DuplicateNegative"><u>Duplicate Negative</u></a>,
+<a href="https://dev.fiafcore.org/DuplicatePositive"><u>Duplicate Positive</u></a>,
+<a href="https://dev.fiafcore.org/OriginalNegative"><u>Original Negative</u></a>,
+<a href="https://dev.fiafcore.org/ReleasePrint"><u>Release Print</u></a>,
+<a href="https://dev.fiafcore.org/SoundNegative"><u>Sound Negative</u></a>,
+<a href="https://dev.fiafcore.org/SoundPositive"><u>Sound Positive</u></a>
+
+</td>
+</tr>
+          </table></div>
+    <br>
+              <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                  <table style="  border-collapse: collapse;
+                    border: none;
+                    margin: 0;  ">
+
+
+<tr>
+
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Form</td>
+<td>
+
+
+<a href="https://dev.fiafcore.org/AmateurFilm"><u>Amateur Film</u></a>,
+<a href="https://dev.fiafcore.org/CompilationFilm"><u>Compilation Film</u></a>,
+<a href="https://dev.fiafcore.org/FeatureFilm"><u>Feature Film</u></a>,
+<a href="https://dev.fiafcore.org/HomeMovie"><u>Home Movie</u></a>,
+<a href="https://dev.fiafcore.org/Outtake"><u>Outtake</u></a>,
+<a href="https://dev.fiafcore.org/ScreenTest"><u>Screen Test</u></a>,
+<a href="https://dev.fiafcore.org/Serial"><u>Serial</u></a>,
+<a href="https://dev.fiafcore.org/Series"><u>Series</u></a>,
+<a href="https://dev.fiafcore.org/ShortFilm"><u>Short Film</u></a>,
+<a href="https://dev.fiafcore.org/Trailer"><u>Trailer</u></a>,
+<a href="https://dev.fiafcore.org/Form"><u>Form</u></a>
+
+</td>
+
+</tr>
+                    </table></div>
+              <br>
+                        <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                            <table style="  border-collapse: collapse;
+                              border: none;
+                              margin: 0;  ">
+
+
+<tr>
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Genre</td>
+
+<td>
+
+
+<a href="https://dev.fiafcore.org/AbstractFilm"><u>Abstract Film</u></a>,
+<a href="https://dev.fiafcore.org/ActionFilm"><u>Action Film</u></a>,
+<a href="https://dev.fiafcore.org/AdventureFilm"><u>Adventure Film</u></a>,
+<a href="https://dev.fiafcore.org/AgriculturalForestryFilm"><u>Agricultural/forestry Film</u></a>,
+<a href="https://dev.fiafcore.org/AnimalFilm"><u>Animal Film</u></a>,
+<a href="https://dev.fiafcore.org/AnimationFilm"><u>Animation Film</u></a>,
+<a href="https://dev.fiafcore.org/AntiWarFilm"><u>Anti-war Film</u></a>,
+<a href="https://dev.fiafcore.org/ArtFilm"><u>Art Film</u></a>,
+<a href="https://dev.fiafcore.org/AvantGardeFilm"><u>Avant-garde Film</u></a>,
+<a href="https://dev.fiafcore.org/BalletFilm"><u>Ballet Film</u></a>,
+<a href="https://dev.fiafcore.org/BiographicalFilm"><u>Biographical Film</u></a>,
+<a href="https://dev.fiafcore.org/BiologicalFilm"><u>Biological Film</u></a>,
+<a href="https://dev.fiafcore.org/BlaxploitationFilm"><u>Blaxploitation Film</u></a>,
+<a href="https://dev.fiafcore.org/ChildrensFilm"><u>Children's Film</u></a>,
+<a href="https://dev.fiafcore.org/CircusFilm"><u>Circus Film</u></a>,
+<a href="https://dev.fiafcore.org/CityAndLandscapeFilm"><u>City and landscape Film</u></a>,
+<a href="https://dev.fiafcore.org/ComedyFilm"><u>Comedy Film</u></a>,
+<a href="https://dev.fiafcore.org/ContemporaryFilm"><u>Contemporary Film</u></a>,
+<a href="https://dev.fiafcore.org/CountryFilm"><u>Country Film</u></a>,
+<a href="https://dev.fiafcore.org/CourtroomFilm"><u>Courtroom Film</u></a>,
+<a href="https://dev.fiafcore.org/CrimeFilm"><u>Crime Film</u></a>,
+<a href="https://dev.fiafcore.org/CulturalFilm"><u>Cultural Film</u></a>,
+<a href="https://dev.fiafcore.org/DanceFilm"><u>Dance Film</u></a>,
+<a href="https://dev.fiafcore.org/DetectiveFilm"><u>Detective Film</u></a>,
+<a href="https://dev.fiafcore.org/DisasterFilm"><u>Disaster Film</u></a>,
+<a href="https://dev.fiafcore.org/DramaFilm"><u>Drama Film</u></a>,
+<a href="https://dev.fiafcore.org/EducationalFilm"><u>Educational Film</u></a>,
+<a href="https://dev.fiafcore.org/ElectionFilm"><u>Election Film</u></a>,
+<a href="https://dev.fiafcore.org/EnvironmentalFilm"><u>Environmental Film</u></a>,
+<a href="https://dev.fiafcore.org/EroticFilm"><u>Erotic Film</u></a>,
+<a href="https://dev.fiafcore.org/EthnographicFilm"><u>Ethnographic Film</u></a>,
+<a href="https://dev.fiafcore.org/ExpeditionFilm"><u>Expedition Film</u></a>,
+<a href="https://dev.fiafcore.org/ExperimentalFilm"><u>Experimental Film</u></a>,
+<a href="https://dev.fiafcore.org/ExpressionistFilm"><u>Expressionist Film</u></a>,
+<a href="https://dev.fiafcore.org/FairyTaleFilm"><u>Fairy tale Film</u></a>,
+<a href="https://dev.fiafcore.org/FantasyFilm"><u>Fantasy Film</u></a>,
+<a href="https://dev.fiafcore.org/GangsterFilm"><u>Gangster Film</u></a>,
+<a href="https://dev.fiafcore.org/HandPuppetFilm"><u>Hand puppet Film</u></a>,
+<a href="https://dev.fiafcore.org/HistoricalCostumeFilm"><u>Historical costume Film</u></a>,
+<a href="https://dev.fiafcore.org/HistoricalFilm"><u>Historical Film</u></a>,
+<a href="https://dev.fiafcore.org/HorrorFilm"><u>Horror Film</u></a>,
+<a href="https://dev.fiafcore.org/IndustrialFilm"><u>Industrial Film</u></a>,
+<a href="https://dev.fiafcore.org/LiteraryAdaptationFilm"><u>Literary adaptation Film</u></a>,
+<a href="https://dev.fiafcore.org/MedicalFilm"><u>Medical Film</u></a>,
+<a href="https://dev.fiafcore.org/MelodramaFilm"><u>Melodrama Film</u></a>,
+<a href="https://dev.fiafcore.org/MilitaryFilm"><u>Military Film</u></a>,
+<a href="https://dev.fiafcore.org/MixedFilm"><u>Mixed Film</u></a>,
+<a href="https://dev.fiafcore.org/MountainFilm"><u>Mountain Film</u></a>,
+<a href="https://dev.fiafcore.org/MusicFilm"><u>Music Film</u></a>,
+<a href="https://dev.fiafcore.org/MusicalFilm"><u>Musical Film</u></a>,
+<a href="https://dev.fiafcore.org/NatureFilm"><u>Nature Film</u></a>,
+<a href="https://dev.fiafcore.org/OperaFilm"><u>Opera Film</u></a>,
+<a href="https://dev.fiafcore.org/OperettaFilm"><u>Operetta Film</u></a>,
+<a href="https://dev.fiafcore.org/ParodyFilm"><u>Parody Film</u></a>,
+<a href="https://dev.fiafcore.org/PartisanFilm"><u>Partisan Film</u></a>,
+<a href="https://dev.fiafcore.org/PhilosophicalFilm"><u>Philosophical Film</u></a>,
+<a href="https://dev.fiafcore.org/PoliticalGeographicalFilm"><u>Political-geographical Film</u></a>,
+<a href="https://dev.fiafcore.org/PoliticalThrillerFilm"><u>Political thriller Film</u></a>,
+<a href="https://dev.fiafcore.org/PopularScienceFilm"><u>Popular science Film</u></a>,
+<a href="https://dev.fiafcore.org/PornographicFilm"><u>Pornographic Film</u></a>,
+<a href="https://dev.fiafcore.org/PortraitFilm"><u>Portrait Film</u></a>,
+<a href="https://dev.fiafcore.org/PrisonFilm"><u>Prison Film</u></a>,
+<a href="https://dev.fiafcore.org/PropagandaFilm"><u>Propaganda Film</u></a>,
+<a href="https://dev.fiafcore.org/PuppetFilm"><u>Puppet Film</u></a>,
+<a href="https://dev.fiafcore.org/ReligiousFilm"><u>Religious Film</u></a>,
+<a href="https://dev.fiafcore.org/ResearchFilm"><u>Research Film</u></a>,
+<a href="https://dev.fiafcore.org/RevolutionaryFilm"><u>Revolutionary Film</u></a>,
+<a href="https://dev.fiafcore.org/RevueFilm"><u>Revue Film</u></a>,
+<a href="https://dev.fiafcore.org/RoadMovieFilm"><u>Road movie Film</u></a>,
+<a href="https://dev.fiafcore.org/RomanticFilm"><u>Romantic Film</u></a>,
+<a href="https://dev.fiafcore.org/SatireFilm"><u>Satire Film</u></a>,
+<a href="https://dev.fiafcore.org/ScienceFictionFilm"><u>Science fiction Film</u></a>,
+<a href="https://dev.fiafcore.org/SensationalFilm"><u>Sensational Film</u></a>,
+<a href="https://dev.fiafcore.org/SexFilm"><u>Sex Film</u></a>,
+<a href="https://dev.fiafcore.org/SlapstickFilm"><u>Slapstick Film</u></a>,
+<a href="https://dev.fiafcore.org/SportsFilm"><u>Sports Film</u></a>,
+<a href="https://dev.fiafcore.org/SpyFilm"><u>Spy Film</u></a>,
+<a href="https://dev.fiafcore.org/StickPuppetFilm"><u>Stick puppet Film</u></a>,
+<a href="https://dev.fiafcore.org/SurrealistFilm"><u>Surrealist Film</u></a>,
+<a href="https://dev.fiafcore.org/TechnicalFilm"><u>Technical Film</u></a>,
+<a href="https://dev.fiafcore.org/ThrillerFilm"><u>Thriller Film</u></a>,
+<a href="https://dev.fiafcore.org/TrafficFilm"><u>Traffic Film</u></a>,
+<a href="https://dev.fiafcore.org/TragedyFilm"><u>Tragedy Film</u></a>,
+<a href="https://dev.fiafcore.org/TragicomedyFilm"><u>Tragicomedy Film</u></a>,
+<a href="https://dev.fiafcore.org/TravelFilm"><u>Travel Film</u></a>,
+<a href="https://dev.fiafcore.org/UndergroundFilm"><u>Underground Film</u></a>,
+<a href="https://dev.fiafcore.org/WarFilm"><u>War Film</u></a>,
+<a href="https://dev.fiafcore.org/WesternFilm"><u>Western Film</u></a>,
+<a href="https://dev.fiafcore.org/WomensFilm"><u>Women's Film</u></a>,
+<a href="https://dev.fiafcore.org/WorkingClassFilm"><u>Working-class Film</u></a>,
+<a href="https://dev.fiafcore.org/YouthFilm"><u>Youth Film</u></a>
+</td>
+</tr>
+
+                              </table></div>
+                        <br>
+                                  <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                                      <table style="  border-collapse: collapse;
+                                        border: none;
+                                        margin: 0;  ">
+
+
+
+<tr>
+
+<td style=" width:150px; font-weight: 100;vertical-align: top;">Language</td>
+
+<td>
+
+
+<a href="https://dev.fiafcore.org/Abkhazian"><u>Abkhazian</u></a>,
+<a href="https://dev.fiafcore.org/Afar"><u>Afar</u></a>,
+<a href="https://dev.fiafcore.org/Afrikaans"><u>Afrikaans</u></a>,
+<a href="https://dev.fiafcore.org/Akan"><u>Akan</u></a>,
+<a href="https://dev.fiafcore.org/Albanian"><u>Albanian</u></a>,
+<a href="https://dev.fiafcore.org/Amharic"><u>Amharic</u></a>,
+<a href="https://dev.fiafcore.org/Arabic"><u>Arabic</u></a>,
+<a href="https://dev.fiafcore.org/Aragonese"><u>Aragonese</u></a>,
+<a href="https://dev.fiafcore.org/Armenian"><u>Armenian</u></a>,
+<a href="https://dev.fiafcore.org/Assamese"><u>Assamese</u></a>,
+<a href="https://dev.fiafcore.org/Avaric"><u>Avaric</u></a>,
+<a href="https://dev.fiafcore.org/Avestan"><u>Avestan</u></a>,
+<a href="https://dev.fiafcore.org/Aymara"><u>Aymara</u></a>,
+<a href="https://dev.fiafcore.org/Azerbaijani"><u>Azerbaijani</u></a>,
+<a href="https://dev.fiafcore.org/Bambara"><u>Bambara</u></a>,
+<a href="https://dev.fiafcore.org/Bashkir"><u>Bashkir</u></a>,
+<a href="https://dev.fiafcore.org/Basque"><u>Basque</u></a>,
+<a href="https://dev.fiafcore.org/Belarusian"><u>Belarusian</u></a>,
+<a href="https://dev.fiafcore.org/Bengali"><u>Bengali</u></a>,
+<a href="https://dev.fiafcore.org/Bislama"><u>Bislama</u></a>,
+<a href="https://dev.fiafcore.org/Bosnian"><u>Bosnian</u></a>,
+<a href="https://dev.fiafcore.org/Breton"><u>Breton</u></a>,
+<a href="https://dev.fiafcore.org/Bulgarian"><u>Bulgarian</u></a>,
+<a href="https://dev.fiafcore.org/Burmese"><u>Burmese</u></a>,
+<a href="https://dev.fiafcore.org/Catalan"><u>Catalan</u></a>,
+<a href="https://dev.fiafcore.org/CentralKhmer"><u>Central Khmer</u></a>,
+<a href="https://dev.fiafcore.org/Chamorro"><u>Chamorro</u></a>,
+<a href="https://dev.fiafcore.org/Chechen"><u>Chechen</u></a>,
+<a href="https://dev.fiafcore.org/Chichewa"><u>Chichewa</u></a>,
+<a href="https://dev.fiafcore.org/Chinese"><u>Chinese</u></a>,
+<a href="https://dev.fiafcore.org/ChurchSlavonic"><u>Church Slavonic</u></a>,
+<a href="https://dev.fiafcore.org/Chuvash"><u>Chuvash</u></a>,
+<a href="https://dev.fiafcore.org/Cornish"><u>Cornish</u></a>,
+<a href="https://dev.fiafcore.org/Corsican"><u>Corsican</u></a>,
+<a href="https://dev.fiafcore.org/Cree"><u>Cree</u></a>,
+<a href="https://dev.fiafcore.org/Croatian"><u>Croatian</u></a>,
+<a href="https://dev.fiafcore.org/Czech"><u>Czech</u></a>,
+<a href="https://dev.fiafcore.org/Danish"><u>Danish</u></a>,
+<a href="https://dev.fiafcore.org/Divehi"><u>Divehi</u></a>,
+<a href="https://dev.fiafcore.org/Dutch"><u>Dutch</u></a>,
+<a href="https://dev.fiafcore.org/Dzongkha"><u>Dzongkha</u></a>,
+<a href="https://dev.fiafcore.org/English"><u>English</u></a>,
+<a href="https://dev.fiafcore.org/Esperanto"><u>Esperanto</u></a>,
+<a href="https://dev.fiafcore.org/Estonian"><u>Estonian</u></a>,
+<a href="https://dev.fiafcore.org/Ewe"><u>Ewe</u></a>,
+<a href="https://dev.fiafcore.org/Faroese"><u>Faroese</u></a>,
+<a href="https://dev.fiafcore.org/Fijian"><u>Fijian</u></a>,
+<a href="https://dev.fiafcore.org/Finnish"><u>Finnish</u></a>,
+<a href="https://dev.fiafcore.org/French"><u>French</u></a>,
+<a href="https://dev.fiafcore.org/Fulah"><u>Fulah</u></a>,
+<a href="https://dev.fiafcore.org/Gaelic"><u>Gaelic</u></a>,
+<a href="https://dev.fiafcore.org/Galician"><u>Galician</u></a>,
+<a href="https://dev.fiafcore.org/Ganda"><u>Ganda</u></a>,
+<a href="https://dev.fiafcore.org/Georgian"><u>Georgian</u></a>,
+<a href="https://dev.fiafcore.org/German"><u>German</u></a>,
+<a href="https://dev.fiafcore.org/Greek"><u>Greek</u></a>,
+<a href="https://dev.fiafcore.org/Guarani"><u>Guarani</u></a>,
+<a href="https://dev.fiafcore.org/Gujarati"><u>Gujarati</u></a>,
+<a href="https://dev.fiafcore.org/Haitian"><u>Haitian</u></a>,
+<a href="https://dev.fiafcore.org/Hausa"><u>Hausa</u></a>,
+<a href="https://dev.fiafcore.org/Hawaiian"><u>Hawaiian</u></a>,
+<a href="https://dev.fiafcore.org/Hebrew"><u>Hebrew</u></a>,
+<a href="https://dev.fiafcore.org/Herero"><u>Herero</u></a>,
+<a href="https://dev.fiafcore.org/Hindi"><u>Hindi</u></a>,
+<a href="https://dev.fiafcore.org/HiriMotu"><u>Hiri Motu</u></a>,
+<a href="https://dev.fiafcore.org/Hungarian"><u>Hungarian</u></a>,
+<a href="https://dev.fiafcore.org/Icelandic"><u>Icelandic</u></a>,
+<a href="https://dev.fiafcore.org/Ido"><u>Ido</u></a>,
+<a href="https://dev.fiafcore.org/Igbo"><u>Igbo</u></a>,
+<a href="https://dev.fiafcore.org/Indonesian"><u>Indonesian</u></a>,
+<a href="https://dev.fiafcore.org/Interlingua"><u>Interlingua</u></a>,
+<a href="https://dev.fiafcore.org/Interlingue"><u>Interlingue</u></a>,
+<a href="https://dev.fiafcore.org/Inuktitut"><u>Inuktitut</u></a>,
+<a href="https://dev.fiafcore.org/Inupiaq"><u>Inupiaq</u></a>,
+<a href="https://dev.fiafcore.org/Irish"><u>Irish</u></a>,
+<a href="https://dev.fiafcore.org/Italian"><u>Italian</u></a>,
+<a href="https://dev.fiafcore.org/Japanese"><u>Japanese</u></a>,
+<a href="https://dev.fiafcore.org/Javanese"><u>Javanese</u></a>,
+<a href="https://dev.fiafcore.org/Kalaallisut"><u>Kalaallisut</u></a>,
+<a href="https://dev.fiafcore.org/Kannada"><u>Kannada</u></a>,
+<a href="https://dev.fiafcore.org/Kanuri"><u>Kanuri</u></a>,
+<a href="https://dev.fiafcore.org/Kashmiri"><u>Kashmiri</u></a>,
+<a href="https://dev.fiafcore.org/Kazakh"><u>Kazakh</u></a>,
+<a href="https://dev.fiafcore.org/Kikuyu"><u>Kikuyu</u></a>,
+<a href="https://dev.fiafcore.org/Kinyarwanda"><u>Kinyarwanda</u></a>,
+<a href="https://dev.fiafcore.org/Komi"><u>Komi</u></a>,
+<a href="https://dev.fiafcore.org/Kongo"><u>Kongo</u></a>,
+<a href="https://dev.fiafcore.org/Korean"><u>Korean</u></a>,
+<a href="https://dev.fiafcore.org/Kuanyama"><u>Kuanyama</u></a>,
+<a href="https://dev.fiafcore.org/Kurdish"><u>Kurdish</u></a>,
+<a href="https://dev.fiafcore.org/Kyrgyz"><u>Kyrgyz</u></a>,
+<a href="https://dev.fiafcore.org/Lao"><u>Lao</u></a>,
+<a href="https://dev.fiafcore.org/Latin"><u>Latin</u></a>,
+<a href="https://dev.fiafcore.org/Latvian"><u>Latvian</u></a>,
+<a href="https://dev.fiafcore.org/Limburgan"><u>Limburgan</u></a>,
+<a href="https://dev.fiafcore.org/Lingala"><u>Lingala</u></a>,
+<a href="https://dev.fiafcore.org/Lithuanian"><u>Lithuanian</u></a>,
+<a href="https://dev.fiafcore.org/Lubakatanga"><u>Luba-Katanga</u></a>,
+<a href="https://dev.fiafcore.org/Luxembourgish"><u>Luxembourgish</u></a>,
+<a href="https://dev.fiafcore.org/Macedonian"><u>Macedonian</u></a>,
+<a href="https://dev.fiafcore.org/Malagasy"><u>Malagasy</u></a>,
+<a href="https://dev.fiafcore.org/Malay"><u>Malay</u></a>,
+<a href="https://dev.fiafcore.org/Malayalam"><u>Malayalam</u></a>,
+<a href="https://dev.fiafcore.org/Maltese"><u>Maltese</u></a>,
+<a href="https://dev.fiafcore.org/Manx"><u>Manx</u></a>,
+<a href="https://dev.fiafcore.org/Maori"><u>Maori</u></a>,
+<a href="https://dev.fiafcore.org/Marathi"><u>Marathi</u></a>,
+<a href="https://dev.fiafcore.org/Marshallese"><u>Marshallese</u></a>,
+<a href="https://dev.fiafcore.org/Mongolian"><u>Mongolian</u></a>,
+<a href="https://dev.fiafcore.org/Nauru"><u>Nauru</u></a>,
+<a href="https://dev.fiafcore.org/Navajo"><u>Navajo</u></a>,
+<a href="https://dev.fiafcore.org/Ndonga"><u>Ndonga</u></a>,
+<a href="https://dev.fiafcore.org/Nepali"><u>Nepali</u></a>,
+<a href="https://dev.fiafcore.org/NorthNdebele"><u>North Ndebele</u></a>,
+<a href="https://dev.fiafcore.org/NorthernSami"><u>Northern Sami</u></a>,
+<a href="https://dev.fiafcore.org/Norwegian"><u>Norwegian</u></a>,
+<a href="https://dev.fiafcore.org/NorwegianBokmal"><u>Norwegian Bokmål</u></a>,
+<a href="https://dev.fiafcore.org/NorwegianNynorsk"><u>Norwegian Nynorsk</u></a>,
+<a href="https://dev.fiafcore.org/Occitan"><u>Occitan</u></a>,
+<a href="https://dev.fiafcore.org/Ojibwa"><u>Ojibwa</u></a>,
+<a href="https://dev.fiafcore.org/Oriya"><u>Oriya</u></a>,
+<a href="https://dev.fiafcore.org/Oromo"><u>Oromo</u></a>,
+<a href="https://dev.fiafcore.org/Ossetian"><u>Ossetian</u></a>,
+<a href="https://dev.fiafcore.org/Pali"><u>Pali</u></a>,
+<a href="https://dev.fiafcore.org/Pashto"><u>Pashto</u></a>,
+<a href="https://dev.fiafcore.org/Persian"><u>Persian</u></a>,
+<a href="https://dev.fiafcore.org/Polish"><u>Polish</u></a>,
+<a href="https://dev.fiafcore.org/Portuguese"><u>Portuguese</u></a>,
+<a href="https://dev.fiafcore.org/Punjabi"><u>Punjabi</u></a>,
+<a href="https://dev.fiafcore.org/Quechua"><u>Quechua</u></a>,
+<a href="https://dev.fiafcore.org/Romanian"><u>Romanian</u></a>,
+<a href="https://dev.fiafcore.org/Romansh"><u>Romansh</u></a>,
+<a href="https://dev.fiafcore.org/Rundi"><u>Rundi</u></a>,
+<a href="https://dev.fiafcore.org/Russian"><u>Russian</u></a>,
+<a href="https://dev.fiafcore.org/Samoan"><u>Samoan</u></a>,
+<a href="https://dev.fiafcore.org/Sango"><u>Sango</u></a>,
+<a href="https://dev.fiafcore.org/Sanskrit"><u>Sanskrit</u></a>,
+<a href="https://dev.fiafcore.org/Sardinian"><u>Sardinian</u></a>,
+<a href="https://dev.fiafcore.org/Serbian"><u>Serbian</u></a>,
+<a href="https://dev.fiafcore.org/Shona"><u>Shona</u></a>,
+<a href="https://dev.fiafcore.org/SichuanYi"><u>Sichuan Yi</u></a>,
+<a href="https://dev.fiafcore.org/Sindhi"><u>Sindhi</u></a>,
+<a href="https://dev.fiafcore.org/Sinhala"><u>Sinhala</u></a>,
+<a href="https://dev.fiafcore.org/Slovak"><u>Slovak</u></a>,
+<a href="https://dev.fiafcore.org/Slovenian"><u>Slovenian</u></a>,
+<a href="https://dev.fiafcore.org/Somali"><u>Somali</u></a>,
+<a href="https://dev.fiafcore.org/SouthNdebele"><u>South Ndebele</u></a>,
+<a href="https://dev.fiafcore.org/SouthernSotho"><u>Southern Sotho</u></a>,
+<a href="https://dev.fiafcore.org/Spanish"><u>Spanish</u></a>,
+<a href="https://dev.fiafcore.org/Sundanese"><u>Sundanese</u></a>,
+<a href="https://dev.fiafcore.org/Swahili"><u>Swahili</u></a>,
+<a href="https://dev.fiafcore.org/Swati"><u>Swati</u></a>,
+<a href="https://dev.fiafcore.org/Swedish"><u>Swedish</u></a>,
+<a href="https://dev.fiafcore.org/Tagalog"><u>Tagalog</u></a>,
+<a href="https://dev.fiafcore.org/Tahitian"><u>Tahitian</u></a>,
+<a href="https://dev.fiafcore.org/Tajik"><u>Tajik</u></a>,
+<a href="https://dev.fiafcore.org/Tamil"><u>Tamil</u></a>,
+<a href="https://dev.fiafcore.org/Tatar"><u>Tatar</u></a>,
+<a href="https://dev.fiafcore.org/Telugu"><u>Telugu</u></a>,
+<a href="https://dev.fiafcore.org/Thai"><u>Thai</u></a>,
+<a href="https://dev.fiafcore.org/Tibetan"><u>Tibetan</u></a>,
+<a href="https://dev.fiafcore.org/Tigrinya"><u>Tigrinya</u></a>,
+<a href="https://dev.fiafcore.org/Tonga"><u>Tonga</u></a>,
+<a href="https://dev.fiafcore.org/Tsonga"><u>Tsonga</u></a>,
+<a href="https://dev.fiafcore.org/Tswana"><u>Tswana</u></a>,
+<a href="https://dev.fiafcore.org/Turkish"><u>Turkish</u></a>,
+<a href="https://dev.fiafcore.org/Turkmen"><u>Turkmen</u></a>,
+<a href="https://dev.fiafcore.org/Twi"><u>Twi</u></a>,
+<a href="https://dev.fiafcore.org/Uighur"><u>Uighur</u></a>,
+<a href="https://dev.fiafcore.org/Ukrainian"><u>Ukrainian</u></a>,
+<a href="https://dev.fiafcore.org/Urdu"><u>Urdu</u></a>,
+<a href="https://dev.fiafcore.org/Uzbek"><u>Uzbek</u></a>,
+<a href="https://dev.fiafcore.org/Venda"><u>Venda</u></a>,
+<a href="https://dev.fiafcore.org/Vietnamese"><u>Vietnamese</u></a>,
+<a href="https://dev.fiafcore.org/Volapuk"><u>Volapük</u></a>,
+<a href="https://dev.fiafcore.org/Walloon"><u>Walloon</u></a>,
+<a href="https://dev.fiafcore.org/Welsh"><u>Welsh</u></a>,
+<a href="https://dev.fiafcore.org/WesternFrisian"><u>Western Frisian</u></a>,
+<a href="https://dev.fiafcore.org/Wolof"><u>Wolof</u></a>,
+<a href="https://dev.fiafcore.org/Xhosa"><u>Xhosa</u></a>,
+<a href="https://dev.fiafcore.org/Yiddish"><u>Yiddish</u></a>,
+<a href="https://dev.fiafcore.org/Yoruba"><u>Yoruba</u></a>,
+<a href="https://dev.fiafcore.org/Zhuang"><u>Zhuang</u></a>,
+<a href="https://dev.fiafcore.org/Zulu"><u>Zulu</u></a>
+</td>
+</tr>
+</table></div>
+<br>
+    <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+        <table style="  border-collapse: collapse;
+          border: none;
+          margin: 0;  ">
+
+
+
+<tr>
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Sound Standard</td>
+
+<td>
+
+<a href="https://dev.fiafcore.org/DTS"><u>DTS</u></a>,
+<a href="https://dev.fiafcore.org/DolbyDigital"><u>Dolby Digital</u></a>,
+<a href="https://dev.fiafcore.org/DolbyStereo"><u>Dolby Stereo</u></a>,
+<a href="https://dev.fiafcore.org/Magnetic"><u>Magnetic</u></a>,
+<a href="https://dev.fiafcore.org/OpticalVariableArea"><u>Optical Variable Area</u></a>,
+<a href="https://dev.fiafcore.org/OpticalVariableDensity"><u>Optical Variable Density</u></a>,
+<a href="https://dev.fiafcore.org/SDDS"><u>SDDS</u></a>
+</td>
+
+</tr>
+          </table></div>
+    <br>
+              <div style="background-color:#fafafa; border-radius: 2px;padding:8px;   border: 1px solid #efefef;"">
+                  <table style="  border-collapse: collapse;
+                    border: none;
+                    margin: 0;  ">
+
+
+<tr>
+
+    <td style=" width:150px; font-weight: 100;vertical-align: top;">Status</td>
+<td>
+
+<a href="https://dev.fiafcore.org/Access"><u>Access</u></a>,
+<a href="https://dev.fiafcore.org/Preservation"><u>Preservation</u></a>
+</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+<br>
+<br>
+
+
+<script>
+    document.getElementById("vocabularies").style.fontWeight = 'Bold';
+</script>
+{% endblock %}

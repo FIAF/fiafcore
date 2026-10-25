@@ -1,0 +1,250 @@
+
+
+body {
+    font-family: "Nunito";
+}
+
+
+.menu {
+    color: black;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+.menu-item {
+    background-color: white;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    /*padding-left: 10px;*/
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+.search_block {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.search_field {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search_text {
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+    color: black;
+    height:25px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+
+
+/* Full-screen background overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it stays on top */
+}
+
+/* CSS Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Class to show the loader */
+.loading-overlay.is-active {
+  display: flex;
+}
+
+
+/*body {
+    font-family: "Nunito";
+}
+
+.menu {
+    color: black;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.menu-item {
+    background-color: white;
+    margin: 8px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+xmp {
+  background-color: whitesmoke;
+  display: block;
+  padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.title {
+    color: black;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+
+
+
+
+.tree {
+  --spacing: 1.5rem;
+  --radius: 10px;
+}
+
+.tree li {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.tree ul {
+  margin-left: calc(var(--radius) - var(--spacing));
+  padding-left: 0;
+}
+
+.tree ul li {
+  border-left: 2px solid #ddd;
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -2);
+  left: -2px;
+  width: calc(var(--spacing) + 2px);
+  height: calc(var(--spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+.tree summary {
+  display: block;
+  cursor: pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible {
+  outline: 1px dotted #000;
+}
+
+.tree li::after,
+.tree summary::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / 2 - var(--radius));
+  left: calc(var(--spacing) - var(--radius) - 1px);
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.tree summary::before {
+  z-index: 1;
+  background: #27212e url('expand-collapse.svg') 0 0;
+}
+
+.tree details[open] > summary::before {
+  background-position: calc(-2 * var(--radius)) 0;
+}
+
+
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown-page {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+
+.menu-dropdown:hover .menu-dropdown-page {
+    display: block;
+}
+
+.menu-dropdown-page a {
+    display: block;
+}
+
+.menu-dropdown-div {
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}*/

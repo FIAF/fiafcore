@@ -1,0 +1,37 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix fiaf: <https://dev.fiafcore.org/>
+
+construct {
+
+    SUBJECT_URI rdfs:label ?label .
+
+    SUBJECT_URI rdf:type ?type .
+    ?type rdfs:label ?typeLabel .
+
+    SUBJECT_URI fiaf:hasIdentifier ?identifier .
+    ?identifier fiaf:hasIdentifierValue ?identifierValue .
+    ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+    ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+
+}
+
+where {
+
+    optional {
+        SUBJECT_URI rdfs:label ?label .
+    }
+
+    optional {
+        SUBJECT_URI rdf:type ?type .
+        ?type rdfs:label ?typeLabel .
+    }
+
+    optional {
+        SUBJECT_URI fiaf:hasIdentifier ?identifier .
+        ?identifier fiaf:hasIdentifierValue ?identifierValue .
+        ?identifier fiaf:hasIdentifierAuthority ?identifierAuthority .
+        ?identifierAuthority rdfs:label ?identifierAuthorityLabel .
+    }
+
+}

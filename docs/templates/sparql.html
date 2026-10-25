@@ -1,0 +1,130 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<br>
+
+Direct queries to the knowledge graph can be made below, expressed in the SPARQL querying langauge. <br><br>
+
+<div class="search_field">
+    <div style="padding-right:10px">Example queries:</div>
+    <select id="example_select" class="field_value" name="type_id_fk" required>
+        <option value="example1">Film works held only by the BFI?</option>
+        <option value="example2">British films which the BFI does not hold an item?</option>
+        <option value="example3">Film items from directors buried in the Père Lachaise Cemetery?</option>
+    </select>
+</div>
+
+
+<div id="yasgui"></div>
+
+<script>
+    const yasgui = new Yasgui(document.getElementById("yasgui"), {
+      requestConfig: {
+        endpoint: "https://data.fiafcore.org"
+      },
+      copyEndpointOnNewTab: false
+    });
+
+    const examples = {
+      example1: `prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix fiaf: <https://dev.fiafcore.org/>
+
+select distinct ?work (sample(?label) as ?work_label) where {
+  values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+  ?bfi_item rdf:type fiaf:Item .
+  ?bfi_item fiaf:hasHoldingInstitution ?bfi .
+  ?bfi_manifestation fiaf:hasItem ?bfi_item .
+  ?work fiaf:hasManifestation ?bfi_manifestation .
+  ?work fiaf:hasTitle ?t .
+  ?t fiaf:hasTitleValue ?label .
+  minus {
+    values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+    ?other_items fiaf:hasHoldingInstitution ?archives .
+    ?other_items rdf:type fiaf:Item .
+    filter (?archives != ?bfi)
+    ?other_manifestation fiaf:hasItem ?other_items .
+    ?work fiaf:hasManifestation ?other_manifestation .
+    }
+} group by ?work`,
+      example2: `prefix fiaf: <https://dev.fiafcore.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?work (sample(?t2) as ?title) where {
+  ?work rdf:type/rdfs:subClassOf* fiaf:Work .
+  ?work fiaf:hasCountry fiaf:UnitedKingdomOfGreatBritainAndNorthernIreland .
+  ?work fiaf:hasTitle ?t1 .
+  ?t1 fiaf:hasTitleValue ?t2 .
+  minus {
+    values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+    ?bfi_item rdf:type fiaf:Item .
+    ?bfi_item fiaf:hasHoldingInstitution ?bfi .
+    ?bfi_manifestation fiaf:hasItem ?bfi_item .
+    ?work fiaf:hasManifestation ?bfi_manifestation .
+    }
+  } group by ?work`,
+      example3: `prefix fiaf: <https://dev.fiafcore.org/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wikibase: <http://wikiba.se/ontology#>
+
+# limit to agents with wikidata identifiers.
+
+select distinct ?burial ?name (sample(?t2) as ?title) ?item ?institution ?base {
+  values ?wd { fiaf:5425949b-1b45-4099-ab06-8b8e1a92773d } .
+  ?agent fiaf:hasIdentifier ?id .
+  ?id fiaf:hasIdentifierAuthority ?wd .
+  ?id fiaf:hasIdentifierValue ?wikidata .
+  bind(iri(concat(str(wd:), ?wikidata)) as ?wikidata_item) .
+
+  # federate to wikidata to limit to specific place of burial.
+
+#   service <https://query.wikidata.org/sparql> {
+    SERVICE <https://qlever.dev/api/wikidata> {
+    values ?lachaise { wd:Q311 }
+    ?wikidata_item wdt:P119 ?lachaise .
+    ?lachaise rdfs:label ?burial .
+      filter (lang(?burial) = "en")
+  }
+
+  # resolve agents to film works.
+
+  ?agent rdfs:label ?name .
+  ?activity fiaf:hasAgent ?agent .
+  ?event fiaf:hasActivity ?activity .
+  ?work fiaf:hasEvent ?event .
+  ?work fiaf:hasTitle ?t1 .
+  ?t1 fiaf:hasTitleValue ?t2 .
+
+  # locate items, holding institution and item base.
+
+  ?work fiaf:hasManifestation ?manifestation .
+  ?manifestation fiaf:hasItem ?item .
+  ?item fiaf:hasBase ?b .
+    ?b rdfs:label ?base .
+  ?item fiaf:hasHoldingInstitution ?i .
+  ?i rdfs:label ?institution .
+} group by ?burial ?name ?item ?base ?institution`};
+
+
+    document.getElementById('example_select').addEventListener('change', function() {
+      const selectedKey = this.value;
+      if (selectedKey && examples[selectedKey]) {
+        const activeTab = yasgui.getTab();
+        if (activeTab && activeTab.yasqe) {
+          activeTab.yasqe.setValue(examples[selectedKey]);
+        }
+      }
+    });
+
+</script>
+<script>
+    document.getElementById("access").style.fontWeight = 'Bold';
+</script>
+
+{% endblock %}

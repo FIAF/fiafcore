@@ -1,0 +1,61 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<br>
+
+The FIAF Knowledge Graph is a <a href="https://www.fiafnet.org/"><u>FIAF</u></a> initiated resource, using <a href="https://en.wikipedia.org/wiki/Semantic_Web"><u>semantic web</u></a> technologies to enable the holistic querying of data donated by members and affiliates. The knowledge graph is developed and maintained by the members of the FIAF Cataloguing and Documentation's Linked Open Data Task Force.
+
+<br><br>
+The current members of this task force are:<br>
+<br>
+&emsp;Paul Duchesne [National Film and Sound Archive of Australia]<br>
+&emsp;Adelheid Heftberger [Bundesarchiv]<br>
+&emsp;Stephen McConnachie [British Film Institute]<br>
+&emsp;Torbjørn Pedersen [Nasjonalbiblioteket]<br>
+&emsp;Leon van Wissen [Universiteit van Amsterdam]<br><br>
+
+Ladislav Cubr and Kristina Rose also contributed significantly to this project.
+
+<h4>How to use this resource</h4>
+
+There are four sections of this site:<br>
+<br>
+&emsp;<b><a href="/datasets">datasets</a></b> describes contributed data, including number of cinematographic works and latest refresh dates.<br>
+&emsp;<b><a href="/ontology">ontology</a></b> describes the FIAFcore ontology, used as the shared framework for the knowledge graph.<br>
+&emsp;<b><a href="/vocabularies">vocabularies</a></b> details the vocabularies used by the FIAFcore ontology.<br>
+&emsp;<b><a href="/search">access</a></b> contains ways of interacting with the knowledge graph.<br>
+
+<h4>Technologies</h4>
+
+
+The FIAF Knowledge Graph is built using established and emerging open-source technologies. Source data is supplied as <a href="https://www.w3.org/XML/"><u>XML</u></a>, with the intention to support <a href="https://www.openarchives.org/pmh/"><u>OAI-PMH</u></a> automated capture in the future.
+<br><br>
+This XML is converted to <a href="https://www.w3.org/TR/rdf12-xml/" ><u>RDF/XML</u></a> via <a href="https://www.w3.org/TR/xslt-30/"><u>XSLT</u></a> transforms to match ontology and vocabulary expectations. The RDF/XML is re-serialised as <a href="https://www.w3.org/TR/rdf12-n-triples/"><u>N-Triples</u></a> and loaded into a <a href="https://github.com/ad-freiburg/QLever"><u>QLever</u></a> triplestore running on a FIAF managed server. This entire pipeline is orchestrated by <a href="https://airflow.apache.org/"><u>Apache Airflow</u></a>.
+<br><br>
+This site is built using <a href="https://flask.palletsprojects.com/en/stable/"><u>Flask</u></a> and <a href="https://rdflib.readthedocs.io/en/stable/index.html"><u>RDFLib</u></a>.
+
+
+<h4>Design</h4>
+
+The design of this site is an intentional homage to the visionary work of the <a href="https://www.cinematheque.qc.ca/"><u>Cinémathèque Québécoise</u></a> in the area of Linked Open Data for film archives.
+
+<h4>Contact</h4>
+
+Any question or comments can be directed to the FIAF Cataloguing and Documentation Commission at <a href="mailto:cdc@fiafnet.org"><u>cdc@fiafnet.org</u></a>.
+Issues and discussion can be found on <a href="https://github.com/FIAF/fiafcore"><u>GitHub</u></a>.
+
+<h4>Licence</h4>
+
+The FIAFcore ontology is licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed.en"><u>CC-BY-4.0</u></a>.
+Data sourced from the FIAF Knowledge Graph is licenced under <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en"><u>CC-BY-NC-4.0</u></a>.
+
+<br>
+<br>
+<br>
+
+<script>
+    document.getElementById("index").style.fontWeight = 'Bold';
+</script>
+
+{% endblock %}

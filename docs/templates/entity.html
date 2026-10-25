@@ -1,0 +1,178 @@
+<meta charset="UTF-8">
+<!--http://localhost:5000/002632e1-75ea-4ae8-b211-dae73dd38779-->
+<!--http://localhost:5000/a54ec8e3-5372-491f-8b12-d29219f87a75-->
+
+<!--http://localhost:5000/53e88f85-14e5-4a39-afc2-9d13660c869e-->
+<!--http://localhost:5000/2fe108df-ba7f-4e2b-a610-d0d46ff9b184-->
+
+hello {{ data }}
+
+<!--<h1>
+    {% if data.label %}
+    {{ data.label.0 }}
+    {% endif %}
+    [<a href="{{ data.type.0.id }}">{{ data.type.0.label }}</a>]
+</h1>-->
+
+
+<!--fiaf: < {{ data.id}}   >-->
+
+<br>
+<br>
+<!--
+{% for x in data.hasTitle %}
+<a href="https://dev.fiafcore.org/hasTitle">
+    Has Title:
+</a>
+{{ x.hasTitleValue }} [
+
+<a href="{{ x.type['@id'] }}">
+    {{ x.type.label }}
+</a>]
+<br>
+{% endfor %}
+-->
+
+<br>
+<br>
+<!--
+{% for x in data.hasCountry %}
+<a href="https://dev.fiafcore.org/hasCountry">
+    Has Country:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}-->
+
+
+<br>
+<br>
+
+<!--{% for x in data.hasForm %}
+<a href="https://dev.fiafcore.org/hasForm">
+    Has Form:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}-->
+
+
+<br>
+<br>
+
+<!--{% for x in data.hasGenre %}
+<a href="https://dev.fiafcore.org/hasGenre">
+    Has Genre:
+</a>
+<a href="{{ x['@id'] }}">
+    {{ x.label['@value'] }}
+</a>
+<br>
+{% endfor %}-->
+
+
+<br>
+<br>
+
+<br>
+<br>
+
+
+
+<!--{% for x in data.hasEvent %}
+<a href="https://dev.fiafcore.org/hasEvent">
+    Has Event:
+</a>
+Event [
+
+<a href="{{ x['@id'] }}">
+    {{ x.type_label }}
+</a>]
+<br>
+
+
+{% for y in x.hasActivity %}-->
+
+<!--^^ {{ y }}<br>-->
+<!--<a href="{{ y['hasAgent']['@id']}}">
+{{y.hasAgent.label}}
+</a>
+
+[
+
+<a href="{{ y['type']['@id'] }}">
+    {{ y['type']['label'] }}
+</a>]
+
+<!--{{ y.hasAgent['@id'] }}<br>-->
+
+<!--{{ y.hasAgent['label'][0] }}<br>-->
+
+
+
+
+<br>
+
+{% endfor %}
+
+
+
+{% endfor %}-->
+
+
+<br>
+<br>
+
+<!--{% for x in data.hasManifestation %}
+<a href="https://dev.fiafcore.org/hasManifestation">
+    Has Manifestation:
+</a>
+{{x}}
+ [
+<a href="{{ x['@type'] }}">
+    {{ x.type_label }}
+</a>]-->
+
+<br>
+
+<!--{% for y in x.hasColourCharacteristic %}
+<a href="https://dev.fiafcore.org/hasColourCharacteristic">
+    Has ColourCharacteristic:
+</a>
+<a href="{{ y['@id'] }}">
+    {{ y.label['@value'] }}
+</a>
+<br>
+{% endfor %}-->
+
+
+    <br>
+    <br>
+<!--{% for y in x.hasActivity %}-->
+
+
+
+<br>
+<!--{% endfor %}-->
+
+
+<br>
+<br>
+
+<!--{% for x in data.hasIdentifier %}
+<a href="https://dev.fiafcore.org/hasIdentifier">
+    Has Identifier:
+</a>
+{{ x.hasIdentifierValue }} [
+<a href="{{ x.hasIdentifierAuthority['@id'] }}">
+    {{ x.hasIdentifierAuthority.label }}
+</a>]
+<br>
+{% endfor %}-->
+
+
+{{ d }}
