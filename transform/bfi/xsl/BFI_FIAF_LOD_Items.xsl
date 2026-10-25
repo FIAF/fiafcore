@@ -191,8 +191,12 @@
                                     <xsl:when test="$stock = 'SONY'"/>
                                     <xsl:when test="$stock = 'Ampex'"/>
                                     <xsl:when test="$stock = 'Pyral'"/>
-                                    <xsl:when test="$stock = 'Maxell'"/>
-                                    <xsl:when test="$stock = 'BASF'"/>
+                                    <xsl:when test="$stock = 'Maxell'">
+                                        <rdf:type rdf:resource="https://dev.fiafcore.org/Maxell" />
+                                    </xsl:when>
+                                    <xsl:when test="$stock = 'BASF'">
+                                        <rdf:type rdf:resource="https://dev.fiafcore.org/BASF" />
+                                    </xsl:when>
                                     <xsl:when test="$stock = 'MIXED'"/>
                                     <xsl:when test="$stock = 'unknown credit activity'"/>
                                     <xsl:when test="$stock = 'Zonal'"/>
@@ -222,7 +226,9 @@
                                     <xsl:when test="$stock = 'DVD-R'"/>
                                     <xsl:when test="$stock = 'SVMA'"/>
                                     <xsl:when test="$stock = 'DA8113'"/>
-                                    <xsl:when test="$stock = 'TDK'"/>
+                                    <xsl:when test="$stock = 'TDK'">
+                                        <rdf:type rdf:resource="https://dev.fiafcore.org/TDK" />
+                                    </xsl:when>
                                     <xsl:when test="$stock = 'T C FOX'"/>
                                     <xsl:when test="$stock = 'T AUET(USSR)'"/>
                                     <xsl:when test="$stock = 'VA RCA DUPLEX'"/>
