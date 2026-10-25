@@ -75,8 +75,12 @@
                         <xsl:when test="$country = 'unklar'" />
                         <xsl:when test="$country = 'Kosovo'" />
                         <xsl:when test="$country = 'Unbekannt'" />
-                        <xsl:when test="$country = 'Jugoslawien'" />
-                        <xsl:when test="$country = 'Union der Sozialistischen Sowjetrepubliken'" />
+                        <xsl:when test="$country = 'Jugoslawien'">
+                            <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/Yugoslavia" />
+                        </xsl:when>
+                        <xsl:when test="$country = 'Union der Sozialistischen Sowjetrepubliken'">
+                            <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/SovietUnion" />
+                        </xsl:when>
                         <xsl:when test="$country = 'Deutsches Reich (bis 1945)'">
                             <fiaf:hasCountry rdf:resource="https://dev.fiafcore.org/Germany" />
                         </xsl:when>

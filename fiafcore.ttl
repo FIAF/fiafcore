@@ -5437,6 +5437,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/SovietUnion>
+    a owl:Class ;
+    rdfs:label "Soviet Union"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
 <https://dev.fiafcore.org/Spain>
     a owl:Class ;
     rdfs:label "Spain"@en ;
@@ -6430,6 +6437,13 @@ rdfs:subClassOf
     rdfs:label "Youth Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/Yugoslavia>
+    a owl:Class ;
+    rdfs:label "Yugoslavia"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
 <https://dev.fiafcore.org/Zambia>
