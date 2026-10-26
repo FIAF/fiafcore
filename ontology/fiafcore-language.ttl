@@ -131,6 +131,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/Bodo> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Bodo"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/Bosnian> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Bosnian"@en ;
@@ -140,6 +146,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/Breton> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Breton"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/BritishSignLanguage> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "British Sign Language"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
@@ -593,6 +605,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/LowerSorbian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Lower Sorbian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/Lubakatanga> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Luba-Katanga"@en ;
@@ -791,6 +809,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/Rajasthani> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Rajasthani"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/Romanian> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Romanian"@en ;
@@ -890,6 +914,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/SouthNdebele> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "South Ndebele"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/SouthernSami> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Southern Sami"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
@@ -1028,6 +1058,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/Ukrainian> a owl:Class ;
     dc:description ""@en ;
     rdfs:label "Ukrainian"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/UpperSorbian> a owl:Class ;
+    dc:description ""@en ;
+    rdfs:label "Upper Sorbian"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 

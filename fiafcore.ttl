@@ -818,6 +818,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
 .
 
+<https://dev.fiafcore.org/Bodo>
+    a owl:Class ;
+    rdfs:label "Bodo"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/BoliviaPlurinationalStateOf>
     a owl:Class ;
     rdfs:label "Bolivia, Plurinational State of"@en ;
@@ -887,6 +894,13 @@ rdfs:subClassOf
     rdfs:label "British Indian Ocean Territory"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/BritishSignLanguage>
+    a owl:Class ;
+    rdfs:label "British Sign Language"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/BroadcastEvent>
@@ -3275,6 +3289,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
 .
 
+<https://dev.fiafcore.org/LowerSorbian>
+    a owl:Class ;
+    rdfs:label "Lower Sorbian"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/Lubakatanga>
     a owl:Class ;
     rdfs:label "Luba-Katanga"@en ;
@@ -4649,6 +4670,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
 .
 
+<https://dev.fiafcore.org/Rajasthani>
+    a owl:Class ;
+    rdfs:label "Rajasthani"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/RatingEvent>
     a owl:Class ;
     rdfs:label "Rating Event"@en ;
@@ -5430,6 +5458,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/SouthernSami>
+    a owl:Class ;
+    rdfs:label "Southern Sami"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/SouthernSotho>
     a owl:Class ;
     rdfs:label "Southern Sotho"@en ;
@@ -6162,6 +6197,13 @@ rdfs:subClassOf
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://dev.fiafcore.org/UpperSorbian>
+    a owl:Class ;
+    rdfs:label "Upper Sorbian"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/Urdu>
