@@ -380,7 +380,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://dev.fiafcore.org/UmaticSP>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/UmaticHighBand> ;
+    skos:broader <https://dev.fiafcore.org/Umatic> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
     skos:prefLabel "U-matic SP"@en ;
