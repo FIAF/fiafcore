@@ -163,7 +163,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/Bodo>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "Bodo language (ISO 639-3: brx)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Bodo"@en ;
 .
@@ -187,7 +187,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/BritishSignLanguage>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "British Sign Language (ISO 639-3: bfi)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "British Sign Language"@en ;
 .
@@ -795,7 +795,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/LowerSorbian>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "Lower Sorbian language (ISO 639-2/3: dsb)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Lower Sorbian"@en ;
 .
@@ -1067,7 +1067,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/Rajasthani>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "Rajasthani language (ISO 639-2/3: raj)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Rajasthani"@en ;
 .
@@ -1211,7 +1211,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/SouthernSami>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "Southern Sami language (ISO 639-2/3: sma)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Southern Sami"@en ;
 .
@@ -1403,7 +1403,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/UpperSorbian>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
-    skos:definition ""@en ;
+    skos:definition "Upper Sorbian language (ISO 639-2/3: hsb)."@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Upper Sorbian"@en ;
 .

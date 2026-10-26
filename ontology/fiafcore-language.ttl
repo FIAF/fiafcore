@@ -132,7 +132,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/Bodo> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "Bodo language (ISO 639-3: brx)."@en ;
+    dc:source <https://iso639-3.sil.org/code/brx> ;
     rdfs:label "Bodo"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
@@ -150,7 +151,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/BritishSignLanguage> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "British Sign Language (ISO 639-3: bfi)."@en ;
+    dc:source <https://iso639-3.sil.org/code/bfi> ;
     rdfs:label "British Sign Language"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
@@ -606,7 +608,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/LowerSorbian> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "Lower Sorbian language (ISO 639-2/3: dsb)."@en ;
+    dc:source <https://iso639-3.sil.org/code/dsb> ;
     rdfs:label "Lower Sorbian"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
@@ -810,7 +813,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/Rajasthani> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "Rajasthani language (ISO 639-2/3: raj)."@en ;
+    dc:source <https://iso639-3.sil.org/code/raj> ;
     rdfs:label "Rajasthani"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
@@ -918,7 +922,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/SouthernSami> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "Southern Sami language (ISO 639-2/3: sma)."@en ;
+    dc:source <https://iso639-3.sil.org/code/sma> ;
     rdfs:label "Southern Sami"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
@@ -1062,7 +1067,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/UpperSorbian> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "Upper Sorbian language (ISO 639-2/3: hsb)."@en ;
+    dc:source <https://iso639-3.sil.org/code/hsb> ;
     rdfs:label "Upper Sorbian"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
