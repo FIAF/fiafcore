@@ -6147,7 +6147,7 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "U-matic SP"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/UmaticHighBand> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
 .
 
 <https://dev.fiafcore.org/UndergroundFilm>
