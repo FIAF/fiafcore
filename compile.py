@@ -68,6 +68,14 @@ ttl_files = [x for x in ontology_path.iterdir() if x.suffix == ".ttl"]
 for c in ttl_files:
     g += rdflib.Graph().parse(c)
 
+# `dc:source <>` means "no source", but rdflib resolves the empty
+# relative IRI to the local ontology file URI. Strip those
+# machine-specific paths from the published graph.
+
+for triple in list(g.triples((None, rdflib.DC.source, None))):
+    if isinstance(triple[2], rdflib.URIRef) and str(triple[2]).startswith("file:"):
+        g.remove(triple)
+
 # add ontology triples.
 
 g += rdflib.Graph().parse(
@@ -98,6 +106,12 @@ g += rdflib.Graph().add((rdflib.RDFS.range, rdflib.RDFS.label, rdflib.Literal("R
 g += rdflib.Graph().add((rdflib.RDFS.subClassOf, rdflib.RDFS.label, rdflib.Literal("Subclass Of")))
 
 # write ontology graph to disk.
+
+if any(
+    isinstance(o, rdflib.URIRef) and str(o).startswith("file:")
+    for _, _, o in g
+):
+    raise ValueError("Generated ontology contains local file URIs")
 
 g.serialize(destination=str(pathlib.Path.cwd() / "fiafcore.ttl"), format="longturtle")
 print(len(g), "triples.")

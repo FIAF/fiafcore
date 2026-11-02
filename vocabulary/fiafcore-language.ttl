@@ -160,6 +160,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Bislama"@en ;
 .
 
+<https://dev.fiafcore.org/Bodo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "Bodo language (ISO 639-3: brx)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "Bodo"@en ;
+.
+
 <https://dev.fiafcore.org/Bosnian>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
@@ -174,6 +182,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Breton"@en ;
+.
+
+<https://dev.fiafcore.org/BritishSignLanguage>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "British Sign Language (ISO 639-3: bfi)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "British Sign Language"@en ;
 .
 
 <https://dev.fiafcore.org/Bulgarian>
@@ -776,6 +792,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Lithuanian"@en ;
 .
 
+<https://dev.fiafcore.org/LowerSorbian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "Lower Sorbian language (ISO 639-2/3: dsb)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "Lower Sorbian"@en ;
+.
+
 <https://dev.fiafcore.org/Lubakatanga>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
@@ -1040,6 +1064,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Quechua"@en ;
 .
 
+<https://dev.fiafcore.org/Rajasthani>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "Rajasthani language (ISO 639-2/3: raj)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "Rajasthani"@en ;
+.
+
 <https://dev.fiafcore.org/Romanian>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Language> ;
@@ -1174,6 +1206,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "South Ndebele"@en ;
+.
+
+<https://dev.fiafcore.org/SouthernSami>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "Southern Sami language (ISO 639-2/3: sma)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "Southern Sami"@en ;
 .
 
 <https://dev.fiafcore.org/SouthernSotho>
@@ -1358,6 +1398,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Language> ;
     skos:prefLabel "Ukrainian"@en ;
+.
+
+<https://dev.fiafcore.org/UpperSorbian>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Language> ;
+    skos:definition "Upper Sorbian language (ISO 639-2/3: hsb)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Language> ;
+    skos:prefLabel "Upper Sorbian"@en ;
 .
 
 <https://dev.fiafcore.org/Urdu>

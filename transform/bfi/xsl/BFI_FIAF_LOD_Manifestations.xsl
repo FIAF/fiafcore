@@ -327,9 +327,15 @@
                                             <xsl:when test="$language = ''"/>
                                             <xsl:when test="$language = 'Artificial language'"/>
                                             <xsl:when test="$language = 'Bantu'"/>
-                                            <xsl:when test="$language = 'Bodo'"/>
-                                            <xsl:when test="$language = 'British Sign Language'"/>
-                                            <xsl:when test="$language = 'Rajasthani'"/>
+                                            <xsl:when test="$language = 'Bodo'">
+                                                <fiaf:hasLanguage rdf:resource="https://dev.fiafcore.org/Bodo" />
+                                            </xsl:when>
+                                            <xsl:when test="$language = 'British Sign Language'">
+                                                <fiaf:hasLanguage rdf:resource="https://dev.fiafcore.org/BritishSignLanguage" />
+                                            </xsl:when>
+                                            <xsl:when test="$language = 'Rajasthani'">
+                                                <fiaf:hasLanguage rdf:resource="https://dev.fiafcore.org/Rajasthani" />
+                                            </xsl:when>
                                             <xsl:when test="$language = 'English'">
                                                 <fiaf:hasLanguage rdf:resource="https://dev.fiafcore.org/English" />
                                             </xsl:when>
