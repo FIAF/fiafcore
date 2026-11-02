@@ -76,7 +76,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "3M"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -112,7 +111,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Abbreviated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -148,7 +146,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Acquisition Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -247,7 +244,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Agfa"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -255,7 +251,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Agfa Gevaert"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -564,7 +559,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Augmented Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -607,7 +601,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Award Or Nomination Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -636,7 +629,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "BASF"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -768,6 +760,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
+<https://dev.fiafcore.org/Betamax>
+    a owl:Class ;
+    rdfs:label "Betamax"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Bhutan>
     a owl:Class ;
     rdfs:label "Bhutan"@en ;
@@ -800,7 +799,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Black And White"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -893,7 +891,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Broadcast Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -1018,7 +1015,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Captions"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -1042,7 +1038,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Casting Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -1072,7 +1067,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Censored Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1080,7 +1074,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Censorship Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
@@ -1263,7 +1256,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Colour"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -1271,7 +1263,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Colourized Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1316,7 +1307,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Condensed Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1391,7 +1381,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Corrected Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -1482,7 +1471,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Credits"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -1563,6 +1551,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
+<https://dev.fiafcore.org/D2>
+    a owl:Class ;
+    rdfs:label "D2"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/D3>
+    a owl:Class ;
+    rdfs:label "D-3"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/D5>
     a owl:Class ;
     rdfs:label "D5"@en ;
@@ -1582,6 +1584,13 @@ rdfs:subClassOf
     rdfs:label "DTS"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/DVCAM>
+    a owl:Class ;
+    rdfs:label "DVCAM"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/DVCPROHD>
@@ -1661,7 +1670,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Different Soundtrack Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1676,7 +1684,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Digitisation Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -1699,7 +1706,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Distribution Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -1781,7 +1787,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Donation Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -1811,7 +1816,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Dubbed Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1865,7 +1869,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Duplication Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -1873,7 +1876,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Dupont"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -1895,7 +1897,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Eastman"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -1903,7 +1904,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Eastman Kodak"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2045,7 +2045,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Exchange Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -2132,7 +2131,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Ferrania"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2170,7 +2168,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Film Printing Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -2208,7 +2205,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Foot"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -2251,7 +2247,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Fuji"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2359,7 +2354,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Gevaert"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2367,7 +2361,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Gevaert Belgium"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2389,7 +2382,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Gigabyte"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -2441,7 +2433,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Greyscaled Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -2514,6 +2505,13 @@ rdfs:subClassOf
     rdfs:label "Guyana"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/HDCAM>
+    a owl:Class ;
+    rdfs:label "HDCAM"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/HDCAMSR>
@@ -2596,6 +2594,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/Hi8>
+    a owl:Class ;
+    rdfs:label "Hi8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Hindi>
     a owl:Class ;
     rdfs:label "Hindi"@en ;
@@ -2642,7 +2647,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Home Video Publication Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -2715,7 +2719,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Identifiying Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -2737,7 +2740,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Ilford"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2766,7 +2768,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Indoor Shooting Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -2781,7 +2782,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Inspection Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -2811,7 +2811,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Intertitles"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -2995,7 +2994,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Kilobyte"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -3017,7 +3015,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Kodak"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -3263,7 +3260,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Loan Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -3485,7 +3481,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Mastering Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -3515,7 +3510,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Maxell"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -3545,7 +3539,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Megabyte"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -3560,7 +3553,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Metre"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -3592,11 +3584,17 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/MiniDV>
+    a owl:Class ;
+    rdfs:label "MiniDV"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Minute>
     a owl:Class ;
     rdfs:label "Minute"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -3760,7 +3758,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Mute"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
@@ -3921,7 +3918,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "No Dialogue"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
@@ -3929,7 +3925,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Non-Theatrical Distribution Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4008,7 +4003,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Not For Release Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4031,7 +4025,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Off-Air Recording Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -4056,18 +4049,31 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
 .
 
-<https://dev.fiafcore.org/OneInchVideotape>
+<https://dev.fiafcore.org/OneInchTypeA>
     a owl:Class ;
-    rdfs:label "One Inch Videotape"@en ;
+    rdfs:label "One Inch Type A"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeB>
+    a owl:Class ;
+    rdfs:label "One Inch Type B"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeC>
+    a owl:Class ;
+    rdfs:label "One Inch Type C"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
 .
 
 <https://dev.fiafcore.org/OnlineTransmissionEvent>
     a owl:Class ;
     rdfs:label "Online Transmission Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4140,7 +4146,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Orwo"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -4162,7 +4167,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Outdoor Shooting Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -4219,7 +4223,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Panasonic"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -4241,7 +4244,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Parallel Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -4270,7 +4272,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Pathe"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -4391,7 +4392,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Post-Production Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -4407,7 +4407,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Pre-Release Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -4423,7 +4422,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Preferred Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -4431,7 +4429,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Prerelease Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4470,7 +4467,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Preservation Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -4609,7 +4605,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Purchase Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -4653,7 +4648,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Rating Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
@@ -4668,7 +4662,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Reel"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -4684,7 +4677,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Release Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4706,7 +4698,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Reproduction Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -4737,7 +4728,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Restoration Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -4752,7 +4742,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Revision Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
@@ -4774,7 +4763,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Rights/Copyright/Registration Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -4986,7 +4974,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Scanning Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -5009,7 +4996,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Scotch"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -5032,7 +5018,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Search Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5040,7 +5025,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Second"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -5130,7 +5114,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Series Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5196,7 +5179,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Signed Language"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
@@ -5204,7 +5186,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Silent"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
@@ -5320,7 +5301,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sonorized Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -5328,7 +5308,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sony"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -5336,7 +5315,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sound"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
@@ -5470,7 +5448,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Spoken Language"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
@@ -5578,7 +5555,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Subtitled Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -5586,7 +5562,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Subtitles"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -5608,7 +5583,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sung Language "@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
@@ -5626,6 +5600,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
+<https://dev.fiafcore.org/SuperVHS>
+    a owl:Class ;
+    rdfs:label "Super VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/SupervisingSoundEditor>
     a owl:Class ;
     rdfs:label "Supervising Sound Editor"@en ;
@@ -5638,7 +5619,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Supplied/Devised Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -5709,7 +5689,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "TDK"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -5787,7 +5766,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Telecine Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -5802,7 +5780,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Terabyte"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -5824,7 +5801,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Theatrical Distribution Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -5868,7 +5844,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Tinted"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -5884,7 +5859,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Title Proper"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -5906,7 +5880,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Toned"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -5951,7 +5924,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Transfer Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -5959,7 +5931,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Translated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5967,7 +5938,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Transliterated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -6105,6 +6075,27 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/UmaticHighBand>
+    a owl:Class ;
+    rdfs:label "U-matic High Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
+<https://dev.fiafcore.org/UmaticLowBand>
+    a owl:Class ;
+    rdfs:label "U-matic Low Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
+<https://dev.fiafcore.org/UmaticSP>
+    a owl:Class ;
+    rdfs:label "U-matic SP"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
 <https://dev.fiafcore.org/UndergroundFilm>
     a owl:Class ;
     rdfs:label "Underground Film"@en ;
@@ -6160,7 +6151,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Uploading Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -6199,6 +6189,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
 .
 
+<https://dev.fiafcore.org/VCR>
+    a owl:Class ;
+    rdfs:label "VCR"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/VHS>
+    a owl:Class ;
+    rdfs:label "VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/Vanuatu>
     a owl:Class ;
     rdfs:label "Vanuatu"@en ;
@@ -6220,6 +6224,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Video2000>
+    a owl:Class ;
+    rdfs:label "Video 2000"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+<https://dev.fiafcore.org/Video8>
+    a owl:Class ;
+    rdfs:label "Video8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
 <https://dev.fiafcore.org/VideoAssist>
     a owl:Class ;
     rdfs:label "Video Assist"@en ;
@@ -6232,7 +6250,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "VideoCopying Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -6376,7 +6393,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Working Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -6478,7 +6494,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Achievement"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:string ;
 .
@@ -6487,7 +6502,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Activity"@en ;
     dc:description "Express the relationship between an Event and an Activity."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <https://dev.fiafcore.org/Activity> ;
 .
@@ -6505,7 +6519,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Award Name"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:string ;
 .
@@ -6514,7 +6527,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Base"@en ;
     dc:description "The physical material or video format on which the Item is captured."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Base> ;
 .
@@ -6523,7 +6535,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Broadcast Standard"@en ;
     dc:description "The broadcast standard for a video or DVD/BluRay."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/BroadcastStandard> ;
 .
@@ -6532,7 +6543,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Carrier"@en ;
     dc:description "Express the relationship between a moving image Item and a moving image Carrier."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Carrier> ;
 .
@@ -6541,7 +6551,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Colour Characteristic"@en ;
     dc:description "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6556,7 +6565,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Colour Standard"@en ;
     dc:description "Express a specific colour process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
 .
@@ -6574,7 +6582,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Date"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:date ;
 .
@@ -6583,7 +6590,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Event"@en ;
     dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6601,7 +6607,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Extent"@en ;
     dc:description "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6616,7 +6621,6 @@ rdfs:subClassOf
     a owl:DatatypeProperty ;
     rdfs:label "Has Extent Value"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Extent> ;
     rdfs:range xsd:string ;
 .
@@ -6634,7 +6638,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Format"@en ;
     dc:description "The medium on or the encoding format in which the moving image Manifestation or Item is fixed."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6658,7 +6661,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Holding Institution"@en ;
     dc:description "Record the name of the institution possessing the moving image Item or authorised to make it available."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Organisation> ;
 .
@@ -6667,7 +6669,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Identifier"@en ;
     dc:description "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6686,7 +6687,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Identifier Authority"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Identifier> ;
     rdfs:range <https://dev.fiafcore.org/Organisation> ;
 .
@@ -6695,7 +6695,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Identifier Value"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Identifier> ;
     rdfs:range xsd:string ;
 .
@@ -6704,7 +6703,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Item"@en ;
     dc:description "Express the relationship between a moving image Manifestation and a moving image Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Manifestation> ;
     rdfs:range <https://dev.fiafcore.org/Item> ;
 .
@@ -6713,7 +6711,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Language"@en ;
     dc:description "Express a language."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/LanguageUsage> ;
     rdfs:range <https://dev.fiafcore.org/Language> ;
 .
@@ -6722,7 +6719,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Language Usage"@en ;
     dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6753,7 +6749,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Sound Characteristic"@en ;
     dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6768,7 +6763,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Sound Standard"@en ;
     dc:description "Express a specific sound process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/SoundStandard> ;
 .
@@ -6777,7 +6771,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
     dc:description "Description of the preservation or access status of the Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Status> ;
 .
@@ -6786,7 +6779,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Stock"@en ;
     dc:description "Describes the specific stock/brand on which the Item is captured."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Stock> ;
 .
@@ -6795,7 +6787,6 @@ rdfs:subClassOf
     a owl:DatatypeProperty ;
     rdfs:label "Has Stock Code"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Stock> ;
     rdfs:range xsd:string ;
 .
@@ -6804,7 +6795,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Title"@en ;
     dc:description "Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6821,7 +6811,6 @@ rdfs:subClassOf
     a owl:DatatypeProperty ;
     rdfs:label "Has Title Value"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Title> ;
     rdfs:range xsd:string ;
 .
@@ -6839,7 +6828,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Verdict"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/DecisionEvent> ;
     rdfs:range xsd:string ;
 .
@@ -6857,7 +6845,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Is Element"@en ;
     dc:description "Record the nature or function of the moving image Item, describing its place in the photochemical or digital production or duplication process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Element> ;
 .
@@ -6866,7 +6853,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Nomination Only"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:boolean ;
 .
@@ -6917,13 +6903,26 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Identifier"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+.
+
+<https://dev.fiafcore.org/OneInchVideotape>
+    a owl:Class ;
+    rdfs:label "One Inch Videotape"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/Status>
     a owl:Class ;
     rdfs:label "Status"@en ;
     dc:description ""@en ;
+.
+
+<https://dev.fiafcore.org/Umatic>
+    a owl:Class ;
+    rdfs:label "U-matic"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/Agent>
@@ -6949,7 +6948,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Decision Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -6957,7 +6955,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Dialogue"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
@@ -6973,7 +6970,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Language Usage"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
 .
 
 <https://dev.fiafcore.org/OpticalFormat>
@@ -6987,7 +6983,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Preservation Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -6995,7 +6990,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Production Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -7003,7 +6997,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Written Language"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
@@ -7011,7 +7004,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Acquisition Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -7019,14 +7011,12 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Sound Characteristic"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
 .
 
 <https://dev.fiafcore.org/ColourCharacteristic>
     a owl:Class ;
     rdfs:label "Colour Characteristic"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
 .
 
 <https://dev.fiafcore.org/Format>
@@ -7039,7 +7029,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Manufacture Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -7076,7 +7065,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
 .
 
 <https://dev.fiafcore.org/AnimationActivity>
@@ -7100,13 +7088,6 @@ owl:DatatypeProperty
     dc:description ""@en ;
 .
 
-<https://dev.fiafcore.org/VideoFormat>
-    a owl:Class ;
-    rdfs:label "Video Format"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
-.
-
 <https://dev.fiafcore.org/ColourStandard>
     a owl:Class ;
     rdfs:label "Colour Standard"@en ;
@@ -7125,7 +7106,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Publication Event"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -7133,7 +7113,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Alternative Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -7156,7 +7135,6 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Extent"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
 .
 
 <https://dev.fiafcore.org/Form>
@@ -7263,11 +7241,17 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+<https://dev.fiafcore.org/VideoFormat>
+    a owl:Class ;
+    rdfs:label "Video Format"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
 <https://dev.fiafcore.org/Stock>
     a owl:Class ;
     rdfs:label "Stock"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
 .
 
 owl:ObjectProperty
