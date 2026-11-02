@@ -6175,6 +6175,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/UmaticHighBand>
+    a owl:Class ;
+    rdfs:label "U-matic High Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
 <https://dev.fiafcore.org/UmaticLowBand>
     a owl:Class ;
     rdfs:label "U-matic Low Band"@en ;
@@ -6999,13 +7006,6 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/UmaticHighBand>
-    a owl:Class ;
-    rdfs:label "U-matic High Band"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
-.
-
 <https://dev.fiafcore.org/EditingActivity>
     a owl:Class ;
     rdfs:label "Editing Activity"@en ;
@@ -7020,13 +7020,6 @@ rdfs:subClassOf
     dc:description "A collection of human beings, collaborating for commercial or artistic purposes."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
-.
-
-<https://dev.fiafcore.org/Umatic>
-    a owl:Class ;
-    rdfs:label "U-matic"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 owl:DatatypeProperty
@@ -7057,6 +7050,13 @@ owl:DatatypeProperty
     a owl:Class ;
     rdfs:label "Status"@en ;
     dc:description ""@en ;
+.
+
+<https://dev.fiafcore.org/Umatic>
+    a owl:Class ;
+    rdfs:label "U-matic"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 <https://dev.fiafcore.org/Agent>

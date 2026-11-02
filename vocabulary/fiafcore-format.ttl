@@ -370,6 +370,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Two Inch Videotape"@en ;
 .
 
+<https://dev.fiafcore.org/UmaticHighBand>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Umatic> ;
+    skos:definition ""@en ;
+    skos:inScheme <https://dev.fiafcore.org/Format> ;
+    skos:prefLabel "U-matic High Band"@en ;
+.
+
 <https://dev.fiafcore.org/UmaticLowBand>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Umatic> ;
@@ -434,12 +442,12 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Windows Media"@en ;
 .
 
-<https://dev.fiafcore.org/UmaticHighBand>
+<https://dev.fiafcore.org/OneInchVideotape>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Umatic> ;
+    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "U-matic High Band"@en ;
+    skos:prefLabel "One Inch Videotape"@en ;
 .
 
 <https://dev.fiafcore.org/Umatic>
@@ -448,14 +456,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:definition ""@en ;
     skos:inScheme <https://dev.fiafcore.org/Format> ;
     skos:prefLabel "U-matic"@en ;
-.
-
-<https://dev.fiafcore.org/OneInchVideotape>
-    a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/VideoFormat> ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/Format> ;
-    skos:prefLabel "One Inch Videotape"@en ;
 .
 
 <https://dev.fiafcore.org/OpticalFormat>
