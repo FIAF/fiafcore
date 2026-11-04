@@ -94,6 +94,12 @@ construct {
     ?itemSound rdf:type ?itemSoundType .
     ?itemSoundType rdfs:label ?soundTypeLabel .
 
+    ?item fiaf:hasLanguageUsage ?itemlanguse .
+    ?itemlanguse rdf:type ?itemlanguseType .
+    ?itemlanguseType rdfs:label ?itemlanguseTypeLabel .
+    ?itemlanguse fiaf:hasLanguage ?itemlang .
+    ?itemlang rdfs:label ?itemlangLabel .
+
 
 }
 
@@ -234,11 +240,15 @@ where {
                 ?itemSoundType rdfs:label ?soundTypeLabel .
             }
 
-
-
+            optional {
+                ?item fiaf:hasLanguageUsage ?itemlanguse .
+                ?itemlanguse rdf:type ?itemlanguseType .
+                ?itemlanguseType rdfs:label ?itemlanguseTypeLabel .
+                ?itemlanguse fiaf:hasLanguage ?itemlang .
+                ?itemlang rdfs:label ?itemlangLabel .
+            }
 
         }
-
 
     }
 
