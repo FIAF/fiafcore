@@ -84,7 +84,8 @@
       "hasHoldingInstitution": { "@embed": "@always" },
       "hasStatus": { "@embed": "@always" },
       "isElement": { "@embed": "@always" },
-      "hasStock": { "@embed": "@always" }
+      "hasStock": { "@embed": "@always" },
+      "hasLanguageUsage": { "@embed": "@always" }
     }
   }
 }

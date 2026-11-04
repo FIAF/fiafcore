@@ -5606,7 +5606,7 @@ rdfs:subClassOf
 
 <https://dev.fiafcore.org/SungLanguage>
     a owl:Class ;
-    rdfs:label "Sung Language "@en ;
+    rdfs:label "Sung Language"@en ;
     dc:description ""@en ;
     dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
@@ -6729,6 +6729,7 @@ rdfs:subClassOf
                 <https://dev.fiafcore.org/Work>
                 <https://dev.fiafcore.org/Variant>
                 <https://dev.fiafcore.org/Manifestation>
+                <https://dev.fiafcore.org/Item>
             ) ;
         ] ;
     rdfs:range <https://dev.fiafcore.org/LanguageUsage> ;

@@ -230,6 +230,10 @@
                         {% for z in y.hasStock.type %}
                         / <a href="{{ z['@id'] }}"><u>{{ z['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>
                         {% endfor %}
+                        {% if y.hasLanguageUsage and y.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage'] %}
+                        / <a href="{{ y.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['@id'] }}"><u>{{ y.hasLanguageUsage['https://dev.fiafcore.org/hasLanguage']['label'][0]['@value'] }}</u></a>
+                        [<a href="{{ y.hasLanguageUsage.type[0]['@id'] }}"><u>{{ y.hasLanguageUsage.type[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] }}</u></a>]
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
