@@ -33,7 +33,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix fiaf: <https://dev.fiafcore.org/>
 
 select distinct ?work (sample(?label) as ?work_label) where {
-  values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+  values ?bfi { fiaf:cc50ab6d-cb71-47d6-9e52-702ec03151e6 } .
   ?bfi_item rdf:type fiaf:Item .
   ?bfi_item fiaf:hasHoldingInstitution ?bfi .
   ?bfi_manifestation fiaf:hasItem ?bfi_item .
@@ -41,7 +41,7 @@ select distinct ?work (sample(?label) as ?work_label) where {
   ?work fiaf:hasTitle ?t .
   ?t fiaf:hasTitleValue ?label .
   minus {
-    values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+    values ?bfi { fiaf:cc50ab6d-cb71-47d6-9e52-702ec03151e6 } .
     ?other_items fiaf:hasHoldingInstitution ?archives .
     ?other_items rdf:type fiaf:Item .
     filter (?archives != ?bfi)
@@ -59,7 +59,7 @@ select distinct ?work (sample(?t2) as ?title) where {
   ?work fiaf:hasTitle ?t1 .
   ?t1 fiaf:hasTitleValue ?t2 .
   minus {
-    values ?bfi { fiaf:f0032f62-d28c-4730-a358-afb8106173e0 } .
+    values ?bfi { fiaf:cc50ab6d-cb71-47d6-9e52-702ec03151e6 } .
     ?bfi_item rdf:type fiaf:Item .
     ?bfi_item fiaf:hasHoldingInstitution ?bfi .
     ?bfi_manifestation fiaf:hasItem ?bfi_item .
