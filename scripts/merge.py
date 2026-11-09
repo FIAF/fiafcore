@@ -17,7 +17,7 @@ def merge_auth(d):
 
     # load input ids, and minimum validation on uri.
 
-    input_uris = d['fiafcore']
+    input_uris = d['id']
     for i in input_uris:
         if 'dev.fiafcore.org' not in i:
             raise Exception(f'{i} not well formed.')
@@ -64,7 +64,7 @@ def validate_auth(d):
 
     # load input id, and minimum validation on uri.
 
-    input_uris = d['fiafcore']
+    input_uris = d['id']
     for i in input_uris:
         if 'dev.fiafcore.org' not in i:
             raise Exception(f'{i} not well formed.')
