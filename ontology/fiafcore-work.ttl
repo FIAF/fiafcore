@@ -90,7 +90,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Language Usage"@en ;
     dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation>) ] ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
     rdfs:range <https://dev.fiafcore.org/LanguageUsage> ;
 .
 

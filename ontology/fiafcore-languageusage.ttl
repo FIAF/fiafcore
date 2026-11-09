@@ -42,7 +42,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://dev.fiafcore.org/SungLanguage> a owl:Class ;
-    rdfs:label "Sung Language "@en ;
+    rdfs:label "Sung Language"@en ;
     dc:description ""@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
