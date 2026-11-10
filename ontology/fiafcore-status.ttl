@@ -1,25 +1,31 @@
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 ### Class
 
 <https://dev.fiafcore.org/Status> a owl:Class ;
     rdfs:label "Status"@en ;
-    dc:description ""@en ;
+    dc:description "The institution's current designation of how an Item is used in its collection. It can change without changing the Item, and is distinct from the Item's Element, which records what the Item was made for. Administrative states such as accessioned, on loan, or removed follow from Events and are not statuses."@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
 <https://dev.fiafcore.org/Access> a owl:Class ;
     rdfs:label "Access"@en ;
-    dc:description ""@en ;
+    skos:altLabel "Viewing copy"@en, "Use copy"@en ;
+    dc:description "An Item designated for viewing, screening, lending, or reference use."@en ;
+    dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
 .
 
 <https://dev.fiafcore.org/Preservation> a owl:Class ;
     rdfs:label "Preservation"@en ;
-    dc:description ""@en ;
+    skos:altLabel "Master"@en ;
+    dc:description "An Item kept to safeguard its content and not used for access, such as an archive master."@en ;
+    dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
 .
 

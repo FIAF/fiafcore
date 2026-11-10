@@ -152,6 +152,111 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
+<https://dev.fiafcore.org/Ampex> a owl:Class ;
+    rdfs:label "Ampex"@en ;
+    dc:description "Ampex magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Ansco> a owl:Class ;
+    rdfs:label "Ansco"@en ;
+    dc:description "Ansco photographic film stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Deko> a owl:Class ;
+    rdfs:label "Deko"@en ;
+    dc:description "Historical photographic stock bearing the Deko brand."@en ;
+    dc:source <https://en.wikipedia.org/wiki/List_of_discontinued_photographic_films> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/EMTEC> a owl:Class ;
+    rdfs:label "EMTEC"@en ;
+    dc:description "EMTEC magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/GoerzTenax> a owl:Class ;
+    rdfs:label "Goerz-Tenax"@en ;
+    dc:description "Historical film stock catalogued under the Goerz-Tenax name; not the camera bearing that name."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Indu> a owl:Class ;
+    rdfs:label "Indu"@en ;
+    dc:description "Indu film-stock brand, including stock converted from imported jumbo rolls; the brand does not identify the emulsion manufacturer."@en ;
+    dc:source <https://www.filmatlas.com/entry/686> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/JVC> a owl:Class ;
+    rdfs:label "JVC"@en ;
+    dc:description "JVC magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Lignose> a owl:Class ;
+    rdfs:label "Lignose"@en ;
+    dc:description "Historical photographic film stock bearing the Lignose name."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Mafe> a owl:Class ;
+    rdfs:label "Mafe"@en ;
+    dc:description "Historical photographic film stock bearing the Mafe name."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Memorex> a owl:Class ;
+    rdfs:label "Memorex"@en ;
+    dc:description "Memorex magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Perutz> a owl:Class ;
+    rdfs:label "Perutz"@en ;
+    dc:description "Perutz photographic film stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Pyral> a owl:Class ;
+    rdfs:label "Pyral"@en ;
+    dc:description "Pyral magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Sakura> a owl:Class ;
+    rdfs:label "Sakura"@en ;
+    dc:description "Photographic film stock bearing the Sakura brand."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Svema> a owl:Class ;
+    rdfs:label "Svema"@en ;
+    dc:description "Svema photographic film stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Zonal> a owl:Class ;
+    rdfs:label "Zonal"@en ;
+    dc:description "Zonal magnetic recording stock."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 ### Datatype Properties
 
 <https://dev.fiafcore.org/hasStockCode> a owl:DatatypeProperty ;

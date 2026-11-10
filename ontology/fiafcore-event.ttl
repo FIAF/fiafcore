@@ -12,323 +12,369 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Subclasses
 
-<https://dev.fiafcore.org/AcquisitionEvent> a owl:Class ;
-    rdfs:label "Acquisition Event"@en ;
-    dc:description ""@en ;
+# Publication events
+
+<https://dev.fiafcore.org/PublicationEvent> a owl:Class ;
+    rdfs:label "Publication Event"@en ;
+    dc:description "A screening, broadcast, streaming, or release of a Manifestation of a Work or Variant on a physical distribution medium or online."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/AwardOrNominationEvent> a owl:Class ;
-    rdfs:label "Award Or Nomination Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/BroadcastEvent> a owl:Class ;
-    rdfs:label "Broadcast Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/ReleaseEvent> a owl:Class ;
+    rdfs:label "Release Event"@en ;
+    dc:description "The release of a Manifestation to the public, such as a premiere or first public screening."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
-.
-
-<https://dev.fiafcore.org/CastingEvent> a owl:Class ;
-    rdfs:label "Casting Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
-.
-
-<https://dev.fiafcore.org/CensorshipEvent> a owl:Class ;
-    rdfs:label "Censorship Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
-.
-
-<https://dev.fiafcore.org/DecisionEvent> a owl:Class ;
-    rdfs:label "Decision Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/DigitisationEvent> a owl:Class ;
-    rdfs:label "Digitisation Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
 <https://dev.fiafcore.org/DistributionEvent> a owl:Class ;
     rdfs:label "Distribution Event"@en ;
-    dc:description ""@en ;
+    dc:description "The distribution of a Manifestation for exhibition. Use when the kind of distribution is unknown."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
-<https://dev.fiafcore.org/DonationEvent> a owl:Class ;
-    rdfs:label "Donation Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/TheatricalDistributionEvent> a owl:Class ;
+    rdfs:label "Theatrical Distribution Event"@en ;
+    dc:description "The distribution of a Manifestation for exhibition in cinemas."@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
-.
-
-<https://dev.fiafcore.org/DuplicationEvent> a owl:Class ;
-    rdfs:label "Duplication Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
-.
-
-<https://dev.fiafcore.org/ExchangeEvent> a owl:Class ;
-    rdfs:label "Exchange Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
-.
-
-<https://dev.fiafcore.org/FilmPrintingEvent> a owl:Class ;
-    rdfs:label "Film Printing Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
-.
-
-<https://dev.fiafcore.org/HomeVideoPublicationEvent> a owl:Class ;
-    rdfs:label "Home Video Publication Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
-.
-
-<https://dev.fiafcore.org/IndoorShootingEvent> a owl:Class ;
-    rdfs:label "Indoor Shooting Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
-.
-
-<https://dev.fiafcore.org/InspectionEvent> a owl:Class ;
-    rdfs:label "Inspection Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/LoanEvent> a owl:Class ;
-    rdfs:label "Loan Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
-.
-
-<https://dev.fiafcore.org/ManufactureEvent> a owl:Class ;
-    rdfs:label "Manufacture Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/MasteringEvent> a owl:Class ;
-    rdfs:label "Mastering Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DistributionEvent> ;
 .
 
 <https://dev.fiafcore.org/NonTheatricalDistributionEvent> a owl:Class ;
     rdfs:label "Non-Theatrical Distribution Event"@en ;
-    dc:description ""@en ;
+    dc:description "The distribution of a Manifestation for exhibition outside cinemas, such as to schools, clubs, or institutions."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DistributionEvent> ;
+.
+
+<https://dev.fiafcore.org/BroadcastEvent> a owl:Class ;
+    rdfs:label "Broadcast Event"@en ;
+    dc:description "The transmission of a Manifestation by a broadcaster."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/OnlineTransmissionEvent> a owl:Class ;
+    rdfs:label "Online Transmission Event"@en ;
+    dc:description "Making a Manifestation available online, such as on the Internet or an intranet."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/HomeVideoPublicationEvent> a owl:Class ;
+    rdfs:label "Home Video Publication Event"@en ;
+    dc:description "The publication of a Manifestation on a physical medium for home viewing."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/PrereleaseEvent> a owl:Class ;
+    rdfs:label "Prerelease Event"@en ;
+    dc:description "A presentation of a Manifestation before its release, such as a preview, test, or press screening."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
 <https://dev.fiafcore.org/NotForReleaseEvent> a owl:Class ;
     rdfs:label "Not For Release Event"@en ;
-    dc:description ""@en ;
+    dc:description "A private presentation of a Manifestation not intended for release, such as a screening of a home movie in a private context."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
-<https://dev.fiafcore.org/OffAirRecordingEvent> a owl:Class ;
-    rdfs:label "Off-Air Recording Event"@en ;
-    dc:description ""@en ;
+# Award and nomination events
+
+<https://dev.fiafcore.org/AwardOrNominationEvent> a owl:Class ;
+    rdfs:label "Award Or Nomination Event"@en ;
+    dc:description "The bestowal of, or nomination for, an award relating to a Work, Variant, or Manifestation, including awards for individual achievements within its context. Excludes awards for Agents alone."@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/OnlineTransmissionEvent> a owl:Class ;
-    rdfs:label "Online Transmission Event"@en ;
-    dc:description ""@en ;
+# Production events
+
+<https://dev.fiafcore.org/ProductionEvent> a owl:Class ;
+    rdfs:label "Production Event"@en ;
+    dc:description "A distinct event in the course of production of a Work or Variant, including the main production event or events separated from it in space or time, such as castings, shootings or other recordings, and post-production activities."@en ;
     dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/CastingEvent> a owl:Class ;
+    rdfs:label "Casting Event"@en ;
+    dc:description "The casting of performers for a production."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
+.
+
+<https://dev.fiafcore.org/IndoorShootingEvent> a owl:Class ;
+    rdfs:label "Indoor Shooting Event"@en ;
+    dc:description "Shooting or recording that takes place indoors, such as in a studio."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
 <https://dev.fiafcore.org/OutdoorShootingEvent> a owl:Class ;
     rdfs:label "Outdoor Shooting Event"@en ;
-    dc:description ""@en ;
+    dc:description "Shooting or recording that takes place outdoors or on location."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
 <https://dev.fiafcore.org/PostProductionEvent> a owl:Class ;
     rdfs:label "Post-Production Event"@en ;
-    dc:description ""@en ;
+    dc:description "Work carried out after shooting, such as editing, sound mixing, and visual effects."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
-<https://dev.fiafcore.org/PrereleaseEvent> a owl:Class ;
-    rdfs:label "Prerelease Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
-.
+# Rights events
 
-<https://dev.fiafcore.org/PreservationEvent> a owl:Class ;
-    rdfs:label "Preservation Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/RightsCopyrightRegistrationEvent> a owl:Class ;
+    rdfs:label "Rights/Copyright/Registration Event"@en ;
+    dc:description "The registration of rights, copyright, or other intellectual property in a Work, Variant, or Manifestation."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/ProductionEvent> a owl:Class ;
-    rdfs:label "Production Event"@en ;
-    dc:description ""@en ;
+# Decision events
+
+<https://dev.fiafcore.org/DecisionEvent> a owl:Class ;
+    rdfs:label "Decision Event"@en ;
+    dc:description "An event in which a Manifestation of a Work or Variant is evaluated by a censorship body or an accredited rating agency."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/PublicationEvent> a owl:Class ;
-    rdfs:label "Publication Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/PurchaseEvent> a owl:Class ;
-    rdfs:label "Purchase Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
-.
-
-<https://dev.fiafcore.org/RatingEvent> a owl:Class ;
-    rdfs:label "Rating Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/CensorshipEvent> a owl:Class ;
+    rdfs:label "Censorship Event"@en ;
+    dc:description "A decision mandated by law, made by a censorship body."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
-.
-
-<https://dev.fiafcore.org/ReleaseEvent> a owl:Class ;
-    rdfs:label "Release Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
-.
-
-<https://dev.fiafcore.org/ReproductionEvent> a owl:Class ;
-    rdfs:label "Reproduction Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
 <https://dev.fiafcore.org/RevisionEvent> a owl:Class ;
     rdfs:label "Revision Event"@en ;
-    dc:description ""@en ;
+    dc:description "A decision mandated by law that reviews or revises an earlier censorship decision."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
-<https://dev.fiafcore.org/RightsCopyrightRegistrationEvent> a owl:Class ;
-    rdfs:label "Rights/Copyright/Registration Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/RatingEvent> a owl:Class ;
+    rdfs:label "Rating Event"@en ;
+    dc:description "A decision under a voluntary rating scheme, made by an accredited rating agency."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
+.
+
+# Manufacture events
+
+<https://dev.fiafcore.org/ManufactureEvent> a owl:Class ;
+    rdfs:label "Manufacture Event"@en ;
+    dc:description "The technical production of physical or digital embodiments of a Manifestation, for example through film printing, telecine, video copying, digitisation, or mastering. It may describe a production process shared by a number of Items, and is distinct from the manufacture of film stock, tape, or other storage media. Copying carried out to preserve or restore holdings is a Preservation Event."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
-<https://dev.fiafcore.org/ScanningEvent> a owl:Class ;
-    rdfs:label "Scanning Event"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/FilmPrintingEvent> a owl:Class ;
+    rdfs:label "Film Printing Event"@en ;
+    dc:description "The printing of film copies of a Manifestation, such as release prints."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://dev.fiafcore.org/TelecineEvent> a owl:Class ;
     rdfs:label "Telecine Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
-.
-
-<https://dev.fiafcore.org/TheatricalDistributionEvent> a owl:Class ;
-    rdfs:label "Theatrical Distribution Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
-.
-
-<https://dev.fiafcore.org/TransferEvent> a owl:Class ;
-    rdfs:label "Transfer Event"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
-.
-
-<https://dev.fiafcore.org/UploadingEvent> a owl:Class ;
-    rdfs:label "Uploading Event"@en ;
-    dc:description ""@en ;
+    dc:description "The transfer of film to video by telecine to produce embodiments of a Manifestation."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
 <https://dev.fiafcore.org/VideoCopyingEvent> a owl:Class ;
     rdfs:label "VideoCopying Event"@en ;
-    dc:description ""@en ;
+    dc:description "The copying of video to produce embodiments of a Manifestation."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
+<https://dev.fiafcore.org/ScanningEvent> a owl:Class ;
+    rdfs:label "Scanning Event"@en ;
+    dc:description "The scanning of film to produce digital embodiments of a Manifestation."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://dev.fiafcore.org/MasteringEvent> a owl:Class ;
+    rdfs:label "Mastering Event"@en ;
+    dc:description "The mastering of a Manifestation, such as for a home video publication."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://dev.fiafcore.org/UploadingEvent> a owl:Class ;
+    rdfs:label "Uploading Event"@en ;
+    dc:description "The uploading of digital embodiments of a Manifestation for online availability."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+# Preservation and restoration events
+
+<https://dev.fiafcore.org/PreservationEvent> a owl:Class ;
+    rdfs:label "Preservation Event"@en ;
+    dc:description "A preservation or restoration process in which the contents of one or more Items, or fragments of them, are transferred with the intention of restoring or reconstructing the content as originally intended, or safeguarding it from decay. It is associated with the resulting Variant, Manifestation, or Items, and includes past or future treatments of an Item."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/DigitisationEvent> a owl:Class ;
+    rdfs:label "Digitisation Event"@en ;
+    dc:description "The digitisation of image or sound for preservation or restoration."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
+.
+
+<https://dev.fiafcore.org/DuplicationEvent> a owl:Class ;
+    rdfs:label "Duplication Event"@en ;
+    dc:description "Copying onto the same kind of medium for preservation or restoration, such as film to film."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
+.
+
+<https://dev.fiafcore.org/TransferEvent> a owl:Class ;
+    rdfs:label "Transfer Event"@en ;
+    dc:description "Copying onto another medium or format for preservation or restoration, such as film to video or tape to file."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
+.
+
+<https://dev.fiafcore.org/ReproductionEvent> a owl:Class ;
+    rdfs:label "Reproduction Event"@en ;
+    dc:description "Printing or recording a new element for preservation or restoration (the manual's printing / recording)."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
+.
+
+# Acquisition events
+
+<https://dev.fiafcore.org/AcquisitionEvent> a owl:Class ;
+    rdfs:label "Acquisition Event"@en ;
+    dc:description "The process of getting physical custody and a legal transfer of title (ownership) of an object or collection, such as through a gift, purchase, or transfer."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/DonationEvent> a owl:Class ;
+    rdfs:label "Donation Event"@en ;
+    dc:description "Acquisition by gift from a donor."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://dev.fiafcore.org/LegalDepositEvent> a owl:Class ;
+    rdfs:label "Legal Deposit Event"@en ;
+    dc:description "Acquisition through a legal obligation to deposit copies with the institution."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://dev.fiafcore.org/ExchangeEvent> a owl:Class ;
+    rdfs:label "Exchange Event"@en ;
+    dc:description "Acquisition through exchange with another institution or party."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://dev.fiafcore.org/PurchaseEvent> a owl:Class ;
+    rdfs:label "Purchase Event"@en ;
+    dc:description "Acquisition by purchase."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://dev.fiafcore.org/OffAirRecordingEvent> a owl:Class ;
+    rdfs:label "Off-Air Recording Event"@en ;
+    dc:description "Acquisition by recording a broadcast."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+# Collection management events
+
+<https://dev.fiafcore.org/AccessionEvent> a owl:Class ;
+    rdfs:label "Accession Event"@en ;
+    dc:description "The formal, legal act of officially accepting acquired Items into the permanent collection in accordance with the institution's collecting policy, committing it to their long-term preservation, care, and intellectual control. Distinct from acquisition."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/LoanEvent> a owl:Class ;
+    rdfs:label "Loan Event"@en ;
+    dc:description "A loan received by the institution: custody of an Item for an agreed period, under a loan agreement with a lender, without transfer of ownership. Not an acquisition, which transfers title. Lending by the institution to others is an Outgoing Loan Event."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/OutgoingLoanEvent> a owl:Class ;
+    rdfs:label "Outgoing Loan Event"@en ;
+    dc:description "The lending of an Item by the institution to another party for an agreed period, such as for a screening or exhibition, without transfer of ownership."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/DeAcquisitionEvent> a owl:Class ;
+    rdfs:label "De-Acquisition Event"@en ;
+    dc:description "The de-acquisition and removal of an Item from the institution's collection, such as removal, internal transfer to another collection within the institution, or external transfer to another archive or institution."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/InspectionEvent> a owl:Class ;
+    rdfs:label "Inspection Event"@en ;
+    dc:description "The inspection of an Item for the purpose of assessing and recording its condition or treatment, often in connection with its preservation or restoration."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
 ### Datatype Properties
 
-<https://dev.fiafcore.org/hasAchievement> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasAchievement> a owl:DatatypeProperty ;
     rdfs:label "Has Achievement"@en ;
-    dc:description ""@en ;
+    dc:description "The achievement for which an award or nomination was given, such as best screenplay."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 .
 
-<https://dev.fiafcore.org/hasAwardName> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasAwardName> a owl:DatatypeProperty ;
     rdfs:label "Has Award Name"@en ;
-    dc:description ""@en ;
+    dc:description "The name of an award."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 .
 
-<https://dev.fiafcore.org/hasDate> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasDate> a owl:DatatypeProperty ;
     rdfs:label "Has Date"@en ;
-    dc:description ""@en ;
+    dc:description "The date of an Event."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
 .
 
-<https://dev.fiafcore.org/nominationOnly> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/nominationOnly> a owl:DatatypeProperty ;
     rdfs:label "Nomination Only"@en ;
-    dc:description ""@en ;
+    dc:description "Whether an award event records a nomination only, rather than an award."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
 .
 
-<https://dev.fiafcore.org/hasVerdict> a owl:ObjectProperty ;
+<https://dev.fiafcore.org/hasVerdict> a owl:DatatypeProperty ;
     rdfs:label "Has Verdict"@en ;
-    dc:description ""@en ;
+    dc:description "The outcome of an act of rating or censorship."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/DecisionEvent> ;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;

@@ -22,7 +22,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasBase> a owl:ObjectProperty ;
     rdfs:label "Has Base"@en ;
-    dc:description "The physical material or video format on which the Item is captured."@en ;
+    dc:description "The film or tape substrate supporting the Item's image or sound recording, distinct from its format or recording process."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Base> ;
@@ -32,7 +32,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Broadcast Standard"@en ;
     dc:description "The broadcast standard for a video or DVD/BluRay."@en ;
     dc:source <> ;
-    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
     rdfs:range <https://dev.fiafcore.org/BroadcastStandard> ;
 .
 
@@ -54,7 +54,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasStatus> a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
-    dc:description "Description of the preservation or access status of the Item."@en ;
+    dc:description "The institution's current designation of how the Item is used in its collection, such as preservation or access. Distinct from the Item's Element, which records what the Item was made for."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Status> ;

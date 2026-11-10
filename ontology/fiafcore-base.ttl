@@ -29,6 +29,20 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
 .
 
+<https://dev.fiafcore.org/PVCBase> a owl:Class ;
+    rdfs:label "PVC Base"@en ;
+    dc:description "A polyvinyl chloride substrate used for film or magnetic tape."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
+<https://dev.fiafcore.org/CellophaneBase> a owl:Class ;
+    rdfs:label "Cellophane Base"@en ;
+    dc:description "A regenerated cellulose (cellophane) film substrate, including that used for Ozaphan film."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
 ### Datatype Properties
 
 # None
