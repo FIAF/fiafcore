@@ -90,9 +90,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasColourCharacteristic> a owl:ObjectProperty ;
     rdfs:label "Has Colour Characteristic"@en ;
-    dc:description "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
+    dc:description "The presence of colour(s), tone(s), etc. in a Manifestation, Item, or individual digital video stream."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/VideoStream>) ] ;
     rdfs:range <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -106,9 +106,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasFormat> a owl:ObjectProperty ;
     rdfs:label "Has Format"@en ;
-    dc:description "The medium on or the encoding format in which the moving image Manifestation or Item is fixed."@en ;
+    dc:description "The physical medium, digital file format, or package in which the moving image Manifestation, Item, or Carrier is fixed. Codecs are described on digital streams using hasVideoCodec or hasAudioCodec."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/Carrier>) ] ;
     rdfs:range <https://dev.fiafcore.org/Format> ;
 .
 
@@ -122,8 +122,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasSoundCharacteristic> a owl:ObjectProperty ;
     rdfs:label "Has Sound Characteristic"@en ;
-    dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item."@en ;
+    dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation, Item, or individual digital audio stream."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item>) ] ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/AudioStream>) ] ;
     rdfs:range <https://dev.fiafcore.org/SoundCharacteristic> ;
 .

@@ -1,0 +1,64 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/DigitalStream> a owl:Class ;
+    rdfs:label "Digital Stream"@en ;
+    dc:description "An individually describable stream within a digital object represented by an Item or Carrier. A stream is a descriptive component, not an inventory holding or storage carrier; it may be represented by a blank node or an IRI."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/VideoStream> a owl:Class ;
+    rdfs:label "Video Stream"@en ;
+    dc:description "A digital stream of moving images. Its codec and colour characteristics describe this stream, not other streams in the same object."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+<https://dev.fiafcore.org/AudioStream> a owl:Class ;
+    rdfs:label "Audio Stream"@en ;
+    dc:description "A digital audio stream, which may contain multiple channels. Language usage, codec, and sound characteristics can be associated with this stream independently of other streams."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+<https://dev.fiafcore.org/SubtitleStream> a owl:Class ;
+    rdfs:label "Subtitle Stream"@en ;
+    dc:description "A separately encoded subtitle stream within a digital object, not subtitles burned into the picture. A separate subtitle file is described as an object rather than automatically treated as an embedded stream."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+<https://dev.fiafcore.org/hasStream> a owl:ObjectProperty ;
+    rdfs:label "Has Stream"@en ;
+    dc:description "Associate an optional digital stream with the object represented by an Item or Carrier. Both levels are first-class description points; no Carrier record is required. This relationship does not propagate through storage or component relationships."@en ;
+    dc:source <> ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/Carrier>) ] ;
+    rdfs:range <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+<https://dev.fiafcore.org/hasVideoCodec> a owl:ObjectProperty ;
+    rdfs:label "Has Video Codec"@en ;
+    dc:description "Express the encoding of an individual digital video stream."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/VideoStream> ;
+    rdfs:range <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/hasAudioCodec> a owl:ObjectProperty ;
+    rdfs:label "Has Audio Codec"@en ;
+    dc:description "Express the encoding of an individual digital audio stream."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/AudioStream> ;
+    rdfs:range <https://dev.fiafcore.org/AudioCodec> ;
+.

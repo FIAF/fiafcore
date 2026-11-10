@@ -1,0 +1,70 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/VideoCodec> a owl:Class ;
+    rdfs:label "Video Codec"@en ;
+    dc:description "An encoding of a digital video stream, independent of its enclosing file format."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/FFV1> a owl:Class ;
+    dc:description "FFV1, a lossless intra-frame video codec used for preservation masters."@en ;
+    dc:source <> ;
+    rdfs:label "FFV1"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/MPEG2> a owl:Class ;
+    dc:description "MPEG-2 video."@en ;
+    dc:source <> ;
+    rdfs:label "MPEG-2"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/MPEG-4> a owl:Class ;
+    dc:description "The MPEG-4 family of video encoding standards."@en ;
+    dc:source <> ;
+    rdfs:label "MPEG-4"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/ProRes> a owl:Class ;
+    dc:description "The Apple ProRes family of video codecs."@en ;
+    dc:source <> ;
+    rdfs:label "ProRes"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/ProRes422HQ> a owl:Class ;
+    dc:description "Apple ProRes 422 HQ, a high quality 4:2:2 ProRes variant."@en ;
+    dc:source <> ;
+    rdfs:label "ProRes 422 HQ"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ProRes> ;
+.
+
+<https://dev.fiafcore.org/RealVideo> a owl:Class ;
+    dc:description "The RealVideo family of video codecs."@en ;
+    dc:source <> ;
+    rdfs:label "Real Video"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/WindowsMedia> a owl:Class ;
+    dc:description "The Windows Media family of video codecs."@en ;
+    dc:source <> ;
+    rdfs:label "Windows Media"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None
