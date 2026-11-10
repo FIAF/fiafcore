@@ -1,0 +1,63 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/ColourSpace> a owl:Class ;
+    rdfs:label "Colour Space"@en ;
+    dc:description "A standardized digital colour space defining colour primaries and white point in a moving image."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/ACES2065_1> a owl:Class ;
+    rdfs:label "ACES2065-1 (AP0)"@en ;
+    dc:description "The scene-linear RGB colour space specified by SMPTE ST 2065-1, using AP0 primaries and the ACES white point. This identifies ACES2065-1 specifically, not the broader Academy Color Encoding System. Record RGB encoding and a Linear transfer function when describing these aspects explicitly."@en ;
+    dc:source <https://docs.acescentral.com/encodings/aces2065-1/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/DCIP3> a owl:Class ;
+    rdfs:label "DCI-P3"@en ;
+    dc:description "The DCI-P3 wide-gamut colour space (SMPTE RP 431-2) used for digital cinema projection."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/Rec601> a owl:Class ;
+    rdfs:label "Rec. 601"@en ;
+    dc:description "ITU-R Recommendation BT.601 standard-definition digital television colour space."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/Rec709> a owl:Class ;
+    rdfs:label "Rec. 709"@en ;
+    dc:description "ITU-R Recommendation BT.709 high-definition digital television colour space."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/Rec2020> a owl:Class ;
+    rdfs:label "Rec. 2020"@en ;
+    dc:description "ITU-R Recommendation BT.2020 ultra-high-definition and wide-colour-gamut digital television colour space."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/sRGB> a owl:Class ;
+    rdfs:label "sRGB"@en ;
+    dc:description "Standard RGB colour space (IEC 61966-2-1) used for computer displays and web delivery."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

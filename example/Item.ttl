@@ -21,3 +21,8 @@
     fiaf:hasStatus fiaf:Preservation ;
     fiaf:hasStock [ a fiaf:Agfa ] ;
     fiaf:isElement fiaf:ReleasePrint .
+
+<https://example.fiafcore.org/tinted-item>
+    a fiaf:Item ;
+    rdfs:label "Tinted Item Example" ;
+    fiaf:hasColourCharacteristic [ a fiaf:BlackAndWhiteWithAppliedColour ; fiaf:hasColourProcess fiaf:Tinted ] .
