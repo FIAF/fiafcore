@@ -8,12 +8,28 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     skos:prefLabel "Acetate Base"@en ;
 .
 
+<https://dev.fiafcore.org/CellophaneBase>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Base> ;
+    skos:definition "A regenerated cellulose (cellophane) film substrate, including that used for Ozaphan film."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Base> ;
+    skos:prefLabel "Cellophane Base"@en ;
+.
+
 <https://dev.fiafcore.org/NitrateBase>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/Base> ;
     skos:definition "Cellulose nitrate bases, used from the birth of film until the 1950s."@en ;
     skos:inScheme <https://dev.fiafcore.org/Base> ;
     skos:prefLabel "Nitrate Base"@en ;
+.
+
+<https://dev.fiafcore.org/PVCBase>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Base> ;
+    skos:definition "A polyvinyl chloride substrate used for film or magnetic tape."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Base> ;
+    skos:prefLabel "PVC Base"@en ;
 .
 
 <https://dev.fiafcore.org/PolyesterBase>

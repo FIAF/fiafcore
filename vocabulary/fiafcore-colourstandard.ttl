@@ -2,70 +2,342 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://dev.fiafcore.org/Agfacolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process introduced by Agfa in 1936."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Agfacolor"@en ;
 .
 
+<https://dev.fiafcore.org/Anscocolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process produced by Ansco."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Anscocolor"@en ;
+.
+
+<https://dev.fiafcore.org/Cinecolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+    skos:definition "A two-colour subtractive bipack process introduced by Cinecolor in 1932."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Cinecolor"@en ;
+.
+
 <https://dev.fiafcore.org/DeLuxe>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Eastmancolor> ;
+    skos:definition "Deluxe Laboratories' trade name for Eastmancolor processed at its laboratory, adapted for printing and mass production."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "DeLuxe"@en ;
 .
 
 <https://dev.fiafcore.org/Duartcolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Eastmancolor> ;
+    skos:definition "DuArt's laboratory trade name for Eastmancolor processed at its laboratory; DuArt processed the first Eastmancolor negative in 1950."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Duartcolor"@en ;
 .
 
-<https://dev.fiafcore.org/Eastmancolor>
+<https://dev.fiafcore.org/Dufaycolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/MosaicScreen> ;
+    skos:definition "An additive screen colour process using a regular red, green, and blue réseau mosaic, introduced for motion picture film in 1932."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
-    skos:prefLabel "Eastmancolor"@en ;
+    skos:prefLabel "Dufaycolor"@en ;
+.
+
+<https://dev.fiafcore.org/Ektachrome>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack reversal colour process introduced by Eastman Kodak."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Ektachrome"@en ;
+.
+
+<https://dev.fiafcore.org/Ferraniacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process produced by Ferrania."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Ferraniacolor"@en ;
 .
 
 <https://dev.fiafcore.org/Fujicolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process produced by Fuji."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Fujicolor"@en ;
 .
 
+<https://dev.fiafcore.org/Gasparcolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromolyticMultilayer> ;
+    skos:definition "A subtractive three-colour silver dye-bleach multilayer process."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Gasparcolor"@en ;
+.
+
+<https://dev.fiafcore.org/Gevacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process introduced by Gevaert in 1947."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Gevacolor"@en ;
+.
+
+<https://dev.fiafcore.org/HandColouring>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AppliedColourProcess> ;
+    skos:definition "A colour process in which translucent dyes are applied by hand, frame by frame."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Hand Colouring"@en ;
+.
+
+<https://dev.fiafcore.org/Kinemacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TemporalSynthesis> ;
+    skos:definition "An early additive two-colour process using alternating red and green frames projected through a rotating filter."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Kinemacolor"@en ;
+.
+
+<https://dev.fiafcore.org/Kodachrome>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "The three-colour chromogenic monopack reversal colour process introduced by Kodak in 1935. The earlier two-colour Kodachrome process (1915) is a different process."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Kodachrome"@en ;
+.
+
+<https://dev.fiafcore.org/Kodacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/LenticularScreen> ;
+    skos:definition "An additive lenticular-screen 16mm reversal colour process introduced by Eastman Kodak in 1928."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Kodacolor"@en ;
+.
+
+<https://dev.fiafcore.org/LineScreen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ScreenProcess> ;
+    skos:definition "An additive screen process using a grid of coloured lines."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Line Screen"@en ;
+.
+
 <https://dev.fiafcore.org/Metrocolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Eastmancolor> ;
+    skos:definition "MGM's laboratory trade name for films processed at its laboratory, generally on Eastmancolor stock."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Metrocolor"@en ;
 .
 
 <https://dev.fiafcore.org/Orwocolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process produced by ORWO."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Orwocolor"@en ;
 .
 
+<https://dev.fiafcore.org/Pathecolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/StencilColouring> ;
+    skos:definition "Pathé's stencil-colouring process. Later Eastmancolor-based prints released under the Pathécolor name are described as Eastmancolor."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Pathécolor"@en ;
+.
+
+<https://dev.fiafcore.org/Sovcolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process based on Agfacolor, produced in the Soviet Union."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Sovcolor"@en ;
+.
+
+<https://dev.fiafcore.org/SpatialSynthesis>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AdditiveColourProcess> ;
+    skos:definition "An additive colour process in which two or more images are captured simultaneously through separate lenses or a beam splitter."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Spatial Synthesis"@en ;
+.
+
+<https://dev.fiafcore.org/Supercinecolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+    skos:definition "A three-colour subtractive printing process introduced by Cinecolor in 1951. Placed directly under subtractive processes until its Timeline of Historical Film Colors classification is confirmed."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "SuperCinecolor"@en ;
+.
+
 <https://dev.fiafcore.org/Technicolor>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/PrintingDyeTransferPigment> ;
+    skos:definition "Technicolor's subtractive dye-transfer (imbibition) colour processes, notably the three-strip process. Technicolor's earlier additive and two-colour cemented processes are different processes, and later laboratory prints on Eastmancolor stock are described as Eastmancolor."@en ;
     skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
     skos:prefLabel "Technicolor"@en ;
 .
 
+<https://dev.fiafcore.org/Tinted>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AppliedColourProcess> ;
+    skos:definition "A colour process in which a black-and-white film print is immersed in dye, colouring the whole image uniformly."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Tinted"@en ;
+.
+
+<https://dev.fiafcore.org/Toned>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AppliedColourProcess> ;
+    skos:definition "A colour process in which the silver image is chemically converted into coloured compounds."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Toned"@en ;
+.
+
+<https://dev.fiafcore.org/Trucolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+    skos:definition "A two-colour (later three-colour) subtractive process developed by Consolidated Film Industries for Republic Pictures in 1946."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Trucolor"@en ;
+.
+
+<https://dev.fiafcore.org/Ufacolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+    skos:definition "A two-colour subtractive double-coated positive process used by UFA in the early 1930s."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Ufacolor"@en ;
+.
+
+<https://dev.fiafcore.org/Warnercolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Eastmancolor> ;
+    skos:definition "Warner Bros.' trade name for Eastmancolor processed at its laboratory."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Warnercolor"@en ;
+.
+
+<https://dev.fiafcore.org/ChromolyticMultilayer>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+    skos:definition "A subtractive colour process in which dyes in a multilayer emulsion are destroyed in proportion to exposure."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Chromolytic Multilayer"@en ;
+.
+
+<https://dev.fiafcore.org/LenticularScreen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ScreenProcess> ;
+    skos:definition "An additive screen process using lenticular lenses to separate coloured records."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Lenticular Screen"@en ;
+.
+
+<https://dev.fiafcore.org/MosaicScreen>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ScreenProcess> ;
+    skos:definition "An additive screen process using a mosaic of coloured dots."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Mosaic Screen"@en ;
+.
+
+<https://dev.fiafcore.org/PrintingDyeTransferPigment>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+    skos:definition "A subtractive colour process in which colour is added by printing dye-transfer or pigment layers onto the film."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Printing / Dye-Transfer / Pigment"@en ;
+.
+
+<https://dev.fiafcore.org/StencilColouring>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AppliedColourProcess> ;
+    skos:definition "A colour process in which colour is applied through stencils cut for individual image areas."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Stencil Colouring"@en ;
+.
+
+<https://dev.fiafcore.org/TemporalSynthesis>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AdditiveColourProcess> ;
+    skos:definition "An additive colour process in which successive frames are exposed through different colour filters."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Temporal Synthesis"@en ;
+.
+
+<https://dev.fiafcore.org/MimeticColourProcess>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition "A colour process in which the colours of the subject are reproduced photographically."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Mimetic Colour Process"@en ;
+.
+
+<https://dev.fiafcore.org/AdditiveColourProcess>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/MimeticColourProcess> ;
+    skos:definition "A colour process in which colours are produced by adding coloured light, typically through filters or screens."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Additive Colour Process"@en ;
+.
+
+<https://dev.fiafcore.org/DoubleCoatedBipack>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+    skos:definition "A subtractive colour process using two emulsion layers or two films exposed together."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Double-Coated / Bi-Pack"@en ;
+.
+
+<https://dev.fiafcore.org/ScreenProcess>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AdditiveColourProcess> ;
+    skos:definition "An additive colour process in which a screen of coloured lines, dots, or lenses produces colour."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Screen Process"@en ;
+.
+
+<https://dev.fiafcore.org/AppliedColourProcess>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourStandard> ;
+    skos:definition "A colour process in which colour is applied to a black-and-white image rather than produced photographically."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Applied Colour Process"@en ;
+.
+
+<https://dev.fiafcore.org/Eastmancolor>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ChromogenicMonopack> ;
+    skos:definition "A chromogenic monopack colour process introduced by Eastman Kodak in 1950."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Eastmancolor"@en ;
+.
+
+<https://dev.fiafcore.org/SubtractiveColourProcess>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/MimeticColourProcess> ;
+    skos:definition "A colour process in which colours are produced by subtracting parts of the spectrum using dyes or pigments."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Subtractive Colour Process"@en ;
+.
+
+<https://dev.fiafcore.org/ChromogenicMonopack>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+    skos:definition "A subtractive colour process in which colour couplers in one or more emulsion layers form dyes during development."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourStandard> ;
+    skos:prefLabel "Chromogenic Monopack"@en ;
+.
+
 <https://dev.fiafcore.org/ColourStandard>
     a skos:ConceptScheme ;
-    skos:definition "A standardised colour process."@en ;
-    skos:prefLabel "Colour Standard"@en ;
+    skos:definition "A named colour process or system by which colour is produced or fixed in a moving image. A process is classified by how colour is formed in the object described, following the Timeline of Historical Film Colors: for example, Technicolor three-strip is classified as dye transfer, although it is photographed as colour separations."@en ;
+    skos:prefLabel "Colour Process"@en ;
 .

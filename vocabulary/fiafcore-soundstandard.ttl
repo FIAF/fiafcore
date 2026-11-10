@@ -1,63 +1,135 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/DTS>
+<https://dev.fiafcore.org/AnalogueDiscSound>
     a skos:Concept ;
     skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:definition "Analogue sound recorded in the grooves of a disc, played with a needle and kept in sync with the projector, such as Vitaphone. Digital sound on separate discs synchronised to film (such as DTS) is a digital sound system."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Analogue Disc Sound"@en ;
+.
+
+<https://dev.fiafcore.org/DTS>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalSoundSystem> ;
+    skos:definition "Digital Theater Systems, a digital surround sound system using digital audio on separate discs synchronised by an optical timecode track on film, or digital audio streams on disc and digital media."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
     skos:prefLabel "DTS"@en ;
 .
 
-<https://dev.fiafcore.org/DolbyDigital>
+<https://dev.fiafcore.org/Datasat>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/DigitalSoundSystem> ;
+    skos:definition "Datasat Digital Entertainment digital cinema surround sound system, succeeding theatrical DTS."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
-    skos:prefLabel "Dolby Digital"@en ;
+    skos:prefLabel "Datasat"@en ;
+.
+
+<https://dev.fiafcore.org/DolbyAtmos>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalSoundSystem> ;
+    skos:definition "An object-based digital surround sound system supporting channel beds and three-dimensional audio objects."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Dolby Atmos"@en ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalSurroundEX>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DolbyDigital> ;
+    skos:definition "An extension of Dolby Digital adding a matrix-encoded rear-centre surround channel."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Dolby Digital Surround EX"@en ;
 .
 
 <https://dev.fiafcore.org/DolbyStereo>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/OpticalVariableArea> ;
+    skos:definition "An analogue stereo variable-area optical sound system encoding four channels (left, centre, right, surround) into two optical tracks with Dolby noise reduction. Dolby Stereo 70mm magnetic prints are described as Six-Track Magnetic with Dolby noise reduction."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
     skos:prefLabel "Dolby Stereo"@en ;
 .
 
-<https://dev.fiafcore.org/Magnetic>
+<https://dev.fiafcore.org/FourTrackMagnetic>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Magnetic> ;
+    skos:definition "A four-track magnetic film sound system (left, centre, right, surround), introduced for 35mm CinemaScope release prints and four-track magnetic film elements."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
-    skos:prefLabel "Magnetic"@en ;
-.
-
-<https://dev.fiafcore.org/OpticalVariableArea>
-    a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
-    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
-    skos:prefLabel "Optical Variable Area"@en ;
+    skos:prefLabel "Four-Track Magnetic"@en ;
 .
 
 <https://dev.fiafcore.org/OpticalVariableDensity>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/AnalogueOpticalSound> ;
+    skos:definition "An analogue optical sound process in which the audio signal is represented by variations in the optical density (transmittance) of the soundtrack area."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
     skos:prefLabel "Optical Variable Density"@en ;
 .
 
 <https://dev.fiafcore.org/SDDS>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/DigitalSoundSystem> ;
+    skos:definition "Sony Dynamic Digital Sound, a digital optical sound system printed on the outer edges of 35mm film."@en ;
     skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
     skos:prefLabel "SDDS"@en ;
 .
 
+<https://dev.fiafcore.org/SixTrackMagnetic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Magnetic> ;
+    skos:definition "A six-track magnetic film sound system, standard on 70mm release prints and six-track magnetic film elements."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Six-Track Magnetic"@en ;
+.
+
+<https://dev.fiafcore.org/UltraStereo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OpticalVariableArea> ;
+    skos:definition "An analogue stereo variable-area 4-2-4 matrix optical sound system."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Ultra-Stereo"@en ;
+.
+
+<https://dev.fiafcore.org/DolbyDigital>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalSoundSystem> ;
+    skos:definition "A digital multi-channel sound system (AC-3), printed between perforations on 35mm film (Dolby SRD) or encoded on digital and optical disc media."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Dolby Digital"@en ;
+.
+
+<https://dev.fiafcore.org/AnalogueOpticalSound>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
+    skos:definition "Analogue sound recorded photographically as an optical track on film. Use when the type of track is unknown. Digital sound printed optically on film (such as Dolby Digital or SDDS) is a digital sound system."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Analogue Optical Sound"@en ;
+.
+
+<https://dev.fiafcore.org/Magnetic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
+    skos:definition "Analogue sound recorded magnetically on a magnetic stripe, separate magnetic film, or magnetic tape. Use when the track layout is unknown. Digital audio recorded on magnetic tape is described by its format and, where relevant, a digital sound system."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Magnetic"@en ;
+.
+
+<https://dev.fiafcore.org/OpticalVariableArea>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AnalogueOpticalSound> ;
+    skos:definition "An analogue optical sound process in which the audio signal is represented by variations in the width of the transparent and opaque areas of the soundtrack."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Optical Variable Area"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalSoundSystem>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundStandard> ;
+    skos:definition "A digital sound system for theatrical exhibition, broadcast, or home viewing, whether printed on film, carried on disc, or encoded in files. The carrier is described by Format, and the encoding of a digital audio stream by its Audio Codec."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundStandard> ;
+    skos:prefLabel "Digital Sound System"@en ;
+.
+
 <https://dev.fiafcore.org/SoundStandard>
     a skos:ConceptScheme ;
-    skos:definition ""@en ;
+    skos:definition "The sound system a soundtrack is made for or needs in order to be reproduced: for analogue sound, the process by which it is fixed (optical, magnetic, or disc); for digital sound, the digital sound system, whatever carrier it is on. Noise reduction is recorded separately with hasNoiseReduction, and the encoding of a digital audio stream with hasAudioCodec."@en ;
     skos:prefLabel "Sound Standard"@en ;
 .
