@@ -1,0 +1,42 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/NoiseReduction> a owl:Class ;
+    rdfs:label "Noise Reduction"@en ;
+    dc:description "An analogue companding noise-reduction system applied to an optical or magnetic sound recording."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Dolby> a owl:Class ;
+    rdfs:label "Dolby"@en ;
+    dc:description "Dolby noise reduction of unspecified type (for example A-type or SR)."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/NoiseReduction> ;
+.
+
+<https://dev.fiafcore.org/DolbyA> a owl:Class ;
+    rdfs:label "Dolby A"@en ;
+    dc:description "Dolby A-type four-band companding noise-reduction system, used on magnetic recordings and on Dolby Stereo optical release prints from 1975."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dolby> ;
+.
+
+<https://dev.fiafcore.org/DolbySR> a owl:Class ;
+    rdfs:label "Dolby SR"@en ;
+    dc:description "Dolby Spectral Recording (SR) noise-reduction system, used on magnetic recordings and on Dolby Stereo SR optical release prints from 1986."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dolby> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

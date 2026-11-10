@@ -6,29 +6,29 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/SoundCharacteristic> a owl:Class ;
     rdfs:label "Sound Characteristic"@en ;
-    dc:description ""@en ;
+    dc:description "Whether the content of a Manifestation or Item is intended to have recorded sound and, where it is, the characteristics of one soundtrack. A carrier with several soundtracks carries several SoundCharacteristic nodes. Image layout, such as a masked soundtrack area, is not a sound characteristic."@en ;
     dc:source <> ;
 .
 
 ### Subclasses
 
-<https://dev.fiafcore.org/Mute> a owl:Class ;
-    rdfs:label "Mute"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/Sound> a owl:Class ;
+    rdfs:label "Sound"@en ;
+    dc:description "The content is intended to have recorded sound. Includes silent works presented with added recorded sound."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
+.
+
+<https://dev.fiafcore.org/Mute> a owl:Class ;
+    rdfs:label "Mute"@en ;
+    dc:description "A physical element whose content is intended to have recorded sound, but which carries none of it, such as a picture negative of a sound film or a print with a blank soundtrack area. Not used for digital objects: the absence of an audio stream shows that no sound is carried."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Sound> ;
 .
 
 <https://dev.fiafcore.org/Silent> a owl:Class ;
     rdfs:label "Silent"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
-.
-
-<https://dev.fiafcore.org/Sound> a owl:Class ;
-    rdfs:label "Sound"@en ;
-    dc:description ""@en ;
+    dc:description "The content is made or presented without recorded sound, as in silent cinema. Live accompaniment is not recorded sound."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
@@ -39,10 +39,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
+<https://dev.fiafcore.org/hasNoiseReduction>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Noise Reduction"@en ;
+    dc:description "Express the analogue companding noise-reduction system applied to a sound recording."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/NoiseReduction> ;
+.
+
+<https://dev.fiafcore.org/hasSoundChannelConfiguration>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Sound Channel Configuration"@en ;
+    dc:description "Express the intended reproduced channel configuration of a soundtrack in a Manifestation or Item. A matrix-encoded soundtrack (such as Dolby Stereo, with four channels recorded as two) is described by the configuration it reproduces."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
 <https://dev.fiafcore.org/hasSoundStandard>
     a owl:ObjectProperty ;
     rdfs:label "Has Sound Standard"@en ;
-    dc:description "Express a specific sound process."@en ;
+    dc:description "Express the sound system a soundtrack is made for or needs in order to be reproduced: an analogue fixation process or a digital sound system. Noise reduction is expressed separately with hasNoiseReduction, and the encoding of a digital audio stream with hasAudioCodec."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/SoundStandard> ;

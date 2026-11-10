@@ -1,0 +1,42 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/SoundChannelConfiguration> a owl:Class ;
+    rdfs:label "Sound Channel Configuration"@en ;
+    dc:description "The intended reproduced spatial channel configuration of a soundtrack in a Manifestation or Item. Channel count alone does not establish the configuration."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Mono> a owl:Class ;
+    rdfs:label "Mono"@en ;
+    dc:description "Monophonic sound reproduced through a single audio channel. Two channels may carry the same mono signal or two independent mono recordings."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
+<https://dev.fiafcore.org/Stereo> a owl:Class ;
+    rdfs:label "Stereo"@en ;
+    dc:description "Stereophonic sound reproduced through two or more directional front channels without surround channels."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
+<https://dev.fiafcore.org/Surround> a owl:Class ;
+    rdfs:label "Surround"@en ;
+    dc:description "Multi-channel sound incorporating one or more surround channels in addition to screen channels."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None
