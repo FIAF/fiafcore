@@ -29,7 +29,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/BlackAndWhiteWithAppliedColour> a owl:Class ;
     rdfs:label "Black and White with Applied Colour"@en ;
-    dc:description "A black-and-white moving image whose appearance is coloured by tinting, toning, stencilling, or hand-colouring, whether the colour was applied to this object or is reproduced from its source. A copy that reproduces such an appearance, such as a colour-stock duplicate or a digital scan of a tinted print, has this appearance without having the applied colour process."@en ;
+    dc:description "A black-and-white moving image whose appearance is coloured by tinting, toning, stencilling, hand-colouring, or similar means, whether the colour was applied to this object or is reproduced from its source. A copy that reproduces such an appearance, such as a colour-stock duplicate or a digital scan of a tinted print, has this appearance without having the applied colour process. A single-field catalogue value such as \"Black and white (tinted)\" recorded for such a copy describes its appearance only."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .

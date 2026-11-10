@@ -24,7 +24,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 <https://dev.fiafcore.org/Preservation> a owl:Class ;
     rdfs:label "Preservation"@en ;
     skos:altLabel "Master"@en ;
-    dc:description "An Item kept to safeguard its content and not used for access, such as an archive master."@en ;
+    dc:description "An Item kept to safeguard its content and not used for access, such as an archive master. The alternative label Master names this use designation; what an Item was made as, such as a Digital Master or Video Master, is its Element."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
 .

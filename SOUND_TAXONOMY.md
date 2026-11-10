@@ -59,7 +59,7 @@ fiaf:SoundChannelConfiguration
 
 - `fiaf:SoundCharacteristic` — whether the content is intended to have recorded sound and, where it is, the characteristics of one soundtrack
   - `fiaf:Sound` — the content is intended to have recorded sound (includes silent works presented with added recorded sound)
-    - `fiaf:Mute` — a physical element of such content that carries none of that sound (for example a picture negative of a sound film); not used for digital objects
+    - `fiaf:Mute` — material of such content that carries none of that sound (for example a picture negative of a sound film, or a picture-only scan of a sound film); also a Manifestation that lacks its content's sound; optional for digital objects without an audio stream
   - `fiaf:Silent` — the content is made or presented without recorded sound, as in silent cinema; live accompaniment is not recorded sound
 - `fiaf:SoundStandard` — the sound system a soundtrack is made for or needs in order to be reproduced
   - `fiaf:AnalogueOpticalSound` — analogue sound recorded photographically on film (fallback when the track type is unknown)
@@ -125,7 +125,7 @@ fiaf:AudioCodec                            via hasAudioCodec on AudioStream (PCM
 | **Carrier / File / Package Format** | What physical medium, digital file format, or package fixes the object? | `fiaf:hasFormat` → `fiaf:Format` | `35mmFilm`, `35mmMagneticFilm`, `BluRay`, `MXF`, `DPX`, `DCP` |
 | **Digital Stream Encoding** | How is an individual video/audio stream encoded? | `fiaf:hasVideoCodec` / `fiaf:hasAudioCodec` on streams linked by `fiaf:hasStream` | `FFV1`, `ProRes`, `PCM` |
 | **Element Role** | What is the item's function in the production/preservation workflow (including combined print vs. separate sound follower)? | `fiaf:isElement` → `fiaf:Element` | `ReleasePrint`, `SoundNegative`, `SoundPositive`, `SeparatedMagneticSound` (sepmag) |
-| **Intended Sound** | Is the content intended to have recorded sound, and does this physical element carry it? | `fiaf:hasSoundCharacteristic` → `fiaf:SoundCharacteristic` | `Sound`, `Silent`, `Mute` |
+| **Intended Sound** | Is the content intended to have recorded sound, and does this material carry it? | `fiaf:hasSoundCharacteristic` → `fiaf:SoundCharacteristic` | `Sound`, `Silent`, `Mute` |
 | **Sound System** | What analogue fixation process or digital sound system is the soundtrack made for? | `fiaf:hasSoundStandard` → `fiaf:SoundStandard` | `OpticalVariableArea`, `DolbyStereo`, `Magnetic`, `FourTrackMagnetic`, `AnalogueDiscSound`, `DolbyDigital`, `DolbyAtmos`, `SDDS` |
 | **Digital Audio Encoding** | How is a digital audio stream encoded? | `fiaf:hasAudioCodec` on an `AudioStream` → `fiaf:AudioCodec` | `PCM`, `DolbyDigitalPlus`, `DolbyTrueHD`, `DTSHD` |
 | **Noise Reduction** | What analogue companding noise reduction is applied? | `fiaf:hasNoiseReduction` → `fiaf:NoiseReduction` | `Dolby`, `DolbyA`, `DolbySR` |
@@ -228,8 +228,9 @@ This mirrors how `AnalogueOpticalSound` and `Magnetic` provide unspecified level
 `Sound`, `Silent`, and `Mute` previously mixed three questions: whether recorded sound is present on the object, whether the production was made without sound, and how the film image is laid out. `SoundCharacteristic` now answers one question at Manifestation level — **is the content intended to have recorded sound?** — and its Items inherit the answer:
 
 - `Silent` is used almost exclusively for silent cinema: content made or presented without recorded sound. A sonorized re-release of a silent film is `Sound`.
-- `Mute` is an Item state: a **physical element** whose content is meant to have sound but which carries none of it, such as a picture negative of a sound film or a print with a blank soundtrack area. It is therefore a kind of `Sound`, not a sibling of it.
-- Digital objects without audio are not described as `Mute`; nothing is recorded, and the absence of an `AudioStream` shows that no sound is carried.
+- `Mute` describes material whose content is meant to have sound but which carries none of it, such as a picture negative of a sound film, a print with a blank soundtrack area, or a picture-only scan of a sound film. It is therefore a kind of `Sound`, not a sibling of it, and a search for `Sound` still returns it.
+- `Mute` is also valid at Manifestation level, for a Manifestation that lacks the sound its content was meant to have (FIAF manual; the first edition's "silent (or mute)" is narrowed to mute). BFI Manifestation `Mute` and `Combined as Mute` map to it.
+- A digital object without audio **need not** be described as `Mute`, since the absence of an `AudioStream` in its technical description shows that no sound is carried. The term remains available: in RDF a missing `AudioStream` cannot be told apart from streams nobody catalogued, so an explicit `Mute` distinguishes a picture-only scan of a sound film from silent material and from an unfilled field. (Revised after the FIAF manual review, `570-digital-items-review`; this relaxes the first version of decision 1.1, which excluded digital objects.)
 - Image layout (a masked soundtrack area, a full silent aperture) is not a sound characteristic. It belongs with projection characteristics, which are reviewed with technical measurements. Bundesarchiv `Stumm… mit Tonkasch` values (silent films printed on sound stock, with a masked soundtrack area) are `Silent`.
 
 ### 5.8 Why `AnalogueOpticalSound`, `AnalogueDiscSound`, and the codec boundary (decisions 1.2–1.3)

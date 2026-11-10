@@ -15,7 +15,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     a skos:Concept ;
     skos:altLabel "Master"@en ;
     skos:broader <https://dev.fiafcore.org/Status> ;
-    skos:definition "An Item kept to safeguard its content and not used for access, such as an archive master."@en ;
+    skos:definition "An Item kept to safeguard its content and not used for access, such as an archive master. The alternative label Master names this use designation; what an Item was made as, such as a Digital Master or Video Master, is its Element."@en ;
     skos:inScheme <https://dev.fiafcore.org/Status> ;
     skos:prefLabel "Preservation"@en ;
 .

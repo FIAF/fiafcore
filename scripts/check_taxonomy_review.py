@@ -152,6 +152,11 @@ for container in ["", "Unbekannt", "OHNE Container"]:
 assert (None, F.hasFormat, F.DigitalFormat) not in ba_item("FILE", container="MXF")
 assert (None, F.hasFormat, F.MXF) in ba_item("FILE", container="MXF")
 
+# Mute is valid for digital objects (optional) and at Manifestation level (FIAF manual #570).
+mute = str(ontology.value(F.Mute, DCTERMS.description) or
+           ontology.value(F.Mute, Namespace("http://purl.org/dc/elements/1.1/").description))
+assert "Not used for digital objects" not in mute and "picture-only scan" in mute
+
 for material in ["Stumme_Kopie_mit_Tonkasch", "Stummes_Duplikatnegativ_mit_Tonkasch",
                  "Stummes_Internegativ_mit_Tonkasch", "Stummes_Duplikatpositiv_mit_Tonkasch"]:
     graph = ba_item(material)
