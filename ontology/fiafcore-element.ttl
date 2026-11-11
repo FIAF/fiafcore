@@ -1,50 +1,234 @@
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 ### Class
 
 <https://dev.fiafcore.org/Element> a owl:Class ;
-    rdfs:label ""@en ;
-    dc:description ""@en ;
+    rdfs:label "Element"@en ;
+    dc:description "The intended function of an Item in the production, duplication, preservation, or access workflow in which it was made, including photochemical polarity where it forms part of that role. The institution's current designation of the Item is recorded as its Status, not its Element. Storage media holding digital objects have no Element."@en ;
 .
 
 ### Subclasses
 
-<https://dev.fiafcore.org/DuplicateNegative> a owl:Class ;
-    dc:description ""@en ;
-    rdfs:label "Duplicate Negative"@en ;
+# Film elements
+
+<https://dev.fiafcore.org/FilmElement> a owl:Class ;
+    dc:description "An Element on motion-picture film, picture or sound, photochemical or magnetic."@en ;
+    rdfs:label "Film Element"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
-<https://dev.fiafcore.org/DuplicatePositive> a owl:Class ;
-    dc:description ""@en ;
-    rdfs:label "Duplicate Positive"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+<https://dev.fiafcore.org/Negative> a owl:Class ;
+    dc:description "A negative picture film Element. Use when its generation or function is unknown."@en ;
+    rdfs:label "Negative"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
 .
 
 <https://dev.fiafcore.org/OriginalNegative> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "The negative exposed in the camera during production, cut or uncut. Use when it is unknown whether the negative has been cut."@en ;
     rdfs:label "Original Negative"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/OriginalCutNegative> a owl:Class ;
+    dc:description "The original camera negative cut and assembled to match the final edit, including A/B rolls, from which printing proceeds."@en ;
+    rdfs:label "Original Cut Negative"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OriginalNegative> ;
+.
+
+<https://dev.fiafcore.org/DuplicateNegative> a owl:Class ;
+    dc:description "A negative made from film as an intermediate for further printing, such as an internegative or duplicate negative."@en ;
+    rdfs:label "Duplicate Negative"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/ColourReversalIntermediate> a owl:Class ;
+    dc:description "A duplicate negative produced directly from a negative by reversal processing, without an intervening positive."@en ;
+    rdfs:label "Colour Reversal Intermediate"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DuplicateNegative> ;
+.
+
+<https://dev.fiafcore.org/FilmOutNegative> a owl:Class ;
+    dc:description "A negative recorded from digital image data with a film recorder, made for printing. It is neither exposed in a camera nor made from film."@en ;
+    rdfs:label "Film-Out Negative"@en ;
+    skos:altLabel "Recorded Negative"@en, "Digital Negative"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationNegative> a owl:Class ;
+    dc:description "A black-and-white negative film Element recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation: it may be a camera original or a duplicate."@en ;
+    rdfs:label "Colour Separation Negative"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/Positive> a owl:Class ;
+    dc:description "A positive picture film Element. Use when its generation or function is unknown."@en ;
+    rdfs:label "Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
+.
+
+<https://dev.fiafcore.org/AnswerPrint> a owl:Class ;
+    dc:description "A trial positive print made for evaluating and approving grading, timing, and synchronisation before release printing."@en ;
+    rdfs:label "Answer Print"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/WorkPrint> a owl:Class ;
+    dc:description "A positive print used for editing and assembly work, not for release."@en ;
+    rdfs:label "Work Print"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
 .
 
 <https://dev.fiafcore.org/ReleasePrint> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "A positive print made for exhibition, distribution, or viewing access."@en ;
     rdfs:label "Release Print"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/DuplicatePositive> a owl:Class ;
+    dc:description "A positive made as an intermediate for making duplicate negatives, such as an interpositive or fine-grain master; not made for projection."@en ;
+    rdfs:label "Duplicate Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationPositive> a owl:Class ;
+    dc:description "A black-and-white positive film Element (such as a separation master or protection master) recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation."@en ;
+    rdfs:label "Colour Separation Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/DyeTransferMatrix> a owl:Class ;
+    dc:description "A positive gelatin-relief film Element recording a single colour channel, used to transfer dye onto a receiver print in dye-transfer (imbibition) printing."@en ;
+    rdfs:label "Dye-Transfer Matrix"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/ReversalPositive> a owl:Class ;
+    dc:description "A positive produced by reversal processing, without an intervening negative. Use when its generation is unknown."@en ;
+    rdfs:label "Reversal Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/OriginalReversalPositive> a owl:Class ;
+    dc:description "Reversal film exposed in the camera during production, forming an original positive without an intervening negative."@en ;
+    rdfs:label "Original Reversal Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ReversalPositive> ;
+.
+
+<https://dev.fiafcore.org/FilmSoundElement> a owl:Class ;
+    dc:description "A sound-only Element on motion-picture film, optical or magnetic."@en ;
+    rdfs:label "Film Sound Element"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
 .
 
 <https://dev.fiafcore.org/SoundNegative> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "An optical sound negative on film, carrying sound separately from the image."@en ;
     rdfs:label "Sound Negative"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
 .
 
 <https://dev.fiafcore.org/SoundPositive> a owl:Class ;
-    dc:description ""@en ;
+    dc:description "An optical sound positive on film, carrying sound separately from the image."@en ;
     rdfs:label "Sound Positive"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
+.
+
+<https://dev.fiafcore.org/SeparatedMagneticSound> a owl:Class ;
+    dc:description "Sound on perforated magnetic film, fullcoat or stripe, carried separately from the image and kept in sync with it by its perforations (sepmag)."@en ;
+    rdfs:label "Separated Magnetic Sound"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
+.
+
+# Audio elements
+
+<https://dev.fiafcore.org/AudioElement> a owl:Class ;
+    dc:description "An Element of a sound-only physical carrier other than film, such as audio tape or an audio disc. Digital audio recordings are Digital Elements; sound on film is a Film Element."@en ;
+    rdfs:label "Audio Element"@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/OriginalSoundRecording> a owl:Class ;
+    dc:description "A physical sound recording made in production, as captured and before editing or mixing, such as production sound on quarter-inch tape."@en ;
+    rdfs:label "Original Sound Recording"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioElement> ;
+.
+
+<https://dev.fiafcore.org/AudioMaster> a owl:Class ;
+    dc:description "A physical sound recording made as the complete source from which further copies are made, whether a production's finished mix or print master or a master copy made in duplication or preservation."@en ;
+    rdfs:label "Audio Master"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioElement> ;
+.
+
+# Video elements
+
+<https://dev.fiafcore.org/VideoElement> a owl:Class ;
+    dc:description "An Element of a physical video carrier, such as videotape or a video disc."@en ;
+    rdfs:label "Video Element"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/OriginalVideoRecording> a owl:Class ;
+    dc:description "A physical video recording made in production, as captured and before editing or mastering."@en ;
+    rdfs:label "Original Video Recording"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
+.
+
+<https://dev.fiafcore.org/VideoMaster> a owl:Class ;
+    dc:description "A physical video recording made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    rdfs:label "Video Master"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
+.
+
+<https://dev.fiafcore.org/VideoAccessCopy> a owl:Class ;
+    dc:description "A physical video copy made for viewing or reference."@en ;
+    rdfs:label "Video Access Copy"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
+.
+
+<https://dev.fiafcore.org/HomeVideoRelease> a owl:Class ;
+    dc:description "A commercially released physical home video copy, such as a VHS, DVD, or Blu-ray release."@en ;
+    rdfs:label "Home Video Release"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
+.
+
+# Digital elements
+
+<https://dev.fiafcore.org/DigitalElement> a owl:Class ;
+    dc:description "An Element of a digital object, comprising a single file or a unit of related files, including digital audio recordings."@en ;
+    rdfs:label "Digital Element"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/OriginalDigitalRecording> a owl:Class ;
+    dc:description "Digital material made in production, as captured or created and before editing or mastering, such as camera-original files or rendered frames."@en ;
+    rdfs:label "Original Digital Recording"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalMaster> a owl:Class ;
+    dc:description "A digital object made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    rdfs:label "Digital Master"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalMezzanine> a owl:Class ;
+    dc:description "A digital object made as an intermediate source for producing distribution or access copies, normally derived from a master."@en ;
+    rdfs:label "Digital Mezzanine"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalAccessCopy> a owl:Class ;
+    dc:description "A digital copy made for viewing or reference."@en ;
+    rdfs:label "Digital Access Copy"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalRelease> a owl:Class ;
+    dc:description "A digital object made for exhibition or public distribution, such as a Digital Cinema Package or a distributor's delivery file."@en ;
+    rdfs:label "Digital Release"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
 .
 
 ### Datatype Properties

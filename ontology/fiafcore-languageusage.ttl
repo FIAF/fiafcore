@@ -7,7 +7,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/LanguageUsage>
     a owl:Class ;
     rdfs:label "Language Usage"@en ;
-    dc:description ""@en ;
+    dc:description "The form in which a language is expressed in the moving image content, such as spoken, sung, signed, or written. Whether a language is original or translated is not a usage type; dubbed and subtitled versions are expressed as Variants."@en ;
     dc:source <> ;
 .
 
@@ -15,70 +15,84 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/Dialogue> a owl:Class ;
     rdfs:label "Dialogue"@en ;
-    dc:description ""@en ;
+    dc:description "Language performed in the content: spoken, sung, or signed. Use when the specific form is unknown."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
 <https://dev.fiafcore.org/NoDialogue> a owl:Class ;
     rdfs:label "No Dialogue"@en ;
-    dc:description ""@en ;
+    dc:description "The content has no spoken, sung, or signed language. Recorded without a language."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/SignedLanguage> a owl:Class ;
     rdfs:label "Signed Language"@en ;
-    dc:description ""@en ;
+    dc:description "Language expressed in a sign language."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/SpokenLanguage> a owl:Class ;
     rdfs:label "Spoken Language"@en ;
-    dc:description ""@en ;
+    dc:description "Language spoken in the content, such as dialogue."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
+<https://dev.fiafcore.org/Narration> a owl:Class ;
+    rdfs:label "Narration"@en ;
+    dc:description "Spoken commentary or voice-over narration accompanying the images."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SpokenLanguage> ;
+.
+
+<https://dev.fiafcore.org/AudioDescription> a owl:Class ;
+    rdfs:label "Audio Description"@en ;
+    dc:description "Spoken narration describing the images for blind and partially sighted viewers."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SpokenLanguage> ;
+.
+
 <https://dev.fiafcore.org/SungLanguage> a owl:Class ;
-    rdfs:label "Sung Language "@en ;
-    dc:description ""@en ;
+    rdfs:label "Sung Language"@en ;
+    dc:description "Language sung in the content, such as song lyrics."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/WrittenLanguage> a owl:Class ;
     rdfs:label "Written Language"@en ;
-    dc:description ""@en ;
+    dc:description "Language written or displayed as text in the content. Use for other on-screen text and when the specific form is unknown."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
 <https://dev.fiafcore.org/Captions> a owl:Class ;
     rdfs:label "Captions"@en ;
-    dc:description ""@en ;
+    dc:description "Text for deaf and hard-of-hearing viewers, transcribing dialogue and describing other sounds, such as closed captions or subtitles for the deaf and hard of hearing."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
 <https://dev.fiafcore.org/Credits> a owl:Class ;
     rdfs:label "Credits"@en ;
-    dc:description ""@en ;
+    dc:description "Text of the opening and closing credits and main titles."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
 <https://dev.fiafcore.org/Intertitles> a owl:Class ;
     rdfs:label "Intertitles"@en ;
-    dc:description ""@en ;
+    dc:description "Text cards inserted between shots or scenes, as in silent cinema."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
 <https://dev.fiafcore.org/Subtitles> a owl:Class ;
     rdfs:label "Subtitles"@en ;
-    dc:description ""@en ;
+    dc:description "Text displayed over the images that translates or transcribes spoken or sung language. Text for deaf and hard-of-hearing viewers that also describes sounds is Captions."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .

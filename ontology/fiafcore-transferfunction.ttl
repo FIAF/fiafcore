@@ -1,0 +1,56 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/TransferFunction> a owl:Class ;
+    rdfs:label "Transfer Function"@en ;
+    dc:description "An opto-electronic or electro-optical transfer function defining the mapping between light levels and digital code values."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/Gamma> a owl:Class ;
+    rdfs:label "Gamma"@en ;
+    dc:description "A power-law gamma transfer function used for standard dynamic range video and cinema display (such as ITU-R BT.1886 or SMPTE ST 428)."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/HLG> a owl:Class ;
+    rdfs:label "HLG"@en ;
+    dc:description "Hybrid Log-Gamma (ITU-R BT.2100 / ARIB STD-B67), a high dynamic range transfer function used in broadcast television."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/Linear> a owl:Class ;
+    rdfs:label "Linear"@en ;
+    dc:description "A linear transfer function in which code values are directly proportional to scene or display light."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/Logarithmic> a owl:Class ;
+    rdfs:label "Logarithmic"@en ;
+    dc:description "A logarithmic transfer function, such as Cineon/DPX printing density log or camera log curves."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/PQ> a owl:Class ;
+    rdfs:label "PQ"@en ;
+    dc:description "Perceptual Quantizer (SMPTE ST 2084), a high dynamic range transfer function used in HDR10 and Dolby Vision."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

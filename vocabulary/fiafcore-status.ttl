@@ -2,22 +2,26 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 <https://dev.fiafcore.org/Access>
     a skos:Concept ;
+    skos:altLabel
+        "Use copy"@en ,
+        "Viewing copy"@en ;
     skos:broader <https://dev.fiafcore.org/Status> ;
-    skos:definition ""@en ;
+    skos:definition "An Item designated for viewing, screening, lending, or reference use."@en ;
     skos:inScheme <https://dev.fiafcore.org/Status> ;
     skos:prefLabel "Access"@en ;
 .
 
 <https://dev.fiafcore.org/Preservation>
     a skos:Concept ;
+    skos:altLabel "Master"@en ;
     skos:broader <https://dev.fiafcore.org/Status> ;
-    skos:definition ""@en ;
+    skos:definition "An Item kept to safeguard its content and not used for access, such as an archive master. The alternative label Master names this use designation; what an Item was made as, such as a Digital Master or Video Master, is its Element."@en ;
     skos:inScheme <https://dev.fiafcore.org/Status> ;
     skos:prefLabel "Preservation"@en ;
 .
 
 <https://dev.fiafcore.org/Status>
     a skos:ConceptScheme ;
-    skos:definition ""@en ;
+    skos:definition "The institution's current designation of how an Item is used in its collection. It can change without changing the Item, and is distinct from the Item's Element, which records what the Item was made for. Administrative states such as accessioned, on loan, or removed follow from Events and are not statuses."@en ;
     skos:prefLabel "Status"@en ;
 .

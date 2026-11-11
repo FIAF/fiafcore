@@ -1,0 +1,47 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/Gamma>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TransferFunction> ;
+    skos:definition "A power-law gamma transfer function used for standard dynamic range video and cinema display (such as ITU-R BT.1886 or SMPTE ST 428)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/TransferFunction> ;
+    skos:prefLabel "Gamma"@en ;
+.
+
+<https://dev.fiafcore.org/HLG>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TransferFunction> ;
+    skos:definition "Hybrid Log-Gamma (ITU-R BT.2100 / ARIB STD-B67), a high dynamic range transfer function used in broadcast television."@en ;
+    skos:inScheme <https://dev.fiafcore.org/TransferFunction> ;
+    skos:prefLabel "HLG"@en ;
+.
+
+<https://dev.fiafcore.org/Linear>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TransferFunction> ;
+    skos:definition "A linear transfer function in which code values are directly proportional to scene or display light."@en ;
+    skos:inScheme <https://dev.fiafcore.org/TransferFunction> ;
+    skos:prefLabel "Linear"@en ;
+.
+
+<https://dev.fiafcore.org/Logarithmic>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TransferFunction> ;
+    skos:definition "A logarithmic transfer function, such as Cineon/DPX printing density log or camera log curves."@en ;
+    skos:inScheme <https://dev.fiafcore.org/TransferFunction> ;
+    skos:prefLabel "Logarithmic"@en ;
+.
+
+<https://dev.fiafcore.org/PQ>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/TransferFunction> ;
+    skos:definition "Perceptual Quantizer (SMPTE ST 2084), a high dynamic range transfer function used in HDR10 and Dolby Vision."@en ;
+    skos:inScheme <https://dev.fiafcore.org/TransferFunction> ;
+    skos:prefLabel "PQ"@en ;
+.
+
+<https://dev.fiafcore.org/TransferFunction>
+    a skos:ConceptScheme ;
+    skos:definition "An opto-electronic or electro-optical transfer function defining the mapping between light levels and digital code values."@en ;
+    skos:prefLabel "Transfer Function"@en ;
+.

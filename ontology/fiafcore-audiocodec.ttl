@@ -1,0 +1,49 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### Class
+
+<https://dev.fiafcore.org/AudioCodec> a owl:Class ;
+    rdfs:label "Audio Codec"@en ;
+    dc:description "The encoding of a digital audio stream, independent of its enclosing file format. The sound system a soundtrack is made for is recorded separately with hasSoundStandard."@en ;
+    dc:source <> ;
+.
+
+### Subclasses
+
+<https://dev.fiafcore.org/PCM> a owl:Class ;
+    dc:description "Pulse-code modulation, the uncompressed digital audio encoding used by WAV, CD, DCDM, and most preservation masters."@en ;
+    dc:source <> ;
+    rdfs:label "PCM"@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalPlus> a owl:Class ;
+    rdfs:label "Dolby Digital Plus"@en ;
+    dc:description "Enhanced AC-3 (E-AC-3), a lossy multi-channel digital audio encoding used on optical disc, broadcast, and streaming media."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/DolbyTrueHD> a owl:Class ;
+    rdfs:label "Dolby TrueHD"@en ;
+    dc:description "A lossless multi-channel digital audio encoding based on Meridian Lossless Packing, used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/DTSHD> a owl:Class ;
+    rdfs:label "DTS-HD"@en ;
+    dc:description "The DTS-HD family of digital audio encodings (including DTS-HD High Resolution Audio and DTS-HD Master Audio) used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+### Datatype Properties
+
+# None
+
+### Object Properties
+
+# None

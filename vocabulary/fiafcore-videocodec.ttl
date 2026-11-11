@@ -1,0 +1,63 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/FFV1>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "FFV1, a lossless intra-frame video codec used for preservation masters."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "FFV1"@en ;
+.
+
+<https://dev.fiafcore.org/MPEG-4>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "The MPEG-4 family of video encoding standards."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "MPEG-4"@en ;
+.
+
+<https://dev.fiafcore.org/MPEG2>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "MPEG-2 video."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "MPEG-2"@en ;
+.
+
+<https://dev.fiafcore.org/ProRes422HQ>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ProRes> ;
+    skos:definition "Apple ProRes 422 HQ, a high quality 4:2:2 ProRes variant."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "ProRes 422 HQ"@en ;
+.
+
+<https://dev.fiafcore.org/RealVideo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "The RealVideo family of video codecs."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "Real Video"@en ;
+.
+
+<https://dev.fiafcore.org/WindowsMedia>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "The Windows Media family of video codecs."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "Windows Media"@en ;
+.
+
+<https://dev.fiafcore.org/ProRes>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoCodec> ;
+    skos:definition "The Apple ProRes family of video codecs."@en ;
+    skos:inScheme <https://dev.fiafcore.org/VideoCodec> ;
+    skos:prefLabel "ProRes"@en ;
+.
+
+<https://dev.fiafcore.org/VideoCodec>
+    a skos:ConceptScheme ;
+    skos:definition "An encoding of a digital video stream, independent of its enclosing file format."@en ;
+    skos:prefLabel "Video Codec"@en ;
+.

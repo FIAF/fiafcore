@@ -1,0 +1,66 @@
+@prefix fiaf: <https://dev.fiafcore.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <https://example.fiafcore.org/stream-example/> .
+
+# First-class Item-level description: no Carrier records are required.
+ex:file-item a fiaf:Item ;
+    rdfs:label "Matroska preservation file with two audio streams"@en ;
+    fiaf:hasFormat fiaf:MKV ;
+    fiaf:hasLanguageUsage ex:norwegian-dialogue, ex:english-dialogue ;
+    fiaf:hasStream ex:picture, ex:audio-1, ex:audio-2,
+        [ a fiaf:SubtitleStream ;
+          fiaf:hasLanguageUsage [ a fiaf:Subtitles ; fiaf:hasLanguage fiaf:English ] ] .
+
+ex:norwegian-dialogue a fiaf:SpokenLanguage ;
+    fiaf:hasLanguage fiaf:Norwegian .
+
+ex:english-dialogue a fiaf:SpokenLanguage ;
+    fiaf:hasLanguage fiaf:English .
+
+ex:picture a fiaf:VideoStream ;
+    fiaf:hasVideoCodec fiaf:FFV1 ;
+    fiaf:hasColourCharacteristic [
+        a fiaf:Colour ;
+        fiaf:hasColourEncoding fiaf:RGB ;
+        fiaf:hasColourSpace fiaf:Rec709 ;
+        fiaf:hasTransferFunction fiaf:Gamma
+    ] .
+
+# These distinct streams share a codec, but not their language or layout.
+ex:audio-1 a fiaf:AudioStream ;
+    rdfs:label "Audio stream 1"@en ;
+    fiaf:hasAudioCodec fiaf:PCM ;
+    fiaf:hasLanguageUsage ex:norwegian-dialogue ;
+    fiaf:hasSoundCharacteristic [
+        a fiaf:Sound ;
+        fiaf:hasSoundChannelConfiguration fiaf:Stereo
+    ] .
+
+ex:audio-2 a fiaf:AudioStream ;
+    rdfs:label "Audio stream 2"@en ;
+    fiaf:hasAudioCodec fiaf:PCM ;
+    fiaf:hasLanguageUsage ex:english-dialogue ;
+    fiaf:hasSoundCharacteristic [
+        a fiaf:Sound ;
+        fiaf:hasSoundChannelConfiguration fiaf:Surround
+    ] .
+
+# Equally valid Carrier-level description, with optional blank-node streams.
+ex:audio-holding a fiaf:Item ;
+    fiaf:hasCarrier ex:wav-file .
+
+ex:wav-file a fiaf:Carrier ;
+    fiaf:hasFormat fiaf:WAV ;
+    fiaf:hasStream [ a fiaf:AudioStream ; fiaf:hasAudioCodec fiaf:PCM ] .
+
+# Minimally catalogued digital objects need no stream inventory.
+ex:minimal-file a fiaf:Item ; fiaf:hasFormat fiaf:MP4 .
+
+# Storage is a separate object. The storage/content relation remains under review.
+ex:storage-tape a fiaf:Carrier ; fiaf:hasFormat fiaf:LTO6 .
+
+# Film description does not require digital streams.
+ex:picture-and-sound-set a fiaf:Item ;
+    fiaf:hasCarrier ex:picture-roll, ex:sound-roll .
+ex:picture-roll a fiaf:Carrier ; fiaf:hasFormat fiaf:35mmFilm .
+ex:sound-roll a fiaf:Carrier ; fiaf:hasFormat fiaf:35mmMagneticFilm .

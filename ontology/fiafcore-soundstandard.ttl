@@ -6,52 +6,135 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/SoundStandard> a owl:Class ;
     rdfs:label "Sound Standard"@en ;
-    dc:description ""@en ;
+    dc:description "The sound system a soundtrack is made for or needs in order to be reproduced: for analogue sound, the process by which it is fixed (optical, magnetic, or disc); for digital sound, the digital sound system, whatever carrier it is on. Noise reduction is recorded separately with hasNoiseReduction, and the encoding of a digital audio stream with hasAudioCodec."@en ;
+    dc:source <> ;
 .
 
 ### Subclasses
 
-<https://dev.fiafcore.org/DolbyDigital> a owl:Class ;
-    rdfs:label "Dolby Digital"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
-.
+# Analogue optical sound
 
-<https://dev.fiafcore.org/DolbyStereo> a owl:Class ;
-    rdfs:label "Dolby Stereo"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
-.
-
-<https://dev.fiafcore.org/DTS> a owl:Class ;
-    rdfs:label "DTS"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
-.
-
-<https://dev.fiafcore.org/Magnetic> a owl:Class ;
-    rdfs:label "Magnetic"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
-.
-
-<https://dev.fiafcore.org/OpticalVariableArea> a owl:Class ;
-    rdfs:label "Optical Variable Area"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/AnalogueOpticalSound> a owl:Class ;
+    rdfs:label "Analogue Optical Sound"@en ;
+    dc:description "Analogue sound recorded photographically as an optical track on film. Use when the type of track is unknown. Digital sound printed optically on film (such as Dolby Digital or SDDS) is a digital sound system."@en ;
+    dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/OpticalVariableDensity> a owl:Class ;
     rdfs:label "Optical Variable Density"@en ;
-    dc:description ""@en ;
+    dc:description "An analogue optical sound process in which the audio signal is represented by variations in the optical density (transmittance) of the soundtrack area."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AnalogueOpticalSound> ;
+.
+
+<https://dev.fiafcore.org/OpticalVariableArea> a owl:Class ;
+    rdfs:label "Optical Variable Area"@en ;
+    dc:description "An analogue optical sound process in which the audio signal is represented by variations in the width of the transparent and opaque areas of the soundtrack."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AnalogueOpticalSound> ;
+.
+
+<https://dev.fiafcore.org/DolbyStereo> a owl:Class ;
+    rdfs:label "Dolby Stereo"@en ;
+    dc:description "An analogue stereo variable-area optical sound system encoding four channels (left, centre, right, surround) into two optical tracks with Dolby noise reduction. Dolby Stereo 70mm magnetic prints are described as Six-Track Magnetic with Dolby noise reduction."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalVariableArea> ;
+.
+
+<https://dev.fiafcore.org/UltraStereo> a owl:Class ;
+    rdfs:label "Ultra-Stereo"@en ;
+    dc:description "An analogue stereo variable-area 4-2-4 matrix optical sound system."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalVariableArea> ;
+.
+
+# Analogue magnetic sound
+
+<https://dev.fiafcore.org/Magnetic> a owl:Class ;
+    rdfs:label "Magnetic"@en ;
+    dc:description "Analogue sound recorded magnetically on a magnetic stripe, separate magnetic film, or magnetic tape. Use when the track layout is unknown. Digital audio recorded on magnetic tape is described by its format and, where relevant, a digital sound system."@en ;
+    dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/FourTrackMagnetic> a owl:Class ;
+    rdfs:label "Four-Track Magnetic"@en ;
+    dc:description "A four-track magnetic film sound system (left, centre, right, surround), introduced for 35mm CinemaScope release prints and four-track magnetic film elements."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Magnetic> ;
+.
+
+<https://dev.fiafcore.org/SixTrackMagnetic> a owl:Class ;
+    rdfs:label "Six-Track Magnetic"@en ;
+    dc:description "A six-track magnetic film sound system, standard on 70mm release prints and six-track magnetic film elements."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Magnetic> ;
+.
+
+# Analogue disc sound
+
+<https://dev.fiafcore.org/AnalogueDiscSound> a owl:Class ;
+    rdfs:label "Analogue Disc Sound"@en ;
+    dc:description "Analogue sound recorded in the grooves of a disc, played with a needle and kept in sync with the projector, such as Vitaphone. Digital sound on separate discs synchronised to film (such as DTS) is a digital sound system."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+# Digital sound systems
+
+<https://dev.fiafcore.org/DigitalSoundSystem> a owl:Class ;
+    rdfs:label "Digital Sound System"@en ;
+    dc:description "A digital sound system for theatrical exhibition, broadcast, or home viewing, whether printed on film, carried on disc, or encoded in files. The carrier is described by Format, and the encoding of a digital audio stream by its Audio Codec."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigital> a owl:Class ;
+    rdfs:label "Dolby Digital"@en ;
+    dc:description "A digital multi-channel sound system (AC-3), printed between perforations on 35mm film (Dolby SRD) or encoded on digital and optical disc media."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalSurroundEX> a owl:Class ;
+    rdfs:label "Dolby Digital Surround EX"@en ;
+    dc:description "An extension of Dolby Digital adding a matrix-encoded rear-centre surround channel."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DolbyDigital> ;
+.
+
+<https://dev.fiafcore.org/DolbyAtmos> a owl:Class ;
+    rdfs:label "Dolby Atmos"@en ;
+    dc:description "An object-based digital surround sound system supporting channel beds and three-dimensional audio objects."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DTS> a owl:Class ;
+    rdfs:label "DTS"@en ;
+    dc:description "Digital Theater Systems, a digital surround sound system using digital audio on separate discs synchronised by an optical timecode track on film, or digital audio streams on disc and digital media."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/Datasat> a owl:Class ;
+    rdfs:label "Datasat"@en ;
+    dc:description "Datasat Digital Entertainment digital cinema surround sound system, succeeding theatrical DTS."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
 .
 
 <https://dev.fiafcore.org/SDDS> a owl:Class ;
     rdfs:label "SDDS"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    dc:description "Sony Dynamic Digital Sound, a digital optical sound system printed on the outer edges of 35mm film."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
 .
+
+# Noise reduction is a separate taxonomy, see fiafcore-noisereduction.ttl.
+# Bitstream encodings (Dolby Digital Plus, Dolby TrueHD, DTS-HD) are audio codecs,
+# see fiafcore-audiocodec.ttl.
 
 ### Datatype Properties
 

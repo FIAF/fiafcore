@@ -7,36 +7,29 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://dev.fiafcore.org/ColourCharacteristic>
     a owl:Class ;
     rdfs:label "Colour Characteristic"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
+    dc:description "The colour appearance of the image in a Manifestation, Item, or video stream (black and white, colour, or black and white with applied colour), with the colour process applied to the object or the digital colour representation it uses. Where appearance varies between sections, each section has its own node; tinting and toning on one node are present in the same image."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2075%3A135> ;
 .
 
 ### Subclasses
 
 <https://dev.fiafcore.org/BlackAndWhite> a owl:Class ;
-    rdfs:label "Black And White"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
+    rdfs:label "Black and White"@en ;
+    dc:description "A monochrome moving image reproduced in black, white, and intermediate greys, without applied or natural colour."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20340%3A4462> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
 <https://dev.fiafcore.org/Colour> a owl:Class ;
     rdfs:label "Colour"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
+    dc:description "A moving image with natural or mimetic colour, recorded or synthesised by a colour process or captured digitally in colour. A black-and-white image coloured by tinting, toning, stencilling, or hand-colouring is Black and White with Applied Colour, not Colour."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20340%3A4462> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
-<https://dev.fiafcore.org/Tinted> a owl:Class ;
-    rdfs:label "Tinted"@en ;
-    dc:description ""@en ;
-    dc:source <> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
-.
-
-<https://dev.fiafcore.org/Toned> a owl:Class ;
-    rdfs:label "Toned"@en ;
-    dc:description ""@en ;
+<https://dev.fiafcore.org/BlackAndWhiteWithAppliedColour> a owl:Class ;
+    rdfs:label "Black and White with Applied Colour"@en ;
+    dc:description "A black-and-white moving image whose appearance is coloured by tinting, toning, stencilling, hand-colouring, or similar means, whether the colour was applied to this object or is reproduced from its source. A copy that reproduces such an appearance, such as a colour-stock duplicate or a digital scan of a tinted print, has this appearance without having the applied colour process. A single-field catalogue value such as \"Black and white (tinted)\" recorded for such a copy describes its appearance only."@en ;
     dc:source <> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
@@ -47,11 +40,49 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Object Properties
 
-<https://dev.fiafcore.org/hasColourStandard>
+<https://dev.fiafcore.org/hasColourEncoding>
     a owl:ObjectProperty ;
-    rdfs:label "Has Colour Standard"@en ;
-    dc:description "Express a specific colour process."@en ;
+    rdfs:label "Has Colour Encoding"@en ;
+    dc:description "Express the digital colour encoding used to represent pixel values in a Manifestation or Item."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourEncoding> ;
+.
+
+<https://dev.fiafcore.org/hasColourProcess>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Process"@en ;
+    dc:description "Express the colour process by which colour is produced or fixed in the Manifestation or Item itself. A copy that only reproduces the appearance of a process, such as a digital scan of a tinted print, does not have that process."@en ;
     dc:source <> ;
     rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/hasColourSpace>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Space"@en ;
+    dc:description "Express the digital colour space or gamut standard of a Manifestation or Item."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/hasColourStandard>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Standard"@en ;
+    dc:description "Deprecated: use hasColourProcess. Express a specific colour process."@en ;
+    dc:source <> ;
+    owl:deprecated true ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
+    rdfs:subPropertyOf <https://dev.fiafcore.org/hasColourProcess> ;
+.
+
+<https://dev.fiafcore.org/hasTransferFunction>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Transfer Function"@en ;
+    dc:description "Express the electro-optical or opto-electronic transfer function of a digital Manifestation or Item."@en ;
+    dc:source <> ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/TransferFunction> ;
 .

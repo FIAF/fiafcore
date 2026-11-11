@@ -1,0 +1,31 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/DolbyA>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Dolby> ;
+    skos:definition "Dolby A-type four-band companding noise-reduction system, used on magnetic recordings and on Dolby Stereo optical release prints from 1975."@en ;
+    skos:inScheme <https://dev.fiafcore.org/NoiseReduction> ;
+    skos:prefLabel "Dolby A"@en ;
+.
+
+<https://dev.fiafcore.org/DolbySR>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Dolby> ;
+    skos:definition "Dolby Spectral Recording (SR) noise-reduction system, used on magnetic recordings and on Dolby Stereo SR optical release prints from 1986."@en ;
+    skos:inScheme <https://dev.fiafcore.org/NoiseReduction> ;
+    skos:prefLabel "Dolby SR"@en ;
+.
+
+<https://dev.fiafcore.org/Dolby>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/NoiseReduction> ;
+    skos:definition "Dolby noise reduction of unspecified type (for example A-type or SR)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/NoiseReduction> ;
+    skos:prefLabel "Dolby"@en ;
+.
+
+<https://dev.fiafcore.org/NoiseReduction>
+    a skos:ConceptScheme ;
+    skos:definition "An analogue companding noise-reduction system applied to an optical or magnetic sound recording."@en ;
+    skos:prefLabel "Noise Reduction"@en ;
+.

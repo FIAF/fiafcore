@@ -5,59 +5,314 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 ### Class
 
 <https://dev.fiafcore.org/ColourStandard> a owl:Class ;
-    rdfs:label "Colour Standard"@en ;
-    dc:description "A standardised colour process."@en ;
+    rdfs:label "Colour Process"@en ;
+    dc:description "A named colour process or system by which colour is produced or fixed in a moving image. A process is classified by how colour is formed in the object described, following the Timeline of Historical Film Colors: for example, Technicolor three-strip is classified as dye transfer, although it is photographed as colour separations."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20341%3A4463> ;
 .
 
 ### Subclasses
 
+# Applied colour processes
+
+<https://dev.fiafcore.org/AppliedColourProcess> a owl:Class ;
+    rdfs:label "Applied Colour Process"@en ;
+    dc:description "A colour process in which colour is applied to a black-and-white image rather than produced photographically."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/Tinted> a owl:Class ;
+    rdfs:label "Tinted"@en ;
+    dc:description "A colour process in which a black-and-white film print is immersed in dye, colouring the whole image uniformly."@en ;
+    dc:source <https://filmcolors.org/cat/tinting/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Toned> a owl:Class ;
+    rdfs:label "Toned"@en ;
+    dc:description "A colour process in which the silver image is chemically converted into coloured compounds."@en ;
+    dc:source <https://filmcolors.org/cat/toning/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
+.
+
+<https://dev.fiafcore.org/HandColouring> a owl:Class ;
+    rdfs:label "Hand Colouring"@en ;
+    dc:description "A colour process in which translucent dyes are applied by hand, frame by frame."@en ;
+    dc:source <https://filmcolors.org/cat/hand-coloring/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
+.
+
+<https://dev.fiafcore.org/StencilColouring> a owl:Class ;
+    rdfs:label "Stencil Colouring"@en ;
+    dc:description "A colour process in which colour is applied through stencils cut for individual image areas."@en ;
+    dc:source <https://filmcolors.org/cat/stencil-coloring/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Pathecolor> a owl:Class ;
+    rdfs:label "Pathécolor"@en ;
+    dc:description "Pathé's stencil-colouring process. Later Eastmancolor-based prints released under the Pathécolor name are described as Eastmancolor."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1218/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/StencilColouring> ;
+.
+
+# Mimetic colour processes
+
+<https://dev.fiafcore.org/MimeticColourProcess> a owl:Class ;
+    rdfs:label "Mimetic Colour Process"@en ;
+    dc:description "A colour process in which the colours of the subject are reproduced photographically."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/AdditiveColourProcess> a owl:Class ;
+    rdfs:label "Additive Colour Process"@en ;
+    dc:description "A colour process in which colours are produced by adding coloured light, typically through filters or screens."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MimeticColourProcess> ;
+.
+
+<https://dev.fiafcore.org/ScreenProcess> a owl:Class ;
+    rdfs:label "Screen Process"@en ;
+    dc:description "An additive colour process in which a screen of coloured lines, dots, or lenses produces colour."@en ;
+    dc:source <https://filmcolors.org/cat/screen-processes/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/LineScreen> a owl:Class ;
+    rdfs:label "Line Screen"@en ;
+    dc:description "An additive screen process using a grid of coloured lines."@en ;
+    dc:source <https://filmcolors.org/cat/line-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/MosaicScreen> a owl:Class ;
+    rdfs:label "Mosaic Screen"@en ;
+    dc:description "An additive screen process using a mosaic of coloured dots."@en ;
+    dc:source <https://filmcolors.org/cat/mosaic-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/Dufaycolor> a owl:Class ;
+    rdfs:label "Dufaycolor"@en ;
+    dc:description "An additive screen colour process using a regular red, green, and blue réseau mosaic, introduced for motion picture film in 1932."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1262/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MosaicScreen> ;
+.
+
+<https://dev.fiafcore.org/LenticularScreen> a owl:Class ;
+    rdfs:label "Lenticular Screen"@en ;
+    dc:description "An additive screen process using lenticular lenses to separate coloured records."@en ;
+    dc:source <https://filmcolors.org/cat/lenticular-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/Kodacolor> a owl:Class ;
+    rdfs:label "Kodacolor"@en ;
+    dc:description "An additive lenticular-screen 16mm reversal colour process introduced by Eastman Kodak in 1928."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1245/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LenticularScreen> ;
+.
+
+<https://dev.fiafcore.org/SpatialSynthesis> a owl:Class ;
+    rdfs:label "Spatial Synthesis"@en ;
+    dc:description "An additive colour process in which two or more images are captured simultaneously through separate lenses or a beam splitter."@en ;
+    dc:source <https://filmcolors.org/cat/spatial-synthesis/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/TemporalSynthesis> a owl:Class ;
+    rdfs:label "Temporal Synthesis"@en ;
+    dc:description "An additive colour process in which successive frames are exposed through different colour filters."@en ;
+    dc:source <https://filmcolors.org/cat/rotary-filters/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Kinemacolor> a owl:Class ;
+    rdfs:label "Kinemacolor"@en ;
+    dc:description "An early additive two-colour process using alternating red and green frames projected through a rotating filter."@en ;
+    dc:source <https://filmcolors.org/cat/rotary-filters/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TemporalSynthesis> ;
+.
+
+<https://dev.fiafcore.org/SubtractiveColourProcess> a owl:Class ;
+    rdfs:label "Subtractive Colour Process"@en ;
+    dc:description "A colour process in which colours are produced by subtracting parts of the spectrum using dyes or pigments."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MimeticColourProcess> ;
+.
+
+<https://dev.fiafcore.org/ChromolyticMultilayer> a owl:Class ;
+    rdfs:label "Chromolytic Multilayer"@en ;
+    dc:description "A subtractive colour process in which dyes in a multilayer emulsion are destroyed in proportion to exposure."@en ;
+    dc:source <https://filmcolors.org/cat/chromolytic-multilayer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Gasparcolor> a owl:Class ;
+    rdfs:label "Gasparcolor"@en ;
+    dc:description "A subtractive three-colour silver dye-bleach multilayer process."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1264/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromolyticMultilayer> ;
+.
+
+<https://dev.fiafcore.org/ChromogenicMonopack> a owl:Class ;
+    rdfs:label "Chromogenic Monopack"@en ;
+    dc:description "A subtractive colour process in which colour couplers in one or more emulsion layers form dyes during development."@en ;
+    dc:source <https://filmcolors.org/cat/chromogenic-monopack/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
 <https://dev.fiafcore.org/Agfacolor> a owl:Class ;
-    dc:description ""@en ;
     rdfs:label "Agfacolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
-.
-
-<https://dev.fiafcore.org/DeLuxe> a owl:Class ;
-    dc:description ""@en ;
-    rdfs:label "DeLuxe"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
-.
-
-<https://dev.fiafcore.org/Duartcolor> a owl:Class ;
-    dc:description ""@en ;
-    rdfs:label "Duartcolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process introduced by Agfa in 1936."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1276/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/Eastmancolor> a owl:Class ;
-    dc:description ""@en ;
     rdfs:label "Eastmancolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process introduced by Eastman Kodak in 1950."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1310/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
-<https://dev.fiafcore.org/Fujicolor> a owl:Class ;
-    dc:description ""@en ;
-    rdfs:label "Fujicolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+<https://dev.fiafcore.org/DeLuxe> a owl:Class ;
+    rdfs:label "DeLuxe"@en ;
+    dc:description "Deluxe Laboratories' trade name for Eastmancolor processed at its laboratory, adapted for printing and mass production."@en ;
+    dc:source <https://en.wikipedia.org/wiki/DeLuxe_Color> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
 .
 
 <https://dev.fiafcore.org/Metrocolor> a owl:Class ;
-    dc:description ""@en ;
     rdfs:label "Metrocolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "MGM's laboratory trade name for films processed at its laboratory, generally on Eastmancolor stock."@en ;
+    dc:source <https://en.wikipedia.org/wiki/Metrocolor> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
+.
+
+<https://dev.fiafcore.org/Duartcolor> a owl:Class ;
+    rdfs:label "Duartcolor"@en ;
+    dc:description "DuArt's laboratory trade name for Eastmancolor processed at its laboratory; DuArt processed the first Eastmancolor negative in 1950."@en ;
+    dc:source <https://en.wikipedia.org/wiki/DuArt_Film_and_Video> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
+.
+
+<https://dev.fiafcore.org/Fujicolor> a owl:Class ;
+    rdfs:label "Fujicolor"@en ;
+    dc:description "A chromogenic monopack colour process produced by Fuji."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/Orwocolor> a owl:Class ;
-    dc:description ""@en ;
     rdfs:label "Orwocolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process produced by ORWO."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Kodachrome> a owl:Class ;
+    rdfs:label "Kodachrome"@en ;
+    dc:description "The three-colour chromogenic monopack reversal colour process introduced by Kodak in 1935. The earlier two-colour Kodachrome process (1915) is a different process."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1277/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Anscocolor> a owl:Class ;
+    rdfs:label "Anscocolor"@en ;
+    dc:description "A chromogenic monopack colour process produced by Ansco."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1372/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Ferraniacolor> a owl:Class ;
+    rdfs:label "Ferraniacolor"@en ;
+    dc:description "A chromogenic monopack colour process produced by Ferrania."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1312/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Sovcolor> a owl:Class ;
+    rdfs:label "Sovcolor"@en ;
+    dc:description "A chromogenic monopack colour process based on Agfacolor, produced in the Soviet Union."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1316/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Warnercolor> a owl:Class ;
+    rdfs:label "Warnercolor"@en ;
+    dc:description "Warner Bros.' trade name for Eastmancolor processed at its laboratory."@en ;
+    dc:source <https://en.wikipedia.org/wiki/Eastmancolor> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
+.
+
+<https://dev.fiafcore.org/Gevacolor> a owl:Class ;
+    rdfs:label "Gevacolor"@en ;
+    dc:description "A chromogenic monopack colour process introduced by Gevaert in 1947."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1309/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Ektachrome> a owl:Class ;
+    rdfs:label "Ektachrome"@en ;
+    dc:description "A chromogenic monopack reversal colour process introduced by Eastman Kodak."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1318/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/DoubleCoatedBipack> a owl:Class ;
+    rdfs:label "Double-Coated / Bi-Pack"@en ;
+    dc:description "A subtractive colour process using two emulsion layers or two films exposed together."@en ;
+    dc:source <https://filmcolors.org/cat/double-coated-stock/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Cinecolor> a owl:Class ;
+    rdfs:label "Cinecolor"@en ;
+    dc:description "A two-colour subtractive bipack process introduced by Cinecolor in 1932."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1263/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+.
+
+<https://dev.fiafcore.org/Trucolor> a owl:Class ;
+    rdfs:label "Trucolor"@en ;
+    dc:description "A two-colour (later three-colour) subtractive process developed by Consolidated Film Industries for Republic Pictures in 1946."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1306/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+.
+
+<https://dev.fiafcore.org/Ufacolor> a owl:Class ;
+    rdfs:label "Ufacolor"@en ;
+    dc:description "A two-colour subtractive double-coated positive process used by UFA in the early 1930s."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1250/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+.
+
+<https://dev.fiafcore.org/PrintingDyeTransferPigment> a owl:Class ;
+    rdfs:label "Printing / Dye-Transfer / Pigment"@en ;
+    dc:description "A subtractive colour process in which colour is added by printing dye-transfer or pigment layers onto the film."@en ;
+    dc:source <https://filmcolors.org/cat/printing-dye-transfer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
 .
 
 <https://dev.fiafcore.org/Technicolor> a owl:Class ;
-    dc:description ""@en ;
     rdfs:label "Technicolor"@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "Technicolor's subtractive dye-transfer (imbibition) colour processes, notably the three-strip process. Technicolor's earlier additive and two-colour cemented processes are different processes, and later laboratory prints on Eastmancolor stock are described as Eastmancolor."@en ;
+    dc:source <https://filmcolors.org/cat/printing-dye-transfer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PrintingDyeTransferPigment> ;
 .
+
+<https://dev.fiafcore.org/Supercinecolor> a owl:Class ;
+    rdfs:label "SuperCinecolor"@en ;
+    dc:description "A three-colour subtractive printing process introduced by Cinecolor in 1951. Placed directly under subtractive processes until its Timeline of Historical Film Colors classification is confirmed."@en ;
+    dc:source <> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+# Still-photography categories of the Timeline (direct positive, chromolytic single
+# layer, colour separation, instant dye diffusion) are not included until moving
+# image data needs them.
 
 ### Datatype Properties
 

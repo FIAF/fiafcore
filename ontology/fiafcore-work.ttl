@@ -88,9 +88,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://dev.fiafcore.org/hasLanguageUsage> a owl:ObjectProperty ;
     rdfs:label "Has Language Usage"@en ;
-    dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
+    dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc. A digital stream may reference the same LanguageUsage node as a Work, Variant, Manifestation, or Item to identify which stream carries that usage; summary and stream statements do not imply each other."@en ;
     dc:source <> ;
-    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation>) ] ;
+    rdfs:domain [ owl:unionOf (<https://dev.fiafcore.org/Work> <https://dev.fiafcore.org/Variant> <https://dev.fiafcore.org/Manifestation> <https://dev.fiafcore.org/Item> <https://dev.fiafcore.org/DigitalStream>) ] ;
     rdfs:range <https://dev.fiafcore.org/LanguageUsage> ;
 .
 

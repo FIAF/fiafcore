@@ -1,0 +1,31 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/Mono>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:definition "Monophonic sound reproduced through a single audio channel. Two channels may carry the same mono signal or two independent mono recordings."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:prefLabel "Mono"@en ;
+.
+
+<https://dev.fiafcore.org/Stereo>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:definition "Stereophonic sound reproduced through two or more directional front channels without surround channels."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:prefLabel "Stereo"@en ;
+.
+
+<https://dev.fiafcore.org/Surround>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:definition "Multi-channel sound incorporating one or more surround channels in addition to screen channels."@en ;
+    skos:inScheme <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+    skos:prefLabel "Surround"@en ;
+.
+
+<https://dev.fiafcore.org/SoundChannelConfiguration>
+    a skos:ConceptScheme ;
+    skos:definition "The intended reproduced spatial channel configuration of a soundtrack in a Manifestation or Item. Channel count alone does not establish the configuration."@en ;
+    skos:prefLabel "Sound Channel Configuration"@en ;
+.

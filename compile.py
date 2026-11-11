@@ -30,8 +30,17 @@ def convert_vocabulary(input_file):
         for a,b,c in g.triples((s, rdflib.RDFS.label, None)):
             skos_graph.add((s, rdflib.SKOS.prefLabel, c))
 
+        for a,b,c in g.triples((s, rdflib.SKOS.altLabel, None)):
+            skos_graph.add((s, rdflib.SKOS.altLabel, c))
+
         for a,b,c in g.triples((s, rdflib.DC.description, None)):
             skos_graph.add((s, rdflib.SKOS.definition, c))
+
+        for a,b,c in g.triples((s, rdflib.OWL.deprecated, None)):
+            skos_graph.add((s, rdflib.OWL.deprecated, c))
+
+        for a,b,c in g.triples((s, rdflib.DCTERMS.isReplacedBy, None)):
+            skos_graph.add((s, rdflib.DCTERMS.isReplacedBy, c))
 
         for a,b,c in g.triples((s, rdflib.RDFS.subClassOf, None)):
             skos_graph.add((s, rdflib.SKOS.broader, c))
@@ -47,8 +56,11 @@ def convert_vocabulary(input_file):
 # convert ontology vocabularies to SKOS.
 
 for vocab in [
+    'fiafcore-audiocodec.ttl',
     'fiafcore-base.ttl',
     'fiafcore-broadcaststandard.ttl',
+    'fiafcore-colourencoding.ttl',
+    'fiafcore-colourspace.ttl',
     'fiafcore-colourstandard.ttl',
     'fiafcore-country.ttl',
     'fiafcore-element.ttl',
@@ -56,8 +68,12 @@ for vocab in [
     'fiafcore-format.ttl',
     'fiafcore-genre.ttl',
     'fiafcore-language.ttl',
+    'fiafcore-noisereduction.ttl',
+    'fiafcore-soundchannelconfiguration.ttl',
     'fiafcore-soundstandard.ttl',
-    'fiafcore-status.ttl']:
+    'fiafcore-status.ttl',
+    'fiafcore-transferfunction.ttl',
+    'fiafcore-videocodec.ttl']:
     convert_vocabulary(vocab)
 
 # build single turtle file from ontology.
@@ -67,6 +83,14 @@ ontology_path = pathlib.Path.cwd() / 'ontology'
 ttl_files = [x for x in ontology_path.iterdir() if x.suffix == ".ttl"]
 for c in ttl_files:
     g += rdflib.Graph().parse(c)
+
+# `dc:source <>` means "no source", but rdflib resolves the empty
+# relative IRI to the local ontology file URI. Strip those
+# machine-specific paths from the published graph.
+
+for triple in list(g.triples((None, rdflib.DC.source, None))):
+    if isinstance(triple[2], rdflib.URIRef) and str(triple[2]).startswith("file:"):
+        g.remove(triple)
 
 # add ontology triples.
 
@@ -98,6 +122,12 @@ g += rdflib.Graph().add((rdflib.RDFS.range, rdflib.RDFS.label, rdflib.Literal("R
 g += rdflib.Graph().add((rdflib.RDFS.subClassOf, rdflib.RDFS.label, rdflib.Literal("Subclass Of")))
 
 # write ontology graph to disk.
+
+if any(
+    isinstance(o, rdflib.URIRef) and str(o).startswith("file:")
+    for _, _, o in g
+):
+    raise ValueError("Generated ontology contains local file URIs")
 
 g.serialize(destination=str(pathlib.Path.cwd() / "fiafcore.ttl"), format="longturtle")
 print(len(g), "triples.")

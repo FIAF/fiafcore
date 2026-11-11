@@ -1,0 +1,39 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/DTSHD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioCodec> ;
+    skos:definition "The DTS-HD family of digital audio encodings (including DTS-HD High Resolution Audio and DTS-HD Master Audio) used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    skos:inScheme <https://dev.fiafcore.org/AudioCodec> ;
+    skos:prefLabel "DTS-HD"@en ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalPlus>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioCodec> ;
+    skos:definition "Enhanced AC-3 (E-AC-3), a lossy multi-channel digital audio encoding used on optical disc, broadcast, and streaming media."@en ;
+    skos:inScheme <https://dev.fiafcore.org/AudioCodec> ;
+    skos:prefLabel "Dolby Digital Plus"@en ;
+.
+
+<https://dev.fiafcore.org/DolbyTrueHD>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioCodec> ;
+    skos:definition "A lossless multi-channel digital audio encoding based on Meridian Lossless Packing, used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    skos:inScheme <https://dev.fiafcore.org/AudioCodec> ;
+    skos:prefLabel "Dolby TrueHD"@en ;
+.
+
+<https://dev.fiafcore.org/PCM>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioCodec> ;
+    skos:definition "Pulse-code modulation, the uncompressed digital audio encoding used by WAV, CD, DCDM, and most preservation masters."@en ;
+    skos:inScheme <https://dev.fiafcore.org/AudioCodec> ;
+    skos:prefLabel "PCM"@en ;
+.
+
+<https://dev.fiafcore.org/AudioCodec>
+    a skos:ConceptScheme ;
+    skos:definition "The encoding of a digital audio stream, independent of its enclosing file format. The sound system a soundtrack is made for is recorded separately with hasSoundStandard."@en ;
+    skos:prefLabel "Audio Codec"@en ;
+.

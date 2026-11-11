@@ -3,6 +3,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 dc:description
@@ -47,14 +48,21 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/16mmMagneticFilm>
     a owl:Class ;
     rdfs:label "16mm Magnetic Film"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    dc:description "16mm perforated magnetic film carrying sound only."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MagneticFilm> ;
 .
 
 <https://dev.fiafcore.org/17.5mmFilm>
     a owl:Class ;
     rdfs:label "17.5mm Film"@en ;
     dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+
+<https://dev.fiafcore.org/28mmFilm>
+    a owl:Class ;
+    rdfs:label "28mm Film"@en ;
+    dc:description "A non-standard 28mm film gauge used chiefly for early home and educational projection."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
@@ -68,16 +76,22 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/35mmMagneticFilm>
     a owl:Class ;
     rdfs:label "35mm Magnetic Film"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    dc:description "35mm perforated magnetic film carrying sound only, fullcoat or stripe on a clear base."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MagneticFilm> ;
 .
 
 <https://dev.fiafcore.org/3M>
     a owl:Class ;
     rdfs:label "3M"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/65mmFilm>
+    a owl:Class ;
+    rdfs:label "65mm Film"@en ;
+    dc:description "A perforated 65mm motion-picture film format, commonly used for large-format camera negatives."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
 <https://dev.fiafcore.org/70mmFilm>
@@ -101,18 +115,25 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
+<https://dev.fiafcore.org/ACES2065_1>
+    a owl:Class ;
+    rdfs:label "ACES2065-1 (AP0)"@en ;
+    dc:description "The scene-linear RGB colour space specified by SMPTE ST 2065-1, using AP0 primaries and the ACES white point. This identifies ACES2065-1 specifically, not the broader Academy Color Encoding System. Record RGB encoding and a Linear transfer function when describing these aspects explicitly."@en ;
+    dc:source <https://docs.acescentral.com/encodings/aces2065-1/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
 <https://dev.fiafcore.org/AVI>
     a owl:Class ;
     rdfs:label "AVI"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/AbbreviatedTitle>
     a owl:Class ;
     rdfs:label "Abbreviated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -133,8 +154,18 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Access>
     a owl:Class ;
     rdfs:label "Access"@en ;
-    dc:description ""@en ;
+    dc:description "An Item designated for viewing, screening, lending, or reference use."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
+    skos:altLabel
+        "Use copy"@en ,
+        "Viewing copy"@en ;
+.
+
+<https://dev.fiafcore.org/AccessionEvent>
+    a owl:Class ;
+    rdfs:label "Accession Event"@en ;
+    dc:description "The formal, legal act of officially accepting acquired Items into the permanent collection in accordance with the institution's collecting policy, committing it to their long-term preservation, care, and intellectual control. Distinct from acquisition."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/AcetateBase>
@@ -148,7 +179,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Acquisition Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -247,7 +277,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Agfa"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -255,15 +284,15 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Agfa Gevaert"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Agfacolor>
     a owl:Class ;
     rdfs:label "Agfacolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process introduced by Agfa in 1936."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1276/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/AgriculturalForestryFilm>
@@ -327,6 +356,27 @@ rdfs:subClassOf
     rdfs:label "Amharic"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Ampex>
+    a owl:Class ;
+    rdfs:label "Ampex"@en ;
+    dc:description "Ampex magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/AmpexDCT>
+    a owl:Class ;
+    rdfs:label "Ampex DCT"@en ;
+    dc:description "The Ampex DCT professional digital component videocassette format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/AnalogueDiscSound>
+    a owl:Class ;
+    rdfs:label "Analogue Disc Sound"@en ;
+    dc:description "Analogue sound recorded in the grooves of a disc, played with a needle and kept in sync with the projector, such as Vitaphone. Digital sound on separate discs synchronised to film (such as DTS) is a digital sound system."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
 .
 
 <https://dev.fiafcore.org/AnalyticWork>
@@ -418,6 +468,28 @@ rdfs:subClassOf
     dc:description "Animatronics. The use of electronically or manually operated puppets, models, or other mechanical devices to simulate and replicate movement, whether of existing life forms or fictional creations."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SpecialEffectsActivity> ;
+.
+
+<https://dev.fiafcore.org/Ansco>
+    a owl:Class ;
+    rdfs:label "Ansco"@en ;
+    dc:description "Ansco photographic film stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Anscocolor>
+    a owl:Class ;
+    rdfs:label "Anscocolor"@en ;
+    dc:description "A chromogenic monopack colour process produced by Ansco."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1372/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/AnswerPrint>
+    a owl:Class ;
+    rdfs:label "Answer Print"@en ;
+    dc:description "A trial positive print made for evaluating and approving grading, timing, and synchronisation before release printing."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
 .
 
 <https://dev.fiafcore.org/Antarctica>
@@ -553,18 +625,31 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
 .
 
+<https://dev.fiafcore.org/AudioDescription>
+    a owl:Class ;
+    rdfs:label "Audio Description"@en ;
+    dc:description "Spoken narration describing the images for blind and partially sighted viewers."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SpokenLanguage> ;
+.
+
+<https://dev.fiafcore.org/AudioMaster>
+    a owl:Class ;
+    rdfs:label "Audio Master"@en ;
+    dc:description "A physical sound recording made as the complete source from which further copies are made, whether a production's finished mix or print master or a master copy made in duplication or preservation."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioElement> ;
+.
+
 <https://dev.fiafcore.org/Audiocassette>
     a owl:Class ;
     rdfs:label "Audiocassette"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioTape> ;
 .
 
 <https://dev.fiafcore.org/AugmentedVariant>
     a owl:Class ;
     rdfs:label "Augmented Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -606,8 +691,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/AwardOrNominationEvent>
     a owl:Class ;
     rdfs:label "Award Or Nomination Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The bestowal of, or nomination for, an award relating to a Work, Variant, or Manifestation, including awards for individual achievements within its context. Excludes awards for Agents alone."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -636,7 +720,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "BASF"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -765,7 +848,14 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Betacam SP"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Betacam> ;
+.
+
+<https://dev.fiafcore.org/Betamax>
+    a owl:Class ;
+    rdfs:label "Betamax"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
 .
 
 <https://dev.fiafcore.org/Bhutan>
@@ -798,9 +888,16 @@ rdfs:subClassOf
 
 <https://dev.fiafcore.org/BlackAndWhite>
     a owl:Class ;
-    rdfs:label "Black And White"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
+    rdfs:label "Black and White"@en ;
+    dc:description "A monochrome moving image reproduced in black, white, and intermediate greys, without applied or natural colour."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20340%3A4462> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://dev.fiafcore.org/BlackAndWhiteWithAppliedColour>
+    a owl:Class ;
+    rdfs:label "Black and White with Applied Colour"@en ;
+    dc:description "A black-and-white moving image whose appearance is coloured by tinting, toning, stencilling, hand-colouring, or similar means, whether the colour was applied to this object or is reproduced from its source. A copy that reproduces such an appearance, such as a colour-stock duplicate or a digital scan of a tinted print, has this appearance without having the applied colour process. A single-field catalogue value such as \"Black and white (tinted)\" recorded for such a copy describes its appearance only."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
 .
 
@@ -814,8 +911,16 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/BluRay>
     a owl:Class ;
     rdfs:label "BluRay"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+    dc:description "An optical video disc in Blu-ray Disc format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
+.
+
+<https://dev.fiafcore.org/Bodo>
+    a owl:Class ;
+    rdfs:label "Bodo"@en ;
+    dc:description "Bodo language (ISO 639-3: brx)."@en ;
+    dc:source <https://iso639-3.sil.org/code/brx> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/BoliviaPlurinationalStateOf>
@@ -889,11 +994,18 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/BritishSignLanguage>
+    a owl:Class ;
+    rdfs:label "British Sign Language"@en ;
+    dc:description "British Sign Language (ISO 639-3: bfi)."@en ;
+    dc:source <https://iso639-3.sil.org/code/bfi> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/BroadcastEvent>
     a owl:Class ;
     rdfs:label "Broadcast Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The transmission of a Manifestation by a broadcaster."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -955,11 +1067,32 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Byte>
+    a owl:Class ;
+    rdfs:label "Byte"@en ;
+    dc:description "A data size measured in bytes. The preferred unit for the size of a digital object, because it is exact."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
+.
+
 <https://dev.fiafcore.org/CD>
     a owl:Class ;
     rdfs:label "CD"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+    dc:description "An optical audio disc in Compact Disc Digital Audio format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioDisc> ;
+.
+
+<https://dev.fiafcore.org/CDR>
+    a owl:Class ;
+    rdfs:label "CD-R"@en ;
+    dc:description "A recordable compact disc used as an offline digital data storage carrier."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
+.
+
+<https://dev.fiafcore.org/CDROM>
+    a owl:Class ;
+    rdfs:label "CD-ROM"@en ;
+    dc:description "A read-only compact disc used to distribute digital data, rather than Compact Disc Digital Audio."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
 .
 
 <https://dev.fiafcore.org/CGIArtist>
@@ -1017,8 +1150,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Captions>
     a owl:Class ;
     rdfs:label "Captions"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Text for deaf and hard-of-hearing viewers, transcribing dialogue and describing other sounds, such as closed captions or subtitles for the deaf and hard of hearing."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -1041,8 +1173,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/CastingEvent>
     a owl:Class ;
     rdfs:label "Casting Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The casting of performers for a production."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -1060,6 +1191,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/CellophaneBase>
+    a owl:Class ;
+    rdfs:label "Cellophane Base"@en ;
+    dc:description "A regenerated cellulose (cellophane) film substrate, including that used for Ozaphan film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
+.
+
 <https://dev.fiafcore.org/Censor>
     a owl:Class ;
     rdfs:label "Censor"@en ;
@@ -1072,15 +1210,13 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Censored Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
 <https://dev.fiafcore.org/CensorshipEvent>
     a owl:Class ;
     rdfs:label "Censorship Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A decision mandated by law, made by a censorship body."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
@@ -1191,12 +1327,27 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/Cinecolor>
+    a owl:Class ;
+    rdfs:label "Cinecolor"@en ;
+    dc:description "A two-colour subtractive bipack process introduced by Cinecolor in 1932."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1263/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
+.
+
 <https://dev.fiafcore.org/Cinematographer>
     a owl:Class ;
     rdfs:label "Cinematographer"@en ;
     dc:description "Director of Photography, Cinematographer. The person in charge of photographing a motion picture, who plans the technical aspects of lighting and photographing of scenes, and often assists the Director in the choice of angles, camera setups, and lighting moods. He or she may also supervise the further processing of filmed material up to the completion of the work print."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/CinematographyActivity> ;
+.
+
+<https://dev.fiafcore.org/Cineon>
+    a owl:Class ;
+    rdfs:label "Cineon"@en ;
+    dc:description "The Kodak Cineon image file format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ImageFormat> ;
 .
 
 <https://dev.fiafcore.org/CircusFilm>
@@ -1262,16 +1413,36 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Colour>
     a owl:Class ;
     rdfs:label "Colour"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
+    dc:description "A moving image with natural or mimetic colour, recorded or synthesised by a colour process or captured digitally in colour. A black-and-white image coloured by tinting, toning, stencilling, or hand-colouring is Black and White with Applied Colour, not Colour."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20340%3A4462> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://dev.fiafcore.org/ColourReversalIntermediate>
+    a owl:Class ;
+    rdfs:label "Colour Reversal Intermediate"@en ;
+    dc:description "A duplicate negative produced directly from a negative by reversal processing, without an intervening positive."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DuplicateNegative> ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationNegative>
+    a owl:Class ;
+    rdfs:label "Colour Separation Negative"@en ;
+    dc:description "A black-and-white negative film Element recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation: it may be a camera original or a duplicate."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationPositive>
+    a owl:Class ;
+    rdfs:label "Colour Separation Positive"@en ;
+    dc:description "A black-and-white positive film Element (such as a separation master or protection master) recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
 .
 
 <https://dev.fiafcore.org/ColourizedVariant>
     a owl:Class ;
     rdfs:label "Colourized Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1316,7 +1487,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Condensed Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1391,7 +1561,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Corrected Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -1481,8 +1650,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Credits>
     a owl:Class ;
     rdfs:label "Credits"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Text of the opening and closing credits and main titles."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -1558,44 +1726,135 @@ rdfs:subClassOf
 
 <https://dev.fiafcore.org/D1>
     a owl:Class ;
-    rdfs:label "D1"@en ;
+    rdfs:label "D-1"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/D2>
+    a owl:Class ;
+    rdfs:label "D-2"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/D3>
+    a owl:Class ;
+    rdfs:label "D-3"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
 .
 
 <https://dev.fiafcore.org/D5>
     a owl:Class ;
-    rdfs:label "D5"@en ;
+    rdfs:label "D-5"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/D6>
+    a owl:Class ;
+    rdfs:label "D-6"@en ;
+    dc:description "A professional high definition videocassette format recording uncompressed video."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/DAT>
+    a owl:Class ;
+    rdfs:label "DAT"@en ;
+    dc:description "Digital Audio Tape, a 3.81mm (0.15 inch) magnetic cassette tape format for digital audio recording."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioTape> ;
+.
+
+<https://dev.fiafcore.org/DCDM>
+    a owl:Class ;
+    rdfs:label "DCDM"@en ;
+    dc:description "The Digital Cinema Distribution Master: an uncompressed master comprising image, audio, and subtitle files defined by SMPTE ST 428."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PackageFormat> ;
+.
+
+<https://dev.fiafcore.org/DCIP3>
+    a owl:Class ;
+    rdfs:label "DCI-P3"@en ;
+    dc:description "The DCI-P3 wide-gamut colour space (SMPTE RP 431-2) used for digital cinema projection."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/DCP>
+    a owl:Class ;
+    rdfs:label "DCP"@en ;
+    dc:description "A Digital Cinema Package as defined by SMPTE or Interop, comprising a composition playlist, packing list, asset map, and MXF tracks."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PackageFormat> ;
 .
 
 <https://dev.fiafcore.org/DPX>
     a owl:Class ;
     rdfs:label "DPX"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    dc:description "Digital Picture Exchange, an uncompressed image file format used for image sequences in digital cinema and preservation workflows."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ImageFormat> ;
+.
+
+<https://dev.fiafcore.org/DTRS>
+    a owl:Class ;
+    rdfs:label "DTRS"@en ;
+    dc:description "Digital Tape Recording System, an eight-track modular digital multitrack tape format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioTape> ;
 .
 
 <https://dev.fiafcore.org/DTS>
     a owl:Class ;
     rdfs:label "DTS"@en ;
+    dc:description "Digital Theater Systems, a digital surround sound system using digital audio on separate discs synchronised by an optical timecode track on film, or digital audio streams on disc and digital media."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DTSHD>
+    a owl:Class ;
+    rdfs:label "DTS-HD"@en ;
+    dc:description "The DTS-HD family of digital audio encodings (including DTS-HD High Resolution Audio and DTS-HD Master Audio) used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/DVCAM>
+    a owl:Class ;
+    rdfs:label "DVCAM"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DV> ;
+.
+
+<https://dev.fiafcore.org/DVCPRO>
+    a owl:Class ;
+    rdfs:label "DVCPRO"@en ;
+    dc:description "The DVCPRO family of professional digital videocassette formats."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DV> ;
 .
 
 <https://dev.fiafcore.org/DVCPROHD>
     a owl:Class ;
     rdfs:label "DVCPRO HD"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DV> ;
 .
 
 <https://dev.fiafcore.org/DVD>
     a owl:Class ;
     rdfs:label "DVD"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+    dc:description "An optical video disc in DVD-Video format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
+.
+
+<https://dev.fiafcore.org/DVDR>
+    a owl:Class ;
+    rdfs:label "DVD-R"@en ;
+    dc:description "A recordable DVD used as an offline digital data storage carrier."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
+.
+
+<https://dev.fiafcore.org/DVDROM>
+    a owl:Class ;
+    rdfs:label "DVD-ROM"@en ;
+    dc:description "A read-only DVD used to distribute digital data, rather than an authored DVD-Video release."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
 .
 
 <https://dev.fiafcore.org/DanceFilm>
@@ -1620,11 +1879,34 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/Datasat>
+    a owl:Class ;
+    rdfs:label "Datasat"@en ;
+    dc:description "Datasat Digital Entertainment digital cinema surround sound system, succeeding theatrical DTS."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DeAcquisitionEvent>
+    a owl:Class ;
+    rdfs:label "De-Acquisition Event"@en ;
+    dc:description "The de-acquisition and removal of an Item from the institution's collection, such as removal, internal transfer to another collection within the institution, or external transfer to another archive or institution."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
 <https://dev.fiafcore.org/DeLuxe>
     a owl:Class ;
     rdfs:label "DeLuxe"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "Deluxe Laboratories' trade name for Eastmancolor processed at its laboratory, adapted for printing and mass production."@en ;
+    dc:source <https://en.wikipedia.org/wiki/DeLuxe_Color> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
+.
+
+<https://dev.fiafcore.org/Deko>
+    a owl:Class ;
+    rdfs:label "Deko"@en ;
+    dc:description "Historical photographic stock bearing the Deko brand."@en ;
+    dc:source <https://en.wikipedia.org/wiki/List_of_discontinued_photographic_films> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Denmark>
@@ -1661,22 +1943,48 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Different Soundtrack Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
+.
+
+<https://dev.fiafcore.org/DigitalAccessCopy>
+    a owl:Class ;
+    rdfs:label "Digital Access Copy"@en ;
+    dc:description "A digital copy made for viewing or reference."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
 .
 
 <https://dev.fiafcore.org/DigitalBetacam>
     a owl:Class ;
     rdfs:label "Digital Betacam"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Betacam> ;
+.
+
+<https://dev.fiafcore.org/DigitalMaster>
+    a owl:Class ;
+    rdfs:label "Digital Master"@en ;
+    dc:description "A digital object made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalMezzanine>
+    a owl:Class ;
+    rdfs:label "Digital Mezzanine"@en ;
+    dc:description "A digital object made as an intermediate source for producing distribution or access copies, normally derived from a master."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
+<https://dev.fiafcore.org/DigitalRelease>
+    a owl:Class ;
+    rdfs:label "Digital Release"@en ;
+    dc:description "A digital object made for exhibition or public distribution, such as a Digital Cinema Package or a distributor's delivery file."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
 .
 
 <https://dev.fiafcore.org/DigitisationEvent>
     a owl:Class ;
     rdfs:label "Digitisation Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The digitisation of image or sound for preservation or restoration."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -1693,14 +2001,6 @@ rdfs:subClassOf
     rdfs:label "Disaster Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
-.
-
-<https://dev.fiafcore.org/DistributionEvent>
-    a owl:Class ;
-    rdfs:label "Distribution Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
 <https://dev.fiafcore.org/Distributor>
@@ -1741,18 +2041,53 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
-<https://dev.fiafcore.org/DolbyDigital>
+<https://dev.fiafcore.org/DolbyA>
     a owl:Class ;
-    rdfs:label "Dolby Digital"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    rdfs:label "Dolby A"@en ;
+    dc:description "Dolby A-type four-band companding noise-reduction system, used on magnetic recordings and on Dolby Stereo optical release prints from 1975."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dolby> ;
+.
+
+<https://dev.fiafcore.org/DolbyAtmos>
+    a owl:Class ;
+    rdfs:label "Dolby Atmos"@en ;
+    dc:description "An object-based digital surround sound system supporting channel beds and three-dimensional audio objects."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalPlus>
+    a owl:Class ;
+    rdfs:label "Dolby Digital Plus"@en ;
+    dc:description "Enhanced AC-3 (E-AC-3), a lossy multi-channel digital audio encoding used on optical disc, broadcast, and streaming media."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigitalSurroundEX>
+    a owl:Class ;
+    rdfs:label "Dolby Digital Surround EX"@en ;
+    dc:description "An extension of Dolby Digital adding a matrix-encoded rear-centre surround channel."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DolbyDigital> ;
+.
+
+<https://dev.fiafcore.org/DolbySR>
+    a owl:Class ;
+    rdfs:label "Dolby SR"@en ;
+    dc:description "Dolby Spectral Recording (SR) noise-reduction system, used on magnetic recordings and on Dolby Stereo SR optical release prints from 1986."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dolby> ;
 .
 
 <https://dev.fiafcore.org/DolbyStereo>
     a owl:Class ;
     rdfs:label "Dolby Stereo"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    dc:description "An analogue stereo variable-area optical sound system encoding four channels (left, centre, right, surround) into two optical tracks with Dolby noise reduction. Dolby Stereo 70mm magnetic prints are described as Six-Track Magnetic with Dolby noise reduction."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalVariableArea> ;
+.
+
+<https://dev.fiafcore.org/DolbyTrueHD>
+    a owl:Class ;
+    rdfs:label "Dolby TrueHD"@en ;
+    dc:description "A lossless multi-channel digital audio encoding based on Meridian Lossless Packing, used on Blu-ray and Ultra HD Blu-ray discs."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
 .
 
 <https://dev.fiafcore.org/DollyGrip>
@@ -1780,8 +2115,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/DonationEvent>
     a owl:Class ;
     rdfs:label "Donation Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Acquisition by gift from a donor."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -1803,15 +2137,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Duartcolor>
     a owl:Class ;
     rdfs:label "Duartcolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "DuArt's laboratory trade name for Eastmancolor processed at its laboratory; DuArt processed the first Eastmancolor negative in 1950."@en ;
+    dc:source <https://en.wikipedia.org/wiki/DuArt_Film_and_Video> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
 .
 
 <https://dev.fiafcore.org/DubbedVariant>
     a owl:Class ;
     rdfs:label "Dubbed Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -1847,25 +2181,25 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/SoundActivity> ;
 .
 
-<https://dev.fiafcore.org/DuplicateNegative>
+<https://dev.fiafcore.org/Dufaycolor>
     a owl:Class ;
-    rdfs:label "Duplicate Negative"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    rdfs:label "Dufaycolor"@en ;
+    dc:description "An additive screen colour process using a regular red, green, and blue réseau mosaic, introduced for motion picture film in 1932."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1262/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MosaicScreen> ;
 .
 
 <https://dev.fiafcore.org/DuplicatePositive>
     a owl:Class ;
     rdfs:label "Duplicate Positive"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    dc:description "A positive made as an intermediate for making duplicate negatives, such as an interpositive or fine-grain master; not made for projection."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
 .
 
 <https://dev.fiafcore.org/DuplicationEvent>
     a owl:Class ;
     rdfs:label "Duplication Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Copying onto the same kind of medium for preservation or restoration, such as film to film."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -1873,7 +2207,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Dupont"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -1884,6 +2217,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/DyeTransferMatrix>
+    a owl:Class ;
+    rdfs:label "Dye-Transfer Matrix"@en ;
+    dc:description "A positive gelatin-relief film Element recording a single colour channel, used to transfer dye onto a receiver print in dye-transfer (imbibition) printing."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
 <https://dev.fiafcore.org/Dzongkha>
     a owl:Class ;
     rdfs:label "Dzongkha"@en ;
@@ -1891,11 +2231,17 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/EMTEC>
+    a owl:Class ;
+    rdfs:label "EMTEC"@en ;
+    dc:description "EMTEC magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Eastman>
     a owl:Class ;
     rdfs:label "Eastman"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -1903,15 +2249,7 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Eastman Kodak"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
-.
-
-<https://dev.fiafcore.org/Eastmancolor>
-    a owl:Class ;
-    rdfs:label "Eastmancolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
 .
 
 <https://dev.fiafcore.org/Ecuador>
@@ -1933,6 +2271,14 @@ rdfs:subClassOf
     rdfs:label "Egypt"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Ektachrome>
+    a owl:Class ;
+    rdfs:label "Ektachrome"@en ;
+    dc:description "A chromogenic monopack reversal colour process introduced by Eastman Kodak."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1318/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/ElSalvador>
@@ -2044,8 +2390,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/ExchangeEvent>
     a owl:Class ;
     rdfs:label "Exchange Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Acquisition through exchange with another institution or party."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -2084,6 +2429,13 @@ rdfs:subClassOf
     dc:description "Extra. An actor who appears in crowd scenes or as an incidental figure without speaking any lines. Usually does not receive screen credit."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/CastActivity> ;
+.
+
+<https://dev.fiafcore.org/FFV1>
+    a owl:Class ;
+    rdfs:label "FFV1"@en ;
+    dc:description "FFV1, a lossless intra-frame video codec used for preservation masters."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
 .
 
 <https://dev.fiafcore.org/FairyTaleFilm>
@@ -2132,8 +2484,15 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Ferrania"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Ferraniacolor>
+    a owl:Class ;
+    rdfs:label "Ferraniacolor"@en ;
+    dc:description "A chromogenic monopack colour process produced by Ferrania."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1312/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/FightArranger>
@@ -2166,11 +2525,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/EditingActivity> ;
 .
 
+<https://dev.fiafcore.org/FilmOutNegative>
+    a owl:Class ;
+    rdfs:label "Film-Out Negative"@en ;
+    dc:description "A negative recorded from digital image data with a film recorder, made for printing. It is neither exposed in a camera nor made from film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+    skos:altLabel
+        "Digital Negative"@en ,
+        "Recorded Negative"@en ;
+.
+
 <https://dev.fiafcore.org/FilmPrintingEvent>
     a owl:Class ;
     rdfs:label "Film Printing Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The printing of film copies of a Manifestation, such as release prints."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -2186,6 +2554,13 @@ rdfs:subClassOf
     rdfs:label "Finnish"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/FlashMemory>
+    a owl:Class ;
+    rdfs:label "Flash Memory"@en ;
+    dc:description "Flash memory storage such as a USB flash drive or a memory card."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
 .
 
 <https://dev.fiafcore.org/FocusPuller>
@@ -2207,9 +2582,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Foot>
     a owl:Class ;
     rdfs:label "Foot"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A length measured in feet."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
+.
+
+<https://dev.fiafcore.org/FourTrackMagnetic>
+    a owl:Class ;
+    rdfs:label "Four-Track Magnetic"@en ;
+    dc:description "A four-track magnetic film sound system (left, centre, right, surround), introduced for 35mm CinemaScope release prints and four-track magnetic film elements."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Magnetic> ;
 .
 
 <https://dev.fiafcore.org/France>
@@ -2251,15 +2632,14 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Fuji"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Fujicolor>
     a owl:Class ;
     rdfs:label "Fujicolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process produced by Fuji."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/Fulah>
@@ -2305,6 +2685,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Gamma>
+    a owl:Class ;
+    rdfs:label "Gamma"@en ;
+    dc:description "A power-law gamma transfer function used for standard dynamic range video and cinema display (such as ITU-R BT.1886 or SMPTE ST 428)."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
 <https://dev.fiafcore.org/Ganda>
     a owl:Class ;
     rdfs:label "Ganda"@en ;
@@ -2317,6 +2704,14 @@ rdfs:subClassOf
     rdfs:label "Gangster Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/Gasparcolor>
+    a owl:Class ;
+    rdfs:label "Gasparcolor"@en ;
+    dc:description "A subtractive three-colour silver dye-bleach multilayer process."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1264/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromolyticMultilayer> ;
 .
 
 <https://dev.fiafcore.org/GeneratorOperator>
@@ -2355,11 +2750,18 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Gevacolor>
+    a owl:Class ;
+    rdfs:label "Gevacolor"@en ;
+    dc:description "A chromogenic monopack colour process introduced by Gevaert in 1947."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1309/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
 <https://dev.fiafcore.org/Gevaert>
     a owl:Class ;
     rdfs:label "Gevaert"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2367,7 +2769,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Gevaert Belgium"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2388,9 +2789,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Gigabyte>
     a owl:Class ;
     rdfs:label "Gigabyte"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A data size measured in gigabytes (1 gigabyte = 10^9 bytes). Where the exact size is known, use Byte."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
+.
+
+<https://dev.fiafcore.org/GoerzTenax>
+    a owl:Class ;
+    rdfs:label "Goerz-Tenax"@en ;
+    dc:description "Historical film stock catalogued under the Goerz-Tenax name; not the camera bearing that name."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Gowns>
@@ -2437,11 +2844,17 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Greyscale>
+    a owl:Class ;
+    rdfs:label "Greyscale"@en ;
+    dc:description "A single-channel monochrome digital pixel encoding."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourEncoding> ;
+.
+
 <https://dev.fiafcore.org/GreyscaledVariant>
     a owl:Class ;
     rdfs:label "Greyscaled Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -2516,11 +2929,32 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/HDCAM>
+    a owl:Class ;
+    rdfs:label "HDCAM"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
 <https://dev.fiafcore.org/HDCAMSR>
     a owl:Class ;
     rdfs:label "HDCAM SR"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/HDV>
+    a owl:Class ;
+    rdfs:label "HDV"@en ;
+    dc:description "A high definition videocassette format recording MPEG-2 video onto DV-format tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/HLG>
+    a owl:Class ;
+    rdfs:label "HLG"@en ;
+    dc:description "Hybrid Log-Gamma (ITU-R BT.2100 / ARIB STD-B67), a high dynamic range transfer function used in broadcast television."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
 .
 
 <https://dev.fiafcore.org/HairStylist>
@@ -2547,11 +2981,24 @@ rdfs:subClassOf
 
 <https://dev.fiafcore.org/HalfInchAudiotape>
     a owl:Class ;
-    rdfs:label
-        "Half Inch Audiotape"@en ,
-        "Video Format"@en ;
+    rdfs:label "Half Inch Audiotape"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpenReelAudiotape> ;
+.
+
+<https://dev.fiafcore.org/HalfInchVideotape>
+    a owl:Class ;
+    rdfs:label "Half Inch Videotape"@en ;
+    dc:description "Half-inch videotape of open-reel or unspecified format. Use when no more specific format is known."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/HandColouring>
+    a owl:Class ;
+    rdfs:label "Hand Colouring"@en ;
+    dc:description "A colour process in which translucent dyes are applied by hand, frame by frame."@en ;
+    dc:source <https://filmcolors.org/cat/hand-coloring/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
 .
 
 <https://dev.fiafcore.org/HandPuppetFilm>
@@ -2559,6 +3006,13 @@ rdfs:subClassOf
     rdfs:label "Hand puppet Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/HardDrive>
+    a owl:Class ;
+    rdfs:label "Hard Drive"@en ;
+    dc:description "A magnetic hard disk drive used as an offline digital storage carrier."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
 .
 
 <https://dev.fiafcore.org/Hausa>
@@ -2594,6 +3048,13 @@ rdfs:subClassOf
     rdfs:label "Herero"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Hi8>
+    a owl:Class ;
+    rdfs:label "Hi8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
 .
 
 <https://dev.fiafcore.org/Hindi>
@@ -2641,9 +3102,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/HomeVideoPublicationEvent>
     a owl:Class ;
     rdfs:label "Home Video Publication Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The publication of a Manifestation on a physical medium for home viewing."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/HomeVideoRelease>
+    a owl:Class ;
+    rdfs:label "Home Video Release"@en ;
+    dc:description "A commercially released physical home video copy, such as a VHS, DVD, or Blu-ray release."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
 .
 
 <https://dev.fiafcore.org/HomeViewingManifestation>
@@ -2689,6 +3156,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/IMF>
+    a owl:Class ;
+    rdfs:label "IMF"@en ;
+    dc:description "An Interoperable Master Format package as defined by SMPTE ST 2067."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PackageFormat> ;
+.
+
 <https://dev.fiafcore.org/Iceland>
     a owl:Class ;
     rdfs:label "Iceland"@en ;
@@ -2715,7 +3189,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Identifiying Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -2737,7 +3210,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Ilford"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -2765,9 +3237,16 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/IndoorShootingEvent>
     a owl:Class ;
     rdfs:label "Indoor Shooting Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Shooting or recording that takes place indoors, such as in a studio."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
+.
+
+<https://dev.fiafcore.org/Indu>
+    a owl:Class ;
+    rdfs:label "Indu"@en ;
+    dc:description "Indu film-stock brand, including stock converted from imported jumbo rolls; the brand does not identify the emulsion manufacturer."@en ;
+    dc:source <https://www.filmatlas.com/entry/686> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/IndustrialFilm>
@@ -2780,8 +3259,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/InspectionEvent>
     a owl:Class ;
     rdfs:label "Inspection Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The inspection of an Item for the purpose of assessing and recording its condition or treatment, often in connection with its preservation or restoration."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -2810,8 +3288,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Intertitles>
     a owl:Class ;
     rdfs:label "Intertitles"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Text cards inserted between shots or scenes, as in silent cinema."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -2891,6 +3368,13 @@ rdfs:subClassOf
     rdfs:label "Italy"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/JVC>
+    a owl:Class ;
+    rdfs:label "JVC"@en ;
+    dc:description "JVC magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Jamaica>
@@ -2994,9 +3478,16 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Kilobyte>
     a owl:Class ;
     rdfs:label "Kilobyte"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A data size measured in kilobytes (1 kilobyte = 1,000 bytes). Where the exact size is known, use Byte."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
+.
+
+<https://dev.fiafcore.org/Kinemacolor>
+    a owl:Class ;
+    rdfs:label "Kinemacolor"@en ;
+    dc:description "An early additive two-colour process using alternating red and green frames projected through a rotating filter."@en ;
+    dc:source <https://filmcolors.org/cat/rotary-filters/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TemporalSynthesis> ;
 .
 
 <https://dev.fiafcore.org/Kinyarwanda>
@@ -3013,11 +3504,26 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Kodachrome>
+    a owl:Class ;
+    rdfs:label "Kodachrome"@en ;
+    dc:description "The three-colour chromogenic monopack reversal colour process introduced by Kodak in 1935. The earlier two-colour Kodachrome process (1915) is a different process."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1277/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/Kodacolor>
+    a owl:Class ;
+    rdfs:label "Kodacolor"@en ;
+    dc:description "An additive lenticular-screen 16mm reversal colour process introduced by Eastman Kodak in 1928."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1245/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LenticularScreen> ;
+.
+
 <https://dev.fiafcore.org/Kodak>
     a owl:Class ;
     rdfs:label "Kodak"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -3091,6 +3597,41 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/LTO2>
+    a owl:Class ;
+    rdfs:label "LTO-2"@en ;
+    dc:description "Linear Tape-Open generation 2 data tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LTO> ;
+.
+
+<https://dev.fiafcore.org/LTO3>
+    a owl:Class ;
+    rdfs:label "LTO-3"@en ;
+    dc:description "Linear Tape-Open generation 3 data tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LTO> ;
+.
+
+<https://dev.fiafcore.org/LTO4>
+    a owl:Class ;
+    rdfs:label "LTO-4"@en ;
+    dc:description "Linear Tape-Open generation 4 data tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LTO> ;
+.
+
+<https://dev.fiafcore.org/LTO5>
+    a owl:Class ;
+    rdfs:label "LTO-5"@en ;
+    dc:description "Linear Tape-Open generation 5 data tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LTO> ;
+.
+
+<https://dev.fiafcore.org/LTO6>
+    a owl:Class ;
+    rdfs:label "LTO-6"@en ;
+    dc:description "Linear Tape-Open generation 6 data tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/LTO> ;
+.
+
 <https://dev.fiafcore.org/Laboratory>
     a owl:Class ;
     rdfs:label "Laboratory"@en ;
@@ -3124,8 +3665,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/LaserDisc>
     a owl:Class ;
     rdfs:label "LaserDisc"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/OpticalFormat> ;
+    dc:description "An analogue optical video disc format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
 .
 
 <https://dev.fiafcore.org/Latin>
@@ -3172,6 +3713,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/LegalDepositEvent>
+    a owl:Class ;
+    rdfs:label "Legal Deposit Event"@en ;
+    dc:description "Acquisition through a legal obligation to deposit copies with the institution."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
 <https://dev.fiafcore.org/Lenses>
     a owl:Class ;
     rdfs:label "Lenses"@en ;
@@ -3208,6 +3756,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Lignose>
+    a owl:Class ;
+    rdfs:label "Lignose"@en ;
+    dc:description "Historical photographic film stock bearing the Lignose name."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Limburgan>
     a owl:Class ;
     rdfs:label "Limburgan"@en ;
@@ -3221,6 +3776,21 @@ rdfs:subClassOf
     dc:description "Line Producer. The person primarily responsible for resolving budget and schedule issues on the set. Often acts as a bridge between the Director and the Production Manager. Can also be involved in the development phase, especially if the Producer lacks experience in production related matters."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
+.
+
+<https://dev.fiafcore.org/LineScreen>
+    a owl:Class ;
+    rdfs:label "Line Screen"@en ;
+    dc:description "An additive screen process using a grid of coloured lines."@en ;
+    dc:source <https://filmcolors.org/cat/line-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/Linear>
+    a owl:Class ;
+    rdfs:label "Linear"@en ;
+    dc:description "A linear transfer function in which code values are directly proportional to scene or display light."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
 .
 
 <https://dev.fiafcore.org/Lingala>
@@ -3262,9 +3832,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/LoanEvent>
     a owl:Class ;
     rdfs:label "Loan Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+    dc:description "A loan received by the institution: custody of an Item for an agreed period, under a loan agreement with a lender, without transfer of ownership. Not an acquisition, which transfers title. Lending by the institution to others is an Outgoing Loan Event."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/LocationManager>
@@ -3273,6 +3842,21 @@ rdfs:subClassOf
     dc:description "Location Manager, Location Coordinator, Location Scout. The person charged with various aspects of shooting on location, from visiting possible locations during pre-production (Location Scout) to acquiring permits and permissions required for filming in specific places."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
+.
+
+<https://dev.fiafcore.org/Logarithmic>
+    a owl:Class ;
+    rdfs:label "Logarithmic"@en ;
+    dc:description "A logarithmic transfer function, such as Cineon/DPX printing density log or camera log curves."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/LowerSorbian>
+    a owl:Class ;
+    rdfs:label "Lower Sorbian"@en ;
+    dc:description "Lower Sorbian language (ISO 639-2/3: dsb)."@en ;
+    dc:source <https://iso639-3.sil.org/code/dsb> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/Lubakatanga>
@@ -3304,32 +3888,46 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/MusicActivity> ;
 .
 
+<https://dev.fiafcore.org/MKV>
+    a owl:Class ;
+    rdfs:label "Matroska"@en ;
+    dc:description "Matroska, an open extensible container format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
+.
+
 <https://dev.fiafcore.org/MOV>
     a owl:Class ;
     rdfs:label "MOV"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/MP4>
     a owl:Class ;
     rdfs:label "MP4"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/MPEG-4>
     a owl:Class ;
     rdfs:label "MPEG-4"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    dc:description "The MPEG-4 family of video encoding standards."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/MPEG2>
+    a owl:Class ;
+    rdfs:label "MPEG-2"@en ;
+    dc:description "MPEG-2 video."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
 .
 
 <https://dev.fiafcore.org/MXF>
     a owl:Class ;
     rdfs:label "MXF"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/Macao>
@@ -3353,11 +3951,18 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
-<https://dev.fiafcore.org/Magnetic>
+<https://dev.fiafcore.org/Mafe>
     a owl:Class ;
-    rdfs:label "Magnetic"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    rdfs:label "Mafe"@en ;
+    dc:description "Historical photographic film stock bearing the Mafe name."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/MagnetoOpticalDisc>
+    a owl:Class ;
+    rdfs:label "Magneto-Optical Disc"@en ;
+    dc:description "A magneto-optical disc used as an offline digital storage carrier."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
 .
 
 <https://dev.fiafcore.org/MakeUpArtist>
@@ -3484,8 +4089,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/MasteringEvent>
     a owl:Class ;
     rdfs:label "Mastering Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The mastering of a Manifestation, such as for a home video publication."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -3515,7 +4119,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Maxell"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -3544,9 +4147,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Megabyte>
     a owl:Class ;
     rdfs:label "Megabyte"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A data size measured in megabytes (1 megabyte = 1,000,000 bytes). Where the exact size is known, use Byte."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
 .
 
 <https://dev.fiafcore.org/MelodramaFilm>
@@ -3556,19 +4158,26 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/Memorex>
+    a owl:Class ;
+    rdfs:label "Memorex"@en ;
+    dc:description "Memorex magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Metre>
     a owl:Class ;
     rdfs:label "Metre"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A length measured in metres."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
 .
 
 <https://dev.fiafcore.org/Metrocolor>
     a owl:Class ;
     rdfs:label "Metrocolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "MGM's laboratory trade name for films processed at its laboratory, generally on Eastmancolor stock."@en ;
+    dc:source <https://en.wikipedia.org/wiki/Metrocolor> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
 .
 
 <https://dev.fiafcore.org/Mexico>
@@ -3592,12 +4201,18 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/MiniDV>
+    a owl:Class ;
+    rdfs:label "MiniDV"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DV> ;
+.
+
 <https://dev.fiafcore.org/Minute>
     a owl:Class ;
     rdfs:label "Minute"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A duration measured in minutes."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Duration> ;
 .
 
 <https://dev.fiafcore.org/MixedFilm>
@@ -3641,6 +4256,13 @@ rdfs:subClassOf
     rdfs:label "Mongolian"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Mono>
+    a owl:Class ;
+    rdfs:label "Mono"@en ;
+    dc:description "Monophonic sound reproduced through a single audio channel. Two channels may carry the same mono signal or two independent mono recordings."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
 .
 
 <https://dev.fiafcore.org/MonographicWork>
@@ -3759,9 +4381,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Mute>
     a owl:Class ;
     rdfs:label "Mute"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
+    dc:description "Material whose content is intended to have recorded sound, but which carries none of it, such as a picture negative of a sound film, a print with a blank soundtrack area, or a picture-only scan of a sound film. A Manifestation that lacks the sound its content was meant to have is Mute, not Silent. A digital object need not be described as Mute where its technical description shows no audio stream; the term remains available to distinguish it from silent material."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Sound> ;
 .
 
 <https://dev.fiafcore.org/Myanmar>
@@ -3783,6 +4404,13 @@ rdfs:subClassOf
     rdfs:label "Namibia"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Narration>
+    a owl:Class ;
+    rdfs:label "Narration"@en ;
+    dc:description "Spoken commentary or voice-over narration accompanying the images."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SpokenLanguage> ;
 .
 
 <https://dev.fiafcore.org/NarrationWriter>
@@ -3920,17 +4548,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/NoDialogue>
     a owl:Class ;
     rdfs:label "No Dialogue"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "The content has no spoken, sung, or signed language. Recorded without a language."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/NonTheatricalDistributionEvent>
     a owl:Class ;
     rdfs:label "Non-Theatrical Distribution Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+    dc:description "The distribution of a Manifestation for exhibition outside cinemas, such as to schools, clubs, or institutions."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DistributionEvent> ;
 .
 
 <https://dev.fiafcore.org/NonTheatricalManifestation>
@@ -4007,8 +4633,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/NotForReleaseEvent>
     a owl:Class ;
     rdfs:label "Not For Release Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A private presentation of a Manifestation not intended for release, such as a screening of a home movie in a private context."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4030,8 +4655,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/OffAirRecordingEvent>
     a owl:Class ;
     rdfs:label "Off-Air Recording Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Acquisition by recording a broadcast."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
 .
 
@@ -4053,22 +4677,42 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "One Inch Audiotape"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpenReelAudiotape> ;
 .
 
-<https://dev.fiafcore.org/OneInchVideotape>
+<https://dev.fiafcore.org/OneInchTypeA>
     a owl:Class ;
-    rdfs:label "One Inch Videotape"@en ;
+    rdfs:label "One Inch Type A"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeB>
+    a owl:Class ;
+    rdfs:label "One Inch Type B"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
+.
+
+<https://dev.fiafcore.org/OneInchTypeC>
+    a owl:Class ;
+    rdfs:label "One Inch Type C"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OneInchVideotape> ;
 .
 
 <https://dev.fiafcore.org/OnlineTransmissionEvent>
     a owl:Class ;
     rdfs:label "Online Transmission Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Making a Manifestation available online, such as on the Internet or an intranet."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/OpenEXR>
+    a owl:Class ;
+    rdfs:label "OpenEXR"@en ;
+    dc:description "The OpenEXR high dynamic range image file format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ImageFormat> ;
 .
 
 <https://dev.fiafcore.org/OperaFilm>
@@ -4085,18 +4729,23 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
-<https://dev.fiafcore.org/OpticalVariableArea>
+<https://dev.fiafcore.org/OpticalFormat>
     a owl:Class ;
-    rdfs:label "Optical Variable Area"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    rdfs:label "Optical Format"@en ;
+    dc:description "Deprecated: optical discs are now classed by function rather than by reading method. Use Video Disc, Audio Disc, or Data Storage Format."@en ;
+    dcterms:isReplacedBy
+        <https://dev.fiafcore.org/AudioDisc> ,
+        <https://dev.fiafcore.org/DataStorageFormat> ,
+        <https://dev.fiafcore.org/VideoDisc> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+    owl:deprecated true ;
 .
 
 <https://dev.fiafcore.org/OpticalVariableDensity>
     a owl:Class ;
     rdfs:label "Optical Variable Density"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    dc:description "An analogue optical sound process in which the audio signal is represented by variations in the optical density (transmittance) of the soundtrack area."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AnalogueOpticalSound> ;
 .
 
 <https://dev.fiafcore.org/OriginalCopyrightOwner>
@@ -4107,6 +4756,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
+<https://dev.fiafcore.org/OriginalCutNegative>
+    a owl:Class ;
+    rdfs:label "Original Cut Negative"@en ;
+    dc:description "The original camera negative cut and assembled to match the final edit, including A/B rolls, from which printing proceeds."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OriginalNegative> ;
+.
+
+<https://dev.fiafcore.org/OriginalDigitalRecording>
+    a owl:Class ;
+    rdfs:label "Original Digital Recording"@en ;
+    dc:description "Digital material made in production, as captured or created and before editing or mastering, such as camera-original files or rendered frames."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalElement> ;
+.
+
 <https://dev.fiafcore.org/OriginalDistributor>
     a owl:Class ;
     rdfs:label "Original Distributor"@en ;
@@ -4115,11 +4778,25 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/CopyrightandDistributionActivity> ;
 .
 
-<https://dev.fiafcore.org/OriginalNegative>
+<https://dev.fiafcore.org/OriginalReversalPositive>
     a owl:Class ;
-    rdfs:label "Original Negative"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    rdfs:label "Original Reversal Positive"@en ;
+    dc:description "Reversal film exposed in the camera during production, forming an original positive without an intervening negative."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ReversalPositive> ;
+.
+
+<https://dev.fiafcore.org/OriginalSoundRecording>
+    a owl:Class ;
+    rdfs:label "Original Sound Recording"@en ;
+    dc:description "A physical sound recording made in production, as captured and before editing or mixing, such as production sound on quarter-inch tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioElement> ;
+.
+
+<https://dev.fiafcore.org/OriginalVideoRecording>
+    a owl:Class ;
+    rdfs:label "Original Video Recording"@en ;
+    dc:description "A physical video recording made in production, as captured and before editing or mastering."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
 .
 
 <https://dev.fiafcore.org/Oriya>
@@ -4140,15 +4817,14 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Orwo"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Orwocolor>
     a owl:Class ;
     rdfs:label "Orwocolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "A chromogenic monopack colour process produced by ORWO."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/Ossetian>
@@ -4161,9 +4837,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/OutdoorShootingEvent>
     a owl:Class ;
     rdfs:label "Outdoor Shooting Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Shooting or recording that takes place outdoors or on location."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
+.
+
+<https://dev.fiafcore.org/OutgoingLoanEvent>
+    a owl:Class ;
+    rdfs:label "Outgoing Loan Event"@en ;
+    dc:description "The lending of an Item by the institution to another party for an agreed period, such as for a screening or exhibition, without transfer of ownership."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/Outtake>
@@ -4178,6 +4860,27 @@ rdfs:subClassOf
     rdfs:label "PAL"@en ;
     dc:description "Broadcast standard most commonly associated with Europe and Australia."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://dev.fiafcore.org/PCM>
+    a owl:Class ;
+    rdfs:label "PCM"@en ;
+    dc:description "Pulse-code modulation, the uncompressed digital audio encoding used by WAV, CD, DCDM, and most preservation masters."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/PQ>
+    a owl:Class ;
+    rdfs:label "PQ"@en ;
+    dc:description "Perceptual Quantizer (SMPTE ST 2084), a high dynamic range transfer function used in HDR10 and Dolby Vision."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/TransferFunction> ;
+.
+
+<https://dev.fiafcore.org/PVCBase>
+    a owl:Class ;
+    rdfs:label "PVC Base"@en ;
+    dc:description "A polyvinyl chloride substrate used for film or magnetic tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Base> ;
 .
 
 <https://dev.fiafcore.org/Pakistan>
@@ -4219,7 +4922,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Panasonic"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -4241,7 +4943,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Parallel Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -4270,8 +4971,15 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Pathe"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/Pathecolor>
+    a owl:Class ;
+    rdfs:label "Pathécolor"@en ;
+    dc:description "Pathé's stencil-colouring process. Later Eastmancolor-based prints released under the Pathécolor name are described as Eastmancolor."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1218/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/StencilColouring> ;
 .
 
 <https://dev.fiafcore.org/Persian>
@@ -4294,6 +5002,13 @@ rdfs:subClassOf
     rdfs:label "Peru"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Perutz>
+    a owl:Class ;
+    rdfs:label "Perutz"@en ;
+    dc:description "Perutz photographic film stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Philippines>
@@ -4390,8 +5105,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/PostProductionEvent>
     a owl:Class ;
     rdfs:label "Post-Production Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Work carried out after shooting, such as editing, sound mixing, and visual effects."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionEvent> ;
 .
 
@@ -4407,7 +5121,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Pre-Release Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -4423,15 +5136,13 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Preferred Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
 <https://dev.fiafcore.org/PrereleaseEvent>
     a owl:Class ;
     rdfs:label "Prerelease Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A presentation of a Manifestation before its release, such as a preview, test, or press screening."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
@@ -4454,8 +5165,9 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Preservation>
     a owl:Class ;
     rdfs:label "Preservation"@en ;
-    dc:description ""@en ;
+    dc:description "An Item kept to safeguard its content and not used for access, such as an archive master. The alternative label Master names this use designation; what an Item was made as, such as a Digital Master or Video Master, is its Element."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Status> ;
+    skos:altLabel "Master"@en ;
 .
 
 <https://dev.fiafcore.org/PreservationManifestation>
@@ -4470,7 +5182,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Preservation Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -4479,6 +5190,13 @@ rdfs:subClassOf
     rdfs:label "Prison Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/ProRes422HQ>
+    a owl:Class ;
+    rdfs:label "ProRes 422 HQ"@en ;
+    dc:description "Apple ProRes 422 HQ, a high quality 4:2:2 ProRes variant."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ProRes> ;
 .
 
 <https://dev.fiafcore.org/Producer>
@@ -4535,6 +5253,13 @@ rdfs:subClassOf
     dc:description "Production Manager, Unit Production Manager, Production Supervisor. The individual who manages all administrative and technical details of the production, from preparing the shooting schedule and negotiating crew and equipment contracts, to approving purchase orders and authorizing the payroll. In units with both a Production Supervisor and Production Manager, the former is usually subordinate to the latter, but may assume some of his or her responsibilities if the Production Manager also acts as the Co-producer."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProducingActivity> ;
+.
+
+<https://dev.fiafcore.org/ProfessionalDisc>
+    a owl:Class ;
+    rdfs:label "Professional Disc"@en ;
+    dc:description "The Professional Disc optical recording medium used by disc-based XDCAM systems; not the broader XDCAM family of disc and solid-state implementations."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
 .
 
 <https://dev.fiafcore.org/PropagandaFilm>
@@ -4608,9 +5333,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/PurchaseEvent>
     a owl:Class ;
     rdfs:label "Purchase Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Acquisition by purchase."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/AcquisitionEvent> ;
+.
+
+<https://dev.fiafcore.org/Pyral>
+    a owl:Class ;
+    rdfs:label "Pyral"@en ;
+    dc:description "Pyral magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Pyrotechnics>
@@ -4638,37 +5369,73 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/QuerterInchAudiotape>
     a owl:Class ;
     rdfs:label "Querter Inch Audiotape"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    dc:description "Deprecated misspelt term; use Quarter Inch Audiotape."@en ;
+    dcterms:isReplacedBy <https://dev.fiafcore.org/QuarterInchAudiotape> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpenReelAudiotape> ;
+    owl:deprecated true ;
 .
 
 <https://dev.fiafcore.org/Quicktime>
     a owl:Class ;
     rdfs:label "Quicktime"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
+.
+
+<https://dev.fiafcore.org/RGB>
+    a owl:Class ;
+    rdfs:label "RGB"@en ;
+    dc:description "A digital colour encoding using red, green, and blue channels."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourEncoding> ;
+.
+
+<https://dev.fiafcore.org/Rajasthani>
+    a owl:Class ;
+    rdfs:label "Rajasthani"@en ;
+    dc:description "Rajasthani language (ISO 639-2/3: raj)."@en ;
+    dc:source <https://iso639-3.sil.org/code/raj> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/RatingEvent>
     a owl:Class ;
     rdfs:label "Rating Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A decision under a voluntary rating scheme, made by an accredited rating agency."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
 <https://dev.fiafcore.org/RealVideo>
     a owl:Class ;
     rdfs:label "Real Video"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    dc:description "The RealVideo family of video codecs."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
+<https://dev.fiafcore.org/Rec2020>
+    a owl:Class ;
+    rdfs:label "Rec. 2020"@en ;
+    dc:description "ITU-R Recommendation BT.2020 ultra-high-definition and wide-colour-gamut digital television colour space."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/Rec601>
+    a owl:Class ;
+    rdfs:label "Rec. 601"@en ;
+    dc:description "ITU-R Recommendation BT.601 standard-definition digital television colour space."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
+.
+
+<https://dev.fiafcore.org/Rec709>
+    a owl:Class ;
+    rdfs:label "Rec. 709"@en ;
+    dc:description "ITU-R Recommendation BT.709 high-definition digital television colour space."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
 .
 
 <https://dev.fiafcore.org/Reel>
     a owl:Class ;
     rdfs:label "Reel"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
+    dc:description "A number of reels."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
@@ -4683,16 +5450,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/ReleaseEvent>
     a owl:Class ;
     rdfs:label "Release Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The release of a Manifestation to the public, such as a premiere or first public screening."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
 .
 
 <https://dev.fiafcore.org/ReleasePrint>
     a owl:Class ;
     rdfs:label "Release Print"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    dc:description "A positive print made for exhibition, distribution, or viewing access."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
 .
 
 <https://dev.fiafcore.org/ReligiousFilm>
@@ -4705,8 +5471,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/ReproductionEvent>
     a owl:Class ;
     rdfs:label "Reproduction Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Printing or recording a new element for preservation or restoration (the manual's printing / recording)."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -4737,7 +5502,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Restoration Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -4751,8 +5515,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/RevisionEvent>
     a owl:Class ;
     rdfs:label "Revision Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A decision mandated by law that reviews or revises an earlier censorship decision."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/DecisionEvent> ;
 .
 
@@ -4773,8 +5536,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/RightsCopyrightRegistrationEvent>
     a owl:Class ;
     rdfs:label "Rights/Copyright/Registration Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The registration of rights, copyright, or other intellectual property in a Work, Variant, or Manifestation."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
@@ -4852,8 +5614,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/SDDS>
     a owl:Class ;
     rdfs:label "SDDS"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+    dc:description "Sony Dynamic Digital Sound, a digital optical sound system printed on the outer edges of 35mm film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
 .
 
 <https://dev.fiafcore.org/SECAM>
@@ -4866,8 +5628,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/SVCD>
     a owl:Class ;
     rdfs:label "SVCD"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    dc:description "Super Video CD, an optical video disc format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
 .
 
 <https://dev.fiafcore.org/SaintBarthelemy>
@@ -4917,6 +5679,13 @@ rdfs:subClassOf
     rdfs:label "Saint Vincent and the Grenadines"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Sakura>
+    a owl:Class ;
+    rdfs:label "Sakura"@en ;
+    dc:description "Photographic film stock bearing the Sakura brand."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Samoa>
@@ -4985,8 +5754,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/ScanningEvent>
     a owl:Class ;
     rdfs:label "Scanning Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The scanning of film to produce digital embodiments of a Manifestation."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -5009,7 +5777,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Scotch"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
@@ -5032,16 +5799,14 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Search Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
 <https://dev.fiafcore.org/Second>
     a owl:Class ;
     rdfs:label "Second"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A duration measured in seconds."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Duration> ;
 .
 
 <https://dev.fiafcore.org/SecondUnitDirector>
@@ -5072,6 +5837,13 @@ rdfs:subClassOf
     rdfs:label "Sensational Film"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
+.
+
+<https://dev.fiafcore.org/SeparatedMagneticSound>
+    a owl:Class ;
+    rdfs:label "Separated Magnetic Sound"@en ;
+    dc:description "Sound on perforated magnetic film, fullcoat or stripe, carried separately from the image and kept in sync with it by its perforations (sepmag)."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
 .
 
 <https://dev.fiafcore.org/Serbia>
@@ -5130,7 +5902,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Series Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5195,16 +5966,14 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/SignedLanguage>
     a owl:Class ;
     rdfs:label "Signed Language"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Language expressed in a sign language."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/Silent>
     a owl:Class ;
     rdfs:label "Silent"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
+    dc:description "The content is made or presented without recorded sound, as in silent cinema. Live accompaniment is not recorded sound."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
@@ -5250,6 +6019,13 @@ rdfs:subClassOf
     rdfs:label "Sint Maarten (Dutch part)"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/SixTrackMagnetic>
+    a owl:Class ;
+    rdfs:label "Six-Track Magnetic"@en ;
+    dc:description "A six-track magnetic film sound system, standard on 70mm release prints and six-track magnetic film elements."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Magnetic> ;
 .
 
 <https://dev.fiafcore.org/SlapstickFilm>
@@ -5320,7 +6096,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sonorized Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
@@ -5328,16 +6103,7 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Sony"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
-.
-
-<https://dev.fiafcore.org/Sound>
-    a owl:Class ;
-    rdfs:label "Sound"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
 .
 
 <https://dev.fiafcore.org/SoundDesigner>
@@ -5367,15 +6133,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/SoundNegative>
     a owl:Class ;
     rdfs:label "Sound Negative"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    dc:description "An optical sound negative on film, carrying sound separately from the image."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
 .
 
 <https://dev.fiafcore.org/SoundPositive>
     a owl:Class ;
     rdfs:label "Sound Positive"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+    dc:description "An optical sound positive on film, carrying sound separately from the image."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmSoundElement> ;
 .
 
 <https://dev.fiafcore.org/SoundRecorderMixer>
@@ -5430,11 +6196,27 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/SouthernSami>
+    a owl:Class ;
+    rdfs:label "Southern Sami"@en ;
+    dc:description "Southern Sami language (ISO 639-2/3: sma)."@en ;
+    dc:source <https://iso639-3.sil.org/code/sma> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
 <https://dev.fiafcore.org/SouthernSotho>
     a owl:Class ;
     rdfs:label "Southern Sotho"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/Sovcolor>
+    a owl:Class ;
+    rdfs:label "Sovcolor"@en ;
+    dc:description "A chromogenic monopack colour process based on Agfacolor, produced in the Soviet Union."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1316/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
 .
 
 <https://dev.fiafcore.org/SovietUnion>
@@ -5458,20 +6240,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/SpatialSynthesis>
+    a owl:Class ;
+    rdfs:label "Spatial Synthesis"@en ;
+    dc:description "An additive colour process in which two or more images are captured simultaneously through separate lenses or a beam splitter."@en ;
+    dc:source <https://filmcolors.org/cat/spatial-synthesis/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
+.
+
 <https://dev.fiafcore.org/SpecialEffects>
     a owl:Class ;
     rdfs:label "Special Effects"@en ;
     dc:description "Special Effects, SFX, Effects, FX. A broad term used for any artificial visual or sound element produced by unusual mechanical, photographic, or digital means. In the U.S., the term Special Effects today primarily refers to Mechanical Effects."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/SpecialEffectsActivity> ;
-.
-
-<https://dev.fiafcore.org/SpokenLanguage>
-    a owl:Class ;
-    rdfs:label "Spoken Language"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
 <https://dev.fiafcore.org/Sponsor>
@@ -5527,6 +6309,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/CinematographyActivity> ;
 .
 
+<https://dev.fiafcore.org/Stereo>
+    a owl:Class ;
+    rdfs:label "Stereo"@en ;
+    dc:description "Stereophonic sound reproduced through two or more directional front channels without surround channels."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
 <https://dev.fiafcore.org/StickPuppetFilm>
     a owl:Class ;
     rdfs:label "Stick puppet Film"@en ;
@@ -5574,19 +6363,24 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/CastActivity> ;
 .
 
+<https://dev.fiafcore.org/SubtitleStream>
+    a owl:Class ;
+    rdfs:label "Subtitle Stream"@en ;
+    dc:description "A separately encoded subtitle stream within a digital object, not subtitles burned into the picture. A separate subtitle file is described as an object rather than automatically treated as an embedded stream."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
 <https://dev.fiafcore.org/SubtitledVariant>
     a owl:Class ;
     rdfs:label "Subtitled Variant"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-variant.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Variant> ;
 .
 
 <https://dev.fiafcore.org/Subtitles>
     a owl:Class ;
     rdfs:label "Subtitles"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Text displayed over the images that translates or transcribes spoken or sung language. Text for deaf and hard-of-hearing viewers that also describes sounds is Captions."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/WrittenLanguage> ;
 .
 
@@ -5606,9 +6400,8 @@ rdfs:subClassOf
 
 <https://dev.fiafcore.org/SungLanguage>
     a owl:Class ;
-    rdfs:label "Sung Language "@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    rdfs:label "Sung Language"@en ;
+    dc:description "Language sung in the content, such as song lyrics."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
@@ -5626,6 +6419,20 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
 .
 
+<https://dev.fiafcore.org/SuperVHS>
+    a owl:Class ;
+    rdfs:label "Super VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/Supercinecolor>
+    a owl:Class ;
+    rdfs:label "SuperCinecolor"@en ;
+    dc:description "A three-colour subtractive printing process introduced by Cinecolor in 1951. Placed directly under subtractive processes until its Timeline of Historical Film Colors classification is confirmed."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
 <https://dev.fiafcore.org/SupervisingSoundEditor>
     a owl:Class ;
     rdfs:label "Supervising Sound Editor"@en ;
@@ -5638,7 +6445,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Supplied/Devised Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -5656,11 +6462,25 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/Surround>
+    a owl:Class ;
+    rdfs:label "Surround"@en ;
+    dc:description "Multi-channel sound incorporating one or more surround channels in addition to screen channels."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
 <https://dev.fiafcore.org/SvalbardAndJanMayen>
     a owl:Class ;
     rdfs:label "Svalbard and Jan Mayen"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Svema>
+    a owl:Class ;
+    rdfs:label "Svema"@en ;
+    dc:description "Svema photographic film stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
 .
 
 <https://dev.fiafcore.org/Swahili>
@@ -5709,8 +6529,14 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "TDK"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
+<https://dev.fiafcore.org/TIFF>
+    a owl:Class ;
+    rdfs:label "TIFF"@en ;
+    dc:description "The Tag Image File Format, used for still and image sequence files."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ImageFormat> ;
 .
 
 <https://dev.fiafcore.org/Tagalog>
@@ -5779,15 +6605,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Technicolor>
     a owl:Class ;
     rdfs:label "Technicolor"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+    dc:description "Technicolor's subtractive dye-transfer (imbibition) colour processes, notably the three-strip process. Technicolor's earlier additive and two-colour cemented processes are different processes, and later laboratory prints on Eastmancolor stock are described as Eastmancolor."@en ;
+    dc:source <https://filmcolors.org/cat/printing-dye-transfer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PrintingDyeTransferPigment> ;
 .
 
 <https://dev.fiafcore.org/TelecineEvent>
     a owl:Class ;
     rdfs:label "Telecine Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The transfer of film to video by telecine to produce embodiments of a Manifestation."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
 .
 
@@ -5801,9 +6627,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Terabyte>
     a owl:Class ;
     rdfs:label "Terabyte"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+    dc:description "A data size measured in terabytes (1 terabyte = 10^12 bytes). Where the exact size is known, use Byte."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PhysicalExtent> ;
 .
 
 <https://dev.fiafcore.org/Thai>
@@ -5823,9 +6648,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/TheatricalDistributionEvent>
     a owl:Class ;
     rdfs:label "Theatrical Distribution Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+    dc:description "The distribution of a Manifestation for exhibition in cinemas."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DistributionEvent> ;
 .
 
 <https://dev.fiafcore.org/TheatricalManifestation>
@@ -5867,9 +6691,9 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Tinted>
     a owl:Class ;
     rdfs:label "Tinted"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
+    dc:description "A colour process in which a black-and-white film print is immersed in dye, colouring the whole image uniformly."@en ;
+    dc:source <https://filmcolors.org/cat/tinting/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
 .
 
 <https://dev.fiafcore.org/TitleDesigner>
@@ -5884,7 +6708,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Title Proper"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
 .
 
@@ -5905,9 +6728,9 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/Toned>
     a owl:Class ;
     rdfs:label "Toned"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/ColourCharacteristic> ;
+    dc:description "A colour process in which the silver image is chemically converted into coloured compounds."@en ;
+    dc:source <https://filmcolors.org/cat/toning/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
 .
 
 <https://dev.fiafcore.org/Tonga>
@@ -5950,8 +6773,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/TransferEvent>
     a owl:Class ;
     rdfs:label "Transfer Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Copying onto another medium or format for preservation or restoration, such as film to video or tape to file."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/PreservationEvent> ;
 .
 
@@ -5959,7 +6781,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Translated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5967,7 +6788,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Transliterated Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -5991,6 +6811,14 @@ rdfs:subClassOf
     rdfs:label "Trinidad and Tobago"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
+.
+
+<https://dev.fiafcore.org/Trucolor>
+    a owl:Class ;
+    rdfs:label "Trucolor"@en ;
+    dc:description "A two-colour (later three-colour) subtractive process developed by Consolidated Film Industries for Republic Pictures in 1946."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1306/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
 .
 
 <https://dev.fiafcore.org/Tsonga>
@@ -6067,14 +6895,22 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Two Inch Audiotape"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpenReelAudiotape> ;
 .
 
 <https://dev.fiafcore.org/TwoInchVideotape>
     a owl:Class ;
     rdfs:label "Two Inch Videotape"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+    dc:description "Two-inch open-reel videotape, such as quadruplex. Use when no more specific format is known."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/Ufacolor>
+    a owl:Class ;
+    rdfs:label "Ufacolor"@en ;
+    dc:description "A two-colour subtractive double-coated positive process used by UFA in the early 1930s."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1250/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DoubleCoatedBipack> ;
 .
 
 <https://dev.fiafcore.org/Uganda>
@@ -6103,6 +6939,41 @@ rdfs:subClassOf
     rdfs:label "Ukrainian"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/UltraHDBluRay>
+    a owl:Class ;
+    rdfs:label "Ultra HD Blu-ray"@en ;
+    dc:description "The Ultra HD Blu-ray optical video disc format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
+.
+
+<https://dev.fiafcore.org/UltraStereo>
+    a owl:Class ;
+    rdfs:label "Ultra-Stereo"@en ;
+    dc:description "An analogue stereo variable-area 4-2-4 matrix optical sound system."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpticalVariableArea> ;
+.
+
+<https://dev.fiafcore.org/UmaticHighBand>
+    a owl:Class ;
+    rdfs:label "U-matic High Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
+<https://dev.fiafcore.org/UmaticLowBand>
+    a owl:Class ;
+    rdfs:label "U-matic Low Band"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
+.
+
+<https://dev.fiafcore.org/UmaticSP>
+    a owl:Class ;
+    rdfs:label "U-matic SP"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Umatic> ;
 .
 
 <https://dev.fiafcore.org/UndergroundFilm>
@@ -6159,9 +7030,16 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/UploadingEvent>
     a owl:Class ;
     rdfs:label "Uploading Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The uploading of digital embodiments of a Manifestation for online availability."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://dev.fiafcore.org/UpperSorbian>
+    a owl:Class ;
+    rdfs:label "Upper Sorbian"@en ;
+    dc:description "Upper Sorbian language (ISO 639-2/3: hsb)."@en ;
+    dc:source <https://iso639-3.sil.org/code/hsb> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
 <https://dev.fiafcore.org/Urdu>
@@ -6195,8 +7073,29 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/VCD>
     a owl:Class ;
     rdfs:label "VCD"@en ;
+    dc:description "Video CD, an optical video disc format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoDisc> ;
+.
+
+<https://dev.fiafcore.org/VCR>
+    a owl:Class ;
+    rdfs:label "VCR"@en ;
     dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/VHS>
+    a owl:Class ;
+    rdfs:label "VHS"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/VOB>
+    a owl:Class ;
+    rdfs:label "VOB"@en ;
+    dc:description "The DVD-Video Object container."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/Vanuatu>
@@ -6220,6 +7119,27 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Video2000>
+    a owl:Class ;
+    rdfs:label "Video 2000"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/Video8>
+    a owl:Class ;
+    rdfs:label "Video8"@en ;
+    dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/VideoAccessCopy>
+    a owl:Class ;
+    rdfs:label "Video Access Copy"@en ;
+    dc:description "A physical video copy made for viewing or reference."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
+.
+
 <https://dev.fiafcore.org/VideoAssist>
     a owl:Class ;
     rdfs:label "Video Assist"@en ;
@@ -6231,9 +7151,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/VideoCopyingEvent>
     a owl:Class ;
     rdfs:label "VideoCopying Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The copying of video to produce embodiments of a Manifestation."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/ManufactureEvent> ;
+.
+
+<https://dev.fiafcore.org/VideoMaster>
+    a owl:Class ;
+    rdfs:label "Video Master"@en ;
+    dc:description "A physical video recording made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoElement> ;
 .
 
 <https://dev.fiafcore.org/VietNam>
@@ -6287,6 +7213,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
 .
 
+<https://dev.fiafcore.org/WAV>
+    a owl:Class ;
+    rdfs:label "WAV"@en ;
+    dc:description "Waveform Audio File Format, including Broadcast Wave."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
+.
+
 <https://dev.fiafcore.org/WallisAndFutuna>
     a owl:Class ;
     rdfs:label "Wallis and Futuna"@en ;
@@ -6314,6 +7247,21 @@ rdfs:subClassOf
     dc:description "Wardrobe Supervisor, Wardrobe Supervision, Wardrobe Master, Wardrobe Mistress. The wardrobe personnel is primarily responsible for physically handling and maintaining the costumes and related accessories on the set, and making sure that the cast members are properly dressed for each scene to be photographed."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/ProductionDesignActivity> ;
+.
+
+<https://dev.fiafcore.org/Warnercolor>
+    a owl:Class ;
+    rdfs:label "Warnercolor"@en ;
+    dc:description "Warner Bros.' trade name for Eastmancolor processed at its laboratory."@en ;
+    dc:source <https://en.wikipedia.org/wiki/Eastmancolor> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Eastmancolor> ;
+.
+
+<https://dev.fiafcore.org/WebM>
+    a owl:Class ;
+    rdfs:label "WebM"@en ;
+    dc:description "The WebM container format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ContainerFormat> ;
 .
 
 <https://dev.fiafcore.org/Welsh>
@@ -6347,8 +7295,8 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/WindowsMedia>
     a owl:Class ;
     rdfs:label "Windows Media"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+    dc:description "The Windows Media family of video codecs."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
 .
 
 <https://dev.fiafcore.org/Wolof>
@@ -6365,6 +7313,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Genre> ;
 .
 
+<https://dev.fiafcore.org/WorkPrint>
+    a owl:Class ;
+    rdfs:label "Work Print"@en ;
+    dc:description "A positive print used for editing and assembly work, not for release."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
 <https://dev.fiafcore.org/WorkingClassFilm>
     a owl:Class ;
     rdfs:label "Working-class Film"@en ;
@@ -6376,7 +7331,6 @@ rdfs:subClassOf
     a owl:Class ;
     rdfs:label "Working Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/AlternativeTitle> ;
 .
 
@@ -6404,11 +7358,26 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/WritingActivity> ;
 .
 
+<https://dev.fiafcore.org/XYZ>
+    a owl:Class ;
+    rdfs:label "XYZ"@en ;
+    dc:description "A digital colour encoding based on the CIE 1931 XYZ colour model, used in Digital Cinema Distribution Masters and Digital Cinema Packages."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourEncoding> ;
+.
+
 <https://dev.fiafcore.org/Xhosa>
     a owl:Class ;
     rdfs:label "Xhosa"@en ;
     dc:description ""@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Language> ;
+.
+
+<https://dev.fiafcore.org/YUV>
+    a owl:Class ;
+    rdfs:label "YUV"@en ;
+    dc:description "A digital colour encoding using one luma and two chrominance components (in digital video, Y′CbCr)."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourEncoding> ;
+    skos:altLabel "Y′CbCr"@en ;
 .
 
 <https://dev.fiafcore.org/Yemen>
@@ -6467,6 +7436,13 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Country> ;
 .
 
+<https://dev.fiafcore.org/Zonal>
+    a owl:Class ;
+    rdfs:label "Zonal"@en ;
+    dc:description "Zonal magnetic recording stock."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Stock> ;
+.
+
 <https://dev.fiafcore.org/Zulu>
     a owl:Class ;
     rdfs:label "Zulu"@en ;
@@ -6475,10 +7451,9 @@ rdfs:subClassOf
 .
 
 <https://dev.fiafcore.org/hasAchievement>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Has Achievement"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The achievement for which an award or nomination was given, such as best screenplay."@en ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:string ;
 .
@@ -6487,7 +7462,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Activity"@en ;
     dc:description "Express the relationship between an Event and an Activity."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range <https://dev.fiafcore.org/Activity> ;
 .
@@ -6501,11 +7475,18 @@ rdfs:subClassOf
     rdfs:range <https://dev.fiafcore.org/Agent> ;
 .
 
-<https://dev.fiafcore.org/hasAwardName>
+<https://dev.fiafcore.org/hasAudioCodec>
     a owl:ObjectProperty ;
+    rdfs:label "Has Audio Codec"@en ;
+    dc:description "Express the encoding of an individual digital audio stream."@en ;
+    rdfs:domain <https://dev.fiafcore.org/AudioStream> ;
+    rdfs:range <https://dev.fiafcore.org/AudioCodec> ;
+.
+
+<https://dev.fiafcore.org/hasAwardName>
+    a owl:DatatypeProperty ;
     rdfs:label "Has Award Name"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The name of an award."@en ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:string ;
 .
@@ -6513,8 +7494,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasBase>
     a owl:ObjectProperty ;
     rdfs:label "Has Base"@en ;
-    dc:description "The physical material or video format on which the Item is captured."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
+    dc:description "The film or tape substrate supporting the Item's image or sound recording, distinct from its format or recording process."@en ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Base> ;
 .
@@ -6523,25 +7503,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Broadcast Standard"@en ;
     dc:description "The broadcast standard for a video or DVD/BluRay."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
-    rdfs:domain <https://dev.fiafcore.org/Item> ;
-    rdfs:range <https://dev.fiafcore.org/BroadcastStandard> ;
-.
-
-<https://dev.fiafcore.org/hasCarrier>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Carrier"@en ;
-    dc:description "Express the relationship between a moving image Item and a moving image Carrier."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
-    rdfs:domain <https://dev.fiafcore.org/Item> ;
-    rdfs:range <https://dev.fiafcore.org/Carrier> ;
-.
-
-<https://dev.fiafcore.org/hasColourCharacteristic>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Colour Characteristic"@en ;
-    dc:description "The presence of colour(s), tone(s), etc. in a Manifestation or an Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6549,16 +7510,56 @@ rdfs:subClassOf
                 <https://dev.fiafcore.org/Item>
             ) ;
         ] ;
+    rdfs:range <https://dev.fiafcore.org/BroadcastStandard> ;
+.
+
+<https://dev.fiafcore.org/hasCarrier>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Carrier"@en ;
+    dc:description "Express the relationship between a moving image Item and a moving image Carrier."@en ;
+    rdfs:domain <https://dev.fiafcore.org/Item> ;
+    rdfs:range <https://dev.fiafcore.org/Carrier> ;
+.
+
+<https://dev.fiafcore.org/hasColourCharacteristic>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Characteristic"@en ;
+    dc:description "The presence of colour(s), tone(s), etc. in a Manifestation, Item, or individual digital video stream."@en ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://dev.fiafcore.org/Manifestation>
+                <https://dev.fiafcore.org/Item>
+                <https://dev.fiafcore.org/VideoStream>
+            ) ;
+        ] ;
     rdfs:range <https://dev.fiafcore.org/ColourCharacteristic> ;
+.
+
+<https://dev.fiafcore.org/hasColourEncoding>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Encoding"@en ;
+    dc:description "Express the digital colour encoding used to represent pixel values in a Manifestation or Item."@en ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourEncoding> ;
+.
+
+<https://dev.fiafcore.org/hasColourSpace>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Space"@en ;
+    dc:description "Express the digital colour space or gamut standard of a Manifestation or Item."@en ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourSpace> ;
 .
 
 <https://dev.fiafcore.org/hasColourStandard>
     a owl:ObjectProperty ;
     rdfs:label "Has Colour Standard"@en ;
-    dc:description "Express a specific colour process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
+    dc:description "Deprecated: use hasColourProcess. Express a specific colour process."@en ;
     rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
+    rdfs:subPropertyOf <https://dev.fiafcore.org/hasColourProcess> ;
+    owl:deprecated true ;
 .
 
 <https://dev.fiafcore.org/hasCountry>
@@ -6571,10 +7572,9 @@ rdfs:subClassOf
 .
 
 <https://dev.fiafcore.org/hasDate>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Has Date"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The date of an Event."@en ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:date ;
 .
@@ -6583,7 +7583,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Event"@en ;
     dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation, Item or Carrier."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6601,7 +7600,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Extent"@en ;
     dc:description "The concept of extent as applied to Manifestations is the “ideal” logical, physical, or temporal (duration) units and not a description of a real physical object. Actual objects in the collection are described at the Item level."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6615,8 +7613,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasExtentValue>
     a owl:DatatypeProperty ;
     rdfs:label "Has Extent Value"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
+    dc:description "The value of a measurement, expressed in the unit given by the type of the Extent node."@en ;
     rdfs:domain <https://dev.fiafcore.org/Extent> ;
     rdfs:range xsd:string ;
 .
@@ -6633,13 +7630,13 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasFormat>
     a owl:ObjectProperty ;
     rdfs:label "Has Format"@en ;
-    dc:description "The medium on or the encoding format in which the moving image Manifestation or Item is fixed."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
+    dc:description "The physical medium, digital file format, or package in which the moving image Manifestation, Item, or Carrier is fixed. Codecs are described on digital streams using hasVideoCodec or hasAudioCodec."@en ;
     rdfs:domain
         [
             owl:unionOf (
                 <https://dev.fiafcore.org/Manifestation>
                 <https://dev.fiafcore.org/Item>
+                <https://dev.fiafcore.org/Carrier>
             ) ;
         ] ;
     rdfs:range <https://dev.fiafcore.org/Format> ;
@@ -6658,7 +7655,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Holding Institution"@en ;
     dc:description "Record the name of the institution possessing the moving image Item or authorised to make it available."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Organisation> ;
 .
@@ -6667,7 +7663,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Identifier"@en ;
     dc:description "An Identifier refers to a specific entity and provides clear disambiguation between entities to avoid confusion."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6686,16 +7681,14 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Identifier Authority"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Identifier> ;
     rdfs:range <https://dev.fiafcore.org/Organisation> ;
 .
 
 <https://dev.fiafcore.org/hasIdentifierValue>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Has Identifier Value"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Identifier> ;
     rdfs:range xsd:string ;
 .
@@ -6704,7 +7697,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Item"@en ;
     dc:description "Express the relationship between a moving image Manifestation and a moving image Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Manifestation> ;
     rdfs:range <https://dev.fiafcore.org/Item> ;
 .
@@ -6713,7 +7705,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Language"@en ;
     dc:description "Express a language."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/LanguageUsage> ;
     rdfs:range <https://dev.fiafcore.org/Language> ;
 .
@@ -6721,14 +7712,15 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasLanguageUsage>
     a owl:ObjectProperty ;
     rdfs:label "Has Language Usage"@en ;
-    dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
+    dc:description "Record the usage type of a language e.g. spoken, intertitles, subtitles, etc. A digital stream may reference the same LanguageUsage node as a Work, Variant, Manifestation, or Item to identify which stream carries that usage; summary and stream statements do not imply each other."@en ;
     rdfs:domain
         [
             owl:unionOf (
                 <https://dev.fiafcore.org/Work>
                 <https://dev.fiafcore.org/Variant>
                 <https://dev.fiafcore.org/Manifestation>
+                <https://dev.fiafcore.org/Item>
+                <https://dev.fiafcore.org/DigitalStream>
             ) ;
         ] ;
     rdfs:range <https://dev.fiafcore.org/LanguageUsage> ;
@@ -6749,16 +7741,32 @@ rdfs:subClassOf
     rdfs:range <https://dev.fiafcore.org/Manifestation> ;
 .
 
+<https://dev.fiafcore.org/hasNoiseReduction>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Noise Reduction"@en ;
+    dc:description "Express the analogue companding noise-reduction system applied to a sound recording."@en ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/NoiseReduction> ;
+.
+
+<https://dev.fiafcore.org/hasSoundChannelConfiguration>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Sound Channel Configuration"@en ;
+    dc:description "Express the intended reproduced channel configuration of a soundtrack in a Manifestation or Item. A matrix-encoded soundtrack (such as Dolby Stereo, with four channels recorded as two) is described by the configuration it reproduces."@en ;
+    rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/SoundChannelConfiguration> ;
+.
+
 <https://dev.fiafcore.org/hasSoundCharacteristic>
     a owl:ObjectProperty ;
     rdfs:label "Has Sound Characteristic"@en ;
-    dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation or moving image Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-manifestation.ttl> ;
+    dc:description "Technical specifications relating to the fixation of sound in a moving image Manifestation, Item, or individual digital audio stream."@en ;
     rdfs:domain
         [
             owl:unionOf (
                 <https://dev.fiafcore.org/Manifestation>
                 <https://dev.fiafcore.org/Item>
+                <https://dev.fiafcore.org/AudioStream>
             ) ;
         ] ;
     rdfs:range <https://dev.fiafcore.org/SoundCharacteristic> ;
@@ -6767,8 +7775,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasSoundStandard>
     a owl:ObjectProperty ;
     rdfs:label "Has Sound Standard"@en ;
-    dc:description "Express a specific sound process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
+    dc:description "Express the sound system a soundtrack is made for or needs in order to be reproduced: an analogue fixation process or a digital sound system. Noise reduction is expressed separately with hasNoiseReduction, and the encoding of a digital audio stream with hasAudioCodec."@en ;
     rdfs:domain <https://dev.fiafcore.org/SoundCharacteristic> ;
     rdfs:range <https://dev.fiafcore.org/SoundStandard> ;
 .
@@ -6776,8 +7783,7 @@ rdfs:subClassOf
 <https://dev.fiafcore.org/hasStatus>
     a owl:ObjectProperty ;
     rdfs:label "Has Status"@en ;
-    dc:description "Description of the preservation or access status of the Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
+    dc:description "The institution's current designation of how the Item is used in its collection, such as preservation or access. Distinct from the Item's Element, which records what the Item was made for."@en ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Status> ;
 .
@@ -6786,7 +7792,6 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Has Stock"@en ;
     dc:description "Describes the specific stock/brand on which the Item is captured."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Stock> ;
 .
@@ -6795,16 +7800,28 @@ rdfs:subClassOf
     a owl:DatatypeProperty ;
     rdfs:label "Has Stock Code"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Stock> ;
     rdfs:range xsd:string ;
+.
+
+<https://dev.fiafcore.org/hasStream>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Stream"@en ;
+    dc:description "Associate an optional digital stream with the object represented by an Item or Carrier. Both levels are first-class description points; no Carrier record is required. This relationship does not propagate through storage or component relationships."@en ;
+    rdfs:domain
+        [
+            owl:unionOf (
+                <https://dev.fiafcore.org/Item>
+                <https://dev.fiafcore.org/Carrier>
+            ) ;
+        ] ;
+    rdfs:range <https://dev.fiafcore.org/DigitalStream> ;
 .
 
 <https://dev.fiafcore.org/hasTitle>
     a owl:ObjectProperty ;
     rdfs:label "Has Title"@en ;
     dc:description "Record a title, identifying phrase, or name for the moving image Work, Variant, Manifestation or Item."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-work.ttl> ;
     rdfs:domain
         [
             owl:unionOf (
@@ -6821,9 +7838,16 @@ rdfs:subClassOf
     a owl:DatatypeProperty ;
     rdfs:label "Has Title Value"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Title> ;
     rdfs:range xsd:string ;
+.
+
+<https://dev.fiafcore.org/hasTransferFunction>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Transfer Function"@en ;
+    dc:description "Express the electro-optical or opto-electronic transfer function of a digital Manifestation or Item."@en ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/TransferFunction> ;
 .
 
 <https://dev.fiafcore.org/hasVariant>
@@ -6836,12 +7860,19 @@ rdfs:subClassOf
 .
 
 <https://dev.fiafcore.org/hasVerdict>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Has Verdict"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The outcome of an act of rating or censorship."@en ;
     rdfs:domain <https://dev.fiafcore.org/DecisionEvent> ;
     rdfs:range xsd:string ;
+.
+
+<https://dev.fiafcore.org/hasVideoCodec>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Video Codec"@en ;
+    dc:description "Express the encoding of an individual digital video stream."@en ;
+    rdfs:domain <https://dev.fiafcore.org/VideoStream> ;
+    rdfs:range <https://dev.fiafcore.org/VideoCodec> ;
 .
 
 <https://dev.fiafcore.org/hasWork>
@@ -6857,18 +7888,23 @@ rdfs:subClassOf
     a owl:ObjectProperty ;
     rdfs:label "Is Element"@en ;
     dc:description "Record the nature or function of the moving image Item, describing its place in the photochemical or digital production or duplication process."@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-item.ttl> ;
     rdfs:domain <https://dev.fiafcore.org/Item> ;
     rdfs:range <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/nominationOnly>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Nomination Only"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "Whether an award event records a nomination only, rather than an award."@en ;
     rdfs:domain <https://dev.fiafcore.org/Event> ;
     rdfs:range xsd:boolean ;
+.
+
+<https://dev.fiafcore.org/sRGB>
+    a owl:Class ;
+    rdfs:label "sRGB"@en ;
+    dc:description "Standard RGB colour space (IEC 61966-2-1) used for computer displays and web delivery."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourSpace> ;
 .
 
 <https://dev.fiafcore.org/CensorshipActivity>
@@ -6879,12 +7915,180 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+<https://dev.fiafcore.org/ChromolyticMultilayer>
+    a owl:Class ;
+    rdfs:label "Chromolytic Multilayer"@en ;
+    dc:description "A subtractive colour process in which dyes in a multilayer emulsion are destroyed in proportion to exposure."@en ;
+    dc:source <https://filmcolors.org/cat/chromolytic-multilayer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/DolbyDigital>
+    a owl:Class ;
+    rdfs:label "Dolby Digital"@en ;
+    dc:description "A digital multi-channel sound system (AC-3), printed between perforations on 35mm film (Dolby SRD) or encoded on digital and optical disc media."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalSoundSystem> ;
+.
+
+<https://dev.fiafcore.org/DuplicateNegative>
+    a owl:Class ;
+    rdfs:label "Duplicate Negative"@en ;
+    dc:description "A negative made from film as an intermediate for further printing, such as an internegative or duplicate negative."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/LenticularScreen>
+    a owl:Class ;
+    rdfs:label "Lenticular Screen"@en ;
+    dc:description "An additive screen process using lenticular lenses to separate coloured records."@en ;
+    dc:source <https://filmcolors.org/cat/lenticular-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/MosaicScreen>
+    a owl:Class ;
+    rdfs:label "Mosaic Screen"@en ;
+    dc:description "An additive screen process using a mosaic of coloured dots."@en ;
+    dc:source <https://filmcolors.org/cat/mosaic-screen/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ScreenProcess> ;
+.
+
+<https://dev.fiafcore.org/OriginalNegative>
+    a owl:Class ;
+    rdfs:label "Original Negative"@en ;
+    dc:description "The negative exposed in the camera during production, cut or uncut. Use when it is unknown whether the negative has been cut."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Negative> ;
+.
+
+<https://dev.fiafcore.org/PrintingDyeTransferPigment>
+    a owl:Class ;
+    rdfs:label "Printing / Dye-Transfer / Pigment"@en ;
+    dc:description "A subtractive colour process in which colour is added by printing dye-transfer or pigment layers onto the film."@en ;
+    dc:source <https://filmcolors.org/cat/printing-dye-transfer/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/ProRes>
+    a owl:Class ;
+    rdfs:label "ProRes"@en ;
+    dc:description "The Apple ProRes family of video codecs."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoCodec> ;
+.
+
 <https://dev.fiafcore.org/PuppetActivity>
     a owl:Class ;
     rdfs:label "Puppet Activity"@en ;
     dc:description "Puppetry contribution to a moving image work."@en ;
     dc:source <https://www.fiafnet.org/pages/E-Resources/Glossary.html> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
+.
+
+<https://dev.fiafcore.org/QuarterInchAudiotape>
+    a owl:Class ;
+    rdfs:label "Quarter Inch Audiotape"@en ;
+    dc:description "Quarter-inch open-reel magnetic audio tape."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/OpenReelAudiotape> ;
+.
+
+<https://dev.fiafcore.org/ReversalPositive>
+    a owl:Class ;
+    rdfs:label "Reversal Positive"@en ;
+    dc:description "A positive produced by reversal processing, without an intervening negative. Use when its generation is unknown."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Positive> ;
+.
+
+<https://dev.fiafcore.org/Sound>
+    a owl:Class ;
+    rdfs:label "Sound"@en ;
+    dc:description "The content is intended to have recorded sound. Includes silent works presented with added recorded sound."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundCharacteristic> ;
+.
+
+<https://dev.fiafcore.org/StencilColouring>
+    a owl:Class ;
+    rdfs:label "Stencil Colouring"@en ;
+    dc:description "A colour process in which colour is applied through stencils cut for individual image areas."@en ;
+    dc:source <https://filmcolors.org/cat/stencil-coloring/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AppliedColourProcess> ;
+.
+
+<https://dev.fiafcore.org/TemporalSynthesis>
+    a owl:Class ;
+    rdfs:label "Temporal Synthesis"@en ;
+    dc:description "An additive colour process in which successive frames are exposed through different colour filters."@en ;
+    dc:source <https://filmcolors.org/cat/rotary-filters/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/hasColourProcess>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Colour Process"@en ;
+    dc:description "Express the colour process by which colour is produced or fixed in the Manifestation or Item itself. A copy that only reproduces the appearance of a process, such as a digital scan of a tinted print, does not have that process."@en ;
+    rdfs:domain <https://dev.fiafcore.org/ColourCharacteristic> ;
+    rdfs:range <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/AnalogueOpticalSound>
+    a owl:Class ;
+    rdfs:label "Analogue Optical Sound"@en ;
+    dc:description "Analogue sound recorded photographically as an optical track on film. Use when the type of track is unknown. Digital sound printed optically on film (such as Dolby Digital or SDDS) is a digital sound system."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/AudioDisc>
+    a owl:Class ;
+    rdfs:label "Audio Disc"@en ;
+    dc:description "A physical audio disc format played on an audio disc player. Use when no more specific format is known."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
+.
+
+<https://dev.fiafcore.org/AudioElement>
+    a owl:Class ;
+    rdfs:label "Audio Element"@en ;
+    dc:description "An Element of a sound-only physical carrier other than film, such as audio tape or an audio disc. Digital audio recordings are Digital Elements; sound on film is a Film Element."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/AudioFormat>
+    a owl:Class ;
+    rdfs:label "Audio Format"@en ;
+    dc:description "A physical audio carrier other than film, played on audio playback equipment, such as open-reel magnetic tape, an audio cassette, or an audio compact disc."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/AudioStream>
+    a owl:Class ;
+    rdfs:label "Audio Stream"@en ;
+    dc:description "A digital audio stream, which may contain multiple channels. Language usage, codec, and sound characteristics can be associated with this stream independently of other streams."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+<https://dev.fiafcore.org/Betacam>
+    a owl:Class ;
+    rdfs:label "Betacam"@en ;
+    dc:description "The Betacam family of half inch component videocassette formats."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/DistributionEvent>
+    a owl:Class ;
+    rdfs:label "Distribution Event"@en ;
+    dc:description "The distribution of a Manifestation for exhibition. Use when the kind of distribution is unknown."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/PublicationEvent> ;
+.
+
+<https://dev.fiafcore.org/Dolby>
+    a owl:Class ;
+    rdfs:label "Dolby"@en ;
+    dc:description "Dolby noise reduction of unspecified type (for example A-type or SR)."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/NoiseReduction> ;
+.
+
+<https://dev.fiafcore.org/Duration>
+    a owl:Class ;
+    rdfs:label "Duration"@en ;
+    dc:description "The running time of the moving image content."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
 .
 
 <https://dev.fiafcore.org/EditingActivity>
@@ -6895,6 +8099,41 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
+<https://dev.fiafcore.org/Magnetic>
+    a owl:Class ;
+    rdfs:label "Magnetic"@en ;
+    dc:description "Analogue sound recorded magnetically on a magnetic stripe, separate magnetic film, or magnetic tape. Use when the track layout is unknown. Digital audio recorded on magnetic tape is described by its format and, where relevant, a digital sound system."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/MagneticFilm>
+    a owl:Class ;
+    rdfs:label "Magnetic Film"@en ;
+    dc:description "Perforated film carrying a magnetic sound recording, fullcoat or stripe on a clear base, played on flatbed editors and viewers or sound followers rather than projectors. Use when the gauge is unknown. A picture print with a magnetic stripe is a picture film format with a magnetic sound standard, not magnetic film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmFormat> ;
+.
+
+<https://dev.fiafcore.org/MimeticColourProcess>
+    a owl:Class ;
+    rdfs:label "Mimetic Colour Process"@en ;
+    dc:description "A colour process in which the colours of the subject are reproduced photographically."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/NoiseReduction>
+    a owl:Class ;
+    rdfs:label "Noise Reduction"@en ;
+    dc:description "An analogue companding noise-reduction system applied to an optical or magnetic sound recording."@en ;
+.
+
+<https://dev.fiafcore.org/OpticalVariableArea>
+    a owl:Class ;
+    rdfs:label "Optical Variable Area"@en ;
+    dc:description "An analogue optical sound process in which the audio signal is represented by variations in the width of the transparent and opaque areas of the soundtrack."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AnalogueOpticalSound> ;
+.
+
 <https://dev.fiafcore.org/Organisation>
     a owl:Class ;
     rdfs:label "Organisation"@en ;
@@ -6903,27 +8142,103 @@ rdfs:subClassOf
     rdfs:subClassOf <https://dev.fiafcore.org/Agent> ;
 .
 
-owl:DatatypeProperty
-    rdfs:label "Datatype Property" ;
+<https://dev.fiafcore.org/SpokenLanguage>
+    a owl:Class ;
+    rdfs:label "Spoken Language"@en ;
+    dc:description "Language spoken in the content, such as dialogue."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Dialogue> ;
 .
 
-<https://dev.fiafcore.org/Carrier>
+<https://dev.fiafcore.org/VideoFormat>
     a owl:Class ;
-    rdfs:label "Carrier"@en ;
-    dc:description "A moving image Carrier is the discrete physical unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels."@en ;
+    rdfs:label "Video Format"@en ;
+    dc:description "A physical video format played on video decks or players: a videotape, videocassette, or video disc."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/VideoStream>
+    a owl:Class ;
+    rdfs:label "Video Stream"@en ;
+    dc:description "A digital stream of moving images. Its codec and colour characteristics describe this stream, not other streams in the same object."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalStream> ;
+.
+
+<https://dev.fiafcore.org/AdditiveColourProcess>
+    a owl:Class ;
+    rdfs:label "Additive Colour Process"@en ;
+    dc:description "A colour process in which colours are produced by adding coloured light, typically through filters or screens."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MimeticColourProcess> ;
+.
+
+<https://dev.fiafcore.org/DigitalFormat>
+    a owl:Class ;
+    rdfs:label "Digital Format"@en ;
+    dc:description "The format of a digital object, comprising a single file or a unit of related files, such as a file container, an image file format, or a deliverable package. Read with software, independently of the storage medium holding it. Codecs describe individual digital streams rather than the format of the enclosing object."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+.
+
+<https://dev.fiafcore.org/DoubleCoatedBipack>
+    a owl:Class ;
+    rdfs:label "Double-Coated / Bi-Pack"@en ;
+    dc:description "A subtractive colour process using two emulsion layers or two films exposed together."@en ;
+    dc:source <https://filmcolors.org/cat/double-coated-stock/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
+.
+
+<https://dev.fiafcore.org/FilmElement>
+    a owl:Class ;
+    rdfs:label "Film Element"@en ;
+    dc:description "An Element on motion-picture film, picture or sound, photochemical or magnetic."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/FilmSoundElement>
+    a owl:Class ;
+    rdfs:label "Film Sound Element"@en ;
+    dc:description "A sound-only Element on motion-picture film, optical or magnetic."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
 .
 
 <https://dev.fiafcore.org/Identifier>
     a owl:Class ;
     rdfs:label "Identifier"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-identifier.ttl> ;
+.
+
+<https://dev.fiafcore.org/OneInchVideotape>
+    a owl:Class ;
+    rdfs:label "One Inch Videotape"@en ;
+    dc:description "One-inch open-reel videotape. Use when the type (A, B, or C) is unknown."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
+<https://dev.fiafcore.org/PackageFormat>
+    a owl:Class ;
+    rdfs:label "Package Format"@en ;
+    dc:description "A defined deliverable package combining image, audio, and metadata files, rather than a single file container."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+
+<https://dev.fiafcore.org/ScreenProcess>
+    a owl:Class ;
+    rdfs:label "Screen Process"@en ;
+    dc:description "An additive colour process in which a screen of coloured lines, dots, or lenses produces colour."@en ;
+    dc:source <https://filmcolors.org/cat/screen-processes/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AdditiveColourProcess> ;
 .
 
 <https://dev.fiafcore.org/Status>
     a owl:Class ;
     rdfs:label "Status"@en ;
+    dc:description "The institution's current designation of how an Item is used in its collection. It can change without changing the Item, and is distinct from the Item's Element, which records what the Item was made for. Administrative states such as accessioned, on loan, or removed follow from Events and are not statuses."@en ;
+.
+
+<https://dev.fiafcore.org/Umatic>
+    a owl:Class ;
+    rdfs:label "U-matic"@en ;
     dc:description ""@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
 .
 
 <https://dev.fiafcore.org/Agent>
@@ -6933,10 +8248,19 @@ owl:DatatypeProperty
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2047%3A79> ;
 .
 
-<https://dev.fiafcore.org/Base>
+<https://dev.fiafcore.org/AppliedColourProcess>
     a owl:Class ;
-    rdfs:label "Base"@en ;
-    dc:description "The primary chemical characteristic of the physical carrier."@en ;
+    rdfs:label "Applied Colour Process"@en ;
+    dc:description "A colour process in which colour is applied to a black-and-white image rather than produced photographically."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ColourStandard> ;
+.
+
+<https://dev.fiafcore.org/AudioTape>
+    a owl:Class ;
+    rdfs:label "Audio Tape"@en ;
+    dc:description "A magnetic audio tape or audio cassette format. Use when no more specific format is known. Excludes perforated magnetic film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioFormat> ;
 .
 
 <https://dev.fiafcore.org/BroadcastStandard>
@@ -6945,20 +8269,47 @@ owl:DatatypeProperty
     dc:description "Standard for broadcast encoding."@en ;
 .
 
+<https://dev.fiafcore.org/ColourStandard>
+    a owl:Class ;
+    rdfs:label "Colour Process"@en ;
+    dc:description "A named colour process or system by which colour is produced or fixed in a moving image. A process is classified by how colour is formed in the object described, following the Timeline of Historical Film Colors: for example, Technicolor three-strip is classified as dye transfer, although it is photographed as colour separations."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%20341%3A4463> ;
+.
+
+<https://dev.fiafcore.org/DV>
+    a owl:Class ;
+    rdfs:label "DV"@en ;
+    dc:description "The DV family of digital videocassette formats."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoTape> ;
+.
+
 <https://dev.fiafcore.org/DecisionEvent>
     a owl:Class ;
     rdfs:label "Decision Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "An event in which a Manifestation of a Work or Variant is evaluated by a censorship body or an accredited rating agency."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/Dialogue>
     a owl:Class ;
     rdfs:label "Dialogue"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Language performed in the content: spoken, sung, or signed. Use when the specific form is unknown."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
+.
+
+<https://dev.fiafcore.org/Eastmancolor>
+    a owl:Class ;
+    rdfs:label "Eastmancolor"@en ;
+    dc:description "A chromogenic monopack colour process introduced by Eastman Kodak in 1950."@en ;
+    dc:source <https://filmcolors.org/timeline-entry/1310/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/ChromogenicMonopack> ;
+.
+
+<https://dev.fiafcore.org/ImageFormat>
+    a owl:Class ;
+    rdfs:label "Image Format"@en ;
+    dc:description "A digital image file format combining image data and associated metadata. Image data may be compressed or uncompressed."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
 .
 
 <https://dev.fiafcore.org/LaboratoryActivity>
@@ -6972,82 +8323,164 @@ owl:DatatypeProperty
 <https://dev.fiafcore.org/LanguageUsage>
     a owl:Class ;
     rdfs:label "Language Usage"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "The form in which a language is expressed in the moving image content, such as spoken, sung, signed, or written. Whether a language is original or translated is not a usage type; dubbed and subtitled versions are expressed as Variants."@en ;
 .
 
-<https://dev.fiafcore.org/OpticalFormat>
+<https://dev.fiafcore.org/Negative>
     a owl:Class ;
-    rdfs:label "Optical Format"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+    rdfs:label "Negative"@en ;
+    dc:description "A negative picture film Element. Use when its generation or function is unknown."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
 .
 
 <https://dev.fiafcore.org/PreservationEvent>
     a owl:Class ;
     rdfs:label "Preservation Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A preservation or restoration process in which the contents of one or more Items, or fragments of them, are transferred with the intention of restoring or reconstructing the content as originally intended, or safeguarding it from decay. It is associated with the resulting Variant, Manifestation, or Items, and includes past or future treatments of an Item."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/ProductionEvent>
     a owl:Class ;
     rdfs:label "Production Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "A distinct event in the course of production of a Work or Variant, including the main production event or events separated from it in space or time, such as castings, shootings or other recordings, and post-production activities."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/SoundChannelConfiguration>
+    a owl:Class ;
+    rdfs:label "Sound Channel Configuration"@en ;
+    dc:description "The intended reproduced spatial channel configuration of a soundtrack in a Manifestation or Item. Channel count alone does not establish the configuration."@en ;
+.
+
+<https://dev.fiafcore.org/VideoElement>
+    a owl:Class ;
+    rdfs:label "Video Element"@en ;
+    dc:description "An Element of a physical video carrier, such as videotape or a video disc."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
 .
 
 <https://dev.fiafcore.org/WrittenLanguage>
     a owl:Class ;
     rdfs:label "Written Language"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-languageusage.ttl> ;
+    dc:description "Language written or displayed as text in the content. Use for other on-screen text and when the specific form is unknown."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/LanguageUsage> ;
 .
 
 <https://dev.fiafcore.org/AcquisitionEvent>
     a owl:Class ;
     rdfs:label "Acquisition Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
+    dc:description "The process of getting physical custody and a legal transfer of title (ownership) of an object or collection, such as through a gift, purchase, or transfer."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
+.
+
+<https://dev.fiafcore.org/AudioCodec>
+    a owl:Class ;
+    rdfs:label "Audio Codec"@en ;
+    dc:description "The encoding of a digital audio stream, independent of its enclosing file format. The sound system a soundtrack is made for is recorded separately with hasSoundStandard."@en ;
+.
+
+<https://dev.fiafcore.org/Carrier>
+    a owl:Class ;
+    rdfs:label "Carrier"@en ;
+    dc:description "A moving image Carrier is the discrete physical or digital unit on which the moving image is retained. It can either contain the entire artistic work or a portion, for example in the case of individual film reels or digital file parts."@en ;
+.
+
+<https://dev.fiafcore.org/ColourEncoding>
+    a owl:Class ;
+    rdfs:label "Colour Encoding"@en ;
+    dc:description "A digital colour encoding used to represent colour values in a moving image file."@en ;
+.
+
+<https://dev.fiafcore.org/DigitalElement>
+    a owl:Class ;
+    rdfs:label "Digital Element"@en ;
+    dc:description "An Element of a digital object, comprising a single file or a unit of related files, including digital audio recordings."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Element> ;
+.
+
+<https://dev.fiafcore.org/DigitalSoundSystem>
+    a owl:Class ;
+    rdfs:label "Digital Sound System"@en ;
+    dc:description "A digital sound system for theatrical exhibition, broadcast, or home viewing, whether printed on film, carried on disc, or encoded in files. The carrier is described by Format, and the encoding of a digital audio stream by its Audio Codec."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SoundStandard> ;
+.
+
+<https://dev.fiafcore.org/DigitalStream>
+    a owl:Class ;
+    rdfs:label "Digital Stream"@en ;
+    dc:description "An individually describable stream within a digital object represented by an Item or Carrier. A stream is a descriptive component, not an inventory holding or storage carrier; it may be represented by a blank node or an IRI."@en ;
+.
+
+<https://dev.fiafcore.org/Element>
+    a owl:Class ;
+    rdfs:label "Element"@en ;
+    dc:description "The intended function of an Item in the production, duplication, preservation, or access workflow in which it was made, including photochemical polarity where it forms part of that role. The institution's current designation of the Item is recorded as its Status, not its Element. Storage media holding digital objects have no Element."@en ;
+.
+
+<https://dev.fiafcore.org/Extent>
+    a owl:Class ;
+    rdfs:label "Extent"@en ;
+    dc:description "A measurement of a Manifestation or Item, typed by its unit and carrying its value with hasExtentValue. Each measurement is a separate node."@en ;
+.
+
+<https://dev.fiafcore.org/LTO>
+    a owl:Class ;
+    rdfs:label "LTO"@en ;
+    dc:description "Linear Tape-Open magnetic data tape storage format."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DataStorageFormat> ;
+.
+
+<https://dev.fiafcore.org/OpenReelAudiotape>
+    a owl:Class ;
+    rdfs:label "Open-Reel Audiotape"@en ;
+    dc:description "An open-reel magnetic audio tape format, with tape width unspecified unless a narrower term is used. Excludes perforated magnetic film."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/AudioTape> ;
+.
+
+<https://dev.fiafcore.org/SoundStandard>
+    a owl:Class ;
+    rdfs:label "Sound Standard"@en ;
+    dc:description "The sound system a soundtrack is made for or needs in order to be reproduced: for analogue sound, the process by which it is fixed (optical, magnetic, or disc); for digital sound, the digital sound system, whatever carrier it is on. Noise reduction is recorded separately with hasNoiseReduction, and the encoding of a digital audio stream with hasAudioCodec."@en ;
+.
+
+<https://dev.fiafcore.org/SubtractiveColourProcess>
+    a owl:Class ;
+    rdfs:label "Subtractive Colour Process"@en ;
+    dc:description "A colour process in which colours are produced by subtracting parts of the spectrum using dyes or pigments."@en ;
+    dc:source <https://filmcolors.org/#classification> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/MimeticColourProcess> ;
+.
+
+<https://dev.fiafcore.org/Base>
+    a owl:Class ;
+    rdfs:label "Base"@en ;
+    dc:description "The primary chemical characteristic of the physical carrier."@en ;
+.
+
+<https://dev.fiafcore.org/ManufactureEvent>
+    a owl:Class ;
+    rdfs:label "Manufacture Event"@en ;
+    dc:description "The technical production of physical or digital embodiments of a Manifestation, for example through film printing, telecine, video copying, digitisation, or mastering. It may describe a production process shared by a number of Items, and is distinct from the manufacture of film stock, tape, or other storage media. Copying carried out to preserve or restore holdings is a Preservation Event."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/SoundCharacteristic>
     a owl:Class ;
     rdfs:label "Sound Characteristic"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-soundcharacteristic.ttl> ;
+    dc:description "Whether the content of a Manifestation or Item is intended to have recorded sound and, where it is, the characteristics of one soundtrack. A carrier with several soundtracks carries several SoundCharacteristic nodes. Image layout, such as a masked soundtrack area, is not a sound characteristic."@en ;
 .
 
-<https://dev.fiafcore.org/ColourCharacteristic>
+<https://dev.fiafcore.org/TransferFunction>
     a owl:Class ;
-    rdfs:label "Colour Characteristic"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-colourcharacteristic.ttl> ;
+    rdfs:label "Transfer Function"@en ;
+    dc:description "An opto-electronic or electro-optical transfer function defining the mapping between light levels and digital code values."@en ;
 .
 
-<https://dev.fiafcore.org/Format>
+<https://dev.fiafcore.org/ColourSpace>
     a owl:Class ;
-    rdfs:label "Format"@en ;
-    dc:description ""@en ;
-.
-
-<https://dev.fiafcore.org/ManufactureEvent>
-    a owl:Class ;
-    rdfs:label "Manufacture Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
-<https://dev.fiafcore.org/AudioFormat>
-    a owl:Class ;
-    rdfs:label "Audio Format"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
+    rdfs:label "Colour Space"@en ;
+    dc:description "A standardized digital colour space defining colour primaries and white point in a moving image."@en ;
 .
 
 <https://dev.fiafcore.org/CopyrightandDistributionActivity>
@@ -7066,17 +8499,43 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/Element>
+<https://dev.fiafcore.org/Format>
     a owl:Class ;
-    rdfs:label ""@en ;
-    dc:description ""@en ;
+    rdfs:label "Format"@en ;
+    dc:description "The physical or digital technical form of a moving image object, identifying the family of equipment or software needed to read, decode, or play back that specific object. A storage medium and a digital object stored on it are separate objects with separate formats. Digital stream encodings are described separately with hasVideoCodec or hasAudioCodec."@en ;
+.
+
+<https://dev.fiafcore.org/PhysicalExtent>
+    a owl:Class ;
+    rdfs:label "Physical Extent"@en ;
+    dc:description "The physical length of film or tape, or the data size of a digital object."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Extent> ;
+.
+
+<https://dev.fiafcore.org/Positive>
+    a owl:Class ;
+    rdfs:label "Positive"@en ;
+    dc:description "A positive picture film Element. Use when its generation or function is unknown."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/FilmElement> ;
+.
+
+<https://dev.fiafcore.org/PublicationEvent>
+    a owl:Class ;
+    rdfs:label "Publication Event"@en ;
+    dc:description "A screening, broadcast, streaming, or release of a Manifestation of a Work or Variant on a physical distribution medium or online."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
 .
 
 <https://dev.fiafcore.org/Title>
     a owl:Class ;
     rdfs:label "Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
+.
+
+<https://dev.fiafcore.org/VideoCodec>
+    a owl:Class ;
+    rdfs:label "Video Codec"@en ;
+    dc:description "An encoding of a digital video stream, independent of its enclosing file format."@en ;
 .
 
 <https://dev.fiafcore.org/AnimationActivity>
@@ -7087,30 +8546,36 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/FilmFormat>
+<https://dev.fiafcore.org/VideoDisc>
     a owl:Class ;
-    rdfs:label "Film Format"@en ;
-    dc:description ""@en ;
+    rdfs:label "Video Disc"@en ;
+    dc:description "A video disc format played on a video disc player or deck, whatever the reading method. Use when no more specific format is known."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
+.
+
+owl:DatatypeProperty
+    rdfs:label "Datatype Property" ;
+.
+
+<https://dev.fiafcore.org/ColourCharacteristic>
+    a owl:Class ;
+    rdfs:label "Colour Characteristic"@en ;
+    dc:description "The colour appearance of the image in a Manifestation, Item, or video stream (black and white, colour, or black and white with applied colour), with the colour process applied to the object or the digital colour representation it uses. Where appearance varies between sections, each section has its own node; tinting and toning on one node are present in the same image."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2075%3A135> ;
+.
+
+<https://dev.fiafcore.org/ContainerFormat>
+    a owl:Class ;
+    rdfs:label "Container Format"@en ;
+    dc:description "A digital file container holding one or more image, audio, or metadata streams."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/DigitalFormat> ;
+.
+
+<https://dev.fiafcore.org/DataStorageFormat>
+    a owl:Class ;
+    rdfs:label "Data Storage Format"@en ;
+    dc:description "A physical storage medium read by a computer drive, holding digital data without determining the format of the digital objects stored on it, such as data tape, a hard disk drive, an optical data disc, or flash memory. Whether a disc is recordable or pressed does not by itself make it a data storage format; an authored audio or video disc is an audio or video format."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
-.
-
-<https://dev.fiafcore.org/SoundStandard>
-    a owl:Class ;
-    rdfs:label "Sound Standard"@en ;
-    dc:description ""@en ;
-.
-
-<https://dev.fiafcore.org/VideoFormat>
-    a owl:Class ;
-    rdfs:label "Video Format"@en ;
-    dc:description ""@en ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
-.
-
-<https://dev.fiafcore.org/ColourStandard>
-    a owl:Class ;
-    rdfs:label "Colour Standard"@en ;
-    dc:description "A standardised colour process."@en ;
 .
 
 <https://dev.fiafcore.org/ManifestationActivity>
@@ -7121,20 +8586,19 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/PublicationEvent>
-    a owl:Class ;
-    rdfs:label "Publication Event"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-event.ttl> ;
-    rdfs:subClassOf <https://dev.fiafcore.org/Event> ;
-.
-
 <https://dev.fiafcore.org/AlternativeTitle>
     a owl:Class ;
     rdfs:label "Alternative Title"@en ;
     dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-title.ttl> ;
     rdfs:subClassOf <https://dev.fiafcore.org/Title> ;
+.
+
+<https://dev.fiafcore.org/ChromogenicMonopack>
+    a owl:Class ;
+    rdfs:label "Chromogenic Monopack"@en ;
+    dc:description "A subtractive colour process in which colour couplers in one or more emulsion layers form dyes during development."@en ;
+    dc:source <https://filmcolors.org/cat/chromogenic-monopack/> ;
+    rdfs:subClassOf <https://dev.fiafcore.org/SubtractiveColourProcess> ;
 .
 
 <https://dev.fiafcore.org/WritingActivity>
@@ -7145,18 +8609,11 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/DigitalFormat>
+<https://dev.fiafcore.org/FilmFormat>
     a owl:Class ;
-    rdfs:label "Digital Format"@en ;
-    dc:description ""@en ;
+    rdfs:label "Film Format"@en ;
+    dc:description "A perforated motion-picture film format, photochemical or magnetic, read with sprocketed film equipment such as projectors, flatbed editors and viewers, sound followers, or film scanners."@en ;
     rdfs:subClassOf <https://dev.fiafcore.org/Format> ;
-.
-
-<https://dev.fiafcore.org/Extent>
-    a owl:Class ;
-    rdfs:label "Extent"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-extent.ttl> ;
 .
 
 <https://dev.fiafcore.org/Form>
@@ -7197,11 +8654,11 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/Event>
+<https://dev.fiafcore.org/Work>
     a owl:Class ;
-    rdfs:label "Event"@en ;
-    dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en ;
-    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2049%3A82> ;
+    rdfs:label "Work"@en ;
+    dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
 
 <https://dev.fiafcore.org/Item>
@@ -7209,13 +8666,6 @@ owl:DatatypeProperty
     rdfs:label "Item"@en ;
     dc:description "A moving image Item is the physical or digital product of a Manifestation of a Work or Variant, i.e. the actual copy of a Work or Variant. Whereas the Manifestation record describes the “ideal” of a particular format or publication, the Item record represents the actual holding in a repository's collection."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.36209%3A5084> ;
-.
-
-<https://dev.fiafcore.org/Work>
-    a owl:Class ;
-    rdfs:label "Work"@en ;
-    dc:description "A moving image Work comprises both the intellectual or artistic content and the process of realisation in a cinematographic medium."@en ;
-    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3A.35986%3A5030> ;
 .
 
 <https://dev.fiafcore.org/Variant>
@@ -7230,6 +8680,13 @@ owl:DatatypeProperty
     rdfs:label "Activity"@en ;
     dc:description "This describes the activity or role of the Agent in relation to the moving image Work/Variant, or to make explicit the relationship(s) between the Agent and the Manifestation or Item."@en ;
     dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2048%3A80> ;
+.
+
+<https://dev.fiafcore.org/Event>
+    a owl:Class ;
+    rdfs:label "Event"@en ;
+    dc:description "An Event characterises occurrences in the lifecycle of a moving image Work, Variant, Manifestation or Item. Instances of any Event can have Activity (and Agent) relationships."@en ;
+    dc:source <https://www.fiafnet.org/images/tinyUpload/E-Resources/Commission-And-PIP-Resources/CDC-resources/20160920_Fiaf_Manual-WEB.pdf#20160915%20Fiaf%20Manual-WEB.indd%3AAncrage%2049%3A82> ;
 .
 
 <https://dev.fiafcore.org/CinematographyActivity>
@@ -7263,15 +8720,21 @@ owl:DatatypeProperty
     rdfs:subClassOf <https://dev.fiafcore.org/Activity> ;
 .
 
-<https://dev.fiafcore.org/Stock>
+<https://dev.fiafcore.org/VideoTape>
     a owl:Class ;
-    rdfs:label "Stock"@en ;
-    dc:description ""@en ;
-    dc:source <file:///Users/pduc/git/fiafcore/ontology/fiafcore-stock.ttl> ;
+    rdfs:label "Video Tape"@en ;
+    dc:description "A videotape or videocassette format, analogue or digital. Use when no more specific format is known."@en ;
+    rdfs:subClassOf <https://dev.fiafcore.org/VideoFormat> ;
 .
 
 owl:ObjectProperty
     rdfs:label "Object Property" ;
+.
+
+<https://dev.fiafcore.org/Stock>
+    a owl:Class ;
+    rdfs:label "Stock"@en ;
+    dc:description ""@en ;
 .
 
 <https://dev.fiafcore.org/Genre>

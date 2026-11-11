@@ -1,55 +1,290 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-<https://dev.fiafcore.org/DuplicateNegative>
+<https://dev.fiafcore.org/AnswerPrint>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A trial positive print made for evaluating and approving grading, timing, and synchronisation before release printing."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
-    skos:prefLabel "Duplicate Negative"@en ;
+    skos:prefLabel "Answer Print"@en ;
+.
+
+<https://dev.fiafcore.org/AudioMaster>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioElement> ;
+    skos:definition "A physical sound recording made as the complete source from which further copies are made, whether a production's finished mix or print master or a master copy made in duplication or preservation."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Audio Master"@en ;
+.
+
+<https://dev.fiafcore.org/ColourReversalIntermediate>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DuplicateNegative> ;
+    skos:definition "A duplicate negative produced directly from a negative by reversal processing, without an intervening positive."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Colour Reversal Intermediate"@en ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Negative> ;
+    skos:definition "A black-and-white negative film Element recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation: it may be a camera original or a duplicate."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Colour Separation Negative"@en ;
+.
+
+<https://dev.fiafcore.org/ColourSeparationPositive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A black-and-white positive film Element (such as a separation master or protection master) recording a single colour channel (or sequential colour channels) of a colour moving image, whatever its generation."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Colour Separation Positive"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalAccessCopy>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalElement> ;
+    skos:definition "A digital copy made for viewing or reference."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Digital Access Copy"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalMaster>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalElement> ;
+    skos:definition "A digital object made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Digital Master"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalMezzanine>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalElement> ;
+    skos:definition "A digital object made as an intermediate source for producing distribution or access copies, normally derived from a master."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Digital Mezzanine"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalRelease>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalElement> ;
+    skos:definition "A digital object made for exhibition or public distribution, such as a Digital Cinema Package or a distributor's delivery file."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Digital Release"@en ;
 .
 
 <https://dev.fiafcore.org/DuplicatePositive>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A positive made as an intermediate for making duplicate negatives, such as an interpositive or fine-grain master; not made for projection."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
     skos:prefLabel "Duplicate Positive"@en ;
 .
 
-<https://dev.fiafcore.org/OriginalNegative>
+<https://dev.fiafcore.org/DyeTransferMatrix>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A positive gelatin-relief film Element recording a single colour channel, used to transfer dye onto a receiver print in dye-transfer (imbibition) printing."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
-    skos:prefLabel "Original Negative"@en ;
+    skos:prefLabel "Dye-Transfer Matrix"@en ;
+.
+
+<https://dev.fiafcore.org/FilmOutNegative>
+    a skos:Concept ;
+    skos:altLabel
+        "Digital Negative"@en ,
+        "Recorded Negative"@en ;
+    skos:broader <https://dev.fiafcore.org/Negative> ;
+    skos:definition "A negative recorded from digital image data with a film recorder, made for printing. It is neither exposed in a camera nor made from film."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Film-Out Negative"@en ;
+.
+
+<https://dev.fiafcore.org/HomeVideoRelease>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoElement> ;
+    skos:definition "A commercially released physical home video copy, such as a VHS, DVD, or Blu-ray release."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Home Video Release"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalCutNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/OriginalNegative> ;
+    skos:definition "The original camera negative cut and assembled to match the final edit, including A/B rolls, from which printing proceeds."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Cut Negative"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalDigitalRecording>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/DigitalElement> ;
+    skos:definition "Digital material made in production, as captured or created and before editing or mastering, such as camera-original files or rendered frames."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Digital Recording"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalReversalPositive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ReversalPositive> ;
+    skos:definition "Reversal film exposed in the camera during production, forming an original positive without an intervening negative."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Reversal Positive"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalSoundRecording>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/AudioElement> ;
+    skos:definition "A physical sound recording made in production, as captured and before editing or mixing, such as production sound on quarter-inch tape."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Sound Recording"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalVideoRecording>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoElement> ;
+    skos:definition "A physical video recording made in production, as captured and before editing or mastering."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Video Recording"@en ;
 .
 
 <https://dev.fiafcore.org/ReleasePrint>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A positive print made for exhibition, distribution, or viewing access."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
     skos:prefLabel "Release Print"@en ;
 .
 
+<https://dev.fiafcore.org/SeparatedMagneticSound>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmSoundElement> ;
+    skos:definition "Sound on perforated magnetic film, fullcoat or stripe, carried separately from the image and kept in sync with it by its perforations (sepmag)."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Separated Magnetic Sound"@en ;
+.
+
 <https://dev.fiafcore.org/SoundNegative>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/FilmSoundElement> ;
+    skos:definition "An optical sound negative on film, carrying sound separately from the image."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
     skos:prefLabel "Sound Negative"@en ;
 .
 
 <https://dev.fiafcore.org/SoundPositive>
     a skos:Concept ;
-    skos:broader <https://dev.fiafcore.org/Element> ;
-    skos:definition ""@en ;
+    skos:broader <https://dev.fiafcore.org/FilmSoundElement> ;
+    skos:definition "An optical sound positive on film, carrying sound separately from the image."@en ;
     skos:inScheme <https://dev.fiafcore.org/Element> ;
     skos:prefLabel "Sound Positive"@en ;
 .
 
+<https://dev.fiafcore.org/VideoAccessCopy>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoElement> ;
+    skos:definition "A physical video copy made for viewing or reference."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Video Access Copy"@en ;
+.
+
+<https://dev.fiafcore.org/VideoMaster>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/VideoElement> ;
+    skos:definition "A physical video recording made as the complete source from which further copies are made, whether a production's finished master or a master copy made in duplication or preservation."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Video Master"@en ;
+.
+
+<https://dev.fiafcore.org/WorkPrint>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A positive print used for editing and assembly work, not for release."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Work Print"@en ;
+.
+
+<https://dev.fiafcore.org/DuplicateNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Negative> ;
+    skos:definition "A negative made from film as an intermediate for further printing, such as an internegative or duplicate negative."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Duplicate Negative"@en ;
+.
+
+<https://dev.fiafcore.org/OriginalNegative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Negative> ;
+    skos:definition "The negative exposed in the camera during production, cut or uncut. Use when it is unknown whether the negative has been cut."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Original Negative"@en ;
+.
+
+<https://dev.fiafcore.org/ReversalPositive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Positive> ;
+    skos:definition "A positive produced by reversal processing, without an intervening negative. Use when its generation is unknown."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Reversal Positive"@en ;
+.
+
+<https://dev.fiafcore.org/AudioElement>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
+    skos:definition "An Element of a sound-only physical carrier other than film, such as audio tape or an audio disc. Digital audio recordings are Digital Elements; sound on film is a Film Element."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Audio Element"@en ;
+.
+
+<https://dev.fiafcore.org/FilmElement>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
+    skos:definition "An Element on motion-picture film, picture or sound, photochemical or magnetic."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Film Element"@en ;
+.
+
+<https://dev.fiafcore.org/FilmSoundElement>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmElement> ;
+    skos:definition "A sound-only Element on motion-picture film, optical or magnetic."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Film Sound Element"@en ;
+.
+
+<https://dev.fiafcore.org/Negative>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmElement> ;
+    skos:definition "A negative picture film Element. Use when its generation or function is unknown."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Negative"@en ;
+.
+
+<https://dev.fiafcore.org/VideoElement>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
+    skos:definition "An Element of a physical video carrier, such as videotape or a video disc."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Video Element"@en ;
+.
+
+<https://dev.fiafcore.org/DigitalElement>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/Element> ;
+    skos:definition "An Element of a digital object, comprising a single file or a unit of related files, including digital audio recordings."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Digital Element"@en ;
+.
+
+<https://dev.fiafcore.org/Positive>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/FilmElement> ;
+    skos:definition "A positive picture film Element. Use when its generation or function is unknown."@en ;
+    skos:inScheme <https://dev.fiafcore.org/Element> ;
+    skos:prefLabel "Positive"@en ;
+.
+
 <https://dev.fiafcore.org/Element>
     a skos:ConceptScheme ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
+    skos:definition "The intended function of an Item in the production, duplication, preservation, or access workflow in which it was made, including photochemical polarity where it forms part of that role. The institution's current designation of the Item is recorded as its Status, not its Element. Storage media holding digital objects have no Element."@en ;
+    skos:prefLabel "Element"@en ;
 .

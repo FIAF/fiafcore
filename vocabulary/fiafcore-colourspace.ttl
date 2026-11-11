@@ -1,0 +1,55 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+<https://dev.fiafcore.org/ACES2065_1>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "The scene-linear RGB colour space specified by SMPTE ST 2065-1, using AP0 primaries and the ACES white point. This identifies ACES2065-1 specifically, not the broader Academy Color Encoding System. Record RGB encoding and a Linear transfer function when describing these aspects explicitly."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "ACES2065-1 (AP0)"@en ;
+.
+
+<https://dev.fiafcore.org/DCIP3>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "The DCI-P3 wide-gamut colour space (SMPTE RP 431-2) used for digital cinema projection."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "DCI-P3"@en ;
+.
+
+<https://dev.fiafcore.org/Rec2020>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "ITU-R Recommendation BT.2020 ultra-high-definition and wide-colour-gamut digital television colour space."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "Rec. 2020"@en ;
+.
+
+<https://dev.fiafcore.org/Rec601>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "ITU-R Recommendation BT.601 standard-definition digital television colour space."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "Rec. 601"@en ;
+.
+
+<https://dev.fiafcore.org/Rec709>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "ITU-R Recommendation BT.709 high-definition digital television colour space."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "Rec. 709"@en ;
+.
+
+<https://dev.fiafcore.org/sRGB>
+    a skos:Concept ;
+    skos:broader <https://dev.fiafcore.org/ColourSpace> ;
+    skos:definition "Standard RGB colour space (IEC 61966-2-1) used for computer displays and web delivery."@en ;
+    skos:inScheme <https://dev.fiafcore.org/ColourSpace> ;
+    skos:prefLabel "sRGB"@en ;
+.
+
+<https://dev.fiafcore.org/ColourSpace>
+    a skos:ConceptScheme ;
+    skos:definition "A standardized digital colour space defining colour primaries and white point in a moving image."@en ;
+    skos:prefLabel "Colour Space"@en ;
+.

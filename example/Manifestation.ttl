@@ -15,3 +15,9 @@
     fiaf:hasLanguageUsage [ a fiaf:Intertitles ;
             fiaf:hasLanguage fiaf:German ] ;
     fiaf:hasSoundCharacteristic [ a fiaf:Silent ] .
+
+<https://example.fiafcore.org/technicolor-manifestation>
+    a fiaf:Manifestation ;
+    rdfs:label "Technicolor Manifestation Example" ;
+    fiaf:hasColourCharacteristic [ a fiaf:Colour ;
+            fiaf:hasColourProcess fiaf:Technicolor ] .
